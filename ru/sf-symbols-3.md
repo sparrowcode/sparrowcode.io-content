@@ -8,7 +8,7 @@ Render Modes - это отрисовка иконки в цветовой схе
 
 Рендеры доступны для каждого символа, но возможны ситуации когда результат для разных рендеров будет совпадать и иконка не изменит внешнего вида. Лучше выбирать [в приложении](https://developer.apple.com/sf-symbols/), предварительно установив нужный рендер.
 
-Monochrome Render
+## Monochrome Render
 
 Иконка целиком красится в указанный цвет. Цвет управляется через `tintColor`.
 
@@ -25,7 +25,7 @@ Image(systemName: "doc")
 
 Способ работает для любых изображений, не только для SF Symbols.
 
-Hierarchical Render
+## Hierarchical Render
 
 Отрисовывает иконку в одном цвете, но создает глубину с помощью прозрачности для элементов символа.
 
@@ -44,7 +44,7 @@ Image(systemName: "square.stack.3d.down.right.fill")
 
 ![SFSymbols Hierarchical Render](https://cdn.ivanvorobei.by/websites/sparrowcode.io/sf-symbols-3/hierarchical-render.jpg)
 
-Palette Render
+## Palette Render
 
 Отрисовывает иконку в кастомных цветах. Каждому символу нужно опредленное количество цветов.
 
@@ -63,7 +63,7 @@ Image(systemName: "person.3.sequence.fill")
 
 ![SFSymbols Palette Render](https://cdn.ivanvorobei.by/websites/sparrowcode.io/sf-symbols-3/palette-render.jpg)
 
-Multicolor Render
+## Multicolor Render
 
 Важные элементы будут иметь фиксированный цвет, для заполняющего можно указать кастомный.
 
@@ -101,7 +101,7 @@ Image(systemName: 'bell')
 
 Обратите внимание, в последнем примере можно комбинировать варианты символов.
 
-Адаптация
+## Адаптация
 
 SwiftUI умеет отображать символы соотвественно контексту. Для iOS Apple использует залитые иконки, но в macOS иконки без заливки, только линии. Если вы используете SF Symbols для Side Bar, то не нужно указывать, залитый символ или нет - он будет автоматически адаптироваться в зависимости от системы.
 

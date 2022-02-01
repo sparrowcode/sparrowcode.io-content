@@ -10,7 +10,7 @@
 
 ![StoreKit 2 Modes](https://cdn.ivanvorobei.by/websites/sparrowcode.io/meet-storekit-2/models.jpg)
 
-Запрос продуктов и покупка
+## Запрос продуктов и покупка
 
 Раньше нужно было создать `SKProductsRequest`, стать его делегатом, запустить этот request и обязательно сохранить на него сильную ссылку, чтобы система не убила его до завершения.
 
