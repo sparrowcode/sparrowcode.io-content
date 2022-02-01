@@ -1,66 +1,25 @@
-<?php
+Научимся изменять порядок ячеек, перетаскивать несколько ячеек, перемещать ячейки между коллекциями и даже между приложениями.
 
-use App\HTMLElements;
-use App\TutorialModel;
-use App\ButtonModel;
+В этой части разберём перетаскивание для коллекции и таблицы. В следующей части расскажем, как перетаскивать любые вьюхи куда угодно и обрабатывать их сброс. Перед погружением в код разберём, как устроен жизненный цикл драга и дропа.
 
-/** @var TutorialModel $tutorial */
+![preview](https://cdn.ivanvorobei.by/websites/sparrowcode.io/drag-and-drop-part-1/preview.jpg)
 
-HTMLElements::tutorialHeader(
-    $tutorial,
-    [
-        new ButtonModel(
-            'WWDC17',
-            'https://developer.apple.com/videos/play/wwdc2017/203/',
-            true
-        ),
-        new ButtonModel(
-            'developer.apple.com',
-            'https://developer.apple.com/documentation/uikit/drag_and_drop',
-            true
-        )
-    ],
-    [
-        "https://cdn.ivanvorobei.by/websites/sparrowcode.io/drag-and-drop-part-1/google-structured-data/article_1_1.jpg",
-        "https://cdn.ivanvorobei.by/websites/sparrowcode.io/drag-and-drop-part-1/google-structured-data/article_1_1.jpg",
-        "https://cdn.ivanvorobei.by/websites/sparrowcode.io/drag-and-drop-part-1/google-structured-data/article_1_1.jpg"
-    ]
-);
+## Модели
 
-HTMLElements::text(
-    'Научимся изменять порядок ячеек, перетаскивать несколько ячеек, перемещать ячейки между коллекциями и даже между приложениями.'
-);
+Драг отвечает за перемещение объекта, дроп — за сброс объекта и его новое положение. Сервиса, отвечающего за начало драга, нет. Когда палец с ячейкой ползёт по экрану, вызывается метод делегата. Очень похоже на `UIScrollViewDelegate` с методом `scrollViewDidScroll`.
 
-HTMLElements::text(
-    'В этой части разберём перетаскивание для коллекции и таблицы. В следующей части расскажем, как перетаскивать любые вьюхи куда угодно и обрабатывать их сброс. Перед погружением в код разберём, как устроен жизненный цикл драга и дропа.'
-);
+`UIDragSession` и `UIDropSession` становятся доступны, когда вызываются методы делегата. Это объекты-обёртки с информацией о положении пальца, объектов, для которых совершали действия, кастомного context и других. Перед началом драга предоставьте объект `UIDragItem`, это обёртка данных. В буквальном смысле это то, что мы хотим перетянуть.
 
-HTMLElements::image('preview', 'https://cdn.ivanvorobei.by/websites/sparrowcode.io/drag-and-drop-part-1/preview.jpg', 100);
-
-HTMLElements::titleSection(
-    'Модели'
-);
-
-HTMLElements::text(
-    'Драг отвечает за перемещение объекта, дроп — за сброс объекта и его новое положение. Сервиса, отвечающего за начало драга, нет. Когда палец с ячейкой ползёт по экрану, вызывается метод делегата. Очень похоже на `UIScrollViewDelegate` с методом `scrollViewDidScroll`.'
-);
-
-HTMLElements::text(
-    '`UIDragSession` и `UIDropSession` становятся доступны, когда вызываются методы делегата. Это объекты-обёртки с информацией о положении пальца, объектов, для которых совершали действия, кастомного context и других. Перед началом драга предоставьте объект `UIDragItem`, это обёртка данных. В буквальном смысле это то, что мы хотим перетянуть.'
-);
-
-HTMLElements::blockCode('
+```swift
 let itemProvider = NSItemProvider.init(object: yourObject)
 let dragItem = UIDragItem(itemProvider: itemProvider)
 dragItem.localObject = action
 return dragItem
-');
+```
 
-HTMLElements::text(
-    'Чтобы провайдер смог скушать любой объект, реализуйте протокол `NSItemProviderWriting`:'
-);
+Чтобы провайдер смог скушать любой объект, реализуйте протокол `NSItemProviderWriting`:
 
-HTMLElements::blockCode('
+```swift
 extension YourClass: NSItemProviderWriting {
     
     public static var writableTypeIdentifiersForItemProvider: [String] {
@@ -71,23 +30,17 @@ extension YourClass: NSItemProviderWriting {
         return nil
     }
 }
-');
+```
 
-HTMLElements::text('Мы готовы. Потянули.');
+Мы готовы. Потянули.
 
-HTMLElements::titleSection(
-    'Drag'
-);
+## Drag
 
-HTMLElements::text(
-    'Мучать будем коллекцию. Лучше использовать `UICollectionViewController`, из коробки он умеет больше. Но и простая вьюха подойдёт.'
-);
+Мучать будем коллекцию. Лучше использовать `UICollectionViewController`, из коробки он умеет больше. Но и простая вьюха подойдёт.
 
-HTMLElements::text(
-    'Установим драг делегат:'
-);
+Установим драг делегат:
 
-HTMLElements::blockCode('
+```swift
 class CollectionController: UICollectionViewController {
     
     func viewDidLoad() {
@@ -95,28 +48,24 @@ class CollectionController: UICollectionViewController {
         collectionView.dragDelegate = self
     }
 }
-');
+```
 
-HTMLElements::text(
-    'Реализуем протокол `UICollectionViewDragDelegate`. Первым будет метод `itemsForBeginning`:'
-);
+Реализуем протокол `UICollectionViewDragDelegate`. Первым будет метод `itemsForBeginning`:
 
-HTMLElements::blockCode('
+```swift
 func collectionView(_ collectionView: UICollectionView, itemsForBeginning session: UIDragSession, at indexPath: IndexPath) -> [UIDragItem] {
         let itemProvider = NSItemProvider.init(object: yourObject)
         let dragItem = UIDragItem(itemProvider: itemProvider)
         dragItem.localObject = action
         return dragItem
     }
-');
+```
 
-HTMLElements::text(
-    'Вы уже видели этот код выше. Он оборачивает наш объект в `UIDragItem`. Метод вызывается при подозрении, что пользователь хочет начать драг. Не используйте этот метод как начало драга, его вызов только предполагает, что драг начнётся.'
-);
+Вы уже видели этот код выше. Он оборачивает наш объект в `UIDragItem`. Метод вызывается при подозрении, что пользователь хочет начать драг. Не используйте этот метод как начало драга, его вызов только предполагает, что драг начнётся.
 
-HTMLElements::text('Добавим ещё два метода — `dragSessionWillBegin` и `dragSessionDidEnd`:');
+Добавим ещё два метода — `dragSessionWillBegin` и `dragSessionDidEnd`:
 
-HTMLElements::blockCode('
+```swift
 extension CollectionController: UICollectionViewDragDelegate {
    
    func collectionView(_ collectionView: UICollectionView, itemsForBeginning session: UIDragSession, at indexPath: IndexPath) -> [UIDragItem] {
@@ -134,35 +83,20 @@ extension CollectionController: UICollectionViewDragDelegate {
     
     }
 }
-');
+```
 
-HTMLElements::text(
-    'Первый метод вызывается, когда драг начался. Второй - когда драг закончился. Перед `dragSessionWillBegin` вызывается `itemsForBeginning`. Но не факт, что если вызвался `itemsForBeginning`, вызовется метод `dragSessionWillBegin`.'
-);
+Первый метод вызывается, когда драг начался. Второй - когда драг закончился. Перед `dragSessionWillBegin` вызывается `itemsForBeginning`. Но не факт, что если вызвался `itemsForBeginning`, вызовется метод `dragSessionWillBegin`.
 
-HTMLElements::text(
-    'Если нужно обновить интерфейс на время драга (например, спрятать кнопки удаления), это правильное место. Давайте посмотрим, что получается на этом этапе.'
-);
+Если нужно обновить интерфейс на время драга (например, спрятать кнопки удаления), это правильное место. Давайте посмотрим, что получается на этом этапе.
 
-HTMLElements::video(
-    'Drag Preview',
-    'https://cdn.ivanvorobei.by/websites/sparrowcode.io/drag-and-drop-part-1/drag-delegate.mov',
-    100
-);
+[![Drag Preview]()](https://cdn.ivanvorobei.by/websites/sparrowcode.io/drag-and-drop-part-1/drag-delegate.mov)
+Ячейка возвращается на место. Дроп реализуем дальше.
 
-HTMLElements::text(
-    'Ячейка возвращается на место. Дроп реализуем дальше.'
-);
+## Drop
 
-HTMLElements::titleSection(
-    'Drop'
-);
+Драг - половина дела. Теперь научимся сбрасывать ячейку в нужное положение. Реализуем протокол `UICollectionViewDropDelegate`:
 
-HTMLElements::text(
-    'Драг - половина дела. Теперь научимся сбрасывать ячейку в нужное положение. Реализуем протокол `UICollectionViewDropDelegate`:'
-);
-
-HTMLElements::blockCode('
+```swift
 extension CollectionController: UICollectionViewDropDelegate {
     
     func collectionView(_ collectionView: UICollectionView, dropSessionDidUpdate session: UIDropSession, withDestinationIndexPath destinationIndexPath: IndexPath?) -> UICollectionViewDropProposal {
@@ -177,17 +111,13 @@ extension CollectionController: UICollectionViewDropDelegate {
     
     }
 }
-');
+```
 
-HTMLElements::text(
-    'Первый метод требует вернуть объект `UICollectionViewDropProposal`. Этот метод отвечает за превью и обновление интерфейса, он подсказывает пользователю, что произойдёт, если дроп сделать сейчас.'
-);
+Первый метод требует вернуть объект `UICollectionViewDropProposal`. Этот метод отвечает за превью и обновление интерфейса, он подсказывает пользователю, что произойдёт, если дроп сделать сейчас.
 
-HTMLElements::text(
-    'Вернуть можно один из нескольких статусов, разберём каждый.'
-);
+Вернуть можно один из нескольких статусов, разберём каждый.
 
-HTMLElements::blockCode('
+```swift
 // Ячейка вернётся на место, визуальные индикаторы не появятся. Действие не смещает другие ячейки.
 return .init(operation: .cancel)
 // Появится серая иконка. Это значит, что операция запрещена.
@@ -198,29 +128,23 @@ return .init(operation: .move)
 return .init(operation: .move, intent: .insertAtDestinationIndexPath)
 // Появляется зелёный плюс — как индикатор копирования.
 return .init(operation: .copy)
-');
+```
 
-HTMLElements::text(
-    'В нашем примере сделаем так - если есть прогнозируемый IndexPath, то разрешаем сброс. Если нет - то запрещаем. Лучше поставить отмену, но так будет нагляднее.'
-);
+В нашем примере сделаем так - если есть прогнозируемый IndexPath, то разрешаем сброс. Если нет - то запрещаем. Лучше поставить отмену, но так будет нагляднее.
 
-HTMLElements::blockCode('
+```swift
 func collectionView(_ collectionView: UICollectionView, dropSessionDidUpdate session: UIDropSession, withDestinationIndexPath destinationIndexPath: IndexPath?) -> UICollectionViewDropProposal {
 
     guard let _ = destinationIndexPath else { return .init(operation: .forbidden) }
     return .init(operation: .move, intent: .insertAtDestinationIndexPath)
 }
-');
+```
 
-HTMLElements::text(
-    '`destinationIndexPath` — это системный расчёт, куда ячейку можно дропнуть. Он ни к чему не обязывает, более того, дропнуть мы можем в другое место. Перейдём к следующему методу `performDropWith`.'
-);
+`destinationIndexPath` — это системный расчёт, куда ячейку можно дропнуть. Он ни к чему не обязывает, более того, дропнуть мы можем в другое место. Перейдём к следующему методу `performDropWith`.
 
-HTMLElements::text(
-    'Здесь решаем самые главные дела. Меняем данные, переставляем ячейки и уведомляем систему, куда дропнули вьюху, чтобы система отрисовала анимацию.'
-);
+Здесь решаем самые главные дела. Меняем данные, переставляем ячейки и уведомляем систему, куда дропнули вьюху, чтобы система отрисовала анимацию.
 
-HTMLElements::blockCode('
+```swift
 func collectionView(_ collectionView: UICollectionView, performDropWith coordinator: UICollectionViewDropCoordinator) {
     
     // Если система не смогла определить IndexPath, то останавливаем выполнение. 
@@ -249,29 +173,18 @@ func collectionView(_ collectionView: UICollectionView, performDropWith coordina
         }
     }
 }
-');
+```
 
-HTMLElements::text(
-    'Теперь коллекция и data source обновляются при перемещении, ячейка дропается по новому индексу. Глянем, что получилось:'
-);
+Теперь коллекция и data source обновляются при перемещении, ячейка дропается по новому индексу. Глянем, что получилось:
 
-HTMLElements::video(
-    'Drag Preview',
-    'https://cdn.ivanvorobei.by/websites/sparrowcode.io/drag-and-drop-part-1/drop-delegate.mov',
-    100
-);
+[![Drag Preview]()](https://cdn.ivanvorobei.by/websites/sparrowcode.io/drag-and-drop-part-1/drop-delegate.mov)
+Чтобы ячейки расступались для дропа другой ячейки, используйте Drop Proposal c `.insertAtDestinationIndexPath`. Любой другой интент не будет этого делать. Иногда багует с коллекцией, будьте осторожны.
 
-HTMLElements::text(
-    'Чтобы ячейки расступались для дропа другой ячейки, используйте Drop Proposal c `.insertAtDestinationIndexPath`. Любой другой интент не будет этого делать. Иногда багует с коллекцией, будьте осторожны.'
-);
+## Drag нескольких ячеек
 
-HTMLElements::titleSection(
-    'Drag нескольких ячеек'
-);
+В протоколе `UICollectionViewDragDelegate` мы реализовывали метод `itemsForBeginning`. Он возвращал объект драга. Чтобы к текущему драгу добавить ещё объекты, реализуйте метод `itemsForAddingTo`:
 
-HTMLElements::text('В протоколе `UICollectionViewDragDelegate` мы реализовывали метод `itemsForBeginning`. Он возвращал объект драга. Чтобы к текущему драгу добавить ещё объекты, реализуйте метод `itemsForAddingTo`:');
-
-HTMLElements::blockCode('
+```swift
 func collectionView(_ collectionView: UICollectionView, itemsForAddingTo session: UIDragSession, at indexPath: IndexPath, point: CGPoint) -> [UIDragItem] {
     // Код аналогичен.
     // Создаём `UIDragItem` на основе нашего объекта.
@@ -280,25 +193,16 @@ func collectionView(_ collectionView: UICollectionView, itemsForAddingTo session
     dragItem.localObject = action
     return dragItem
 }
-');
+```
 
-HTMLElements::text('Теперь ячейки будут собираться в стопку, можно перемещать группу.');
+Теперь ячейки будут собираться в стопку, можно перемещать группу.
 
-HTMLElements::video(
-    'Drag Stack',
-    'https://cdn.ivanvorobei.by/websites/sparrowcode.io/drag-and-drop-part-1/drag-stack.mov',
-    100
-);
+[![Drag Stack]()](https://cdn.ivanvorobei.by/websites/sparrowcode.io/drag-and-drop-part-1/drag-stack.mov)
+## Table View
 
-HTMLElements::titleSection(
-    'Table View'
-);
+Для таблицы есть аналогичные протоколы `UITableViewDragDelegate` и `UITableViewDropDelegate`. Методы повторяются с оговоркой на таблицу.
 
-HTMLElements::text(
-    'Для таблицы есть аналогичные протоколы `UITableViewDragDelegate` и `UITableViewDropDelegate`. Методы повторяются с оговоркой на таблицу.'
-);
-
-HTMLElements::blockCode('
+```swift
 public protocol UITableViewDragDelegate: NSObjectProtocol {
 
     optional func tableView(_ tableView: UITableView, itemsForAddingTo session: UIDragSession, at indexPath: IndexPath, point: CGPoint) -> [UIDragItem]
@@ -307,41 +211,26 @@ public protocol UITableViewDragDelegate: NSObjectProtocol {
 
     optional func tableView(_ tableView: UITableView, dragSessionDidEnd session: UIDragSession)
 }
-');
+```
 
-HTMLElements::text(
-    'Дроп работает аналогично. Отмечу, что дроп стабильнее именно в таблице, сказывается отсутствие лейаута.'
-);
+Дроп работает аналогично. Отмечу, что дроп стабильнее именно в таблице, сказывается отсутствие лейаута.
 
-HTMLElements::text(
-    'Редактирование таблицы никак не влияет на вызовы методов дропа.'
-);
+Редактирование таблицы никак не влияет на вызовы методов дропа.
 
-HTMLElements::blockCode('
+```swift
 tableView.isEditing = true
-');
+```
 
-HTMLElements::text('То есть у вас может быть системный реодер ячеек и дроп, к примеру, внутрь ячеек.');
+То есть у вас может быть системный реодер ячеек и дроп, к примеру, внутрь ячеек.
 
-HTMLElements::video(
-    'Table Drop',
-    'https://cdn.ivanvorobei.by/websites/sparrowcode.io/drag-and-drop-part-1/table-drop.mov',
-    100
-);
+[![Table Drop]()](https://cdn.ivanvorobei.by/websites/sparrowcode.io/drag-and-drop-part-1/table-drop.mov)
+## DestinationIndexPath
 
-HTMLElements::titleSection(
-    'DestinationIndexPath'
-);
+Системный параметр `DestinationIndexPath` не всегда идеально определяет положение. Например, если вы выйдете за края контента коллекции, то система не предложит сбросить ячейку как последнюю.
 
-HTMLElements::text(
-    'Системный параметр `DestinationIndexPath` не всегда идеально определяет положение. Например, если вы выйдете за края контента коллекции, то система не предложит сбросить ячейку как последнюю.'
-);
+Давайте напишем функцию, которая сможет предложить свой индекс, если системное предложение равно `nil`.
 
-HTMLElements::text(
-    'Давайте напишем функцию, которая сможет предложить свой индекс, если системное предложение равно `nil`.'
-);
-
-HTMLElements::blockCode('
+```swift
 // В качестве входных параметров используем системный индекс и сессию дропа.
 // Если системный индекс будет равен `nil`, то у нас появятся две системы расчёта.
 private func getDestinationIndexPath(system passedIndexPath: IndexPath?, session: UIDropSession) -> IndexPath? {
@@ -375,51 +264,37 @@ private func getDestinationIndexPath(system passedIndexPath: IndexPath?, session
             // Вернём значение в порядке приоритета.
             return passedIndexPath ?? systemByLocationIndexPath ?? customByLocationIndexPath
 }
-');
+```
 
-HTMLElements::text(
-    'Можем улучшить код для обновления интерфейса:'
-);
+Можем улучшить код для обновления интерфейса:
 
-HTMLElements::blockCode('
+```swift
 func collectionView(_ collectionView: UICollectionView, dropSessionDidUpdate session: UIDropSession, withDestinationIndexPath destinationIndexPath: IndexPath?) -> UICollectionViewDropProposal {
 
     guard let _ = getDestinationIndexPath(system: destinationIndexPath, session: session) else { return .init(operation: .forbidden) }
     return .init(operation: .move, intent: .insertAtDestinationIndexPath)
 }
-');
+```
 
-HTMLElements::text(
-    'Обратите внимание: метод поможет только с дропом. Если используете `.insertAtDestinationIndexPath`, не получится переопределить, как будут расступаться ячейки.'
-);
+Обратите внимание: метод поможет только с дропом. Если используете `.insertAtDestinationIndexPath`, не получится переопределить, как будут расступаться ячейки.
 
-HTMLElements::titleSection(
-    'Проблемы'
-);
+## Проблемы
 
-HTMLElements::text(
-    'Большинство проблем связано с коллекцией, а именно с лейаутом. Из известных проблем - при попытке сбросить ячейку последней FlowLayout запросит несуществующие атрибуты ячейки. Когда ячейки расступаются, лейаут рисует ячейку внутри, а при дропе получается ячеек больше, чем моделей в Data Source. Это можно решить переопределением метода в `UICollectionViewFlowLayout`:'
-);
+Большинство проблем связано с коллекцией, а именно с лейаутом. Из известных проблем - при попытке сбросить ячейку последней FlowLayout запросит несуществующие атрибуты ячейки. Когда ячейки расступаются, лейаут рисует ячейку внутри, а при дропе получается ячеек больше, чем моделей в Data Source. Это можно решить переопределением метода в `UICollectionViewFlowLayout`:
 
-HTMLElements::blockCode('
+```swift
 override func layoutAttributesForItem(at indexPath: IndexPath) -> UICollectionViewLayoutAttributes? {
    if let countItems = collectionView?.numberOfItems(inSection: indexPath.section) {
        if countItems == indexPath.row {
             // If ask layout cell which not isset,
-            // shouldn\'t call super.
+            // shouldn't call super.
             return nil
        }
    }
    return super.layoutAttributesForItem(at: indexPath)
 }
-');
+```
 
-HTMLElements::text('
 `.insertAtDestinationIndexPath` работает плохо, если тянуть ячейку из одной коллекции в другую. Приложение крашнется при драге за пределы первой секции, это связано с лейаутом. У таблиц проблем не ловил.
-');
 
-HTMLElements::text(
-    'Мы закончили первую часть. Когда будет готова вторая, добавлю на неё ссылку. Если нужен ролик по теме или остались вопросы - пишите в комментариях к посту в ' . HTMLElements::embeddedTelegramPostLink("55", 'телеграм-канале') . '.'
-);
-
-HTMLElements::tutorialFooter($tutorial);
+Мы закончили первую часть. Когда будет готова вторая, добавлю на неё ссылку. Если нужен ролик по теме или остались вопросы - пишите в комментариях к посту в [телеграм-канале](https://t.me/sparrowcode/55).
