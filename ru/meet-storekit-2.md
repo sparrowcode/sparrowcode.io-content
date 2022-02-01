@@ -1,0 +1,132 @@
+<?php
+
+use App\HTMLElements;
+use App\TutorialModel;
+use App\ButtonModel;
+
+/** @var TutorialModel $tutorial */
+
+HTMLElements::tutorialHeader(
+    $tutorial,
+    [
+        new ButtonModel(
+            'developer.apple.com',
+            'https://developer.apple.com/storekit/',
+            true
+        )
+    ],
+    [
+        "https://cdn.ivanvorobei.by/websites/sparrowcode.io/meet-storekit-2/google-structured-data/article_4_3.jpg",
+        "https://cdn.ivanvorobei.by/websites/sparrowcode.io/meet-storekit-2/google-structured-data/article_16_9.jpg",
+        "https://cdn.ivanvorobei.by/websites/sparrowcode.io/meet-storekit-2/google-structured-data/article_1_1.jpg"
+    ]
+);
+
+HTMLElements::text(
+    "Сложность первой версии StoreKit была настолько запредельной, что породила огромное количество SAS-решений разной степени паршивости и качества. Ты точно знаешь парочку, и скорее всего не умеешь работать с нативным StoreKit. Это нормально. Я тоже не умею."
+);
+HTMLElements::text(
+    "Новый StoreKit выглядит как глоток холодной воды в пустыне. Давайте погружаться."
+);
+HTMLElements::image(
+    'Introducing StoreKit 2',
+    'https://cdn.ivanvorobei.by/websites/sparrowcode.io/meet-storekit-2/header.jpg',
+    100
+);
+HTMLElements::titleSection(
+    'Что нового'
+);
+HTMLElements::text(
+    "Заменили модели, представляющие покупки и операции над ними. Теперь названия без префиксов SK, и в целом интуитивно понятно какие данные репрезентуют модели. Останавливаться на каждом не будем, картинка cо списком:"
+);
+HTMLElements::image(
+    'StoreKit 2 Modes',
+    'https://cdn.ivanvorobei.by/websites/sparrowcode.io/meet-storekit-2/models.jpg',
+    100
+);
+HTMLElements::titleParagraph(
+    'Запрос продуктов и покупка'
+);
+HTMLElements::text(
+    'Раньше нужно было создать `SKProductsRequest`, стать его делегатом, запустить этот request и обязательно сохранить на него сильную ссылку, чтобы система не убила его до завершения.'
+);
+HTMLElements::text(
+    'Теперь круче:'
+);
+HTMLElements::blockCode("
+// Получение продуктов
+let storeProducts = try await Product.request(with: identifiers)
+
+// Покупка
+let result = try await product.purchase()
+switch result {
+case .success(let verification):
+    // handle success
+    return result
+case .userCancelled, .pending:
+    // handle if needed
+default: break
+");
+HTMLElements::text(
+    'Зацените статусы обработки результата. К покупке можно крепить свои данные:'
+);
+HTMLElements::blockCode("
+let result = try await product.purchase(options:[.appAccountToken(yourAppToken))])
+");
+HTMLElements::text(
+    'Для связаности между аккаунтами и аналитики чумовая штука.'
+);
+HTMLElements::titleSection(
+    "Подписки"
+);
+HTMLElements::text(
+    "Если пользователь использовал триал в группе на одной из подписок, триал ему больше не доступен. Нет простого способа узнать пользователю разрешен триал или нет. Нужно было запросить все транзакции и посмотреть вручную. Сейчас упростилось до одной строчки кода."
+);
+HTMLElements::blockCode('
+static func isEligibleForIntroOffer(for groupID: String) async -> Bool
+');
+HTMLElements::text(
+    "Добавили состояние автообновления подписки, которое раньше было доступно только в чеке:"
+);
+HTMLElements::text(
+    "
+- <b>subscribed</b> - подписка активна<br>
+- <b>expired</b> - подписка истекла<br>
+- <b>inBillingRetryPeriod</b> - была ошибка при попытке оплаты<br>
+- <b>inGracePeriod</b> - отсрочка платежа по подписке. Если grace period у вашей подписки включен и произошла ошибка при оплате, то у пользователя будет ещё какое-то время, пока подписка работает, хотя оплаты ещё не было. Количество дней отсрочки может быть от 6 до 16 в зависимости от длительности самой подписки.<br>
+- <b>revoked</b> - доступ ко всем подпискам этой группы отклонён AppStore."
+);
+
+HTMLElements::image(
+    'Subscription information',
+    'https://cdn.ivanvorobei.by/websites/sparrowcode.io/meet-storekit-2/subscription-information.jpg',
+    100
+);
+
+HTMLElements::text(
+    "Объект `Renewal Info` содержит информацию об автообновлением подписки. Например:"
+);
+HTMLElements::text(
+    "
+- <b>willAutoRenew</b> - флаг, который подскажет, будет ли подписка автопродлена. Если нет, то с какой-то долей вероятности пользователь не планирует дальше использовать подписку в вашем приложении. Самое время подумать о том, как его удержать.<br>
+- <b>autoRenewPreference</b> - ID подписки, на которую произойдет автообновление. Например, вы можете проверить, что пользователь сделал downgrade и планирует пользоваться более дешевой версией вашей подписки. В таком случае при желании можете попробовать предложить ему скидку и удержать его на более премиальной версии.<br>
+- <b>expirationReason</b> - а здесь вы можете более подробно посмотреть причины истечения срока подписки."
+);
+
+HTMLElements::text(
+    "Плюшек еще больше. Восстанавливаться покупки будут автоматически, поддержка async, нормальное API с неймингом функций и моделей, статус подписок, доступность оффера. Выглядит как начало смерти SAS-решений (там всё сложнее, но апдейт всё таки киллер)."
+);
+
+HTMLElements::titleSection(
+    "Обратная совместимость"
+);
+
+HTMLElements::text(
+    "Покупки из первой версии будут работать во второй. Новый StoreKit доступен только с iOS 15. Большинство проектов зачем-то держат поддержку iOS 6, так что реальное использование увидим только в инди-проектах."
+);
+
+HTMLElements::text(
+    "Спасибо автору  " . HTMLElements::embeddedLink("статьи", "https://habr.com/ru/post/563280/") . ", почитайте - там подробнее и на русском."
+);
+
+HTMLElements::tutorialFooter($tutorial);
