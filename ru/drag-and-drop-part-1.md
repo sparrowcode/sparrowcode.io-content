@@ -89,7 +89,7 @@ extension CollectionController: UICollectionViewDragDelegate {
 
 Если нужно обновить интерфейс на время драга (например, спрятать кнопки удаления), это правильное место. Давайте посмотрим, что получается на этом этапе.
 
-[![Drag Preview]()](https://cdn.ivanvorobei.by/websites/sparrowcode.io/drag-and-drop-part-1/drag-delegate.mov)
+[Drag Preview](https://cdn.ivanvorobei.by/websites/sparrowcode.io/drag-and-drop-part-1/drag-delegate.mov)
 Ячейка возвращается на место. Дроп реализуем дальше.
 
 ## Drop
@@ -177,7 +177,7 @@ func collectionView(_ collectionView: UICollectionView, performDropWith coordina
 
 Теперь коллекция и data source обновляются при перемещении, ячейка дропается по новому индексу. Глянем, что получилось:
 
-[![Drag Preview]()](https://cdn.ivanvorobei.by/websites/sparrowcode.io/drag-and-drop-part-1/drop-delegate.mov)
+[Drag Preview](https://cdn.ivanvorobei.by/websites/sparrowcode.io/drag-and-drop-part-1/drop-delegate.mov)
 Чтобы ячейки расступались для дропа другой ячейки, используйте Drop Proposal c `.insertAtDestinationIndexPath`. Любой другой интент не будет этого делать. Иногда багует с коллекцией, будьте осторожны.
 
 ## Drag нескольких ячеек
@@ -197,7 +197,7 @@ func collectionView(_ collectionView: UICollectionView, itemsForAddingTo session
 
 Теперь ячейки будут собираться в стопку, можно перемещать группу.
 
-[![Drag Stack]()](https://cdn.ivanvorobei.by/websites/sparrowcode.io/drag-and-drop-part-1/drag-stack.mov)
+[Drag Stack](https://cdn.ivanvorobei.by/websites/sparrowcode.io/drag-and-drop-part-1/drag-stack.mov)
 ## Table View
 
 Для таблицы есть аналогичные протоколы `UITableViewDragDelegate` и `UITableViewDropDelegate`. Методы повторяются с оговоркой на таблицу.
@@ -223,7 +223,7 @@ tableView.isEditing = true
 
 То есть у вас может быть системный реодер ячеек и дроп, к примеру, внутрь ячеек.
 
-[![Table Drop]()](https://cdn.ivanvorobei.by/websites/sparrowcode.io/drag-and-drop-part-1/table-drop.mov)
+[Table Drop](https://cdn.ivanvorobei.by/websites/sparrowcode.io/drag-and-drop-part-1/table-drop.mov)
 ## DestinationIndexPath
 
 Системный параметр `DestinationIndexPath` не всегда идеально определяет положение. Например, если вы выйдете за края контента коллекции, то система не предложит сбросить ячейку как последнюю.
