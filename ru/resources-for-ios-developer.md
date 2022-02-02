@@ -1,440 +1,164 @@
-<?php
+Это сборник полезных ресурсов для iOS разработчиков. Я не раставлял ссылки по рейтингу. Ссылки сгрупированы по формату материала - видео, текст, новости и т.д.
 
-use App\HTMLElements;
-use App\TutorialModel;
-use App\Constants;
-use App\AreaModel;
+Описание под каждым ресурсом это собирательный отзыв комьюнити. Его цель помочь быстрее сориентироваться в этом списке.
 
-/** @var TutorialModel $tutorial */
+Если вы знаете хорошие ресурсы, [напишите мне](https://t.me/ivanvorobei) - я добавлю их сюда.
 
-HTMLElements::tutorialHeader(
-    $tutorial,
-    []
-);
+## Ресурсы Apple
 
-HTMLElements::text(
-    'Это сборник полезных ресурсов для iOS разработчиков. Я не раставлял ссылки по рейтингу. Ссылки сгрупированы по формату материала - видео, текст, новости и т.д.'
-);
+[Дизайн](https://developer.apple.com/design/resources/)
+UI элементы и готовые шаблоны из них. Доступно для Sketch, Photoshop и XD. Последние шрифты San Francisco и New York. Бейджы "Доступно в AppStore" и другие.
 
-HTMLElements::text(
-    'Описание под каждым ресурсом это собирательный отзыв комьюнити. Его цель помочь быстрее сориентироваться в этом списке.'
-);
+[Разработка](https://developer.apple.com/documentation/)
+Документации для разработчиков. В туториалах рассказывается о технологиях с примерами кода. Уже доступны туториалы о Xcode Cloud и Concurrency.
 
-HTMLElements::text(
-    'Если вы знаете хорошие ресурсы, ' . HTMLElements::embeddedLink('напишите мне', Constants::$telegram_my). ' - я добавлю их сюда.'
-);
+[Гайды](https://developer.apple.com/design/)
+Про проективрование интерфейса - архитектуру, жесты, UI-элементы и другое. Есть интерактивные видео для наглядности.
 
-/* Ресурсы */
+[Релизы](https://developer.apple.com/download/release/)
+Новые версии операционных систем и приложений. Можно глянуть список изменений и скачать Xcode не из стора.
 
-HTMLElements::titleSection('Ресурсы Apple');
+[Видео с WWDC](https://developer.apple.com/videos/)
+Видео-туториалы от эпл с сессии WWDC. Есть субтитры на английском языке. Спикеры говорят медленно и с наглядной графикой - можно смотреть даже со слабым английским.
 
-$resources = [
-    new AreaModel(
-        'Дизайн',
-        null,
-        'UI элементы и готовые шаблоны из них. Доступно для Sketch, Photoshop и XD. Последние шрифты San Francisco и New York. Бейджы "Доступно в AppStore" и другие.',
-        'https://developer.apple.com/design/resources/',
-        true
-    ),
-    new AreaModel(
-        'Разработка',
-        null,
-        'Документации для разработчиков. В туториалах рассказывается о технологиях с примерами кода. Уже доступны туториалы о Xcode Cloud и Concurrency.',
-        'https://developer.apple.com/documentation/',
-        true
-    ),
-    new AreaModel(
-        'Гайды',
-        null,
-        'Про проективрование интерфейса - архитектуру, жесты, UI-элементы и другое. Есть интерактивные видео для наглядности.',
-        'https://developer.apple.com/design/',
-        true
-    ),
-    new AreaModel(
-        'Релизы',
-        null,
-        'Новые версии операционных систем и приложений. Можно глянуть список изменений и скачать Xcode не из стора.',
-        'https://developer.apple.com/download/release/',
-        true
-    ),
-    new AreaModel(
-        'Видео с WWDC',
-        null,
-        'Видео-туториалы от эпл с сессии WWDC. Есть субтитры на английском языке. Спикеры говорят медленно и с наглядной графикой - можно смотреть даже со слабым английским.',
-        'https://developer.apple.com/videos/',
-        true
-    ),
-    new AreaModel(
-        'Генератор промо-изображений',
-        '',
-        'Доступны стили `новое приложение`, `обновление`, `подписка` и `оффер`. Настраивается язык и цвет фона. Есть размеры для сторис, банеры и квадраты.',
-        'https://tools.applemediaservices.com/apple-app-store-promote',
-        true
-    )
-];
+[Генератор промо-изображений](https://tools.applemediaservices.com/apple-app-store-promote)
+Доступны стили `новое приложение`, `обновление`, `подписка` и `оффер`. Настраивается язык и цвет фона. Есть размеры для сторис, банеры и квадраты.
 
-HTMLElements::areas($resources);
+## Русскоязычные видео
 
-/* Русскоязычные видео */
+[Школа мобильной разработки от Яндекса](https://www.youtube.com/playlist?list=PLQC2_0cDcSKBUXhSGqAbVAp3SFBKPnpFI)
+Хорошие спикеры и материал. Ролики по 1-2 часу. Звук записан с вебки.
 
-HTMLElements::titleSection('Русскоязычные видео');
+[Код Воробья](https://www.youtube.com/channel/UCNUGzZfcOyX4YpP36VzeZ6A)
+Канал вашего покороного слуги. Мне стоит делать ролики чаще.
 
-$russian_videos = [
-    new AreaModel(
-        'Школа мобильной разработки от Яндекса',
-        null,
-        'Хорошие спикеры и материал. Ролики по 1-2 часу. Звук записан с вебки.',
-        'https://www.youtube.com/playlist?list=PLQC2_0cDcSKBUXhSGqAbVAp3SFBKPnpFI',
-        true
-    ),
-    new AreaModel(
-        'Код Воробья',
-        null,
-        'Канал вашего покороного слуги. Мне стоит делать ролики чаще.',
-        'https://www.youtube.com/channel/UCNUGzZfcOyX4YpP36VzeZ6A',
-        true
-    ),
-    new AreaModel(
-        'iCode School',
-        null,
-        'Каждый ролик посвящен конкретному классу. Начинающим глянуть плейлист `Основы программирования`. Автора приятно слушать, но звук записан как в бочке.',
-        'https://www.youtube.com/channel/UCx1xu0yc1mh-gjAq8YKRobg',
-        true
-    ),
-    new AreaModel(
-        'Ivan Skorokhod',
-        null,
-        'Перевод стэнфордского курса по iOS разработке. Есть ролики про Swift. Хорошая подача, плохой звук.',
-        'https://www.youtube.com/channel/UChfEfFKYILtO5yZSX2irynw',
-        true
-    ),
-    new AreaModel(
-        'SwiftBook',
-        null,
-        'Интервью с разработчиками и практические задачи. Автор зачитывает код, который печатает - меня это утомляет. Хороший звук.',
-        'https://www.youtube.com/channel/UCXlCPCsB09ftBA5bQfiSWoQ',
-        true
-    ),
-    new AreaModel(
-        'MadBrains',
-        null,
-        'В формате тех. докладов разбирают практические задачи. Есть видео о том как получить реджект и про RX. Ролики большие, но смотреть интересно.',
-        'https://www.youtube.com/c/MadBrains',
-        true
-    )
-];
+[iCode School](https://www.youtube.com/channel/UCx1xu0yc1mh-gjAq8YKRobg)
+Каждый ролик посвящен конкретному классу. Начинающим глянуть плейлист `Основы программирования`. Автора приятно слушать, но звук записан как в бочке.
 
-HTMLElements::areas($russian_videos);
+[Ivan Skorokhod](https://www.youtube.com/channel/UChfEfFKYILtO5yZSX2irynw)
+Перевод стэнфордского курса по iOS разработке. Есть ролики про Swift. Хорошая подача, плохой звук.
 
-/* Рускоязычные Туториалы */
+[SwiftBook](https://www.youtube.com/channel/UCXlCPCsB09ftBA5bQfiSWoQ)
+Интервью с разработчиками и практические задачи. Автор зачитывает код, который печатает - меня это утомляет. Хороший звук.
 
-HTMLElements::titleSection('Рускоязычные туториалы');
+[MadBrains](https://www.youtube.com/c/MadBrains)
+В формате тех. докладов разбирают практические задачи. Есть видео о том как получить реджект и про RX. Ролики большие, но смотреть интересно.
 
-$russian_tutorials = [
-    new AreaModel(
-        'Habr',
-        null,
-        'Портал с туториалами и практическми задачами. Авторы отвечают в комментариях. Ссылку привел конкретно по iOS разработке, но гляньте и другие потоки.',
-        'https://habr.com/ru/hub/ios_dev/',
-        true
-    ),
-    new AreaModel(
-        'Apptractor',
-        null,
-        'В ' . HTMLElements::embeddedLink('телеграм-канале', 'https://telegram.me/apptractor') . ' приходит ежедневная подборка туториалов. По воскресеньям дайджест материалов за неделю.',
-        'https://apptractor.ru',
-        true
-    ),
-    new AreaModel(
-        'SwiftBook',
-        null,
-        'Туториалы и переводы. Документация по Swift на русском языке. Есть платный курс для iOS разработчиков.',
-        'https://swiftbook.ru',
-        true
-    )
-];
+## Рускоязычные туториалы
 
-HTMLElements::areas($russian_tutorials);
+[Habr](https://habr.com/ru/hub/ios_dev/)
+Портал с туториалами и практическми задачами. Авторы отвечают в комментариях. Ссылку привел конкретно по iOS разработке, но гляньте и другие потоки.
 
-/* Забугорные Туториалы */
+[Apptractor](https://apptractor.ru)
+В [телеграм-канале](https://telegram.me/apptractor) приходит ежедневная подборка туториалов. По воскресеньям дайджест материалов за неделю.
 
-HTMLElements::titleSection('Забугорные туториалы');
+[SwiftBook](https://swiftbook.ru)
+Туториалы и переводы. Документация по Swift на русском языке. Есть платный курс для iOS разработчиков.
 
-$foreign_tutorials = [
-    new AreaModel(
-        'Ray Wenderlich',
-        null,
-        'Большие туториалы в практическом контектсе. У автора есть книги по гиту, базе данных и `SwiftUI`. Есть видео-курсы. Некоторый контент платный.',
-        'https://www.raywenderlich.com',
-        true
-    ),
-    new AreaModel(
-        'useyourloaf.com',
-        null,
-        'Короткие статьи с практикой. Часто нахожу сайт в выдаче. Stackoverflow на максималках.',
-        'https://useyourloaf.com',
-        true
-    ),
-    new AreaModel(
-        'iosdevweekly.com',
-        null,
-        'Подборки разбиты по категориям - инструменты, код, дизайн и маркетинг. Похож на `AppTractor`, только забугорный.',
-        'https://iosdevweekly.com',
-        true
-    ),
-    new AreaModel(
-        'hackingwithswift.com',
-        null,
-        'Короткие туториалы. Часто встречаю в гугле в выдаче. Есть платные курсы.',
-        'https://www.hackingwithswift.com/',
-        true
-    ),
-    new AreaModel(
-        'swiftsenpai.com',
-        null,
-        'Разбирают сложные инструменты. Много туториалов по новым технологиям.',
-        'https://swiftsenpai.com',
-        true
-    ),
-    new AreaModel(
-        'nshipster.com',
-        null,
-        'Туториалы с глубоким погружением. Есть про среду разработки и зависимости.',
-        'https://nshipster.com',
-        true
-    ),
-    new AreaModel(
-        'swiftontap.com',
-        null,
-        'Документация по `SwiftUI` с примерами. Практическое руководство.',
-        'https://swiftontap.com',
-        true
-    ),
-    new AreaModel(
-        'theswiftdev.com',
-        null,
-        'Туториалы с не классическими практическими задачами типа как запускать swift-файлы как скрипты и обрабатывать препроцессор инфо.',
-        'https://theswiftdev.com',
-        true
-    )
-];
+## Забугорные туториалы
 
-HTMLElements::areas($foreign_tutorials);
+[Ray Wenderlich](https://www.raywenderlich.com)
+Большие туториалы в практическом контектсе. У автора есть книги по гиту, базе данных и `SwiftUI`. Есть видео-курсы. Некоторый контент платный.
 
-HTMLElements::titleSection('Забугорные видео');
+[useyourloaf.com](https://useyourloaf.com)
+Короткие статьи с практикой. Часто нахожу сайт в выдаче. Stackoverflow на максималках.
 
-$foreign_videos = [
-    new AreaModel(
-        'Стенфордский курс, оригинал',
-        null,
-        'Популярный курс среди начинающих разработчиков. Если хорошо с английским, начните с этого. В разделе с локализованными ресурсами есть ссылки на переводы.',
-        'https://www.youtube.com/playlist?list=PL3d_SFOiG7_8ofjyKzX6Nl1wZehbdiZC_',
-        true
-    ),
-    new AreaModel(
-        'Kavsoft',
-        null,
-        'Туториалы и практические примеры на SwiftUI. Автор не озвучивает ролики, пояснения появляются текстом на экране.',
-        'https://www.youtube.com/c/Kavsoft',
-        true
-    )
-];
+[iosdevweekly.com](https://iosdevweekly.com)
+Подборки разбиты по категориям - инструменты, код, дизайн и маркетинг. Похож на `AppTractor`, только забугорный.
 
-HTMLElements::areas($foreign_videos);
+[hackingwithswift.com](https://www.hackingwithswift.com/)
+Короткие туториалы. Часто встречаю в гугле в выдаче. Есть платные курсы.
 
-/* Чаты */
+[swiftsenpai.com](https://swiftsenpai.com)
+Разбирают сложные инструменты. Много туториалов по новым технологиям.
 
-HTMLElements::titleSection('Чаты');
+[nshipster.com](https://nshipster.com)
+Туториалы с глубоким погружением. Есть про среду разработки и зависимости.
 
-$chats = [
-    new AreaModel(
-        'Чат Код Воробья',
-        null,
-        'Наш чат. Модерируем токсичных разработчиков, помогаем начинающим и продолжающим.',
-        'https://sparrowcode.io/telegram/chat',
-        true
-    ),
-    new AreaModel(
-        'SwiftBook Чат',
-        null,
-        'Чат популярной платформы. В чате сейчас больше 5к людей.',
-        'https://telegram.me/swiftbook_chat',
-        true
-    )
-];
+[swiftontap.com](https://swiftontap.com)
+Документация по `SwiftUI` с примерами. Практическое руководство.
 
-/* Забугорные Видео */
+[theswiftdev.com](https://theswiftdev.com)
+Туториалы с не классическими практическими задачами типа как запускать swift-файлы как скрипты и обрабатывать препроцессор инфо.
 
-HTMLElements::areas($chats);
+## Забугорные видео
 
-/* Подборки библиотек */
+[Стенфордский курс, оригинал](https://www.youtube.com/playlist?list=PL3d_SFOiG7_8ofjyKzX6Nl1wZehbdiZC_)
+Популярный курс среди начинающих разработчиков. Если хорошо с английским, начните с этого. В разделе с локализованными ресурсами есть ссылки на переводы.
 
-HTMLElements::titleSection('Подборки библиотек');
+[Kavsoft](https://www.youtube.com/c/Kavsoft)
+Туториалы и практические примеры на SwiftUI. Автор не озвучивает ролики, пояснения появляются текстом на экране.
 
-$compilation = [
-    new AreaModel(
-        'cocoacontrols.com',
-        null,
-        'Подборка UI-библиотек, сразу с превью.',
-        'https://www.cocoacontrols.com',
-        true
-    ),
-    new AreaModel(
-        'swiftpackageindex.com',
-        null,
-        'Поиск SPM-библиотек. Автор отбирает библиотеки.',
-        'https://swiftpackageindex.com',
-        true
-    ),
-    new AreaModel(
-        'iosdev.tools',
-        null,
-        'Короткий обзор библиотек в формате новостей.',
-        'https://iosdev.tools',
-        true
-    ),
-    new AreaModel(
-        'swift.libhunt.com',
-        null,
-        'Библиотеки разбиты на 74 категории. Есть реклама - мешает в навигации.',
-        'https://swift.libhunt.com',
-        true
-    )
-];
+## Чаты
 
-HTMLElements::areas($compilation);
+[Чат Код Воробья](https://sparrowcode.io/telegram/chat)
+Наш чат. Модерируем токсичных разработчиков, помогаем начинающим и продолжающим.
 
-/* Мастхев библиотеки */
+[SwiftBook Чат](https://telegram.me/swiftbook_chat)
+Чат популярной платформы. В чате сейчас больше 5к людей.
 
-HTMLElements::titleSection('Мастхев библиотеки');
+## Подборки библиотек
 
-$frameworks = [
-    new AreaModel(
-        'Alamofire',
-        null,
-        'Фасад для сетевых запросов.',
-        'https://github.com/Alamofire/Alamofire',
-        true
-    ),
-    new AreaModel(
-        'SwiftyJSON',
-        null,
-        'Будете быстрее разоврачивать значения в `JSON`.',
-        'https://github.com/SwiftyJSON/SwiftyJSON',
-        true
-    ),
-    new AreaModel(
-        'Nuke',
-        null,
-        'Использует нативные инструменты чтобы кэшировать изображения.',
-        'https://github.com/kean/Nuke',
-        true
-    ),
-    new AreaModel(
-        'SPPermissions',
-        null,
-        'Работа с разрешениями.',
-        'https://github.com/ivanvorobei/SPPermissions',
-        true
-    )
-];
+[cocoacontrols.com](https://www.cocoacontrols.com)
+Подборка UI-библиотек, сразу с превью.
 
-HTMLElements::areas($frameworks);
+[swiftpackageindex.com](https://swiftpackageindex.com)
+Поиск SPM-библиотек. Автор отбирает библиотеки.
 
-/* Интересные репозитории */
+[iosdev.tools](https://iosdev.tools)
+Короткий обзор библиотек в формате новостей.
 
-HTMLElements::titleSection('Интересные репозитории');
+[swift.libhunt.com](https://swift.libhunt.com)
+Библиотеки разбиты на 74 категории. Есть реклама - мешает в навигации.
 
-$repos = [
-    new AreaModel(
-        'Awesome-iOS',
-        null,
-        'Подборка библиотек. Репозитории разбиты на 200 категорий. Есть подборки с курсами.',
-        'https://github.com/vsouza/awesome-ios',
-        true
-    ),
-    new AreaModel(
-        'Awesome iOS ещё один',
-        null,
-        'Мой сборник библиотек. Есть ' . HTMLElements::embeddedLink('сайт', Constants::$project_awesome_ios_web) . '. Планирую написать приложение.',
-        'https://github.com/ivanvorobei/awesome-ios',
-        true
-    ),
-    new AreaModel(
-        'GitHub Trends',
-        null,
-        'Популярные Swift-библиотеки на GitHub.',
-        'https://github.com/trending/swift?since=daily&spoken_language_code=',
-        true
-    )
-];
+## Мастхев библиотеки
 
-HTMLElements::areas($repos);
+[Alamofire](https://github.com/Alamofire/Alamofire)
+Фасад для сетевых запросов.
 
-/* Вопросы */
+[SwiftyJSON](https://github.com/SwiftyJSON/SwiftyJSON)
+Будете быстрее разоврачивать значения в `JSON`.
 
-HTMLElements::titleSection('Инструменты');
+[Nuke](https://github.com/kean/Nuke)
+Использует нативные инструменты чтобы кэшировать изображения.
 
-$instruments = [
-    new AreaModel(
-        'nsdateformatter.com',
-        null,
-        'Примеры форматирования даты с помощью `DateFormatter`.',
-        'https://nsdateformatter.com',
-        true
-    ),
-    new AreaModel(
-        'epochconverter.com',
-        null,
-        'Конвертор `Timestamp`.',
-        'https://www.epochconverter.com',
-        true
-    ),
-    new AreaModel(
-        'Генератор промо-изображений',
-        '',
-        'Доступны стили `новое приложение`, `обновление`, `подписка` и `оффер`. Настраивается язык и цвет фона. Есть размеры для сторис, банеры и квадраты.',
-        'https://tools.applemediaservices.com/apple-app-store-promote',
-        true
-    )
-];
+[SPPermissions](https://github.com/ivanvorobei/SPPermissions)
+Работа с разрешениями.
 
-HTMLElements::areas($instruments);
+## Интересные репозитории
 
-/* Вопросы */
+[Awesome-iOS](https://github.com/vsouza/awesome-ios)
+Подборка библиотек. Репозитории разбиты на 200 категорий. Есть подборки с курсами.
 
-HTMLElements::titleSection('Вопросы');
+[Awesome iOS ещё один](https://github.com/ivanvorobei/awesome-ios)
+Мой сборник библиотек. Есть [сайт](https://awesome-ios.com). Планирую написать приложение.
 
-$questions = [
-    new AreaModel(
-        'Stackoverflow',
-        null,
-        'Чаще всего запрос в гугол приведет вас сюда. Можно задавать свои вопросы. Есть система рейтинга.',
-        'https://stackoverflow.com',
-        true
-    ),
-    new AreaModel(
-        'Русский Stackoverflow',
-        null,
-        'Аналог англоязычного портала. Не активен в русском сегменте.',
-        'https://ru.stackoverflow.com',
-        true
-    ),
-    new AreaModel(
-        'Q&A',
-        null,
-        'Русский агрегатор вопросов.',
-        'https://qna.habr.com',
-        true
-    )
-];
+[GitHub Trends](https://github.com/trending/swift?since=daily&spoken_language_code=)
+Популярные Swift-библиотеки на GitHub.
 
-HTMLElements::areas($questions);
+## Инструменты
 
-HTMLElements::titleSection('На этом всё');
+[nsdateformatter.com](https://nsdateformatter.com)
+Примеры форматирования даты с помощью `DateFormatter`.
 
-HTMLElements::text(
-    'Если вы знаете хорошие ресурсы, ' . HTMLElements::embeddedLink('напишите мне', Constants::$telegram_my). ' чтобы добавить их в статью.'
-);
+[epochconverter.com](https://www.epochconverter.com)
+Конвертор `Timestamp`.
 
-HTMLElements::tutorialFooter($tutorial);
+[Генератор промо-изображений](https://tools.applemediaservices.com/apple-app-store-promote)
+Доступны стили `новое приложение`, `обновление`, `подписка` и `оффер`. Настраивается язык и цвет фона. Есть размеры для сторис, банеры и квадраты.
+
+## Вопросы
+
+[Stackoverflow](https://stackoverflow.com)
+Чаще всего запрос в гугол приведет вас сюда. Можно задавать свои вопросы. Есть система рейтинга.
+
+[Русский Stackoverflow](https://ru.stackoverflow.com)
+Аналог англоязычного портала. Не активен в русском сегменте.
+
+[Q&A](https://qna.habr.com)
+Русский агрегатор вопросов.
+
+## На этом всё
+
+Если вы знаете хорошие ресурсы, [напишите мне](https://t.me/ivanvorobei) чтобы добавить их в статью.
+
