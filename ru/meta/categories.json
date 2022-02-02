@@ -1,0 +1,17 @@
+{
+    "uikit" : {
+        "name" : "UIKit",
+    },
+    "swiftui" : {
+        "name" : "SwiftUI",
+    }
+    "storekit" : {
+        "name" : "StoreKit",
+    },
+    "compilation" : {
+        "name" : "Compilation",
+    },
+    "development" : {
+        "name" : "Development",
+    }
+}

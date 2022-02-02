@@ -32,7 +32,7 @@ Fill `list.json` file with data.
 
 - `title` - Title of your tutorial.
 - `description` - Description of tutorial.
-- `category` - Choose from `uikit`, `storekit`, `compilation` & `development`. If need additional category, let me know.
+- `category` - Choose from file `.../meta/categories.json`.
 - `author_github_username` - GitHub username of author.
 - `keywords` - Array of relative keys for your article.
 - `updated_date` - Date of last updating article. Format `01.01.2022`.
