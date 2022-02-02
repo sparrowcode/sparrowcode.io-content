@@ -30,15 +30,15 @@ Example [here](https://sparrowcode.io/resources-for-ios-developer).
 
 Fill `list.json` file with data.
 
-`title` - Title of your tutorial.
-`description` - Description of tutorial.
-`category` - Choose from this ["uikit", "storekit", "compilation", "development"].
-`author_github_username` - Username of author.
-`keywords` - Relative keys of your article.
-`updated_date` - Date of last updating article.
-`added_date` - Date of created article.
+- `title` - Title of your tutorial.
+- `description` - Description of tutorial.
+- `category` - Choose from this ["uikit", "storekit", "compilation", "development"].
+- `author_github_username` - Username of author.
+- `keywords` - Relative keys of your article.
+- `updated_date` - Date of last updating article.
+- `added_date` - Date of created article.
 
 #### Optional
 
-`editors_github_username` - If you fix some errors, place username here.
-`translator_github_username` - Github username of translator.
+- `editors_github_username` - If you fix some errors, place username here.
+- `translator_github_username` - Github username of translator.
