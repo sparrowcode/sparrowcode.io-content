@@ -4,7 +4,7 @@ You can read tutorials at website [sparrowcode.io (en)](https://sparrowcode.io) 
 
 ## Contribute
 
-### Place `.md` file to fodler with correct language. Use basic Markdown styles. Also available some uniq formatting.
+Place `.md` file to fodler with correct language. Use basic Markdown styles. Also available some uniq formatting.
 
 #### Important Area
 
