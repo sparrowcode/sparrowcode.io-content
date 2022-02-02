@@ -1,6 +1,6 @@
 # Tutorials
 
-You can read tutorials at website [sparrowcode.io (en)](https://sparrowcode.io) & [sparrowcode.io (ru)](https://sparrowcode.io).
+You can read tutorials at website [sparrowcode.io/en](https://sparrowcode.io) & [sparrowcode.io/ru](https://sparrowcode.io).
 
 ## Contribute
 
