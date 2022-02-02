@@ -9,9 +9,9 @@ Place `.md` file to fodler with correct language. Use basic Markdown styles. Als
 #### Important Area
 
 ```
-newline
+// newline
 ***text***
-newline
+// newline
 ```
 
 Will replace with important area, yellow example [here](https://sparrowcode.io/edge-insets-uibutton).
