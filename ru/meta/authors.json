@@ -2,7 +2,7 @@
     "ivanvorobei" : {
         "name" : "Иван Воробей",
         "description" : "iOS разработчик. Пишу библиотеки, веду телеграм-канал.",
-        "avatar" : "https://cdn.ivanvorobei.by/websites/sparrowcode.io/authors/ivanvorobei.jpg"
+        "avatar" : "https://cdn.ivanvorobei.by/websites/sparrowcode.io/authors/ivanvorobei.jpg",
         "buttons" : [
             {
                 "name" : "GitHub",
@@ -16,8 +16,8 @@
     },
     "alxrguz" : {
         "name" : "Александр Гузенко",
-        "description" : "iOS разработчик. Люблю нативынй дизайн и велик.",
-        "avatar" : "https://cdn.ivanvorobei.by/websites/sparrowcode.io/authors/alxrguz.jpg"
+        "description" : "iOS разработчик. Люблю нативный дизайн и велик.",
+        "avatar" : "https://cdn.ivanvorobei.by/websites/sparrowcode.io/authors/alxrguz.jpg",
         "buttons" : [
             {
                 "name" : "GitHub",
@@ -29,4 +29,15 @@
             }
         ]
     },
+    "wmorgue": {
+        "name": "Никита Россик",
+        "description": "Увлекаюсь обратной разработкой под iOS.",
+        "avatar": "https://cdn.ivanvorobei.by/websites/sparrowcode.io/authors/wmorgue.jpg",
+        "buttons": [
+            {
+                "name": "GitHub",
+                "link": "https://github.com/wmorgue"
+            }
+        ]
+    }
 }

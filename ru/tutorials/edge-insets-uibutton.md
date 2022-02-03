@@ -1,10 +1,10 @@
 Вы управляете тремя отступами - `imageEdgeInsets`, `titleEdgeInsets` и `contentEdgeInsets`. Чаще всего ваша задача сводится к выставлению симметрично-противоположных значений.
 
-Перед тем как начнем погружаться, гляньтье [проект-пример](https://cdn.ivanvorobei.by/websites/sparrowcode.io/edge-insets-uibutton/example-project.zip). Каждый ползунок отвечает за конкретный отсуп и вы можете их комбинировать. На видео я выставил цвет фона - красный, цвет иконки - желтый, а цвет тайтла - синий.
+Перед тем как начнем погружаться, гляньте [проект-пример](https://cdn.ivanvorobei.by/websites/sparrowcode.io/edge-insets-uibutton/example-project.zip). Каждый ползунок отвечает за конкретный отступ и вы можете их комбинировать. На видео я выставил цвет фона - красный, цвет иконки - желтый, а цвет тайтла - синий.
 
 [Edge Insets UIButton Example Project Preview](https://cdn.ivanvorobei.by/websites/sparrowcode.io/edge-insets-uibutton/edge-insets-uibutton-example-preview.mov)
 
-Сделайте отступ между заголовоком и иконкой `10pt`. Когда получится, убедитесь, контролируете результат или получилось наугад. В конце туториала вы будете знать как это работает.
+Сделайте отступ между заголовком и иконкой `10pt`. Когда получится, убедитесь, контролируете результат или получилось наугад. В конце туториала вы будете знать как это работает.
 
 ## contentEdgeInsets
 
@@ -24,7 +24,7 @@ previewButton.contentEdgeInsets.bottom = 5
 
 ## imageEdgeInsets и titleEdgeInsets
 
-Я вынес их в одну секцию не просто так. Чаще всего задача будет сводится к симметричному добавлению отсупов с одной стороны, и уменьшению с другой. Звучит сложно, сейчас разрулим.
+Я вынес их в одну секцию не просто так. Чаще всего задача будет сводится к симметричному добавлению отступов с одной стороны, и уменьшению с другой. Звучит сложно, сейчас разрулим.
 
 Добавим отступ между картинкой и заголовоком, пускай `10pt`. Первая мысль - добавить отступ через проперти `imageEdgeInsets`:
 
@@ -70,13 +70,13 @@ previewButton.imageEdgeInsets = UIEdgeInsets(
 
 ## Готовый класс
 
-В моей библиотеке [SparrowKit](https://github.com/ivanvorobei/SparrowKit) уже есть готовый класс кнопки [`SPButton`](https://github.com/ivanvorobei/SparrowKit/blob/main/Sources/SparrowKit/UIKit/Classes/Buttons/SPButton.swift) с поддержкой отсупа между картинкой и текстом.
+В моей библиотеке [SparrowKit](https://github.com/ivanvorobei/SparrowKit) уже есть готовый класс кнопки [`SPButton`](https://github.com/ivanvorobei/SparrowKit/blob/main/Sources/SparrowKit/UIKit/Classes/Buttons/SPButton.swift) с поддержкой отступа между картинкой и текстом.
 
 ```swift
 button.titleImageInset = 8
 ```
 
-Работает для RTL локализации. Если картинки нет, отступ не добавляется. Разработчку нужно только выставить значение отступа.
+Работает для RTL локализации. Если картинки нет, отступ не добавляется. Разработчику нужно только выставить значение отступа.
 
 ![Deprecated imageEdgeInsets и titleEdgeInsets](https://cdn.ivanvorobei.by/websites/sparrowcode.io/edge-insets-uibutton/depricated.png)
 
