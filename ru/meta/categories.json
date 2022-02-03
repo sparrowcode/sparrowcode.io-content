@@ -11,7 +11,10 @@
     "compilation": {
         "name": "Compilation",
     },
-    "development": {
-        "name": "Development",
+    "development" : {
+        "name" : "Development",
+    },
+    "app_store_connect" : {
+        "name" : "App Store Connect"
     }
 }

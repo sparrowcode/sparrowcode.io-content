@@ -1,10 +1,10 @@
 {
-    "drag-and-drop-part-1": {
-        "title": "Drag и Drop",
-        "description": "Как изменить порядок ячеек в коллекции и таблице. Как перенести ячейки в другую коллекцию. Перемещение нескольких ячеек группой.",
-        "category": "uikit",
-        "author_github_username": "ivanvorobei",
-        "keywords": [
+    "drag-and-drop-part-1" : {
+        "title" : "Drag и Drop",
+        "description" : "Как изменить порядок ячеек в коллекции и таблице. Как перенести ячейки в другую коллекцию. Перемещение нескольких ячеек группой.",
+        "category" : "uikit",
+        "author" : "ivanvorobei",
+        "keywords" : [
             "UICollectionViewDragDelegate",
             "UICollectionViewDropDelegate",
             "UITableViewDragDelegate",
@@ -15,21 +15,23 @@
         "updated_date": "27.12.2021",
         "added_date": "11.07.2021"
     },
-    "meet-storekit-2": {
-        "title": "StoreKit 2",
-        "description": "Apple пересмотрела логику покупок и переписала StoreKit. Буду много хвалить - крутой апдейт этого года.",
-        "category": "storekit",
-        "author_github_username": "ivanvorobei",
-        "keywords": [],
-        "updated_date": "27.12.2021",
-        "added_date": "25.09.2021"
+    "meet-storekit-2" : {
+        "title" : "StoreKit 2",
+        "description" : "Apple пересмотрела логику покупок и переписала StoreKit. Буду много хвалить - крутой апдейт этого года.",
+        "category" : "storekit",
+        "author" : "ivanvorobei",
+        "keywords" : [
+            
+        ],
+        "updated_date" : "27.12.2021",
+        "added_date" : "25.09.2021"
     },
-    "uisheetpresentationcontroller": {
-        "title": "UISheetPresentationController",
-        "description": "В iOS 15 появились sheet-контроллеры. Их можно перетаскивать с изменением высоты. Вы встречали эти контроллеры в приложениях «Карты» и «Акции».",
-        "category": "uikit",
-        "author_github_username": "ivanvorobei",
-        "keywords": [
+    "uisheetpresentationcontroller" : {
+        "title" : "UISheetPresentationController",
+        "description" : "В iOS 15 появились sheet-контроллеры. Их можно перетаскивать с изменением высоты. Вы встречали эти контроллеры в приложениях «Карты» и «Акции».",
+        "category" : "uikit",
+        "author" : "ivanvorobei",
+        "keywords" : [
             "UISheetPresentationController",
             "Model Controllers",
             "UIKit",
@@ -38,12 +40,12 @@
         "updated_date": "27.12.2021",
         "added_date": "11.10.2021"
     },
-    "sf-symbols-3": {
-        "title": "SF Symbols 3",
-        "description": "Вместе c iOS 15 обновили SF Symbols до 3-ей версии. Добавили 600 новых символов и разные способы покрасить их. Некоторые символы получили вариации форм.",
-        "category": "uikit",
-        "author_github_username": "ivanvorobei",
-        "keywords": [
+    "sf-symbols-3" : {
+        "title" : "SF Symbols 3",
+        "description" : "Вместе c iOS 15 обновили SF Symbols до 3-ей версии. Добавили 600 новых символов и разные способы покрасить их. Некоторые символы получили вариации форм.",
+        "category" : "uikit",
+        "author" : "ivanvorobei",
+        "keywords" : [
             "UIKit",
             "SwiftUI",
             "iOS 15"
@@ -51,12 +53,12 @@
         "updated_date": "27.12.2021",
         "added_date": "28.10.2021"
     },
-    "uiviewcontroller-lifecycle": {
-        "title": "Жизненный цикл UIViewController",
-        "description": "Рассмотрим когда вызываются методы контроллера и что можно делать внутри них. Когда настраивать вьюхи и данные.",
-        "category": "uikit",
-        "author_github_username": "ivanvorobei",
-        "keywords": [
+    "uiviewcontroller-lifecycle" : {
+        "title" : "Жизненный цикл UIViewController",
+        "description" : "Рассмотрим когда вызываются методы контроллера и что можно делать внутри них. Когда настраивать вьюхи и данные.",
+        "category" : "uikit",
+        "author" : "ivanvorobei",
+        "keywords" : [
             "UIKit",
             "UIViewController",
             "viewDidAppear",
@@ -67,12 +69,12 @@
         "updated_date": "27.12.2021",
         "added_date": "19.11.2021"
     },
-    "resources-for-ios-developer": {
-        "title": "Ресурсы для iOS разработчика",
-        "description": "Подборка полезных ссылок для iOS разработчиков. Структурирована по формату материала. Есть раздел с русскими ресурсами.",
-        "category": "compilation",
-        "author_github_username": "ivanvorobei",
-        "keywords": [
+    "resources-for-ios-developer" : {
+        "title" : "Ресурсы для iOS разработчика",
+        "description" : "Подборка полезных ссылок для iOS разработчиков. Структурирована по формату материала. Есть раздел с русскими ресурсами.",
+        "category" : "compilation",
+        "author" : "ivanvorobei",
+        "keywords" : [
             "Ресурсы для iOS разработчиков",
             "туториалы по iOS разработке",
             "swift разработка",
@@ -81,24 +83,24 @@
         "updated_date": "13.12.2021",
         "added_date": "25.11.2021"
     },
-    "how-to-delete-userdefaults-on-macos-catalyst": {
-        "title": "Как очистить UserDefaults для Mac Catalyst",
-        "description": "Как очистить данные для приложения Catalyst включая AppGroup, Realm и UserDefaults.",
-        "category": "development",
-        "author_github_username": "ivanvorobei",
-        "keywords": [
+    "how-to-delete-userdefaults-on-macos-catalyst" : {
+        "title" : "Как очистить UserDefaults для Mac Catalyst",
+        "description" : "Как очистить данные для приложения Catalyst включая AppGroup, Realm и UserDefaults.",
+        "category" : "development",
+        "author" : "ivanvorobei",
+        "keywords" : [
             "UserDefaults",
             "Catalyst"
         ],
         "updated_date": "14.12.2021",
         "added_date": "11.12.2021"
     },
-    "edge-insets-uibutton": {
-        "title": "Отступы Edge Insets для UIButton",
-        "description": "Как добавить отступ между картинкой и заголовком в кнопке. Как поместить иконку справа от заголовка.",
-        "category": "uikit",
-        "author_github_username": "ivanvorobei",
-        "keywords": [
+    "edge-insets-uibutton" : {
+        "title" : "Отступы Edge Insets для UIButton",
+        "description" : "Как добавить отступ между картинкой и заголовком в кнопке. Как поместить иконку справа от заголовка.",
+        "category" : "uikit",
+        "author" : "ivanvorobei",
+        "keywords" : [
             "imageEdgeInsets",
             "imageEdgeInsets",
             "contentEdgeInsets"
@@ -106,23 +108,23 @@
         "updated_date": "27.12.2021",
         "added_date": "13.12.2021"
     },
-    "product-page-optimization-alternative-icons": {
-        "title": "Альтернативные иконки для Product Page Optimization",
-        "description": "Как добавить альтернативные иконки для A/B тестов на странице приложения.",
-        "category": "appstore_connect",
-        "author_github_username": "alxrguz",
-        "keywords": [
+    "product-page-optimization-alternative-icons" : {
+        "title" : "Альтернативные иконки для Product Page Optimization",
+        "description" : "Как добавить альтернативные иконки для A/B тестов на странице приложения.",
+        "category" : "app_store_connect",
+        "author" : "alxrguz",
+        "keywords" : [
             "alternative icons"
         ],
         "updated_date": "27.12.2021",
         "added_date": "27.12.2021"
     },
-    "custom-swiftui-view-library": {
-        "title": "Как добавить кастомную SwiftUI View в библиотеку Xcode",
-        "description": "В этой статье я покажу как добавить свою View в Xcode Library с помощью LibraryContentProvider.",
-        "category": "swiftui",
-        "author_github_username": "wmorgue",
-        "keywords": [
+    "custom-swiftui-view-library" : {
+        "title" : "Как добавить кастомную SwiftUI View в библиотеку Xcode",
+        "description" : "В этой статье я покажу как добавить свою View в Xcode Library с помощью LibraryContentProvider.",
+        "category" : "swiftui",
+        "author_github_username" : "wmorgue",
+        "keywords" : [
             "xcode",
             "library",
             "LibraryContentProvider"
