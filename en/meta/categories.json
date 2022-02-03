@@ -1,18 +1,18 @@
 {
     "uikit" : {
-        "name" : "UIKit",
+        "name" : "UIKit"
     },
     "swiftui" : {
-        "name" : "SwiftUI",
-    }
+        "name" : "SwiftUI"
+    },
     "storekit" : {
-        "name" : "StoreKit",
+        "name" : "StoreKit"
     },
     "compilation" : {
-        "name" : "Compilation",
+        "name" : "Compilation"
     },
     "development" : {
-        "name" : "Development",
+        "name" : "Development"
     },
     "app_store_connect" : {
         "name" : "App Store Connect"
