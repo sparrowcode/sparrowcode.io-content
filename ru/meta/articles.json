@@ -75,7 +75,7 @@
         "keywords": [
             "Ресурсы для iOS разработчиков",
             "туториалы по iOS разработке",
-            "swift разарботка",
+            "swift разработка",
             "разработка iOS приложений"
         ],
         "updated_date": "13.12.2021",
@@ -117,7 +117,7 @@
         "updated_date": "27.12.2021",
         "added_date": "27.12.2021"
     },
-    "xcode-swiftui-library": {
+    "custom-swiftui-view-library": {
         "title": "Как добавить кастомную SwiftUI View в библиотеку Xcode",
         "description": "В этой статье я покажу как добавить свою View в Xcode Library с помощью LibraryContentProvider.",
         "category": "swiftui",

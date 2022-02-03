@@ -1,17 +1,17 @@
 {
-    "uikit" : {
-        "name" : "UIKit",
+    "uikit": {
+        "name": "UIKit",
     },
-    "swiftui" : {
-        "name" : "SwiftUI",
-    }
-    "storekit" : {
-        "name" : "StoreKit",
+    "swiftui": {
+        "name": "SwiftUI",
     },
-    "compilation" : {
-        "name" : "Compilation",
+    "storekit": {
+        "name": "StoreKit",
     },
-    "development" : {
-        "name" : "Development",
+    "compilation": {
+        "name": "Compilation",
+    },
+    "development": {
+        "name": "Development",
     }
 }
