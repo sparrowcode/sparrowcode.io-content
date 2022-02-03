@@ -119,7 +119,7 @@
         "updated_date" : "27.12.2021",
         "added_date" : "27.12.2021"
     },
-    "custom-swiftui-view-library" : {
+    "how-add-view-to-swiftui-library" : {
         "title" : "Как добавить кастомную SwiftUI View в библиотеку Xcode",
         "description" : "В этой статье я покажу как добавить свою View в Xcode Library с помощью LibraryContentProvider.",
         "category" : "swiftui",
