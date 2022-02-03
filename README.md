@@ -24,20 +24,30 @@ You can set text, pictures and video. I offer my hosting, but you can use any ot
 
 Basic markdown functions are supported, like title, subtitle and paragraph. Also available link, images and video. Here provided list:
 
+Titles
+
 ```
-// Titles
 # Title
 ## Subtitle
 ### Paragraph
+```
 
-// Link
+Link
+
+```
 [Link Name](url)
+```
 
-// Formatting
+Formatting
+
+```
 ***bold***
 >Text that is a quote
+```
 
-// Image and video
+Image and Video
+ 
+```
 ![Image Description](https://myoctocat.com/assets/images/base-octocat.svg)
 [Video Description](https://cdn.ivanvorobei.by/websites/sparrowcode.io/drag-and-drop-part-1/drag-delegate.mov)
 ```
