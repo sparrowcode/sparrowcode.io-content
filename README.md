@@ -41,8 +41,8 @@ Link
 Formatting
 
 ```
-***bold***
->Text that is a quote
+***Bold Text***
+>Higlight quote in orange area 
 ```
 
 Image and Video
