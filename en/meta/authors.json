@@ -1,1 +1,13 @@
-{}
+{
+    "wmorgue": {
+        "name": "Nikita Rossik",
+        "description": "Reverse Engineering Enthusiast,  Developer.",
+        "avatar": "https://cdn.ivanvorobei.by/websites/sparrowcode.io/authors/wmorgue.jpg",
+        "buttons": [
+            {
+                "name": "GitHub",
+                "link": "https://github.com/wmorgue"
+            }
+        ]
+    }
+}
