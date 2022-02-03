@@ -10,7 +10,7 @@
 
 [Разработка](https://developer.apple.com/documentation/): Документации для разработчиков. В туториалах рассказывается о технологиях с примерами кода. Уже доступны туториалы о Xcode Cloud и Concurrency.
 
-[Гайды](https://developer.apple.com/design/): Про проективрование интерфейса - архитектуру, жесты, UI-элементы и другое. Есть интерактивные видео для наглядности.
+[Гайды](https://developer.apple.com/design/): Про проектирование интерфейса - архитектуру, жесты, UI-элементы и другое. Есть интерактивные видео для наглядности.
 
 [Релизы](https://developer.apple.com/download/release/): Новые версии операционных систем и приложений. Можно глянуть список изменений и скачать Xcode не из стора.
 
@@ -84,7 +84,7 @@
 
 [Alamofire](https://github.com/Alamofire/Alamofire): Фасад для сетевых запросов.
 
-[SwiftyJSON](https://github.com/SwiftyJSON/SwiftyJSON): Будете быстрее разоврачивать значения в `JSON`.
+[SwiftyJSON](https://github.com/SwiftyJSON/SwiftyJSON): Будете быстрее разворачивать значения в `JSON`.
 
 [Nuke](https://github.com/kean/Nuke): Использует нативные инструменты чтобы кэшировать изображения.
 
