@@ -3,7 +3,7 @@
         "title" : "Drag и Drop",
         "description" : "Как изменить порядок ячеек в коллекции и таблице. Как перенести ячейки в другую коллекцию. Перемещение нескольких ячеек группой.",
         "category" : "uikit",
-        "author_github_username" : "ivanvorobei",
+        "author" : "ivanvorobei",
         "keywords" : [
             "UICollectionViewDragDelegate",
             "UICollectionViewDropDelegate",
@@ -19,7 +19,7 @@
         "title" : "StoreKit 2",
         "description" : "Apple пересмотрела логику покупок и переписала StoreKit. Буду много хвалить - крутой апдейт этого года.",
         "category" : "storekit",
-        "author_github_username" : "ivanvorobei",
+        "author" : "ivanvorobei",
         "keywords" : [
             
         ],
@@ -30,7 +30,7 @@
         "title" : "UISheetPresentationController",
         "description" : "В iOS 15 появились sheet-контроллеры. Их можно перетаскивать с изменением высоты. Вы встречали эти контроллеры в приложениях «Карты» и «Акции».",
         "category" : "uikit",
-        "author_github_username" : "ivanvorobei",
+        "author" : "ivanvorobei",
         "keywords" : [
             "UISheetPresentationController",
             "Model Controllers",
@@ -44,7 +44,7 @@
         "title" : "SF Symbols 3",
         "description" : "Вместе c iOS 15 обновили SF Symbols до 3-ей версии. Добавили 600 новых символов и разные способы покрасить их. Некоторые символы получили вариации форм.",
         "category" : "uikit",
-        "author_github_username" : "ivanvorobei",
+        "author" : "ivanvorobei",
         "keywords" : [
             "UIKit",
             "SwiftUI",
@@ -57,7 +57,7 @@
         "title" : "Жизненный цикл UIViewController",
         "description" : "Рассмотрим когда вызываются методы контроллера и что можно делать внутри них. Когда настраивать вьюхи и данные.",
         "category" : "uikit",
-        "author_github_username" : "ivanvorobei",
+        "author" : "ivanvorobei",
         "keywords" : [
             "UIKit",
             "UIViewController",
@@ -73,7 +73,7 @@
         "title" : "Ресурсы для iOS разработчика",
         "description" : "Подборка полезных ссылок для iOS разработчиков. Структурирована по формату материала. Есть раздел с русскими ресурсами.",
         "category" : "compilation",
-        "author_github_username" : "ivanvorobei",
+        "author" : "ivanvorobei",
         "keywords" : [
             "Ресурсы для iOS разработчиков",
             "туториалы по iOS разработке",
@@ -87,7 +87,7 @@
         "title" : "Как очистить UserDefaults для Mac Catalyst",
         "description" : "Как очистить данные для приложения Catalyst включая AppGroup, Realm и UserDefaults.",
         "category" : "development",
-        "author_github_username" : "ivanvorobei",
+        "author" : "ivanvorobei",
         "keywords" : [
             "UserDefaults",
             "Catalyst"
@@ -99,7 +99,7 @@
         "title" : "Отступы Edge Insets для UIButton",
         "description" : "Как добавить отступ между картинкой и заголовком в кнопке. Как поместить иконку справа от заголовка.",
         "category" : "uikit",
-        "author_github_username" : "ivanvorobei",
+        "author" : "ivanvorobei",
         "keywords" : [
             "imageEdgeInsets",
             "imageEdgeInsets",
@@ -111,8 +111,8 @@
     "product-page-optimization-alternative-icons" : {
         "title" : "Альтернативные иконки для Product Page Optimization",
         "description" : "Как добавить альтернативные иконки для A/B тестов на странице приложения.",
-        "category" : "appstore_connect",
-        "author_github_username" : "alxrguz",
+        "category" : "app_store_connect",
+        "author" : "alxrguz",
         "keywords" : [
             "alternative icons"
         ],
