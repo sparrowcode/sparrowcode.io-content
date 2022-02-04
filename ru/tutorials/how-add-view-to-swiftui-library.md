@@ -69,7 +69,7 @@ struct UserProfileLibrary: LibraryContentProvider {
 Именно `LibraryContentProvider` предоставляет возможность добавлять кастомные View в библиотеку Xcode.
 После добавления, перейдем в `ContentView.swift` файл и добавим пользователя.
 
-![UserProfileLibrary](https://cdn.ivanvorobei.by/websites/sparrowcode.io/how-add-view-to-swiftui-library/user_profile_library.mov)
+[UserProfileLibrary](https://cdn.ivanvorobei.by/websites/sparrowcode.io/how-add-view-to-swiftui-library/user_profile_library.mov)
 
 Существуют некоторые ограничения:
 
