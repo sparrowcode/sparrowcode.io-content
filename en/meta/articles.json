@@ -3,7 +3,7 @@
         "title" : "How to add custom SwiftUI View to View Library",
         "description" : "In that article, I teach you how to add a code snippet to the Library.",
         "category" : "swiftui",
-        "author_github_username" : "wmorgue",
+        "author" : "wmorgue",
         "keywords" : [
             "xcode",
             "library",
