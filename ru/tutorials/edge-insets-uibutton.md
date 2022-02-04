@@ -41,7 +41,7 @@ previewButton.titleEdgeInsets.left = 10
 
 Это та симметрия, про которую писал выше.
 
-***`imageEdgeInsets` и `titleEdgeInsets` не меняют размер кнопки. А вот `contentEdgeInsets` - меняет.***
+>`imageEdgeInsets` и `titleEdgeInsets` не меняют размер кнопки. А вот `contentEdgeInsets` - меняет.
 
 Запомните это, и больше не будет проблем с правильными отступами. Давайте усложним задачу - поставим иконку справа от заголовка.
 
