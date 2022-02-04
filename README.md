@@ -1,6 +1,6 @@
 # Tutorials
 
-Tutorials are available at [sparrowcode.io/en](https://sparrowcode.io) & [sparrowcode.io/ru](https://sparrowcode.io).
+Tutorials are available at [sparrowcode.io/en](https://sparrowcode.io/en) & [sparrowcode.io/ru](https://sparrowcode.io).
 Here you can add a new tutorial, supplement or correct typos in existing tutorials. If you want to help the project, take a look at the [todo](https://github.com/sparrowcode/tutorials/blob/main/TODO.md) list.
 
 ## Navigate
