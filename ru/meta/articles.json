@@ -123,7 +123,7 @@
         "title" : "Как добавить кастомную SwiftUI View в библиотеку Xcode",
         "description" : "В этой статье я покажу как добавить свою View в Xcode Library с помощью LibraryContentProvider.",
         "category" : "swiftui",
-        "author_github_username" : "wmorgue",
+        "author" : "wmorgue",
         "keywords" : [
             "xcode",
             "library",
