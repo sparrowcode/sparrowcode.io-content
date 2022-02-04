@@ -73,7 +73,7 @@ The way we add a view to View Library is quite similar to how we make our view s
 The `LibraryContentProvider` protocol provides an ability to add custom views to the Xcode library.
 After that, we go to the `ContentView.swift` file and add the user view.
 
-![UserProfileLibrary](https://cdn.ivanvorobei.by/websites/sparrowcode.io/how-add-view-to-swiftui-library/user_profile_library.mov)
+[UserProfileLibrary](https://cdn.ivanvorobei.by/websites/sparrowcode.io/how-add-view-to-swiftui-library/user_profile_library.mov)
 
 Caveat:
 
