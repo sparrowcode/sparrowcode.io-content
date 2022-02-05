@@ -82,7 +82,13 @@ C помощью `LibraryContentProvider` добавляем кастомные 
 3. При добавлении View в код, добавляется заранее _прописанное_ значение. В нашем случае это структура `User()`:
 
 ```swift
-UserProfileView(user: User(name: "Nikita", imageName: "Nikita", githubProfile: "wmorgue"))
+UserProfileView(
+   user: User(
+      name: "Nikita", 
+      imageName: "Nikita", 
+      githubProfile: "wmorgue
+   )
+)
 ```
 
 Надеюсь в будущих версиях можно будет добавить описание и иконку.
