@@ -1,24 +1,23 @@
-SwiftUI был спроектирован таким образом, чтобы View можно было легко переиспользовать.
-
-## Библиотека View
-
-Библиотека в Xcode предоставляет доступ ко всем возможным SwiftUI View, модификаторам (modifiers), изображениям и т.д. Вы можете перетянуть или кликнуть дважды по выбранному элементу, чтобы добавить View в свой код.
+Библиотека в Xcode предоставляет доступ к SwiftUI View, модификаторам (modifiers), изображениям и т.д. Вы можете перетянуть или кликнуть дважды по выбранному элементу, чтобы добавить View в свой код.
 
 ![Xcode View Library](https://cdn.ivanvorobei.by/websites/sparrowcode.io/how-add-view-to-swiftui-library/xcode_library.png)
 
 ## Кастомная View
 
-Первым делом, реализуем свою View, которая будет отвечать за профиль пользователя.
+Сделаем кастомную вью, которую будем добавлять в библиотеку. Я сделаю профиль пользователя. Пример модели:
 
 ```swift
-//filename: UserProfileView.swift
-
 struct User {
 	let name: String
 	let imageName: String
 	let githubProfile: String
 }
 
+```
+
+А так будет выглядеть вью:
+
+```swift
 struct UserProfileView: View {
 	let user: User
 	
@@ -40,14 +39,13 @@ struct UserProfileView: View {
 }
 ```
 
+Результат:
+
 ![UserProfile_Preview](https://cdn.ivanvorobei.by/websites/sparrowcode.io/how-add-view-to-swiftui-library/user_profile_preview.png)
 
-Так выглядит профиль.
+## Добавляем в библиотеку
 
-
-## Добавляем нашу View в библиотеку
-
-Для этого создадим отдельный файл `UserProfileLibrary.swift`, определим структуру, которая наследуется от [LibraryContentProvider](https://developer.apple.com/documentation/developertoolssupport/librarycontentprovider?changes=latest_minor).
+Cоздаем файл `UserProfileLibrary.swift`. Определим структуру, которая наследуется от [LibraryContentProvider](https://developer.apple.com/documentation/developertoolssupport/librarycontentprovider?changes=latest_minor).
 
 ```swift
 //filename: UserProfileLibrary.swift
@@ -66,12 +64,13 @@ struct UserProfileLibrary: LibraryContentProvider {
 	}
 }
 ```
-Именно `LibraryContentProvider` предоставляет возможность добавлять кастомные View в библиотеку Xcode.
-После добавления, перейдем в `ContentView.swift` файл и добавим пользователя.
+
+C помощью `LibraryContentProvider` добавляем кастомные View в библиотеку Xcode.
+Перейдем в `ContentView.swift` файл и добавим пользователя.
 
 [UserProfileLibrary](https://cdn.ivanvorobei.by/websites/sparrowcode.io/how-add-view-to-swiftui-library/user_profile_library.mov)
 
-Существуют некоторые ограничения:
+Есть ограничения:
 
 1. Нельзя добавить описание к своей View, поэтому поле справа пустое — **No Details**.
 2. Нельзя добавить иконку.
@@ -81,5 +80,5 @@ struct UserProfileLibrary: LibraryContentProvider {
 UserProfileView(user: User(name: "Nikita", imageName: "Nikita", githubProfile: "wmorgue"))
 ```
 
-Остается ждать изменений в будущих версиях, чтобы появилась возможность добавить описание и иконку.
-Проект доступен для [скачивания](https://cdn.ivanvorobei.by/websites/sparrowcode.io/how-add-view-to-swiftui-library/MyApp.zip).
+Надеюсь в будущих версиях можно будет добавить описание и иконку.
+Проект из туториала можно [скачать](https://cdn.ivanvorobei.by/websites/sparrowcode.io/how-add-view-to-swiftui-library/MyApp.zip).
