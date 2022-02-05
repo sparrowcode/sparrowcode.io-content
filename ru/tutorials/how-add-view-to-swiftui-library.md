@@ -19,6 +19,7 @@ struct User {
 
 ```swift
 struct UserProfileView: View {
+
     let user: User
     
     var body: some View {
