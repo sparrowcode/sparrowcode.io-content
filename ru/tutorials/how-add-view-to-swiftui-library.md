@@ -55,7 +55,12 @@ struct UserProfileLibrary: LibraryContentProvider {
     @LibraryContentBuilder
     var views: [LibraryItem] {
         LibraryItem(
-            UserProfileView(user: User(name: "Nikita", imageName: "Nikita", githubProfile: "wmorgue")),
+            UserProfileView(
+               user: User(
+                  name: "Nikita", 
+                  imageName: "Nikita", 
+                  githubProfile: "wmorgue")
+            ),
             visible: true,    // будет ли доступна наша View в библиотеке
             title: "User Profile", // заголовок, который будет отображаться
             category: .control, // доступно несколько категорий на выбор
