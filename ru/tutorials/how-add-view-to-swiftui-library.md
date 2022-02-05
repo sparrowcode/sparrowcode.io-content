@@ -12,7 +12,6 @@ struct User {
    let imageName: String
    let githubProfile: String
 }
-
 ```
 
 А так будет выглядеть вью:
