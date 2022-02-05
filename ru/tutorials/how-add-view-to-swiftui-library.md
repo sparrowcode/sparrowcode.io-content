@@ -8,9 +8,9 @@
 
 ```swift
 struct User {
-	let name: String
-	let imageName: String
-	let githubProfile: String
+   let name: String
+   let imageName: String
+   let githubProfile: String
 }
 
 ```
@@ -19,23 +19,23 @@ struct User {
 
 ```swift
 struct UserProfileView: View {
-	let user: User
-	
-	var body: some View {
-		HStack {
-			Image(user.imageName)
-				.resizable()
-				.frame(width: 40, height: 40)
-				.clipShape(Circle())
-			
-			VStack(alignment: .leading) {
-				Text(user.name)
-				Text(user.githubProfile)
-					.foregroundColor(.gray)
-			}
-		}
-		.padding(.all)
-	}
+    let user: User
+    
+    var body: some View {
+        HStack {
+            Image(user.imageName)
+                .resizable()
+                .frame(width: 40, height: 40)
+                .clipShape(Circle())
+            
+            VStack(alignment: .leading) {
+                Text(user.name)
+                Text(user.githubProfile)
+                    .foregroundColor(.gray)
+            }
+        }
+        .padding(.all)
+    }
 }
 ```
 
@@ -51,17 +51,17 @@ Cоздаем файл `UserProfileLibrary.swift`. Определим струк
 //filename: UserProfileLibrary.swift
 
 struct UserProfileLibrary: LibraryContentProvider {
-	
-	@LibraryContentBuilder
-	var views: [LibraryItem] {
-		LibraryItem(
-			UserProfileView(user: User(name: "Nikita", imageName: "Nikita", githubProfile: "wmorgue")),
-			visible: true,	// будет ли доступна наша View в библиотеке
-			title: "User Profile", // заголовок, который будет отображаться
-			category: .control, // доступно несколько категорий на выбор
-			matchingSignature: "UserProfile" // сигнатура для автокомплита
-		)
-	}
+    
+    @LibraryContentBuilder
+    var views: [LibraryItem] {
+        LibraryItem(
+            UserProfileView(user: User(name: "Nikita", imageName: "Nikita", githubProfile: "wmorgue")),
+            visible: true,    // будет ли доступна наша View в библиотеке
+            title: "User Profile", // заголовок, который будет отображаться
+            category: .control, // доступно несколько категорий на выбор
+            matchingSignature: "UserProfile" // сигнатура для автокомплита
+        )
+    }
 }
 ```
 
