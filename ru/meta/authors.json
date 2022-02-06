@@ -39,5 +39,20 @@
                 "link": "https://github.com/wmorgue"
             }
         ]
+    },
+    "somenkovnikita": {
+        "name": "Никита Соменков",
+        "description": "iOS разработчик. Развиваю свой проект, и тоже за нативный дизайн",
+        "avatar": "https://cdn.ivanvorobei.by/websites/sparrowcode.io/authors/somenkovnikita.jpg",
+        "buttons": [
+            {
+                "name": "GitHub",
+                "link": "https://github.com/somenkovnikita"
+            },
+            {
+                "name" : "Projects",
+                "link" : "https://apps.somenkov.ru"
+            }
+        ]
     }
 }
