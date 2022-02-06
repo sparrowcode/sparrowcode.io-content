@@ -11,5 +11,19 @@
         ],
         "updated_date": "03.02.2022",
         "added_date": "03.02.2022"
+    },
+    "edge-insets-uibutton" : {
+        "title" : "Edge Insets for UIButton",
+        "description" : "How to add an indent between the picture and the header in a button. How to place the icon to the right of the header.",
+        "category" : "uikit",
+        "author" : "ivanvorobei",
+        "translator": "svtnck",
+        "keywords" : [
+            "UIButton",
+            "imageEdgeInsets",
+            "contentEdgeInsets"
+        ],
+        "updated_date" : "06.02.2022",
+        "added_date" : "05.02.2022"
     }
 }

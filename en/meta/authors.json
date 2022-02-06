@@ -1,4 +1,34 @@
 {
+    "ivanvorobei" : {
+        "name" : "Ivan Vorobei",
+        "description" : "iOS Developer. Making opensource frameworks & writing tutorials.",
+        "avatar" : "https://cdn.ivanvorobei.by/websites/sparrowcode.io/authors/ivanvorobei.jpg",
+        "buttons" : [
+            {
+                "name" : "GitHub",
+                "link" : "https://github.com/ivanvorobei"
+            },
+            {
+                "name" : "App Store",
+                "link" : "https://apps.ivanvorobei.by"
+            }
+        ]
+    },
+    "svtnck": {
+        "name": "Nikolay Pelevin",
+        "description": "iOS Developer, candy lover.",
+        "avatar": "https://cdn.ivanvorobei.by/websites/sparrowcode.io/authors/svtnck.jpg",
+        "buttons": [
+            {
+                "name": "GitHub",
+                "link": "https://github.com/svyatoynick"
+            },
+            {
+                "name" : "App Store",
+                "link" : "https://apps.pelevin.me"
+            }
+        ]
+    },
     "wmorgue": {
         "name": "Nikita Rossik",
         "description": "Reverse Engineering Enthusiast,  Developer.",
