@@ -15,7 +15,7 @@ Here you can add a new tutorial, translate or correct typos in existing tutorial
 ## Articles
 
 Choose the language in which you want to write. Then your article may be translated into another language with an indication of the author. Now available in Russian `ru` and English `en`.
-Create a file with the name of the path where the page will be accessible, for example new file `/en/tutorials/edge-insets-uibutton`.
+Create a file with the name of the path where the page will be accessible, for example new file [/en/tutorials/edge-insets-uibutton.md](/en/tutorials/edge-insets-uibutton.md).
 
 ### Content
 
