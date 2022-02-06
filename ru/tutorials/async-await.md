@@ -39,7 +39,11 @@ func loadImage(for url: URL, completion: @escaping Completion) {
     )
 	task.resume()
 }
+```
 
+Теперь наша удобная обертка может выглядить так:
+
+```swift
 extension UIImageView {
 
     func setImage(url: URL) {
@@ -255,7 +259,7 @@ DispatchQueue.main.async {
 }
 ```
 
-`Task` по умолчанию наследует приоритет и контекст у задачи родителя а если нет родителя, то у текущего `actor`. То есть, например, создавая Task как в нашем примере в viewWillAppear(), мы неявно вызываем его на главном потоке, когда дойдем до `actor` станет понятно почему именно так. `cardsTask` и `userInfoTask` вызовутся также на главном потоке, из-за того, что `Task` наследует это из родительской задачи. Обратите внимание также на то, что мы не сохранили `Task`, но содержимое отработает, `self` захватиться сильно, это надо учитывать при использовании Task. Если вы решим удалить контроллер, до того, например, закроем его с помощью `dismiss()`, код `Task` продолжит выполняться дальше, однако мы можем сохранить ссылку на на нашу задачу и отменить ее в нужное время:
+`Task` по умолчанию наследует приоритет и контекст у задачи родителя а если нет родителя, то у текущего `actor`. То есть, например, создавая Task как в нашем примере в `viewWillAppear()`, мы неявно вызываем его на главном потоке, когда дойдем до `actor` станет понятно почему именно так. `cardsTask` и `userInfoTask` вызовутся также на главном потоке, из-за того, что `Task` наследует это из родительской задачи. Обратите внимание также на то, что мы не сохранили `Task`, но содержимое отработает, `self` захватиться сильно, это надо учитывать при использовании Task. Если вы решим удалить контроллер, до того, например, закроем его с помощью `dismiss()`, код `Task` продолжит выполняться дальше, однако мы можем сохранить ссылку на на нашу задачу и отменить ее в нужное время:
 
 ```swift
 final class MyViewController: UIViewController {
@@ -344,7 +348,7 @@ func downloadImageAndMetadata(imageNumber: Int) async throws -> DetailedImage {
 }
 ```
 
-Глобальная разница почему не надо использовать просто Task в данном случае - отмена `downloadImageAndMetadata` после успешной загрузки `image` уже не должна отменять сохранение на диск, а при обычной `Task` это бы и произошло. При выборе detached/не detached нужно просто понять, зависит ли подзадача от задачи родителя в вашем кейсе.
+Глобальная разница почему не надо использовать просто `Task` в данном случае - отмена `downloadImageAndMetadata` после успешной загрузки `image` уже не должна отменять сохранение на диск, а при обычной `Task` это бы и произошло. При выборе detached/не detached нужно просто понять, зависит ли подзадача от задачи родителя в вашем кейсе.
 
 Если вам необходимо запустить целый массив операций, например, загрузить список изображений по массиву URL, имеется `TaskGroup` который можно создать с помощью `withTaskGroup/withThrowingTaskGroup`. Использование:
 
@@ -382,6 +386,7 @@ actor ImageDownloader {
 
 let imageDownloader = ImageDownloader()
 imageDownloader.cache["image"] = UIImage() // ошибка компиляции
+// error: actor-isolated property 'cache' can only be referenced from inside the actor
 ```
 
 Чтобы теперь использовать `cache` необходимо обращаться к нему в `async` контексте, но не напрямую, а через метод.
@@ -402,7 +407,9 @@ Task {
 }
 ```
 
-Таким образом `actor` может решать проблемы гонки данных, вся логика по синхронизации работает под капотом. При этом неверные действия вызовут ошибку компилятора, как в примере выше. По свойствам `actor` это что-то между `class` и `struct` - является ссылочным типом значений, но наследоваться от него нельзя. Отлично подходит для написания сервиса.
+Таким образом `actor` может решать проблемы гонки данных, вся логика по синхронизации работает под капотом. При этом неверные действия вызовут ошибку компилятора, как в примере выше.
+
+По свойствам `actor` это что-то между `class` и `struct` - является ссылочным типом значений, но наследоваться от него нельзя. Отлично подходит для написания сервиса.
 
 Новая система асинхронности построена так, чтобы мы перестали думать потоками. Если без фанатизма углубиться в то как работают акторы, можно увидеть, что `actor` - это удобная обертка, которая генерирует `class`, который подписывается под протокол `Actor` + щепотка проверок:
 
@@ -531,6 +538,7 @@ struct ITunesResultEntry: Decodable {
 ```
 
 C такими структурами работать в приложении будет не удобно, да и вообще не очень правильно зависеть от модельки сервера, поэтому добавим прослойку:
+
 ```swift
 struct AppEnity {
 
@@ -549,12 +557,10 @@ struct AppEnity {
 }
 ```
 
-У нас есть все, чтобы создать сервис:
+У нас есть все, чтобы создать сервис. Напишем через `actor`:
 
 ```swift
 actor AppsSearchService {
-
-    private static let baseURLString: String = "https://itunes.apple.com"
 
     func search(with query: String) async throws -> [AppEnity]  {
         let url = buildSearchRequest(for: query)
@@ -575,6 +581,16 @@ actor AppsSearchService {
         return entities
     }
 
+}
+```
+
+Будет использовать `URLComponents` для красоты и модульнусти решения, вместо работы со строчками, к тому же `URLComponents` избавить от проблем с URL-encoding:
+
+```swift
+extension AppsSearchService {
+
+    private static let baseURLString: String = "https://itunes.apple.com"
+
     private func buildSearchRequest(for query: String) -> URL {
         var components = URLComponents(string: Self.baseURLString)
 
@@ -590,6 +606,12 @@ actor AppsSearchService {
 
         return url
     }
+```
+
+Переведем нашу модель данных с сервера в нашу, чтобы нам было удобней работать с view.
+
+```swift
+extension AppsSearchService {
 
     private func convert(entry: ITunesResultEntry, position: Int) -> AppEnity? {
         guard let appStoreURL = URL(string: entry.trackViewUrl) else {
@@ -616,9 +638,7 @@ actor AppsSearchService {
 }
 ```
 
-Да, с использованием `async` получается очень понятный линейный код. Чтобы функция вернула ошибку используем `throw`, любые ошибки декодирования или сетевого запроса будут также проброшены наверх по аналогии с обычной функцией, которая может вернуть ошибку.
-
-Как видно нам приходят не сами изображения, а URL до них. Как известно, когда мы будет выводить ячейку таблицы она будет переконфигурироваться при скролле. Чтобы не качать иконку на каждый чих, нам стоит сохранять ее в кеш, а также отменять загрузку, если иконка уже не требуется. Часто программисты скидывают это логику на библиотеки типа Nuke. Но с `async/await` мы можем написать упрощенный Nuke:
+Как видно нам приходят не сами изображения, а URL до них. Как известно, когда мы будет выводить ячейку таблицы она будет переконфигурироваться при скролле. Чтобы не качать иконку на каждый чих, нам стоит сохранять ее в кеш, а также отменять загрузку, если иконка уже не требуется. Часто программисты скидывают это логику на библиотеки типа `Nuke`. Но с `async/await` мы можем написать упрощенный `Nuke`:
 
 ```swift
 actor ImageLoaderService {
@@ -694,17 +714,7 @@ extension UIImageView {
 ```swift
 final class AppSearchCell: UITableViewCell {
 
-    private lazy var iconApp = UIImageView()
-    private lazy var activityIndicatorView = UIActivityIndicatorView()
-    private lazy var appNameLabel = UILabel()
-    private lazy var developerLabel = UILabel()
-    private lazy var ratingLabel = UILabel()
-
     private var loadImageTask: Task<Void, Never>?
-
-}
-
-extension AppSearchCell {
 
     func configure(with appEntity: AppEnity) {
         appNameLabel.text = appEntity.position.formatted() + ". " + appEntity.name
@@ -737,20 +747,10 @@ extension AppSearchCell {
 
 Теперь, если иконка отсутствует в кеше, она будет загружаться, а в процессе загрузки на экране будет отображаться loading стейт. А в случае если загрузка еще не закончилась, а пользователь проскроллил далее и ячейка переконфигурировалась, предыдущая загрузка отмениться, начнется новая.
 
-Наш `ViewController` выглядит так (layout намерено упущен):
+Подготовим `ViewController` (layout и детали работы с таблицей намерено упущены):
 
 ```swift
 final class AppSearchViewController: UIViewController {
-
-    // MARK: - Neested Types
-
-    enum Section: Hashable {
-        case main
-    }
-
-    enum Cell: Hashable {
-        case app(AppEnity)
-    }
 
     enum State {
         case initial
@@ -759,21 +759,6 @@ final class AppSearchViewController: UIViewController {
         case data([AppEnity])
         case error(Error)
     }
-
-    typealias Snapshot = NSDiffableDataSourceSnapshot<Section, Cell>
-    typealias DataSource = UITableViewDiffableDataSource<Section, Cell>
-
-    // MARK: - Subviews
-
-    private lazy var tableView = UITableView(frame: .zero, style: .insetGrouped)
-    private lazy var searchController = UISearchController(searchResultsController: nil)
-
-    private lazy var activityIndicatorView = UIActivityIndicatorView()
-    private lazy var statusLabel = UILabel()
-
-    // MARK: - Private Properties
-
-    private lazy var dataSource = createDataSource()
 
     private var searchingTask: Task<Void, Never>?
     private lazy var searchService = AppsSearchService()
@@ -814,7 +799,11 @@ final class AppSearchViewController: UIViewController {
     }
 
 }
+```
 
+Опишем делегат, чтобы реагировать на поиск
+
+```swift
 extension AppSearchViewController: UISearchControllerDelegate, UISearchBarDelegate {
 
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
