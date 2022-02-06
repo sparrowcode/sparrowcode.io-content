@@ -93,7 +93,6 @@ func loadImage(for url: URL) async throws -> UIImage {
 
     return image
 }
-
 ```
 
 Теперь нашу функцию надо вызывать с помощью `Task` - базового юнита асинхронной задачи. Мы поговорим подробней о этой структуре ниже, сейчас же посмотрим на одну из реализаций `setImage(url: URL)`
@@ -142,13 +141,13 @@ func loadImage(for url: URL) async throws -> UIImage {
 А что если хотим запустить, к примеру, две асинхронные функции параллельно? Используя `async` - легко:
 
 ```swift
-func loadUserPage(id: String) async throws -> (UIImage, CertificateModel)  {
-let user = try await loadUser(for: id)
+func loadUserPage(id: String) async throws -> (UIImage, CertificateModel) {
+    let user = try await loadUser(for: id)
 
-async let avatarImage = loadImage(user.avatarURL)
+    async let avatarImage = loadImage(user.avatarURL)
     async let certificates = loadCertificates(for: user)
 
-	return (try await avatarImage, try await certificates)
+    return (try await avatarImage, try await certificates)
 }
 ```
 
@@ -214,7 +213,6 @@ Task {
         showErrorInUI(error: error)
     }
 }
-
 ```
 
 Попробую привести аналогию на GCD для этого кода, которая приблизительно описывает что происходит:
@@ -616,7 +614,6 @@ actor AppsSearchService {
     }
 
 }
-
 ```
 
 Да, с использованием `async` получается очень понятный линейный код. Чтобы функция вернула ошибку используем `throw`, любые ошибки декодирования или сетевого запроса будут также проброшены наверх по аналогии с обычной функцией, которая может вернуть ошибку.
