@@ -10,7 +10,7 @@ Here you can add a new tutorial, supplement or correct typos in existing tutoria
   - [Formatting](#formatting)
   - [Meta](#meta)
   - [Publish](#publish)
-- [Your Apps](#your-apps)
+- [Apps](#apps)
 
 ## Articles
 
@@ -84,7 +84,7 @@ Authors available at [/en/meta/authors.json](/en/meta/authors.json). Fill in a s
 
 Push changes and make pull request. I will approve it shortly and it will be available on website.
 
-## Your Apps
+## Apps
 
 Choose the language in which you want to write. If you want add app to `en`, navigate to file [en/meta/apps.json](en/meta/apps.json). If your app supported `en` and `ru`, make changes for both files.
 
