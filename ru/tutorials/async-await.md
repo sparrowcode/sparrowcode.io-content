@@ -936,6 +936,13 @@ func saveWorkoutToHealthKitAsync(runWorkout: RunWorkout) async throws {
 
 ### Ссылки
 
-[https://habr.com/ru/company/otus/blog/588540/](https://habr.com/ru/company/otus/blog/588540/)
-[https://www.swiftbysundell.com/articles/the-main-actor-attribute/](https://www.swiftbysundell.com/articles/the-main-actor-attribute/)
-[https://www.andyibanez.com/posts/modern-concurrency-in-swift-introduction/](https://www.andyibanez.com/posts/modern-concurrency-in-swift-introduction/)
+Полезные ссылки:
+- [Скачать проект-пример](https://cdn.ivanvorobei.by/websites/sparrowcode.io/async-await/app-store-search.zip)
+- [Хорошая серия статей о async/await](https://www.andyibanez.com/posts/modern-concurrency-in-swift-introduction/)
+- [Больше информации о устройстве акторов под капотом на Хабре](https://habr.com/ru/company/otus/blog/588540/)
+- [Исходный код: для тех кто хочет узнать познать истину](https://github.com/apple/swift/tree/main/stdlib/public/Concurrency)
+
+WWDC-сессии:
+- [Protect mutable state with Swift actors](https://developer.apple.com/wwdc21/10133)
+- [Explore structured concurrency in Swift](https://developer.apple.com/wwdc21/10134)
+- [Meet async/await in Swift](https://developer.apple.com/wwdc21/10132)
