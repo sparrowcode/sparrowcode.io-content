@@ -37,7 +37,7 @@ func loadImage(for url: URL, completion: @escaping Completion) {
             completion(.success(image))
         }
     )
-	task.resume()
+    task.resume()
 }
 ```
 
@@ -107,7 +107,7 @@ extension UIImageView {
     func setImage(url: URL) {
         Task {
             do {
-				let image = try await loadImage(for: url)
+                let image = try await loadImage(for: url)
                 self.image = image
             } catch {
                 print(error.localizedDescription)
@@ -236,7 +236,7 @@ DispatchQueue.main.async {
 
     dispatchGroup.enter()
     DispatchQueue.main.async {
-		/* запрос на модель о пользователе */
+        /* запрос на модель о пользователе */
         userInfoResult = .success(UserInfo())
         dispatchGroup.leave()
     }
@@ -299,14 +299,14 @@ loadingTask = Task {
     do {
         let cards = try await cardsTask.value
 
-		guard !Task.isCancelled else { return }
+        guard !Task.isCancelled else { return }
         let userInfo = try await userInfoTask.value
 
-		guard !Task.isCancelled else { return }
+        guard !Task.isCancelled else { return }
         updateUI(with: userInfo, and: cards)
 
         Task(priority: .background) {
-			guard !Task.isCancelled else { return }
+            guard !Task.isCancelled else { return }
             await saveUserInfoIntoCache(userInfo: userInfo)
         }
     } catch {
@@ -415,7 +415,7 @@ Task {
 
 ```swift
 public protocol Actor: AnyObject, Sendable {
-	nonisolated var unownedExecutor: UnownedSerialExecutor { get }
+    nonisolated var unownedExecutor: UnownedSerialExecutor { get }
 }
 
 final class ImageDownloader: Actor {
@@ -901,14 +901,14 @@ func saveWorkoutToHealthKit(runWorkout: RunWorkout, completion: @escaping (Resul
 func saveWorkoutToHealthKitAsync(runWorkout: RunWorkout) async throws {
     let store = HKHealthStore()
     let routeBuilder = HKWorkoutRouteBuilder(
-		healthStore: store,
-		device: .local()
-	)
+        healthStore: store,
+        device: .local()
+    )
     let workout = HKWorkout(
-		activityType: .running,
-		start: runWorkout.startDate,
-		end: runWorkout.endDate
-	)
+        activityType: .running,
+        start: runWorkout.startDate,
+        end: runWorkout.endDate
+    )
 
     try await store.save(workout)
     try await store.addSamples(runWorkout.heartRateSamples, to: workout)
