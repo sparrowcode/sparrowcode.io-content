@@ -5,13 +5,14 @@ Here you can add a new tutorial, supplement or correct typos in existing tutoria
 
 ## Navigate
 
-- [Contribute](#contribute)
+- [Articles](#articles)
   - [Content](#content)
   - [Formatting](#formatting)
   - [Meta](#meta)
   - [Publish](#publish)
+- [Your Apps](#your-apps)
 
-## Contribute
+## Articles
 
 Choose the language in which you want to write. Then your article may be translated into another language with an indication of the author. Now available in Russian `ru` and English `en`.
 Create a file with the name of the path where the page will be accessible, for example new file `/en/tutorials/edge-insets-uibutton`.
@@ -82,3 +83,25 @@ Authors available at [/en/meta/authors.json](/en/meta/authors.json). Fill in a s
 ### Publish
 
 Push changes and make pull request. I will approve it shortly and it will be available on website.
+
+## Your Apps
+
+Choose the language in which you want to write. If you want add app to `en`, navigate to file [en/meta/apps.json](en/meta/apps.json). If your app supported `en` and `ru`, make changes for both files.
+
+Fill with example data: 
+
+```json
+{
+  "developer_name" : "Ivan Vorobei",
+  "github_username" : "ivanvorobei",
+  "apps" : [
+    {
+      "id" : "1570676244",
+      "name" : "Debts - Debt Tracker",
+      "added_date" : "06.02.2022"
+    }
+  ]
+}
+```
+
+And open PR after.
