@@ -1,9 +1,11 @@
-{
-    "ivanvorobei" : [
+[
+    "developer_name" : "Иван Воробей",
+    "github_username" : "ivanvorobei",
+    "apps" : [
         {
-            "app_id" : "1570676244",
-            "app_name" : "Долги - Учет расходов",
+            "id" : "1570676244",
+            "name" : "Долги - Учет расходов",
             "added_date" : "06.02.2022"
         }
     ]
-}
+]

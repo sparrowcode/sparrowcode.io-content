@@ -1,9 +1,13 @@
-{
-    "ivanvorobei" : [
-        {
-            "app_id" : "1570676244",
-            "app_name" : "Debts - Debt Tracker",
-            "added_date" : "06.02.2022"
-        }
-    ]
-}
+[
+    {
+        "developer_name" : "Ivan Vorobei",
+        "github_username" : "ivanvorobei",
+        "apps" : [
+            {
+                "id" : "1570676244",
+                "name" : "Debts - Debt Tracker",
+                "added_date" : "06.02.2022"
+            }
+        ]
+    }
+]
