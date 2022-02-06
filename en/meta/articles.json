@@ -25,5 +25,19 @@
         ],
         "updated_date" : "06.02.2022",
         "added_date" : "05.02.2022"
+    },
+    "sf-symbols-3" : {
+        "title" : "SF Symbols 3",
+        "description" : "Together with iOS 15 we updated SF Symbols to version 3. They added 600 new symbols and different ways to color them. Some symbols have received variations in shape.",
+        "category" : "uikit",
+        "author" : "ivanvorobei",
+        "translator": "svtnck",
+        "keywords" : [
+            "UIKit",
+            "SwiftUI",
+            "iOS 15"
+        ],
+        "updated_date" : "06.02.2022",
+        "added_date" : "06.02.2022"
     }
 }
