@@ -86,11 +86,11 @@ Image(systemName: "externaldrive.badge.plus")
 Некоторые символы имеют поддержку форм, например колокольчик `bell` можно вписать в квадарт или круг. В `UIKit` нужно вызывать их по имени - например, `bell.square`, но в SwiftUI есть модификатор `.symbolVariant()`:
 
 ```swift
-// Колокльчик перечеркнут
+// Колокольчик перечеркнут
 Image(systemName: 'bell')
     .symbolVariant(.slash)
 
-// Вписывает в квадарт
+// Вписывает в квадрат
 Image(systemName: 'bell')
     .symbolVariant(.square)
 
