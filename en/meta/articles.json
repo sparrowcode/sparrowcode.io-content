@@ -19,9 +19,9 @@
         "author" : "ivanvorobei",
         "translator": "svtnck",
         "keywords" : [
-            "xcode",
-            "library",
-            "LibraryContentProvider"
+            "imageEdgeInsets",
+            "imageEdgeInsets",
+            "contentEdgeInsets"
         ],
         "updated_date" : "27.12.2021",
         "added_date" : "13.12.2021"
