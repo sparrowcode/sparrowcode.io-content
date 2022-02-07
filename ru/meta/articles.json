@@ -136,8 +136,8 @@
         "added_date": "02.02.2022"
     },
     "async-await" : {
-        "title" : "Асинхронность по-новому или async/await/actor",
-        "description" : "Рассмотрим теорию о async, await, actor, а в конце напишем тузлу используя новый подход",
+        "title" : "Асинхронность с async/await/actor",
+        "description" : "Разберём async, await, actor. Напишем тузлу, используя новые инструменты.",
         "category" : "development",
         "author" : "somenkovnikita",
         "editors" : ["ivanvorobei"],
