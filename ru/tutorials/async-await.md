@@ -831,7 +831,7 @@ extension AppSearchViewController: UISearchControllerDelegate, UISearchBarDelega
 
 Работает iOS 13 из-за того, что фича требует нового рантайма.
 
-Apple принесла асинхронный API в HealthKit (с iOS 13), CoreData (c iOS 15), а новый StoreKit 2 предлагает только асинхронный интерфейс. Код сохранения тренировки стал проще:
+Apple принесла асинхронный API в HealthKit с iOS 13, CoreData c iOS 15, а новый StoreKit 2 предлагает только асинхронный интерфейс. Код сохранения тренировки стал проще:
 
 ```swift
 struct RunWorkout {
