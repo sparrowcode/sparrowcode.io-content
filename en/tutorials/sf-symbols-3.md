@@ -83,7 +83,7 @@ Images that do not have a multicolor option will automatically be displayed in m
 
 ## Symbol Variant
 
-Some symbols have shape support, e.g. a bell `bell` can be inscribed in a quadart or a circle. In `UIKit` you have to call them by name - for example `bell.square`, but in SwiftUI there is a modifier `.symbolVariant()`:
+Some symbols have shape support, e.g. a bell `bell` can be inscribed in a quadrat or a circle. In `UIKit` you have to call them by name - for example `bell.square`, but in SwiftUI there is a modifier `.symbolVariant()`:
 
 ```swift
 // The bell is crossed out

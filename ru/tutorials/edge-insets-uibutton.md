@@ -26,7 +26,7 @@ previewButton.contentEdgeInsets.bottom = 5
 
 Я вынес их в одну секцию не просто так. Чаще всего задача будет сводится к симметричному добавлению отступов с одной стороны, и уменьшению с другой. Звучит сложно, сейчас разрулим.
 
-Добавим отступ между картинкой и заголовоком, пускай `10pt`. Первая мысль - добавить отступ через проперти `imageEdgeInsets`:
+Добавим отступ между картинкой и заголовком, пускай `10pt`. Первая мысль - добавить отступ через проперти `imageEdgeInsets`:
 
 [imageEdgeInsets space between icon and title](https://cdn.ivanvorobei.by/websites/sparrowcode.io/edge-insets-uibutton/image-edge-insets-space-icon-title.mov)
 

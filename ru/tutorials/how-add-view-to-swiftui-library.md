@@ -46,7 +46,7 @@ struct UserProfileView: View {
 
 ## Добавляем в библиотеку
 
-Cоздаем файл `UserProfileLibrary.swift`. Определим структуру, которая наследуется от [LibraryContentProvider](https://developer.apple.com/documentation/developertoolssupport/librarycontentprovider?changes=latest_minor).
+Создаем файл `UserProfileLibrary.swift`. Определим структуру, которая наследуется от [LibraryContentProvider](https://developer.apple.com/documentation/developertoolssupport/librarycontentprovider?changes=latest_minor).
 
 ```swift
 //filename: UserProfileLibrary.swift
