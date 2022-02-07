@@ -1,7 +1,8 @@
 name: Grammar
 on: [pull_request]
-jobs:
-  build-and-test:
+
+jobs:    
+  yaspeller:
     runs-on: ubuntu-latest
     name: Check spelling
     steps:
@@ -9,7 +10,7 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: '16.x'
-          
+
       - run: npm install -g yaspeller
       - run: yaspeller -l ru ru/tutorials/
       - run: yaspeller -l en en/tutorials/
