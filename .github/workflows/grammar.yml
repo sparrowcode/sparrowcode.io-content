@@ -1,0 +1,15 @@
+name: Grammar
+on: [pull_request]
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    name: Check spelling
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '16.x'
+          
+      - run: npm install -g yaspeller
+      - run: yaspeller -l ru ru/tutorials/
+      - run: yaspeller -l en en/tutorials/
