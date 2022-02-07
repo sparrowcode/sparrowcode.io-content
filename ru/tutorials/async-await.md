@@ -345,7 +345,7 @@ func downloadImageAndMetadata(imageNumber: Int) async throws -> DetailedImage {
 }
 ```
 
-Отмена `downloadImageAndMetadata` после загрузки изображения не должна отменять сохранение, а с `Task` сохранение отменяется. При выборе `Task/Task.detached` определите, зависит ли подзадача от задачи родителя.
+Отмена `downloadImageAndMetadata` после успешной загрузки изображения не должна отменять сохранение. С `Task` сохранение бы отменилось. При выборе `Task`/`Task.detached` нужно понять, зависит ли подзадача от задачи родителя в вашем кейсе.
 
 Если нужно запустить массив операций (например: загрузить список изображений по массиву URL) используйте `TaskGroup`, Создавайте его с помощью `withTaskGroup/withThrowingTaskGroup`:
 
@@ -578,6 +578,7 @@ actor AppsSearchService {
 }
 ```
 
+
 Для построения `URL` используем `URLComponents` - красивый, модульный и избавит от проблем с URL-encoding:
 
 ```swift
@@ -634,7 +635,7 @@ extension AppsSearchService {
 
 Приходят URL от изображений.
 
-Ячейка таблица конфигурируется при скроле. Чтобы не качать иконку каждый раз, сохраним в кеш. Программисты скидывают логику на библиотеки типа [Nuke](https://github.com/kean/Nuke), но с `async/await` у нас будет свой `Nuke`:
+Ячейка таблица конфигурируется при скролле. Чтобы не качать иконку каждый раз, сохраним в кеш. Программисты скидывают логику на библиотеки типа [Nuke](https://github.com/kean/Nuke), но с `async/await` у нас будет свой `Nuke`:
 
 ```swift
 actor ImageLoaderService {
@@ -703,9 +704,8 @@ extension UIImageView {
 }
 ```
 
-`imageLoader` переведет работу в бекграунд. `setImage` вызывается из главного потока, но после `await` выполнение **может** продолжиться в бекграунд. Исправим это добавив `@MainActor`.
-
-Кэширование готово, сделаем отмену. Реализация ячейки (layout пропускаю):
+`imageLoader` переведет работу на бекграунд поток. Хотя `setImage` вывозится из главного потока, после `await` выполнение **может** продолжиться на бекграунд. Исправим это добавив `@MainActor`.
+Кэширование готово. Сделаем отмену. Глянем на реализацию ячейки (layout пропускаю):
 
 ```swift
 final class AppSearchCell: UITableViewCell {
@@ -917,7 +917,8 @@ func saveWorkoutToHealthKitAsync(runWorkout: RunWorkout) async throws {
 ### Ссылки
 
 Полезные ссылки:
-- [Скачать проект-пример](https://cdn.ivanvorobei.by/websites/sparrowcode.io/async-await/app-store-search.zip): Попрактикуйтесь, добавив новый экран детали страницы App Store, решите проблему с загрузкой скриншотов и правильной отменой, если пользователь быстро закрыл страницу.
+
+- [Скачать проект-пример](https://cdn.ivanvorobei.by/websites/sparrowcode.io/async-await/app-store-search.zip): Попрактикуйтесь, добавив новый экран деталки страницы App Store, решите проблему с загрузкой скриншотов и правильной отменой, если пользователь быстро закрыл деталку.
 - [Статей о async/await](https://www.andyibanez.com/posts/modern-concurrency-in-swift-introduction/): В этой серии статей есть еще больше примеров использования async/await. Например, раскрыта тема `@TaskLocal` и другие полезные мелочи.
 - [Устройство акторов под капотом](https://habr.com/ru/company/otus/blog/588540/): Если вам хочется больше узнать о реализации акторов под капотом
 - [Исходный код swift](https://github.com/apple/swift/tree/main/stdlib/public/Concurrency): Если вы хотите познать истину, то обратитесь к коду

@@ -1,10 +1,10 @@
-name: JSON Validation
+name: JSON
 on: [pull_request]
 
 jobs:
   json-valitating:
     runs-on: ubuntu-latest
-    name: Validate JSON
+    name: Validation
     steps:
       - uses: actions/checkout@v2
 
