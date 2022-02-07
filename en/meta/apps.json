@@ -20,5 +20,21 @@
                 "added_date" : "06.02.2022"
             }
         ]
+    },
+    {
+        "developer_name" : "Andrei Filipenkov",
+        "github_username" : "kambala-decapitator",
+        "apps" : [
+            {
+                "id" : "609736978",
+                "name" : "Cryptarithms",
+                "added_date" : "07.02.2022"
+            },
+            {
+                "id" : "644215345",
+                "name" : "Four Colours",
+                "added_date" : "07.02.2022"
+            }
+        ]
     }
 ]
