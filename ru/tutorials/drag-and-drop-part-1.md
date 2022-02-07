@@ -36,7 +36,7 @@ extension YourClass: NSItemProviderWriting {
 
 ## Drag
 
-Мучать будем коллекцию. Лучше использовать `UICollectionViewController`, из коробки он умеет больше. Но и простая вьюха подойдёт.
+Мучить будем коллекцию. Лучше использовать `UICollectionViewController`, из коробки он умеет больше. Но и простая вьюха подойдёт.
 
 Установим драг делегат:
 
@@ -224,7 +224,7 @@ public protocol UITableViewDragDelegate: NSObjectProtocol {
 tableView.isEditing = true
 ```
 
-То есть у вас может быть системный реодер ячеек и дроп, к примеру, внутрь ячеек.
+То есть у вас может быть системный реордер ячеек и дроп, к примеру, внутрь ячеек.
 
 [Table Drop](https://cdn.ivanvorobei.by/websites/sparrowcode.io/drag-and-drop-part-1/table-drop.mov)
 
