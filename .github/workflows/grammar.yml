@@ -1,7 +1,19 @@
 name: Grammar
 on: [pull_request]
+
 jobs:
-  build-and-test:
+  json-valitating:
+    runs-on: ubuntu-latest
+    name: Validate JSON
+    steps:
+      - uses: actions/checkout@v2
+      - run: sudo apt-get install jq -y
+      - run: cat .yaspellerrc.json | jq -c
+      - run: cat en/meta/* | jq -c
+      - run: cat ru/meta/* | jq -c
+    
+
+  yaspeller:
     runs-on: ubuntu-latest
     name: Check spelling
     steps:
@@ -9,7 +21,7 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: '16.x'
-          
+
       - run: npm install -g yaspeller
       - run: yaspeller -l ru ru/tutorials/
       - run: yaspeller -l en en/tutorials/
