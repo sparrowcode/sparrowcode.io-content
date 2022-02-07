@@ -817,7 +817,6 @@ extension AppSearchViewController: UISearchControllerDelegate, UISearchBarDelega
                 }
             } catch {
                 if Task.isCancelled { return }
-
                 self?.state = .error(error)
             }
         }
