@@ -4,7 +4,7 @@ on: [pull_request]
 jobs:    
   yaspeller:
     runs-on: ubuntu-latest
-    name: Check spelling
+    name: Check Spelling
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
