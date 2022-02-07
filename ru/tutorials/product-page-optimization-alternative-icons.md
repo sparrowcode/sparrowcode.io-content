@@ -4,7 +4,7 @@
 
 ## Добавляем иконки в Assets
 
-Алтернативную иконку делаем в нескольких разрешениях, как и основную. Я использую приложение [AppIconBuilder](https://apps.apple.com/app/id1294179975). Неймнг пишем любой, но учтите - имя отобразится в App Store Connect.
+Альтернативную иконку делаем в нескольких разрешениях, как и основную. Я использую приложение [AppIconBuilder](https://apps.apple.com/app/id1294179975). Нейминг пишем любой, но учтите - имя отобразится в App Store Connect.
 
 ![Добавляем иконки в Assets](https://cdn.ivanvorobei.by/websites/sparrowcode.io/product-page-optimization-alternative-icons/adding-icons-to-assets.png)
 
@@ -22,7 +22,7 @@
 
 `Primary App Icon Set Name` - название иконки по умолчанию. Не проверял, но скорее всего альтернативную иконку можно сделать основной.
 
-## Cборка
+## Сборка
 
 Остается собрать приложение и отправить на проверку.
 

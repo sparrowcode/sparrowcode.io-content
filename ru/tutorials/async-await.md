@@ -578,7 +578,8 @@ actor AppsSearchService {
 }
 ```
 
-Для построение `URL` будем использовать `URLComponents`. Так красивее, модульной чем форматировать строку, избавит от проблем с URL-encoding:
+
+Для построения `URL` используем `URLComponents` - красивый, модульный и избавит от проблем с URL-encoding:
 
 ```swift
 extension AppsSearchService {
@@ -916,7 +917,8 @@ func saveWorkoutToHealthKitAsync(runWorkout: RunWorkout) async throws {
 ### Ссылки
 
 Полезные ссылки:
-- [Скачать проект-пример](https://cdn.ivanvorobei.by/websites/sparrowcode.io/async-await/app-store-search.zip): Попрактикуйтесь, добавив новый экран деталки страницы App Store, решите проблему с загрузкой скриншотов и правильной отменой, если пользователь быстро закрыл деталку.
+
+- [Скачать проект-пример](https://cdn.ivanvorobei.by/websites/sparrowcode.io/async-await/app-store-search.zip): Попрактикуйтесь, добавив новый экран детали страницы App Store, решите проблему с загрузкой скриншотов и правильной отменой, если пользователь быстро закрыл страницу.
 - [Статей о async/await](https://www.andyibanez.com/posts/modern-concurrency-in-swift-introduction/): В этой серии статей есть еще больше примеров использования async/await. Например, раскрыта тема `@TaskLocal` и другие полезные мелочи.
 - [Устройство акторов под капотом](https://habr.com/ru/company/otus/blog/588540/): Если вам хочется больше узнать о реализации акторов под капотом
 - [Исходный код swift](https://github.com/apple/swift/tree/main/stdlib/public/Concurrency): Если вы хотите познать истину, то обратитесь к коду

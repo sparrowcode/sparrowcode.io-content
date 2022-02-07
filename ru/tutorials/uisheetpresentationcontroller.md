@@ -68,5 +68,5 @@ sheetController.largestUndimmedDetentIdentifier = .medium
 
 ![Grabber for UISheetPresentationController](https://cdn.ivanvorobei.by/websites/sparrowcode.io/uisheetpresentationcontroller/preferred-corner-radius.jpg)
 
-На скриншоте я установил corner-радиус в `22`. Радиус сохраняется для `.medium`-стопора. На этом всё. Напишите в [коментариях к посту](https://t.me/sparrowcode/71), будете ли использовать в своих проектах sheet-контроллеры.
+На скриншоте я установил corner-радиус в `22`. Радиус сохраняется для `.medium`-стопора. На этом всё. Напишите в [комментариях к посту](https://t.me/sparrowcode/71), будете ли использовать в своих проектах sheet-контроллеры.
 
