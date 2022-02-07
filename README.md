@@ -41,7 +41,7 @@ Link
 Formatting
 
 ```
-***Bold Text***
+**Bold Text**
 >Higlight quote in orange area 
 ```
 
