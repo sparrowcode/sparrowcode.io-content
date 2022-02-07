@@ -45,6 +45,7 @@
         "description" : "Вместе c iOS 15 обновили SF Symbols до 3-ей версии. Добавили 600 новых символов и разные способы покрасить их. Некоторые символы получили вариации форм.",
         "category" : "uikit",
         "author" : "ivanvorobei",
+        "editors" : ["svtnck"]
         "keywords" : [
             "UIKit",
             "SwiftUI",
@@ -100,6 +101,7 @@
         "description" : "Как добавить отступ между картинкой и заголовком в кнопке. Как поместить иконку справа от заголовка.",
         "category" : "uikit",
         "author" : "ivanvorobei",
+        "editors" : ["svtnck"]
         "keywords" : [
             "imageEdgeInsets",
             "imageEdgeInsets",
@@ -124,6 +126,7 @@
         "description" : "В этой статье я покажу как добавить свою View в Xcode Library с помощью LibraryContentProvider.",
         "category" : "swiftui",
         "author" : "wmorgue",
+        "editors" : ["ivanvorobei"],
         "keywords" : [
             "xcode",
             "library",
@@ -137,6 +140,7 @@
         "description" : "Рассмотрим теорию о async, await, actor, а в конце напишем тузлу используя новый подход",
         "category" : "development",
         "author" : "somenkovnikita",
+        "editors" : ["ivanvorobei"],
         "keywords" : [
             "async",
             "await",
