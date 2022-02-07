@@ -9,7 +9,6 @@ Here you can add a new tutorial, translate or correct typos in existing tutorial
   - [Content](#content)
   - [Formatting](#formatting)
   - [Meta](#meta)
-  - [Publish](#publish)
 - [Add Apps](#add-apps)
 
 ## Add Articles
@@ -79,10 +78,6 @@ Fill in the details of the article for file [/en/meta/articles.json](/en/meta/ar
 List of categories available at [/en/meta/categories.json](/en/meta/categories.json). If you need an additional category, add it. Make sure none of the existing ones fit.
 
 Authors available at [/en/meta/authors.json](/en/meta/authors.json). Fill in a short information about yourself, you can add buttons to the GitHub or your page in the App Store.
-
-### Publish
-
-Push changes and make pull request. I will approve it shortly and it will be available on website.
 
 ## Add Apps
 
