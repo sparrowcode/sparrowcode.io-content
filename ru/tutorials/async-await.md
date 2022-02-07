@@ -116,7 +116,7 @@ extension UIImageView {
 }
 ```
 
-Посмотрим на cхему для функции `setImage(url: URL)`:
+Посмотрим на схему для функции `setImage(url: URL)`:
 
 ![How to work setImage(url: URL)](https://cdn.ivanvorobei.by/websites/sparrowcode.io/async-await/set-image-scheme.png)
 
@@ -126,7 +126,7 @@ extension UIImageView {
 
 Когда выполнение дойдет до `await` функция **может** (или нет) остановится. Система выполнит метод `loadImage(for: url)`, поток не заблокируется в ожидании результата. Когда метод закончит выполнятся, система возобновит работу функции - продолжится выполнение `self.image = image`. Мы обновили UI, не переключая поток: это приравнивание *автоматически* сработает на главном потоке.
 
-Поулчился читаемый, безопасный код. Не нужно помнить про поток или словить утечку памяти из-за ошибок захвата `self`. За счет обертки `Task` операцию легко отменить.
+Получился читаемый, безопасный код. Не нужно помнить про поток или словить утечку памяти из-за ошибок захвата `self`. За счет обертки `Task` операцию легко отменить.
 
 Если система увидит, что приоритетнее задач нет, желтая задача “Task” выполнится немедленно. При использовании `await` мы не знаем, когда начнется и закончится выполнение задачи. Задачу могут выполнять разные потоки.
 
@@ -445,7 +445,7 @@ Task {
 }
 ```
 
-По умолчанию Swift генерирует стандартный `SerialExecutor` для кастомных акторов. Кастомные реализации `SerialExecutor` переключают потоки. Такк работает `MainActor`.
+По умолчанию Swift генерирует стандартный `SerialExecutor` для кастомных акторов. Кастомные реализации `SerialExecutor` переключают потоки. Так работает `MainActor`.
 
 `MainActor` - это `Actor`, у которого `Executor` переводит в главный поток. Создать его нельзя, но можно обратиться к его экземпляру `MainActor.shared`.
 
@@ -552,7 +552,7 @@ struct AppEnity {
 }
 ```
 
-Срздадим сервис через `actor`:
+Создадим сервис через `actor`:
 
 ```swift
 actor AppsSearchService {
@@ -578,7 +578,7 @@ actor AppsSearchService {
 }
 ```
 
-Для построения `URL` используем `URLComponents` - красивее, модульней и избавит от траблов с URL-encoding:
+Для построения `URL` используем `URLComponents` - красивый, модульный и избавит от проблем с URL-encoding:
 
 ```swift
 extension AppsSearchService {
@@ -741,7 +741,7 @@ final class AppSearchCell: UITableViewCell {
 }
 ```
 
-Eсли иконка отсутствует в кеше, она будет загружаться из сети, а в процессе загрузки на экране будет отображаться loading стейт. Если загрузка не закончилась, а пользователь проскроллил и картинка больше не нужна - загрузка отмениться.
+Если иконка отсутствует в кеше, она будет загружаться из сети, а в процессе загрузки на экране будет отображаться loading стейт. Если загрузка не закончилась, а пользователь проскроллил и картинка больше не нужна - загрузка отмениться.
 
 Подготовим `ViewController` (layout и детали работы с таблицей пропускаю):
 
@@ -917,12 +917,12 @@ func saveWorkoutToHealthKitAsync(runWorkout: RunWorkout) async throws {
 ### Ссылки
 
 Полезные ссылки:
-- [Скачать проект-пример](https://cdn.ivanvorobei.by/websites/sparrowcode.io/async-await/app-store-search.zip): Попрактикуйтесь, добавив новый экран деталки страницы App Store, решите проблему с загрузкой скриншотов и правильной отменой, если пользователь быстро закрыл деталку.
-- [Статей о async/await](https://www.andyibanez.com/posts/modern-concurrency-in-swift-introduction/): В этой серии статей есть еще больше примеров использования async/await. Например, расскрыта тема `@TaskLocal` и другие полезные мелочи.
+- [Скачать проект-пример](https://cdn.ivanvorobei.by/websites/sparrowcode.io/async-await/app-store-search.zip): Попрактикуйтесь, добавив новый экран детали страницы App Store, решите проблему с загрузкой скриншотов и правильной отменой, если пользователь быстро закрыл страницу.
+- [Статей о async/await](https://www.andyibanez.com/posts/modern-concurrency-in-swift-introduction/): В этой серии статей есть еще больше примеров использования async/await. Например, раскрыта тема `@TaskLocal` и другие полезные мелочи.
 - [Устройство акторов под капотом](https://habr.com/ru/company/otus/blog/588540/): Если вам хочется больше узнать о реализации акторов под капотом
 - [Исходный код swift](https://github.com/apple/swift/tree/main/stdlib/public/Concurrency): Если вы хотите познать истину, то обратитесь к коду
 
 WWDC-сессии:
-- [Protect mutable state with Swift actors](https://developer.apple.com/wwdc21/10133): Видео-туториал от Apple об actor. Расскаживают какие проблемы он решает, и как им пользоваться.
+- [Protect mutable state with Swift actors](https://developer.apple.com/wwdc21/10133): Видео-туториал от Apple об actor. Рассказывают какие проблемы он решает, и как им пользоваться.
 - [Explore structured concurrency in Swift](https://developer.apple.com/wwdc21/10134): Видео-туториал от Apple о структурном параллелизме, в частности о `Task`, `Task.detached`, `TaskGroup` и приоритетах операции.
 - [Meet async/await in Swift](https://developer.apple.com/wwdc21/10132): Видео-туториал от Apple о том как работать async/await. Есть наглядные схемы
