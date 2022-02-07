@@ -54,5 +54,20 @@
                 "link" : "https://apps.somenkov.ru"
             }
         ]
+    },
+    "svtnck": {
+        "name": "Nikolay Pelevin",
+        "description": "Разработчик iOS, люблю конфеты.",
+        "avatar": "https://cdn.ivanvorobei.by/websites/sparrowcode.io/authors/svtnck.jpg",
+        "buttons": [
+            {
+                "name": "GitHub",
+                "link": "https://github.com/svyatoynick"
+            },
+            {
+                "name" : "App Store",
+                "link" : "https://apps.pelevin.me"
+            }
+        ]
     }
 }
