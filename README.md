@@ -5,14 +5,14 @@ Here you can add a new tutorial, translate or correct typos in existing tutorial
 
 ## Navigate
 
-- [Articles](#articles)
+- [Add Articles](#add-articles)
   - [Content](#content)
   - [Formatting](#formatting)
   - [Meta](#meta)
   - [Publish](#publish)
-- [Apps](#apps)
+- [Add Apps](#add-apps)
 
-## Articles
+## Add Articles
 
 Choose the language in which you want to write. Then your article may be translated into another language with an indication of the author. Now available in Russian `ru` and English `en`.
 Create a file with the name of the path where the page will be accessible, for example new file [/en/tutorials/edge-insets-uibutton.md](/en/tutorials/edge-insets-uibutton.md).
@@ -84,7 +84,7 @@ Authors available at [/en/meta/authors.json](/en/meta/authors.json). Fill in a s
 
 Push changes and make pull request. I will approve it shortly and it will be available on website.
 
-## Apps
+## Add Apps
 
 Choose the language in which you want to write. If you want add app to `en`, navigate to file [en/meta/apps.json](en/meta/apps.json). If your app supported `en` and `ru`, make changes for both files.
 
