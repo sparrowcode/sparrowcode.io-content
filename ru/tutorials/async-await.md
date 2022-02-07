@@ -59,6 +59,7 @@ extension UIImageView {
             }
         })
     }
+
 }
 ```
 
@@ -123,7 +124,7 @@ extension UIImageView {
 
 ![How to work loadImage(for: URL)](https://cdn.ivanvorobei.by/websites/sparrowcode.io/async-await/load-image-scheme.png)
 
-Когда выполнение дойдет до `await` функция **может** (или нет) остановится. Система выполнит метод `loadImage(for: url)`, поток не заблокируется в ожидании результата. Когда метод закончит выполнятся, система возобновит работу функции - продолжится выполнение `self.image = image`. Мы обновили UI, не переключая поток: это приравнивание *автоматически* сработает на главном потоке. 
+Когда выполнение дойдет до `await` функция **может** (или нет) остановится. Система выполнит метод `loadImage(for: url)`, поток не заблокируется в ожидании результата. Когда метод закончит выполнятся, система возобновит работу функции - продолжится выполнение `self.image = image`. Мы обновили UI, не переключая поток: это приравнивание *автоматически* сработает на главном потоке.
 
 Поулчился читаемый, безопасный код. Не нужно помнить про поток или словить утечку памяти из-за ошибок захвата `self`. За счет обертки `Task` операцию легко отменить.
 
@@ -147,7 +148,6 @@ func loadImage(for url: URL) async throws -> UIImage {
 
 ```swift
 func loadUserPage(id: String) async throws -> (UIImage, CertificateModel) {
-    
     let user = try await loadUser(for: id)
     async let avatarImage = loadImage(user.avatarURL)
     async let certificates = loadCertificates(for: user)
@@ -345,7 +345,7 @@ func downloadImageAndMetadata(imageNumber: Int) async throws -> DetailedImage {
 }
 ```
 
-Глобальная разница почему не надо использовать просто `Task` в данном случае - отмена `downloadImageAndMetadata` после успешной загрузки `image` уже не должна отменять сохранение на диск, а при обычной `Task` это бы и произошло. При выборе detached/не detached нужно просто понять, зависит ли подзадача от задачи родителя в вашем кейсе.
+Отмена `downloadImageAndMetadata` после успешной загрузки изображения не должна отменять сохранение. С `Task` сохранение бы отменилось. При выборе `Task`/`Task.detached` нужно понять, зависит ли подзадача от задачи родителя в вашем кейсе.
 
 Если нужно запустить массив операций (например: загрузить список изображений по массиву URL) используйте `TaskGroup`, Создавайте его с помощью `withTaskGroup/withThrowingTaskGroup`:
 
@@ -506,7 +506,7 @@ GET https://itunes.apple.com/search?entity=software?term=<запрос>
     screenshotUrls: ["ссылка на первый скриншот", "на второй"],
     formattedPrice: "отформатированная цена приложения",
     averageUserRating: 0.45,
-    
+
     // еще куча другой информации, но мы это опустим
 }
 ```
@@ -578,7 +578,7 @@ actor AppsSearchService {
 }
 ```
 
-Будет использовать `URLComponents` для красоты и модульнусти решения, вместо работы со строчками, к тому же `URLComponents` избавить от проблем с URL-encoding:
+Для построение `URL` будем использовать `URLComponents`. Так красивее, модульней чем форматировать строку, избавит от проблем с URL-encoding:
 
 ```swift
 extension AppsSearchService {
@@ -632,7 +632,7 @@ extension AppsSearchService {
 }
 ```
 
-Приходят URL от изоюражений. 
+Приходят URL от изображений.
 
 Ячейка таблица конфигурируется при скроле. Чтобы не качать иконку каждый раз, сохраним в кеш. Программисты скидывают логику на библиотеки типа [Nuke](https://github.com/kean/Nuke), но с `async/await` у нас будет свой `Nuke`:
 
@@ -703,6 +703,7 @@ extension UIImageView {
 }
 ```
 
+`imageLoader` переведет работу на бекграунд поток. Хотя `setImage` вызовиться из главного потока, после `await` выполнение **может** продолжиться на бекграунд. Исправим это добавив `@MainActor`.
 Кэширование готово. Сделаем отмену. Глянем на реализацию ячейки (layout пропускаю):
 
 ```swift
@@ -808,12 +809,16 @@ extension AppSearchViewController: UISearchControllerDelegate, UISearchBarDelega
             do {
                 let apps = try await searchService.search(with: query)
 
+                if Task.isCancelled { return }
+
                 if apps.isEmpty {
                     self?.state = .empty
                 } else {
                     self?.state = .data(apps)
                 }
             } catch {
+                if Task.isCancelled { return }
+
                 self?.state = .error(error)
             }
         }
@@ -821,13 +826,13 @@ extension AppSearchViewController: UISearchControllerDelegate, UISearchBarDelega
 }
 ```
 
-На нажатие Search отменяем поиск и запускаем новую задачу. В нашем случае еще необходимо правильно отреагировать на отмену `searchingTask` - выйти из функции, если задача была отменена пока мы загружали информацию. В целом это все, вот так легко можно теперь писать всякого рода асинхронности.
+Нажимаем "Search" - отменяем предыдущий поиск, запускаем новый. В задаче `searchingTask` не забываем проверить, что поиск еще актуален. Сложная концепция умещается в 15 строк кода.
 
 ### Обратная совместимость
 
 Работает iOS 13 из-за того, что фича требует нового рантайма.
 
-С iOS 15 Apple принесла асинхронный API в HealthKit, CoreData, а новый StoreKit 2 предлагает только асинхронный интерфейс. Код сохранения тренировки стал проще:
+Apple принесла асинхронный API в HealthKit (с iOS 13), CoreData (c iOS 15), а новый StoreKit 2 предлагает только асинхронный интерфейс. Код сохранения тренировки стал проще:
 
 ```swift
 struct RunWorkout {
@@ -911,12 +916,12 @@ func saveWorkoutToHealthKitAsync(runWorkout: RunWorkout) async throws {
 ### Ссылки
 
 Полезные ссылки:
-- [Скачать проект-пример](https://cdn.ivanvorobei.by/websites/sparrowcode.io/async-await/app-store-search.zip)
-- [Хорошая серия статей о async/await](https://www.andyibanez.com/posts/modern-concurrency-in-swift-introduction/)
-- [Больше информации о устройстве акторов под капотом на Хабре](https://habr.com/ru/company/otus/blog/588540/)
-- [Исходный код: для тех кто хочет узнать познать истину](https://github.com/apple/swift/tree/main/stdlib/public/Concurrency)
+- [Скачать проект-пример](https://cdn.ivanvorobei.by/websites/sparrowcode.io/async-await/app-store-search.zip): Попрактикуйтесь, добавив новый экран деталки страницы App Store, решите проблему с загрузкой скриншотов и правильной отменой, если пользователь быстро закрыл деталку.
+- [Статей о async/await](https://www.andyibanez.com/posts/modern-concurrency-in-swift-introduction/): В этой серии статей есть еще больше примеров использования async/await. Например, расскрыта тема `@TaskLocal` и другие полезные мелочи.
+- [Устройство акторов под капотом](https://habr.com/ru/company/otus/blog/588540/): Если вам хочется больше узнать о реализации акторов под капотом
+- [Исходный код swift](https://github.com/apple/swift/tree/main/stdlib/public/Concurrency): Если вы хотите познать истину, то обратитесь к коду
 
 WWDC-сессии:
-- [Protect mutable state with Swift actors](https://developer.apple.com/wwdc21/10133)
-- [Explore structured concurrency in Swift](https://developer.apple.com/wwdc21/10134)
-- [Meet async/await in Swift](https://developer.apple.com/wwdc21/10132)
+- [Protect mutable state with Swift actors](https://developer.apple.com/wwdc21/10133): Видео-туториал от Apple об actor. Расскаживают какие проблемы он решает, и как им пользоваться.
+- [Explore structured concurrency in Swift](https://developer.apple.com/wwdc21/10134): Видео-туториал от Apple о структурном параллелизме, в частности о `Task`, `Task.detached`, `TaskGroup` и приоритетах операции.
+- [Meet async/await in Swift](https://developer.apple.com/wwdc21/10132): Видео-туториал от Apple о том как работать async/await. Есть наглядные схемы
