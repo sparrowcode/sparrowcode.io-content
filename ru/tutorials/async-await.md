@@ -59,7 +59,6 @@ extension UIImageView {
             }
         })
     }
-
 }
 ```
 
@@ -158,7 +157,7 @@ func loadUserPage(id: String) async throws -> (UIImage, CertificateModel) {
 
 Функции `loadImage` и `loadCertificates` запускаются параллельно. Значение вернется, когда оба запроса выполнятся. Если одна из функций вернет ошибку - `loadUserPage` вернет эту же ошибку.
 
-### Task
+## Task
 
 `Task` - базовый юнит асинхронной задачи, место вызова асинхронного кода. Асинхронные функции выполняются как часть `Task`. Является аналогом потока. `Task` это структура:
 
@@ -372,7 +371,7 @@ func loadUserImages(for id: String) async throws -> [UIImage] {
 }
 ```
 
-### actor
+## actor
 
 `actor` - новый тип данных, который необходим для синхронизации и предотвращает состояние гонки. Компилятор проверяет его на стадии компиляции:
 
@@ -490,7 +489,7 @@ Task(priority: .background) {
 
 Можно помечать функции и классы - тогда методы по умолчанию будут также иметь атрибут. `UIView`, `UIViewController` Apple пометила как `@MainActor`, поэтому вызовы на обновление интерфейса после работы сервиса работают корректно.
 
-### Практика
+## Практика
 
 Напишем инструмент для поиска приложений в App Store, который будет показывать позицию. Сервиса, который будет искать приложения:
 
@@ -548,7 +547,6 @@ struct AppEnity {
     let appStoreURL: URL
     let iconURL: URL
     let screenshotsURLs: [URL]
-
 }
 ```
 
@@ -829,7 +827,7 @@ extension AppSearchViewController: UISearchControllerDelegate, UISearchBarDelega
 
 Нажимаем "Search" - отменяем предыдущий поиск, запускаем новый. В задаче `searchingTask` не забываем проверить, что поиск еще актуален. Сложная концепция умещается в 15 строк кода.
 
-### Обратная совместимость
+## Обратная совместимость
 
 Работает iOS 13 из-за того, что фича требует нового рантайма.
 
@@ -914,16 +912,22 @@ func saveWorkoutToHealthKitAsync(runWorkout: RunWorkout) async throws {
 }
 ```
 
-### Ссылки
+## Ссылки
 
-Полезные ссылки:
+[Скачать проект-пример](https://cdn.ivanvorobei.by/websites/sparrowcode.io/async-await/app-store-search.zip): Попрактикуйтесь, добавив новый экран детали страницы App Store, решите проблему с загрузкой скриншотов и правильной отменой, если пользователь быстро закрыл страницу.
 
-- [Скачать проект-пример](https://cdn.ivanvorobei.by/websites/sparrowcode.io/async-await/app-store-search.zip): Попрактикуйтесь, добавив новый экран детали страницы App Store, решите проблему с загрузкой скриншотов и правильной отменой, если пользователь быстро закрыл страницу.
-- [Статей о async/await](https://www.andyibanez.com/posts/modern-concurrency-in-swift-introduction/): В этой серии статей есть еще больше примеров использования async/await. Например, раскрыта тема `@TaskLocal` и другие полезные мелочи.
-- [Устройство акторов под капотом](https://habr.com/ru/company/otus/blog/588540/): Если вам хочется больше узнать о реализации акторов под капотом
-- [Исходный код swift](https://github.com/apple/swift/tree/main/stdlib/public/Concurrency): Если вы хотите познать истину, то обратитесь к коду
+[Статей о async/await](https://www.andyibanez.com/posts/modern-concurrency-in-swift-introduction/): В этой серии статей есть еще больше примеров использования async/await. Например, раскрыта тема `@TaskLocal` и другие полезные мелочи.
+
+[Устройство акторов под капотом](https://habr.com/ru/company/otus/blog/588540/): Если вам хочется больше узнать о реализации акторов под капотом
+
+[Исходный код swift](https://github.com/apple/swift/tree/main/stdlib/public/Concurrency): Если вы хотите познать истину, то обратитесь к коду
 
 WWDC-сессии:
-- [Protect mutable state with Swift actors](https://developer.apple.com/wwdc21/10133): Видео-туториал от Apple об actor. Рассказывают какие проблемы он решает, и как им пользоваться.
-- [Explore structured concurrency in Swift](https://developer.apple.com/wwdc21/10134): Видео-туториал от Apple о структурном параллелизме, в частности о `Task`, `Task.detached`, `TaskGroup` и приоритетах операции.
-- [Meet async/await in Swift](https://developer.apple.com/wwdc21/10132): Видео-туториал от Apple о том как работать async/await. Есть наглядные схемы
+
+[Protect mutable state with Swift actors](https://developer.apple.com/wwdc21/10133): Видео-туториал от Apple об actor. Рассказывают какие проблемы он решает, и как им пользоваться.
+
+[Explore structured concurrency in Swift](https://developer.apple.com/wwdc21/10134): Видео-туториал от Apple о структурном параллелизме, в частности о `Task`, `Task.detached`, `TaskGroup` и приоритетах операции.
+
+[Meet async/await in Swift](https://developer.apple.com/wwdc21/10132): Видео-туториал от Apple о том как работать async/await. Есть наглядные схемы
+
+Вопросы можно задать в комментариях [к посту](https://t.me/sparrowcode/140) в телеграм.
