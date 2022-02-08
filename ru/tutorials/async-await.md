@@ -927,6 +927,4 @@ WWDC-сессии:
 
 [Explore structured concurrency in Swift](https://developer.apple.com/wwdc21/10134): Видео-туториал от Apple о структурном параллелизме, в частности о `Task`, `Task.detached`, `TaskGroup` и приоритетах операции.
 
-[Meet async/await in Swift](https://developer.apple.com/wwdc21/10132): Видео-туториал от Apple о том как работать async/await. Есть наглядные схемы
-
-Вопросы можно задать в комментариях [к посту](https://t.me/sparrowcode/140) в телеграм.
+[Meet async/await in Swift](https://developer.apple.com/wwdc21/10132): Видео-туториал от Apple о том как работать async/await. Есть наглядные схемы.
