@@ -39,5 +39,20 @@
         ],
         "updated_date" : "06.02.2022",
         "added_date" : "06.02.2022"
+    },
+    "async-await" : {
+        "title" : "Asynchrony with async/await/actor",
+        "description" : "Let's take apart async, await, and actor. Let's write an ace using the new tools.",
+        "category" : "development",
+        "author" : "somenkovnikita",
+        "editors" : ["ivanvorobei"],
+        "translator": "svtnck",
+        "keywords" : [
+            "async",
+            "await",
+            "actor"
+        ],
+        "updated_date": "08.02.2022",
+        "added_date": "08.02.2022"
     }
 }
