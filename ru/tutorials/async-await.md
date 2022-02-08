@@ -392,7 +392,7 @@ actor ImageDownloader {
     var cache: [String: UIImage] = [:]
 
     func setImage(for key: String, image: UIImage) {
-        cache["image"] = image
+        cache[key] = image
     }
 }
 
