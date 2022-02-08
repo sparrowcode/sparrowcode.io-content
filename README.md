@@ -99,4 +99,4 @@ Fill with example data:
 }
 ```
 
-And open PR after.
+And open Pull Reqeust after.
