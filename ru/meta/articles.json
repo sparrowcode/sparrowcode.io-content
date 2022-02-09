@@ -151,8 +151,8 @@
     },
     
     "mastering-progressview-swiftui" : {
-        "title" : "Осваиваем ProgressView в SwiftUI",
-        "description" : "Знакомимся и кастомизируем ProgressView.",
+        "title" : "ProgressView в SwiftUI",
+        "description" : "Как устроен ProgressView. Как настроить внешний вид: спиннер и прогрес-бар.",
         "category" : "swiftui",
         "author" : "wmorgue",
         "editors" : ["ivanvorobei"],
