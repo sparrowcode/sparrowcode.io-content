@@ -136,7 +136,7 @@ let timer = Timer.publish(every: 0.05, on: .main, in: .common).autoconnect()
 
 Описание метода `publish` доступно в [документации Apple](https://developer.apple.com/documentation/foundation/timer/3329589-publish).
 
-Больше инициализатор можно найти в документации Xcode или [на сайте](https://developer.apple.com/documentation/swiftui/progressview).
+Больше инициализаторов можно найти в документации Xcode или [на сайте](https://developer.apple.com/documentation/swiftui/progressview).
 
 ![Documentation SwiftUI ProgressView](https://cdn.ivanvorobei.by/websites/sparrowcode.io/mastering-progressview-swiftui/progressview_init.png)
 
@@ -197,19 +197,3 @@ struct TimerProgressView: View {
 Обратите внимание, что прогресс начинается не слева направо, а с середины в противоположные стороны.
 
 [RoundedProgressViewStyle](mov)
-
-
-## Доступность
-
-
-OS      | Version 
-  ---   |  --- 
-iOS     | 14.0+
-iPadOS  | 14.0+
-macOS   | 11.0+
-tvOS    | 14.0+
-watchOS | 7.0+
-
----
-
-На этом всё. Подписывайтесь на [канал в телеграм](https://t.me/sparrowcode), чтобы не пропускать выходы туториалов и новостей, а вопросы задавайте в [чате](https://t.me/+GpBH8oKHAjcyZmVi).
