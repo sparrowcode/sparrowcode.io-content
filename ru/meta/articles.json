@@ -148,5 +148,18 @@
         ],
         "updated_date": "06.02.2022",
         "added_date": "06.02.2022"
+    },
+    
+    "mastering-progressview-swiftui" : {
+        "title" : "Осваиваем ProgressView в SwiftUI",
+        "description" : "Знакомимся и кастомизируем ProgressView.",
+        "category" : "swiftui",
+        "author" : "wmorgue",
+        "editors" : ["ivanvorobei"],
+        "keywords" : [
+            "ProgressView"
+        ],
+        "updated_date": "09.02.2022",
+        "added_date": "09.02.2022"
     }
 }
