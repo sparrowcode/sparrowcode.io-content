@@ -10,7 +10,7 @@ The alternative icon is done in multiple resolutions, just like the main icon. I
 
 ## Settings in Target.
 
-You need Xcode 13 or higher. Select the app targetet and go to the `Build Settings` tab. In the search, type `App Icon` and you will see the `Asset Catalog Compiler` section.
+You need Xcode 13 or higher. Select the app targeted and go to the `Build Settings` tab. In the search, type `App Icon` and you will see the `Asset Catalog Compiler` section.
 
 ![Settings in target](https://cdn.ivanvorobei.by/websites/sparrowcode.io/product-page-optimization-alternative-icons/adding-settings-to-target.png)
 

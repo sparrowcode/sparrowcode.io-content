@@ -702,7 +702,7 @@ UIImageView extension {
 }
 ```
 
-The `imageLoader` will move the job to the backgroud thread. Although `setImage` is taken out of the main thread, after `await` execution **may** continue to the backgrounder. We fix this by adding `@MainActor`.
+The `imageLoader` will move the job to the background thread. Although `setImage` is taken out of the main thread, after `await` execution **may** continue to the backgrounder. We fix this by adding `@MainActor`.
 The caching is done. Let's do an undo. Let's look at the cell implementation (I'm skipping the layout):
 
 ```swift
