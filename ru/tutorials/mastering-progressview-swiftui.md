@@ -109,7 +109,7 @@ struct TimerProgressView: View {
 
 [Timer Progress](https://cdn.ivanvorobei.by/websites/sparrowcode.io/mastering-progressview-swiftui/timer_progress.mov)
 
-Событие вызывается несколько раз при помощи таймера. Код таймера выглядит так:
+Событие вызывается несколько раз при помощи таймера. Код таймера:
 
 ```swift
 let timer = Timer.publish(every: 0.05, on: .main, in: .common).autoconnect()
