@@ -39,5 +39,32 @@
         ],
         "updated_date" : "06.02.2022",
         "added_date" : "06.02.2022"
+    },
+    "async-await" : {
+        "title" : "Asynchrony with async/await/actor",
+        "description" : "Let's take apart async, await, and actor. Let's write an ace using the new tools.",
+        "category" : "development",
+        "author" : "somenkovnikita",
+        "editors" : ["ivanvorobei"],
+        "translator": "svtnck",
+        "keywords" : [
+            "async",
+            "await",
+            "actor"
+        ],
+        "updated_date": "08.02.2022",
+        "added_date": "08.02.2022"
+    },
+    "product-page-optimization-alternative-icons" : {
+        "title" : "Alternative icons for Product Page Optimization",
+        "description" : "How to add alternative icons for A/B tests on the application page.",
+        "category" : "app_store_connect",
+        "author" : "alxrguz",
+        "translator": "svtnck",
+        "keywords" : [
+            "alternative icons"
+        ],
+        "updated_date" : "08.02.2022",
+        "added_date" : "08.02.2022"
     }
 }
