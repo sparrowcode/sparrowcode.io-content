@@ -66,5 +66,16 @@
         ],
         "updated_date" : "08.02.2022",
         "added_date" : "08.02.2022"
+    },
+    "meet-storekit-2" : {
+        "title" : "StoreKit 2",
+        "description" : "Apple redesigned the shopping logic and rewrote StoreKit. The great update of this year.",
+        "category" : "storekit",
+        "author" : "ivanvorobei",
+        "keywords" : [
+            "StoreKit"
+        ],
+        "updated_date" : "10.02.2022",
+        "added_date" : "10.02.2022"
     }
 }
