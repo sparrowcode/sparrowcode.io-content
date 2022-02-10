@@ -177,4 +177,4 @@ struct TimerProgressView: View {
 
 Прогресс начинается не слева направо, а с середины в противоположные стороны.
 
-[RoundedProgressViewStyle](mov)
+[RoundedProgressViewStyle](https://cdn.ivanvorobei.by/websites/sparrowcode.io/mastering-progressview-swiftui/rounded_progress_view.mov)
