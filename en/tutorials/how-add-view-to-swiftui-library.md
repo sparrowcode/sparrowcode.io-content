@@ -12,32 +12,34 @@ Library provides access to available SwiftUI View, modifiers, images, etc. You c
 First of all, let's implement our custom View, which will be responsible for the user's profile.
 
 ```swift
-//filename: UserProfileView.swift
-
 struct User {
-	let name: String
-	let imageName: String
-	let githubProfile: String
-}
 
+   let name: String
+   let imageName: String
+   let githubProfile: String
+}
+```
+
+```swift
 struct UserProfileView: View {
-	let user: User
-	
-	var body: some View {
-		HStack {
-			Image(user.imageName)
-				.resizable()
-				.frame(width: 40, height: 40)
-				.clipShape(Circle())
-			
-			VStack(alignment: .leading) {
-				Text(user.name)
-				Text(user.githubProfile)
-					.foregroundColor(.gray)
-			}
-		}
-		.padding(.all)
-	}
+
+    let user: User
+    
+    var body: some View {
+        HStack {
+            Image(user.imageName)
+                .resizable()
+                .frame(width: 40, height: 40)
+                .clipShape(Circle())
+            
+            VStack(alignment: .leading) {
+                Text(user.name)
+                Text(user.githubProfile)
+                    .foregroundColor(.gray)
+            }
+        }
+        .padding(.all)
+    }
 }
 ```
 
@@ -60,7 +62,13 @@ struct UserProfileLibrary: LibraryContentProvider {
 	@LibraryContentBuilder
 	var views: [LibraryItem] {
 		LibraryItem(
-			UserProfileView(user: User(name: "Nikita", imageName: "Nikita", githubProfile: "wmorgue")),
+			UserProfileView(
+                user: User(
+                    name: "Nikita", 
+                    imageName: "Nikita", 
+                    githubProfile: "wmorgue"
+                )
+            ),
 			visible: true,	// whether it's visible in the Xcode library
 			title: "User Profile", // the custom name shown in the library
 			category: .control, // a category to find you custom views faster
@@ -69,6 +77,7 @@ struct UserProfileLibrary: LibraryContentProvider {
 	}
 }
 ```
+
 The way we add a view to View Library is quite similar to how we make our view support preview function. 
 The `LibraryContentProvider` protocol provides an ability to add custom views to the Xcode library.
 After that, we go to the `ContentView.swift` file and add the user view.
@@ -82,7 +91,13 @@ Caveat:
 3. When you use the system component, it will prefill all the parameters with usable default values. In our case, we get a user as our default value `User()`:
 
 ```swift
-UserProfileView(user: User(name: "Nikita", imageName: "Nikita", githubProfile: "wmorgue"))
+UserProfileView(
+   user: User(
+      name: "Nikita", 
+      imageName: "Nikita", 
+      githubProfile: "wmorgue
+   )
+)
 ```
 
 Just waiting for changes in future versions to be able to add a description and icon.

@@ -60,7 +60,8 @@ struct UserProfileLibrary: LibraryContentProvider {
                user: User(
                   name: "Nikita", 
                   imageName: "Nikita", 
-                  githubProfile: "wmorgue")
+                  githubProfile: "wmorgue"
+                )
             ),
             visible: true,    // будет ли доступна наша View в библиотеке
             title: "User Profile", // заголовок, который будет отображаться
