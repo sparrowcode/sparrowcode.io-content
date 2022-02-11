@@ -14,15 +14,15 @@ Here you can add a new tutorial, translate or correct typos in existing tutorial
 ## Add Articles
 
 Choose the language in which you want to write. Then your article may be translated into another language with an indication of the author. Now available in Russian `ru` and English `en`.
-Create a file with the name of the path where the page will be accessible, for example new file [/en/tutorials/edge-insets-uibutton.md](/en/tutorials/edge-insets-uibutton.md).
+Create a file with the name of the path where the page will be accessible, for example, a new file [/en/tutorials/edge-insets-uibutton.md](/en/tutorials/edge-insets-uibutton.md).
 
 ### Content
 
-You can set text, pictures and video. I offer my hosting, but you can use any other. Try not to use large videos - users don't like long loading times. If you want use my hosting, simple send me archive with files and path of article - I will add shortly.
+You can set text, pictures, and video. I offer my hosting, but you can use any other. Try not to use large videos - users don't like long loading times. If you want to use my hosting, simply send me an archive with files and the path of the article - I will add it shortly.
 
 ### Formatting
 
-Basic markdown functions are supported, like title, subtitle and paragraph. Also available link, images and video. Here provided list:
+Basic markdown functions are supported, like title, subtitle, and paragraph. Also available are links, images, and video. Here provided list:
 
 Titles
 
@@ -52,7 +52,8 @@ Image and Video
 [Video Description](https://cdn.ivanvorobei.by/websites/sparrowcode.io/drag-and-drop-part-1/drag-delegate.mov)
 ```
 
-For higlight link to grey area with title and subtitle, use this custom formatting:
+For highlight link to the grey area with title and subtitle, use this custom formatting:
+
 ```
 [title](url): description
 ```
@@ -72,12 +73,12 @@ Fill in the details of the article for file [/en/meta/articles.json](/en/meta/ar
 
 ##### Optional
 
-- `editors` - Array of author IDs. If you fix some typos, add username here. 
+- `editors` - An array of author IDs. If you fix some typos, add your username here. 
 - `translator` - Author ID.
 
 List of categories available at [/en/meta/categories.json](/en/meta/categories.json). If you need an additional category, add it. Make sure none of the existing ones fit.
 
-Authors available at [/en/meta/authors.json](/en/meta/authors.json). Fill in a short information about yourself, you can add buttons to the GitHub or your page in the App Store.
+Authors available at [/en/meta/authors.json](/en/meta/authors.json). Fill in short information about yourself, you can add buttons to the GitHub or your page in the App Store.
 
 ## Add Apps
 
@@ -99,4 +100,4 @@ Fill with example data:
 }
 ```
 
-And open Pull Reqeust after.
+And open Pull Request after.
