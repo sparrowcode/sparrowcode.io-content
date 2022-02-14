@@ -89,5 +89,17 @@
         ],
         "updated_date": "11.02.2022",
         "added_date": "11.02.2022"
+    },
+    "how-to-delete-userdefaults-on-macos-catalyst" : {
+        "title" : "How to clean up UserDefaults for Mac Catalyst",
+        "description" : "How to remove data for Catalyst application including AppGroup, Realm and UserDefaults.",
+        "category" : "development",
+        "author" : "ivanvorobei",
+        "keywords" : [
+            "UserDefaults",
+            "Catalyst"
+        ],
+        "updated_date" : "14.02.2022",
+        "added_date" : "14.02.2022"
     }
 }
