@@ -1,8 +1,8 @@
-To indicate the background work in the application use `ProgressView`.
+To indicate the background work in the application use `ProgressView`. I'll show how use it on the ipad in the new Playground.
 
-## Indeterminate progress
+## Indeterminate Progress
 
-Let's add a `ProgressView()`:
+Let's add simple a `ProgressView()`. Also call modifier for tint:
 
 ```swift
 struct ContentView: View {
@@ -22,7 +22,7 @@ struct ContentView: View {
 
 By default `SwiftUI` defines a rotating loading bar (spinner). The modifier `.tint()` changes the color of the bar.
 
-## Determinate progress
+## Determinate Progress
 
 Initialize the view with another indicator:
 
