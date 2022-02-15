@@ -72,6 +72,7 @@
         "description" : "Apple redesigned the shopping logic and rewrote StoreKit. The great update of this year.",
         "category" : "storekit",
         "author" : "ivanvorobei",
+        "translator": "wmorgue",
         "keywords" : [
             "StoreKit"
         ],
@@ -95,6 +96,7 @@
         "description" : "How to remove data for Catalyst application including AppGroup, Realm and UserDefaults.",
         "category" : "development",
         "author" : "ivanvorobei",
+        "translator": "wmorgue",
         "keywords" : [
             "UserDefaults",
             "Catalyst"
