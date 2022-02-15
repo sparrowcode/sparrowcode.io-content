@@ -149,7 +149,6 @@
         "updated_date": "06.02.2022",
         "added_date": "06.02.2022"
     },
-    
     "mastering-progressview-swiftui" : {
         "title" : "ProgressView в SwiftUI",
         "description" : "Как устроен ProgressView. Как настроить внешний вид: спиннер и прогрес-бар.",
