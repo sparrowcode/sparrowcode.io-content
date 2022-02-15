@@ -2,7 +2,8 @@ To indicate the background work in the application use `ProgressView`.
 
 ## Indeterminate progress
 
-Let's add a `ProgressView()`:
+Let's add a `ProgressView()`.
+In the example below I separated two views using `Divider()` view:
 
 ```swift
 struct ContentView: View {
