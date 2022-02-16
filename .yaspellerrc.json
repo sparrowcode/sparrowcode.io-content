@@ -57,6 +57,7 @@
     "UnownedSerialExecutor",
     "inBillingRetryPeriod",
     "RoundedProgressViewStyle",
+    "UISheetPresentationController",
     "inGracePeriod",
     "AppStore",
     "AppGroup",
