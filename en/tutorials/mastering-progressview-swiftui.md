@@ -1,4 +1,4 @@
-To indicate the background work in the application use `ProgressView`. I'll show how use it on the ipad in the new Playground.
+To indicate the background work in the application use `ProgressView`. I'll show how use it on the iPad in the new Playground.
 
 ## Indeterminate Progress
 
