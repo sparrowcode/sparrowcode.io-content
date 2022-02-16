@@ -120,5 +120,20 @@
         ],
         "updated_date" : "15.02.2022",
         "added_date" : "15.02.2022"
+    },
+    "uisheetpresentationcontroller" : {
+        "title" : "UISheetPresentationController",
+        "description" : "iOS 15 introduced sheet controllers. They can be dragged and dropped with height modification. You've seen these controllers in the Maps and Stocks apps.",
+        "category" : "uikit",
+        "author" : "ivanvorobei",
+        "translator": "wmorgue",
+        "keywords" : [
+            "UISheetPresentationController",
+            "Model Controllers",
+            "UIKit",
+            "iOS 15"
+        ],
+        "updated_date" : "16.02.2022",
+        "added_date" : "16.02.2022"
     }
 }
