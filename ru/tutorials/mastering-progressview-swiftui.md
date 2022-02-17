@@ -43,7 +43,11 @@ struct ContentView: View {
         }
     }
 }
+```
 
+И добавим в экстеншен:
+
+```swift
 extension ContentView {
 
     private var currentTextProgress: Text {
@@ -76,7 +80,7 @@ extension ContentView {
 
 [Determinate Activity Indicator](https://cdn.ivanvorobei.by/websites/sparrowcode.io/mastering-progressview-swiftui/determinate_activity_indicator.mov)
 
-По нажатию на `Load more` начинается загрузка. Текст показывает текущий прогресс, а кнопка `Reset` станет доступной для нажатия и сброса. Когда загрузка закончится, текст на экране сообщит об этом. Кнопка `Load more` станет неактивной.
+По нажатию на `Load more` начинается загрузка. Текст показывает прогресс, а кнопка `Reset` для сброса. Текст на экране изменится, когда загрузка закончится. Кнопка `Load more` станет неактивной.
 
 Сделаем симуляцию прогресса c таймером:
 
@@ -109,27 +113,26 @@ struct TimerProgressView: View {
 
 [Timer Progress](https://cdn.ivanvorobei.by/websites/sparrowcode.io/mastering-progressview-swiftui/timer_progress.mov)
 
-Событие вызывается несколько раз при помощи таймера. Код таймера:
+Событие вызывается несколько раз при помощи таймера. Код:
 
 ```swift
 let timer = Timer.publish(every: 0.05, on: .main, in: .common).autoconnect()
 ```
 
-Таймер срабатывает каждые 0.05 секунд (50 миллисекунд). Таймер должен работать в главном потоке и общем цикле (common run loop). Run loop позволяет обрабатывать код, когда пользователь делает что-либо (нажимает кнопку). Таймер начинает отсчитывать время моментально.
+Таймер срабатывает каждые 0.05 секунд (50 миллисекунд), он должен работать в главном потоке и общем цикле `common run loop`. Run loop позволяет обрабатывать код, когда пользователь взаимодейтсвует и интерфейсом. Таймер начнет отсчитывать время моментально.
 
 Когда `progress` достигнет `downloadTotal` значения, таймер остановится.
 При достижении 50% загрузки, индикатор меняет цвет на зеленый.
 
-`ProgressView` выглядит как полоса загрузки, которая заполняется слева направо.
-Так показываем пользователю, что прогресс загрузки зависит от размера файла.
+`ProgressView` это полоса загрузки, заполняется слева направо.
 
-Описание метода `publish` доступно в [документации Apple](https://developer.apple.com/documentation/foundation/timer/3329589-publish). Больше инициализаторов можно найти в документации Xcode или [на сайте](https://developer.apple.com/documentation/swiftui/progressview).
+Описание метода `publish` доступно в [документации Apple](https://developer.apple.com/documentation/foundation/timer/3329589-publish). Больше инициализаторов в документации Xcode или [на сайте](https://developer.apple.com/documentation/swiftui/progressview).
 
 ![Documentation SwiftUI ProgressView](https://cdn.ivanvorobei.by/websites/sparrowcode.io/mastering-progressview-swiftui/progressview_init.png)
 
 ## Дизайн
 
-Собственный дизайн для `ProgressView` создаётся с помощью протокола `ProgressViewStyle`, нужно наследоваться от него. Объявим структуру `RoundedProgressViewStyle`, которая содержит метод `makeBody()` и принимает параметр конфигурации для стиля:
+Чтобы создать кастомный дизайн для `ProgressView`, нужно наследоваться от протокола `ProgressViewStyle`. Объявим структуру `RoundedProgressViewStyle` c методом `makeBody()` и принимающим параметр конфигурации для стиля:
 
 ```swift
 struct RoundedProgressViewStyle: ProgressViewStyle {
@@ -147,7 +150,7 @@ struct RoundedProgressViewStyle: ProgressViewStyle {
 }
 ```
 
-Возвращаемся к `TimerProgressView.swift` и передадим `RoundedProgressViewStyle(color: .cyan)` в модификатор `.progressViewStyle()`. Теперь код выглядит так:
+Передадим `RoundedProgressViewStyle(color: .cyan)` в модификатор `.progressViewStyle()`:
 
 ```swift
 struct TimerProgressView: View {
@@ -175,6 +178,6 @@ struct TimerProgressView: View {
 }
 ```
 
-Прогресс начинается не слева направо, а с середины в противоположные стороны.
+Теперь прогресс продолжается с середины в противоположные стороны:
 
 [RoundedProgressViewStyle](https://cdn.ivanvorobei.by/websites/sparrowcode.io/mastering-progressview-swiftui/rounded_progress_view.mov)
