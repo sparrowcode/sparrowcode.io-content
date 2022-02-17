@@ -135,5 +135,22 @@
         ],
         "updated_date" : "16.02.2022",
         "added_date" : "16.02.2022"
+    },
+    "drag-and-drop-part-1" : {
+        "title" : "Drag и Drop",
+        "description" : "How to change the order of cells in a collection and a table. How to move cells to another collection. How to move multiple cells in a group.",
+        "category" : "uikit",
+        "author" : "ivanvorobei",
+        "translator": "wmorgue",
+        "keywords" : [
+            "UICollectionViewDragDelegate",
+            "UICollectionViewDropDelegate",
+            "UITableViewDragDelegate",
+            "UITableViewDropDelegate",
+            "UIDrag",
+            "UIGestureRecognizer"
+        ],
+        "updated_date" : "17.02.2022",
+        "added_date" : "17.02.2022"
     }
 }
