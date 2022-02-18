@@ -12,6 +12,8 @@
 
 [Гайды](https://developer.apple.com/design/): Про проектирование интерфейса - архитектуру, жесты, UI-элементы и другое. Есть интерактивные видео для наглядности.
 
+[Каталог UIKit элементов](https://developer.apple.com/documentation/uikit/views_and_controls/uikit_catalog_creating_and_customizing_views_and_controls): Приложение-каталог с примерами кастомизации нативных элементов из `UIKit`.
+
 [Релизы](https://developer.apple.com/download/release/): Новые версии операционных систем и приложений. Можно глянуть список изменений и скачать Xcode не из стора.
 
 [Видео с WWDC](https://developer.apple.com/videos/): Видео-туториалы от эпл с сессии WWDC. Есть субтитры на английском языке. Спикеры говорят медленно и с наглядной графикой - можно смотреть даже со слабым английским.
