@@ -65,7 +65,7 @@ struct ContentView: View {
 }
 ```
 
-![Searchable Diff Placement](https://cdn.ivanvorobei.by/websites/sparrowcode.io/searchable-swiftui/searchable_diff_placement.png)
+![Searchable Diff Placement](https://cdn.ivanvorobei.by/websites/sparrowcode.io/searchable-swiftui/searchable_diff_placement.jpg)
 
 Применили модификатор к `SecondaryView()` и изменили расположение на `.navigationBarDrawer`. За положение поля ввода отвечает структура `SearchFieldPlacement()`. По умолчанию `placement` установлено в `.automatic`.
 
@@ -151,7 +151,7 @@ authors.filter { $0.name.contains(searchQuery) }
 
 Предложения накладываются на основную вью:
 
-![Searchable overlay](https://cdn.ivanvorobei.by/websites/sparrowcode.io/searchable-swiftui/searchable_overlay.png)
+![Searchable overlay](https://cdn.ivanvorobei.by/websites/sparrowcode.io/searchable-swiftui/searchable_overlay.jpg)
 
 Параметр `suggestions` принимает `@ViewBuilder`, поэтому можно сделать кастомную View и комбинировать варианты для поискового предложения. Код текущего проекта:
 
