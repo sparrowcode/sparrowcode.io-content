@@ -160,5 +160,17 @@
         ],
         "updated_date": "17.02.2022",
         "added_date": "09.02.2022"
+    },
+    "searchable-swiftui" : {
+        "title" : "Searchable в SwiftUI",
+        "description" : "Поиск в SwiftUI. Работаем с модификатором Searchable.",
+        "category" : "swiftui",
+        "author" : "wmorgue",
+        "editors" : ["ivanvorobei"],
+        "keywords" : [
+            "searchable"
+        ],
+        "updated_date": "21.02.2022",
+        "added_date": "21.02.2022"
     }
 }
