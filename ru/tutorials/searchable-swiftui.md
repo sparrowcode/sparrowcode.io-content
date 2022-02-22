@@ -65,7 +65,9 @@ struct ContentView: View {
 }
 ```
 
-Применили модификатор к `SecondaryView()` и изменили расположение на `.navigationBarDrawer`. За это отвечает структура `SearchFieldPlacement()`. По умолчанию `placement` установлено в `.automatic`.
+![Searchable Diff Placement](https://cdn.ivanvorobei.by/websites/sparrowcode.io/searchable-swiftui/searchable_diff_placement.png)
+
+Применили модификатор к `SecondaryView()` и изменили расположение на `.navigationBarDrawer`. За размещение поля поиска отвечает структура `SearchFieldPlacement()`. По умолчанию `placement` установлено в `.automatic`.
 
 [Searchable Placement](https://cdn.ivanvorobei.by/websites/sparrowcode.io/searchable-swiftui/searchable_placement.mov)
 
@@ -130,7 +132,7 @@ extension ContentView {
 authors.filter { $0.name.contains(searchQuery) }
 ```
 
-По умолчанию бар поиска появляется внутри списка - поэтому он скрыт. Чтобы поиск появился - скрольте список вниз. В расширение вью я вынес `authorsResult` проперти.
+По умолчанию бар поиска появляется внутри списка - поэтому он скрыт. Чтобы поиск появился - скрольте список вниз. В расширение вью я вынес `authorsResult` проперти, чтобы разделить логику от интерфейса и улучшить читаемость кода.
 
 ## Предложения (Suggestions)
 
@@ -147,7 +149,11 @@ authors.filter { $0.name.contains(searchQuery) }
 
 [Searchable suggestions](https://cdn.ivanvorobei.by/websites/sparrowcode.io/searchable-swiftui/searchable_suggestions.mov)
 
-Параметр `suggestions` принимает `@ViewBuilder`, поэтому можно сделать кастомную View и комбинировать варианты. Код текущего проекта:
+Полезно будет знать, что предложения накладываются на основную вью.
+
+![Searchable overlay](https://cdn.ivanvorobei.by/websites/sparrowcode.io/searchable-swiftui/searchable_overlay.png)
+
+Параметр `suggestions` принимает `@ViewBuilder`, поэтому можно сделать кастомную View и комбинировать варианты для поискового предложения. Код текущего проекта:
 
 ```swift
 struct ContentView: View {
@@ -189,7 +195,7 @@ extension ContentView {
 }
 ```
 
-Приложение упадет, если мы введем символы или цифры. Я оставил этот код, чтобы продемонстрировать комбинированные варианты поиска:
+Приложение упадет, если мы введем символы или цифры. Я оставил этот код, чтобы продемонстрировать комбинированные варианты предложений для поиска:
 
 ```swift
 .searchCompletion(authorsResult.first!.name)
@@ -246,3 +252,9 @@ struct ContentView: View {
     }
 }
 ```
+
+## Вывод
+
+Сегодня мы познакомились с новым модификатором. Потребовалось всего пару строк кода и в вашем приложении появилась функция поиска. Сам по себе searchable прост, но таит сложное поведение.
+Надеюсь после прочтения статьи вам станет более понятна организация и работа поиска в SwiftUI.
+Спасибо, что дочитали и увидимся в следующих статьях.
