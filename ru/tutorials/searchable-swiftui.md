@@ -1,4 +1,4 @@
-Начиная с iOS 15 и SwiftUI 3 поисковый бар вызывается модификатором [.searchable()](https://developer.apple.com/documentation/swiftui/form/searchable(text:placement:)).
+С iOS 15 и SwiftUI 3 поисковый бар вызывается модификатором [.searchable()](https://developer.apple.com/documentation/swiftui/form/searchable(text:placement:)).
 
 ## Инициализация
 
@@ -67,7 +67,7 @@ struct ContentView: View {
 
 ![Searchable Diff Placement](https://cdn.ivanvorobei.by/websites/sparrowcode.io/searchable-swiftui/searchable_diff_placement.png)
 
-Применили модификатор к `SecondaryView()` и изменили расположение на `.navigationBarDrawer`. За размещение поля поиска отвечает структура `SearchFieldPlacement()`. По умолчанию `placement` установлено в `.automatic`.
+Применили модификатор к `SecondaryView()` и изменили расположение на `.navigationBarDrawer`. За положение поля ввода отвечает структура `SearchFieldPlacement()`. По умолчанию `placement` установлено в `.automatic`.
 
 [Searchable Placement](https://cdn.ivanvorobei.by/websites/sparrowcode.io/searchable-swiftui/searchable_placement.mov)
 
@@ -132,11 +132,11 @@ extension ContentView {
 authors.filter { $0.name.contains(searchQuery) }
 ```
 
-По умолчанию бар поиска появляется внутри списка - поэтому он скрыт. Чтобы поиск появился - скрольте список вниз. В расширение вью я вынес `authorsResult` проперти, чтобы разделить логику от интерфейса и улучшить читаемость кода.
+По умолчанию бар поиска появляется внутри списка, поэтому он скрыт. Чтобы поиск появился - скрольте список вниз. Вынес `authorsResult` в расширение `ContentView`, чтобы отделить логику от интерфейса.
 
 ## Предложения (Suggestions)
 
-Для продвинутого использования, модификатор позволяет нам показать список вариантов авторов.
+Модификатор покажет список вариантов авторов:
 
 ```swift
 .searchable(text: $searchQuery, prompt: "Search author") {
@@ -149,7 +149,7 @@ authors.filter { $0.name.contains(searchQuery) }
 
 [Searchable suggestions](https://cdn.ivanvorobei.by/websites/sparrowcode.io/searchable-swiftui/searchable_suggestions.mov)
 
-Полезно будет знать, что предложения накладываются на основную вью.
+Предложения накладываются на основную вью:
 
 ![Searchable overlay](https://cdn.ivanvorobei.by/websites/sparrowcode.io/searchable-swiftui/searchable_overlay.png)
 
@@ -203,7 +203,7 @@ extension ContentView {
 
 ## Кастомизация
 
-Если вам нужно больше контроля, будь то отслеживание поисковых запросов, поиск в локальной базе данных и т.д., то используйте модификатор `.onSubmit(of: SubmitTriggers)`. Он определяет различные триггеры для старта действия. Доступно 2 проперти: `text` и `search`.
+Если вам нужно больше контроля - отслеживание поисковых запросов, поиск в локальной базе данных и т.д., используйте модификатор `.onSubmit(of: SubmitTriggers)`. Он определяет различные триггеры для старта действия. Доступно 2 проперти: `text` и `search`.
 
 ```swift
 .onSubmit(of: .search) { 
@@ -253,8 +253,4 @@ struct ContentView: View {
 }
 ```
 
-## Вывод
-
-Сегодня мы познакомились с новым модификатором. Потребовалось всего пару строк кода и в вашем приложении появилась функция поиска. Сам по себе searchable прост, но таит сложное поведение.
-Надеюсь после прочтения статьи вам станет более понятна организация и работа поиска в SwiftUI.
-Спасибо, что дочитали и увидимся в следующих статьях.
+Добавить поиск в приложение просто. Но настроить поведение сложнее.
