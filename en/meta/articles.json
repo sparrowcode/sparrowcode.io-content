@@ -164,5 +164,20 @@
         ],
         "updated_date": "23.02.2022",
         "added_date": "23.02.2022"
+    },
+    "resources-for-ios-developer" : {
+        "title" : "Resources for iOS Engineers",
+        "description" : "A compilation of useful links for iOS engineers. Organized by the format of the material. There is a section with Russian content.",
+        "category" : "compilation",
+        "author" : "ivanvorobei",
+        "translator": "wmorgue",
+        "keywords" : [
+            "Resources for iOS Engineers",
+            "iOS development tutorials",
+            "swift development",
+            "iOS app development"
+        ],
+        "updated_date" : "24.02.2022",
+        "added_date" : "24.02.2021"
     }
 }
