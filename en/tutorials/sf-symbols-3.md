@@ -4,7 +4,7 @@ The code examples will be for `SwiftUI` and `UIKit`. Watch carefully for charact
 
 Render Modes is to render an icon in a color scheme. Monochrome, hierarchical, palette and multi-color are available. A clear preview:
 
-![SFSymbols Render Modes Preview](https://cdn.ivanvorobei.by/websites/sparrowcode.io/sf-symbols-3/render-modes-preview.jpg)
+![SFSymbols Render Modes Preview](https://cdn.ivanvorobei.io/websites/sparrowcode.io/sf-symbols-3/render-modes-preview.jpg)
 
 Renders are available for each symbol, but there may be situations when the result for different renders will be the same and the icon will not change appearance. It is better to choose [in application](https://developer.apple.com/sf-symbols/), having previously set the desired renderer.
 
@@ -42,7 +42,7 @@ Image(systemName: "square.stack.3d.down.right.fill")
 
 Note, sometimes the mono-color render is the same as the hierarchical one.
 
-![SFSymbols Hierarchical Render](https://cdn.ivanvorobei.by/websites/sparrowcode.io/sf-symbols-3/hierarchical-render.jpg)
+![SFSymbols Hierarchical Render](https://cdn.ivanvorobei.io/websites/sparrowcode.io/sf-symbols-3/hierarchical-render.jpg)
 
 ## Palette Render
 
@@ -61,7 +61,7 @@ Image(systemName: "person.3.sequence.fill")
 
 If a symbol has 1 segment for a color, it will use the first color specified. If the symbol has 2 segments, but 1 color is specified, it will be used for both segments. If you specify 2 colors, they will be applied accordingly. If you specify 3 colors, the third is ignored.
 
-![SFSymbols Palette Render](https://cdn.ivanvorobei.by/websites/sparrowcode.io/sf-symbols-3/palette-render.jpg)
+![SFSymbols Palette Render](https://cdn.ivanvorobei.io/websites/sparrowcode.io/sf-symbols-3/palette-render.jpg)
 
 ## Multicolor Render
 
@@ -79,7 +79,7 @@ Image(systemName: "externaldrive.badge.plus")
 
 Images that do not have a multicolor option will automatically be displayed in mono-color. In the preview, the fill color is `.systemCyan`:
 
-![SFSymbols Multicolor Render](https://cdn.ivanvorobei.by/websites/sparrowcode.io/sf-symbols-3/multicolor-render.jpg)
+![SFSymbols Multicolor Render](https://cdn.ivanvorobei.io/websites/sparrowcode.io/sf-symbols-3/multicolor-render.jpg)
 
 ## Symbol Variant
 

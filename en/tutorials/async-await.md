@@ -1,6 +1,6 @@
 `async/await` is a new approach for working with multithreading in Swift. It simplifies writing complex call chains and makes code readable. First the theory, and at the end of the tutorial we'll write a tool to search for apps in the App Store using `async/await`.
 
-![async/await Preview](https://cdn.ivanvorobei.by/websites/sparrowcode.io/async-await/preview.png)
+![async/await Preview](https://cdn.ivanvorobei.io/websites/sparrowcode.io/async-await/preview.png)
 
 ## Usage
 
@@ -117,7 +117,7 @@ extension UIImageView {
 
 Let's look at the diagram for the `setImage(url: URL)` function:
 
-![How to work setImage(url: URL)](https://cdn.ivanvorobei.by/websites/sparrowcode.io/async-await/set-image-scheme.png)
+![How to work setImage(url: URL)](https://cdn.ivanvorobei.io/websites/sparrowcode.io/async-await/set-image-scheme.png)
 
 And `loadImage(for: url)`:
 

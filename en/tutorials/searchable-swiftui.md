@@ -21,7 +21,7 @@ struct ContentView: View {
 }
 ```
 
-[Searchable init](https://cdn.ivanvorobei.by/websites/sparrowcode.io/searchable-swiftui/searchable_init.mov)
+[Searchable init](https://cdn.ivanvorobei.io/websites/sparrowcode.io/searchable-swiftui/searchable_init.mov)
 
 To change the placeholder, in the search field we will add `prompt`:
 
@@ -65,11 +65,11 @@ struct ContentView: View {
 }
 ```
 
-![Searchable Diff Placement](https://cdn.ivanvorobei.by/websites/sparrowcode.io/searchable-swiftui/searchable_diff_placement.jpg)
+![Searchable Diff Placement](https://cdn.ivanvorobei.io/websites/sparrowcode.io/searchable-swiftui/searchable_diff_placement.jpg)
 
 Apply a modifier to `SecondaryView()` and change the location to `.navigationBarDrawer`. The `SearchFieldPlacement()` structure is responsible for the position of the search field. By default `placement` is `.automatic`.
 
-[Searchable Placement](https://cdn.ivanvorobei.by/websites/sparrowcode.io/searchable-swiftui/searchable_placement.mov)
+[Searchable Placement](https://cdn.ivanvorobei.io/websites/sparrowcode.io/searchable-swiftui/searchable_placement.mov)
 
 ## Search
 
