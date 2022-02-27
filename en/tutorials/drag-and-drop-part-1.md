@@ -2,7 +2,7 @@ We'll learn how to reorder cells, drag and drop multiple cells, move cells betwe
 
 In this part, we'll cover dragging and dropping for collections and tables. In the next part, we'll see how to drag any views anywhere and handle resetting them. Before we dive, let's break down how the drag and drop lifecycle is designed.
 
-![preview](https://cdn.ivanvorobei.by/websites/sparrowcode.io/drag-and-drop-part-1/preview.jpg)
+![preview](https://cdn.ivanvorobei.io/websites/sparrowcode.io/drag-and-drop-part-1/preview.jpg)
 
 ## Models
 

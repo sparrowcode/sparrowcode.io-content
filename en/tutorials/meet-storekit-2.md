@@ -2,13 +2,13 @@ The difficulty of the first version of StoreKit was so overwhelming that it prod
 
 The new StoreKit looks like a sip of cold water in the desert. Let's dive in.
 
-![Introducing StoreKit 2](https://cdn.ivanvorobei.by/websites/sparrowcode.io/meet-storekit-2/header.jpg)
+![Introducing StoreKit 2](https://cdn.ivanvorobei.io/websites/sparrowcode.io/meet-storekit-2/header.jpg)
 
 ## What's new
 
 The models representing purchases and operations on them have been replaced. The names now have no SK prefixes and it is generally intuitive to see which data represent the models. We will not dwell on each one the list is below:
 
-![StoreKit 2 Modes](https://cdn.ivanvorobei.by/websites/sparrowcode.io/meet-storekit-2/models.jpg)
+![StoreKit 2 Modes](https://cdn.ivanvorobei.io/websites/sparrowcode.io/meet-storekit-2/models.jpg)
 
 ## Request for products and purchase
 
@@ -55,7 +55,7 @@ Added auto-renewal subscription state, which was previously only available in th
 - <b>inGracePeriod</b> - deferred payment by subscription. If your subscription has a grace period enabled and a payment error has occurred, the user will have some more time while the subscription is alive, although the payment has not yet been made. The number of days of the grace period can be from 6 to 16, depending on the length of the subscription itself.<br>
 - <b>revoked</b> - access to all subscriptions of this group is denied by the AppStore.
 
-![Subscription information](https://cdn.ivanvorobei.by/websites/sparrowcode.io/meet-storekit-2/subscription-information.jpg)
+![Subscription information](https://cdn.ivanvorobei.io/websites/sparrowcode.io/meet-storekit-2/subscription-information.jpg)
 
 The `Renewal Info` entity contains information about auto-renewal subscriptions. For example:
 
