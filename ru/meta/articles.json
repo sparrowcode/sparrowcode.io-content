@@ -172,5 +172,19 @@
         ],
         "updated_date": "22.02.2022",
         "added_date": "21.02.2022"
+    },
+    "redacted-modifier-swiftui" : {
+        "title" : "Модификатор redacted в SwiftUI",
+        "description" : "Делаем прототип вью в SwiftUI.",
+        "category" : "swiftui",
+        "author" : "wmorgue",
+        "editors" : ["ivanvorobei"],
+        "keywords" : [
+            "redacted",
+            "unredacted",
+            "RedactionReasons"
+        ],
+        "updated_date": "01.03.2022",
+        "added_date": "01.03.2022"
     }
 }
