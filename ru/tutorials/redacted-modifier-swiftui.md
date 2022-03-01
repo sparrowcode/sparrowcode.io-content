@@ -1,8 +1,11 @@
 В iOS 14 и SwiftUI 2 добавили новый модификатор `.redacted(reason:)`, с помощью которого можно сделать прототип вью. Выглядит вот так:
 
 ```swift
-Label("Swift Playground", systemImage: "swift")
-    .redacted(reason: .placeholder)
+VStack {
+    Label("Swift Playground", systemImage: "swift")
+    Label("Swift Playground", systemImage: "swift")
+        .redacted(reason: .placeholder)
+}
 ```
 
 ![Redacted placeholder](https://cdn.ivanvorobei.io/websites/sparrowcode.io/redacted-modifier-swiftui/redacted_placeholder.jpg)
@@ -33,7 +36,6 @@ extension Device {
             description: "Cуперлёгкий способ находить свои вещи. Прикрепите один трекер AirTag к ключам, а другой — к рюкзаку. И теперь их видно на карте в приложении «Локатор»."
         )
 }
-
 ```
 
 Модель имеет три свойства: название, системная иконка и описание. Для удобства я вынес `airTag` в расширение.
