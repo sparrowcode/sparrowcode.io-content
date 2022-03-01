@@ -219,6 +219,8 @@ extension View {
 }
 ```
 
+При смене положения переключателя, кнопка становится не кликабельной.
+
 ![Custom unredacted method](https://cdn.ivanvorobei.io/websites/sparrowcode.io/redacted-modifier-swiftui/redacted_custom_unredacted.jpg)
 
 
@@ -334,4 +336,4 @@ struct RedactableModifier_Previews: PreviewProvider {
 
 
 <!-- Вывод гайда -->
-Познакомились с новым модификатором и сделали собственный API.
+Добавить прототип вью не сложно, как и кастомизировать его. Надеюсь в следующих версиях появится больше вариантов для редактирования.
