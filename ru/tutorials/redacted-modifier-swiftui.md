@@ -22,7 +22,7 @@ VStack {
 Начнем с подготовления модели:
 
 ```swift
-struct Devices {
+struct Device {
     let name: String
     let systemIcon: String
     let description: String
@@ -43,20 +43,20 @@ extension Device {
 Создадим отдельную вью:
 
 ```swift
-struct DevicesView: View {
-    let devices: Devices
+struct DeviceView: View {
+    let device: Device
     
     var body: some View {
         VStack(spacing: 20) {
             HStack {
-                Image(systemName: devices.systemIcon)
+                Image(systemName: device.systemIcon)
                     .resizable()
                     .frame(width: 42, height: 42)
-                Text(devices.name)
+                Text(device.name)
                     .font(.title2)
             }
             VStack {
-                Text(devices.description)
+                Text(device.description)
                     .font(.footnote)
                 
                 Button("Перейти к покупке") {}
