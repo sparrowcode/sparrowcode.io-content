@@ -151,7 +151,7 @@ print(String(decoding: newData, as: UTF8.self))
 // Выведет: {"twitter":"@twostraws","name":"Paul”}
 ```
 
-## Атрибут недоступности.
+## Атрибут недоступности
 
 Появилась противоположная форма `#available` — `#unavailable`:
 
