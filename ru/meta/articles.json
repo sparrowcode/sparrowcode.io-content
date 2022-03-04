@@ -172,5 +172,17 @@
         ],
         "updated_date": "22.02.2022",
         "added_date": "21.02.2022"
+    },
+    "swif-56" : {
+        "title" : "Что нового в Swift 5.6",
+        "description" : "Неявный тип, ключевое слово any, новый протокол и другое.",
+        "category" : "development",
+        "author" : "wmorgue",
+        "editors" : ["ivanvorobei"],
+        "keywords" : [
+            "searchable"
+        ],
+        "updated_date": "04.03.2022",
+        "added_date": "04.03.2022"
     }
 }
