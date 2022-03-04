@@ -110,6 +110,10 @@
     "SPPermissions",
     "SwiftyJSON",
     "SwiftBook",
+    "Int",
+    "enum",
+    "struct",
+    "existentials",
     "UI(|Button|Kit|)",
     "contentEdgeInsets",
     "DnD",
@@ -122,6 +126,8 @@
     "clickable",
     "prefill",
     "renderer",
-    "деталк(|а|у|и)"
+    "деталк(|а|у|и)",
+    "девайс(|а|у|ов|)",
+    "кликабел(|ен|ьный|ьной|ьным)"
   ]
 }
