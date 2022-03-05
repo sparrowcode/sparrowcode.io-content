@@ -1,4 +1,4 @@
-В iOS 14 и SwiftUI 2 добавили новый модификатор `.redacted(reason:)`, с помощью которого можно сделать прототип вью. Выглядит вот так:
+В iOS 14 и SwiftUI 2 добавили модификатор `.redacted(reason:)`, с помощью которого можно сделать прототип вью:
 
 ```swift
 VStack {
@@ -8,27 +8,26 @@ VStack {
 }
 ```
 
-![Redacted placeholder](https://cdn.ivanvorobei.io/websites/sparrowcode.io/redacted-modifier-swiftui/redacted_placeholder.jpg)
+![Redacted Placeholder](https://cdn.ivanvorobei.io/websites/sparrowcode.io/redacted-modifier-swiftui/redacted_placeholder.jpg)
 
-Прототип можно использовать для разных целей, например:
+Используйте прототип, чтобы:
 
-1. Показать вью, содержимое которой будет доступно после загрузки.
+1. Показать вью, контент которой будет доступно после загрузки.
 2. Показать недоступное или частично доступное содержимое.
-3. Использовать вместо `ProgressView()`, о которой я [рассказал в отдельном гайде](https://sparrowcode.io/ru/mastering-progressview-swiftui).
+3. Использовать вместо `ProgressView()`, о которой я [рассказал в гайде](https://sparrowcode.io/ru/mastering-progressview-swiftui).
 
-
-## Более комплексный пример
-
-Начнем с подготовления модели:
+Рассмотрим сложный пример:
 
 ```swift
 struct Device {
+
     let name: String
     let systemIcon: String
     let description: String
 }
 
 extension Device {
+
     static let airTag: Self =
         .init(
             name: "AirTag",
@@ -38,9 +37,7 @@ extension Device {
 }
 ```
 
-Модель имеет три свойства: название, системная иконка и описание. Для удобства я вынес `airTag` в расширение.
-
-Создадим отдельную вью:
+Модель имеет название, системную иконку и описание. Вынес `airTag` в расширение. Создадим отдельную вью:
 
 ```swift
 struct DeviceView: View {
@@ -81,12 +78,13 @@ struct ContentView: View {
 }
 ```
 
-![DeviceView result](https://cdn.ivanvorobei.io/websites/sparrowcode.io/redacted-modifier-swiftui/redacted_deviceview.jpg)
+![DeviceView Result](https://cdn.ivanvorobei.io/websites/sparrowcode.io/redacted-modifier-swiftui/redacted_deviceview.jpg)
 
-Слева вью без модификатора, а справа с ним. Для наглядности добавим переключатель:
+Слева - вью без модификатора. Справа - с ним. Для наглядности добавим переключатель:
 
 ```swift
 struct ContentView: View {
+
     @State private var toggleRedacted: Bool = false
     
     var body: some View {
@@ -105,7 +103,7 @@ struct ContentView: View {
 
 ## Unredacted
 
-Если вы хотите не скрывать некоторый контент, то примените модификатор `unredacted()`:
+Если вы хотите не скрывать контент, примените модификатор `unredacted()`:
 
 ```swift
 VStack(spacing: 20) {
@@ -121,16 +119,16 @@ VStack(spacing: 20) {
     VStack {
         Text(device.description)
             .font(.footnote)
-            // код ниже скрыт
+            // Какой-то код ниже
 ```
 
-![Unredacted result](https://cdn.ivanvorobei.io/websites/sparrowcode.io/redacted-modifier-swiftui/redacted_unredacted.jpg)
+![Unredacted Result](https://cdn.ivanvorobei.io/websites/sparrowcode.io/redacted-modifier-swiftui/redacted_unredacted.jpg)
 
-В нашем примере иконка и название девайса не будут скрыты.
+В примере иконка и название девайса не скрыты.
 
-## Подводный камень
+## Кликабельность
 
-Заключается в том, что кнопка остается кликабельной и может совершать действия даже после применения модификатора:
+Кнопка остается кликабельной и совершает действия даже после применения модификатора:
 
 ```swift
 VStack {
@@ -145,34 +143,34 @@ VStack {
 }
 ```
 
-![Button still available](https://cdn.ivanvorobei.io/websites/sparrowcode.io/redacted-modifier-swiftui/redacted_available_button.mov)
+[Button Still Available](https://cdn.ivanvorobei.io/websites/sparrowcode.io/redacted-modifier-swiftui/redacted_available_button.mov)
 
-Поведением кнопки необходимо управлять самостоятельно. Чуть ниже я покажу как.
+Поведением кнопки управляйте вручную, ниже покажу как.
 
 ## Причины редактирования
 
-Apple спроектировала новую структуру [RedactionReasons](https://developer.apple.com/documentation/swiftui/redactionreasons), которая отвечает за **причину** редактирования, применяемая к вью.
-Доступно два варианта: `privacy` и `placeholder`. Privacy отвечает за отображение данных, которые должны быть скрыты в качестве приватной информации. Placeholder отвечает за обобщенный прототип.
+Apple спроектировала структуру [RedactionReasons](https://developer.apple.com/documentation/swiftui/redactionreasons), которая отвечает за **причину** редактирования, применяемую к вью.
+Доступно варианты `privacy` и `placeholder`. Первый отвечает за данные, которые скрыты как приватная информация. Placeholder отвечает за обобщенный прототип.
 
-Реализовать свою причину можно вот так:
+Реализовать кастомную причину можно так:
 
 ```swift
 extension RedactionReasons {
-		static let name = RedactionReasons(rawValue: 1 << 20)
-		static let description = RedactionReasons(rawValue: 2 << 20)
+
+	static let name = RedactionReasons(rawValue: 1 << 20)
+	static let description = RedactionReasons(rawValue: 2 << 20)
 }
 ```
 
-Реализация происходит с помощью протокола `OptionSet`.
+Реализуем с помощью протокола `OptionSet`.
 
 ## Environment
 
-У окружения есть проперти `\.redactionReasons` — текущая причина редактирования применяемая к иерархии вью.
-
-Изменим нашу `DevicesView` с помощью своего метода `unredacted(when:)`:
+У окружения есть проперти `\.redactionReasons` — текущая причина редактирования, применяемая к иерархии вью. Изменим `DevicesView` с помощью `unredacted(when:)`:
 
 ```swift
 struct DeviceView: View {
+
     let device: Device
     @Environment(\.redactionReasons) var reasons 
     
@@ -205,7 +203,7 @@ struct DeviceView: View {
 }
 ```
 
-Я добавил кастомный метод `unredacted(when:)` для демонстрации работы свойства `reasons`:
+Я добавил кастомный метод `unredacted(when:)` для демонстрации свойства `reasons`:
 
 ```swift
 extension View {
@@ -219,10 +217,9 @@ extension View {
 }
 ```
 
-При смене положения переключателя, кнопка становится не кликабельной.
+Если переключить, кнопка станет не кликабельной.
 
 ![Custom unredacted method](https://cdn.ivanvorobei.io/websites/sparrowcode.io/redacted-modifier-swiftui/redacted_custom_unredacted.jpg)
-
 
 ## Собственный API
 
@@ -230,16 +227,18 @@ extension View {
 
 ```swift
 enum Reasons {
+
     case blurred
     case standart
     case sensitiveData
 }
 ```
 
-Реализуем свои вью модификаторы, подходящие под причины выше:
+Реализуем вью-модификаторы, подходящие под причины выше:
 
 ```swift
 struct Blurred: ViewModifier {
+
     func body(content: Content) -> some View {
         content
             .padding()
@@ -249,6 +248,7 @@ struct Blurred: ViewModifier {
 }
 
 struct Standart: ViewModifier {
+
     func body(content: Content) -> some View {
         content
             .padding()
@@ -256,6 +256,7 @@ struct Standart: ViewModifier {
 }
 
 struct SensitiveData: ViewModifier {
+
     func body(content: Content) -> some View {
         VStack {
             Text("Are you over 18 years old?")
@@ -270,10 +271,11 @@ struct SensitiveData: ViewModifier {
 }
 ```
 
-Для того, чтобы увидеть результат из модификаторов выше в live preview, необходимо написать код ниже:
+Чтобы увидеть результат из модификаторов выше в live preview, нужен код:
 
 ```swift
 struct Blurred_Previews: PreviewProvider {
+
     static var previews: some View {
         Text("Hello, world!")
             .modifier(Blurred())
@@ -283,11 +285,11 @@ struct Blurred_Previews: PreviewProvider {
 
 ![Blurred Previews](https://cdn.ivanvorobei.io/websites/sparrowcode.io/redacted-modifier-swiftui/redacted_blurred_previews.jpg)
 
-В качестве примера я взял `Blurred` модификатор.
-Перейдем к следующему модификатору вью `RedactableModifier`:
+Я взял `Blurred` модификатор. Перейдем к следующему модификатору вью `RedactableModifier`:
 
 ```swift
 struct RedactableModifier: ViewModifier {
+
     let reason: Reasons?
     
     init(with reason: Reasons) { self.reason = reason }
@@ -305,20 +307,22 @@ struct RedactableModifier: ViewModifier {
 ```
 
 Структура имеет `reason` свойство, которое принимает опциональное перечисление `Reasons`.
-Последним шагом будет реализация своего метода к протоколу `View`:
+Последний шаг - реализация метода к протоколу `View`:
 
 ```swift
 extension View {
+
     func redacted(with reason: Reasons?) -> some View {
         modifier(RedactableModifier(with: reason ?? .standart))
     }
 }
 ```
 
-Я не стал делать отдельную вью, в которой буду вызывать модификаторы, а вместо этого поместил все в live preview:
+Я не сделал отдельную вью, в которой буду вызывать модификаторы. Вместо этого поместил все в live preview:
 
 ```swift
 struct RedactableModifier_Previews: PreviewProvider {
+
     static var previews: some View {
         VStack(spacing: 30) {
             Text("Usual content")
@@ -332,8 +336,6 @@ struct RedactableModifier_Previews: PreviewProvider {
 }
 ```
 
+Результат на видео:
+
 ![RedactableModifier](https://cdn.ivanvorobei.io/websites/sparrowcode.io/redacted-modifier-swiftui/redacted_redactable_modifier.jpg)
-
-
-<!-- Вывод гайда -->
-Добавить прототип вью не сложно, как и кастомизировать его. Надеюсь в следующих версиях появится больше вариантов для редактирования.
