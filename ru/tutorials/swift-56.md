@@ -4,10 +4,12 @@
 
 ```swift
 protocol Vehicle {
+
     func travel(to destination: String)
 }
 
 struct Car: Vehicle {
+
     func travel(to destination: String) {
         print("I'm driving to \(destination)")
     }
@@ -88,6 +90,7 @@ _? // опциональный неявный тип
 
 ```swift
 struct Player<T: Numeric> {
+
     var name: String
     var score: T
 }
@@ -175,6 +178,7 @@ if #unavailable(iOS 15, *) {
 
 ```swift
 class MyCounter {
+
   var value = 0
 }
 
