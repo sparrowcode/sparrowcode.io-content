@@ -6,7 +6,7 @@
 
 [Acronis](https://www.acronis.com/en-us/blog/posts/acronis-suspends-all-operations-in-russia/): Приостанавливает операции, но продолжит обслуживать клиентов и партнеров компании.
 
-[Activision Blizzard](https://www.activisionblizzard.com/newsroom/2022/03/supporting-the-ukrainian-people): Приостановили продажу игр и микротранзакции. 
+[Activision Blizzard](https://www.activisionblizzard.com/newsroom/2022/03/supporting-the-ukrainian-people): Приостановили продажу игр и микро транзакции. 
 
 [Adobe](https://blog.adobe.com/en/publish/2022/03/04/adobe-stops-all-new-sales-in-russia): Прекращает продажу продуктов и услуг. 
 
