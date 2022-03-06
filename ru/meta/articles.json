@@ -151,7 +151,7 @@
     },
     "mastering-progressview-swiftui" : {
         "title" : "ProgressView в SwiftUI",
-        "description" : "Как устроен ProgressView. Как настроить внешний вид: спиннер и прогрес-бар.",
+        "description" : "Как устроен ProgressView. Как настроить внешний вид: спиннер и прогресс-бар.",
         "category" : "swiftui",
         "author" : "wmorgue",
         "editors" : ["ivanvorobei"],
@@ -163,7 +163,7 @@
     },
     "searchable-swiftui" : {
         "title" : "Searchable в SwiftUI",
-        "description" : "Поиск в SwiftUI. Работаем с модификатором Searchable.",
+        "description" : "Поиск в SwiftUI. Работаем с модификатором `Searchable`.",
         "category" : "swiftui",
         "author" : "wmorgue",
         "editors" : ["ivanvorobei"],
@@ -205,7 +205,7 @@
     },
     "sanctions-it-companies" : {
         "title" : "IT-компании, которые уходят из РФ",
-        "description" : "Список компаний, которые уходят или блокируют сервисы. Обновляется.",
+        "description" : "Список компаний, которые уходят или ограничивают сервисы. Указываем ссылки на источники и пресс-релизы. Обновляется.",
         "category" : "news",
         "author" : "sparrowcode",
         "editors" : ["ivanvorobei", "wmorgue", "svtnck"],
