@@ -175,7 +175,7 @@
     },
     "redacted-modifier-swiftui" : {
         "title" : "Модификатор redacted в SwiftUI",
-        "description" : "Делаем прототип вью в SwiftUI.",
+        "description" : "Делаем прототип вью в SwiftUI. Скелет интерфейса, пока контент загружается.",
         "category" : "swiftui",
         "author" : "wmorgue",
         "editors" : ["ivanvorobei"],
@@ -189,7 +189,7 @@
     },
     "swift-56" : {
         "title" : "Что нового в Swift 5.6",
-        "description" : "Неявный тип, ключевое слово any, новый протокол и другое.",
+        "description" : "Неявный тип, ключевое слово any, протокол `CodingKeyRepresentable` и атрибут недоступности.",
         "category" : "development",
         "author" : "wmorgue",
         "editors" : ["ivanvorobei"],
@@ -205,8 +205,8 @@
     },
     "sanctions-it-companies" : {
         "title" : "IT-компании, которые уходят из РФ",
-        "description" : "Список компаний, которые уходят или блокируют сервисы.",
-        "category" : "development",
+        "description" : "Список компаний, которые уходят или блокируют сервисы. Обновляется.",
+        "category" : "news",
         "author" : "sparrowcode",
         "editors" : ["ivanvorobei", "wmorgue", "svtnck"],
         "keywords" : [

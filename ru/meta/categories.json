@@ -16,5 +16,8 @@
     },
     "app_store_connect" : {
         "name" : "App Store Connect"
+    },
+    "news" : {
+        "name" : "Новости"
     }
 }
