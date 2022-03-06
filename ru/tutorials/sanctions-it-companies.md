@@ -70,7 +70,9 @@
 
 [Samsung](https://www.fontanka.ru/2022/03/05/70488875/): Приостановили поставку всех товаров.
 
-[Spotify](https://vc.ru/media/373892-spotify-zakryl-na-neopredelennyy-srok-ofis-v-rossii-na-fone-boev-v-ukraine): Закрыл офис «на неопределённый срок».
+[Spotify](https://support.spotify.com/ru-ru/contact-spotify-support/?nosignup=true): Приостановили продажу премиум подписки.
+
+[TikTok](https://twitter.com/TikTokComms/status/1500535437861048320): Закрыли возможность вести стримы и загружать новые видео.
 
 [Twitch](https://dtf.ru/gameindustry/1107855-twitch-priostanovila-vyplaty-rossiyskim-strimeram-im-predlagayut-vybrat-drugoy-sposob-oplaty): Приостановила выплаты стримерам — им предлагают выбрать другой способ оплаты.
 
