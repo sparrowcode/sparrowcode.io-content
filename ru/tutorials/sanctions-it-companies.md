@@ -1,24 +1,22 @@
-В статье ссылаемся на официальные заявления компаний или новости с различных источников. Посмотреть откуда мы взяли информацию о компании можно нажав на заголовок. 
+Собрали изменения в работе IT-компаний. Для каждой компании ссылаемся на пресс-релиз и описали что конкретно изменилось в работе сервисов. 
 
-Мы постараемся обновлять статью по мере появления новых компаний или изменений в работе старых. Вы также можете исправить неточности или добавить новую компанию через PR [на гитхабе](https://github.com/sparrowcode/Tutorials).
+Статья обновляется. Дополнить статью можно через Pull Request в [репозитории на GitHub](https://github.com/sparrowcode/Tutorials/ru/tutorials/sanctions-it-companies).
 
-## Список
+[Acronis](https://www.acronis.com/en-us/blog/posts/acronis-suspends-all-operations-in-russia/): Приостанавливает операции, но продолжит обслуживать клиентов и партнеров компании.
 
-[Acronis](https://www.acronis.com/en-us/blog/posts/acronis-suspends-all-operations-in-russia/): Приостанавливает операции в России При этом компания заверяет, что продолжит обслуживать клиентов и партнеров компании. «Программное обеспечение Acronis, на которое вы полагаетесь для защиты и управления своим бизнесом, будет по-прежнему доступно без сбоев, как это было всегда, — говорится в посте руководителя. 
+[Activision Blizzard](https://www.activisionblizzard.com/newsroom/2022/03/supporting-the-ukrainian-people): Приостановили продажу игр и микротранзакции. 
 
-[Activision Blizzard](https://www.activisionblizzard.com/newsroom/2022/03/supporting-the-ukrainian-people): Приостановил продажу игр и микротранзакции в России — это издатель Call of Duty, World of Warcraft и других игр. Речь идёт об играх, произведённых Activision Blizzard и подконтрольными ей командами разработки, а также микроплатежах и магазинах, доступных в проектах американского издательства. 
+[Adobe](https://blog.adobe.com/en/publish/2022/03/04/adobe-stops-all-new-sales-in-russia): Прекращает продажу продуктов и услуг. 
 
-[Adobe](https://blog.adobe.com/en/publish/2022/03/04/adobe-stops-all-new-sales-in-russia): Прекращает продажу своих продуктов и услуг в России и отключает доступ к ряду из них для «подконтрольных правительству СМИ». 
+[Airbnb](https://news.airbnb.com/airbnbs-actions-in-response-to-the-ukraine-crisis/): Нельзя арендовать жилье на территории РБ и РФ.
 
-[Airbnb](https://news.airbnb.com/airbnbs-actions-in-response-to-the-ukraine-crisis/): Онлайн-сервис по аренде жилья приостановит работу на территории двух стран - России и Белоруссии. 
+[Apple](https://www.buzzfeednews.com/article/sarahemerson/apple-responds-ukraine-russia-rt-sputnik-maps/): Прекратила продажу техники. Apple Pay не работает с банками, попавшими под санкциями. 
 
-[Apple](https://www.buzzfeednews.com/article/sarahemerson/apple-responds-ukraine-russia-rt-sputnik-maps/): Прекратила продажу техники в России. Apple Pay не работает с банками, попавшими под санкциями. 
+[Atlassian](https://www.atlassian.com/blog/announcements/atlassian-stands-with-ukraine): Приостанавливает продажи и блокирует госаккануты. 
 
-[Atlassian](https://www.atlassian.com/blog/announcements/atlassian-stands-with-ukraine): Приостанавливает продажи, блокирует госаккануты. 
+[Booking](https://www.linkedin.com/posts/glennfogel_update-march-4-with-each-passing-day-as-activity-6904768188073275392-st4W/): Объекты размещения не отображаются в поиске. 
 
-[Booking](https://www.linkedin.com/posts/glennfogel_update-march-4-with-each-passing-day-as-activity-6904768188073275392-st4W/): перестал работать в России — объекты размещения в РФ не отображаются при поиске. 
-
-[CD Projekt RED](https://en.cdprojektred.com/news/important-update-2/): Объявили о временной приостановке продаж своих игр, ранее активированные копии игр продолжат работать.
+[CD Projekt RED](https://en.cdprojektred.com/news/important-update-2/): Не продает игры, но раннее купленные игры остаются доступны.
 
 [Cisco Systems Inc](https://www.marketwatch.com/story/cisco-systems-is-latest-american-company-to-stop-business-operations-in-russia-2022-03-03?mod=search_headline): Приостановили все бизнес-операции в России и Белоруссии.
 
