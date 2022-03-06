@@ -1,6 +1,6 @@
 Собрали изменения в работе IT-компаний. Для каждой компании ссылаемся на пресс-релиз и описали что конкретно изменилось в работе сервисов. 
 
-Статья обновляется. Дополнить статью можно через Pull Request в [репозитории на GitHub](https://github.com/sparrowcode/Tutorials/ru/tutorials/sanctions-it-companies).
+Статья обновляется. Дополнить статью можно через Pull Request в [репозитории на GitHub](https://github.com/sparrowcode/Tutorials/ru/articles/sanctions-it-companies).
 
 [Acronis](https://www.acronis.com/en-us/blog/posts/acronis-suspends-all-operations-in-russia/): Приостанавливает операции, но продолжит обслуживать клиентов и партнеров компании.
 
