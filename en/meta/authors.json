@@ -39,5 +39,16 @@
                 "link": "https://github.com/wmorgue"
             }
         ]
+    },
+    "sparrowcode": {
+        "name": "SparrowCode Editorial",
+        "description": "We do articles and opensource for developers.",
+        "avatar": "https://cdn.ivanvorobei.io/websites/sparrowcode.io/authors/sparrowcode.jpg",
+        "buttons": [
+            {
+                "name": "GitHub",
+                "link": "https://github.com/sparrowcode"
+            }
+        ]
     }
 }
