@@ -69,5 +69,20 @@
                 "link" : "https://apps.pelevin.me"
             }
         ]
+    },
+    "sparrowcode": {
+        "name": "Редакция SparrowCode",
+        "description": "Делаем статьи и opensource для разработчиков.",
+        "avatar": "https://cdn.ivanvorobei.io/websites/sparrowcode.io/authors/sparrowcode.jpg",
+        "buttons": [
+            {
+                "name": "GitHub",
+                "link": "https://github.com/sparrowcode"
+            },
+            {
+                "name": "Telegram",
+                "link": "https://t.me/sparrowcode"
+            }
+        ]
     }
 }

@@ -202,5 +202,20 @@
         ],
         "updated_date": "04.03.2022",
         "added_date": "04.03.2022"
+    },
+    "list-of-it-companies-changes" : {
+        "title" : "Список IT-компаний, приостановивших или изменивших условия работы.",
+        "description" : "Собрали список IT компаний, которые приостановили или изменили условия своей работы в России и Беларуси.",
+        "category" : "development",
+        "author" : "sparrowcode",
+        "editors" : ["ivanvorobei", "wmorgue", "svtnck"],
+        "keywords" : [
+            "it",
+            "it-companies",
+            "existential any",
+            "type placeholders"
+        ],
+        "updated_date": "06.03.2022",
+        "added_date": "06.03.2022"
     }
 }
