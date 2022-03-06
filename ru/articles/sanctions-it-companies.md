@@ -1,20 +1,21 @@
-Собрали изменения в работе IT-компаний. Для каждой компании есть ссылка на пресс-релиз и описание что конкретно изменилось в работе. 
+Собрали изменения в работе IT-компаний. Для каждой компании ссылаемся на пресс-релиз и описали что конкретно изменилось в работе сервисов. 
 
-Статья обновляется. Дополните список через Pull Request в [репозитории на GitHub](https://github.com/sparrowcode/Tutorials/ru/articles/sanctions-it-companies). Если вас коснулись ограничения - дополните описание под именем компании.
+Статья обновляется. Дополнить статью можно через Pull Request в [репозитории на GitHub](https://github.com/sparrowcode/Tutorials/ru/articles/sanctions-it-companies).
 
-[Acronis](https://www.acronis.com/en-us/blog/posts/acronis-suspends-all-operations-in-russia/): Приостанавливает операции, но продолжит обслуживать клиентов и партнеров компании.
+[Acronis](https://www.acronis.com/en-us/blog/posts/acronis-suspends-all-operations-in-russia/): Приостанавливает операции и не заключет новые контракты, но продолжит обслуживать клиентов и партнеров компании.
 
-[Activision Blizzard](https://www.activisionblizzard.com/newsroom/2022/03/supporting-the-ukrainian-people): Приостановили продажу игр и микро транзакции. 
+[Activision Blizzard](https://www.activisionblizzard.com/newsroom/2022/03/supporting-the-ukrainian-people): Приостановили продажу игр и микротранзакции. 
+Кроме того, позиция компании может сказаться на мобильных релизах, таких как Candy Crash Saga и Crash Bandicoot: On the Run.
 
 [Adobe](https://blog.adobe.com/en/publish/2022/03/04/adobe-stops-all-new-sales-in-russia): Прекращает продажу продуктов и услуг. 
 
-[Airbnb](https://news.airbnb.com/airbnbs-actions-in-response-to-the-ukraine-crisis/): Нельзя арендовать жилье на территории РБ и РФ.
+[Airbnb](https://news.airbnb.com/airbnbs-actions-in-response-to-the-ukraine-crisis/): Нельзя арендовать жилье на территории РБ и РФ. В пресс-службе компании пояснили: это означает, что в обеих странах заблокируют возможность для хозяев принимать новые брони, а для гостей — бронировать жилье. 
 
 [Apple](https://www.buzzfeednews.com/article/sarahemerson/apple-responds-ukraine-russia-rt-sputnik-maps/): Прекратила продажу техники. Apple Pay не работает с банками, попавшими под санкциями. 
 
 [Atlassian](https://www.atlassian.com/blog/announcements/atlassian-stands-with-ukraine): Приостанавливает продажи и блокирует госаккануты. 
 
-[Booking](https://www.linkedin.com/posts/glennfogel_update-march-4-with-each-passing-day-as-activity-6904768188073275392-st4W/): Объекты размещения не отображаются в поиске. 
+[Booking](https://www.linkedin.com/posts/glennfogel_update-march-4-with-each-passing-day-as-activity-6904768188073275392-st4W/): Объекты размещения не отображаются в поиске. Как рассказывают путешественники, старые брони пока не аннулировали.
 
 [CD Projekt RED](https://en.cdprojektred.com/news/important-update-2/): Не продает игры, но раннее купленные игры остаются доступны.
 
