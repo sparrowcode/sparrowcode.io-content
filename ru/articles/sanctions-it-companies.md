@@ -1,10 +1,10 @@
-Собрали изменения в работе IT-компаний. Для каждой компании есть ссылка на пресс-релиз, обращение руководства компании или новость и описание что конкретно изменилось в работе.
+Собрали изменения в работе IT-компаний. Для каждой компании есть ссылка на пресс-релиз или публичное обращение.
 
 Статья обновляется. Дополните список через Pull Request в [репозитории на GitHub](https://github.com/sparrowcode/Tutorials/ru/articles/sanctions-it-companies). Если вас коснулись ограничения - дополните описание под именем компании.
 
-## Компании, официально заявившие об изменениях
+## Официально
 
-В этом разделе находятся компании, которые опубликовали пресс-релизы или руковоодство которых сообщило об изменениях от своего лица.
+[Apple](https://www.buzzfeednews.com/article/sarahemerson/apple-responds-ukraine-russia-rt-sputnik-maps/): Не работает Apple Pay у банков под санкциями.
 
 [Acronis](https://www.acronis.com/en-us/blog/posts/acronis-suspends-all-operations-in-russia/): Приостанавливает операции и не заключает новые контракты. Продолжит обслуживать клиентов и партнеров компании.
 
@@ -28,7 +28,7 @@
 
 [EPAM Systems](https://www.epam.com/about/newsroom/press-releases/2022/epam-provides-update-on-ukraine): Больше не будет обслуживать клиентов, но обеспечит переход. 
 
-[Epic Games](https://twitter.com/EpicNewsroom/status/1500236775448588295): Приостонавливает коммерцию в своих играх.
+[Epic Games](https://twitter.com/EpicNewsroom/status/1500236775448588295): Приостанавливает коммерцию в своих играх.
 
 [Facebook](https://rkn.gov.ru/news/rsoc/news74156.htm): Заблокирован Роскомнадзором. 
 
@@ -48,17 +48,17 @@
 
 [TikTok](https://twitter.com/TikTokComms/status/1500535437861048320): Нельзя вести стримы и загружать видео.
 
+[Twitter](https://vc.ru/social/375177-roskomnadzor-zablokiroval-twitter-v-rossii): Заблокирован Роскомнадзором.
+
 [IBM](https://newsroom.ibm.com/War-in-Ukraine-Supporting-IBMers/): Прекратили продажу технологий и ведение бизнеса с российскими военными организациями. 
 
-## Компании, об изменениях в которых пишут в новостях
+## Без публичного заявления
 
-В этом разделе находятся компании, которые не публиковали пресс-релизов. Про изменения в их работы пишут СМИ, ссылаясь на различные источники. Мы не можем быть уверены в том, что они истинны, поэтому вынесли их в отдельный раздел.
-
-[Apple](https://www.buzzfeednews.com/article/sarahemerson/apple-responds-ukraine-russia-rt-sputnik-maps/): Прекратила продажу техники. Apple Pay не работает с банками, попавшими под санкциями. 
+Компании официально не делали заявлений, но услуги ограничены.
 
 [Deezer](https://www.newsler.ru/society/2022/03/05/deezer-uhodit-iz-rossii): Ушли с Российского рынка. 
 
-[E-katalog](https://vc.ru/u/1011282-nikita/375139-ne-zhdite-vyplat-ot-e-katalog): Покинул российский рынок. 
+[E-katalog](https://vc.ru/u/1011282-nikita/375139-ne-zhdite-vyplat-ot-e-katalog): Покинул российский рынок - сайт в `ru` домене не открывается.
 
 [Google](https://www.nytimes.com/2022/03/03/technology/google-ads-russia.html): Приостановили продажу контекстной рекламы. 
 
@@ -74,11 +74,9 @@
 
 [Rocksar Games](https://tass.ru/ekonomika/13976059): Прекратили продажу игр, ранее купленные игры продолжают работать. 
 
-[Samsung](https://www.bloomberg.com/news/articles/2022-03-04/samsung-suspends-shipments-of-phones-chips-to-russia?): Приостановили поставку товаров.
+[Samsung](https://www.bloomberg.com/news/articles/2022-03-04/samsung-suspends-shipments-of-phones-chips-to-russia?): Приостановили поставку товаров, сервисы работают.
 
-[Twitch](https://dtf.ru/gameindustry/1107855-twitch-priostanovila-vyplaty-rossiyskim-strimeram-im-predlagayut-vybrat-drugoy-sposob-oplaty): Приостановила выплаты стримерам — им предлагают выбрать другой способ оплаты.
-
-[Twitter](https://vc.ru/social/375177-roskomnadzor-zablokiroval-twitter-v-rossii): Заблокирован Роскомнадзором.
+[Twitch](https://dtf.ru/gameindustry/1107855-twitch-priostanovila-vyplaty-rossiyskim-strimeram-im-predlagayut-vybrat-drugoy-sposob-oplaty): Приостановила выплаты. Предлагается изменить способ оплаты.
 
 [Steam](https://dtf.ru/gameindustry/1104642-steam-ogranichil-sposoby-oplaty-dlya-polzovateley-iz-rossii-dostupny-tolko-paypal-i-koshelek-magazina): Ограничил способы оплаты.
 
