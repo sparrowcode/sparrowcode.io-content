@@ -60,13 +60,13 @@
 
 Компании официально не делали заявлений, но услуги ограничены.
 
+[AMD](https://videocardz.com/newz/intel-and-amd-officially-confirm-all-shipments-to-russia-and-belarus-have-been-suspended/): Запретили поставку микрочипов в РФ и РБ на некоторое время.  
+
 [Deezer](https://www.newsler.ru/society/2022/03/05/deezer-uhodit-iz-rossii): Ушли с Российского рынка. 
 
 [E-Katalog](https://vc.ru/u/1011282-nikita/375139-ne-zhdite-vyplat-ot-e-katalog): Покинул российский рынок - сайт в `ru` домене не открывается.
 
 [Google](https://www.nytimes.com/2022/03/03/technology/google-ads-russia.html): Приостановили продажу контекстной рекламы. 
-
-[AMD](https://videocardz.com/newz/intel-and-amd-officially-confirm-all-shipments-to-russia-and-belarus-have-been-suspended/): Запретили поставку микрочипов в РФ и РБ на некоторое время.  
 
 [Megogo](https://www.vedomosti.ru/media/articles/2022/03/02/911742-megogo-prekraschaet-deyatelnost): Покинули Российский рынок. 
 
@@ -80,8 +80,8 @@
 
 [Samsung](https://www.bloomberg.com/news/articles/2022-03-04/samsung-suspends-shipments-of-phones-chips-to-russia?): Приостановили поставку товаров, сервисы работают.
 
-[Twitch](https://dtf.ru/gameindustry/1107855-twitch-priostanovila-vyplaty-rossiyskim-strimeram-im-predlagayut-vybrat-drugoy-sposob-oplaty): Приостановила выплаты. Предлагается изменить способ оплаты.
-
 [Steam](https://dtf.ru/gameindustry/1104642-steam-ogranichil-sposoby-oplaty-dlya-polzovateley-iz-rossii-dostupny-tolko-paypal-i-koshelek-magazina): Ограничил способы оплаты.
 
+[Twitch](https://dtf.ru/gameindustry/1107855-twitch-priostanovila-vyplaty-rossiyskim-strimeram-im-predlagayut-vybrat-drugoy-sposob-oplaty): Приостановила выплаты. Предлагается изменить способ оплаты.
 
+[Ubisoft](https://www.bloomberg.com/news/articles/2022-03-07/ubisoft-stopping-sales-in-russia-following-major-rivals): Приостановила продажу своих игр.
