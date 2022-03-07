@@ -58,7 +58,7 @@
 
 [Deezer](https://www.newsler.ru/society/2022/03/05/deezer-uhodit-iz-rossii): Ушли с Российского рынка. 
 
-[E-katalog](https://vc.ru/u/1011282-nikita/375139-ne-zhdite-vyplat-ot-e-katalog): Покинул российский рынок - сайт в `ru` домене не открывается.
+[E-Katalog](https://vc.ru/u/1011282-nikita/375139-ne-zhdite-vyplat-ot-e-katalog): Покинул российский рынок - сайт в `ru` домене не открывается.
 
 [Google](https://www.nytimes.com/2022/03/03/technology/google-ads-russia.html): Приостановили продажу контекстной рекламы. 
 
@@ -72,7 +72,7 @@
 
 [PayPal](https://www.reuters.com/business/paypal-shuts-down-its-services-russia-citing-ukraine-aggression-2022-03-05/): Сайт недоступен, нельзя создать аккаунт. 
 
-[Rocksar Games](https://tass.ru/ekonomika/13976059): Прекратили продажу игр, ранее купленные игры продолжают работать. 
+[Rockstar Games](https://tass.ru/ekonomika/13976059): Прекратили продажу игр, ранее купленные игры продолжают работать. 
 
 [Samsung](https://www.bloomberg.com/news/articles/2022-03-04/samsung-suspends-shipments-of-phones-chips-to-russia?): Приостановили поставку товаров, сервисы работают.
 
