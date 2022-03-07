@@ -14,9 +14,9 @@ First of all, let's implement our custom View, which will be responsible for the
 ```swift
 struct User {
 
-   let name: String
-   let imageName: String
-   let githubProfile: String
+    let name: String
+    let imageName: String
+    let githubProfile: String
 }
 ```
 
@@ -58,23 +58,23 @@ For this step create a `UserProfileLibrary.swift` file, define `UserProfileLibra
 //filename: UserProfileLibrary.swift
 
 struct UserProfileLibrary: LibraryContentProvider {
-	
-	@LibraryContentBuilder
-	var views: [LibraryItem] {
-		LibraryItem(
-			UserProfileView(
+    
+    @LibraryContentBuilder
+    var views: [LibraryItem] {
+        LibraryItem(
+            UserProfileView(
                 user: User(
-                    name: "Nikita", 
-                    imageName: "Nikita", 
+                    name: "Nikita",
+                    imageName: "Nikita",
                     githubProfile: "wmorgue"
                 )
             ),
-			visible: true,	// whether it's visible in the Xcode library
-			title: "User Profile", // the custom name shown in the library
-			category: .control, // a category to find you custom views faster
-			matchingSignature: "UserProfile" // the signature for code completion
-		)
-	}
+            visible: true,    // whether it's visible in the Xcode library
+            title: "User Profile", // the custom name shown in the library
+            category: .control, // a category to find you custom views faster
+            matchingSignature: "UserProfile" // the signature for code completion
+        )
+    }
 }
 ```
 
@@ -92,11 +92,11 @@ Caveat:
 
 ```swift
 UserProfileView(
-   user: User(
-      name: "Nikita", 
-      imageName: "Nikita", 
-      githubProfile: "wmorgue
-   )
+    user: User(
+        name: "Nikita",
+        imageName: "Nikita",
+        githubProfile: "wmorgue
+    )
 )
 ```
 
