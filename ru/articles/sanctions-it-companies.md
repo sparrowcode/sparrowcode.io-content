@@ -34,7 +34,11 @@
 
 [Grammarly](https://www.grammarly.com/stand-with-ukraine/): Прекращает работу на неопределенное время. 
 
+[IBM](https://newsroom.ibm.com/War-in-Ukraine-Supporting-IBMers/): Прекратили продажу технологий и ведение бизнеса с российскими военными организациями. 
+
 [Intel](https://twitter.com/intelnews/status/1499531394871083015): Запретили поставку микрочипов в РФ и РБ на некоторое время.
+
+[MacPaw](https://twitter.com/MacPaw/status/1500064795579588609): Прекратили продажу продуктов пользователям из РФ и РБ.
 
 [Microsoft](ttps://blogs.microsoft.com/on-the-issues/2022/03/04/microsoft-suspends-russia-sales-ukraine-conflict/): Приостанавливает продажи товаров и предоставление услуг. 
 
@@ -54,7 +58,7 @@
 
 [Twitter](https://vc.ru/social/375177-roskomnadzor-zablokiroval-twitter-v-rossii): Заблокирован Роскомнадзором.
 
-[IBM](https://newsroom.ibm.com/War-in-Ukraine-Supporting-IBMers/): Прекратили продажу технологий и ведение бизнеса с российскими военными организациями. 
+[Upwork](https://twitter.com/Upwork/status/1500837282210672640): Полностью приостановят работу в РФ и РБ 1 мая.
 
 ## Без публичного заявления
 
