@@ -8,10 +8,10 @@
 
 ```swift
 struct User {
-
-   let name: String
-   let imageName: String
-   let githubProfile: String
+    
+    let name: String
+    let imageName: String
+    let githubProfile: String
 }
 ```
 
@@ -57,10 +57,10 @@ struct UserProfileLibrary: LibraryContentProvider {
     var views: [LibraryItem] {
         LibraryItem(
             UserProfileView(
-               user: User(
-                  name: "Nikita", 
-                  imageName: "Nikita", 
-                  githubProfile: "wmorgue"
+                user: User(
+                    name: "Nikita",
+                    imageName: "Nikita",
+                    githubProfile: "wmorgue"
                 )
             ),
             visible: true,    // будет ли доступна наша View в библиотеке
@@ -85,11 +85,11 @@ C помощью `LibraryContentProvider` добавляем кастомные 
 
 ```swift
 UserProfileView(
-   user: User(
-      name: "Nikita", 
-      imageName: "Nikita", 
-      githubProfile: "wmorgue
-   )
+    user: User(
+        name: "Nikita",
+        imageName: "Nikita",
+        githubProfile: "wmorgue
+    )
 )
 ```
 
