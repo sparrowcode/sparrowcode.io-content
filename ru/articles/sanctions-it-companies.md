@@ -42,6 +42,10 @@
 
 [Oracle](https://twitter.com/Oracle/status/1499058658583490568): Приостановила операции.
 
+[Readdle](https://readdle.com/ru/no-service-russia): Прекратили продажу и поддержку приложений.
+
+[Restream](https://restream.io/stop-war): Остановили поддержку пользователей в РФ и РБ.
+
 [SAP SE](https://news.sap.com/2022/03/standing-in-solidarity/): Остановил продажи услуг и продуктов.
 
 [Spotify](https://support.spotify.com/ru-ru/contact-spotify-support/?nosignup=true): Приостановили продажу премиум подписки.
