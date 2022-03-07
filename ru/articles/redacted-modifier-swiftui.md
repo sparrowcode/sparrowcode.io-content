@@ -210,8 +210,8 @@ extension View {
     @ViewBuilder
     func unredacted(when condition: Bool) -> some View {
         switch condition {
-            case true: unredacted()
-            case false: redacted(reason: .placeholder)
+        case true: unredacted()
+        case false: redacted(reason: .placeholder)
         }
     }
 }
@@ -297,10 +297,10 @@ struct RedactableModifier: ViewModifier {
     @ViewBuilder
     func body(content: Content) -> some View {
         switch reason {
-            case .blurred: content.modifier(Blurred())
-            case .standart: content.modifier(Standart())
-            case .sensitiveData: content.modifier(SensitiveData())
-            case nil: content
+        case .blurred: content.modifier(Blurred())
+        case .standart: content.modifier(Standart())
+        case .sensitiveData: content.modifier(SensitiveData())
+        case nil: content
         }
     }
 }
