@@ -14,7 +14,7 @@
 
 [Airbnb](https://news.airbnb.com/airbnbs-actions-in-response-to-the-ukraine-crisis/): В РФ и РБ заблокирована возможность для хозяев принимать брони, а для гостей — бронировать жилье. 
 
-[Atlassian](https://www.atlassian.com/blog/announcements/atlassian-stands-with-ukraine): Приостанавливает продажи и блокирует гос-аккаунты. 
+[Atlassian](https://www.atlassian.com/blog/announcements/atlassian-stands-with-ukraine): Приостанавливает продажи и блокирует гос. аккаунты. 
 
 [Booking](https://www.linkedin.com/posts/glennfogel_update-march-4-with-each-passing-day-as-activity-6904768188073275392-st4W/): Объекты размещения не отображаются в поиске. Старые брони не аннулировали.
 
@@ -22,7 +22,7 @@
 
 [Coursera](https://blog.coursera.org/coursera-response-to-the-humanitarian-crisis-in-ukraine?utm_source=tw&utm_medium=social&utm_campaign=blog_courseraresponsetothehumanitariancrisisinukraine_03042022): Закрыт доступ к контенту и курсам. 
 
-[DMarket](https://twitter.com/dmarket/status/1497952451726565383): Заморозила аккаунты пользователей из России и Беларуссии. 
+[DMarket](https://twitter.com/dmarket/status/1497952451726565383): Заморозила аккаунты пользователей из России и Белоруссии. 
 
 [EA](https://www.ea.com/news/update-on-electronic-arts-titles-in-russia-and-belarus): Приостановит продажу своих игр в РФ и РБ.
 
