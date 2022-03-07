@@ -1,6 +1,6 @@
 Собрали изменения в работе IT-компаний. Для каждой компании есть ссылка на пресс-релиз или публичное обращение.
 
-Статья обновляется. Дополните список через Pull Request в [репозитории на GitHub](https://github.com/sparrowcode/Tutorials/ru/articles/sanctions-it-companies). Если вас коснулись ограничения - дополните описание под именем компании.
+Статья обновляется. Дополните список через Pull Request в [репозитории на GitHub](https://github.com/sparrowcode/Tutorials/blob/main/ru/articles/sanctions-it-companies.md). Если вас коснулись ограничения - дополните описание под именем компании.
 
 ## Официально
 
