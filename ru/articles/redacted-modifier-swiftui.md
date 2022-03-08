@@ -8,7 +8,7 @@ VStack {
 }
 ```
 
-![Redacted Placeholder](https://cdn.ivanvorobei.io/websites/sparrowcode.io/redacted-modifier-swiftui/redacted_placeholder.jpg)
+![Прототип вью](https://cdn.ivanvorobei.io/websites/sparrowcode.io/redacted-modifier-swiftui/redacted_placeholder.jpg)
 
 Используйте прототип, чтобы:
 
@@ -78,7 +78,7 @@ struct ContentView: View {
 }
 ```
 
-![DeviceView Result](https://cdn.ivanvorobei.io/websites/sparrowcode.io/redacted-modifier-swiftui/redacted_deviceview.jpg)
+![Результат DeviceView](https://cdn.ivanvorobei.io/websites/sparrowcode.io/redacted-modifier-swiftui/redacted_deviceview.jpg)
 
 Слева - вью без модификатора. Справа - с ним. Для наглядности добавим переключатель:
 
@@ -99,7 +99,7 @@ struct ContentView: View {
 }
 ```
 
-[Redacted Toggle](https://cdn.ivanvorobei.io/websites/sparrowcode.io/redacted-modifier-swiftui/redacted_toggle.mov)
+[Переключатель](https://cdn.ivanvorobei.io/websites/sparrowcode.io/redacted-modifier-swiftui/redacted_toggle.mov)
 
 ## Unredacted
 
@@ -122,7 +122,7 @@ VStack(spacing: 20) {
             // Какой-то код ниже
 ```
 
-![Unredacted Result](https://cdn.ivanvorobei.io/websites/sparrowcode.io/redacted-modifier-swiftui/redacted_unredacted.jpg)
+![Результат с Unredacted](https://cdn.ivanvorobei.io/websites/sparrowcode.io/redacted-modifier-swiftui/redacted_unredacted.jpg)
 
 В примере иконка и название девайса не скрыты.
 
@@ -143,7 +143,7 @@ VStack {
 }
 ```
 
-[Button Still Available](https://cdn.ivanvorobei.io/websites/sparrowcode.io/redacted-modifier-swiftui/redacted_available_button.mov)
+[Кнопка кликабельна](https://cdn.ivanvorobei.io/websites/sparrowcode.io/redacted-modifier-swiftui/redacted_available_button.mov)
 
 Поведением кнопки управляйте вручную, ниже покажу как.
 
@@ -219,7 +219,7 @@ extension View {
 
 Если переключить, кнопка станет не кликабельной.
 
-![Custom unredacted method](https://cdn.ivanvorobei.io/websites/sparrowcode.io/redacted-modifier-swiftui/redacted_custom_unredacted.jpg)
+![Кастомный unredacted](https://cdn.ivanvorobei.io/websites/sparrowcode.io/redacted-modifier-swiftui/redacted_custom_unredacted.jpg)
 
 ## Собственный API
 
@@ -283,7 +283,7 @@ struct Blurred_Previews: PreviewProvider {
 }
 ```
 
-![Blurred Previews](https://cdn.ivanvorobei.io/websites/sparrowcode.io/redacted-modifier-swiftui/redacted_blurred_previews.jpg)
+![Превью Blurred](https://cdn.ivanvorobei.io/websites/sparrowcode.io/redacted-modifier-swiftui/redacted_blurred_previews.jpg)
 
 Я взял `Blurred` модификатор. Перейдем к следующему модификатору вью `RedactableModifier`:
 
@@ -336,6 +336,6 @@ struct RedactableModifier_Previews: PreviewProvider {
 }
 ```
 
-Результат на видео:
+Результат:
 
-![RedactableModifier](https://cdn.ivanvorobei.io/websites/sparrowcode.io/redacted-modifier-swiftui/redacted_redactable_modifier.jpg)
+![Результат RedactableModifier](https://cdn.ivanvorobei.io/websites/sparrowcode.io/redacted-modifier-swiftui/redacted_redactable_modifier.jpg)
