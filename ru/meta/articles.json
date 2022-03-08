@@ -126,13 +126,13 @@
         "description" : "В этой статье я покажу как добавить свою View в Xcode Library с помощью LibraryContentProvider.",
         "category" : "swiftui",
         "author" : "wmorgue",
-        "editors" : ["ivanvorobei"],
+        "editors" : ["ivanvorobei", "svtnck"],
         "keywords" : [
             "xcode",
             "library",
             "LibraryContentProvider"
         ],
-        "updated_date": "02.02.2022",
+        "updated_date": "07.03.2022",
         "added_date": "02.02.2022"
     },
     "async-await" : {
@@ -178,13 +178,13 @@
         "description" : "Делаем прототип вью в SwiftUI. Скелет интерфейса, пока контент загружается.",
         "category" : "swiftui",
         "author" : "wmorgue",
-        "editors" : ["ivanvorobei"],
+        "editors" : ["ivanvorobei", "svtnck"],
         "keywords" : [
             "redacted",
             "unredacted",
             "RedactionReasons"
         ],
-        "updated_date": "01.03.2022",
+        "updated_date": "07.03.2022",
         "added_date": "01.03.2022"
     },
     "swift-56" : {
