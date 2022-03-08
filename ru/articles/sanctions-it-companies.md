@@ -4,6 +4,8 @@
 
 ## Официально
 
+[Amazon](https://www.aboutamazon.com/news/community/amazons-assistance-in-ukraine): Прекратил прием новых клиентов облачных сервисов в РФ и РБ.
+
 [Apple](https://www.buzzfeednews.com/article/sarahemerson/apple-responds-ukraine-russia-rt-sputnik-maps/): Не работает Apple Pay у банков под санкциями. Запретили запуск рекламных компаний Apple Search Ads.
 
 [Acronis](https://www.acronis.com/en-us/blog/posts/acronis-suspends-all-operations-in-russia/): Приостанавливает операции и не заключает новые контракты. Продолжит обслуживать клиентов и партнеров компании.
@@ -37,6 +39,8 @@
 [IBM](https://newsroom.ibm.com/War-in-Ukraine-Supporting-IBMers/): Прекратили продажу технологий и ведение бизнеса с российскими военными организациями. 
 
 [Intel](https://twitter.com/intelnews/status/1499531394871083015): Запретили поставку микрочипов в РФ и РБ на некоторое время.
+
+[Lumen](https://news.lumen.com/RussiaUkraine): Прекращают работу.
 
 [MacPaw](https://twitter.com/MacPaw/status/1500064795579588609): Прекратили продажу продуктов пользователям из РФ и РБ.
 
