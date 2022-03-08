@@ -4,7 +4,7 @@
 
 ## Официально
 
-[Apple](https://www.buzzfeednews.com/article/sarahemerson/apple-responds-ukraine-russia-rt-sputnik-maps/): Не работает Apple Pay у банков под санкциями.
+[Apple](https://www.buzzfeednews.com/article/sarahemerson/apple-responds-ukraine-russia-rt-sputnik-maps/): Не работает Apple Pay у банков под санкциями. Запретили запуск рекламных компаний Apple Search Ads.
 
 [Acronis](https://www.acronis.com/en-us/blog/posts/acronis-suspends-all-operations-in-russia/): Приостанавливает операции и не заключает новые контракты. Продолжит обслуживать клиентов и партнеров компании.
 
