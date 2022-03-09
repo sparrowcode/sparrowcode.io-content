@@ -32,7 +32,9 @@
 
 [Epic Games](https://twitter.com/EpicNewsroom/status/1500236775448588295): Приостанавливает коммерцию в своих играх.
 
-[Facebook](https://rkn.gov.ru/news/rsoc/news74156.htm): Заблокирован Роскомнадзором. 
+[Facebook](https://rkn.gov.ru/news/rsoc/news74156.htm): Заблокирован Роскомнадзором.
+
+[Figma](https://www.figma.com/blog/our-response-to-ukraine/): Остановили продажи, заморозили корпоративные аккаунты. 
 
 [Grammarly](https://www.grammarly.com/stand-with-ukraine/): Прекращает работу на неопределенное время. 
 
@@ -55,6 +57,8 @@
 [Restream](https://restream.io/stop-war): Остановили поддержку пользователей в РФ и РБ.
 
 [SAP SE](https://news.sap.com/2022/03/standing-in-solidarity/): Остановил продажи услуг и продуктов.
+
+[Supercell](https://twitter.com/supercell/status/1501533775410470912): Удалили игры из магазинов приложений в РФ и РБ. Закроют доступ для игроков в следующем обновлении.
 
 [Spotify](https://support.spotify.com/ru-ru/contact-spotify-support/?nosignup=true): Приостановили продажу премиум подписки.
 
