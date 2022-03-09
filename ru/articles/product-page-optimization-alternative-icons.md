@@ -6,13 +6,13 @@
 
 Альтернативную иконку делаем в нескольких разрешениях, как и основную. Я использую приложение [AppIconBuilder](https://apps.apple.com/app/id1294179975). Нейминг пишем любой, но учтите - имя отобразится в App Store Connect.
 
-![Добавляем иконки в Assets](https://cdn.ivanvorobei.io/websites/sparrowcode.io/product-page-optimization-alternative-icons/adding-icons-to-assets.png)
+![Добавляем иконки в Assets](https://cdn.sparrowcode.io/articles/product-page-optimization-alternative-icons/adding-icons-to-assets.png)
 
 ## Настройки в таргете
 
 Нужен Xcode 13 и выше. Выберите таргет приложения и перейдите на вкладку `Build Settings`. В поиск вставьте `App Icon` и вы увидите секцию `Asset Catalog Compiler`.
 
-![Настройки в таргете](https://cdn.ivanvorobei.io/websites/sparrowcode.io/product-page-optimization-alternative-icons/adding-settings-to-target.png)
+![Настройки в таргете](https://cdn.sparrowcode.io/articles/product-page-optimization-alternative-icons/adding-settings-to-target.png)
 
 Нас интересуют 3 параметра:
 

@@ -49,7 +49,7 @@ Image and Video
  
 ```
 ![Image Description](https://myoctocat.com/assets/images/base-octocat.svg)
-[Video Description](https://cdn.ivanvorobei.io/websites/sparrowcode.io/drag-and-drop-part-1/drag-delegate.mov)
+[Video Description](https://cdn.sparrowcode.io/articles/drag-and-drop-part-1/drag-delegate.mov)
 ```
 
 For highlight link to the grey area with title and subtitle, use this custom formatting:

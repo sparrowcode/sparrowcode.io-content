@@ -4,7 +4,7 @@
 
 Render Modes - это отрисовка иконки в цветовой схеме. Доступны монохром, иерархический, палетка и мульти-цвет. Наглядное превью:
 
-![SFSymbols Render Modes Preview](https://cdn.ivanvorobei.io/websites/sparrowcode.io/sf-symbols-3/render-modes-preview.jpg)
+![SFSymbols Render Modes Preview](https://cdn.sparrowcode.io/articles/sf-symbols-3/render-modes-preview.jpg)
 
 Рендеры доступны для каждого символа, но возможны ситуации когда результат для разных рендеров будет совпадать и иконка не изменит внешнего вида. Лучше выбирать [в приложении](https://developer.apple.com/sf-symbols/), предварительно установив нужный рендер.
 
@@ -42,7 +42,7 @@ Image(systemName: "square.stack.3d.down.right.fill")
 
 Обратите внимание, иногда рендер с моно-цветом совпадает с иерархическим.
 
-![SFSymbols Hierarchical Render](https://cdn.ivanvorobei.io/websites/sparrowcode.io/sf-symbols-3/hierarchical-render.jpg)
+![SFSymbols Hierarchical Render](https://cdn.sparrowcode.io/articles/sf-symbols-3/hierarchical-render.jpg)
 
 ## Palette Render
 
@@ -61,7 +61,7 @@ Image(systemName: "person.3.sequence.fill")
 
 Если у символа 1 сегмент для цвета, он будет использовать первый указанный цвет. Если у символа 2 сегмента, но будет указан 1 цвет, он будет использоваться для обоих сегментов. Если укажете 2 цвета - они применятся соответственно. Если указать 3 цвета, третий игнорируется.
 
-![SFSymbols Palette Render](https://cdn.ivanvorobei.io/websites/sparrowcode.io/sf-symbols-3/palette-render.jpg)
+![SFSymbols Palette Render](https://cdn.sparrowcode.io/articles/sf-symbols-3/palette-render.jpg)
 
 ## Multicolor Render
 
@@ -79,7 +79,7 @@ Image(systemName: "externaldrive.badge.plus")
 
 Изображения, у которых нет многоцветного варианта, будут автоматически отображаться в моно-цвете. На превью заполняющий цвет `.systemCyan`:
 
-![SFSymbols Multicolor Render](https://cdn.ivanvorobei.io/websites/sparrowcode.io/sf-symbols-3/multicolor-render.jpg)
+![SFSymbols Multicolor Render](https://cdn.sparrowcode.io/articles/sf-symbols-3/multicolor-render.jpg)
 
 ## Symbol Variant
 

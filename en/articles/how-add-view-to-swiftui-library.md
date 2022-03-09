@@ -5,7 +5,7 @@ SwiftUI is designed to make its view easy to be reuse.
 Library provides access to available SwiftUI View, modifiers, images, etc. You can DnD or double-click the selected item to add the View into your code.
 
 
-![Xcode View Library](https://cdn.ivanvorobei.io/websites/sparrowcode.io/how-add-view-to-swiftui-library/xcode_library.png)
+![Xcode View Library](https://cdn.sparrowcode.io/articles/how-add-view-to-swiftui-library/xcode_library.png)
 
 ## Custom View
 
@@ -43,7 +43,7 @@ struct UserProfileView: View {
 }
 ```
 
-![UserProfile_Preview](https://cdn.ivanvorobei.io/websites/sparrowcode.io/how-add-view-to-swiftui-library/user_profile_preview.png)
+![UserProfile_Preview](https://cdn.sparrowcode.io/articles/how-add-view-to-swiftui-library/user_profile_preview.png)
 
 
 Here is how it looks like.
@@ -82,7 +82,7 @@ The way we add a view to View Library is quite similar to how we make our view s
 The `LibraryContentProvider` protocol provides an ability to add custom views to the Xcode library.
 After that, we go to the `ContentView.swift` file and add the user view.
 
-[UserProfileLibrary](https://cdn.ivanvorobei.io/websites/sparrowcode.io/how-add-view-to-swiftui-library/user_profile_library.mov)
+[UserProfileLibrary](https://cdn.sparrowcode.io/articles/how-add-view-to-swiftui-library/user_profile_library.mov)
 
 Caveat:
 
@@ -101,4 +101,4 @@ UserProfileView(
 ```
 
 Just waiting for changes in future versions to be able to add a description and icon.
-This project is available for [download](https://cdn.ivanvorobei.io/websites/sparrowcode.io/how-add-view-to-swiftui-library/MyApp.zip).
+This project is available for [download](https://cdn.sparrowcode.io/articles/how-add-view-to-swiftui-library/MyApp.zip).

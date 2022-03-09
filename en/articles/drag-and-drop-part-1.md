@@ -2,7 +2,7 @@ We'll learn how to reorder cells, drag and drop multiple cells, move cells betwe
 
 In this part, we'll cover dragging and dropping for collections and tables. In the next part, we'll see how to drag any views anywhere and handle resetting them. Before we dive, let's break down how the drag and drop lifecycle is designed.
 
-![preview](https://cdn.ivanvorobei.io/websites/sparrowcode.io/drag-and-drop-part-1/preview.jpg)
+![preview](https://cdn.sparrowcode.io/articles/drag-and-drop-part-1/preview.jpg)
 
 ## Models
 
@@ -89,7 +89,7 @@ The first method is called when drag has been started. The second method is call
 
 If you need to update the interface for the dragging time (hide the buttons), this is the right place. Now, let's see what we get at this point.
 
-[Drag Preview](https://cdn.ivanvorobei.by/websites/sparrowcode.io/drag-and-drop-part-1/drag-delegate.mov)
+[Drag Preview](https://cdn.sparrowcode.io/articles/drag-and-drop-part-1/drag-delegate.mov)
 
 The cell returns to its original position. We'll take care of the implementation of the drop below.
 
@@ -178,7 +178,7 @@ func collectionView(_ collectionView: UICollectionView, performDropWith coordina
 
 Now the collection and data source are updated when you move it, and the cell is dropped at the new index. Let's see what happened:
 
-[Drag Preview](https://cdn.ivanvorobei.by/websites/sparrowcode.io/drag-and-drop-part-1/drop-delegate.mov)
+[Drag Preview](https://cdn.sparrowcode.io/articles/drag-and-drop-part-1/drop-delegate.mov)
 
 To make the cells split to drop another cell, use Drop Proposal with `.insertAtDestinationIndexPath`. Any other intent won't do this. Be careful, because sometimes bugs happen with the collection
 
@@ -199,7 +199,7 @@ func collectionView(_ collectionView: UICollectionView, itemsForAddingTo session
 
 Now the cells will be collected in a stack and the group can be moved.
 
-[Drag Stack](https://cdn.ivanvorobei.by/websites/sparrowcode.io/drag-and-drop-part-1/drag-stack.mov)
+[Drag Stack](https://cdn.sparrowcode.io/articles/drag-and-drop-part-1/drag-stack.mov)
 
 ## Table View
 
@@ -226,7 +226,7 @@ tableView.isEditing = true
 
 You can have a system cell reorder and drop, for example, inside cells.
 
-[Table Drop](https://cdn.ivanvorobei.by/websites/sparrowcode.io/drag-and-drop-part-1/table-drop.mov)
+[Table Drop](https://cdn.sparrowcode.io/articles/drag-and-drop-part-1/table-drop.mov)
 
 ## DestinationIndexPath
 
