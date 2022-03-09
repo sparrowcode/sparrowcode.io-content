@@ -1,6 +1,6 @@
 Попытки управлять высотой модальных контроллеров мучают разработчиков уже 4 года. [Библиотеки получаются паршивыми](https://github.com/ivanvorobei/SPStorkController): работают отвратительно или вообще не работают. За попытку обсудить эту тему на планёрке выкинули из окна ведущего инженера `UIKit`. К iOS 15 Тим Кук сжалился и открыл секретное знание.
 
-[UISheetPresentationController Preview](https://cdn.ivanvorobei.io/websites/sparrowcode.io/uisheetpresentationcontroller/uisheetpresentationcontroller.mov)
+[UISheetPresentationController Preview](https://cdn.sparrowcode.io/articles/uisheetpresentationcontroller/uisheetpresentationcontroller.mov)
 
 Выглядит круто, кейсов использования много. Чтобы показать дефолтный `sheet`-controller, используйте код:
 
@@ -42,7 +42,7 @@ sheetController.prefersEdgeAttachedInCompactHeight = true
 
 Вот как это выглядит:
 
-![Landscape for UISheetPresentationController](https://cdn.ivanvorobei.io/websites/sparrowcode.io/uisheetpresentationcontroller/landscape.jpg)
+![Landscape for UISheetPresentationController](https://cdn.sparrowcode.io/articles/uisheetpresentationcontroller/landscape.jpg)
 
 Чтобы контроллер учитывал prefered-размер, установите `.widthFollowsPreferredContentSizeWhenEdgeAttached` в `true`.
 
@@ -50,7 +50,7 @@ sheetController.prefersEdgeAttachedInCompactHeight = true
 
 Чтобы добавить индикатор вверху контроллера, установите `.prefersGrabberVisible` в `true`. По умолчанию индикатор спрятан. Индикатор не влияет на safe area и layout margins, по крайней мере, на момент написания статьи.
 
-![Grabber for UISheetPresentationController](https://cdn.ivanvorobei.io/websites/sparrowcode.io/uisheetpresentationcontroller/prefers-grabber-visible.jpg)
+![Grabber for UISheetPresentationController](https://cdn.sparrowcode.io/articles/uisheetpresentationcontroller/prefers-grabber-visible.jpg)
 
 ## Затемнение фона
 
@@ -66,7 +66,7 @@ sheetController.largestUndimmedDetentIdentifier = .medium
 
 Управляйте закруглением краёв у контроллера. Для этого установите `.preferredCornerRadius`. Обратите внимание, что закругление меняется не только у презентуемого контроллера, но и у родителя.
 
-![Grabber for UISheetPresentationController](https://cdn.ivanvorobei.io/websites/sparrowcode.io/uisheetpresentationcontroller/preferred-corner-radius.jpg)
+![Grabber for UISheetPresentationController](https://cdn.sparrowcode.io/articles/uisheetpresentationcontroller/preferred-corner-radius.jpg)
 
 На скриншоте я установил corner-радиус в `22`. Радиус сохраняется для `.medium`-стопора. На этом всё. Напишите в [комментариях к посту](https://t.me/sparrowcode/71), будете ли использовать в своих проектах sheet-контроллеры.
 

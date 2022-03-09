@@ -1,8 +1,8 @@
 Вы управляете тремя отступами - `imageEdgeInsets`, `titleEdgeInsets` и `contentEdgeInsets`. Чаще всего ваша задача сводится к выставлению симметрично-противоположных значений.
 
-Перед тем как начнем погружаться, гляньте [проект-пример](https://cdn.ivanvorobei.io/websites/sparrowcode.io/edge-insets-uibutton/example-project.zip). Каждый ползунок отвечает за конкретный отступ и вы можете их комбинировать. На видео я выставил цвет фона - красный, цвет иконки - желтый, а цвет тайтла - синий.
+Перед тем как начнем погружаться, гляньте [проект-пример](https://cdn.sparrowcode.io/articles/edge-insets-uibutton/example-project.zip). Каждый ползунок отвечает за конкретный отступ и вы можете их комбинировать. На видео я выставил цвет фона - красный, цвет иконки - желтый, а цвет тайтла - синий.
 
-[Edge Insets UIButton Example Project Preview](https://cdn.ivanvorobei.io/websites/sparrowcode.io/edge-insets-uibutton/edge-insets-uibutton-example-preview.mov)
+[Edge Insets UIButton Example Project Preview](https://cdn.sparrowcode.io/articles/edge-insets-uibutton/edge-insets-uibutton-example-preview.mov)
 
 Сделайте отступ между заголовком и иконкой `10pt`. Когда получится, убедитесь, контролируете результат или получилось наугад. В конце туториала вы будете знать как это работает.
 
@@ -18,7 +18,7 @@ previewButton.contentEdgeInsets.top = 5
 previewButton.contentEdgeInsets.bottom = 5
 ```
 
-![contentEdgeInsets](https://cdn.ivanvorobei.io/websites/sparrowcode.io/edge-insets-uibutton/content-edge-insets.png)
+![contentEdgeInsets](https://cdn.sparrowcode.io/articles/edge-insets-uibutton/content-edge-insets.png)
 
 Вокруг контента добавились отступы. Они добавляются пропорционально и влияют только на размер кнопки. Практический смысл - расширить область нажатия, если кнопка маленькая.
 
@@ -28,7 +28,7 @@ previewButton.contentEdgeInsets.bottom = 5
 
 Добавим отступ между картинкой и заголовком, пускай `10pt`. Первая мысль - добавить отступ через проперти `imageEdgeInsets`:
 
-[imageEdgeInsets space between icon and title](https://cdn.ivanvorobei.io/websites/sparrowcode.io/edge-insets-uibutton/image-edge-insets-space-icon-title.mov)
+[imageEdgeInsets space between icon and title](https://cdn.sparrowcode.io/articles/edge-insets-uibutton/image-edge-insets-space-icon-title.mov)
 
 Поведение сложнее. Отступ добавляется, но не влияет на размер кнопки. Если бы влиял - проблема была решена.
 
@@ -78,7 +78,7 @@ button.titleImageInset = 8
 
 Работает для RTL локализации. Если картинки нет, отступ не добавляется. Разработчику нужно только выставить значение отступа.
 
-![Deprecated imageEdgeInsets и titleEdgeInsets](https://cdn.ivanvorobei.io/websites/sparrowcode.io/edge-insets-uibutton/depricated.png)
+![Deprecated imageEdgeInsets и titleEdgeInsets](https://cdn.sparrowcode.io/articles/edge-insets-uibutton/depricated.png)
 
 ## Deprecated
 
@@ -86,5 +86,5 @@ button.titleImageInset = 8
 
 Несколько лет проперти будут работать. Apple рекомендуют использовать конфигурацию. Посмотрим, что останется в живых - конфигурация, или старый добрый `padding`.
 
-На этом всё. Чтобы наглядно побаловаться, качайте [проект-пример](https://cdn.ivanvorobei.io/websites/sparrowcode.io/edge-insets-uibutton/example-project.zip). Задать вопросы можно в комментариях [к посту](https://t.me/sparrowcode/99).
+На этом всё. Чтобы наглядно побаловаться, качайте [проект-пример](https://cdn.sparrowcode.io/articles/edge-insets-uibutton/example-project.zip). Задать вопросы можно в комментариях [к посту](https://t.me/sparrowcode/99).
 

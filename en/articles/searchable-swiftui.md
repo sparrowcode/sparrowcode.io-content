@@ -21,7 +21,7 @@ struct ContentView: View {
 }
 ```
 
-[Searchable init](https://cdn.ivanvorobei.io/websites/sparrowcode.io/searchable-swiftui/searchable_init.mov)
+[Searchable init](https://cdn.sparrowcode.io/articles/searchable-swiftui/searchable_init.mov)
 
 To change the placeholder, in the search field we will add `prompt`:
 
@@ -65,11 +65,11 @@ struct ContentView: View {
 }
 ```
 
-![Searchable Diff Placement](https://cdn.ivanvorobei.io/websites/sparrowcode.io/searchable-swiftui/searchable_diff_placement.jpg)
+![Searchable Diff Placement](https://cdn.sparrowcode.io/articles/searchable-swiftui/searchable_diff_placement.png)
 
 Apply a modifier to `SecondaryView()` and change the location to `.navigationBarDrawer`. The `SearchFieldPlacement()` structure is responsible for the position of the search field. By default `placement` is `.automatic`.
 
-[Searchable Placement](https://cdn.ivanvorobei.io/websites/sparrowcode.io/searchable-swiftui/searchable_placement.mov)
+[Searchable Placement](https://cdn.sparrowcode.io/articles/searchable-swiftui/searchable_placement.mov)
 
 ## Search
 
@@ -124,7 +124,7 @@ extension ContentView {
 }
 ```
 
-[Searchable Author Run](https://cdn.ivanvorobei.by/websites/sparrowcode.io/searchable-swiftui/searchable_author_run.mov)
+[Searchable Author Run](https://cdn.sparrowcode.io/articles/searchable-swiftui/searchable_author_run.mov)
 
 Create a `NavigationView` with `List` that takes an array of authors and filters it:
 
@@ -147,11 +147,11 @@ The modifier will show a list of different authors:
 }
 ```
 
-[Searchable suggestions](https://cdn.ivanvorobei.by/websites/sparrowcode.io/searchable-swiftui/searchable_suggestions.mov)
+[Searchable suggestions](https://cdn.sparrowcode.io/articles/searchable-swiftui/searchable_suggestions.mov)
 
 Search suggestions will overlay your main view:
 
-![Searchable overlay](https://cdn.ivanvorobei.by/websites/sparrowcode.io/searchable-swiftui/searchable_overlay.jpg)
+![Searchable overlay](https://cdn.sparrowcode.io/articles/searchable-swiftui/searchable_overlay.png)
 
 The `suggestions` parameter takes `@ViewBuilder`, so you can make a custom View and combine options for a search suggestion. The code of the current project:
 
@@ -211,7 +211,7 @@ If you need more control - tracking searches, searching the local database, etc.
 }
 ```
 
-[Searchable onSubmit](https://cdn.ivanvorobei.by/websites/sparrowcode.io/searchable-swiftui/searсhable_onsubmit.mov)
+[Searchable onSubmit](https://cdn.sparrowcode.io/articles/searchable-swiftui/searсhable_onsubmit.mov)
 
 Modifier `.onSubmit()` will trigger when a search query is submitted:
 

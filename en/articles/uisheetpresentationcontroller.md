@@ -1,6 +1,6 @@
 Attempts to control the height of modal controllers have been bothering developers for 4 years. [The libraries turn out to be bad](https://github.com/ivanvorobei/SPStorkController). They work ugly or don't work at all. The lead engineer of `UIKit` was thrown out of the window for trying to discuss this topic at the meeting. By iOS 15 Tim Cook took pity and discovered secret knowledge.
 
-[UISheetPresentationController Preview](https://cdn.ivanvorobei.io/websites/sparrowcode.io/uisheetpresentationcontroller/uisheetpresentationcontroller.mov)
+[UISheetPresentationController Preview](https://cdn.sparrowcode.io/articles/uisheetpresentationcontroller/uisheetpresentationcontroller.mov)
 
 That looks cool and there are a lot of use cases. To show the default `sheet` controller use the code below:
 
@@ -42,7 +42,7 @@ sheetController.prefersEdgeAttachedInCompactHeight = true
 
 Here's how it looks:
 
-![Landscape for UISheetPresentationController](https://cdn.ivanvorobei.io/websites/sparrowcode.io/uisheetpresentationcontroller/landscape.jpg)
+![Landscape for UISheetPresentationController](https://cdn.sparrowcode.io/articles/uisheetpresentationcontroller/landscape.jpg)
 
 Set `.widthFollowsPreferredContentSizeWhenEdgeAttached` to `true` to let the controller consider the preferred size.
 
@@ -50,7 +50,7 @@ Set `.widthFollowsPreferredContentSizeWhenEdgeAttached` to `true` to let the con
 
 If you wanna add an indicator on top of the controller, set `.prefersGrabberVisible` to `true`. By default, the indicator is hidden. The indicator does not affect the safe area and layout margins, at least at the time of this article.
 
-![Grabber for UISheetPresentationController](https://cdn.ivanvorobei.io/websites/sparrowcode.io/uisheetpresentationcontroller/prefers-grabber-visible.jpg)
+![Grabber for UISheetPresentationController](https://cdn.sparrowcode.io/articles/uisheetpresentationcontroller/prefers-grabber-visible.jpg)
 
 ## Dimmed background
 
@@ -66,6 +66,6 @@ It says that the `.medium' will not dim, but anything larger will. You can remov
 
 You can control the corner radius of the controller. To do this, set `.preferredCornerRadius`. Note that the rounding changes not only for the presented controller but also for the parent.
 
-![Grabber for UISheetPresentationController](https://cdn.ivanvorobei.io/websites/sparrowcode.io/uisheetpresentationcontroller/preferred-corner-radius.jpg)
+![Grabber for UISheetPresentationController](https://cdn.sparrowcode.io/articles/uisheetpresentationcontroller/preferred-corner-radius.jpg)
 
 On the screenshot, I set the corner radius to `22`. The radius is set for `.medium`. That's all. [Comment on the post](https://t.me/sparrowcode/71), if you will use sheet controllers in your projects.

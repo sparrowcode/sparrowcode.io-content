@@ -18,7 +18,7 @@ struct ContentView: View {
 }
 ```
 
-[Indeterminate Activity Indicator](https://cdn.ivanvorobei.io/websites/sparrowcode.io/mastering-progressview-swiftui/indeterminate_activity_indicator.mov)
+[Indeterminate Activity Indicator](https://cdn.sparrowcode.io/articles/mastering-progressview-swiftui/indeterminate_activity_indicator.mov)
 
 By default `SwiftUI` defines a rotating loading bar (spinner). The modifier `.tint()` changes the color of the bar.
 
@@ -74,7 +74,7 @@ extension ContentView {
 }
 ```
 
-[Determinate Activity Indicator](https://cdn.ivanvorobei.io/websites/sparrowcode.io/mastering-progressview-swiftui/determinate_activity_indicator.mov)
+[Determinate Activity Indicator](https://cdn.sparrowcode.io/articles/mastering-progressview-swiftui/determinate_activity_indicator.mov)
 
 Pressing the `Load more` button starts the download. The text shows the current progress and the `Reset` button will become available to tap and reset. When the download is finished, the text on the screen will let you know. The `Load more` button will become inactive.
 
@@ -107,7 +107,7 @@ struct TimerProgressView: View {
 }
 ```
 
-[Timer Progress](https://cdn.ivanvorobei.io/websites/sparrowcode.io/mastering-progressview-swiftui/timer_progress.mov)
+[Timer Progress](https://cdn.sparrowcode.io/articles/mastering-progressview-swiftui/timer_progress.mov)
 
 The event is called several times by a timer. Timer source code:
 
@@ -125,7 +125,7 @@ This is how we show the user that the loading progress depends on the size of th
 
 A description of the `publish` method is available in [Apple documentation](https://developer.apple.com/documentation/foundation/timer/3329589-publish). More initializers can be found in the Xcode documentation or on the [website](https://developer.apple.com/documentation/swiftui/progressview).
 
-![Documentation SwiftUI ProgressView](https://cdn.ivanvorobei.io/websites/sparrowcode.io/mastering-progressview-swiftui/progressview_init.png)
+![Documentation SwiftUI ProgressView](https://cdn.sparrowcode.io/articles/mastering-progressview-swiftui/progressview_init.png)
 
 ## Styling Progress Views
 
@@ -177,4 +177,4 @@ struct TimerProgressView: View {
 
 Progress begins not from left to right, but from the middle in opposite directions.
 
-[RoundedProgressViewStyle](https://cdn.ivanvorobei.io/websites/sparrowcode.io/mastering-progressview-swiftui/rounded_progress_view.mov)
+[RoundedProgressViewStyle](https://cdn.sparrowcode.io/articles/mastering-progressview-swiftui/rounded_progress_view.mov)

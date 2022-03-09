@@ -8,7 +8,7 @@ VStack {
 }
 ```
 
-![View placeholder](https://cdn.ivanvorobei.io/websites/sparrowcode.io/redacted-modifier-swiftui/redacted_placeholder.jpg)
+![View placeholder](https://cdn.sparrowcode.io/articles/redacted-modifier-swiftui/redacted_placeholder.jpg)
 
 Use a placeholder to:
 
@@ -78,7 +78,7 @@ struct ContentView: View {
 }
 ```
 
-![DeviceView Result](https://cdn.ivanvorobei.io/websites/sparrowcode.io/redacted-modifier-swiftui/redacted_deviceview.jpg)
+![DeviceView Result](https://cdn.sparrowcode.io/articles/redacted-modifier-swiftui/redacted_deviceview.jpg)
 
 On the left - the view without the modifier. On the right - with it. For clarity, add a toggle:
 
@@ -99,7 +99,7 @@ struct ContentView: View {
 }
 ```
 
-[Toggle](https://cdn.ivanvorobei.io/websites/sparrowcode.io/redacted-modifier-swiftui/redacted_toggle.mov)
+[Toggle](https://cdn.sparrowcode.io/articles/redacted-modifier-swiftui/redacted_toggle.mov)
 
 ## Unredacted
 
@@ -122,7 +122,7 @@ VStack(spacing: 20) {
             // Ommited
 ```
 
-![Unredacted Result](https://cdn.ivanvorobei.io/websites/sparrowcode.io/redacted-modifier-swiftui/redacted_unredacted.jpg)
+![Unredacted Result](https://cdn.sparrowcode.io/articles/redacted-modifier-swiftui/redacted_unredacted.jpg)
 
 In the example, the icon and the name of the device are not hidden.
 
@@ -143,7 +143,7 @@ VStack {
 }
 ```
 
-[Clickable Button](https://cdn.ivanvorobei.io/websites/sparrowcode.io/redacted-modifier-swiftui/redacted_available_button.mov)
+[Clickable Button](https://cdn.sparrowcode.io/articles/redacted-modifier-swiftui/redacted_available_button.mov)
 
 Manually control the button's behavior, I'll show you how below.
 
@@ -221,7 +221,7 @@ extension View {
 
 If you toggle it, the button is not clickable.
 
-![Custom unredacted](https://cdn.ivanvorobei.io/websites/sparrowcode.io/redacted-modifier-swiftui/redacted_custom_unredacted.jpg)
+![Custom unredacted](https://cdn.sparrowcode.io/articles/redacted-modifier-swiftui/redacted_custom_unredacted.jpg)
 
 ## Building our own Redacted API
 
@@ -285,7 +285,7 @@ struct Blurred_Previews: PreviewProvider {
 }
 ```
 
-![Blurred Previews](https://cdn.ivanvorobei.io/websites/sparrowcode.io/redacted-modifier-swiftui/redacted_blurred_previews.jpg)
+![Blurred Previews](https://cdn.sparrowcode.io/articles/redacted-modifier-swiftui/redacted_blurred_previews.jpg)
 
 I took the `Blurred` modifier. As we did before, we then define a Redactable view modifier:
 
@@ -341,4 +341,4 @@ struct RedactableModifier_Previews: PreviewProvider {
 
 Final result:
 
-![RedactableModifier Result](https://cdn.ivanvorobei.io/websites/sparrowcode.io/redacted-modifier-swiftui/redacted_redactable_modifier.jpg)
+![RedactableModifier Result](https://cdn.sparrowcode.io/articles/redacted-modifier-swiftui/redacted_redactable_modifier.jpg)
