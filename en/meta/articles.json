@@ -159,11 +159,12 @@
         "description" : "Search в SwiftUI. Working with Searchable.",
         "category" : "swiftui",
         "author" : "wmorgue",
+        "editors" : ["svtnck"],
         "translator": "wmorgue",
         "keywords" : [
             "searchable"
         ],
-        "updated_date": "23.02.2022",
+        "updated_date": "09.03.2022",
         "added_date": "23.02.2022"
     },
     "resources-for-ios-developer" : {
