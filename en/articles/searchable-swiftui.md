@@ -211,7 +211,7 @@ If you need more control - tracking searches, searching the local database, etc.
 }
 ```
 
-[Searchable onSubmit](https://cdn.sparrowcode.io/articles/searchable-swiftui/searсhable_onsubmit.mov)
+[Searchable onSubmit](https://cdn.sparrowcode.io/articles/searchable-swiftui/searchable_onsubmit.mov)
 
 Modifier `.onSubmit()` will trigger when a search query is submitted:
 
