@@ -166,11 +166,11 @@
         "description" : "Поиск в SwiftUI. Работаем с модификатором `Searchable`.",
         "category" : "swiftui",
         "author" : "wmorgue",
-        "editors" : ["ivanvorobei"],
+        "editors" : ["ivanvorobei", "svtnck"],
         "keywords" : [
             "searchable"
         ],
-        "updated_date": "22.02.2022",
+        "updated_date": "09.03.2022",
         "added_date": "21.02.2022"
     },
     "redacted-modifier-swiftui" : {

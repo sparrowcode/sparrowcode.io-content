@@ -211,7 +211,7 @@ extension ContentView {
 }
 ```
 
-[Searchable onSubmit](https://cdn.sparrowcode.io/articles/searchable-swiftui/searсhable_onsubmit.mov)
+[Searchable onSubmit](https://cdn.sparrowcode.io/articles/searchable-swiftui/searchable_onsubmit.mov)
 
 Модификатор `.onSubmit()` сработает, когда будет отправлен поисковый запрос:
 
