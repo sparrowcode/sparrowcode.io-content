@@ -196,5 +196,20 @@
         ],
         "updated_date": "04.03.2022",
         "added_date": "04.03.2022"
+    },
+    "redacted-modifier-swiftui" : {
+        "title" : "The Redacted View Modifier in SwiftUI",
+        "description" : "Create a placeholder in SwiftUI. Transforms the view hierarchy into a skeleton view.",
+        "category" : "swiftui",
+        "author" : "wmorgue",
+        "translator": "wmorgue",
+        "editors" : ["ivanvorobei", "svtnck"],
+        "keywords" : [
+            "redacted",
+            "unredacted",
+            "RedactionReasons"
+        ],
+        "updated_date": "09.03.2022",
+        "added_date": "09.03.2022"
     }
 }
