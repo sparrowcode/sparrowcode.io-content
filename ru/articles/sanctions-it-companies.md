@@ -34,7 +34,9 @@
 
 [Facebook](https://rkn.gov.ru/news/rsoc/news74156.htm): Заблокирован Роскомнадзором.
 
-[Figma](https://www.figma.com/blog/our-response-to-ukraine/): Остановили продажи, заморозили корпоративные аккаунты. 
+[Figma](https://www.figma.com/blog/our-response-to-ukraine/): Остановили продажи, заморозили корпоративные аккаунты.
+
+[Fiverr](https://blog.fiverr.com/post/fiverr-suspends-business-in-russia): Приостанавливает деятельность с 14 марта. 
 
 [Grammarly](https://www.grammarly.com/stand-with-ukraine/): Прекращает работу на неопределенное время. 
 
