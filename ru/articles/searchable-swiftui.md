@@ -2,7 +2,7 @@
 
 ## Инициализация
 
-Добавим модификатор `.searchable()` к `NavigationView()`:
+Добавим модификатор `.searchable(text:)` к `NavigationView()`:
 
 ```swift
 struct ContentView: View {
