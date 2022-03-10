@@ -10,5 +10,5 @@ jobs:
         with:
           host: ${{ secrets.HOST_IP }}
           username: ${{ secrets.USERNAME }}
-          key: ${{ secrets.GITHUB_ACTIONS_KEY }}
+          key: ${{ secrets.PRIVATE_ACTIONS_KEY }}
           script: update_articles.sh
