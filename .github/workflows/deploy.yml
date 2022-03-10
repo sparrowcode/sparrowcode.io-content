@@ -11,4 +11,4 @@ jobs:
           host: ${{ secrets.HOST_IP }}
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.PRIVATE_ACTIONS_KEY }}
-          script: update_articles.sh
+          script: bash update_articles.sh
