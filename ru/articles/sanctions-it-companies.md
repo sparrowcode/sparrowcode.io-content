@@ -48,7 +48,7 @@
 
 [Microsoft](ttps://blogs.microsoft.com/on-the-issues/2022/03/04/microsoft-suspends-russia-sales-ukraine-conflict/): Приостанавливает продажи товаров и предоставление услуг. 
 
-[Nintendo Switch](https://www.nintendo.ru/-/-Nintendo--11593.html): Пользователи не могут купить новые или скачать оплаченные игры.
+[Nintendo Switch](https://www.nintendo.ru/-/-Nintendo--11593.html): Приостановили отгрузку консолей и ПО. Пользователи не могут купить новые или скачать оплаченные игры.
 
 [Oracle](https://twitter.com/Oracle/status/1499058658583490568): Приостановила операции.
 
@@ -56,7 +56,11 @@
 
 [Restream](https://restream.io/stop-war): Остановили поддержку пользователей в РФ и РБ.
 
+[Rovio](https://www.rovio.com/articles/rovio-removes-its-games-from-app-stores-in-russia-and-belarus/): Удалили игры из магазинов приложений в РФ и РБ.
+
 [SAP SE](https://news.sap.com/2022/03/standing-in-solidarity/): Остановил продажи услуг и продуктов.
+
+[Storytel](https://investors.storytel.com/en/storytel-pauses-its-russian-operations-until-further-notice/): Приостановили деятельность.
 
 [Supercell](https://twitter.com/supercell/status/1501533775410470912): Удалили игры из магазинов приложений в РФ и РБ. Закроют доступ для игроков в следующем обновлении.
 
@@ -68,6 +72,8 @@
 
 [Upwork](https://twitter.com/Upwork/status/1500837282210672640): Полностью приостановят работу в РФ и РБ 1 мая.
 
+[Western Union](https://ir.westernunion.com/news/archived-press-releases/press-release-details/2022/Western-Union-Suspends-Operations-in-Russia-and-Belarus/default.aspx): Приостановят операции в РФ и РБ с 24 марта.
+
 ## Без публичного заявления
 
 Компании официально не делали заявлений, но услуги ограничены.
@@ -78,7 +84,7 @@
 
 [E-Katalog](https://vc.ru/u/1011282-nikita/375139-ne-zhdite-vyplat-ot-e-katalog): Покинул российский рынок - сайт в `ru` домене не открывается.
 
-[Google](https://www.nytimes.com/2022/03/03/technology/google-ads-russia.html): Приостановили продажу контекстной рекламы. 
+[Google](https://www.nytimes.com/2022/03/03/technology/google-ads-russia.html): Приостановили продажу контекстной рекламы. Из [Play Market](https://support.google.com/googleplay/android-developer/answer/11950272) можно скачать только бесплатные приложения. 
 
 [Megogo](https://www.vedomosti.ru/media/articles/2022/03/02/911742-megogo-prekraschaet-deyatelnost): Покинули Российский рынок. 
 
