@@ -1,0 +1,14 @@
+name: Deploy articles
+on: [push]
+
+jobs:
+  deploy:
+    name: Deploy to site
+    runs-on: ubuntu-latest
+    steps:
+      - uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.HOST_IP }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.GITHUB_ACTIONS_KEY }}
+          script: update_articles.sh
