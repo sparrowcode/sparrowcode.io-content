@@ -36,6 +36,8 @@
 
 [EA](https://www.ea.com/news/update-on-electronic-arts-titles-in-russia-and-belarus): Приостановит продажу своих игр в РФ и РБ.
 
+[eBay](https://export.ebay.com/ru/seller-updates/ebay-news/seller-performance-protection2022/): Приостановил все транзакции с российскими адресами.
+
 [EPAM Systems](https://www.epam.com/about/newsroom/press-releases/2022/epam-provides-update-on-ukraine): Больше не будет обслуживать клиентов, но обеспечит переход. 
 
 [Epic Games](https://twitter.com/EpicNewsroom/status/1500236775448588295): Приостанавливает коммерцию в своих играх.
@@ -124,7 +126,7 @@
 
 [Nvidia](https://in.pcmag.com/graphics-cards/148243/nvidia-to-stop-all-product-sales-to-russia): Приостанавливают продажу продукции. 
 
-[PayPal](https://www.reuters.com/business/paypal-shuts-down-its-services-russia-citing-ukraine-aggression-2022-03-05/): Сайт недоступен, нельзя создать аккаунт. 
+[PayPal](https://www.paypal.com/ru/smarthelp/home): Заблокирует кошельки пользователей из России 18 марта. 
 
 [Rockstar Games](https://tass.ru/ekonomika/13976059): Прекратили продажу игр, ранее купленные игры продолжают работать. 
 
