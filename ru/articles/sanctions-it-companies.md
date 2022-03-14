@@ -48,13 +48,13 @@
 
 [Figma](https://www.figma.com/blog/our-response-to-ukraine/): Остановили продажи, заморозили корпоративные аккаунты.
 
-[Fiverr](https://blog.fiverr.com/post/fiverr-suspends-business-in-russia): Приостанавливает деятельность с 14 марта. 
+[Fiverr](https://blog.fiverr.com/post/fiverr-suspends-business-in-russia): Приостановили работу. 
 
 [Grammarly](https://www.grammarly.com/stand-with-ukraine/): Прекращает работу на неопределенное время. 
 
 [IBM](https://newsroom.ibm.com/War-in-Ukraine-Supporting-IBMers/): Прекратили продажу технологий и ведение бизнеса с российскими военными организациями. 
 
-[Instagram](https://rkn.gov.ru/news/rsoc/news74176.htm): Будет заблокирован РКН [14 марта в 00:00](https://rkn.gov.ru/news/rsoc/news74180.htm).
+[Instagram](https://rkn.gov.ru/news/rsoc/news74176.htm): Заблокирован РКН.
 
 [Intel](https://twitter.com/intelnews/status/1499531394871083015): Запретили поставку микрочипов в РФ и РБ на некоторое время.
 
@@ -137,3 +137,5 @@
 [Twitch](https://dtf.ru/gameindustry/1107855-twitch-priostanovila-vyplaty-rossiyskim-strimeram-im-predlagayut-vybrat-drugoy-sposob-oplaty): Приостановила выплаты. Предлагается изменить способ оплаты.
 
 [Ubisoft](https://www.bloomberg.com/news/articles/2022-03-07/ubisoft-stopping-sales-in-russia-following-major-rivals): Приостановила продажу своих игр.
+
+[1Password](https://vc.ru/services/379381-menedzher-paroley-1password-propal-iz-rossiyskogo-app-store): Приложение пропало из российского App Store.
