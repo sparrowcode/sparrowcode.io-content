@@ -52,6 +52,8 @@
 
 [Grammarly](https://www.grammarly.com/stand-with-ukraine/): Прекращает работу на неопределенное время. 
 
+[GSC Game World](https://vk.com/gscgameworld?w=wall-172971040_54303): Остановили продажу игр.
+
 [IBM](https://newsroom.ibm.com/War-in-Ukraine-Supporting-IBMers/): Прекратили продажу технологий и ведение бизнеса с российскими военными организациями. 
 
 [Instagram](https://rkn.gov.ru/news/rsoc/news74176.htm): Заблокирован РКН.
@@ -75,6 +77,8 @@
 [Niantic](https://twitter.com/NianticLabs/status/1502120716665118725): Удалили игры из магазина приложений в РФ и РБ.
 
 [Norton](https://support.norton.com/sp/ru/ru/home/current/info?inid=support-nav_support-homepage): Не принимают новые заказы и не оказывают помощь.
+
+[Okta](https://www.okta.com/blog/2022/03/okta-stands-with-ukraine/): Приостановили продажу продуктов пользователям из РФ и РБ.
 
 [Oracle](https://twitter.com/Oracle/status/1499058658583490568): Приостановила операции.
 
