@@ -1,4 +1,4 @@
-Модификатор `keyboardShortcut` позволяет добавлять различные сочетания клавиш:
+Модификатор `keyboardShortcut` добавляет сочетания клавиш:
 
 ```swift
 struct ContentView: View {
