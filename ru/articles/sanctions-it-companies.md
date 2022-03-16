@@ -82,6 +82,8 @@
 
 [Oracle](https://twitter.com/Oracle/status/1499058658583490568): Приостановила операции.
 
+[Qualcomm](https://twitter.com/Qualcomm/status/1504137445771661313): Прекратили продажу продукции российским компаниям.
+
 [Readdle](https://readdle.com/ru/no-service-russia): Прекратили продажу и поддержку приложений.
 
 [Restream](https://restream.io/stop-war): Остановили поддержку пользователей в РФ и РБ.
