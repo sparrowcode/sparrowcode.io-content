@@ -217,5 +217,17 @@
         ],
         "updated_date": "16.03.2022",
         "added_date": "06.03.2022"
+    },
+    "keyboard-shortcut-swiftui" : {
+        "title" : "Сочетание клавиш в SwiftUI",
+        "description" : "Знакомимся с модификатором `keyboardShortcut`.",
+        "category" : "swiftui",
+        "author" : "wmorgue",
+        "editors" : ["ivanvorobei"],
+        "keywords" : [
+            "keyboard shortcut"
+        ],
+        "updated_date": "15.03.2022",
+        "added_date": "14.03.2022"
     }
 }
