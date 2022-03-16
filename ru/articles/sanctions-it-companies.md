@@ -88,6 +88,8 @@
 
 [Rovio](https://www.rovio.com/articles/rovio-removes-its-games-from-app-stores-in-russia-and-belarus/): Удалили игры из магазинов приложений в РФ и РБ.
 
+[Salesforce](https://www.salesforce.com/news/stories/standing-with-ukraine/): Прекращают взаимодействие с российскими клиентами.
+
 [SAP SE](https://news.sap.com/2022/03/standing-in-solidarity/): Остановил продажи услуг и продуктов.
 
 [Serpstat](https://serpstat.com/rf_ban/): Закрыли доступ к аккаунтам.
