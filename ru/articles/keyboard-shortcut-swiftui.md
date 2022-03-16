@@ -17,13 +17,13 @@ struct ContentView: View {
 
 ## Инициализация
 
-Первый параметр модификатора `keyboardShortcut` должен быть экземпляром структуры [KeyEquivalent](https://developer.apple.com/documentation/swiftui/keyequivalent?changes=_5). `KeyEquivalent` наследуется от протокола `ExpressibleByExtendedGraphemeClusterLiteral`, позволяющий создать экземпляр `KeyEquivalent` используя строковый литерал, содержащий только 1 символ.
+Первый параметр модификатора `keyboardShortcut` должен быть экземпляром структуры [KeyEquivalent](https://developer.apple.com/documentation/swiftui/keyequivalent?changes=_5). `KeyEquivalent` наследуется от протокола `ExpressibleByExtendedGraphemeClusterLiteral` и создает экземпляр `KeyEquivalent` с строковым литералом в 1 символ.
 
 ```swift
 init(_ key: KeyEquivalent, modifiers: EventModifiers = .command)
 ```
 
-Второй параметр `modifiers:` наследуется от структуры [EventModifiers](https://developer.apple.com/documentation/swiftui/eventmodifiers?changes=_5), который представляет собой уникальный набор клавиш модификаторов.
+Второй параметр `modifiers` наследуется от структуры [EventModifiers](https://developer.apple.com/documentation/swiftui/eventmodifiers?changes=_5). Это уникальный набор клавиш-модификаторов.
 В примере выше используем клавишу `R` и модификатор `.command`, который устанавливается по умолчанию в SwiftUI:
 
 Пример с переключателем:
@@ -45,11 +45,11 @@ struct ContentView: View {
 }
 ```
 
-Нажимая на `⌘ + T` — меняем положение переключателя. Применили модификатор ко всем элементам `VStack`.
+Нажимаем на `⌘ + T` и меняем положение переключателя. Применяем модификатор ко всем элементам `VStack`.
 
 [Переключатель](https://cdn.sparrowcode.io/articles/keyboard-shortcut-swiftui/keyboard_shortcut_toggle.mov)
 
-Другой пример инициализации:
+Другой пример:
 
 ```swift
 Button("Confirm action") {
@@ -59,7 +59,7 @@ Button("Confirm action") {
 ```
 
 Проперти `.defaultAction` — стандартная комбинация клавиш для кнопки по умолчанию Enter.
-В последнем примере я положил сочетание клавиш `Escape` + `Option` + `Shift` в константу `updateArticles`:
+Я положил сочетание клавиш `Escape` + `Option` + `Shift` в константу `updateArticles`:
 
 ```swift
 struct ContentView: View {
