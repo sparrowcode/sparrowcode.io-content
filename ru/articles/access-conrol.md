@@ -21,27 +21,27 @@ public var name: String
 
 Далее по тексту я буду использовать слово модули. Модулем может быть приложение, ваша библиотека, таргет. Рассмотрим уровни детально:
 
-## public
+## `public`
 
 Уровень `public` используют для фреймворков. Другие модули имеют доступ к публичным свойствам и методам..
 
 >`public` классы не могут быть `суперклассами`, а их свойства и методы нельзя переопределять.
 
-## internal
+## `internal`
 
 Внутренний уровень стоит по умолчанию для свойств и метдов. Он предоставляет доступ внутри модуля.
 
 Запись ```var number = 3 ``` и ```internal var number = 3 ``` равнозначны. Явно указывать `internal` не требуется.
 
-## fileprivate
+## `fileprivate`
 
 `fileprivate` дает доступ только объектам в одном файле.
 
-## private
+## `private`
 
 `private` ограничивает доступ к свойствам и методам внутри структур, классов и перечислений. Является самым строгим уровнем.
 
-## open
+## `open`
 
 `open` похож на `public` - разрешает доступ из других модулей. Испоьзуется только для классов, их свойств и методов.
 
@@ -51,7 +51,7 @@ public var name: String
 
 Можно не использовать уровни доступа, но это снизит безопасность кода. Инкапсюлированный код показывает какая часть кода является внутренней реализацией. Для команд, где каждый работает над своей частью, это критично. Рассмотрим примеры использования уровней:
 
-### private свойства в структурах и классах
+### `private` свойства в структурах и классах
 
 `private` свойства читаются и записываются только в структурах и классах. Сделаем игру, где нужно дать правильный ответ.
 
@@ -110,7 +110,7 @@ struct Test {
 test.showAnswer() // Лима
 ```
 
-###  private методы в структарах и классах
+### `private` методы в структарах и классах
 
 Указывайте методам private когда работаете с конфиденциальными данными. Это спрячет реализацию. Создадим переменные `gamerAnswer` и `result` с начальными значениями `""`. `result` сделаем `private`:
 
@@ -162,57 +162,7 @@ test.gamerAnswer = "Лима"
 test.getResult() // Ответ верный!
 ```
 
-## Вычисляемые свойства
-
-Вычисляемые свойства используют другие свойства для возврата значения.
-
-### Read-only
-
-Вычисляемым `read-only` свойством является вычисляемое свойство только с `геттером` (`getter`).
-
-``` swift
-struct HappyMultiply {
-
-    private var happyLevel: UInt
- 
-    var multipliedHappyLevel: UInt {
-        get {
-            return happyLevel != 0 ? happyLevel * 10 : 10
-        }
-    }
-}
-```
-
-### Private Setter
-
-Приватный `сеттер` используют для ограничения доступа к записи за пределами структуры (класса). Для объявления приватного `сеттера` используем совместно ключевые слова `private` и `(set)`. 
-
-Создадим структуру `Vehicle`. Укажем свойству `numberOfWheels` типа `UInt` приватный `сеттер`:
-
-``` swift
-struct Vehicle {
-
-    private(set) var numberOfWheels : UInt
-}
-```
-
-### Public Private Setter
-
-Можно переписать структуру `Vehicle` иначе. 
-
-``` swift
-struct Vehicle {
-    public private(set) var numberOfWheels : UInt = 3
-}
-
-var kidBike = Vehicle()
-print(kidBike.numberOfWheels) // 3
-kidBike.numberOfWheels = 2 // Ошибка: cannot assign to property: 'numberOfWheels' setter is inaccessible
-```
-
-`геттер` имеет уровень доступа `public`, а `сеттер` - `private`.
-
-## Подробнее о fileprivate
+## Отличия `private` от `fileprivate`
 
 Рассмотрим отличие `fileprivate` от `private`. Создадим два файла: `File1.swift` и `File2.swift`. `File1.swift` содержит структуры `Constants` и `PrinterConstants`:
 
@@ -281,3 +231,54 @@ struct PrinterConstantsFromOuterFile {
     }
 }
 ```
+
+
+## Вычисляемые свойства
+
+Вычисляемые свойства используют другие свойства для возврата значения.
+
+### Read-only
+
+Вычисляемым `read-only` свойством является вычисляемое свойство только с `геттером` (`getter`).
+
+``` swift
+struct HappyMultiply {
+
+    private var happyLevel: UInt
+ 
+    var multipliedHappyLevel: UInt {
+        get {
+            return happyLevel != 0 ? happyLevel * 10 : 10
+        }
+    }
+}
+```
+
+### Private Setter
+
+Приватный `сеттер` используют для ограничения доступа к записи за пределами структуры (класса). Для объявления приватного `сеттера` используем совместно ключевые слова `private` и `(set)`. 
+
+Создадим структуру `Vehicle`. Укажем свойству `numberOfWheels` типа `UInt` приватный `сеттер`:
+
+``` swift
+struct Vehicle {
+
+    private(set) var numberOfWheels : UInt
+}
+```
+
+### Public Private Setter
+
+Можно переписать структуру `Vehicle` иначе. 
+
+``` swift
+struct Vehicle {
+    public private(set) var numberOfWheels : UInt = 3
+}
+
+var kidBike = Vehicle()
+print(kidBike.numberOfWheels) // 3
+kidBike.numberOfWheels = 2 // Ошибка: cannot assign to property: 'numberOfWheels' setter is inaccessible
+```
+
+`геттер` имеет уровень доступа `public`, а `сеттер` - `private`.
