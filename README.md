@@ -41,8 +41,11 @@ Link
 Formatting
 
 ```
-**Bold Text**
->Higlight quote in orange area 
+// Bold Text
+**Example**
+
+// Higlight quote in orange area  
+>Some important info.
 ```
 
 Image and Video
