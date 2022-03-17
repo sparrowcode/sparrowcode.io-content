@@ -28,6 +28,7 @@ init(_ key: KeyEquivalent, modifiers: EventModifiers = .command)
 
 ```swift
 struct ContentView: View {
+
     @State private var isEnabled = false
     
     var body: some View {
@@ -61,6 +62,7 @@ Button("Confirm action") {
 
 ```swift
 struct ContentView: View {
+
     let updateArticles = KeyboardShortcut(.escape, modifiers: [.option, .shift])
     
     var body: some View {
