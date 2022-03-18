@@ -72,6 +72,8 @@
 
 [Microsoft](ttps://blogs.microsoft.com/on-the-issues/2022/03/04/microsoft-suspends-russia-sales-ukraine-conflict/): Приостанавливает продажи товаров и предоставление услуг. 
 
+[MicroTik](https://twitter.com/mikrotik_com/status/1500806788727386114): Приостановили поставки и лицензирование в РФ и РБ.
+
 [Nintendo Switch](https://www.nintendo.ru/-/-Nintendo--11593.html): Приостановили отгрузку консолей и ПО. Пользователи не могут купить новые или скачать оплаченные игры.
 
 [Niantic](https://twitter.com/NianticLabs/status/1502120716665118725): Удалили игры из магазина приложений в РФ и РБ.
@@ -94,9 +96,9 @@
 
 [SAP SE](https://news.sap.com/2022/03/standing-in-solidarity/): Остановил продажи услуг и продуктов.
 
-[Serpstat](https://serpstat.com/rf_ban/): Закрыли доступ к аккаунтам.
+[Schneider Electric](https://www.se.com/ww/en/about-us/newsroom/news/press-releases/an-update-on-ukraine-russia-and-belarus-623333c931dba0100d4f745f): Приостановили поставки и инвестиции в РФ и РБ.
 
-[Storytel](https://investors.storytel.com/en/storytel-pauses-its-russian-operations-until-further-notice/): Приостановили деятельность.
+[Serpstat](https://serpstat.com/rf_ban/): Закрыли доступ к аккаунтам.
 
 [Supercell](https://twitter.com/supercell/status/1501533775410470912): Удалили игры из магазинов приложений в РФ и РБ. Закроют доступ для игроков в следующем обновлении.
 
@@ -113,6 +115,8 @@
 [VyOS](https://blog.vyos.io/global-security-issue-with-russian-federation-invasion-into-ukraine): Отказались от сотрудничества с российскими организациями.
 
 [Western Union](https://ir.westernunion.com/news/archived-press-releases/press-release-details/2022/Western-Union-Suspends-Operations-in-Russia-and-Belarus/default.aspx): Приостановят операции в РФ и РБ с 24 марта.
+
+[Xerox](https://www.news.xerox.com/news/xerox-releases-statement-on-conflict-in-ukraine): Приостановили поставки.
 
 ## Без публичного заявления
 
