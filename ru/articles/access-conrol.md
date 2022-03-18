@@ -57,6 +57,7 @@ public var name: String
 
 ```swift
 struct Test {
+
     let question = "Столица Перу?"
     let answer = "Лима"
 }
@@ -79,6 +80,7 @@ print(test.answer) // Лима
 
 ```swift
 struct Test {
+
     let question = "Столица Перу?"
     private let answer = "Лима"
 }
@@ -114,6 +116,7 @@ test.showAnswer() // Лима
 
 ```swift
 struct Test {
+
     let question = "Столица Перу?"
     private let answer = "Лима"
     var gamerAnswer = ""
