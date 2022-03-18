@@ -62,6 +62,8 @@
 
 [JetBrains](https://blog.jetbrains.com/blog/2022/03/11/jetbrains-statement-on-ukraine/): Приостановили продажи и научно-исследовательскую деятельность в РФ и РБ.
 
+[LG Electronics](https://www.lgnewsroom.com/2022/03/lg-suspends-shipments-to-russia/): Приостановили поставки.
+
 [Logitech](https://blog.logitech.com/2022/03/07/ukraine/): Приостановили поставки.
 
 [Lumen](https://news.lumen.com/RussiaUkraine): Прекращают работу.
