@@ -20,28 +20,6 @@ If you know of any good resources, [contact me](https://t.me/ivanvorobei) and I'
 
 [Application promote](https://tools.applemediaservices.com/apple-app-store-promote): Available styles are `new application`, `update`, `subscription` and `offer`.  Configurable language and background color. Available sizes for stories, banners, and squares.
 
-## Russian speaking videos
-
-[Mobile development school from Yandex](https://www.youtube.com/playlist?list=PLQC2_0cDcSKBUXhSGqAbVAp3SFBKPnpFI): Great speakers and good content. The clips are 1-2 hours long. The sound is recorded from a webcam.
-
-[Sparrow Code](https://www.youtube.com/channel/UCNUGzZfcOyX4YpP36VzeZ6A): Your humble servant's channel. I should do videos a little more often.
-
-[iCode School](https://www.youtube.com/channel/UCx1xu0yc1mh-gjAq8YKRobg): Each video is dedicated to a specific class. For beginners, check out the playlist `Fundamentals of Programming. The author is pleasant to listen to, but the sound leaves a lot to be desired.`
-
-[Ivan Skorokhod](https://www.youtube.com/channel/UChfEfFKYILtO5yZSX2irynw): Translation of the Stanford course on iOS development. There are clips about Swift. Good presentation, bad sound.
-
-[SwiftBook](https://www.youtube.com/channel/UCXlCPCsB09ftBA5bQfiSWoQ): Interviews with developers and practical problems. The author reads out the code he types - it bored me. Good sound.
-
-[MadBrains](https://www.youtube.com/c/MadBrains): In the format of technical reports are solved practical problems. There are videos on how to get a failure and about RX. The clips are large, but it is interesting to watch.
-
-## Russian speaking tutorials
-
-[Habr](https://habr.com/ru/hub/ios_dev/): A site with tutorials and real-world problems.  The authors answer in the comments. The link I gave was specifically for iOS development, but check out the other threads as well.
-
-[Apptractor](https://apptractor.ru): In the [telegram channel](https://telegram.me/apptractor) comes a daily compilation of tutorials. On each Sunday, a digest of the week's content.
-
-[SwiftBook](https://swiftbook.ru): Tutorials and translations. Swift documentation in Russian. There is a paid course for iOS developers.
-
 ## International tutorials
 
 [Ray Wenderlich](https://www.raywenderlich.com): Great tutorials in a practical context. The author has books on git, database, and `SwiftUI`. There are video courses. Some content is paid.
@@ -65,20 +43,6 @@ If you know of any good resources, [contact me](https://t.me/ivanvorobei) and I'
 [Stanford CS193p](https://www.youtube.com/playlist?list=PL3d_SFOiG7_8ofjyKzX6Nl1wZehbdiZC_): A popular course among junior developers. If you are fluent in English, start with this one. There are links to translations in the localized resources section.
 
 [Kavsoft](https://www.youtube.com/c/Kavsoft): Tutorials and practical examples in SwiftUI. The author does not give voice-overs, the explanations appear as text on the screen.
-
-## Chats
-
-[Sparrow Code chat](https://sparrowcode.io/telegram/chat): Our chat room. We monitor toxic developers, help beginners and continuing developers.
-
-[SwiftBook chat](https://telegram.me/swiftbook_chat): The chat room of a popular platform. There are more than 5k people in the chat room now.
-
-[iOS Developers](https://t.me/ios_ru): A large iOS development chat.
-
-[Swiftme](https://t.me/usovswift): Chat from AppDev book author Vasily Usov.
-
-[iOS Good Talks](https://t.me/iosgt): Swift telegram chat of channel "iOS Good Talks".
-
-[The Swift Developers](https://t.me/swift_dev_chat): iOS developers community chat.
 
 ## Library picks
 
