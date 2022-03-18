@@ -173,13 +173,14 @@
         "category" : "compilation",
         "author" : "ivanvorobei",
         "translator": "wmorgue",
+        "editors" : ["svtnck"],
         "keywords" : [
             "Resources for iOS Engineers",
             "iOS development tutorials",
             "swift development",
             "iOS app development"
         ],
-        "updated_date" : "24.02.2022",
+        "updated_date" : "18.03.2022",
         "added_date" : "24.02.2021"
     },
     "swift-56" : {

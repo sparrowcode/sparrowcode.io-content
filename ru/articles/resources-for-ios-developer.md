@@ -72,6 +72,14 @@
 
 [SwiftBook Чат](https://telegram.me/swiftbook_chat): Чат популярной платформы. В чате сейчас больше 5к людей.
 
+[iOS Developers](https://t.me/ios_ru): Крупный чат по iOS разработке.
+
+[Swiftme](https://t.me/usovswift): Чат от автора книг по AppDev Василия Усова.
+
+[iOS Good Talks](https://t.me/iosgt): Чат telegram-канала по Swift "iOS Good Talks".
+
+[The Swift Developers](https://t.me/swift_dev_chat): Чат сообщества iOS разработчиков.
+
 ## Подборки библиотек
 
 [cocoacontrols.com](https://www.cocoacontrols.com): Подборка UI-библиотек, сразу с превью.
