@@ -163,7 +163,7 @@ test.getResult() // Ответ верный!
 
 ## Отличие `private` от `fileprivate`
 
-Рассмотрим отличие `fileprivate` от `private`. Создадим два файла: `File1.swift` и `File2.swift`. `File1.swift` содержит структуры `Constants` и `PrinterConstants`:
+Рассмотрим отличие `fileprivate` от `private`. Создадим два файла: `File1.swift` и `File2.swift`. В первом файле структуры `Constants` и `PrinterConstants`:
 
 ```swift
 struct Constants {
@@ -181,7 +181,7 @@ struct PrinterConstants {
 }
 ```
 
-`File2.swift` содержит структуру `PrinterConstantsFromOuterFile`:
+Во втором `File2.swift` структура `PrinterConstantsFromOuterFile`:
 
 ```swift
 struct PrinterConstantsFromOuterFile {
