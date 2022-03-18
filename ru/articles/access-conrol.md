@@ -64,7 +64,7 @@ struct Test {
 }
 ```
 
-Создадим экземпляр `Test` с именем `test` и глянем вопрос:
+Создадим экземпляр `Test` с именем `test` и узнаем вопрос:
 
 ```swift
 let test = Test()
@@ -86,14 +86,14 @@ struct Test {
 }
 ```
 
-Посмотрим что скажет компилятор:
+Посмотрим вывод:
 
 ```swift
 print(test.question) // Столица Перу?
 print(test.answer) // Ошибка: 'answer' is inaccessible due to 'private' protection level
 ```
 
-Мы получили ошибку: `answer` недоступен из-за уровня доступа `private`. Поведение `private` свойств в классах аналогично. Прочесть свойство `answer` могут только члены структуры `Test`. Создадим метод `showAnswer` для вывода ответ на экран:
+Мы получили ошибку: `answer` недоступен из-за уровня доступа `private`. Поведение `private` свойств в классах аналогично. Прочесть свойство `answer` могут только члены структуры `Test`. Создадим метод `showAnswer` для вывода ответа на экран:
 
 ```swift
 struct Test {
@@ -112,7 +112,7 @@ test.showAnswer() // Лима
 
 ### `private` методы в структарах и классах
 
-Указывайте методам private когда работаете с конфиденциальными данными. Это спрячет реализацию. Создадим переменные `gamerAnswer` и `result` с начальными значениями `""`. `result` сделаем `private`:
+Указывайте методам `private`, когда работаете с конфиденциальными данными. Это спрячет реализацию. Создадим переменные `gamerAnswer` и `result` с начальными значениями `""`. `result` сделаем `private`:
 
 ```swift
 struct Test {
@@ -138,7 +138,6 @@ struct Test {
         switch gamerAnswer {
         case "":
             result = "Вы не ответили на вопрос."
-            break
         case answer:
             result = "Ответ верный!"
         default:
@@ -162,7 +161,7 @@ test.gamerAnswer = "Лима"
 test.getResult() // Ответ верный!
 ```
 
-## Отличия `private` от `fileprivate`
+## Отличие `private` от `fileprivate`
 
 Рассмотрим отличие `fileprivate` от `private`. Создадим два файла: `File1.swift` и `File2.swift`. `File1.swift` содержит структуры `Constants` и `PrinterConstants`:
 
