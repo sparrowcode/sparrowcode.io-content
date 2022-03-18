@@ -111,6 +111,7 @@
         "category" : "uikit",
         "author" : "ivanvorobei",
         "translator": "wmorgue",
+        "editors" : ["svtnck"],
         "keywords" : [
             "UIKit",
             "UIViewController",
@@ -119,7 +120,7 @@
             "lifecycle uiviewcontroller",
             "lifecycle uiview"
         ],
-        "updated_date" : "15.02.2022",
+        "updated_date" : "18.03.2022",
         "added_date" : "15.02.2022"
     },
     "uisheetpresentationcontroller" : {
@@ -128,13 +129,14 @@
         "category" : "uikit",
         "author" : "ivanvorobei",
         "translator": "wmorgue",
+        "editors" : ["svtnck"],
         "keywords" : [
             "UISheetPresentationController",
             "Model Controllers",
             "UIKit",
             "iOS 15"
         ],
-        "updated_date" : "16.02.2022",
+        "updated_date" : "18.03.2022",
         "added_date" : "16.02.2022"
     },
     "drag-and-drop-part-1" : {
@@ -173,13 +175,14 @@
         "category" : "compilation",
         "author" : "ivanvorobei",
         "translator": "wmorgue",
+        "editors" : ["svtnck"],
         "keywords" : [
             "Resources for iOS Engineers",
             "iOS development tutorials",
             "swift development",
             "iOS app development"
         ],
-        "updated_date" : "24.02.2022",
+        "updated_date" : "18.03.2022",
         "added_date" : "24.02.2021"
     },
     "swift-56" : {
