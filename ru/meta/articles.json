@@ -75,13 +75,14 @@
         "description" : "Подборка полезных ссылок для iOS разработчиков. Структурирована по формату материала. Есть раздел с русскими ресурсами.",
         "category" : "compilation",
         "author" : "ivanvorobei",
+        "editors" : ["svtnck"],
         "keywords" : [
             "Ресурсы для iOS разработчиков",
             "туториалы по iOS разработке",
             "swift разработка",
             "разработка iOS приложений"
         ],
-        "updated_date" : "18.02.2022",
+        "updated_date" : "18.03.2022",
         "added_date" : "25.11.2021"
     },
     "how-to-delete-userdefaults-on-macos-catalyst" : {
@@ -215,7 +216,7 @@
             "existential any",
             "type placeholders"
         ],
-        "updated_date": "17.03.2022",
+        "updated_date": "18.03.2022",
         "added_date": "06.03.2022"
     },
     "keyboard-shortcut-swiftui" : {

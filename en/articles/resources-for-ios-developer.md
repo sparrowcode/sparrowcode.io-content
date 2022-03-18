@@ -26,13 +26,13 @@ If you know of any good resources, [contact me](https://t.me/ivanvorobei) and I'
 
 [Sparrow Code](https://www.youtube.com/channel/UCNUGzZfcOyX4YpP36VzeZ6A): Your humble servant's channel. I should do videos a little more often.
 
-[iCode School](https://www.youtube.com/channel/UCx1xu0yc1mh-gjAq8YKRobg): Each video is dedicated to a specific class. For beginners, check out the playlist `Fundamentals of Programming. The author is pleasant to listen to, but the sound leaves a lot to be desired.
+[iCode School](https://www.youtube.com/channel/UCx1xu0yc1mh-gjAq8YKRobg): Each video is dedicated to a specific class. For beginners, check out the playlist `Fundamentals of Programming. The author is pleasant to listen to, but the sound leaves a lot to be desired.`
 
 [Ivan Skorokhod](https://www.youtube.com/channel/UChfEfFKYILtO5yZSX2irynw): Translation of the Stanford course on iOS development. There are clips about Swift. Good presentation, bad sound.
 
 [SwiftBook](https://www.youtube.com/channel/UCXlCPCsB09ftBA5bQfiSWoQ): Interviews with developers and practical problems. The author reads out the code he types - it bored me. Good sound.
 
-[MadBrains](https://www.youtube.com/c/MadBrains): In the format of technical reports are solved practical problems. There are videos on how to get a failure and about RX. The clips are large, but it`s interesting to watch.
+[MadBrains](https://www.youtube.com/c/MadBrains): In the format of technical reports are solved practical problems. There are videos on how to get a failure and about RX. The clips are large, but it is interesting to watch.
 
 ## Russian speaking tutorials
 
@@ -44,7 +44,7 @@ If you know of any good resources, [contact me](https://t.me/ivanvorobei) and I'
 
 ## International tutorials
 
-[Ray Wenderlich](https://www.raywenderlich.com): Great tutorials in a practical context. The author has books on git, database, and `SwiftUI'. There are video courses. Some content is paid.
+[Ray Wenderlich](https://www.raywenderlich.com): Great tutorials in a practical context. The author has books on git, database, and `SwiftUI`. There are video courses. Some content is paid.
 
 [useyourloaf.com](https://useyourloaf.com): Short articles with practice. Often find the site in the output. Improved Stackoverflow.
 
@@ -71,6 +71,14 @@ If you know of any good resources, [contact me](https://t.me/ivanvorobei) and I'
 [Sparrow Code chat](https://sparrowcode.io/telegram/chat): Our chat room. We monitor toxic developers, help beginners and continuing developers.
 
 [SwiftBook chat](https://telegram.me/swiftbook_chat): The chat room of a popular platform. There are more than 5k people in the chat room now.
+
+[iOS Developers](https://t.me/ios_ru): A large iOS development chat.
+
+[Swiftme](https://t.me/usovswift): Chat from AppDev book author Vasily Usov.
+
+[iOS Good Talks](https://t.me/iosgt): Swift telegram chat of channel "iOS Good Talks".
+
+[The Swift Developers](https://t.me/swift_dev_chat): iOS developers community chat.
 
 ## Library picks
 
