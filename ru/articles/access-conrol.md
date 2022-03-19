@@ -25,7 +25,7 @@ public var name: String
 
 Уровень `public` используют для фреймворков. Другие модули имеют доступ к публичным свойствам и методам.
 
->`public` классы не могут быть `суперклассами`, а их свойства и методы нельзя переопределять.
+>За пределами исходного модуля `public` классы не могут быть `суперклассами`, а их свойства и методы нельзя переопределять.
 
 ## `internal`
 
@@ -43,7 +43,7 @@ public var name: String
 
 `open` похож на `public` - разрешает доступ из других модулей. Испоьзуется только для классов, их свойств и методов.
 
-`open` классы наследуются в определяющем и импортирующем модуле. `open` свойства и методы класса переопределяются подклассами.
+`open` классы наследуются в определяющем и импортирующем модуле. `open` свойства и методы класса переопределяются подклассами также.
 
 ## Практика
 
@@ -282,3 +282,135 @@ kidBike.numberOfWheels = 2 // Ошибка: cannot assign to property: 'numberOf
 ```
 
 `геттер` имеет уровень доступа `public`, а `сеттер` - `private`.
+
+## Internal, Public и Open классы
+
+### Internal
+
+Мы хоти создать модуль `Tools` с инструментами - письменными принадлежностями.
+
+Создадим `internal` класс `WritingTool` со свойствами `name` и `inscription` и методом `write(word: String)`.
+
+- `name` - постоянная типа `String`, название инструмента
+- `inscription` - переменная типа `String` с начальным значением `""`, надпись
+- `write(word: String)` - добавляет `word` к `inscription`
+
+```swift
+class WritingTool {
+    let name: String
+    var inscription = ""
+    
+    init(name: String) {
+        self.name = name
+    }
+    
+    func write(word: String) {
+        inscription += word
+    }
+}
+```
+
+В рамках всего нашего модуля (в любом месте проекта) мы можем создать подкласс на его основе.
+
+```swift
+class Pencil: WritingTool {
+    func clear() {
+        inscription = ""
+    }
+}
+```
+
+Создать экземпляр класса `Pencil` можно в любом месте модуля.
+
+```swift
+let redPencil = Pencil(name: "red pencil")
+redPencil.write(word: "writing by pencil")
+print(redPencil.inscription) // "writing by pencil"
+redPencil.clear()
+print(redPencil.inscription) // ""
+```
+
+>Классы `WritingTool` и `Pencil` доступны только внутри нашего модуля из-за уровня `internal`.
+
+Для нашей задачи `internal` не подходит.
+
+### Public
+
+Изменим уровень класса `Pencil` на `public`.
+
+```swift
+public class Pencil: WritingTool {
+    // ...
+}
+```
+
+Получаем ошибку `class cannot be declared public because its superclass is internal`. 
+
+>Уровень `подкласса` не должен быть мягче уровня его `суперкласса`.
+
+Изменим уровень класса `WritingTool` на `public`.
+
+```swift
+public class WritingTool {
+    // ...
+}
+```
+
+Теперь можно импортировать модуль в другие проекты и использовать классы `WritingTool` и `Pencil`.
+
+```swift
+import Tools
+
+let redPencil = Pencil(name: "red pencil")
+redPencil.write(word: "writing by pencil")
+print(redPencil.inscription) // "writing by pencil"
+redPencil.clear()
+print(redPencil.inscription) // ""
+```
+
+В новом проекте мы хотим создать класс `Pen` на основе класса `WritingTool`.
+
+>`public` не позволяет классам `WritingTool` и `Pencil` быть суперклассами за пределами модуля `Tools`.
+
+Нужен другой уровень.
+
+### Open
+
+В модуле `Tools` изменим уровень класса `WritingTool` на `open`.
+
+```swift
+open class WritingTool {
+    // ...
+}
+```
+
+В новом проекте теперь можно создать класс `Pen: WritingTool`.
+
+```swift
+import Tools
+
+class Pen: WritingTool {
+    var inkColor: CGColor = .black
+    
+    func changeInk(color: CGColor) {
+        inkColor = color
+    }
+}
+```
+
+Класс `Pencil` мы оставили с уровнем `public`. Он может использоваться в новом проекте, но не может быть в нём суперклассом.
+
+```swift
+import Tools
+
+class Pen: WritingTool {
+    // ...
+}
+
+let greenPencil = Pencil(name: "green pencil")
+let pen = Pen(name: "pen")
+```
+
+>Свойства и методы класса `WritingTool` (`open` уровень) могут быть переопределены классами `Pen` и `Pencil`.
+
+>Свойства и методы класса `Pencil` (`public` уровень) могут быть переопределены только его подклассом в модуле `Tools`.
