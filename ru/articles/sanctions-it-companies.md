@@ -34,6 +34,8 @@
 
 [DMarket](https://twitter.com/dmarket/status/1497952451726565383): Заморозила аккаунты пользователей из России и Белоруссии. 
 
+[Docker](https://www.docker.com/blog/dockers-response-to-the-invasion-of-ukraine/): Приостановили бизнес в РФ, продажу подписок в РФ и РБ.
+
 [EA](https://www.ea.com/news/update-on-electronic-arts-titles-in-russia-and-belarus): Приостановит продажу своих игр в РФ и РБ.
 
 [eBay](https://export.ebay.com/ru/seller-updates/ebay-news/seller-performance-protection2022/): Приостановил все транзакции с российскими адресами.
@@ -64,6 +66,8 @@
 
 [LG Electronics](https://www.lgnewsroom.com/2022/03/lg-suspends-shipments-to-russia/): Приостановили поставки.
 
+[Lloyd's Register](https://www.lr.org/en/latest-news/lr-withdraws-services-to-russia/): Приостановили оказание услуг.
+
 [Logitech](https://blog.logitech.com/2022/03/07/ukraine/): Приостановили поставки.
 
 [Lumen](https://news.lumen.com/RussiaUkraine): Прекращают работу.
@@ -90,6 +94,8 @@
 
 [Readdle](https://readdle.com/ru/no-service-russia): Прекратили продажу и поддержку приложений.
 
+[Red Hat](https://www.redhat.com/en/blog/red-hats-response-war-ukraine): Прекратили продажи и обслуживание в РФ и РБ.
+
 [Restream](https://restream.io/stop-war): Остановили поддержку пользователей в РФ и РБ.
 
 [Rovio](https://www.rovio.com/articles/rovio-removes-its-games-from-app-stores-in-russia-and-belarus/): Удалили игры из магазинов приложений в РФ и РБ.
@@ -103,6 +109,8 @@
 [Serpstat](https://serpstat.com/rf_ban/): Закрыли доступ к аккаунтам.
 
 [Supercell](https://twitter.com/supercell/status/1501533775410470912): Удалили игры из магазинов приложений в РФ и РБ. Закроют доступ для игроков в следующем обновлении.
+
+[Suse](https://www.suse.com/c/standing-with-ukraine/): Приостановили прямые продажи.
 
 [Spotify](https://support.spotify.com/ru-ru/contact-spotify-support/?nosignup=true): Приостановили продажу премиум подписки.
 
