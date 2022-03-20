@@ -1,4 +1,6 @@
-Рассмотрим уровни доступа и как они работают на практических примерах.
+Рассмотрим уровни доступа и их работу на практических примерах.
+
+## Описание
 
 Уровни доступа определяют откуда видны свойства/методы. Когда методов много, вы можете случайно нарушить правила выбранной архитектуры. Если метод закрыт уровнем доступа, вы не вызовите его ошибочно - он будет не доступен.
 
@@ -17,7 +19,27 @@
 public var name: String
 ```
 
->У функции уровень доступа должен быть мягче или такой же, как у её параметров.
+Объявим `private` функцию `readStream`:
+
+```swift
+private func readStream() {
+
+    // ...
+}
+```
+
+>У `функции` уровень доступа должен быть мягче или такой же, как у её `параметров`.
+
+Создадим `open` класс `Tool`:
+
+```swift
+open class Tool {
+
+    // ...
+}
+```
+
+>Уровень `подкласса` не должен быть мягче уровня его `суперкласса`.
 
 Далее по тексту я буду использовать слово модули. Модулем может быть приложение, ваша библиотека, таргет. Рассмотрим уровни детально:
 
@@ -29,11 +51,24 @@ public var name: String
 
 ## `internal`
 
-Внутренний уровень стоит по умолчанию для свойств и метдов. Он предоставляет доступ внутри модуля. Запись ```var number = 3 ``` и ```internal var number = 3 ``` равнозначны. Явно указывать `internal` не требуется.
+Внутренний уровень стоит по умолчанию для свойств и метдов. Он предоставляет доступ внутри модуля. Явно указывать `internal` не требуется.
+
+Запись 
+
+```swift
+var number = 3 
+``` 
+и 
+
+```swift
+internal var number = 3
+```
+
+равнозначны.
 
 ## `fileprivate`
 
-Доступ только к объектам из одного файла.
+Похож на `private`. Доступ к объектам этого уровня имеют только объекты из того же файла.
 
 ## `private`
 
@@ -47,7 +82,60 @@ public var name: String
 
 ## Практика
 
-Можно не использовать уровни доступа, но это снизит безопасность кода. Инкапсюлированный код показывает какая часть кода является внутренней реализацией. Для команд, где каждый работает над своей частью, это критично. Рассмотрим примеры использования уровней:
+Можно не использовать уровни доступа, но это снизит безопасность кода. Инкапсюлированный код показывает, какая часть кода является внутренней реализацией. Для команд, где каждый работает над своей частью, это критично. Рассмотрим примеры использования уровней:
+
+### Вычисляемые свойства
+
+Вычисляемые свойства используют другие свойства для возврата значения. Такие свойства прнято делать `private` и `public private` уровней в ряде случаев.
+
+### Read-only
+
+Вычисляемым `read-only` свойством является вычисляемое свойство только с `геттером` (`getter`).
+
+Создадим структуру `HappyMultiply`. Свойство `multipliedHappyLevel` будем рассчитывать на основе `private` свойства `happyLevel`. Это скроет вычисления.
+
+``` swift
+struct HappyMultiply {
+
+    private var happyLevel: UInt
+ 
+    var multipliedHappyLevel: UInt {
+        get {
+            return happyLevel != 0 ? happyLevel * 10 : 10
+        }
+    }
+}
+```
+
+### Private Setter
+
+Приватный `сеттер` используют для ограничения доступа к записи за пределами структуры (класса). Для объявления приватного `сеттера` используем совместно ключевые слова `private` и `(set)`. 
+
+Создадим структуру `Vehicle`. Укажем свойству `numberOfWheels` типа `UInt` приватный `сеттер`:
+
+``` swift
+struct Vehicle {
+
+    private(set) var numberOfWheels : UInt
+}
+```
+
+### Public Private Setter
+
+Можно переписать структуру `Vehicle` иначе. 
+
+``` swift
+struct Vehicle {
+
+    public private(set) var numberOfWheels : UInt = 3
+}
+
+var kidBike = Vehicle()
+print(kidBike.numberOfWheels) // 3
+kidBike.numberOfWheels = 2 // Ошибка: cannot assign to property: 'numberOfWheels' setter is inaccessible
+```
+
+`Геттер` имеет уровень доступа `public`, а `сеттер` - `private`.
 
 ### `private` свойства в структурах и классах
 
@@ -97,6 +185,8 @@ print(test.answer) // Ошибка: 'answer' is inaccessible due to 'private' pr
 
 ```swift
 struct Test {
+
+    // ...
 
     func showAnswer() {
         print(answer)
@@ -162,7 +252,7 @@ test.gamerAnswer = "Лима"
 test.getResult() // Ответ верный!
 ```
 
-## Отличие `private` от `fileprivate`
+### Отличие `private` от `fileprivate`
 
 Рассмотрим отличие `fileprivate` от `private`. Создадим два файла: `File1.swift` и `File2.swift`. В первом файле структуры `Constants` и `PrinterConstants`:
 
@@ -226,66 +316,20 @@ struct Constants {
 
 ```swift
 struct PrinterConstantsFromOuterFile {
+
     func printConstants() {
         print(Constants.decade)
     }
 }
 ```
 
+### Модули и фреймворки
 
-## Вычисляемые свойства
+Часто мы используем в разных проектах одни и те же функции. С новыми проектами разрастаются подручные методы. Для сокращения времени и действий такие методы удобно выносить в отдельные модули и подключать в новые проекты. Такой модуль может перерасти в полезный `open source` фреймворк.
 
-Вычисляемые свойства используют другие свойства для возврата значения.
+Необходимо заранее продумать, к каким объектам модуля разрешать доступ и переопределение в других проектах. Рассмотрим это на примере классов.
 
-### Read-only
-
-Вычисляемым `read-only` свойством является вычисляемое свойство только с `геттером` (`getter`).
-
-``` swift
-struct HappyMultiply {
-
-    private var happyLevel: UInt
- 
-    var multipliedHappyLevel: UInt {
-        get {
-            return happyLevel != 0 ? happyLevel * 10 : 10
-        }
-    }
-}
-```
-
-### Private Setter
-
-Приватный `сеттер` используют для ограничения доступа к записи за пределами структуры (класса). Для объявления приватного `сеттера` используем совместно ключевые слова `private` и `(set)`. 
-
-Создадим структуру `Vehicle`. Укажем свойству `numberOfWheels` типа `UInt` приватный `сеттер`:
-
-``` swift
-struct Vehicle {
-
-    private(set) var numberOfWheels : UInt
-}
-```
-
-### Public Private Setter
-
-Можно переписать структуру `Vehicle` иначе. 
-
-``` swift
-struct Vehicle {
-    public private(set) var numberOfWheels : UInt = 3
-}
-
-var kidBike = Vehicle()
-print(kidBike.numberOfWheels) // 3
-kidBike.numberOfWheels = 2 // Ошибка: cannot assign to property: 'numberOfWheels' setter is inaccessible
-```
-
-`геттер` имеет уровень доступа `public`, а `сеттер` - `private`.
-
-## Internal, Public и Open классы
-
-### Internal
+### Internal классы
 
 Мы хоти создать модуль `Tools` с инструментами - письменными принадлежностями.
 
@@ -297,6 +341,7 @@ kidBike.numberOfWheels = 2 // Ошибка: cannot assign to property: 'numberOf
 
 ```swift
 class WritingTool {
+
     let name: String
     var inscription = ""
     
@@ -314,6 +359,7 @@ class WritingTool {
 
 ```swift
 class Pencil: WritingTool {
+
     func clear() {
         inscription = ""
     }
@@ -334,12 +380,13 @@ print(redPencil.inscription) // ""
 
 Для нашей задачи `internal` не подходит.
 
-### Public
+### Public классы
 
 Изменим уровень класса `Pencil` на `public`.
 
 ```swift
 public class Pencil: WritingTool {
+
     // ...
 }
 ```
@@ -352,6 +399,7 @@ public class Pencil: WritingTool {
 
 ```swift
 public class WritingTool {
+
     // ...
 }
 ```
@@ -374,12 +422,13 @@ print(redPencil.inscription) // ""
 
 Нужен другой уровень.
 
-### Open
+### Open классы
 
 В модуле `Tools` изменим уровень класса `WritingTool` на `open`.
 
 ```swift
 open class WritingTool {
+
     // ...
 }
 ```
@@ -390,6 +439,7 @@ open class WritingTool {
 import Tools
 
 class Pen: WritingTool {
+
     var inkColor: CGColor = .black
     
     func changeInk(color: CGColor) {
@@ -404,6 +454,7 @@ class Pen: WritingTool {
 import Tools
 
 class Pen: WritingTool {
+
     // ...
 }
 
@@ -413,4 +464,4 @@ let pen = Pen(name: "pen")
 
 >Свойства и методы класса `WritingTool` (`open` уровень) могут быть переопределены классами `Pen` и `Pencil`.
 
->Свойства и методы класса `Pencil` (`public` уровень) могут быть переопределены только его подклассом в модуле `Tools`.
+>Свойства и методы класса `Pencil` (`public` уровень) могут быть переопределены только его подклассами в модуле `Tools`.
