@@ -18,6 +18,8 @@
 
 [Airbnb](https://news.airbnb.com/airbnbs-actions-in-response-to-the-ukraine-crisis/): В РФ и РБ заблокирована возможность для хозяев принимать брони, а для гостей — бронировать жилье. 
 
+[Asus](https://twitter.com/ASUS/status/1503320037708689410?t=sN0zcxqyySmoV9OG4BujtQ&s=19): Практически нет поставок из-за проблем с логистикой.
+
 [Atlassian](https://www.atlassian.com/blog/announcements/atlassian-stands-with-ukraine): Приостанавливает продажи и блокирует гос. аккаунты. 
 
 [Autodesk](https://adsknews.autodesk.com/views/crisis-in-ukraine): Приостановили деятельность.
@@ -39,6 +41,8 @@
 [EA](https://www.ea.com/news/update-on-electronic-arts-titles-in-russia-and-belarus): Приостановит продажу своих игр в РФ и РБ.
 
 [eBay](https://export.ebay.com/ru/seller-updates/ebay-news/seller-performance-protection2022/): Приостановил все транзакции с российскими адресами.
+
+[Electronic Team Inc](https://www.electronic.us/blog/war-in-ukraine/): Запускают собственное видео вместо тех, что хочет посмотреть пользователь в Elmedia Player.
 
 [EPAM Systems](https://www.epam.com/about/newsroom/press-releases/2022/epam-provides-update-on-ukraine): Больше не будет обслуживать клиентов, но обеспечит переход. 
 
@@ -159,5 +163,3 @@
 [Twitch](https://dtf.ru/gameindustry/1107855-twitch-priostanovila-vyplaty-rossiyskim-strimeram-im-predlagayut-vybrat-drugoy-sposob-oplaty): Приостановила выплаты. Предлагается изменить способ оплаты.
 
 [Ubisoft](https://www.bloomberg.com/news/articles/2022-03-07/ubisoft-stopping-sales-in-russia-following-major-rivals): Приостановила продажу своих игр.
-
-[1Password](https://vc.ru/services/379381-menedzher-paroley-1password-propal-iz-rossiyskogo-app-store): Приложение пропало из российского App Store.
