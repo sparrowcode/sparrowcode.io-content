@@ -71,8 +71,8 @@
         ]
     },
     "svtnck": {
-        "name": "Nikolay Pelevin",
-        "description": "Разработчик iOS, люблю конфеты.",
+        "name": "Николай Пелевин",
+        "description": "iOS Разработчик, люблю конфеты.",
         "avatar": "https://cdn.sparrowcode.io/authors/svtnck.jpg",
         "buttons": [
             {
@@ -82,6 +82,17 @@
             {
                 "name" : "App Store",
                 "link" : "https://apps.pelevin.me"
+            }
+        ]
+    },
+    "liubowolkova": {
+        "name": "Любовь Волкова",
+        "description": "Люблю матан, swift и 🐺",
+        "avatar": "https://cdn.sparrowcode.io/authors/liubowolkova.jpg",
+        "buttons": [
+            {
+                "name": "GitHub",
+                "link": "https://github.com/liubowolkova"
             }
         ]
     }
