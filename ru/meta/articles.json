@@ -230,5 +230,19 @@
         ],
         "updated_date": "17.03.2022",
         "added_date": "14.03.2022"
+    },
+    "access-control" : {
+        "title" : "Уровни доступа в Swift",
+        "description" : "Рассмотрим уровни доступа и как обезопасить свой код с ними.",
+        "category" : "development",
+        "author" : "liubowolkova",
+        "editors" : ["ivanvorobei"],
+        "keywords" : [
+            "access control",
+            "access control swift",
+            "code safety"
+        ],
+        "updated_date": "22.03.2022",
+        "added_date": "22.03.2022"
     }
 }
