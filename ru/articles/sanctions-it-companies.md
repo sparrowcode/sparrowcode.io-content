@@ -18,6 +18,8 @@
 
 [Airbnb](https://news.airbnb.com/airbnbs-actions-in-response-to-the-ukraine-crisis/): В РФ и РБ заблокирована возможность для хозяев принимать брони, а для гостей — бронировать жилье. 
 
+[Asus](https://twitter.com/ASUS/status/1503320037708689410?t=sN0zcxqyySmoV9OG4BujtQ&s=19): Практически нет поставок из-за проблем с логистикой.
+
 [Atlassian](https://www.atlassian.com/blog/announcements/atlassian-stands-with-ukraine): Приостанавливает продажи и блокирует гос. аккаунты. 
 
 [Autodesk](https://adsknews.autodesk.com/views/crisis-in-ukraine): Приостановили деятельность.
@@ -34,9 +36,13 @@
 
 [DMarket](https://twitter.com/dmarket/status/1497952451726565383): Заморозила аккаунты пользователей из России и Белоруссии. 
 
+[Docker](https://www.docker.com/blog/dockers-response-to-the-invasion-of-ukraine/): Приостановили бизнес в РФ, продажу подписок в РФ и РБ.
+
 [EA](https://www.ea.com/news/update-on-electronic-arts-titles-in-russia-and-belarus): Приостановит продажу своих игр в РФ и РБ.
 
 [eBay](https://export.ebay.com/ru/seller-updates/ebay-news/seller-performance-protection2022/): Приостановил все транзакции с российскими адресами.
+
+[Electronic Team Inc](https://www.electronic.us/blog/war-in-ukraine/): Запускают собственное видео вместо тех, что хочет посмотреть пользователь в Elmedia Player.
 
 [EPAM Systems](https://www.epam.com/about/newsroom/press-releases/2022/epam-provides-update-on-ukraine): Больше не будет обслуживать клиентов, но обеспечит переход. 
 
@@ -62,6 +68,10 @@
 
 [JetBrains](https://blog.jetbrains.com/blog/2022/03/11/jetbrains-statement-on-ukraine/): Приостановили продажи и научно-исследовательскую деятельность в РФ и РБ.
 
+[LG Electronics](https://www.lgnewsroom.com/2022/03/lg-suspends-shipments-to-russia/): Приостановили поставки.
+
+[Lloyd's Register](https://www.lr.org/en/latest-news/lr-withdraws-services-to-russia/): Приостановили оказание услуг.
+
 [Logitech](https://blog.logitech.com/2022/03/07/ukraine/): Приостановили поставки.
 
 [Lumen](https://news.lumen.com/RussiaUkraine): Прекращают работу.
@@ -71,6 +81,8 @@
 [MacPaw](https://twitter.com/MacPaw/status/1500064795579588609): Прекратили продажу продуктов пользователям из РФ и РБ.
 
 [Microsoft](ttps://blogs.microsoft.com/on-the-issues/2022/03/04/microsoft-suspends-russia-sales-ukraine-conflict/): Приостанавливает продажи товаров и предоставление услуг. 
+
+[MicroTik](https://twitter.com/mikrotik_com/status/1500806788727386114): Приостановили поставки и лицензирование в РФ и РБ.
 
 [Nintendo Switch](https://www.nintendo.ru/-/-Nintendo--11593.html): Приостановили отгрузку консолей и ПО. Пользователи не могут купить новые или скачать оплаченные игры.
 
@@ -86,6 +98,8 @@
 
 [Readdle](https://readdle.com/ru/no-service-russia): Прекратили продажу и поддержку приложений.
 
+[Red Hat](https://www.redhat.com/en/blog/red-hats-response-war-ukraine): Прекратили продажи и обслуживание в РФ и РБ.
+
 [Restream](https://restream.io/stop-war): Остановили поддержку пользователей в РФ и РБ.
 
 [Rovio](https://www.rovio.com/articles/rovio-removes-its-games-from-app-stores-in-russia-and-belarus/): Удалили игры из магазинов приложений в РФ и РБ.
@@ -94,11 +108,13 @@
 
 [SAP SE](https://news.sap.com/2022/03/standing-in-solidarity/): Остановил продажи услуг и продуктов.
 
+[Schneider Electric](https://www.se.com/ww/en/about-us/newsroom/news/press-releases/an-update-on-ukraine-russia-and-belarus-623333c931dba0100d4f745f): Приостановили поставки и инвестиции в РФ и РБ.
+
 [Serpstat](https://serpstat.com/rf_ban/): Закрыли доступ к аккаунтам.
 
-[Storytel](https://investors.storytel.com/en/storytel-pauses-its-russian-operations-until-further-notice/): Приостановили деятельность.
-
 [Supercell](https://twitter.com/supercell/status/1501533775410470912): Удалили игры из магазинов приложений в РФ и РБ. Закроют доступ для игроков в следующем обновлении.
+
+[Suse](https://www.suse.com/c/standing-with-ukraine/): Приостановили прямые продажи.
 
 [Spotify](https://support.spotify.com/ru-ru/contact-spotify-support/?nosignup=true): Приостановили продажу премиум подписки.
 
@@ -113,6 +129,8 @@
 [VyOS](https://blog.vyos.io/global-security-issue-with-russian-federation-invasion-into-ukraine): Отказались от сотрудничества с российскими организациями.
 
 [Western Union](https://ir.westernunion.com/news/archived-press-releases/press-release-details/2022/Western-Union-Suspends-Operations-in-Russia-and-Belarus/default.aspx): Приостановят операции в РФ и РБ с 24 марта.
+
+[Xerox](https://www.news.xerox.com/news/xerox-releases-statement-on-conflict-in-ukraine): Приостановили поставки.
 
 ## Без публичного заявления
 
@@ -145,5 +163,3 @@
 [Twitch](https://dtf.ru/gameindustry/1107855-twitch-priostanovila-vyplaty-rossiyskim-strimeram-im-predlagayut-vybrat-drugoy-sposob-oplaty): Приостановила выплаты. Предлагается изменить способ оплаты.
 
 [Ubisoft](https://www.bloomberg.com/news/articles/2022-03-07/ubisoft-stopping-sales-in-russia-following-major-rivals): Приостановила продажу своих игр.
-
-[1Password](https://vc.ru/services/379381-menedzher-paroley-1password-propal-iz-rossiyskogo-app-store): Приложение пропало из российского App Store.

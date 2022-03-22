@@ -20,7 +20,7 @@ required init?(coder: NSCoder) {
 
 There is also an initializer without parameters `init()`, but this is a wrapper over the first initializer.
 
-At this point, the controller behaves like a class: it initializes the property and handles the initializer body. The controller may be in a condition without a loaded view for a long time, or it may never even load one. The view will load as soon as the system or the developer accesses the `.view' property.
+At this point, the controller behaves like a class: it initializes the property and handles the initializer body. The controller may be in a condition without a loaded view for a long time, or it may never even load one. The view will load as soon as the system or the developer accesses the `.view` property.
 
 ## Loading
 
@@ -44,7 +44,7 @@ override viewDidLoad() {
 
 There is a reason why developers set up the controller and views in the `viewDidLoad()` method. Before this method is called, the root view doesn't exist yet, and afterward, the controller is ready to appear on the screen. The `viewDidLoad()` is a great place. The memory for the view is allocated, the view is loaded and ready to be set up.
 
-The view cannot be configured in the initializer. When you invoke `.view', it will load, but the controller won't show up on the screen now (or may not show up at all). The project will not crash from this, but the interface elements consume a lot of memory and it will be spent earlier than necessary. It is better to do this as needed.
+The view cannot be configured in the initializer. When you invoke `.view`, it will load, but the controller won't show up on the screen now (or may not show up at all). The project will not crash from this, but the interface elements consume a lot of memory and it will be spent earlier than necessary. It is better to do this as needed.
 
 Previously I made property views of the controller just by creating them:
 
