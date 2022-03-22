@@ -84,6 +84,8 @@
 
 [MicroTik](https://twitter.com/mikrotik_com/status/1500806788727386114): Приостановили поставки и лицензирование в РФ и РБ.
 
+[NEC](https://www.nec.com/en/press/202203/global_20220322_03.html): Приостановили инвестиции, продажу товаров и услуг.
+
 [Nintendo Switch](https://www.nintendo.ru/-/-Nintendo--11593.html): Приостановили отгрузку консолей и ПО. Пользователи не могут купить новые или скачать оплаченные игры.
 
 [Niantic](https://twitter.com/NianticLabs/status/1502120716665118725): Удалили игры из магазина приложений в РФ и РБ.
