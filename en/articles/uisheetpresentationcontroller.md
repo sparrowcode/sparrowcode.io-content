@@ -60,7 +60,7 @@ Specify the largest detent that does not need to be dimmed. Anything larger than
 sheetController.largestUndimmedDetentIdentifier = .medium
 ```
 
-It says that the `.medium' will not dim, but anything larger will. You can remove the dimming for the largest detent.
+It says that the `.medium` will not dim, but anything larger will. You can remove the dimming for the largest detent.
 
 ## Corner Radius
 
