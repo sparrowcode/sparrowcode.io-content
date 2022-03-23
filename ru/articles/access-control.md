@@ -9,7 +9,7 @@
 
 Уровни доступа можно назначать свойствам, структурам, классам, перечислениям и модулям. Указывайте ключевые слова перед объявлением. Далее по тексту я буду использовать слово модули. Модулем может быть приложение, ваша библиотека или таргет. 
 
-# internal
+## internal
 
 Внутренний уровень стоит по умолчанию для свойств и методов. Он предоставляет доступ внутри модуля. Явно указывать `internal` не требуется.
 
@@ -25,23 +25,23 @@ internal var number = 3
 
 `internal` объектам не нужны дополнительные разрешения или ограничения.
 
-# public
+## public
 
 Обычно его используют для фреймворков. Другие модули имеют доступ к публичным объектам из импортированного модуля.
 
 >За пределами исходного модуля `public` классы не могут быть суперклассами, а их свойства и методы нельзя переопределять.
 
-# open
+## open
 
 Похож на `public` - разрешает доступ из других модулей. Используется только для классов, их свойств и методов.
 
 >`open` классы наследуются в определяющем и импортирующем модуле, свойства и методы класса переопределяются подклассами также.
 
-# private
+## private
 
 Ограничивает доступ к свойствам и методам внутри структур, классов и перечислений. Самый строгий уровень. Помогает скрыть вспомогательные вычисления и конфиденциальные данные.
 
-## Для свойств
+### Для свойств
 
 `private` свойства читаются и записываются только в их структурах и классах. Напишем игру, где нужно дать правильный ответ.
 
@@ -92,6 +92,8 @@ print(test.answer) // Ошибка: 'answer' is inaccessible due to 'private' pr
 ```swift
 struct Test {
 
+    // ...
+
     func showAnswer() {
         print(answer)
     }
@@ -104,9 +106,9 @@ struct Test {
 test.showAnswer() // Лима
 ```
 
-## Для методов
+### Для методов
 
-Указывайте методам `private`, когда работаете с конфиденциальными данными - это спрячет реализацию. Создадим переменные `gamerAnswer` и `result` с пустыми начальными значениями. `result` сделаем `private`:
+Указывайте методам `private`, когда работаете с конфиденциальными данными - это спрячет реализацию. Создадим переменные `gamerAnswer` и `result` типа `String` с пустыми начальными значениями. `result` сделаем `private`:
 
 ```swift
 struct Test {
@@ -115,17 +117,21 @@ struct Test {
     private let answer = "Лима"
     var gamerAnswer = ""
     private var result = ""
+
+    // ...
 }
 ```
 
 Понадобятся два метода: 
-- compareAnswer() - сравнивает ответ игрока с правильным ответом, перезаписывает значение свойства `result`
-- getResult() - выводит значение `result` на экран
+- `compareAnswer()` - сравнивает ответ игрока с правильным ответом, перезаписывает значение свойства `result`
+- `getResult()` - выводит значение `result` на экран
 
 У нас будет доступ к `getResult()` снаружи структуры `Test`, а вот `compareAnswer()` сделаем `private`.
 
 ``` swift
 struct Test {
+
+    // ...
     
     private mutating func compareAnswer() {
         switch gamerAnswer {
@@ -156,9 +162,9 @@ test.getResult() // Ответ верный!
 
 ## fileprivate
 
-Похож на `private`. Доступ к объектам этого уровня имеют только объекты из того же файла. Используется когда нам необходимы дополнительные объекты или вычисления в рамках одного файла.
+Похож на `private`. Доступ к объектам этого уровня имеют только объекты из того же файла. Используется, когда нам необходимы дополнительные объекты или вычисления в рамках одного файла.
 
-# Отличие от `private`
+### Отличие от `private`
 
 Создадим два файла: `File1.swift` и `File2.swift`. В первом файле структуры `Constants` и `PrinterConstants`:
 
@@ -178,7 +184,7 @@ struct PrinterConstants {
 }
 ```
 
-Во втором `File2.swift` структура `PrinterConstantsFromOuterFile`:
+В `File2.swift` структура `PrinterConstantsFromOuterFile`:
 
 ```swift
 struct PrinterConstantsFromOuterFile {
@@ -196,6 +202,8 @@ struct PrinterConstantsFromOuterFile {
 
 ```swift
 struct Constants {
+
+    // ...
     
     private static let exp = 2.72
 }
@@ -207,6 +215,8 @@ struct Constants {
 
 ```swift
 struct Constants {
+
+    // ...
     
     fileprivate static let exp = 2.72
 }
@@ -229,7 +239,7 @@ struct PrinterConstantsFromOuterFile {
 
 Вычисляемые свойства используют другие свойства для возврата значения. Такие свойства прнято делать `private` и `public private` уровней в ряде случаев.
 
-# Read-only
+### Read-only
 
 Вычисляемым `read-only` свойством является вычисляемое свойство только с `getter`.
 
@@ -248,7 +258,7 @@ struct HappyMultiply {
 }
 ```
 
-## Private Setter
+### Private Setter
 
 Приватный `setter` используют для ограничения доступа к записи за пределами структуры (класса). Для объявления приватного сеттера используем совместно ключевые слова `private` и `set`. 
 
@@ -261,7 +271,7 @@ struct Vehicle {
 }
 ```
 
-## Public Private Setter
+### Public Private Setter
 
 Можно переписать структуру `Vehicle` иначе. 
 
@@ -276,7 +286,7 @@ print(kidBike.numberOfWheels) // 3
 kidBike.numberOfWheels = 2 // Ошибка: cannot assign to property: 'numberOfWheels' setter is inaccessible
 ```
 
-Геттер имеет уровень доступа `public`, а сеттер - `private`.
+`Getter` имеет уровень доступа `public`, а `setter` - `private`.
 
 ## Модули и фреймворки
 
@@ -284,9 +294,9 @@ kidBike.numberOfWheels = 2 // Ошибка: cannot assign to property: 'numberOf
 
 Создадим `internal` класс `WritingTool` со свойствами `name`, `inscription` и методом `write(word: String)`.
 
-- name - постоянная типа `String`, название инструмента
-- inscription - переменная типа `String` с пустым начальным значением, надпись
-- write(word: String) - добавляет `word` к `inscription`
+- `name` - постоянная типа `String`, название инструмента
+- `inscription` - переменная типа `String` с пустым начальным значением, надпись
+- `write(word: String)` - добавляет `word` к `inscription`
 
 ```swift
 class WritingTool {
