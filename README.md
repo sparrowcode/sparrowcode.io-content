@@ -27,9 +27,8 @@ Basic markdown functions are supported, like title, subtitle, and paragraph. Als
 Titles
 
 ```
-# Title
-## Subtitle
-### Paragraph
+## Title
+### Subtitle
 ```
 
 Link
