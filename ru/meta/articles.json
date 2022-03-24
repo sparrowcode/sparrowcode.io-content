@@ -1,5 +1,5 @@
 {
-    "drag-and-drop-part-1" : {
+    "drag-and-drop" : {
         "title" : "Drag и Drop",
         "description" : "Как изменить порядок ячеек в коллекции и таблице. Как перенести ячейки в другую коллекцию. Перемещение нескольких ячеек группой.",
         "category" : "uikit",
@@ -12,7 +12,7 @@
             "UIDrag",
             "UIGestureRecognizer"
         ],
-        "updated_date" : "27.12.2021",
+        "updated_date" : "24.03.2022",
         "added_date" : "11.07.2021"
     },
     "meet-storekit-2" : {
