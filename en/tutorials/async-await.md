@@ -1,6 +1,6 @@
 `async/await` is a new approach for working with multithreading in Swift. It simplifies writing complex call chains and makes code readable. First the theory, and at the end of the tutorial we'll write a tool to search for apps in the App Store using `async/await`.
 
-![async/await Preview](https://cdn.sparrowcode.io/articles/async-await/preview.png)
+![async/await Preview](https://cdn.sparrowcode.io/tutorials/async-await/preview.png)
 
 ## Usage
 
@@ -117,11 +117,11 @@ extension UIImageView {
 
 Let's look at the diagram for the `setImage(url: URL)` function:
 
-![How to work setImage(url: URL)](https://cdn.sparrowcode.io/articles/async-await/set-image-scheme.png)
+![How to work setImage(url: URL)](https://cdn.sparrowcode.io/tutorials/async-await/set-image-scheme.png)
 
 And `loadImage(for: url)`:
 
-![How to work loadImage(for: URL)](https://cdn.sparrowcode.io/articles/async-await/load-image-scheme.png)
+![How to work loadImage(for: URL)](https://cdn.sparrowcode.io/tutorials/async-await/load-image-scheme.png)
 
 When the execution reaches `await` the function **may** (or not) stop. The system will execute the `loadImage(for: url)` method, the thread is not blocked waiting for the result. When the method finishes executing, the system will resume the function - continue executing `self.image = image`. We updated the UI without switching the thread: this equation will *automatically* work on the main thread.
 
@@ -913,7 +913,7 @@ func saveWorkoutToHealthKitAsync(runWorkout: RunWorkout) async throws {
 
 ## References.
 
-[Download sample project](https://cdn.sparrowcode.io/articles/async-await/app-store-search.zip): Practice adding a new App Store page detail screen, solve the problem with loading screenshots and proper undo if the user quickly closes the page.
+[Download sample project](https://cdn.sparrowcode.io/tutorials/async-await/app-store-search.zip): Practice adding a new App Store page detail screen, solve the problem with loading screenshots and proper undo if the user quickly closes the page.
 
 [Articles about async/await](https://www.andyibanez.com/posts/modern-concurrency-in-swift-introduction/): There are even more examples of how to use async/await in this series of articles. For example, `@TaskLocal` and other useful trivia are covered.
 
