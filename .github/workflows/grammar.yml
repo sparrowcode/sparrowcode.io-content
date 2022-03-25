@@ -12,5 +12,5 @@ jobs:
           node-version: '16.x'
 
       - run: npm install -g yaspeller
-      - run: yaspeller -l ru ru/articles/
-      - run: yaspeller -l en en/articles/
+      - run: yaspeller -l ru ru/tutorials/
+      - run: yaspeller -l en en/tutorials/
