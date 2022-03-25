@@ -2,13 +2,13 @@
 
 Новый StoreKit выглядит как глоток холодной воды в пустыне. Давайте погружаться.
 
-![Introducing StoreKit 2](https://cdn.sparrowcode.io/articles/meet-storekit-2/header.jpg)
+![Introducing StoreKit 2](https://cdn.sparrowcode.io/tutorials/meet-storekit-2/header.jpg)
 
 ## Что нового
 
 Заменили модели, представляющие покупки и операции над ними. Теперь названия без префиксов SK, и в целом интуитивно понятно какие данные репрезентуют модели. Останавливаться на каждом не будем, картинка со списком:
 
-![StoreKit 2 Modes](https://cdn.sparrowcode.io/articles/meet-storekit-2/models.jpg)
+![StoreKit 2 Modes](https://cdn.sparrowcode.io/tutorials/meet-storekit-2/models.jpg)
 
 ## Запрос продуктов и покупка
 
@@ -55,7 +55,7 @@ static func isEligibleForIntroOffer(for groupID: String) async -> Bool
 - <b>inGracePeriod</b> - отсрочка платежа по подписке. Если grace period у вашей подписки включен и произошла ошибка при оплате, то у пользователя будет ещё какое-то время, пока подписка работает, хотя оплаты ещё не было. Количество дней отсрочки может быть от 6 до 16 в зависимости от длительности самой подписки.<br>
 - <b>revoked</b> - доступ ко всем подпискам этой группы отклонён AppStore.
 
-![Subscription information](https://cdn.sparrowcode.io/articles/meet-storekit-2/subscription-information.jpg)
+![Subscription information](https://cdn.sparrowcode.io/tutorials/meet-storekit-2/subscription-information.jpg)
 
 Объект `Renewal Info` содержит информацию об автообновлением подписки. Например:
 

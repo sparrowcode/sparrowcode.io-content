@@ -1,6 +1,6 @@
 Библиотека в Xcode предоставляет доступ к SwiftUI View, модификаторам (modifiers), изображениям и т.д. Вы можете перетянуть или кликнуть дважды по выбранному элементу, чтобы добавить View в свой код.
 
-![Xcode View Library](https://cdn.sparrowcode.io/articles/how-add-view-to-swiftui-library/xcode_library.png)
+![Xcode View Library](https://cdn.sparrowcode.io/tutorials/how-add-view-to-swiftui-library/xcode_library.png)
 
 ## Кастомная View
 
@@ -42,7 +42,7 @@ struct UserProfileView: View {
 
 Результат:
 
-![UserProfile_Preview](https://cdn.sparrowcode.io/articles/how-add-view-to-swiftui-library/user_profile_preview.png)
+![UserProfile_Preview](https://cdn.sparrowcode.io/tutorials/how-add-view-to-swiftui-library/user_profile_preview.png)
 
 ## Добавляем в библиотеку
 
@@ -75,7 +75,7 @@ struct UserProfileLibrary: LibraryContentProvider {
 C помощью `LibraryContentProvider` добавляем кастомные View в библиотеку Xcode.
 Перейдем в `ContentView.swift` файл и добавим пользователя.
 
-[UserProfileLibrary](https://cdn.sparrowcode.io/articles/how-add-view-to-swiftui-library/user_profile_library.mov)
+[UserProfileLibrary](https://cdn.sparrowcode.io/tutorials/how-add-view-to-swiftui-library/user_profile_library.mov)
 
 Есть ограничения:
 
@@ -94,4 +94,4 @@ UserProfileView(
 ```
 
 Надеюсь в будущих версиях можно будет добавить описание и иконку.
-Проект из туториала можно [скачать](https://cdn.sparrowcode.io/articles/how-add-view-to-swiftui-library/MyApp.zip).
+Проект из туториала можно [скачать](https://cdn.sparrowcode.io/tutorials/how-add-view-to-swiftui-library/MyApp.zip).
