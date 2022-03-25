@@ -11,11 +11,11 @@ jobs:
       - run: sudo apt-get install jq -y
       - run: cat .yaspellerrc.json | jq -c
       - run: cat en/meta/apps.json | jq -c
-      - run: cat en/meta/articles.json | jq -c
+      - run: cat en/meta/tutorials.json | jq -c
       - run: cat en/meta/authors.json | jq -c
       - run: cat en/meta/categories.json | jq -c
       
       - run: cat ru/meta/apps.json | jq -c
-      - run: cat ru/meta/articles.json | jq -c
+      - run: cat ru/meta/tutorials.json | jq -c
       - run: cat ru/meta/authors.json | jq -c
       - run: cat ru/meta/categories.json | jq -c
