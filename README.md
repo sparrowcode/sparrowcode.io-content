@@ -10,7 +10,7 @@ Here you can add a new tutorial, translate or correct typos in existing tutorial
       - [Content](#content)
       - [Formatting](#formatting)
       - [Meta](#meta)
-    - [Apps][#apps]
+    - [Apps](#apps)
 
 ## Contribute
 
