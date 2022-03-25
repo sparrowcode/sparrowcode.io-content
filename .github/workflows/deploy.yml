@@ -1,4 +1,4 @@
-name: Deploy articles
+name: Deploy Tutorials
 on:
   push:
     branches:
