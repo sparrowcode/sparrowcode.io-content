@@ -11,7 +11,7 @@ struct ContentView: View {
 }
 ```
 
-![Обновляем контент](https://cdn.sparrowcode.io/articles/keyboard-shortcut-swiftui/refresh_content.jpg)
+![Обновляем контент](https://cdn.sparrowcode.io/tutorials/keyboard-shortcut-swiftui/refresh_content.jpg)
 
 По нажатию двух клавиш `Command` + `R` выведем сообщение в консоль.
 
@@ -46,7 +46,7 @@ struct ContentView: View {
 
 Нажимаем на `⌘ + T` и меняем положение переключателя. Применяем модификатор ко всем элементам `VStack`.
 
-[Переключатель](https://cdn.sparrowcode.io/articles/keyboard-shortcut-swiftui/keyboard_shortcut_toggle.mov)
+[Переключатель](https://cdn.sparrowcode.io/tutorials/keyboard-shortcut-swiftui/keyboard_shortcut_toggle.mov)
 
 Другой пример:
 
@@ -80,4 +80,4 @@ struct ContentView: View {
 }
 ```
 
-[Синхронизация статей](https://cdn.sparrowcode.io/articles/keyboard-shortcut-swiftui/keyboard_sync_articles.mov)
+[Синхронизация статей](https://cdn.sparrowcode.io/tutorials/keyboard-shortcut-swiftui/keyboard_sync_articles.mov)

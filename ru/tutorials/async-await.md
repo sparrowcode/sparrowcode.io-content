@@ -1,6 +1,6 @@
 `async/await` — новый поход для работы с многопоточностью в Swift. Он упрощает написание сложных цепочек вызовов и делает код читаемым. Сначала разберёмся с теорией, а в конце туториала напишем инструмент для поиска приложений в App Store с использованием `async/await`.
 
-![async/await Preview](https://cdn.sparrowcode.io/articles/async-await/preview.png)
+![async/await Preview](https://cdn.sparrowcode.io/tutorials/async-await/preview.png)
 
 ## Как пользоваться
 
@@ -117,11 +117,11 @@ extension UIImageView {
 
 Теперь взглянем на схему для функции `setImage(url: URL)`:
 
-![How to work setImage(url: URL)](https://cdn.sparrowcode.io/articles/async-await/set-image-scheme.png)
+![How to work setImage(url: URL)](https://cdn.sparrowcode.io/tutorials/async-await/set-image-scheme.png)
 
 и `loadImage(for: url)`:
 
-![How to work loadImage(for: URL)](https://cdn.sparrowcode.io/articles/async-await/load-image-scheme.png)
+![How to work loadImage(for: URL)](https://cdn.sparrowcode.io/tutorials/async-await/load-image-scheme.png)
 
 Когда выполнение дойдёт до `await`, функция **может** остановиться, а может и нет. Система выполнит метод `loadImage(for: url)`, поток не заблокируется в ожидании результата. Когда метод закончит выполняться, система возобновит работу функции - продолжится выполнение `self.image = image`. Мы обновили UI, не переключая поток: это приравнивание автоматически сработает на главном потоке.
 
@@ -913,7 +913,7 @@ func saveWorkoutToHealthKitAsync(runWorkout: RunWorkout) async throws {
 
 ## Ссылки
 
-[Скачать проект-пример](https://cdn.sparrowcode.io/articles/async-await/app-store-search.zip): Попрактикуйтесь, добавив новый экран детали страницы App Store, решите проблему с загрузкой скриншотов и правильной отменой, если пользователь быстро закрыл страницу
+[Скачать проект-пример](https://cdn.sparrowcode.io/tutorials/async-await/app-store-search.zip): Попрактикуйтесь, добавив новый экран детали страницы App Store, решите проблему с загрузкой скриншотов и правильной отменой, если пользователь быстро закрыл страницу
 
 [Серия статей о async/await](https://www.andyibanez.com/posts/modern-concurrency-in-swift-introduction/): Множество примеров использования async/await. Например, раскрыта тема `@TaskLocal`, есть и другие полезные мелочи.
 
