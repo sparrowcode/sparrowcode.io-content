@@ -85,7 +85,7 @@ override func viewDidAppear(_ animated: Bool) {
 
 Есть методы, которые сообщают что вью пропадает с экрана. Наглядная схема:
 
-![ViewController LifeCycle](https://cdn.sparrowcode.io/articles/uiviewcontroller-lifecycle/header.jpg)
+![ViewController LifeCycle](https://cdn.sparrowcode.io/tutorials/uiviewcontroller-lifecycle/header.jpg)
 
 Обратите внимание на пару антагонистов `viewWillDisappear()` и `viewDidDisappear`. Они вызываются, когда вью удаляется из иерархии представлений. Если вы показываете другой контроллер поверх, то методы не вызываются.
 
