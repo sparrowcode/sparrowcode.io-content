@@ -2,7 +2,7 @@
 
 Перед погружением в код разберём, как устроен жизненный цикл драга и дропа.
 
-![preview](https://cdn.sparrowcode.io/articles/drag-and-drop-part-1/preview.jpg)
+![preview](https://cdn.sparrowcode.io/tutorials/drag-and-drop-part-1/preview.jpg)
 
 ## Модели
 
@@ -89,7 +89,7 @@ extension CollectionController: UICollectionViewDragDelegate {
 
 Если нужно обновить интерфейс на время драга (например, спрятать кнопки удаления), это правильное место. Давайте посмотрим, что получается на этом этапе.
 
-[Drag Preview](https://cdn.sparrowcode.io/articles/drag-and-drop-part-1/drag-delegate.mov)
+[Drag Preview](https://cdn.sparrowcode.io/tutorials/drag-and-drop-part-1/drag-delegate.mov)
 
 Ячейка возвращается на место. Дроп реализуем дальше.
 
@@ -178,7 +178,7 @@ func collectionView(_ collectionView: UICollectionView, performDropWith coordina
 
 Теперь коллекция и data source обновляются при перемещении, ячейка дропается по новому индексу. Глянем, что получилось:
 
-[Drag Preview](https://cdn.sparrowcode.io/articles/drag-and-drop-part-1/drop-delegate.mov)
+[Drag Preview](https://cdn.sparrowcode.io/tutorials/drag-and-drop-part-1/drop-delegate.mov)
 
 Чтобы ячейки расступались для дропа другой ячейки, используйте Drop Proposal c `.insertAtDestinationIndexPath`. Любой другой интент не будет этого делать. Иногда багует с коллекцией, будьте осторожны.
 
@@ -199,7 +199,7 @@ func collectionView(_ collectionView: UICollectionView, itemsForAddingTo session
 
 Теперь ячейки будут собираться в стопку, можно перемещать группу.
 
-[Drag Stack](https://cdn.sparrowcode.io/articles/drag-and-drop-part-1/drag-stack.mov)
+[Drag Stack](https://cdn.sparrowcode.io/tutorials/drag-and-drop-part-1/drag-stack.mov)
 
 ## Table View
 
@@ -226,7 +226,7 @@ tableView.isEditing = true
 
 То есть у вас может быть системный реордер ячеек и дроп, к примеру, внутрь ячеек.
 
-[Table Drop](https://cdn.sparrowcode.io/articles/drag-and-drop-part-1/table-drop.mov)
+[Table Drop](https://cdn.sparrowcode.io/tutorials/drag-and-drop-part-1/table-drop.mov)
 
 ## DestinationIndexPath
 

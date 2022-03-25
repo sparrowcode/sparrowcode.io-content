@@ -1,6 +1,6 @@
 В этом туториале расскажем все о локализации iOS приложений, как она работает и какие инструменты могут помочь в работе с ней. 
 
-![Preview](https://cdn.sparrowcode.io/articles/localisation-ios-apps/preview-ru.jpg)
+![Preview](https://cdn.sparrowcode.io/tutorials/localisation-ios-apps/preview-ru.jpg)
 
 ## Введение
 
@@ -106,15 +106,15 @@
 
 Переходим в Products и видим две кнопки Export и Import localisations.
 
-![Фотография с расположением кнопок](https://cdn.sparrowcode.io/articles/localisation-ios-apps/products_export_and_import_instruction.png)
+![Фотография с расположением кнопок](https://cdn.sparrowcode.io/tutorials/localisation-ios-apps/products_export_and_import_instruction.png)
 
 Export позволяет вывести локализационные ключи для их дальнейшей локализации.
 
-![Фотография с выведенными при экспорте файлами](https://cdn.sparrowcode.io/articles/localisation-ios-apps/exported-files-preview.jpg)
+![Фотография с выведенными при экспорте файлами](https://cdn.sparrowcode.io/tutorials/localisation-ios-apps/exported-files-preview.jpg)
 
 Xcode создает Localization Catalog (папку с расширением файла .xcloc), содержащую локализуемые ресурсы для каждого языка и региона. Для того что бы локализовать приложение на нужный язык достаточно открыть каталог.
 
-![Фотография встроенного переводчика в Xcode](https://cdn.sparrowcode.io/articles/localisation-ios-apps/xloc-ru-localisation-preview.png)
+![Фотография встроенного переводчика в Xcode](https://cdn.sparrowcode.io/tutorials/localisation-ios-apps/xloc-ru-localisation-preview.png)
 
 Это встроенный в XCode переводчик. На сайдбаре есть 2 файла - InfoPlist и Localizable, здесь они переводятся отдельно.
 
@@ -122,7 +122,7 @@ Xcode создает Localization Catalog (папку с расширением 
 
 После того, как выполнили перевод - сохраняем файл и возвращаемся в проект. Снова переходим в Product, но уже выбираем "Import Localizations". 
 
-![Фотография с импортом xloc каталогов](https://cdn.sparrowcode.io/articles/localisation-ios-apps/import-files-preview.jpg)
+![Фотография с импортом xloc каталогов](https://cdn.sparrowcode.io/tutorials/localisation-ios-apps/import-files-preview.jpg)
 
 Здесь по-отдельности выбираем каждый каталог и загружаем в проект. Вуаля! В файле `Localizable.strings` нужного языка появятся все переведённые ключи:
 
@@ -149,11 +149,11 @@ Xcode создает Localization Catalog (папку с расширением 
 
 Возвращаемся на 2 минуты назад. Мы снова в папке с xloc каталогами. Вместо того, что бы открыть его левой кнопкой мыши нажимаем правую и переходим в содержимое пакета.
 
-![Фотография содержимого каталога xloc](https://cdn.sparrowcode.io/articles/localisation-ios-apps/xloc-inside.jpg)
+![Фотография содержимого каталога xloc](https://cdn.sparrowcode.io/tutorials/localisation-ios-apps/xloc-inside.jpg)
 
 Глаза разбегаются, но не стоит паниковать - здесь нас интересует папка "Localized Contents". Внутри будет `xliff` файл, открываем его через Poedit.
 
-![Фотография Poedit](https://cdn.sparrowcode.io/articles/localisation-ios-apps/poedit-preview.png)
+![Фотография Poedit](https://cdn.sparrowcode.io/tutorials/localisation-ios-apps/poedit-preview.png)
 
 Здесь есть все локализационные ключи списком. Выбираете нужный, внизу появляется исходный ключ и поле для ввода перевода. Если перевели приложение на основной английский язык - вместо локализационных ключей будет отображаться перевод на него. Справа есть варианты перевода, а так же локализационный ключ и комментарий. С премиумом можно предварительно перевести все ключи. Poedit подсветит ошибке в локализации. 
 
@@ -163,7 +163,7 @@ Xcode создает Localization Catalog (папку с расширением 
 
 Что бы добавить новый язык в проект нужно перейти в настройки проекта -> Info.
 
-![Фотография добавления нового языка в настройках проекта](https://cdn.sparrowcode.io/articles/localisation-ios-apps/add-new-language.png)
+![Фотография добавления нового языка в настройках проекта](https://cdn.sparrowcode.io/tutorials/localisation-ios-apps/add-new-language.png)
 
 Здесь ищем секцию "Localizations" и плюс, через который добавляем столько языков, сколько нам нужно.
 
