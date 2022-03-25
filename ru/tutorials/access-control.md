@@ -179,7 +179,7 @@ struct Constants {
 
 struct PrinterConstants {
 
-    func printDecade() {
+    func printConstants() {
         print(Constants.decade)
         print(Constants.exp)
     }
