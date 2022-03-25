@@ -52,8 +52,8 @@ internal var number = 3
 ```swift
 struct Test {
 
-    let question = «Столица Перу?»
-    let answer = «Лима»
+    let question = "Столица Перу?"
+    let answer = "Лима"
 }
 ```
 
@@ -75,8 +75,8 @@ print(test.answer) // Лима
 ```swift
 struct Test {
 
-    let question = «Столица Перу?»
-    private let answer = «Лима»
+    let question = "Столица Перу?"
+    private let answer = "Лима"
 }
 ```
 
@@ -115,10 +115,10 @@ test.showAnswer() // Лима
 ```swift
 struct Test {
 
-    let question = «Столица Перу?»
-    private let answer = «Лима»
-    var gamerAnswer = «»
-    private var result = «»
+    let question = "Столица Перу?"
+    private let answer = "Лима"
+    var gamerAnswer = ""
+    private var result = ""
 
     // ...
 }
@@ -138,11 +138,11 @@ struct Test {
     private mutating func compareAnswer() {
         switch gamerAnswer {
         case "":
-            result = «Вы не ответили на вопрос».
+            result = "Вы не ответили на вопрос".
         case answer:
-            result = «Ответ верный!»
+            result = "Ответ верный!"
         default:
-            result = «Ответ неверный».
+            result = "Ответ неверный".
         }
     }
     
@@ -157,9 +157,9 @@ struct Test {
 
 ```swift
 var test = Test()
-print(test.question) // «Столица Перу?»
-test.gamerAnswer = «Лима»
-test.getResult() // «Ответ верный!»
+print(test.question) // "Столица Перу?"
+test.gamerAnswer = "Лима"
+test.getResult() // "Ответ верный!"
 ```
 
 ## fileprivate
