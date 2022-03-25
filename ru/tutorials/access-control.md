@@ -104,7 +104,7 @@ struct Test {
 
 Теперь получим `answer` не напрямую:
 
-``` swift
+```swift
 test.showAnswer() // Лима
 ```
 
@@ -130,7 +130,7 @@ struct Test {
 
 У нас будет доступ к `getResult()` снаружи структуры `Test`, а вот `compareAnswer()` сделаем `private`.
 
-``` swift
+```swift
 struct Test {
 
     // ...
@@ -179,7 +179,7 @@ struct Constants {
 
 struct PrinterConstants {
 
-    func printDecade() {
+    func printConstants() {
         print(Constants.decade)
         print(Constants.exp)
     }
@@ -266,7 +266,7 @@ struct HappyMultiply {
 
 Создадим структуру `Vehicle`. Укажем свойству `numberOfWheels` приватный сеттер:
 
-``` swift
+```swift
 struct Vehicle {
 
     private(set) var numberOfWheels : UInt
@@ -277,7 +277,7 @@ struct Vehicle {
 
 Можно переписать структуру `Vehicle` иначе. 
 
-``` swift
+```swift
 struct Vehicle {
 
     public private(set) var numberOfWheels : UInt = 3
