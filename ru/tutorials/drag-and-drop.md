@@ -1,8 +1,8 @@
-Научимся изменять порядок ячеек, перетаскивать несколько ячеек, перемещать ячейки между коллекциями и даже между приложениями.
+Научимся изменять порядок ячеек, перетаскивать несколько ячеек, перемещать ячейки между коллекциями и даже между приложениями. Разберём перетаскивание для коллекции и таблицы. В будущем дополню статью информацией о перетаскивании любых вьюх куда угодно и обработке их сброса. 
 
-В этой части разберём перетаскивание для коллекции и таблицы. В следующей части расскажем, как перетаскивать любые вьюхи куда угодно и обрабатывать их сброс. Перед погружением в код разберём, как устроен жизненный цикл драга и дропа.
+Перед погружением в код разберём, как устроен жизненный цикл драга и дропа.
 
-![preview](https://cdn.sparrowcode.io/articles/drag-and-drop-part-1/preview.jpg)
+![preview](https://cdn.sparrowcode.io/tutorials/drag-and-drop-part-1/preview.jpg)
 
 ## Модели
 
@@ -89,7 +89,7 @@ extension CollectionController: UICollectionViewDragDelegate {
 
 Если нужно обновить интерфейс на время драга (например, спрятать кнопки удаления), это правильное место. Давайте посмотрим, что получается на этом этапе.
 
-[Drag Preview](https://cdn.sparrowcode.io/articles/drag-and-drop-part-1/drag-delegate.mov)
+[Drag Preview](https://cdn.sparrowcode.io/tutorials/drag-and-drop-part-1/drag-delegate.mov)
 
 Ячейка возвращается на место. Дроп реализуем дальше.
 
@@ -178,7 +178,7 @@ func collectionView(_ collectionView: UICollectionView, performDropWith coordina
 
 Теперь коллекция и data source обновляются при перемещении, ячейка дропается по новому индексу. Глянем, что получилось:
 
-[Drag Preview](https://cdn.sparrowcode.io/articles/drag-and-drop-part-1/drop-delegate.mov)
+[Drag Preview](https://cdn.sparrowcode.io/tutorials/drag-and-drop-part-1/drop-delegate.mov)
 
 Чтобы ячейки расступались для дропа другой ячейки, используйте Drop Proposal c `.insertAtDestinationIndexPath`. Любой другой интент не будет этого делать. Иногда багует с коллекцией, будьте осторожны.
 
@@ -199,7 +199,7 @@ func collectionView(_ collectionView: UICollectionView, itemsForAddingTo session
 
 Теперь ячейки будут собираться в стопку, можно перемещать группу.
 
-[Drag Stack](https://cdn.sparrowcode.io/articles/drag-and-drop-part-1/drag-stack.mov)
+[Drag Stack](https://cdn.sparrowcode.io/tutorials/drag-and-drop-part-1/drag-stack.mov)
 
 ## Table View
 
@@ -226,7 +226,7 @@ tableView.isEditing = true
 
 То есть у вас может быть системный реордер ячеек и дроп, к примеру, внутрь ячеек.
 
-[Table Drop](https://cdn.sparrowcode.io/articles/drag-and-drop-part-1/table-drop.mov)
+[Table Drop](https://cdn.sparrowcode.io/tutorials/drag-and-drop-part-1/table-drop.mov)
 
 ## DestinationIndexPath
 
@@ -300,6 +300,4 @@ override func layoutAttributesForItem(at indexPath: IndexPath) -> UICollectionVi
 ```
 
 `.insertAtDestinationIndexPath` работает плохо, если тянуть ячейку из одной коллекции в другую. Приложение крашнется при драге за пределы первой секции, это связано с лейаутом. У таблиц проблем не ловил.
-
-Мы закончили первую часть. Когда будет готова вторая, добавлю на неё ссылку. Если нужен ролик по теме или остались вопросы - пишите в комментариях к посту в [телеграм-канале](https://t.me/sparrowcode/55).
 
