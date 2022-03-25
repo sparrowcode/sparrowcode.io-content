@@ -13,12 +13,12 @@ Here you can add a new tutorial, translate or correct typos in existing tutorial
 
 ## Tutorials
 
-Choose the language in which you want to write. Then your article may be translated into another language with an indication of the author. Now available in Russian `ru` and English `en`.
+Choose the language in which you want to write. Then your tutorial may be translated into another language with an indication of the author. Now available in Russian `ru` and English `en`.
 Create a file with the name of the path where the page will be accessible, for example, a new file [/en/tutorials/edge-insets-uibutton.md](/en/tutorials/edge-insets-uibutton.md).
 
 ### Content
 
-You can set text, pictures, and video. I offer my hosting, but you can use any other. Try not to use large videos - users don't like long loading times. If you want to use my hosting, simply send me an archive with files and the path of the article - I will add it shortly.
+You can set text, pictures, and video. I offer my hosting, but you can use any other. Try not to use large videos - users don't like long loading times. If you want to use my hosting, simply send me an archive with files and the path of the tutorial - I will add it shortly.
 
 ### Formatting
 
