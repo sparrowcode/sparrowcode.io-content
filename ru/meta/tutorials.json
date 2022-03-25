@@ -204,21 +204,6 @@
         "updated_date": "04.03.2022",
         "added_date": "04.03.2022"
     },
-    "sanctions-it-companies" : {
-        "title" : "IT-компании, которые уходят из РФ",
-        "description" : "Список компаний, которые уходят или ограничивают сервисы. Указываем ссылки на официальные источники. Обновляется.",
-        "category" : "news",
-        "author" : "sparrowcode",
-        "editors" : ["ivanvorobei", "wmorgue", "svtnck"],
-        "keywords" : [
-            "it",
-            "it-companies",
-            "existential any",
-            "type placeholders"
-        ],
-        "updated_date": "22.03.2022",
-        "added_date": "06.03.2022"
-    },
     "keyboard-shortcut-swiftui" : {
         "title" : "Сочетания клавиш в SwiftUI",
         "description" : "Знакомимся с модификатором `keyboardShortcut`. Добавим модификаторы для клавиш `.command`, `.option`, `.shift`",
