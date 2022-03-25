@@ -178,11 +178,11 @@ let downloadFileTask = Task<Data, Error> {
 // ...
 
 if downloadFileTask.isCancelled {
-    print(«Загрузка была уже отменена»)
+    print("Загрузка была уже отменена")
 } else {
     downloadFileTask.cancel()
     // Помечаем задачу как cancel
-    print(«Загрука отменяется...»)
+    print("Загрука отменяется...")
 }
 ```
 
@@ -496,14 +496,14 @@ Task(priority: .background) {
 ```
 GET https://itunes.apple.com/search?entity=software?term=<запрос>
 {
-    trackName: «Имя приложения»
+    trackName: "Имя приложения"
     trackId: 42
-    bundleId: «com.apple.developer»
-    trackViewUrl: «ссылка на приложение»
-    artworkUrl512: «ссылка на иконку приложения»
-    artistName: «название приложения»
-    screenshotUrls: [«ссылка на первый скриншот», «на второй»],
-    formattedPrice: «отформатированная цена приложения»,
+    bundleId: "com.apple.developer"
+    trackViewUrl: "ссылка на приложение"
+    artworkUrl512: "ссылка на иконку приложения"
+    artistName: "название приложения"
+    screenshotUrls: ["ссылка на первый скриншот", "на второй"],
+    formattedPrice: "отформатированная цена приложения",
     averageUserRating: 0.45,
 
     // ещё куча другой информации, но мы это опустим.
