@@ -3,27 +3,24 @@
 Tutorials are available at [sparrowcode.io/en](https://sparrowcode.io/en) & [sparrowcode.io/ru](https://sparrowcode.io).
 Here you can add a new tutorial, translate or correct typos in existing tutorials. If you want to help the project, take a look at the [todo](https://github.com/sparrowcode/tutorials/blob/main/TODO.md) list.
 
-## Navigate
-
-- [Contribute](#Contribute)
-    - [Tutorials](#tutorials)
-      - [Content](#content)
-      - [Formatting](#formatting)
-      - [Meta](#meta)
-    - [Apps](#apps)
-
 ## Contribute
 
-### Tutorials
+- [Tutorials](#tutorials)
+    - [Content](#content)
+    - [Formatting](#formatting)
+    - [Meta](#meta)
+- [Apps](#apps)
+
+## Tutorials
 
 Choose the language in which you want to write. Then your article may be translated into another language with an indication of the author. Now available in Russian `ru` and English `en`.
 Create a file with the name of the path where the page will be accessible, for example, a new file [/en/tutorials/edge-insets-uibutton.md](/en/tutorials/edge-insets-uibutton.md).
 
-#### Content
+### Content
 
 You can set text, pictures, and video. I offer my hosting, but you can use any other. Try not to use large videos - users don't like long loading times. If you want to use my hosting, simply send me an archive with files and the path of the article - I will add it shortly.
 
-#### Formatting
+### Formatting
 
 Basic markdown functions are supported, like title, subtitle, and paragraph. Also available are links, images, and video. Here provided list:
 
@@ -64,7 +61,7 @@ For highlight link to the grey area with title and subtitle, use this custom for
 ```
 Example [here](https://sparrowcode.io/resources-for-ios-developer).
 
-#### Meta
+### Meta
 
 Fill in the details of the article for file [/en/meta/articles.json](/en/meta/articles.json). If the article already exists, set the date of the last change and indicate yourself as editor or translator. All fields are listed here, some of them are optional.
 
@@ -76,7 +73,7 @@ Fill in the details of the article for file [/en/meta/articles.json](/en/meta/ar
 - `updated_date` - Date of last updating article. Format `01.01.2022`.
 - `added_date` - Date of created article. Format `01.01.2022`.
 
-##### Optional
+#### Optional
 
 - `editors` - An array of author IDs. If you fix some typos, add your username here. 
 - `translator` - Author ID.
@@ -85,7 +82,7 @@ List of categories available at [/en/meta/categories.json](/en/meta/categories.j
 
 Authors available at [/en/meta/authors.json](/en/meta/authors.json). Fill in short information about yourself, you can add buttons to the GitHub or your page in the App Store.
 
-### Apps
+## Apps
 
 Choose the language in which you want to write. If you want add app to `en`, navigate to file [en/meta/apps.json](en/meta/apps.json). If your app supported `en` and `ru`, make changes for both files.
 
