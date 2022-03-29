@@ -1,7 +1,6 @@
-# Tutorials
+# Website
 
-Tutorials are available at [sparrowcode.io/en](https://sparrowcode.io/en) & [sparrowcode.io/ru](https://sparrowcode.io).
-Here you can add a new tutorial, translate or correct typos in existing tutorials.
+All pages are available at [sparrowcode.io/en](https://sparrowcode.io/en) & [sparrowcode.io/ru](https://sparrowcode.io).
 
 ## Contribute
 
