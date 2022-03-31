@@ -93,7 +93,28 @@ extension CollectionController: UICollectionViewDragDelegate {
 
 Ячейка возвращается на место. Дроп реализуем дальше.
 
+### Drag нескольких ячеек
+
+В протоколе `UICollectionViewDragDelegate` мы реализовывали метод `itemsForBeginning`, который возвращал объект драга. Чтобы к текущему драгу добавить ещё объекты, реализуйте метод `itemsForAddingTo`:
+
+```swift
+func collectionView(_ collectionView: UICollectionView, itemsForAddingTo session: UIDragSession, at indexPath: IndexPath, point: CGPoint) -> [UIDragItem] {
+    // Код аналогичен.
+    // Создаём `UIDragItem` на основе нашего объекта.
+    let itemProvider = NSItemProvider.init(object: yourObject)
+    let dragItem = UIDragItem(itemProvider: itemProvider)
+    dragItem.localObject = action
+    return dragItem
+}
+```
+
+Теперь ячейки будут собираться в стопку — можно перемещать группу.
+
+[Drag Stack](https://cdn.sparrowcode.io/tutorials/drag-and-drop-part-1/drag-stack.mov)
+
 ## Drop
+
+### CollectionView
 
 Драг - половина дела. Теперь научимся сбрасывать ячейку в нужное положение. Реализуем протокол `UICollectionViewDropDelegate`:
 
@@ -182,26 +203,24 @@ func collectionView(_ collectionView: UICollectionView, performDropWith coordina
 
 Чтобы ячейки расступались для дропа другой ячейки, используйте Drop Proposal c `.insertAtDestinationIndexPath`. Любой другой интент не будет этого делать. Иногда багует с коллекцией, будьте осторожны.
 
-## Drag нескольких ячеек
-
-В протоколе `UICollectionViewDragDelegate` мы реализовывали метод `itemsForBeginning`, который возвращал объект драга. Чтобы к текущему драгу добавить ещё объекты, реализуйте метод `itemsForAddingTo`:
+При попытке сбросить ячейку последней FlowLayout запросит несуществующие атрибуты ячейки. Когда ячейки расступаются, лейаут рисует ячейку внутри, а при дропе получается ячеек больше, чем моделей в Data Source. Это решается переопределением метода в `UICollectionViewFlowLayout`:
 
 ```swift
-func collectionView(_ collectionView: UICollectionView, itemsForAddingTo session: UIDragSession, at indexPath: IndexPath, point: CGPoint) -> [UIDragItem] {
-    // Код аналогичен.
-    // Создаём `UIDragItem` на основе нашего объекта.
-    let itemProvider = NSItemProvider.init(object: yourObject)
-    let dragItem = UIDragItem(itemProvider: itemProvider)
-    dragItem.localObject = action
-    return dragItem
+override func layoutAttributesForItem(at indexPath: IndexPath) -> UICollectionViewLayoutAttributes? {
+   if let countItems = collectionView?.numberOfItems(inSection: indexPath.section) {
+       if countItems == indexPath.row {
+            // If ask layout cell which not isset,
+            // shouldn't call super.
+            return nil
+       }
+   }
+   return super.layoutAttributesForItem(at: indexPath)
 }
 ```
 
-Теперь ячейки будут собираться в стопку — можно перемещать группу.
+`.insertAtDestinationIndexPath` работает плохо, если тянуть ячейку из одной коллекции в другую. Приложение крашнется при драге за пределы первой секции, это связано с лейаутом. У таблиц проблем не ловил.
 
-[Drag Stack](https://cdn.sparrowcode.io/tutorials/drag-and-drop-part-1/drag-stack.mov)
-
-## Table View
+### TableView
 
 Для таблицы есть аналогичные протоколы `UITableViewDragDelegate` и `UITableViewDropDelegate`. Методы повторяются с оговоркой на таблицу.
 
@@ -270,7 +289,7 @@ private func getDestinationIndexPath(system passedIndexPath: IndexPath?, session
 }
 ```
 
-Можем улучшить код для обновления интерфейса:
+Улучшим код для обновления интерфейса:
 
 ```swift
 func collectionView(_ collectionView: UICollectionView, dropSessionDidUpdate session: UIDropSession, withDestinationIndexPath destinationIndexPath: IndexPath?) -> UICollectionViewDropProposal {
@@ -281,22 +300,3 @@ func collectionView(_ collectionView: UICollectionView, dropSessionDidUpdate ses
 ```
 
 Обратите внимание: метод поможет только с дропом. Если используете `.insertAtDestinationIndexPath`, не получится переопределить, как будут расступаться ячейки.
-
-## Проблемы
-
-Большинство проблем связано с коллекцией, а именно с лейаутом. Например, есть такая распространённая проблема - при попытке сбросить ячейку последней FlowLayout запросит несуществующие атрибуты ячейки. Когда ячейки расступаются, лейаут рисует ячейку внутри, а при дропе получается ячеек больше, чем моделей в Data Source. Это решается переопределением метода в `UICollectionViewFlowLayout`:
-
-```swift
-override func layoutAttributesForItem(at indexPath: IndexPath) -> UICollectionViewLayoutAttributes? {
-   if let countItems = collectionView?.numberOfItems(inSection: indexPath.section) {
-       if countItems == indexPath.row {
-            // If ask layout cell which not isset,
-            // shouldn't call super.
-            return nil
-       }
-   }
-   return super.layoutAttributesForItem(at: indexPath)
-}
-```
-
-`.insertAtDestinationIndexPath` работает плохо, если тянуть ячейку из одной коллекции в другую. Приложение крашнется при драге за пределы первой секции, это связано с лейаутом. У таблиц проблем не ловил.
