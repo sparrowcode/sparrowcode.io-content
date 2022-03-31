@@ -142,12 +142,16 @@ extension CollectionController: UICollectionViewDropDelegate {
 ```swift
 // Ячейка вернётся на место, визуальные индикаторы не появятся. Действие не смещает другие ячейки.
 return .init(operation: .cancel)
+
 // Появится серая иконка. Это значит, что операция запрещена.
 return .init(operation: .forbidden)
+
 // Произойдёт полезное действие, визуальные индикаторы не появятся.
 return .init(operation: .move)
+
 // Ячейки смещаются для предлагаемого места дропа, визуальные индикаторы не появятся.
 return .init(operation: .move, intent: .insertAtDestinationIndexPath)
+
 // Появляется зелёный плюс — индикатор копирования.
 return .init(operation: .copy)
 ```
