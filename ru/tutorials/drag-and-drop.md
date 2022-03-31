@@ -114,7 +114,7 @@ func collectionView(_ collectionView: UICollectionView, itemsForAddingTo session
 
 ## Drop
 
-### CollectionView
+### `CollectionView`
 
 Драг - половина дела. Теперь научимся сбрасывать ячейку в нужное положение. Реализуем протокол `UICollectionViewDropDelegate`:
 
@@ -220,7 +220,7 @@ override func layoutAttributesForItem(at indexPath: IndexPath) -> UICollectionVi
 
 `.insertAtDestinationIndexPath` работает плохо, если тянуть ячейку из одной коллекции в другую. Приложение крашнется при драге за пределы первой секции, это связано с лейаутом. У таблиц проблем не ловил.
 
-### TableView
+### `TableView`
 
 Для таблицы есть аналогичные протоколы `UITableViewDragDelegate` и `UITableViewDropDelegate`. Методы повторяются с оговоркой на таблицу.
 
@@ -247,7 +247,7 @@ tableView.isEditing = true
 
 [Table Drop](https://cdn.sparrowcode.io/tutorials/drag-and-drop-part-1/table-drop.mov)
 
-## DestinationIndexPath
+## `DestinationIndexPath`
 
 Системный параметр `DestinationIndexPath` не всегда идеально определяет положение. Например, если вы выйдете за края контента коллекции, то система не предложит сбросить ячейку как последнюю.
 
