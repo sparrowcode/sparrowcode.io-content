@@ -13,18 +13,18 @@ struct ContentView: View {
 
 ![Обновляем контент](https://cdn.sparrowcode.io/tutorials/keyboard-shortcut-swiftui/refresh_content.jpg)
 
-По нажатию двух клавиш `Command` + `R` выведем сообщение в консоль.
+Теперь по нажатию двух клавиш `Command` + `R` выведем сообщение в консоль.
 
-Первый параметр модификатора `keyboardShortcut` должен быть экземпляром структуры [KeyEquivalent](https://developer.apple.com/documentation/swiftui/keyequivalent?changes=_5). `KeyEquivalent` наследуется от протокола `ExpressibleByExtendedGraphemeClusterLiteral` и создает экземпляр `KeyEquivalent` с строковым литералом в 1 символ.
+Первый параметр модификатора `keyboardShortcut` должен быть экземпляром структуры [KeyEquivalent](https://developer.apple.com/documentation/swiftui/keyequivalent?changes=_5). `KeyEquivalent` наследуется от протокола `ExpressibleByExtendedGraphemeClusterLiteral` и создаёт экземпляр `KeyEquivalent` со строковым литералом в 1 символ.
 
 ```swift
 init(_ key: KeyEquivalent, modifiers: EventModifiers = .command)
 ```
 
-Второй параметр `modifiers` наследуется от структуры [EventModifiers](https://developer.apple.com/documentation/swiftui/eventmodifiers?changes=_5). Это уникальный набор клавиш-модификаторов.
+А вот второй параметр `modifiers` наследуется от структуры [EventModifiers](https://developer.apple.com/documentation/swiftui/eventmodifiers?changes=_5). Это уникальный набор клавиш-модификаторов.
 В примере выше используем клавишу `R` и модификатор `.command`, который устанавливается по умолчанию в SwiftUI:
 
-Пример с переключателем:
+Рассмотрим пример с переключателем:
 
 ```swift
 struct ContentView: View {
