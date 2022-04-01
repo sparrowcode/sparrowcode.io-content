@@ -22,7 +22,7 @@ init(_ key: KeyEquivalent, modifiers: EventModifiers = .command)
 ```
 
 А вот второй параметр `modifiers` наследуется от структуры [EventModifiers](https://developer.apple.com/documentation/swiftui/eventmodifiers?changes=_5). Это уникальный набор клавиш-модификаторов.
-В примере выше используем клавишу `R` и модификатор `.command`, который устанавливается по умолчанию в SwiftUI:
+В примере выше используем клавишу `R` и модификатор `.command`, который устанавливается по умолчанию в SwiftUI.
 
 Рассмотрим пример с переключателем:
 
