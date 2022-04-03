@@ -1,0 +1,63 @@
+{
+    "how-add-view-to-swiftui-library" : {
+        "title" : "How to add custom SwiftUI View to View Library",
+        "description" : "In that article, I teach you how to add a code snippet to the Library.",
+        "category" : "swiftui",
+        "author" : "wmorgue",
+        "editors" : ["svtnck"],
+        "translator": "svtnck",
+        "keywords" : [
+            "xcode",
+            "library",
+            "LibraryContentProvider"
+        ],
+        "updated_date": "03.04.2022",
+        "added_date": "03.02.2022"
+    },
+    "edge-insets-uibutton" : {
+        "title" : "Edge Insets for UIButton",
+        "description" : "How to add an indent between the picture and the header in a button. How to place the icon to the right of the header.",
+        "category" : "uikit",
+        "author" : "ivanvorobei",
+        "translator": "svtnck",
+        "keywords" : [
+            "UIButton",
+            "imageEdgeInsets",
+            "contentEdgeInsets"
+        ],
+        "updated_date" : "03.04.2022",
+        "added_date" : "05.02.2022"
+    },
+    "async-await" : {
+        "title" : "Asynchrony with async/await/actor",
+        "description" : "Let's take apart async, await, and actor. Let's write an ace using the new tools.",
+        "category" : "development",
+        "author" : "somenkovnikita",
+        "editors" : ["ivanvorobei"],
+        "translator": "svtnck",
+        "keywords" : [
+            "async",
+            "await",
+            "actor"
+        ],
+        "updated_date": "03.04.2022",
+        "added_date": "08.02.2022"
+    },
+    "drag-and-drop-part-1" : {
+        "title" : "Drag и Drop",
+        "description" : "How to change the order of cells in a collection and a table. How to move cells to another collection. How to move multiple cells in a group.",
+        "category" : "uikit",
+        "author" : "ivanvorobei",
+        "translator": "svtnck",
+        "keywords" : [
+            "UICollectionViewDragDelegate",
+            "UICollectionViewDropDelegate",
+            "UITableViewDragDelegate",
+            "UITableViewDropDelegate",
+            "UIDrag",
+            "UIGestureRecognizer"
+        ],
+        "updated_date" : "03.04.2022",
+        "added_date" : "17.02.2022"
+    }
+}

@@ -62,7 +62,7 @@ Example [here](https://sparrowcode.io/resources-for-ios-developer).
 
 ### Meta
 
-Fill in the details of the article for file [/en/meta/articles.json](/en/meta/articles.json). If the article already exists, set the date of the last change and indicate yourself as editor or translator. All fields are listed here, some of them are optional.
+Fill in the details of the article for file [/en/tutorials/meta/articles.json](/en/meta/articles.json). If the article already exists, set the date of the last change and indicate yourself as editor or translator. All fields are listed here, some of them are optional.
 
 - `title` - Title of your tutorial.
 - `description` - Description of tutorial.
@@ -77,13 +77,13 @@ Fill in the details of the article for file [/en/meta/articles.json](/en/meta/ar
 - `editors` - An array of author IDs. If you fix some typos, add your username here. 
 - `translator` - Author ID.
 
-List of categories available at [/en/meta/categories.json](/en/meta/categories.json). If you need an additional category, add it. Make sure none of the existing ones fit.
+List of categories available at [/en/tutorials/meta/categories.json](/en/tutorials/meta/categories.json). If you need an additional category, add it. Make sure none of the existing ones fit.
 
-Authors available at [/en/meta/authors.json](/en/meta/authors.json). Fill in short information about yourself, you can add buttons to the GitHub or your page in the App Store.
+Authors available at [/en/tutorials/meta/authors.json](/en/tutorials/meta/authors.json). Fill in short information about yourself, you can add buttons to the GitHub or your page in the App Store.
 
 ## Apps
 
-Choose the language in which you want to write. If you want add app to `en`, navigate to file [en/meta/apps.json](en/meta/apps.json). If your app supported `en` and `ru`, make changes for both files.
+Choose the language in which you want to write. If you want add app to `en`, navigate to file [en/apps/apps.json](en/meta/apps.json). If your app supported `en` and `ru`, make changes for both files.
 
 Fill with example data: 
 
