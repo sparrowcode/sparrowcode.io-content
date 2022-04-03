@@ -426,7 +426,7 @@ a.toupleOneTwo // (.0 1, .1 2)
 
 В стурктуре `A` свойство `one` имеет уровень `internal`, а свойство `two` - `private`. Кортеж `toupleOneTwo` доступен снаружи структуры `A`. Для `toupleOneTwo` мы указали тип `(Int, Int)`, и передали значения свойств `one` и `two`, а не попытались обратиться снаружи к `private` свойству `two`. 
 
-Перейдём копределению `Int`:
+Перейдём к определению `Int`:
 
 ```swift
 @frozen public struct Int : FixedWidthInteger, SignedInteger { 
@@ -465,20 +465,23 @@ struct Info {
 ```swift
 struct Info {
 	
-	private var userInfo: (Letters, Numbers)
-}
-```
-
-```swift
-struct Info {
-	
 	fileprivate var userInfo: (Letters, Numbers)
 }
 ```
 
-Теперь можно создать экземпляр структуры `Info`. Он должен быть уровня `private` или `fileprivate`.
+Теперь можно создать экземпляр структуры `Info`.
 
 ```swift
-private let info1 = (Letters(userLetter: "A"), Numbers(userNumber: 1))
-fileprivate let info2 = (Letters(userLetter: "B"), Numbers(userNumber: 2))
+let info = Info(userInfo: (Letters(userLetter: "A"), Numbers(userNumber: 1)))
 ```
+
+Изменим `fileprivate` на `private`.
+
+```swift
+struct Info {
+	
+	private var userInfo: (Letters, Numbers)
+}
+```
+
+Получаем ошибку "'Info' initializer is inaccessible due to 'private' protection level". Мы не можем создать экземпляр этой структуры из-за уровня `private` свойства `userInfo`. Типы, входящие в кортеж, позволяют нам сделать этой свойство `private`, но использовать мы его не можем.
