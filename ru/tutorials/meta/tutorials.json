@@ -12,19 +12,8 @@
             "UIDrag",
             "UIGestureRecognizer"
         ],
-        "updated_date" : "24.03.2022",
+        "updated_date" : "03.04.2022",
         "added_date" : "11.07.2021"
-    },
-    "meet-storekit-2" : {
-        "title" : "StoreKit 2",
-        "description" : "Apple пересмотрела логику покупок и переписала StoreKit. Буду много хвалить - крутой апдейт этого года.",
-        "category" : "storekit",
-        "author" : "ivanvorobei",
-        "keywords" : [
-            
-        ],
-        "updated_date" : "27.12.2021",
-        "added_date" : "25.09.2021"
     },
     "uisheetpresentationcontroller" : {
         "title" : "UISheetPresentationController",
@@ -70,21 +59,6 @@
         "updated_date" : "27.12.2021",
         "added_date" : "19.11.2021"
     },
-    "resources-for-ios-developer" : {
-        "title" : "Ресурсы для iOS разработчика",
-        "description" : "Подборка полезных ссылок для iOS разработчиков. Структурирована по формату материала. Есть раздел с русскими ресурсами.",
-        "category" : "compilation",
-        "author" : "ivanvorobei",
-        "editors" : ["svtnck"],
-        "keywords" : [
-            "Ресурсы для iOS разработчиков",
-            "туториалы по iOS разработке",
-            "swift разработка",
-            "разработка iOS приложений"
-        ],
-        "updated_date" : "18.03.2022",
-        "added_date" : "25.11.2021"
-    },
     "how-to-delete-userdefaults-on-macos-catalyst" : {
         "title" : "Как очистить UserDefaults для Mac Catalyst",
         "description" : "Как очистить данные для приложения Catalyst включая AppGroup, Realm и UserDefaults.",
@@ -108,7 +82,7 @@
             "imageEdgeInsets",
             "contentEdgeInsets"
         ],
-        "updated_date" : "27.12.2021",
+        "updated_date" : "03.04.2022",
         "added_date" : "13.12.2021"
     },
     "product-page-optimization-alternative-icons" : {
@@ -133,12 +107,12 @@
             "library",
             "LibraryContentProvider"
         ],
-        "updated_date": "07.03.2022",
+        "updated_date": "03.04.2022",
         "added_date": "02.02.2022"
     },
     "async-await" : {
         "title" : "Асинхронность с async/await/actor",
-        "description" : "Разберём async, await, actor. Напишем тузлу, используя новые инструменты.",
+        "description" : "Разберём async, await, actor. Напишем тузлу для поиска приложений в App Store, используя новые инструменты.",
         "category" : "development",
         "author" : "somenkovnikita",
         "editors" : ["ivanvorobei"],
@@ -147,7 +121,7 @@
             "await",
             "actor"
         ],
-        "updated_date": "24.03.2022",
+        "updated_date": "03.04.2022",
         "added_date": "06.02.2022"
     },
     "mastering-progressview-swiftui" : {
@@ -187,22 +161,6 @@
         ],
         "updated_date": "07.03.2022",
         "added_date": "01.03.2022"
-    },
-    "swift-56" : {
-        "title" : "Что нового в Swift 5.6",
-        "description" : "Неявный тип, ключевое слово any, протокол `CodingKeyRepresentable` и атрибут недоступности.",
-        "category" : "development",
-        "author" : "wmorgue",
-        "editors" : ["ivanvorobei"],
-        "keywords" : [
-            "swift 5.6",
-            "unavailable",
-            "existential any",
-            "type placeholders",
-            "CodingKeyRepresentable"
-        ],
-        "updated_date": "04.03.2022",
-        "added_date": "04.03.2022"
     },
     "keyboard-shortcut-swiftui" : {
         "title" : "Сочетания клавиш в SwiftUI",

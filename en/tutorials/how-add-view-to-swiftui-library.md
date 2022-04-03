@@ -1,24 +1,19 @@
-SwiftUI is designed to make its view easy to be reuse.
-
-## View Library
-
-Library provides access to available SwiftUI View, modifiers, images, etc. You can DnD or double-click the selected item to add the View into your code.
-
+The library in Xcode provides access to the SwiftUI `View`, `modifiers`, images, etc. You can drag the selected item or double-click it to add the `View` to the code.
 
 ![Xcode View Library](https://cdn.sparrowcode.io/tutorials/how-add-view-to-swiftui-library/xcode_library.png)
 
-## Custom View
-
-First of all, let's implement our custom View, which will be responsible for the user's profile.
+Let's make a custom `view` to be added to the library. I will create a user profile. Example model:
 
 ```swift
 struct User {
-
+    
     let name: String
     let imageName: String
     let githubProfile: String
 }
 ```
+
+And this is what the `view` will look like:
 
 ```swift
 struct UserProfileView: View {
@@ -43,16 +38,11 @@ struct UserProfileView: View {
 }
 ```
 
+And here's the result:
+
 ![UserProfile_Preview](https://cdn.sparrowcode.io/tutorials/how-add-view-to-swiftui-library/user_profile_preview.png)
 
-
-Here is how it looks like.
-
-
-## Add to View Library
-
-For this step create a `UserProfileLibrary.swift` file, define `UserProfileLibrary()` structure which inherits from [LibraryContentProvider](https://developer.apple.com/documentation/developertoolssupport/librarycontentprovider?changes=latest_minor).
-
+Create the file `UserProfileLibrary.swift`. First, let's define a structure that inherits from [LibraryContentProvider](https://developer.apple.com/documentation/developertoolssupport/librarycontentprovider?changes=latest_minor).
 
 ```swift
 //filename: UserProfileLibrary.swift
@@ -69,26 +59,24 @@ struct UserProfileLibrary: LibraryContentProvider {
                     githubProfile: "wmorgue"
                 )
             ),
-            visible: true,    // whether it's visible in the Xcode library
-            title: "User Profile", // the custom name shown in the library
-            category: .control, // a category to find you custom views faster
-            matchingSignature: "UserProfile" // the signature for code completion
+            visible: true, // whether our `View` will be available in the library
+            title: "User Profile", // title to be displayed
+            category: .control, // several categories are available to choose from
+            matchingSignature: "UserProfile" // signature for the auto-complete
         )
     }
 }
 ```
 
-The way we add a view to View Library is quite similar to how we make our view support preview function. 
-The `LibraryContentProvider` protocol provides an ability to add custom views to the Xcode library.
-After that, we go to the `ContentView.swift` file and add the user view.
+Then use `LibraryContentProvider` to add custom views to the Xcode library.
+And now let's go to the `ContentView.swift` file and add a user.
 
 [UserProfileLibrary](https://cdn.sparrowcode.io/tutorials/how-add-view-to-swiftui-library/user_profile_library.mov)
 
-Caveat:
-
-1. There are no ways to add a description right now, so the field on the right is empty - **No Details**.
-2. There are no ways to add an image for a thumbnail that shows up in the View Library.
-3. When you use the system component, it will prefill all the parameters with usable default values. In our case, we get a user as our default value `User()`:
+There are limitations:
+- You can't add a description to your `View`, so the box on the right stays blank - **No Details**.
+- You can't add an icon.
+- When we add a `View` to the code, we also add a _prescribed_ value. In our case this is the `User()` structure:
 
 ```swift
 UserProfileView(
@@ -100,5 +88,5 @@ UserProfileView(
 )
 ```
 
-Just waiting for changes in future versions to be able to add a description and icon.
-This project is available for [download](https://cdn.sparrowcode.io/tutorials/how-add-view-to-swiftui-library/MyApp.zip).
+Hopefully, in future versions we will be able to add a description and icon.
+You can [download](https://cdn.sparrowcode.io/tutorials/how-add-view-to-swiftui-library/MyApp.zip) the project from the tutorial.

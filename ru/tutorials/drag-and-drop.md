@@ -1,4 +1,4 @@
-Сегодня научимся изменять порядок ячеек, перетаскивать несколько ячеек, перемещать ячейки между коллекциями и даже между приложениями. Разберём перетаскивание для коллекции и таблицы, а в будущем я дополню статью тем, как перетаскивать любые вьюхи куда угодно и обрабатывать их сброс.  
+Сегодня научимся изменять порядок ячеек, перетаскивать ячейки группами, перемещать ячейки между коллекциями и даже между приложениями. Разберём перетаскивание для коллекции и таблицы.
 
 Перед погружением в код разберёмся, как устроен жизненный цикл драга и дропа.
 
@@ -6,9 +6,9 @@
 
 ## Модели
 
-Драг отвечает за перемещение объекта, а дроп — за сброс объекта и его новое положение. Сервиса, отвечающего за начало драга, нет. Когда палец с ячейкой ползёт по экрану, вызывается метод делегата. Очень похоже, кстати, на `UIScrollViewDelegate` с методом `scrollViewDidScroll`.
+Драг отвечает за перемещение объекта, а дроп — за сброс объекта и его новое положение. Нет сервиса/модели, которое отвечает за начало драга. Когда палец с ячейкой ползёт по экрану, вызывается метод делегата. Очень похоже на `UIScrollViewDelegate` с методом `scrollViewDidScroll`.
 
-`UIDragSession` и `UIDropSession` становятся доступны, когда вызываются методы делегата. Это такие объекты-обёртки с информацией о положении пальца, объектов, для которых совершали действия, кастомного context и других. Перед началом драга предоставьте объект `UIDragItem`, то есть обёртку данных — в буквальном смысле то, что мы хотим перетянуть.
+`UIDragSession` и `UIDropSession` доступны, когда вызываются методы делегата. Это такие объекты-обёртки с информацией о положении пальца, объектов, для которых совершали действия, кастомного context и т.д. Перед началом драга предоставьте объект `UIDragItem`. Это обёртка данных — в буквальном смысле то, что мы хотим перетянуть.
 
 ```swift
 let itemProvider = NSItemProvider.init(object: yourObject)
@@ -36,9 +36,11 @@ extension YourClass: NSItemProviderWriting {
 
 ## Drag
 
-Мучить будем коллекцию. Советую использовать `UICollectionViewController`, из коробки он умеет больше. Но и простая вьюха подойдёт.
+### Одна ячейка
 
-Установим драг делегат:
+Разберем на примере коллекции. Советую использовать `UICollectionViewController`, из коробки он умеет больше. Но и простая collection-вью подойдёт.
+
+Установим драг-делегат:
 
 ```swift
 class CollectionController: UICollectionViewController {
@@ -54,11 +56,11 @@ class CollectionController: UICollectionViewController {
 
 ```swift
 func collectionView(_ collectionView: UICollectionView, itemsForBeginning session: UIDragSession, at indexPath: IndexPath) -> [UIDragItem] {
-        let itemProvider = NSItemProvider.init(object: yourObject)
-        let dragItem = UIDragItem(itemProvider: itemProvider)
-        dragItem.localObject = action
-        return dragItem
-    }
+    let itemProvider = NSItemProvider.init(object: yourObject)
+    let dragItem = UIDragItem(itemProvider: itemProvider)
+    dragItem.localObject = action
+    return dragItem
+}
 ```
 
 Вы уже видели этот код выше. Он оборачивает наш объект в `UIDragItem`. Метод вызывается при подозрении, что пользователь хочет начать драг. Не используйте этот метод как начало драга, потому что его вызов только предполагает, что драг начнётся.
@@ -67,8 +69,8 @@ func collectionView(_ collectionView: UICollectionView, itemsForBeginning sessio
 
 ```swift
 extension CollectionController: UICollectionViewDragDelegate {
-   
-   func collectionView(_ collectionView: UICollectionView, itemsForBeginning session: UIDragSession, at indexPath: IndexPath) -> [UIDragItem] {
+    
+    func collectionView(_ collectionView: UICollectionView, itemsForBeginning session: UIDragSession, at indexPath: IndexPath) -> [UIDragItem] {
         let itemProvider = NSItemProvider.init(object: yourObject)
         let dragItem = UIDragItem(itemProvider: itemProvider)
         dragItem.localObject = action
@@ -76,26 +78,47 @@ extension CollectionController: UICollectionViewDragDelegate {
     }
     
     func collectionView(_ collectionView: UICollectionView, dragSessionWillBegin session: UIDragSession) {
-    
+        
     }
     
     func collectionView(_ collectionView: UICollectionView, dragSessionDidEnd session: UIDragSession) {
-    
+        
     }
 }
 ```
 
-Первый метод вызывается, когда драг начался, а второй - когда драг закончился. Перед `dragSessionWillBegin` вызывается `itemsForBeginning`. Но не факт, что если вызвался `itemsForBeginning`, вызовется метод `dragSessionWillBegin`.
+Первый метод вызывается, когда драг начался, а второй - когда драг закончился. Перед `dragSessionWillBegin` вызывается `itemsForBeginning`. Но не факт, что если вызвался `itemsForBeginning`, вызовется метод `dragSessionWillBegin`. Если хотите обновить интерфейс на время драга, например, спрятать кнопки удаления, `dragSessionWillBegin` правильное место. 
 
-Если хотите обновить интерфейс на время драга, например, спрятать кнопки удаления, это правильное место. Давайте посмотрим, что получается на этом этапе.
+Давайте посмотрим, что получается на этом этапе.
 
 [Drag Preview](https://cdn.sparrowcode.io/tutorials/drag-and-drop-part-1/drag-delegate.mov)
 
-Ячейка возвращается на место. Дроп реализуем дальше.
+Ячейка возвращается на место потому что дроп еще не готов, его реализуем дальше.
+
+### Несколько ячеек
+
+В протоколе `UICollectionViewDragDelegate` мы реализовывали метод `itemsForBeginning`, который возвращал объект драга. Чтобы к текущему драгу добавить ещё объекты, реализуйте метод `itemsForAddingTo`:
+
+```swift
+func collectionView(_ collectionView: UICollectionView, itemsForAddingTo session: UIDragSession, at indexPath: IndexPath, point: CGPoint) -> [UIDragItem] {
+    // Код аналогичен.
+    // Создаём `UIDragItem` на основе нашего объекта.
+    let itemProvider = NSItemProvider.init(object: yourObject)
+    let dragItem = UIDragItem(itemProvider: itemProvider)
+    dragItem.localObject = action
+    return dragItem
+}
+```
+
+Теперь ячейки собираются в стопку. Стопку можно сбрасывать как отдельные ячейки.
+
+[Drag Stack](https://cdn.sparrowcode.io/tutorials/drag-and-drop-part-1/drag-stack.mov)
 
 ## Drop
 
-Драг - половина дела. Теперь научимся сбрасывать ячейку в нужное положение. Реализуем протокол `UICollectionViewDropDelegate`:
+### Для `CollectionView`
+
+Драг - половина дела. Теперь научимся сбрасывать ячейку. Реализуем протокол `UICollectionViewDropDelegate`:
 
 ```swift
 extension CollectionController: UICollectionViewDropDelegate {
@@ -105,11 +128,11 @@ extension CollectionController: UICollectionViewDropDelegate {
     }
     
     func collectionView(_ collectionView: UICollectionView, performDropWith coordinator: UICollectionViewDropCoordinator) {
-    
+        
     }
     
     func collectionView(_ collectionView: UICollectionView, dropSessionDidEnd session: UIDropSession) {
-    
+        
     }
 }
 ```
@@ -121,12 +144,16 @@ extension CollectionController: UICollectionViewDropDelegate {
 ```swift
 // Ячейка вернётся на место, визуальные индикаторы не появятся. Действие не смещает другие ячейки.
 return .init(operation: .cancel)
-// Появится серая иконка. Это значит, что операция запрещена.
+
+// Появится серая перечеркнутая иконка. Это значит, что операция запрещена.
 return .init(operation: .forbidden)
+
 // Произойдёт полезное действие, визуальные индикаторы не появятся.
 return .init(operation: .move)
+
 // Ячейки смещаются для предлагаемого места дропа, визуальные индикаторы не появятся.
 return .init(operation: .move, intent: .insertAtDestinationIndexPath)
+
 // Появляется зелёный плюс — индикатор копирования.
 return .init(operation: .copy)
 ```
@@ -135,7 +162,7 @@ return .init(operation: .copy)
 
 ```swift
 func collectionView(_ collectionView: UICollectionView, dropSessionDidUpdate session: UIDropSession, withDestinationIndexPath destinationIndexPath: IndexPath?) -> UICollectionViewDropProposal {
-
+        
     guard let _ = destinationIndexPath else { return .init(operation: .forbidden) }
     return .init(operation: .move, intent: .insertAtDestinationIndexPath)
 }
@@ -147,24 +174,24 @@ func collectionView(_ collectionView: UICollectionView, dropSessionDidUpdate ses
 
 ```swift
 func collectionView(_ collectionView: UICollectionView, performDropWith coordinator: UICollectionViewDropCoordinator) {
-    
-    // Если система не смогла определить IndexPath, то останавливаем выполнение. 
+        
+    // Если система не смогла определить IndexPath, то останавливаем выполнение.
     // Дальше мы научимся определять индекс самостоятельно, но пока оставим так.
     guard let destinationIndexPath = coordinator.destinationIndexPath else { return }
-    
+        
     for item in coordinator.items {
         // Получаем доступ к нашему объекту, приводим тип.
         guard let yourObject = item.dragItem.localObject as? YourClass else { continue }
         // Объект перемещаем из одного места в другое. Я использую псевдофункцию, подразумевая кастомную логику:
         move(object: yourObject, to: destinationIndexPath)
     }
-    
+        
     // Не забудьте обновить коллекцию.
     // Если используете классический data source, изменения вносите в блоке `performBatchUpdates`.
     // Если у вас diffable data source, используйте обновление снепшота.
     // Функция для примера, такой функции нет.
     collectionView.reloadAnimatable()
-    
+        
     // Уведомляем, куда сбросили элемент.
     // Самостоятельно реализуйте функцию `getIndexPath`.
     for item in coordinator.items {
@@ -182,41 +209,39 @@ func collectionView(_ collectionView: UICollectionView, performDropWith coordina
 
 Чтобы ячейки расступались для дропа другой ячейки, используйте Drop Proposal c `.insertAtDestinationIndexPath`. Любой другой интент не будет этого делать. Иногда багует с коллекцией, будьте осторожны.
 
-## Drag нескольких ячеек
-
-В протоколе `UICollectionViewDragDelegate` мы реализовывали метод `itemsForBeginning`, который возвращал объект драга. Чтобы к текущему драгу добавить ещё объекты, реализуйте метод `itemsForAddingTo`:
+При попытке сбросить ячейку последней FlowLayout запросит несуществующие атрибуты ячейки. Когда ячейки расступаются, лейаут рисует ячейку внутри, а при дропе получается ячеек больше, чем моделей в Data Source. Это решается переопределением метода в `UICollectionViewFlowLayout`:
 
 ```swift
-func collectionView(_ collectionView: UICollectionView, itemsForAddingTo session: UIDragSession, at indexPath: IndexPath, point: CGPoint) -> [UIDragItem] {
-    // Код аналогичен.
-    // Создаём `UIDragItem` на основе нашего объекта.
-    let itemProvider = NSItemProvider.init(object: yourObject)
-    let dragItem = UIDragItem(itemProvider: itemProvider)
-    dragItem.localObject = action
-    return dragItem
+override func layoutAttributesForItem(at indexPath: IndexPath) -> UICollectionViewLayoutAttributes? {
+    if let countItems = collectionView?.numberOfItems(inSection: indexPath.section) {
+        if countItems == indexPath.row {
+            // If ask layout cell which not isset,
+            // shouldn't call super.
+            return nil
+        }
+    }
+    return super.layoutAttributesForItem(at: indexPath)
 }
 ```
 
-Теперь ячейки будут собираться в стопку — можно перемещать группу.
+`.insertAtDestinationIndexPath` работает плохо, если тянуть ячейку из одной коллекции в другую. Приложение крашнется при драге за пределы первой секции, это связано с лейаутом. У таблиц проблем не ловил.
 
-[Drag Stack](https://cdn.sparrowcode.io/tutorials/drag-and-drop-part-1/drag-stack.mov)
-
-## Table View
+### Для `TableView`
 
 Для таблицы есть аналогичные протоколы `UITableViewDragDelegate` и `UITableViewDropDelegate`. Методы повторяются с оговоркой на таблицу.
 
 ```swift
 public protocol UITableViewDragDelegate: NSObjectProtocol {
-
+    
     optional func tableView(_ tableView: UITableView, itemsForAddingTo session: UIDragSession, at indexPath: IndexPath, point: CGPoint) -> [UIDragItem]
-
+    
     optional func tableView(_ tableView: UITableView, dragSessionWillBegin session: UIDragSession)
-
+    
     optional func tableView(_ tableView: UITableView, dragSessionDidEnd session: UIDragSession)
 }
 ```
 
-Дроп работает аналогично. Отмечу, что дроп стабильнее именно в таблице, потому что сказывается отсутствие лейаута.
+Дроп работает аналогично. Дроп работает без костылей в таблице, подозреваю что из-за отсутствие лейаута. 
 
 Редактирование таблицы никак не влияет на вызовы методов дропа.
 
@@ -224,11 +249,11 @@ public protocol UITableViewDragDelegate: NSObjectProtocol {
 tableView.isEditing = true
 ```
 
-То есть у вас может быть системный реордер ячеек и дроп, к примеру, внутрь ячеек.
+То есть у вас может быть системный реордер ячеек и дроп внутрь ячеек.
 
 [Table Drop](https://cdn.sparrowcode.io/tutorials/drag-and-drop-part-1/table-drop.mov)
 
-## DestinationIndexPath
+## `DestinationIndexPath`
 
 Системный параметр `DestinationIndexPath` не всегда идеально определяет положение. Например, если вы выйдете за края контента коллекции, то система не предложит сбросить ячейку как последнюю.
 
@@ -237,66 +262,48 @@ tableView.isEditing = true
 ```swift
 // В качестве входных параметров используем системный индекс и сессию дропа.
 // Если системный индекс будет равен `nil`, то у нас появятся две системы расчёта.
-private func getDestinationIndexPath(system passedIndexPath: IndexPath?, session: UIDropSession) -> IndexPath? {
 
-            // Здесь попытаемся получить индекс по локации дропа.
-            // Чаще всего результат будет совпадать с системным, но когда системного нет, может вернуть хорошее значение.
-            let systemByLocationIndexPath = collectionView.indexPathForItem(at: session.location(in: collectionView))
+private func getDestinationIndexPath(system passedIndexPath: IndexPath?, session: UIDropSession) -> IndexPath? {
+        
+    // Здесь попытаемся получить индекс по локации дропа.
+    // Чаще всего результат будет совпадать с системным, но когда системного нет, может вернуть хорошее значение.
+    let systemByLocationIndexPath = collectionView.indexPathForItem(at: session.location(in: collectionView))
+        
+    // Здесь хардкор. Берём локацию и ищем в радиусе 100 точек ближайшую ячейку.
+    var customByLocationIndexPath: IndexPath? = nil
+    if systemByLocationIndexPath == nil {
+        var closetCell: UICollectionViewCell? = nil
+        var closetCellVerticalDistance: CGFloat = 100
+        let tapLocation = session.location(in: collectionView)
             
-            // Здесь хардкор. Берём локацию и ищем в радиусе 100 точек ближайшую ячейку.
-            var customByLocationIndexPath: IndexPath? = nil
-            if systemByLocationIndexPath == nil {
-                var closetCell: UICollectionViewCell? = nil
-                var closetCellVerticalDistance: CGFloat = 100
-                let tapLocation = session.location(in: collectionView)
-                
-                for indexPath in collectionView.indexPathsForVisibleItems {
-                    guard let cell = collectionView.cellForItem(at: indexPath) else { continue }
-                    let cellCenterLocation = collectionView.convert(cell.center, to: collectionView)
-                    let verticalDistance = abs(cellCenterLocation.y - tapLocation.y)
-                    if closetCellVerticalDistance > verticalDistance {
-                        closetCellVerticalDistance = verticalDistance
-                        closetCell = cell
-                    }
-                }
-                
-                if let cell = closetCell {
-                    customByLocationIndexPath = collectionView.indexPath(for: cell)
-                }
+        for indexPath in collectionView.indexPathsForVisibleItems {
+            guard let cell = collectionView.cellForItem(at: indexPath) else { continue }
+            let cellCenterLocation = collectionView.convert(cell.center, to: collectionView)
+            let verticalDistance = abs(cellCenterLocation.y - tapLocation.y)
+            if closetCellVerticalDistance > verticalDistance {
+                closetCellVerticalDistance = verticalDistance
+                closetCell = cell
             }
+        }
             
-            // Вернём значение в порядке приоритета.
-            return passedIndexPath ?? systemByLocationIndexPath ?? customByLocationIndexPath
+        if let cell = closetCell {
+            customByLocationIndexPath = collectionView.indexPath(for: cell)
+        }
+    }
+        
+    // Вернём значение в порядке приоритета.
+    return passedIndexPath ?? systemByLocationIndexPath ?? customByLocationIndexPath
 }
 ```
 
-Можем улучшить код для обновления интерфейса:
+Улучшим код для обновления интерфейса:
 
 ```swift
 func collectionView(_ collectionView: UICollectionView, dropSessionDidUpdate session: UIDropSession, withDestinationIndexPath destinationIndexPath: IndexPath?) -> UICollectionViewDropProposal {
-
+        
     guard let _ = getDestinationIndexPath(system: destinationIndexPath, session: session) else { return .init(operation: .forbidden) }
     return .init(operation: .move, intent: .insertAtDestinationIndexPath)
 }
 ```
 
-Обратите внимание: метод поможет только с дропом. Если используете `.insertAtDestinationIndexPath`, не получится переопределить, как будут расступаться ячейки.
-
-## Проблемы
-
-Большинство проблем связано с коллекцией, а именно с лейаутом. Например, есть такая распространённая проблема - при попытке сбросить ячейку последней FlowLayout запросит несуществующие атрибуты ячейки. Когда ячейки расступаются, лейаут рисует ячейку внутри, а при дропе получается ячеек больше, чем моделей в Data Source. Это решается переопределением метода в `UICollectionViewFlowLayout`:
-
-```swift
-override func layoutAttributesForItem(at indexPath: IndexPath) -> UICollectionViewLayoutAttributes? {
-   if let countItems = collectionView?.numberOfItems(inSection: indexPath.section) {
-       if countItems == indexPath.row {
-            // If ask layout cell which not isset,
-            // shouldn't call super.
-            return nil
-       }
-   }
-   return super.layoutAttributesForItem(at: indexPath)
-}
-```
-
-`.insertAtDestinationIndexPath` работает плохо, если тянуть ячейку из одной коллекции в другую. Приложение крашнется при драге за пределы первой секции, это связано с лейаутом. У таблиц проблем не ловил.
+Обратите внимание: метод поможет только с дропом. Если используете `.insertAtDestinationIndexPath`, не получится переопределить как будут расступаться ячейки.

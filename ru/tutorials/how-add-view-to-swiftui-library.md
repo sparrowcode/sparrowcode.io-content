@@ -1,10 +1,8 @@
-Библиотека в Xcode предоставляет доступ к SwiftUI View, модификаторам (modifiers), изображениям и т.д. Вы можете перетянуть или кликнуть дважды по выбранному элементу, чтобы добавить View в свой код.
+Библиотека в Xcode предоставляет доступ к SwiftUI View, модификаторам `modifiers`, изображениям и т. д. Вы можете перетянуть выбранный элемент или кликнуть по нему дважды, чтобы добавить `View` в код.
 
 ![Xcode View Library](https://cdn.sparrowcode.io/tutorials/how-add-view-to-swiftui-library/xcode_library.png)
 
-## Кастомная View
-
-Сделаем кастомную вью, которую будем добавлять в библиотеку. Я сделаю профиль пользователя. Пример модели:
+Сделаем кастомную вью, которую будем добавлять в библиотеку. Я создам профиль пользователя. Пример модели:
 
 ```swift
 struct User {
@@ -40,13 +38,11 @@ struct UserProfileView: View {
 }
 ```
 
-Результат:
+А вот результат:
 
 ![UserProfile_Preview](https://cdn.sparrowcode.io/tutorials/how-add-view-to-swiftui-library/user_profile_preview.png)
 
-## Добавляем в библиотеку
-
-Создаем файл `UserProfileLibrary.swift`. Определим структуру, которая наследуется от [LibraryContentProvider](https://developer.apple.com/documentation/developertoolssupport/librarycontentprovider?changes=latest_minor).
+Создаём файл `UserProfileLibrary.swift`. Сначала определим структуру, которая наследуется от [LibraryContentProvider](https://developer.apple.com/documentation/developertoolssupport/librarycontentprovider?changes=latest_minor).
 
 ```swift
 //filename: UserProfileLibrary.swift
@@ -72,16 +68,15 @@ struct UserProfileLibrary: LibraryContentProvider {
 }
 ```
 
-C помощью `LibraryContentProvider` добавляем кастомные View в библиотеку Xcode.
-Перейдем в `ContentView.swift` файл и добавим пользователя.
+Потом с помощью `LibraryContentProvider` добавляем кастомные View в библиотеку Xcode.
+И теперь перейдём в `ContentView.swift` файл и добавим пользователя.
 
 [UserProfileLibrary](https://cdn.sparrowcode.io/tutorials/how-add-view-to-swiftui-library/user_profile_library.mov)
 
 Есть ограничения:
-
-1. Нельзя добавить описание к своей View, поэтому поле справа пустое — **No Details**.
-2. Нельзя добавить иконку.
-3. При добавлении View в код, добавляется заранее _прописанное_ значение. В нашем случае это структура `User()`:
+- Нельзя добавить описание к своей View, поэтому поле справа остаётся пустым — **No Details**.
+- Нельзя добавить иконку.
+- Когда добавляем View в код, добавляется также заранее _прописанное_ значение. В нашем случае это структура `User()`:
 
 ```swift
 UserProfileView(
@@ -93,5 +88,5 @@ UserProfileView(
 )
 ```
 
-Надеюсь в будущих версиях можно будет добавить описание и иконку.
+Надеюсь, в будущих версиях мы сможем добавлять описание и иконку.
 Проект из туториала можно [скачать](https://cdn.sparrowcode.io/tutorials/how-add-view-to-swiftui-library/MyApp.zip).

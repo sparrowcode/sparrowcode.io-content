@@ -1,14 +1,14 @@
-You control three indentations - `imageEdgeInsets`, `titleEdgeInsets` and `contentEdgeInsets`. More often than not, your task comes down to setting symmetrical-opposite values.
+You control three indents - `imageEdgeInsets`, `titleEdgeInsets` and `contentEdgeInsets`. Most often, the task comes down to setting symmetric-opposite values, I'll explain below this confusion.
 
-Before we dive in, take a look at [example project](https://cdn.sparrowcode.io/tutorials/edge-insets-uibutton/example-project.zip). Each slider is responsible for a specific indent and you can combine them. In the video I set the background color to red, the icon color to yellow, and the title color to blue.
+Before diving into the process, take a look at [example project](https://cdn.sparrowcode.io/tutorials/edge-insets-uibutton/example-project.zip). Each slider is responsible for a specific indent - you can combine them. The settings in the video are as follows: background color - red, icon color - yellow, and title - blue.
 
 [Edge Insets UIButton Example Project Preview](https://cdn.sparrowcode.io/tutorials/edge-insets-uibutton/edge-insets-uibutton-example-preview.mov)
 
-Indent between the header and the icon `10pt`. When you get it, make sure you control the result or it's random. At the end of the tutorial you'll know how it works.
+Indent the header and icon by `10pt`. When you get it, see if you can control the result or if it's random. At the end of the tutorial you will know how it works.
 
-## contentEdgeInsets
+## `contentEdgeInsets`
 
-It behaves predictably. It adds indents around the header and icon. If you set negative values, the indentation will decrease. Code:
+The property behaves predictably and adds indents around the header and icon. If you set negative values, the indentation will decrease. Code:
 
 ```swift
 // I know about the abbreviated entry
@@ -20,19 +20,17 @@ previewButton.contentEdgeInsets.bottom = 5
 
 ![contentEdgeInsets](https://cdn.sparrowcode.io/tutorials/edge-insets-uibutton/content-edge-insets.png)
 
-Indentations have been added around the content. They are added proportionally and affect only the size of the button. The practical sense is to expand the clickable area if the button is small.
+Indentations appeared around the content. They are added proportionally and affect only the size of the button. They are needed to expand the clickable area if the button is small.
 
-## imageEdgeInsets and titleEdgeInsets
+## `imageEdgeInsets` and `titleEdgeInsets`
 
-I put them in one section for a reason. More often than not, the task will boil down to adding indents symmetrically on one side, and reducing them on the other. That sounds complicated, but we'll figure it out.
+I put them in one section for a reason. More often than not, the task will boil down to adding indents symmetrically on one side and reducing them on the other. This sounds complicated, but we'll figure it out.
 
-Let's add an indent between the picture and the header, let's say `10pt`. The first idea is to add an indent through the property `imageEdgeInsets`:
+Let's add an indent between the picture and the header `10pt`. The first idea is to add an indent through the property `imageEdgeInsets`:
 
 [imageEdgeInsets space between icon and title](https://cdn.sparrowcode.io/tutorials/edge-insets-uibutton/image-edge-insets-space-icon-title.mov)
 
-The behavior is more complicated. The indentation is added, but it doesn't affect the size of the button. If it did, the problem would be solved.
-
-The `titleEdgeInsets` partner works the same way - it doesn't change button size. It makes sense to add an indent for the header, but the opposite value. It will look like this:
+The indentation is added, but it doesn't affect the size of the button and the icon goes behind the button. The partner `titleEdgeInsets` works the same way - it doesn't change button size. Let's add indent for title, but opposite to the icon indent. It will look like this:
 
 ```swift
 previewButton.imageEdgeInsets.left = -10
@@ -41,16 +39,16 @@ previewButton.titleEdgeInsets.left = 10
 
 This is the symmetry I wrote about above.
 
->`imageEdgeInsets` and `titleEdgeInsets` do not change the size of the button. But `contentEdgeInsets` does.
+>`imageEdgeInsets` and `titleEdgeInsets` do not change the size of the button. But `contentEdgeInsets` does. Remember that, and you won't have any problems with proper indentation.
 
-Keep this in mind and you won't have any more problems with correct indentation. Let's complicate the task by putting an icon to the right of the header.
+Let's complicate the task by putting an icon to the right of the header.
 
 ```swift
 let buttonWidth = previewButton.frame.width
 let imageWidth = previewButton.imageView?.frame.width ?? .zero
 
 // Shift the header to the left edge. 
-// The indent on the left was `imageWidth`, so reducing by this value will get the left edge.
+// The indent on the left was `imageWidth`. If you decrease by this value, you get the left edge.
 previewButton.titleEdgeInsets = UIEdgeInsets(
     top: 0, 
     left: -imageWidth, 
@@ -58,8 +56,8 @@ previewButton.titleEdgeInsets = UIEdgeInsets(
     right: imageWidth
 )
 
-// We move the icon to the right edge.
-// The default indent was 0, so the new Y-point will be the width - width of the icon.
+// Move the icon to the right edge.
+// The default indent was 0, so the new Y point will have the width of the icon.
 previewButton.imageEdgeInsets = UIEdgeInsets(
     top: 0, 
     left: buttonWidth - imageWidth, 
@@ -76,15 +74,14 @@ My library [SparrowKit](https://github.com/ivanvorobei/SparrowKit) already has a
 button.titleImageInset = 8
 ```
 
-Works for RTL localization. If there is no picture, no indentation is added. The developer only needs to set the indent value.
-
-![Deprecated imageEdgeInsets и titleEdgeInsets](https://cdn.sparrowcode.io/tutorials/edge-insets-uibutton/depricated.png)
+Works for RTL localization. If there is no image, no indent is added. The developer only needs to set the indent value.
 
 ## Deprecated
 
-I should point out, with iOS 15 our friends are labeled `derritated`.
+Note, with iOS 15 our friends are marked `deprecated`.
 
-A few years of property will work. Apple recommends using the configuration. Let's see what survives - the configuration, or good old `padding`.
+![Deprecated imageEdgeInsets and titleEdgeInsets](https://cdn.sparrowcode.io/tutorials/edge-insets-uibutton/depricated.png)
 
-That's all for now. For a visual dabble, download [example project](https://cdn.sparrowcode.io/tutorials/edge-insets-uibutton/example-project.zip).
+Properties will work for several years. Apple recommends using the configuration. Let's see what survives - the configuration or good old `padding`.
 
+That's all for now. For a visual dabble, download [sample project](https://cdn.sparrowcode.io/tutorials/edge-insets-uibutton/example-project.zip).
