@@ -13,6 +13,8 @@
 
 Внутренний уровень стоит по умолчанию для свойств и методов и предоставляет доступ внутри модуля. Явно указывать `internal` не требуется.
 
+![Internal](https://cdn.sparrowcode.io/tutorials/access-control/internal.png)
+
 Эти записи равнозначны:
 
 ```swift
@@ -31,15 +33,21 @@ internal var number = 3
 
 >За пределами исходного модуля `public`-классы не могут быть суперклассами, а их свойства и методы нельзя переопределять.
 
+![Public](https://cdn.sparrowcode.io/tutorials/access-control/public.png)
+
 ## open
 
 Похож на `public` - разрешает доступ из других модулей. Используется только для классов, их свойств и методов.
 
->`open`-классы наследуются в определяющем и импортирующем модуле, свойства и методы класса переопределяются также подклассами.
+>Как в определяющем, так и в импортирующем модуле `open`-классы могут быть суперклассами, а их свойства и методы могут переопределяться подклассами.
+
+![Open](https://cdn.sparrowcode.io/tutorials/access-control/open.png)
 
 ## private
 
 Ограничивает доступ к свойствам и методам внутри структур, классов и перечислений. `private` — самый строгий уровень, он скрывает вспомогательную логику.
+
+![Private](https://cdn.sparrowcode.io/tutorials/access-control/private.png)
 
 ### Для свойств
 
@@ -98,7 +106,7 @@ struct Test {
 }
 ```
 
-Теперь получим `answer` не напрямую:
+Проверяем:
 
 ```swift
 test.showAnswer() // Лима
@@ -161,6 +169,8 @@ test.getResult() // "Ответ верный!"
 ## fileprivate
 
 Похож на `private`. Доступ к объектам этого уровня есть только у объектов из того же файла. `fileprivate` пригодится, когда нам нужны дополнительные объекты или вычисления в рамках одного файла.
+
+![Fileprivate](https://cdn.sparrowcode.io/tutorials/access-control/fileprivate.png)
 
 ### Отличие от `private`
 
@@ -390,3 +400,85 @@ let pen = Pen(name: "pen")
 ```
 
 Свойства и методы класса `WritingTool` (`open` уровень) могут быть переопределены классами `Pen` и `Pencil`. Свойства и методы класса `Pencil` (`public` уровень) могут быть переопределены только его подклассами в модуле `Tools`.
+
+## Кортежи
+
+Уровень доступа кортежа вычисляется на основе уровней входящих в него типов и получает самый строгий уровень из всех входящих в него.
+
+Рассмотрим пример:
+
+```swift
+struct A {
+    
+    let one = 1
+    private let two = 2
+    var toupleOneTwo: (Int, Int)
+    
+    init () {
+        self.toupleOneTwo = (one, two)
+    }
+}
+
+let a = A()
+a.one // 1
+a.toupleOneTwo // (.0 1, .1 2)
+```
+
+В стурктуре `A` свойство `one` имеет уровень `internal`, а свойство `two` - `private`. Кортеж `toupleOneTwo` доступен снаружи структуры `A`. Для `toupleOneTwo` мы указали тип `(Int, Int)`, и передали значения свойств `one` и `two`, а не попытались обратиться снаружи к `private` свойству `two`. 
+
+Перейдём копределению `Int`:
+
+```swift
+@frozen public struct Int : FixedWidthInteger, SignedInteger { 
+	
+	// ... 
+}
+```
+
+Из этого определения следует, что кортеж `toupleOneTwo` имеет уровень `public`. Тогда он должен быть доступен вне определяющего модуля. Но сама структура `A`, как и её экземпляр `a`, имеет уровень `internal`, из-за чего она не будет доступна в другом модуле, как и свойство `toupleOneTwo`.
+
+Другой пример. Создадим две структуры: `Letters` - `fileprivate`, `Numbers`- `private`.
+
+```swift
+fileprivate struct Letters {
+	
+    var userLetter: Character
+}
+
+private struct Numbers {
+	
+	var userNumber: UInt8
+}
+```
+
+Теперь напишем `internal` структуру `Info`, свойство `userInfo` которой имеет тип `(Letters, Numbers)`.
+
+```swift
+struct Info {
+	
+	var userInfo: (Letters, Numbers)
+}
+```
+
+Мы получили ошибку "property must be declared fileprivate because its type uses a private type". В данном случае для файла, в котором мы объявили структуры `Letters` и `Numbers`, их уровни (`fileprivate` и `private`) равнозначны - предоставляют доступ только внутри файла. Поэтому `userInfo` не получает уровень `private` автоматически, хоть он и строже `fileprivate`. Мы можем использовать любой из этих двух уровней для `userInfo`.
+
+```swift
+struct Info {
+	
+	private var userInfo: (Letters, Numbers)
+}
+```
+
+```swift
+struct Info {
+	
+	fileprivate var userInfo: (Letters, Numbers)
+}
+```
+
+Теперь можно создать экземпляр структуры `Info`. Он должен быть уровня `private` или `fileprivate`.
+
+```swift
+private let info1 = (Letters(userLetter: "A"), Numbers(userNumber: 1))
+fileprivate let info2 = (Letters(userLetter: "B"), Numbers(userNumber: 2))
+```
