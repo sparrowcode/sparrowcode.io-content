@@ -2,7 +2,7 @@
 
 ![async/await Preview](https://cdn.sparrowcode.io/tutorials/async-await/preview.png)
 
-## Как пользоваться
+## Как устроено
 
 Код для скачивания изображения с `URLSession`:
 
