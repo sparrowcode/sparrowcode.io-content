@@ -5,12 +5,13 @@
         "category" : "swiftui",
         "author" : "wmorgue",
         "editors" : ["svtnck"],
+        "translator": "svtnck",
         "keywords" : [
             "xcode",
             "library",
             "LibraryContentProvider"
         ],
-        "updated_date": "07.03.2022",
+        "updated_date": "03.04.2022",
         "added_date": "03.02.2022"
     },
     "edge-insets-uibutton" : {
@@ -24,7 +25,7 @@
             "imageEdgeInsets",
             "contentEdgeInsets"
         ],
-        "updated_date" : "06.02.2022",
+        "updated_date" : "03.04.2022",
         "added_date" : "05.02.2022"
     },
     "sf-symbols-3" : {
@@ -53,7 +54,7 @@
             "await",
             "actor"
         ],
-        "updated_date": "08.02.2022",
+        "updated_date": "03.04.2022",
         "added_date": "08.02.2022"
     },
     "product-page-optimization-alternative-icons" : {
@@ -132,7 +133,7 @@
         "description" : "How to change the order of cells in a collection and a table. How to move cells to another collection. How to move multiple cells in a group.",
         "category" : "uikit",
         "author" : "ivanvorobei",
-        "translator": "wmorgue",
+        "translator": "svtnck",
         "keywords" : [
             "UICollectionViewDragDelegate",
             "UICollectionViewDropDelegate",
@@ -141,7 +142,7 @@
             "UIDrag",
             "UIGestureRecognizer"
         ],
-        "updated_date" : "17.02.2022",
+        "updated_date" : "03.04.2022",
         "added_date" : "17.02.2022"
     },
     "searchable-swiftui" : {

@@ -1,15 +1,15 @@
-`async/await` is a new approach for working with multithreading in Swift. It simplifies writing complex call chains and makes code readable. First the theory, and at the end of the tutorial we'll write a tool to search for apps in the App Store using `async/await`.
+`async/await` - a new approach for working with multithreading in Swift. It simplifies writing complex call chains and makes code readable. First we'll cover the theory, and at the end of the tutorial we'll write a tool to search for apps in the App Store using `async/await`.
 
 ![async/await Preview](https://cdn.sparrowcode.io/tutorials/async-await/preview.png)
 
-## Usage
+## How it works
 
-Let's look at a classic example of downloading an image using `URLSession`:
+Code for downloading an image from `URLSession`:
 
 ```swift
 typealias Completion = (Result<UIImage, Error>) -> Void
 
-loadc loadImage(for url: URL, completion: @escaping Completion) {
+func loadImage(for url: URL, completion: @escaping Completion) {
     let urlRequest = URLRequest(url: url)
     let task = URLSession.shared.dataTask(
         with: urlRequest,
@@ -20,7 +20,7 @@ loadc loadImage(for url: URL, completion: @escaping Completion) {
             }
 
             guard let response = response as? HTTPURLResponse else {
-                completion(.failure(URLError(.badServerResponse))
+                completion(.failure(URLError(.badServerResponse)))
                 return
             }
 
@@ -48,7 +48,7 @@ extension UIImageView {
 
     func setImage(url: URL) {
         loadImage(for: url, completion: { [weak self] result in
-            DispatchQueueue.main.async { [weak self] in
+            DispatchQueue.main.async { [weak self] in
                 switch result {
                 case .success(let image):
                     self?.image = image
@@ -62,25 +62,25 @@ extension UIImageView {
 }
 ```
 
-Let's break down the problems:
-- Be careful that ``completion`` is called once - when the result is ready.
-- Don't forget to switch to the main thread. Constructs `[weak self]` and `guard let self = self else { return }` appear.
-- It's hard to undo a load operation. For example, if we work with a table cell.
+What we keep in mind: 
+- The `completion` should be called once - when the result is ready.
+- Don't forget to switch to the main thread. The constructs `[weak self]` and `guard let self = self else { return }` appear.
+- It's hard to undo the load operation if we're working with a table cell.
 
-Let's write a new version of the function using `async/await`. Apple has taken care and added an asynchronous API for `URLSession` to get data from the network:
+Let's write a new function with `async/await`. Apple took care of us and added an asynchronous API for `URLSession` to get data from the network:
 
 ```swift
 func data(for request: URLRequest) async throws -> (Data, URLResponse)
 ```
 
-The ``async`` keyword means that the function only works in an asynchronous context. The `throws` keyword means that the asynchronous function may produce an error. If not, `throws` must be removed. Based on the Apple function, let's write an asynchronous version of ``loadImage(for url: URL)``:
+The `async` keyword means that the function only works in asynchronous context. The keyword `throws` means that the asynchronous function may produce an error. If not, `throws` needs to be removed. Let's take an Apple function and use it to write an asynchronous version of `loadImage(for url: URL)`:
 
 ```swift
 func loadImage(for url: URL) async throws -> UIImage {
     let urlRequest = URLRequest(url: url)
     let (data, response) = try await URLSession.shared.data(for: urlRequest)
 
-    let response = response as? HTTPURLResponse else {
+    guard let response = response as? HTTPURLResponse else {
         throw URLError(.badServerResponse)
     }
 
@@ -96,7 +96,7 @@ func loadImage(for url: URL) async throws -> UIImage {
 }
 ```
 
-The function is called using `Task` - the base unit of an asynchronous task. We'll talk more about this structure below. Let's look at the implementation of `setImage(url: URL)`:
+The function is called with `Task` - the basic unit of an asynchronous task. We'll talk about it later, but for now let's look at the implementation of `setImage(url: URL)`:
 
 ```swift
 extension UIImageView {
@@ -115,21 +115,21 @@ extension UIImageView {
 }
 ```
 
-Let's look at the diagram for the `setImage(url: URL)` function:
+Now let's look at the scheme for the `setImage(url: URL)` function:
 
 ![How to work setImage(url: URL)](https://cdn.sparrowcode.io/tutorials/async-await/set-image-scheme.png)
 
-And `loadImage(for: url)`:
+and `loadImage(for: url)`:
 
 ![How to work loadImage(for: URL)](https://cdn.sparrowcode.io/tutorials/async-await/load-image-scheme.png)
 
-When the execution reaches `await` the function **may** (or not) stop. The system will execute the `loadImage(for: url)` method, the thread is not blocked waiting for the result. When the method finishes executing, the system will resume the function - continue executing `self.image = image`. We updated the UI without switching the thread: this equation will *automatically* work on the main thread.
+When execution reaches `await`, the function **may** or may not stop. The system will execute the `loadImage(for: url)` method, the thread will not be blocked waiting for the result. When the method finishes executing, the system will resume the function - continue executing `self.image = image`. We have updated the UI without switching the thread: this equation will automatically work on the main thread.
 
-We got readable, safe code. No need to remember the thread or catch memory leaks due to `self` capture errors. The `Task` wrapper makes it easy to undo the operation.
+That's how we got readable and safe code. No need to remember the thread or worry about possible memory leaks due to `self` capture errors. Thanks to the `Task` wrapper, the operation is easy to undo.
 
-If the system sees that there is no higher priority task, the yellow task `Task` will be executed immediately. With `await` we do not know when the task will start and end. The task may be executed by different threads.
+If the system sees that there are no higher priority tasks, the yellow `Task` will be executed immediately. With `await` we don't know when the task will start and end. The task may be executed by different threads.
 
-Let's write a `async` function based on the normal function on `clousers`, using `withCheckedContinuation`. The function will return an error via `withCheckedThrowingContinuation`. Example:
+Let's write an `async` function based on the normal function on `clousers`, using `withCheckedContinuation`. The function will return an error through `withCheckedThrowingContinuation`. Example:
 
 ```swift
 func loadImage(for url: URL) async throws -> UIImage {
@@ -141,7 +141,7 @@ func loadImage(for url: URL) async throws -> UIImage {
 }
 ```
 
-Use the function to switch explicitly to another thread. `continuation.resume` needs to be called only once, otherwise it crashes.
+Use the function to switch explicitly to another thread. You can only call `continuation.resume` once, otherwise it crashes.
 
 `async` knows how to run two asynchronous functions in parallel:
 
@@ -150,7 +150,6 @@ func loadUserPage(id: String) async throws -> (UIImage, CertificateModel) {
     let user = try await loadUser(for: id)
     async let avatarImage = loadImage(user.avatarURL)
     async let certificates = loadCertificates(for: user)
-
     return (try await avatarImage, try await certificates)
 }
 ```
@@ -159,15 +158,15 @@ The `loadImage` and `loadCertificates` functions run in parallel. The value will
 
 ## Task
 
-`Task` is the base unit of an asynchronous task, the place where asynchronous code is called. Asynchronous functions are executed as part of `Task`. It is an analogue of a thread. The `Task` is a structure:
+`Task` is the basic unit of an asynchronous task, the place where asynchronous code is called. Asynchronous functions are executed as part of `Task`. It is analogous to a thread. `Task` is a structure:
 
 ```swift
 struct Task<Success, Failure> where Success : Sendable, Failure : Error
 ```
 
-The result can be a value or an error of a particular type. The `Never` type of error means that the task will not return an error. The task can be in state `executed`, `paused` and `completed`. Tasks are started with priorities `.background`, `.hight`, `.low`, `.medium`, `.userInitiated` , `.utility`.
+The result can be a value or an error of a particular type. The error type `Never` means that the task will not return an error. The task can have different states: `Running`, `Paused` and `Finished`, and they are started with priorities `.background`, `.hight`, `.low`, `.medium`, `.userInitiated` , `.utility`.
 
-With a task instance you can get results asynchronously, cancel and check cancellation of the task:
+With a task instance, you can get results asynchronously, undo and check the undo of a task:
 
 ```swift
 let downloadFileTask = Task<Data, Error> {
@@ -181,23 +180,23 @@ if downloadFileTask.isCancelled {
     print("The download had already been cancelled")
 } else {
     downloadFileTask.cancel()
-    // Помечаем задачу как cancel
+    // Mark the task as cancel
     print("The download is canceled...")
 }
 ```
 
-Calling `cancel()` on the parent will call `cancel()` on the offspring. Calling `cancel()` is not an undo, but a **request** to undo. The cancel event depends on the implementation of the `Task` block.
+Calling `cancel()` on the parent will call `cancel()` on the offspring. Calling `cancel()` is not a cancellation, but a **request** to cancel. The cancel event depends on the implementation of the `Task` block.
 
-You can call another task from a task and arrange complex chains. Call `viewWillAppear()` for an example:
+You can call another task from a task and organize complex chains. Let's call `viewWillAppear()` for an example:
 
 ```swift
 Task {
     let cardsTask = Task<[CardModel], Error>(priority: .userInitiated) {
-        /* query for user card models */
+        /* request for user card models */
         return []
     }
     let userInfoTask = Task<UserInfo, Error>(priority: .userInitiated) {
-        /* query the model about the user */
+        /* query for a model about a user */
         return UserInfo()
     }
 
@@ -216,24 +215,24 @@ Task {
 }
 ```
 
-A GCD analogy for this code that describes what happens:
+The analogy on the GCD for this code, which describes what happens:
 
-```swift.
-DispatchQueueue.main.async {
+```swift
+DispatchQueue.main.async {
     var cardsResult: Result<[CardModel], Error>?
     var userInfoResult: Result<UserInfo, Error>?
 
     let dispatchGroup = DispatchGroup()
 
     dispatchGroup.enter()
-    DispatchQueueue.main.async {
-        cardsResult = .success([/* request for cards */])
+    DispatchQueue.main.async {
+        cardsResult = .success([/* card request */])
         dispatchGroup.leave()
     }
 
     dispatchGroup.enter()
-    DispatchQueueue.main.async {
-        /* request for a model about the user */
+    DispatchQueue.main.async {
+        /* query for a model about a user */
         userInfoResult = .success(UserInfo())
         dispatchGroup.leave()
     }
@@ -243,8 +242,8 @@ DispatchQueueue.main.async {
            case let .success(userInfo) = userInfoResult {
             self.updateUI(with: cards, and: userInfo)
 
-            // yes! not DispatchQueueue.global(qos: .background)
-            DispatchQueueue.main.async { in
+            // yes! Not DispatchQueue.global(qos: .background)
+            DispatchQueue.main.async { in
                 self.saveUserInfoIntoCache(userInfo: userInfo)
             }
         } else if case let .failure(error) = cardsResult { in
@@ -256,9 +255,9 @@ DispatchQueueue.main.async {
 }
 ```
 
-The `Task` by default inherits the priority and context from the parent task. If there is no parent, the current `actor` has one. By creating a Task in `viewWillAppear()`, we implicitly call it in the main thread. The `cardsTask` and `userInfoTask` will be called on the main thread, because `Task` inherits this from the parent task. We didn't save `Task`, but the content will work and `self` will be grabbed heavily. If we remove the controller before we close it with `dismiss()`, the `Task` code will continue to run. But we can keep a reference to our task and undo it:
+The `Task` by default inherits the priority and context from the parent task, and if there is no parent, it inherits from the current `actor`. By creating a Task in `viewWillAppear()`, we implicitly call it in the main thread. The `cardsTask` and `userInfoTask` will be called on the main thread because `Task` inherits this from the parent task. We didn't save the `Task`, but the content will work and `self` will be captured heavily. If we remove the controller before we close it with `dismiss()`, the `Task` code will continue to run. But we can keep a reference to our task and undo it:
 
-```swift.
+```swift
 final class MyViewController: UIViewController {
 
     private var loadingTask: Task<Void, Never>?
@@ -266,7 +265,7 @@ final class MyViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         if notDataYet {
-            { {
+            loadingTask = Task {
                 // ...
             }
         }
@@ -279,7 +278,7 @@ final class MyViewController: UIViewController {
 }
 ```
 
-``cancel()`` does not cancel the execution of ``Task``. You need to cancel as early as possible in the desired way, so that no unnecessary code is executed:
+`cancel()` does not cancel execution of `Task`. You need to cancel as early as possible in the desired way, so that unnecessary code is not executed:
 
 ```swift
 loadingTask = Task {
@@ -288,7 +287,7 @@ loadingTask = Task {
         return []
     }
     let userInfoTask = Task<UserInfo, Error>(priority: .userInitiated) {
-        /* query the model about the user */
+        /* query for a model about a user */
         return UserInfo()
     }
 
@@ -298,7 +297,7 @@ loadingTask = Task {
         guard !Task.isCancelled else { return }
         let userInfo = try await userInfoTask.value
 
-        guard ! Task.isCancelled else { return }
+        guard !Task.isCancelled else { return }
         updateUI(with: userInfo, and: cards)
 
         Task(priority: .background) {
@@ -312,16 +311,16 @@ loadingTask = Task {
 
 ```
 
-To ensure that the task does not inherit either context or priority, use ``Task.detached``:
+To ensure that the task does not inherit either context or priority, use `Task.detached`:
 
-```swift.
+```swift
 Task.detached(priority: .background) {
     await saveUserInfoIntoCache(userInfo: userInfo)
-    { await cleanupInCache()
+    await cleanupInCache()
 }
 ```
 
-Useful to apply when the task is independent of the parent task. Save to cache, example from WWDC:
+Useful when the task is independent of the parent task. Here is an example of cache saving from  WWDC:
 
 ```swift
 func storeImageInDisk(image: UIImage) async {
@@ -344,9 +343,9 @@ func downloadImageAndMetadata(imageNumber: Int) async throws -> DetailedImage {
 }
 ```
 
-Undoing `downloadImageAndMetadata` after successfully loading an image should not undo the save. With ``Task`` the save would be canceled. When selecting `Task` / `Task.detached`, you need to understand if the subtask depends on the parent task in your case.
+Canceling `downloadImageAndMetadata` after successfully loading an image should not cancel the save. With `Task` the save would be canceled. When selecting `Task` / `Task.detached`, you need to understand whether the subtask depends on the parent task in your case.
 
-If you need to run an array of operations (for example: load a list of images by an array of URLs) use `TaskGroup`, Create it with `withTaskGroup/withThrowingTaskGroup`:
+If you need to run an array of operations (e.g. load a list of images by an array of URLs), use `TaskGroup`. Create it with `withTaskGroup/withThrowingTaskGroup`:
 
 ```swift
 func loadUserImages(for id: String) async throws -> [UIImage] {
@@ -360,7 +359,7 @@ func loadUserImages(for id: String) async throws -> [UIImage] {
         }
 
         var images: [UIImage] = []
-        for try await images in group {
+        for try await image in group {
             images.append(image)
         }
 
@@ -373,7 +372,7 @@ func loadUserImages(for id: String) async throws -> [UIImage] {
 
 ## actor
 
-`actor` is a new data type, which is needed for synchronization and prevents race condition. The compiler checks it at compile time:
+`actor` is a new data type. It is needed for synchronization and prevents race condition. The compiler checks it at compile time:
 
 ```swift
 actor ImageDownloader {
@@ -381,11 +380,11 @@ actor ImageDownloader {
 }
 
 let imageDownloader = ImageDownloader()
-imageDownloader.cache["image"] = UIImage() // compile error
+imageDownloader.cache["image"] = UIImage() // compilation error
 // error: actor-isolated property 'cache' can only be referenced from inside the actor
 ```
 
-To use `cache`, refer to it in `async` context. But not directly, but through a method:
+To use `cache`, refer to it in the `async` context. But not directly, but through a method like this:
 
 ```swift
 actor ImageDownloader {
@@ -405,11 +404,11 @@ Task {
 
 The `actor` decides the data race. All synchronization logic works under the hood. Incorrect actions will cause a compiler error, as in the example above.
 
-By properties `actor` is an object between `class` and `struct` - it is a reference value type, but you cannot inherit from it. Great for writing a service.
+By properties, `actor` is an object between `class` and `struct`. It's a reference value type, but you can't inherit from it. It's great for writing a service.
 
-The asynchrony system is built so that we stop thinking in terms of threads. `actor` is a wrapper that generates a `class` that subscribes to the `Actor` protocol + a pinch of checks:
+The asynchrony system is built so that we stop thinking in terms of threads. `actor` is a wrapper that generates `class`, which subscribes to the `Actor` protocol, and a pinch of checks:
 
-``swift``.
+```swift
 public protocol Actor: AnyObject, Sendable {
     nonisolated var unownedExecutor: UnownedSerialExecutor { get }
 }
@@ -419,23 +418,23 @@ final class ImageDownloader: Actor {
 }
 ```
 
-Where:
-- `Sendable` is a protocol-notation that the type is safe to use in a parallel environment
-- `nonisolated` - disables the security check for the property, in other words we can use the property anywhere in the code without `await`
-- `UnownedSerialExecutor` - weak reference to the protocol `SerialExecutor
+Useful to know:
+- `Sendable` - protocol-marking that the type is safe to work in a parallel environment
+- `nonisolated` disables the security check for the property, meaning we can use the property anywhere in the code without `await`
+- The `UnownedSerialExecutor` is a weak reference to the `SerialExecutor` protocol
 
-The `SerialExecutor: Executor` from `Executor` has a method `func enqueue(_ job: UnownedJob)` that performs tasks. When we write this:
+The `SerialExecutor: Executor` from `Executor` has a method `func enqueue(_ job: UnownedJob)` that performs tasks. First we write this:
 
-``swift.
+```swift
 let imageDownloader = ImageDownloader()
 Task {
     await imageDownloader.setImage(for: "image", image: UIImage())
 }
 ```
 
-Semantically, the following happens:
+And then semantically the following happens:
 
-```swift.
+```swift
 let imageDownloader = ImageDownloader()
 Task {
     imageDownloader.unownedExecutor.enqueue {
@@ -444,14 +443,14 @@ Task {
 }
 ```
 
-By default, Swift generates a standard `SerialExecutor` for custom actors. Custom ``SerialExecutor`` implementations switch threads. This is how `MainActor` works.
+By default, Swift generates a standard `SerialExecutor` for custom actors. Custom implementations of `SerialExecutor` switch threads. This is how the `MainActor` works.
 
-The `MainActor` is the `Actor` that the `Executor` switches to the main thread. You cannot create it, but you can refer to its instance `MainActor.shared`.
+The `MainActor` is the `Actor` with the `Executor` switching to the main thread. You cannot create it, but you can refer to its instance `MainActor.shared`.
 
 ```swift
 extension MainActor {
     func runOnMain() {
-        // it prints something like:
+        // prints something like:
         // <_NSMainThread: 0x600003cf04c0>{number = 1, name = main}
         print(Thread.current)
     }
@@ -462,7 +461,7 @@ Task(priority: .background) {
 }
 ```
 
-When writing actors, we were creating a new instance. However, Swift allows you to create global actors via `protocol GlobalActor` if you add the `@globalActor` attribute. Apple has already done this for `MainActor`, so you can explicitly say on which actor the function should work:
+When writing actors, we created a new instance. However, Swift allows you to create global actors via `protocol GlobalActor` if you add the `@globalActor` attribute. Apple has already done this for `MainActor`, so you can explicitly tell which actor the function should work on:
 
 ```swift
 @MainActor func updateUI() {
@@ -474,7 +473,7 @@ Task(priority: .background) {
 }
 ```
 
-Similar to ``MainActor``, you can create global actors:
+Similar to `MainActor`, you can create global actors:
 
 ```swift
 @globalActor actor ImageDownloader {
@@ -487,37 +486,38 @@ Similar to ``MainActor``, you can create global actors:
 }
 ```
 
-You can mark functions and classes - then the default methods will also have the attribute. Apple marked `UIView`, `UIViewController` as `@MainActor`, so calls to update the interface after the service works correctly.
+You can mark functions and classes - then methods will have attributes by default. Apple marked `UIView`, `UIViewController` as `@MainActor`, so calls to update the interface after the service works correctly.
 
 ## Practice
 
-Let's write a tool to search for applications in the App Store, which will show the position. Service, which will search for applications:
+Let's write a tool to search for applications in the App Store. It will show the position of the service to search for applications:
 
 ```
-GET https://itunes.apple.com/search?entity=software?term=<request>
+GET https://itunes.apple.com/search?entity=software?term=<query>
 {
-    trackName: "app name"
+    trackName: "Application name"
     trackId: 42
     bundleId: "com.apple.developer"
     trackViewUrl: "application link"
-    artworkUrl512: "application icon link"
-    artistName: "title of the app"
-    screenshotUrls: ["link to the first screenshot", "to the second screenshot"],
-    formattedPrice: "the formatted price of the app",
+    artworkUrl512: "link to the application icon"
+    artistName: "application name"
+    screenshotUrls: ["link to the first screenshot", "to the second one"],
+    formattedPrice: "formatted application price",
     averageUserRating: 0.45,
 
-    // a bunch of other information, but we'll omit that
+    // There's a lot of other information, but we'll skip that.
 }
 ```
 
 Data model:
+
 ```swift
-struct iTunesResultsEntry: Decodable {
+struct ITunesResultsEntry: Decodable {
 
     let results: [ITunesResultEntry]
 }
 
-struct iTunesResultEntry: Decodable {
+struct ITunesResultEntry: Decodable {
 
     let trackName: String
     let trackId: Int
@@ -531,7 +531,7 @@ struct iTunesResultEntry: Decodable {
 }
 ```
 
-It's not convenient to work with such structures, and we don't need to depend on the server model. Let's add a layer:
+It's inconvenient to work with such structures, and you don't want to depend on the server model. Let's add a layer:
 
 ```swift
 struct AppEnity {
@@ -550,21 +550,21 @@ struct AppEnity {
 }
 ```
 
-Let's create a service with `actor`:
+Let's create a service through `actor`:
 
 ```swift
 actor AppsSearchService {
 
-    func search(with query: String) async throws -> [AppEnity] {
+    func search(with query: String) async throws -> [AppEnity]  {
         let url = buildSearchRequest(for: query)
         let urlRequest = URLRequest(url: url)
         let (data, response) = try await URLSession.shared.data(for: urlRequest)
 
-        Let response = response as? HTTPURLResponse, response.statusCode == 200 else {
+        guard let response = response as? HTTPURLResponse, response.statusCode == 200 else {
             throw URLError(.badServerResponse)
         }
 
-        let results = try JSONDecoder().decode(iTunesResultsEntry.self, from: data)
+        let results = try JSONDecoder().decode(ITunesResultsEntry.self, from: data)
 
         let entities = results.results.enumerated().compactMap { item -> AppEnity? in
             let (position, entry) = item
@@ -577,9 +577,9 @@ actor AppsSearchService {
 ```
 
 
-To build `URL` use `URLComponents` - beautiful, modular and will get rid of problems with URL coding:
+To build `URL` use `URLComponents` - it is beautiful, modular and avoid problems with the URL-encoding:
 
-` `swift
+```swift
 extension AppsSearchService {
 
     private static let baseURLString: String = "https://itunes.apple.com"
@@ -594,10 +594,10 @@ extension AppsSearchService {
         ]
 
         guard let url = components?.url else {
-            fatalError("developer error: unable to create url for search query: query=\"\(query)\")
+            fatalError("developer error: cannot build url for search request: query=\"\(query)\"")
         }
 
-        return url }
+        return url
     }
 }
 ```
@@ -605,21 +605,21 @@ extension AppsSearchService {
 Convert data model from server to local:
 
 ```swift
-AppsSearchService extension {
+extension AppsSearchService {
 
     private func convert(entry: ITunesResultEntry, position: Int) -> AppEnity? {
-        let appStoreURL = URL(string: entry.trackViewUrl) else {
+        guard let appStoreURL = URL(string: entry.trackViewUrl) else {
             return nil
         }
 
-        guard let iconURL = URL(string: entry.artworkUrl512) else { return nil }
+        guard let iconURL = URL(string: entry.artworkUrl512) else {
             return nil
         }
 
         return AppEnity(
             id: entry.trackId,
             bundleId: entry.bundleId,
-            position: entry,
+            position: position,
             name: entry.trackName,
             developer: entry.artistName,
             rating: entry.averageUserRating,
@@ -631,7 +631,7 @@ AppsSearchService extension {
 }
 ```
 
-The URLs from the images come in.
+URLs from images are coming in.
 
 The cell table is configured by scrolling. In order not to download the icon every time, let's save it to the cache. Programmers dump logic to libraries like [Nuke](https://github.com/kean/Nuke), but with `async/await` we will have our own `Nuke`:
 
@@ -653,26 +653,26 @@ actor ImageLoaderService {
 
         updateCache(image: image, and: url)
 
-        return lookupCache(for: url) ? image
+        return lookupCache(for: url) ?? image
     }
 
     private func doLoadImage(for url: URL) async throws -> UIImage {
-        let urlRequest = URLRequest(for url: url)
+        let urlRequest = URLRequest(url: url)
 
         let (data, response) = try await URLSession.shared.data(for: urlRequest)
 
-        Let response = response as? HTTPURLResponse, response.statusCode == 200 else {
+        guard let response = response as? HTTPURLResponse, response.statusCode == 200 else {
             throw URLError(.badServerResponse)
         }
 
         guard let image = UIImage(data: data) else {
-            throw UURLRLError(.cannotDecodeContentData)
+            throw URLError(.cannotDecodeContentData)
         }
 
         return image
     }
 
-    private lookupCache(for url: URL) -> UIImage? {
+    private func lookupCache(for url: URL) -> UIImage? {
         return cache.object(forKey: url as NSURL)
     }
 
@@ -687,9 +687,9 @@ actor ImageLoaderService {
 Let's make it more convenient:
 
 ```swift
-UIImageView extension {
+extension UIImageView {
 
-    private private let imageLoader = ImageLoaderService(cacheCountLimit: 500)
+    private static let imageLoader = ImageLoaderService(cacheCountLimit: 500)
 
     @MainActor
     func setImage(by url: URL) async throws {
@@ -702,7 +702,7 @@ UIImageView extension {
 }
 ```
 
-The `imageLoader` will move the job to the background thread. Although `setImage` is taken out of the main thread, after `await` execution **may** continue to the backgrounder. We fix this by adding `@MainActor`.
+The `imageLoader` will move the job to the backgroud thread. Although `setImage` is taken out of the main thread, after `await` execution **may** continue to the backgrounder. We fix this by adding `@MainActor`.
 The caching is done. Let's do an undo. Let's look at the cell implementation (I'm skipping the layout):
 
 ```swift
@@ -739,12 +739,12 @@ final class AppSearchCell: UITableViewCell {
 }
 ```
 
-If the icon is not in the cache, it will be downloaded from the web, and the loading stat will be displayed on the screen during the loading process. If the loading is not finished and the user has scrolled and the picture is no longer needed - the loading will be canceled.
+If the icon is not in the cache, it will be downloaded from the network and the loading state will be displayed on the screen during the download. If the loading is not finished and the user has scrolled and the picture is no longer needed, the loading will be canceled.
 
-Prepare a `ViewController` (I'm skipping the details of working with the table):
+Let's prepare a `ViewController` (I'm skipping the details of working with the table):
 
 ```swift
-Final class AppSearchViewController: UIViewController {
+final class AppSearchViewController: UIViewController {
 
     enum State {
         case initial
@@ -791,13 +791,13 @@ Final class AppSearchViewController: UIViewController {
 }
 ```
 
-I'll describe a delegate to respond to the search:
+I will describe a delegate to respond to a search:
 
 ```swift
 extension AppSearchViewController: UISearchControllerDelegate, UISearchBarDelegate {
 
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        let query = searchBar.text else {
+        guard let query = searchBar.text else {
             return
         }
 
@@ -824,13 +824,13 @@ extension AppSearchViewController: UISearchControllerDelegate, UISearchBarDelega
 }
 ```
 
-Press "Search" - cancel the previous search, start a new one. In the `searchingTask` do not forget to check that the search is still relevant. The complex concept fits into 15 lines of code.
+Press "Search" - cancel the previous search, start a new one. In the `searchingTask`, don't forget to check that the search is still relevant. A complex concept fits into 15 lines of code.
 
-## Backwards compatibility
+## Backwards Compatibility.
 
-Works for iOS 13 because the feature requires a new runtime.
+Works for iOS 13 because the chip requires a new runtime.
 
-Apple brought an asynchronous API to HealthKit with iOS 13, CoreData with iOS 15 and the new StoreKit 2 only offers an asynchronous interface. The workout save code has gotten simpler:
+Apple brought asynchronous API to HealthKit with iOS 13, CoreData with iOS 15 and the new StoreKit 2 offers only asynchronous interface. The workout save code has gotten simpler:
 
 ```swift
 struct RunWorkout {
@@ -886,7 +886,7 @@ func saveWorkoutToHealthKit(runWorkout: RunWorkout, completion: @escaping (Resul
 }
 ```
 
-On `async/await`:
+At `async/await`:
 
 ```swift
 func saveWorkoutToHealthKitAsync(runWorkout: RunWorkout) async throws {
@@ -904,27 +904,27 @@ func saveWorkoutToHealthKitAsync(runWorkout: RunWorkout) async throws {
     try await store.save(workout)
     try await store.addSamples(runWorkout.heartRateSamples, to: workout)
 
-    if ! runWorkout.route.isEmpty {
+    if !runWorkout.route.isEmpty {
         try await routeBuilder.insertRouteData(runWorkout.route)
         try await routeBuilder.finishRoute(with: workout, metadata: nil)
     }
 }
 ```
 
-## References.
+## Helpful materials
 
-[Download sample project](https://cdn.sparrowcode.io/tutorials/async-await/app-store-search.zip): Practice adding a new App Store page detail screen, solve the problem with loading screenshots and proper undo if the user quickly closes the page.
+[Download sample project](https://cdn.sparrowcode.io/tutorials/async-await/app-store-search.zip): Practice adding a new App Store page detail screen, solve the problem with loading screenshots and proper undo if the user quickly closes the page
 
-[Articles about async/await](https://www.andyibanez.com/posts/modern-concurrency-in-swift-introduction/): There are even more examples of how to use async/await in this series of articles. For example, `@TaskLocal` and other useful trivia are covered.
+[Async/await article series](https://www.andyibanez.com/posts/modern-concurrency-in-swift-introduction/): Lots of examples of how to use async/await. For example, `@TaskLocal` is covered, there are other useful trivia as well.
 
-[Under the hood actor design](https://habr.com/ru/company/otus/blog/588540/): If you want to learn more about implementing actors under the hood
+[How Actors Work](https://habr.com/ru/company/otus/blog/588540/): If you want to know more about implementing actors under the hood
 
 [Swift source code](https://github.com/apple/swift/tree/main/stdlib/public/Concurrency): If you want to learn the truth, check out the code
 
 WWDC session:
 
-[Protect mutable state with Swift actors](https://developer.apple.com/wwdc21/10133): Apple's video tutorial about actors. They tell you what problems it solves, and how to use it.
+[Protect mutable state with Swift actors](https://developer.apple.com/wwdc21/10133): Apple's video tutorial about actors. They tell you what problems it solves and how to use it.
 
-[Explore structured concurrency in Swift](https://developer.apple.com/wwdc21/10134): Apple's video tutorial on structured concurrency, specifically `Task', `Task.detached', `TaskGroup`, and operation priorities.
+[Explore structured concurrency in Swift](https://developer.apple.com/wwdc21/10134): Apple's video tutorial on structured concurrency, specifically `Task', `Task.detached', `TaskGroup', and operation priorities
 
-[Meet async/await in Swift](https://developer.apple.com/wwdc21/10132): Apple's video tutorial on how async/await works. There are visual diagrams.
+[Meet async/await in Swift](https://developer.apple.com/wwdc21/10132): A video tutorial from Apple on how async/await works. There are illustrative diagrams.
