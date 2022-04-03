@@ -59,21 +59,6 @@
         "updated_date" : "27.12.2021",
         "added_date" : "19.11.2021"
     },
-    "resources-for-ios-developer" : {
-        "title" : "Ресурсы для iOS разработчика",
-        "description" : "Подборка полезных ссылок для iOS разработчиков. Структурирована по формату материала. Есть раздел с русскими ресурсами.",
-        "category" : "compilation",
-        "author" : "ivanvorobei",
-        "editors" : ["svtnck"],
-        "keywords" : [
-            "Ресурсы для iOS разработчиков",
-            "туториалы по iOS разработке",
-            "swift разработка",
-            "разработка iOS приложений"
-        ],
-        "updated_date" : "18.03.2022",
-        "added_date" : "25.11.2021"
-    },
     "how-to-delete-userdefaults-on-macos-catalyst" : {
         "title" : "Как очистить UserDefaults для Mac Catalyst",
         "description" : "Как очистить данные для приложения Catalyst включая AppGroup, Realm и UserDefaults.",
