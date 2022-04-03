@@ -95,17 +95,5 @@
                 "link": "https://github.com/liubowolkova"
             }
         ]
-    },
-    
-    "leonidbogolubov": {
-        "name": "Леонид Боголюбов",
-        "description": "Автор AppTractor.ru",
-        "avatar": "https://apptractor.ru/wp-content/uploads/2016/08/cropped-logo-2.jpg",
-        "buttons": [
-            {
-                "name": "AppTractor.ru",
-                "link": "https://apptractor.ru"
-            }
-        ]
     }
 }

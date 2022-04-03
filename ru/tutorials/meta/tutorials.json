@@ -187,17 +187,5 @@
         ],
         "updated_date": "25.03.2022",
         "added_date": "22.03.2022"
-    },
-    "shazamkit" : {
-        "title" : "ShazamKit",
-        "description" : "Создадим свой Shazam с помощью нового фрейиворка Apple.",
-        "category" : "development",
-        "author" : "leonidbogolubov",
-        "editors" : ["ivanvorobei"],
-        "keywords" : [
-            "shazamkit"
-        ],
-        "updated_date": "31.03.2022",
-        "added_date": "29.03.2022"
     }
 }
