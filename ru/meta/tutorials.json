@@ -138,7 +138,7 @@
     },
     "async-await" : {
         "title" : "Асинхронность с async/await/actor",
-        "description" : "Разберём async, await, actor. Напишем тузлу, используя новые инструменты.",
+        "description" : "Разберём async, await, actor. Напишем тузлу для поиска приложений в App Store, используя новые инструменты.",
         "category" : "development",
         "author" : "somenkovnikita",
         "editors" : ["ivanvorobei"],
