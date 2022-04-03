@@ -68,18 +68,6 @@
         "updated_date" : "08.02.2022",
         "added_date" : "08.02.2022"
     },
-    "meet-storekit-2" : {
-        "title" : "StoreKit 2",
-        "description" : "Apple redesigned the shopping logic and rewrote StoreKit. The great update of this year.",
-        "category" : "storekit",
-        "author" : "ivanvorobei",
-        "translator": "wmorgue",
-        "keywords" : [
-            "StoreKit"
-        ],
-        "updated_date" : "10.02.2022",
-        "added_date" : "10.02.2022"
-    },
     "mastering-progressview-swiftui" : {
         "title" : "ProgressView in SwiftUI",
         "description" : "How ProgressView works. How to customize the appearance: spinner and progress bar.",
@@ -184,22 +172,6 @@
         ],
         "updated_date" : "18.03.2022",
         "added_date" : "24.02.2021"
-    },
-    "swift-56" : {
-        "title" : "What's new in Swift 5.6",
-        "description" : "Type placeholders, unavailable checks, new protocol and more.",
-        "category" : "development",
-        "author" : "wmorgue",
-        "translator": "wmorgue",
-        "keywords" : [
-            "swift 5.6",
-            "unavailable",
-            "existential any",
-            "type placeholders",
-            "CodingKeyRepresentable"
-        ],
-        "updated_date": "04.03.2022",
-        "added_date": "04.03.2022"
     },
     "redacted-modifier-swiftui" : {
         "title" : "The Redacted View Modifier in SwiftUI",

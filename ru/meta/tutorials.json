@@ -15,17 +15,6 @@
         "updated_date" : "03.04.2022",
         "added_date" : "11.07.2021"
     },
-    "meet-storekit-2" : {
-        "title" : "StoreKit 2",
-        "description" : "Apple пересмотрела логику покупок и переписала StoreKit. Буду много хвалить - крутой апдейт этого года.",
-        "category" : "storekit",
-        "author" : "ivanvorobei",
-        "keywords" : [
-            
-        ],
-        "updated_date" : "27.12.2021",
-        "added_date" : "25.09.2021"
-    },
     "uisheetpresentationcontroller" : {
         "title" : "UISheetPresentationController",
         "description" : "В iOS 15 появились sheet-контроллеры. Их можно перетаскивать с изменением высоты. Вы встречали эти контроллеры в приложениях «Карты» и «Акции».",
@@ -187,22 +176,6 @@
         ],
         "updated_date": "07.03.2022",
         "added_date": "01.03.2022"
-    },
-    "swift-56" : {
-        "title" : "Что нового в Swift 5.6",
-        "description" : "Неявный тип, ключевое слово any, протокол `CodingKeyRepresentable` и атрибут недоступности.",
-        "category" : "development",
-        "author" : "wmorgue",
-        "editors" : ["ivanvorobei"],
-        "keywords" : [
-            "swift 5.6",
-            "unavailable",
-            "existential any",
-            "type placeholders",
-            "CodingKeyRepresentable"
-        ],
-        "updated_date": "04.03.2022",
-        "added_date": "04.03.2022"
     },
     "keyboard-shortcut-swiftui" : {
         "title" : "Сочетания клавиш в SwiftUI",
