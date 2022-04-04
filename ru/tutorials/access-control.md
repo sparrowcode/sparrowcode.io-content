@@ -25,7 +25,7 @@ internal var number = 3
 
 `internal` объектам не нужны дополнительные разрешения и ограничения.
 
-![Internal](https://cdn.sparrowcode.io/tutorials/access-control/internal.pdf)
+![Объекты классов A, B и C можно создать в новом файле исходного модуля, но нельзя использовать в другом модуле.](https://cdn.sparrowcode.io/tutorials/access-control/internal.pdf)
 
 ## public
 
@@ -33,7 +33,7 @@ internal var number = 3
 
 >За пределами исходного модуля `public`-классы не могут быть суперклассами, а их свойства и методы нельзя переопределять.
 
-![Public](https://cdn.sparrowcode.io/tutorials/access-control/public.pdf)
+![Классы A, B и C не могут быть суперклассами. Их объекты можно создать в новом файле исходного и другого модуля, но за пределами исходного нельзя переопределять свойства и методы.](https://cdn.sparrowcode.io/tutorials/access-control/public.pdf)
 
 ## open
 
@@ -41,13 +41,13 @@ internal var number = 3
 
 >Как в определяющем, так и в импортирующем модуле `open`-классы могут быть суперклассами, а их свойства и методы могут переопределяться подклассами.
 
-![Open](https://cdn.sparrowcode.io/tutorials/access-control/open.pdf)
+![Объекты классов A, B и C можно создать как в новом файле исходного модуля, так и в другом модуле.](https://cdn.sparrowcode.io/tutorials/access-control/open.pdf)
 
 ## private
 
 Ограничивает доступ к свойствам и методам внутри структур, классов и перечислений. `private` — самый строгий уровень, он скрывает вспомогательную логику.
 
-![Private](https://cdn.sparrowcode.io/tutorials/access-control/private.pdf)
+![prop1 может быть использован в другом файле исходного модуля, а private prop2 только в классе, в котором его создали.](https://cdn.sparrowcode.io/tutorials/access-control/private.pdf)
 
 ### Для свойств
 
@@ -170,7 +170,7 @@ test.getResult() // "Ответ верный!"
 
 Похож на `private`. Доступ к объектам этого уровня есть только у объектов из того же файла. `fileprivate` пригодится, когда нам нужны дополнительные объекты или вычисления в рамках одного файла.
 
-![Fileprivate](https://cdn.sparrowcode.io/tutorials/access-control/fileprivate.pdf)
+![prop1 может быть использован в другом файле исходного модуля, а fileprivate prop2 только в файле, в котором его создали.](https://cdn.sparrowcode.io/tutorials/access-control/fileprivate.pdf)
 
 ### Отличие от `private`
 
