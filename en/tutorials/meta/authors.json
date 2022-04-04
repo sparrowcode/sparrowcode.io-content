@@ -40,6 +40,21 @@
             }
         ]
     },
+    "somenkovnikita": {
+        "name": "Никита Соменков",
+        "description": "iOS разработчик. Развиваю свой проект, и тоже за нативный дизайн",
+        "avatar": "https://cdn.sparrowcode.io/authors/somenkovnikita.jpg",
+        "buttons": [
+            {
+                "name": "GitHub",
+                "link": "https://github.com/somenkovnikita"
+            },
+            {
+                "name" : "Projects",
+                "link" : "https://apps.somenkov.ru"
+            }
+        ]
+    },
     "sparrowcode": {
         "name": "SparrowCode Editorial",
         "description": "We do articles and opensource for developers.",

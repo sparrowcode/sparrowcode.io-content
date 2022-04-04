@@ -40,8 +40,8 @@
             "await",
             "actor"
         ],
-        "updated_date": "03.04.2022",
-        "added_date": "08.02.2022"
+        "updated_date" : "03.04.2022",
+        "added_date" : "08.02.2022"
     },
     "drag-and-drop-part-1" : {
         "title" : "Drag и Drop",
