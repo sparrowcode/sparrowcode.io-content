@@ -15,7 +15,7 @@ struct ContentView: View {
 
 Теперь по нажатию двух клавиш `Command` + `R` выведем сообщение в консоль.
 
-Первый параметр модификатора `keyboardShortcut` должен быть экземпляром структуры [KeyEquivalent](https://developer.apple.com/documentation/swiftui/keyequivalent?changes=_5). `KeyEquivalent` наследуется от протокола `ExpressibleByExtendedGraphemeClusterLiteral` и создаёт экземпляр `KeyEquivalent` со строковым литералом в 1 символ.
+Первый параметр модификатора `keyboardShortcut` должен быть экземпляром структуры [KeyEquivalent](https://developer.apple.com/documentation/swiftui/keyequivalent?changes=_5), он наследуется от протокола `ExpressibleByExtendedGraphemeClusterLiteral` и создаёт экземпляр `KeyEquivalent` со строковым литералом в 1 символ.
 
 ```swift
 init(_ key: KeyEquivalent, modifiers: EventModifiers = .command)
