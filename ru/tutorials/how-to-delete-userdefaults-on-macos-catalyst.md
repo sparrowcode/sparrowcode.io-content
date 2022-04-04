@@ -19,7 +19,7 @@ defaults delete by.ivanvorobei.apps.debts key
 ```swift
 // Создается вот так
 // UserDefaults(suiteName: "Custom")
-defaults delete suit.name
+defaults delete Custom
 ```
 
 ## AppGroup
