@@ -13,8 +13,6 @@
 
 Внутренний уровень стоит по умолчанию для свойств и методов и предоставляет доступ внутри модуля. Явно указывать `internal` не требуется.
 
-![Internal](https://cdn.sparrowcode.io/tutorials/access-control/internal.png)
-
 Эти записи равнозначны:
 
 ```swift
@@ -26,6 +24,8 @@ internal var number = 3
 ```
 
 `internal` объектам не нужны дополнительные разрешения и ограничения.
+
+![Internal](https://cdn.sparrowcode.io/tutorials/access-control/internal.png)
 
 ## public
 
@@ -430,8 +430,8 @@ a.toupleOneTwo // (.0 1, .1 2)
 
 ```swift
 @frozen public struct Int : FixedWidthInteger, SignedInteger { 
-	
-	// ... 
+
+    // ... 
 }
 ```
 
@@ -447,7 +447,7 @@ fileprivate struct Letters {
 
 private struct Numbers {
 	
-	var userNumber: UInt8
+    var userNumber: UInt8
 }
 ```
 
@@ -456,7 +456,7 @@ private struct Numbers {
 ```swift
 struct Info {
 	
-	var userInfo: (Letters, Numbers)
+    var userInfo: (Letters, Numbers)
 }
 ```
 
@@ -465,7 +465,7 @@ struct Info {
 ```swift
 struct Info {
 	
-	fileprivate var userInfo: (Letters, Numbers)
+    fileprivate var userInfo: (Letters, Numbers)
 }
 ```
 
@@ -480,7 +480,7 @@ let info = Info(userInfo: (Letters(userLetter: "A"), Numbers(userNumber: 1)))
 ```swift
 struct Info {
 	
-	private var userInfo: (Letters, Numbers)
+    private var userInfo: (Letters, Numbers)
 }
 ```
 
