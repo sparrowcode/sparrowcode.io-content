@@ -32,6 +32,17 @@
         ]
     },
     {
+        "developer_name" : "Alexandr Sibirtsev",
+        "github_username" : "rastaman111",
+        "apps" : [
+            {
+                "id" : "1586640348",
+                "name" : "SoundBar - аудио плеер",
+                 "added_date" : "18.11.2021"
+            }
+        ]
+     },
+      {
         "developer_name" : "Oleg Brailean",
         "github_username" : "baksogen",
         "apps" : [
