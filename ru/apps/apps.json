@@ -43,6 +43,37 @@
       ]
    },
    {
+      "developer_name":"Виктор Грушевский",
+      "github_username":"Viktorianec",
+      "apps":[
+         {
+            "id":"1473622434",
+            "name":"План-финансы",
+            "added_date":"05.04.2022"
+         },
+         {
+            "id":"1017699433",
+            "name":"Знаток ЧГК",
+            "added_date":"05.04.2022"
+         },
+         {
+            "id":"1029476822",
+            "name":"Словоман - игра в слова",
+            "added_date":"05.04.2022"
+         },
+         {
+            "id":"1088581020",
+            "name":"Магазин для ВК",
+            "added_date":"05.04.2022"
+         },
+         {
+            "id":"1574916839",
+            "name":"TGStickers - Telegram stickers",
+            "added_date":"05.04.2022"
+         }
+      ]
+   },
+   {
       "developer_name":"Oleg Brailean",
       "github_username":"baksogen",
       "apps":[
@@ -82,16 +113,5 @@
             "added_date":"05.04.2022"
          }
       ]
-   },
-  {
-        "developer_name" : "Кирилл Телегин",
-        "github_username" : "cyruscart",
-        "apps" : [
-            {
-                "id" : "1605099572",
-                "name" : "Военспорт - НФП",
-                "added_date" : "15.01.2022"
-            }
-        ]
-    }
+   }
 ]
