@@ -5,21 +5,21 @@
         "category" : "swiftui",
         "author" : "wmorgue",
         "editors" : ["svtnck"],
-        "translator": "svtnck",
+        "translator" : "svtnck",
         "keywords" : [
             "xcode",
             "library",
             "LibraryContentProvider"
         ],
-        "updated_date": "03.04.2022",
-        "added_date": "03.02.2022"
+        "updated_date" : "03.04.2022",
+        "added_date" : "03.02.2022"
     },
     "edge-insets-uibutton" : {
         "title" : "Edge Insets for UIButton",
         "description" : "How to add an indent between the picture and the header in a button. How to place the icon to the right of the header.",
         "category" : "uikit",
         "author" : "ivanvorobei",
-        "translator": "svtnck",
+        "translator" : "svtnck",
         "keywords" : [
             "UIButton",
             "imageEdgeInsets",
@@ -34,7 +34,7 @@
         "category" : "development",
         "author" : "somenkovnikita",
         "editors" : ["ivanvorobei"],
-        "translator": "svtnck",
+        "translator" : "svtnck",
         "keywords" : [
             "async",
             "await",
@@ -44,11 +44,11 @@
         "added_date" : "08.02.2022"
     },
     "drag-and-drop-part-1" : {
-        "title" : "Drag и Drop",
+        "title" : "Drag and Drop",
         "description" : "How to change the order of cells in a collection and a table. How to move cells to another collection. How to move multiple cells in a group.",
         "category" : "uikit",
         "author" : "ivanvorobei",
-        "translator": "svtnck",
+        "translator" : "svtnck",
         "keywords" : [
             "UICollectionViewDragDelegate",
             "UICollectionViewDropDelegate",
@@ -59,5 +59,31 @@
         ],
         "updated_date" : "03.04.2022",
         "added_date" : "17.02.2022"
+    },
+    "how-to-delete-userdefaults-on-macos-catalyst" : {
+        "title" : "How to clear UserDefaults for Mac Catalyst",
+        "description" : "How to clear data for Catalyst application including AppGroup, Realm and UserDefaults.",
+        "category" : "development",
+        "author" : "ivanvorobei",
+        "translator" : "svtnck",
+        "keywords" : [
+            "UserDefaults",
+            "Catalyst"
+        ],
+        "updated_date" : "04.04.2022",
+        "added_date" : "11.12.2021"
+    },
+    "keyboard-shortcut-swiftui" : {
+        "title" : "Key combinations in SwiftUI",
+        "description" : "Get to know the `keyboardShortcut` modifier. Let's add modifiers for keys `.command`, `.option`, `.shift`.",
+        "category" : "swiftui",
+        "author" : "wmorgue",
+        "editors" : ["ivanvorobei"],
+        "translator" : "svtnck",
+        "keywords" : [
+            "keyboard shortcut"
+        ],
+        "updated_date" : "04.04.2022",
+        "added_date" : "14.03.2022"
     }
 }
