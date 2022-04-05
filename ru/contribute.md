@@ -4,7 +4,7 @@
 
 Пример заполнения:
 
-```json
+```swift
 {
   "developer_name" : "Ivan Vorobei",
   "github_username" : "ivanvorobei",
