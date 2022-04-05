@@ -28,7 +28,7 @@ All pages are available at [sparrowcode.io/en](https://sparrowcode.io/en) & [spa
 
 ## Нашел опечатку в туториале
 
-Туториалы лежат в публичном репозитории на GitHub, вы можете сделать Pull Request и получить плюсов в карму.
+Туториалы лежат в [публичном репозитории на GitHub](https://github.com/sparrowcode/Website), вы можете сделать Pull Request и получить плюсов в карму.
 
 ## Есть ошибки в переводе
 
