@@ -30,5 +30,46 @@
                 "added_date" : "07.02.2022"
             }
         ]
+    },
+    {
+        "developer_name" : "Oleg Brailean",
+        "github_username" : "baksogen",
+        "apps" : [
+            {
+                "id" : "1529716191",
+                "name" : "ListenBook Pro: bookplayer",
+                "added_date" : "05.04.2022"
+            },
+            {
+                "id" : "891797540",
+                "name" : "MP3 Audiobook Player",
+                "added_date" : "05.04.2022"
+            },
+            {
+                "id" : "889580711",
+                "name" : "MP3 Audiobook Player Pro",
+                "added_date" : "05.04.2022"
+            },
+            {
+                "id" : "1382928700",
+                "name" : "myCarLog Pro",
+                "added_date" : "05.04.2022"
+            },
+            {
+                "id" : "1386377748",
+                "name" : "myCarLog - Car management",
+                "added_date" : "05.04.2022"
+            },
+            {
+                "id" : "576182327",
+                "name" : "TrackChecker: package tracker",
+                "added_date" : "05.04.2022"
+            },
+            {
+                "id" : "1229503218",
+                "name" : "What a color?",
+                "added_date" : "05.04.2022"
+            }
+        ]
     }
 ]
