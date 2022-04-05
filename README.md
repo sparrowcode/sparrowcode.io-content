@@ -1,4 +1,4 @@
-All pages are available at [sparrowcode.io/en](https://sparrowcode.io/en) & [sparrowcode.io/ru](https://sparrowcode.io)
+Страницы доступны на [sparrowcode.io/en](https://sparrowcode.io/en) & [sparrowcode.io/ru](https://sparrowcode.io)
 
 ## Как добавить свое приложение
 
