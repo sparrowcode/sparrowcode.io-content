@@ -25,7 +25,7 @@ internal var number = 3
 
 `internal` объектам не нужны дополнительные разрешения и ограничения.
 
-![Internal](https://cdn.sparrowcode.io/tutorials/access-control/internal.pdf)
+![Объекты классов A, B и C можно создать в новом файле исходного модуля, но нельзя использовать в другом модуле.](https://cdn.sparrowcode.io/tutorials/access-control/internal.pdf)
 
 ## public
 
