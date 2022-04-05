@@ -124,5 +124,16 @@
             "added_date":"05.04.2022"
          }
       ]
-   }
+   },
+   {
+        "developer_name" : "Кирилл Телегин",
+        "github_username" : "cyruscart",
+        "apps" : [
+            {
+                "id" : "1605099572",
+                "name" : "Военспорт - НФП",
+                "added_date" : "05.04.2022"
+            }
+        ]
+    }
 ]
