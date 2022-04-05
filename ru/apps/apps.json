@@ -113,5 +113,16 @@
             "added_date":"05.04.2022"
          }
       ]
+   },
+   {
+      "developer_name":"Иван Изюмкин",
+      "github_username":"izzyumkin",
+      "apps":[
+         {
+            "id":"1500111859",
+            "name":"Расписание занятий - Timetable",
+            "added_date":"05.04.2022"
+         }
+      ]
    }
 ]
