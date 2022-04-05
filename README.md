@@ -1,7 +1,5 @@
 All pages are available at [sparrowcode.io/en](https://sparrowcode.io/en) & [sparrowcode.io/ru](https://sparrowcode.io)
 
-# Вклад в комьюнити
-
 ## Как добавить свое приложение
 
 Добавьте элемент в json [/ru/apps/apps.json](https://github.com/sparrowcode/Website/blob/main/ru/apps/apps.json). Если ваше приложение локализовано, добавье его и в английскую версию [/en/apps/apps.json](https://github.com/sparrowcode/Website/blob/main/en/apps/apps.json).
