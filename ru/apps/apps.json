@@ -1,45 +1,117 @@
 [
-    {
-        "developer_name" : "Иван Воробей",
-        "github_username" : "ivanvorobei",
-        "apps" : [
-            {
-                "id" : "1570676244",
-                "name" : "Долги - Учет расходов",
-                "added_date" : "06.02.2022"
-            }
-        ]
-    },
-    {
-        "developer_name" : "Андрей Филипенков",
-        "github_username" : "kambala-decapitator",
-        "apps" : [
-            {
-                "id" : "482487701",
-                "name" : "Въ умѣ",
-                "added_date" : "07.02.2022"
-            },
-            {
-                "id" : "609753150",
-                "name" : "Арифметические ребусы",
-                "added_date" : "07.02.2022"
-            },
-            {
-                "id" : "644228154",
-                "name" : "Четыре краски",
-                "added_date" : "07.02.2022"
-            }
-        ]
-    },
-    {
-        "developer_name" : "Alexandr Sibirtsev",
-        "github_username" : "rastaman111",
-        "apps" : [
-            {
-                "id" : "1586640348",
-                "name" : "SoundBar - аудио плеер",
-                 "added_date" : "18.11.2021"
-            }
-        ]
-     }
+   {
+      "developer_name":"Иван Воробей",
+      "github_username":"ivanvorobei",
+      "apps":[
+         {
+            "id":"1570676244",
+            "name":"Долги - Учет расходов",
+            "added_date":"06.02.2022"
+         }
+      ]
+   },
+   {
+      "developer_name":"Андрей Филипенков",
+      "github_username":"kambala-decapitator",
+      "apps":[
+         {
+            "id":"482487701",
+            "name":"Въ умѣ",
+            "added_date":"07.02.2022"
+         },
+         {
+            "id":"609753150",
+            "name":"Арифметические ребусы",
+            "added_date":"07.02.2022"
+         },
+         {
+            "id":"644228154",
+            "name":"Четыре краски",
+            "added_date":"07.02.2022"
+         }
+      ]
+   },
+   {
+      "developer_name":"Alexandr Sibirtsev",
+      "github_username":"rastaman111",
+      "apps":[
+         {
+            "id":"1586640348",
+            "name":"SoundBar - аудио плеер",
+            "added_date":"18.11.2021"
+         }
+      ]
+   },
+   {
+      "developer_name":"Виктор Грушевский",
+      "github_username":"Viktorianec",
+      "apps":[
+         {
+            "id":"1473622434",
+            "name":"План-финансы",
+            "added_date":"05.04.2022"
+         },
+         {
+            "id":"1017699433",
+            "name":"Знаток ЧГК",
+            "added_date":"05.04.2022"
+         },
+         {
+            "id":"1029476822",
+            "name":"Словоман - игра в слова",
+            "added_date":"05.04.2022"
+         },
+         {
+            "id":"1088581020",
+            "name":"Магазин для ВК",
+            "added_date":"05.04.2022"
+         },
+         {
+            "id":"1574916839",
+            "name":"TGStickers - Telegram stickers",
+            "added_date":"05.04.2022"
+         }
+      ]
+   },
+   {
+      "developer_name":"Oleg Brailean",
+      "github_username":"baksogen",
+      "apps":[
+         {
+            "id":"1529716191",
+            "name":"ListenBook Pro: bookplayer",
+            "added_date":"05.04.2022"
+         },
+         {
+            "id":"891797540",
+            "name":"MP3 Audiobook Player",
+            "added_date":"05.04.2022"
+         },
+         {
+            "id":"889580711",
+            "name":"MP3 Audiobook Player Pro",
+            "added_date":"05.04.2022"
+         },
+         {
+            "id":"1382928700",
+            "name":"myCarLog Pro",
+            "added_date":"05.04.2022"
+         },
+         {
+            "id":"1386377748",
+            "name":"myCarLog - Car management",
+            "added_date":"05.04.2022"
+         },
+         {
+            "id":"576182327",
+            "name":"TrackChecker: package tracker",
+            "added_date":"05.04.2022"
+         },
+         {
+            "id":"1229503218",
+            "name":"What a color?",
+            "added_date":"05.04.2022"
+         }
+      ]
+   }
 ]
