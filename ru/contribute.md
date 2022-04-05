@@ -1,6 +1,6 @@
 ## Как добавить свое приложение
 
-Добавьте элемент в json `/ru/apps/apps.json`. Если ваше приложение локализовано, добавье его и в английскую версию `/en/apps/apps.json`.
+Добавьте элемент в json [/ru/apps/apps.json](https://github.com/sparrowcode/Website/blob/main/ru/apps/apps.json). Если ваше приложение локализовано, добавье его и в английскую версию [/en/apps/apps.json](https://github.com/sparrowcode/Website/blob/main/en/apps/apps.json).
 
 Пример заполнения:
 
@@ -18,7 +18,7 @@
 }
 ```
 
-Указывайте имя, соответствующее локализации. Например для ru - Иван Воробей, а для en - Ivan Vorobei.
+Указывайте имя, соответствующее локализации. Например для `ru` - *Иван Воробей*, а для `en` - *Ivan Vorobei*.
 
 ## Как добавить отзыв на курс
 
