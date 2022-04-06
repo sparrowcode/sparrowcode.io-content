@@ -2,7 +2,7 @@
 
 ## Как добавить свое приложение
 
-Добавьте элемент в json [/ru/apps/apps.json](https://github.com/sparrowcode/Website/blob/main/ru/apps/apps.json). Если ваше приложение локализовано, добавье его и в английскую версию [/en/apps/apps.json](https://github.com/sparrowcode/Website/blob/main/en/apps/apps.json).
+Добавьте элемент в json [/ru/apps/apps.json](https://github.com/sparrowcode/Website/blob/main/ru/apps/apps.json). Если ваше приложение локализовано, добавьте его и в английскую версию [/en/apps/apps.json](https://github.com/sparrowcode/Website/blob/main/en/apps/apps.json).
 
 Пример заполнения:
 
@@ -32,4 +32,4 @@
 
 ## Есть ошибки в переводе
 
-Мы используем бездушную машину для перевода. Если вы помоджете с переводом - будет круто.
+Мы используем бездушную машину для перевода. Если вы поможете с переводом - будет круто.
