@@ -146,5 +146,16 @@
             "added_date":"05.04.2022"
          }
       ]
+   },
+   {
+      "developer_name":"Дима Остапченко",
+      "github_username":"jeytery",
+      "apps":[
+         {
+            "id":"1589786089",
+            "name":"RoleCards",
+            "added_date":"06.04.2022"
+         }
+      ]
    }
 ]
