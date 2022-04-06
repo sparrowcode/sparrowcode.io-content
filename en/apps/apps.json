@@ -112,14 +112,14 @@
       ]
    },
    {
-        "developer_name" : "Artem Bolotov",
-        "github_username" : "artembolotov",
-        "apps" : [
-            {
-                "id" : "1535523842",
-                "name" : "RedCalendar — Cycle Tracker",
-                "added_date" : "05.04.2022"
-            }
-        ]
-    }
+      "developer_name":"Artem Bolotov",
+      "github_username":"artembolotov",
+      "apps":[
+         {
+            "id":"1535523842",
+            "name":"RedCalendar — Cycle Tracker",
+            "added_date":"05.04.2022"
+         }
+      ]
+   }
 ]
