@@ -85,5 +85,17 @@
         ],
         "updated_date" : "04.04.2022",
         "added_date" : "14.03.2022"
+    },
+    "product-page-optimization-alternative-icons" : {
+        "title" : "Alternative icons for Product Page Optimization",
+        "description" : "How to add alternative icons for A/B tests on the application page.",
+        "category" : "app_store_connect",
+        "author" : "alxrguz",
+        "translator" : "svtnck",
+        "keywords" : [
+            "alternative icons"
+        ],
+        "updated_date" : "07.04.2022",
+        "added_date" : "27.12.2021"
     }
 }

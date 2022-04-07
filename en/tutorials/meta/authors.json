@@ -65,5 +65,20 @@
                 "link": "https://github.com/sparrowcode"
             }
         ]
+    },
+    "alxrguz" : {
+        "name" : "Alexander Guzenko",
+        "description" : "iOS developer. I love native design and bike.",
+        "avatar" : "https://cdn.sparrowcode.io/authors/alxrguz.jpg",
+        "buttons" : [
+            {
+                "name" : "GitHub",
+                "link" : "https://github.com/alxrguz"
+            },
+            {
+                "name" : "App Store",
+                "link" : "https://apps.apple.com/developer/id1480235724"
+            }
+        ]
     }
 }
