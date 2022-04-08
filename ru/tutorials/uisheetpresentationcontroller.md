@@ -1,8 +1,8 @@
-Попытки управлять высотой модальных контроллеров мучают разработчиков уже 4 года. [Библиотеки получаются паршивыми](https://github.com/ivanvorobei/SPStorkController): работают отвратительно или вообще не работают. За попытку обсудить эту тему на планёрке выкинули из окна ведущего инженера `UIKit`. К iOS 15 Тим Кук сжалился и открыл секретное знание.
+Попытки управлять высотой модальных контроллеров мучают разработчиков уже 4 года. Когда я был молодым, сделал [свою версию](https://github.com/ivanvorobei/SPStorkController) на снепшотах. C появлением нативных модальных контроллеров проблема решилось частично. Только с iOS 15 управлять высотой можно из коробки:
 
 [UISheetPresentationController Preview](https://cdn.sparrowcode.io/tutorials/uisheetpresentationcontroller/uisheetpresentationcontroller.mov)
 
-Выглядит круто, кейсов использования много. Чтобы показать дефолтный `sheet`-controller, используйте код:
+Выглядит круто, а кейсов использования много. Чтобы показать дефолтный `sheet`-controller, используйте код:
 
 ```swift
 let controller = UIViewController()
@@ -18,9 +18,17 @@ present(controller, animated: true)
 
 Стопор - это высота, к которой стремится контроллер. Прямо как в пейджинге скролла или когда электрон не на своём энергетическом уровне.
 
-Доступно два стопора: `.medium()` с размером примерно на половину экрана и `.large()`, который повторяет большой модальный контроллер. Если оставить только `.medium()`-стопор, то контроллер откроется на половину экрана и подниматься выше не будет. Установить свою высоту нельзя.
+Доступно два стопора: `.medium()` с размером на половину экрана и `.large()`, который повторяет большой модальный контроллер. Если оставить только `.medium()`-стопор, то контроллер откроется на половину экрана и подниматься выше не будет. Установить свою высоту нельзя, только доступные стопоры. По умолчанию контроллер показывается со стопором `.large()`.
 
-## Переключение между стопорами
+Доступные стопоры указываются так:
+
+```swift
+sheetController.detents = [.medium(), .large()]
+```
+
+Если указать только один стопор, то переключится жестом будет нельзя.
+
+### Переключение между стопорами
 
 Чтобы перейти из одного стопора в другой, используйте код:
 
@@ -30,7 +38,37 @@ sheetController.animateChanges {
 }
 ```
 
-Можно вызывать без блока анимации.
+Можно вызывать без блока анимации. Так же можно переключть стопор без возможности изменять его, для этого меняем доступные стопоры:
+
+```swift
+sheetController.animateChanges {
+    sheetController.detents = [.large()]
+}
+```
+
+Контроллер переключится в `.large()` стопор и не даст переключится жестом в `.medium()`.
+
+## Запретить Dismiss
+
+Если вы хотите зафиксировать контроллер в одном стопоре, без возможности закрыть его, установите `isModalInPresentation` в `true` родителю:
+
+```swift
+navigationController.isModalInPresentation = true
+if let sheetController = nav.sheetPresentationController {
+    sheetController.detents = [.medium()]
+    sheetController.largestUndimmedDetentIdentifier = .medium
+}
+```
+
+## Scroll Контента
+
+Если активен `.medium()`-стопор и контнент контроллера скролится, то если скролить вверх - модальный контрллер перейдет в `.large()` стопор. Контент останется на месте. Чтобы изменить поведение, укажите:
+
+```swift
+sheetController.prefersScrollingExpandsWhenScrolledToEdge = false
+```
+
+Теперь при скроле вверх будет отрабатывать скрол контента, и не будет переключение в большой стопор. Сделать это можно будет только потянув за navigation-бар.
 
 ## Альбомная ориентация
 
@@ -46,12 +84,6 @@ sheetController.prefersEdgeAttachedInCompactHeight = true
 
 Чтобы контроллер учитывал prefered-размер, установите `.widthFollowsPreferredContentSizeWhenEdgeAttached` в `true`.
 
-## Индикатор
-
-Чтобы добавить индикатор вверху контроллера, установите `.prefersGrabberVisible` в `true`. По умолчанию индикатор спрятан. Индикатор не влияет на safe area и layout margins, по крайней мере, на момент написания статьи.
-
-![Grabber for UISheetPresentationController](https://cdn.sparrowcode.io/tutorials/uisheetpresentationcontroller/prefers-grabber-visible.jpg)
-
 ## Затемнение фона
 
 Указываете самый большой стопор, который не нужно затемнять. Всё, что больше этого стопора, будет затемняться. Код:
@@ -60,7 +92,13 @@ sheetController.prefersEdgeAttachedInCompactHeight = true
 sheetController.largestUndimmedDetentIdentifier = .medium
 ```
 
-Указано, что `.medium` затемняться не будет, а всё, что больше, будет. Можно убрать затемнение для самого большого стопора.
+Указано, что `.medium` затемняться не будет, а всё, что больше, будет. Можно убрать затемнение для самого большого стопора. Без затемнения будут доступны кнопки за модальным контроллером - вы сможете взаимодействовать с фоном.
+
+## Индикатор
+
+Чтобы добавить индикатор вверху контроллера, установите `.prefersGrabberVisible` в `true`. По умолчанию индикатор спрятан. Индикатор не влияет на safe area и layout margins, по крайней мере, на момент написания статьи.
+
+![Grabber for UISheetPresentationController](https://cdn.sparrowcode.io/tutorials/uisheetpresentationcontroller/prefers-grabber-visible.jpg)
 
 ## Corner Radius
 
