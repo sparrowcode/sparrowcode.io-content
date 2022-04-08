@@ -16,7 +16,7 @@
         "added_date" : "11.07.2021"
     },
     "uisheetpresentationcontroller" : {
-        "title" : "UISheetPresentationController",
+        "title" : "UISheetPresentationController как в приложении Карты",
         "description" : "В iOS 15 появились sheet-контроллеры. Их можно перетаскивать с изменением высоты. Вы встречали эти контроллеры в приложениях «Карты» и «Акции».",
         "category" : "uikit",
         "author" : "ivanvorobei",
