@@ -16,14 +16,12 @@
 Эти записи равнозначны:
 
 ```swift
-var number = 3 
+var number = 3
+
+internal var number = 3
 ``` 
 
-```swift
-internal var number = 3
-```
-
-`internal` объектам не нужны дополнительные разрешения и ограничения.
+Доступ к объектам с `internal` нельзя получить из другого модуля:
 
 ![Объекты классов `A`, `B` и `C` можно создать в новом файле исходного модуля, но нельзя использовать в другом модуле.](https://cdn.sparrowcode.io/tutorials/access-control/internal.png)
 
@@ -93,7 +91,7 @@ print(test.question) // Столица Перу?
 print(test.answer) // Ошибка: 'answer' is inaccessible due to 'private' protection level
 ```
 
-Мы получили ошибку: `answer` недоступен из-за уровня доступа `private`. Поведение `private`-свойств в классах аналогично. Прочесть свойство `answer` могут только члены структуры `Test`. Создадим метод `showAnswer` для вывода ответа на экран:
+Мы получили ошибку: `answer` недоступен из-за уровня доступа `private`. Поведение `private`-свойств в классах аналогично. Прочесть свойство `answer` могут только члены структуры `Test`. Создадим метод `showAnswer` для вывода ответа на экран:
 
 ```swift
 struct Test {
@@ -239,7 +237,7 @@ struct PrinterConstantsFromOuterFile {
 
 ## Вычисляемые свойства
 
-Вычисляемые свойства используют другие свойства для возврата значения. Такие свойства принято делать `private`- и `public private`-уровней в ряде случаев.
+Вычисляемые свойства используют другие свойства чтобы вернуть значение. Такие свойства принято делать `private`- и `public private`-уровней.
 
 ### Read-only
 
@@ -338,7 +336,7 @@ print(redPencil.inscription) // ""
 Изменим уровень класса `Pencil` на `public`.
 
 ```swift
-public class Pencil: WritingTool { }
+public class Pencil: WritingTool {}
 ```
 
 Получаем ошибку: «Сlass cannot be declared public because its superclass is internal». 
@@ -348,7 +346,7 @@ public class Pencil: WritingTool { }
 Изменим уровень класса `WritingTool` на `public`.
 
 ```swift
-public class WritingTool { }
+public class WritingTool {}
 ```
 
 Теперь можно импортировать модуль в другие проекты и использовать классы `WritingTool` и `Pencil`.
@@ -370,7 +368,7 @@ print(redPencil.inscription) // ""
 В модуле `Tools` изменим уровень класса `WritingTool` на `open`.
 
 ```swift
-open class WritingTool { }
+open class WritingTool {}
 ```
 
 В новом проекте теперь можно создать класс `Pen: WritingTool`.
@@ -393,7 +391,7 @@ class Pen: WritingTool {
 ```swift
 import Tools
 
-class Pen: WritingTool { }
+class Pen: WritingTool {}
 
 let greenPencil = Pencil(name: "green pencil")
 let pen = Pen(name: "pen")
@@ -460,7 +458,7 @@ struct Info {
 }
 ```
 
-Мы получили ошибку "property must be declared fileprivate because its type uses a private type". В данном случае для файла, в котором мы объявили структуры `Letters` и `Numbers`, их уровни (`fileprivate` и `private`) равнозначны - предоставляют доступ только внутри файла. Поэтому `userInfo` не получает уровень `private` автоматически, хоть он и строже `fileprivate`. Мы можем использовать любой из этих двух уровней для `userInfo`.
+Мы получили ошибку "property must be declared fileprivate because its type uses a private type". В данном случае для файла, в котором мы объявили структуры `Letters` и `Numbers`, их уровни `fileprivate` и `private` равнозначны - предоставляют доступ только внутри файла. Поэтому `userInfo` не получает уровень `private` автоматически, хоть он и строже `fileprivate`. Мы можем использовать любой из этих двух уровней для `userInfo`.
 
 ```swift
 struct Info {
@@ -484,4 +482,4 @@ struct Info {
 }
 ```
 
-Получаем ошибку "'Info' initializer is inaccessible due to 'private' protection level". Мы не можем создать экземпляр этой структуры из-за уровня `private` свойства `userInfo`. Типы, входящие в кортеж, позволяют нам сделать этой свойство `private`, но использовать мы его не можем.
+Получаем ошибку «'Info' initializer is inaccessible due to 'private' protection level». Мы не можем создать экземпляр этой структуры из-за уровня `private` свойства `userInfo`. Типы, входящие в кортеж, позволяют нам сделать этой свойство `private`, но использовать мы его не можем.
