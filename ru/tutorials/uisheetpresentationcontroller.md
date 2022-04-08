@@ -82,7 +82,7 @@ sheetController.prefersEdgeAttachedInCompactHeight = true
 
 ![Landscape for UISheetPresentationController](https://cdn.sparrowcode.io/tutorials/uisheetpresentationcontroller/landscape.jpg)
 
-Чтобы контроллер учитывал prefered-размер, установите `.widthFollowsPreferredContentSizeWhenEdgeAttached` в `true`.
+Чтобы контроллер учитывал prefered-размер, установите `widthFollowsPreferredContentSizeWhenEdgeAttached` в `true`.
 
 ## Затемнение фона
 
