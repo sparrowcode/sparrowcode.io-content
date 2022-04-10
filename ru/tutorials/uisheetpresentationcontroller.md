@@ -1,6 +1,6 @@
 Попытки управлять высотой модальных контроллеров мучают разработчиков уже 4 года. Когда я был молодым, сделал [свою версию](https://github.com/ivanvorobei/SPStorkController) на снепшотах. C появлением нативных модальных контроллеров проблема решилось частично. Только с iOS 15 управлять высотой можно из коробки:
 
-[UISheetPresentationController Preview](https://cdn.sparrowcode.io/tutorials/uisheetpresentationcontroller/uisheetpresentationcontroller.mov)
+[Пример работы UISheetPresentationController со сторами посередине и вверху.](https://cdn.sparrowcode.io/tutorials/uisheetpresentationcontroller/header.mov)
 
 Выглядит круто, а кейсов использования много. Чтобы показать дефолтный `sheet`-controller, используйте код:
 
@@ -60,13 +60,21 @@ if let sheetController = nav.sheetPresentationController {
 }
 ```
 
+[Пример работы sheet-контроллера с запретом на закрытие.](https://cdn.sparrowcode.io/tutorials/uisheetpresentationcontroller/prevent-dismiss.mov)
+
 ## Scroll Контента
 
-Если активен `.medium()`-стопор и контнент контроллера скролится, то если скролить вверх - модальный контрллер перейдет в `.large()` стопор. Контент останется на месте. Чтобы изменить поведение, укажите:
+Если активен `.medium()`-стопор и контнент контроллера скролится, то если скролить вверх - модальный контрллер перейдет в `.large()` стопор. Контент останется на месте.
+
+[Пример стандартного скрола на sheet-контроллере.](https://cdn.sparrowcode.io/tutorials/uisheetpresentationcontroller/scrolling-expands-true.mov)
+
+Чтобы изменить поведение, укажите:
 
 ```swift
 sheetController.prefersScrollingExpandsWhenScrolledToEdge = false
 ```
+
+[Пример скрола на sheet-контроллере с `prefersScrollingExpandsWhenScrolledToEdge = false`.](https://cdn.sparrowcode.io/tutorials/uisheetpresentationcontroller/scrolling-expands-false.mov)
 
 Теперь при скроле вверх будет отрабатывать скрол контента, и не будет переключение в большой стопор. Сделать это можно будет только потянув за navigation-бар.
 
@@ -80,7 +88,7 @@ sheetController.prefersEdgeAttachedInCompactHeight = true
 
 Вот как это выглядит:
 
-![Landscape for UISheetPresentationController](https://cdn.sparrowcode.io/tutorials/uisheetpresentationcontroller/landscape.jpg)
+![Пример sheet-контроллера в альбомной ориентации с отступами по краям.](https://cdn.sparrowcode.io/tutorials/uisheetpresentationcontroller/edge-attached.png)
 
 Чтобы контроллер учитывал prefered-размер, установите `widthFollowsPreferredContentSizeWhenEdgeAttached` в `true`.
 
@@ -92,19 +100,21 @@ sheetController.prefersEdgeAttachedInCompactHeight = true
 sheetController.largestUndimmedDetentIdentifier = .medium
 ```
 
+[Пример отключения затемнения для `.medium` стопора на sheet-контроллере.](https://cdn.sparrowcode.io/tutorials/uisheetpresentationcontroller/undimmed-detent.mov)
+
 Указано, что `.medium` затемняться не будет, а всё, что больше, будет. Можно убрать затемнение для самого большого стопора.
 
 ## Индикатор
 
 Чтобы добавить индикатор вверху контроллера, установите `.prefersGrabberVisible` в `true`. По умолчанию индикатор спрятан. Индикатор не влияет на safe area и layout margins, по крайней мере, на момент написания статьи.
 
-![Grabber for UISheetPresentationController](https://cdn.sparrowcode.io/tutorials/uisheetpresentationcontroller/prefers-grabber-visible.jpg)
+![Пример grabber-индикатора на sheet-контроллере.](https://cdn.sparrowcode.io/tutorials/uisheetpresentationcontroller/grabber.png)
 
 ## Corner Radius
 
 Управляйте закруглением краёв у контроллера. Для этого установите `.preferredCornerRadius`. Обратите внимание, что закругление меняется не только у презентуемого контроллера, но и у родителя.
 
-![Grabber for UISheetPresentationController](https://cdn.sparrowcode.io/tutorials/uisheetpresentationcontroller/preferred-corner-radius.jpg)
+![Пример выставленного corner-радиуса на sheet-контроллере.](https://cdn.sparrowcode.io/tutorials/uisheetpresentationcontroller/corner-radius.png)
 
 На скриншоте я установил corner-радиус в `22`. Радиус сохраняется для `.medium`-стопора. На этом всё. Напишите в [комментариях к посту](https://t.me/sparrowcode/71), будете ли использовать в своих проектах sheet-контроллеры.
 
