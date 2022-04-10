@@ -1,6 +1,6 @@
-Чтобы обозначить фоновую работу в приложении используют `ProgressView`.
+Чтобы обозначить фоновую работу в приложении, используют `ProgressView`.
 
-## Неопределенный прогресс
+## Сначала поговорим про неопределённый прогресс
 
 Добавим `ProgressView()`:
 
@@ -20,11 +20,11 @@ struct ContentView: View {
 
 [Indeterminate Activity Indicator](https://cdn.sparrowcode.io/tutorials/mastering-progressview-swiftui/indeterminate_activity_indicator.mov)
 
-По умолчанию `SwiftUI` определяет вращающийся бар загрузки (спиннер). Модификатор `.tint()` меняет цвет бара.
+По умолчанию `SwiftUI` определяет вращающийся бар загрузки (спиннер), а модификатор `.tint()` меняет цвет бара.
 
-## Определенный прогресс
+## Теперь — про определённый 
 
-Используем явный индикатор - инициализируем вью:
+Используем явный индикатор — инициализируем вью:
 
 ```swift
 struct ContentView: View {
@@ -80,7 +80,7 @@ extension ContentView {
 
 [Determinate Activity Indicator](https://cdn.sparrowcode.io/tutorials/mastering-progressview-swiftui/determinate_activity_indicator.mov)
 
-По нажатию на `Load more` начинается загрузка. Текст показывает прогресс, а кнопка `Reset` для сброса. Текст на экране изменится, когда загрузка закончится. Кнопка `Load more` станет неактивной.
+Если нажмём на `Load more`, то начнётся загрузка. Текст показывает прогресс, а кнопка `Reset` нужна для сброса. Когда загрузка закончится, текст на экране изменится, а кнопка `Load more` станет неактивной.
 
 Сделаем симуляцию прогресса c таймером:
 
@@ -119,18 +119,18 @@ struct TimerProgressView: View {
 let timer = Timer.publish(every: 0.05, on: .main, in: .common).autoconnect()
 ```
 
-Таймер срабатывает каждые 0.05 секунд (50 миллисекунд), он должен работать в главном потоке и общем цикле `common run loop`. Run loop позволяет обрабатывать код, когда пользователь взаимодействует и интерфейсом. Таймер начнет отсчитывать время моментально.
+Таймер срабатывает каждые 0,05 секунд (50 миллисекунд), он должен работать в главном потоке и общем цикле `common run loop`. Run loop позволяет обрабатывать код, когда пользователь взаимодействует с интерфейсом. Таймер начнет отсчитывать время моментально.
 
 Когда `progress` достигнет `downloadTotal` значения, таймер остановится.
-При достижении 50% загрузки, индикатор меняет цвет на зеленый.
+При достижении 50% загрузки индикатор позеленеет. 
 
-`ProgressView` это полоса загрузки, заполняется слева направо.
+`ProgressView` — полоса загрузки, которая заполняется слева направо.
 
-Описание метода `publish` доступно в [документации Apple](https://developer.apple.com/documentation/foundation/timer/3329589-publish). Больше инициализаторов в документации Xcode или [на сайте](https://developer.apple.com/documentation/swiftui/progressview).
+В [документации Apple](https://developer.apple.com/documentation/foundation/timer/3329589-publish) описан метод `publish`. Больше инициализаторов — в документации Xcode или [на сайте](https://developer.apple.com/documentation/swiftui/progressview).
 
 ![Documentation SwiftUI ProgressView](https://cdn.sparrowcode.io/tutorials/mastering-progressview-swiftui/progressview_init.png)
 
-## Дизайн
+## И наконец — дизайн
 
 Чтобы создать кастомный дизайн для `ProgressView`, нужно наследоваться от протокола `ProgressViewStyle`. Объявим структуру `RoundedProgressViewStyle` c методом `makeBody()` и принимающим параметр конфигурации для стиля:
 
