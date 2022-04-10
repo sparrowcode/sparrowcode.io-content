@@ -20,13 +20,14 @@
         "description" : "В iOS 15 появились sheet-контроллеры. Их можно перетаскивать с изменением высоты. Вы встречали эти контроллеры в приложениях «Карты» и «Акции».",
         "category" : "uikit",
         "author" : "ivanvorobei",
+        "editors" : ["svtnck"],
         "keywords" : [
             "UISheetPresentationController",
             "Model Controllers",
             "UIKit",
             "iOS 15"
         ],
-        "updated_date" : "27.12.2021",
+        "updated_date" : "10.04.2022",
         "added_date" : "11.10.2021"
     },
     "sf-symbols-3" : {
