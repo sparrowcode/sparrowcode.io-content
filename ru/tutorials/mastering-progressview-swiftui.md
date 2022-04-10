@@ -1,6 +1,6 @@
 Чтобы обозначить фоновую работу в приложении, используют `ProgressView`.
 
-## Сначала поговорим про неопределённый прогресс
+## Неопределенный прогресс
 
 Добавим `ProgressView()`:
 
@@ -22,7 +22,7 @@ struct ContentView: View {
 
 По умолчанию `SwiftUI` определяет вращающийся бар загрузки (спиннер), а модификатор `.tint()` меняет цвет бара.
 
-## Теперь — про определённый 
+## Определенный прогресс
 
 Используем явный индикатор — инициализируем вью:
 
@@ -130,7 +130,7 @@ let timer = Timer.publish(every: 0.05, on: .main, in: .common).autoconnect()
 
 ![Documentation SwiftUI ProgressView](https://cdn.sparrowcode.io/tutorials/mastering-progressview-swiftui/progressview_init.png)
 
-## И наконец — дизайн
+## Дизайн
 
 Чтобы создать кастомный дизайн для `ProgressView`, нужно наследоваться от протокола `ProgressViewStyle`. Объявим структуру `RoundedProgressViewStyle` c методом `makeBody()` и принимающим параметр конфигурации для стиля:
 
