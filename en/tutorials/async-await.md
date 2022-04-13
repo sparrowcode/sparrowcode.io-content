@@ -1,6 +1,6 @@
 `async/await` - a new approach for working with multithreading in Swift. It simplifies writing complex call chains and makes code readable. First we'll cover the theory, and at the end of the tutorial we'll write a tool to search for apps in the App Store using `async/await`.
 
-![async/await Preview](https://cdn.sparrowcode.io/tutorials/async-await/preview.png)
+![A short diagram of how `async/await` works.](https://cdn.sparrowcode.io/tutorials/async-await/preview.png)
 
 ## How it works
 
@@ -117,11 +117,11 @@ extension UIImageView {
 
 Now let's look at the scheme for the `setImage(url: URL)` function:
 
-![How to work setImage(url: URL)](https://cdn.sparrowcode.io/tutorials/async-await/set-image-scheme.png)
+![Scheme of the `setImage(url: URL)` method.](https://cdn.sparrowcode.io/tutorials/async-await/set-image-scheme.png)
 
 and `loadImage(for: url)`:
 
-![How to work loadImage(for: URL)](https://cdn.sparrowcode.io/tutorials/async-await/load-image-scheme.png)
+![Scheme of the `loadImage(for: URL)` method.](https://cdn.sparrowcode.io/tutorials/async-await/load-image-scheme.png)
 
 When execution reaches `await`, the function **may** or may not stop. The system will execute the `loadImage(for: url)` method, the thread will not be blocked waiting for the result. When the method finishes executing, the system will resume the function - continue executing `self.image = image`. We have updated the UI without switching the thread: this equation will automatically work on the main thread.
 

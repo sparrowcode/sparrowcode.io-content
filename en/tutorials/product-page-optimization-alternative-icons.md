@@ -6,13 +6,13 @@ The documentation says: "Put the icons in Asset Catalog, send the binary to App 
 
 The alternative icon is made in several resolutions, just like the main icon. I use the [AppIconBuilder](https://apps.apple.com/app/id1294179975) application. The name of the icon pack is visible in App Store Connect.
 
-![Добавляем иконки в Assets](https://cdn.sparrowcode.io/tutorials/product-page-optimization-alternative-icons/adding-icons-to-assets.png)
+![Adding icons to Assets.](https://cdn.sparrowcode.io/tutorials/product-page-optimization-alternative-icons/adding-icons-to-assets.png)
 
 ## Setting up targeting
 
 We need Xcode 13 or higher. Select the application target and go to the `Build Settings` tab. In the search for `App Icon` - you will see the section `Asset Catalog Compiler`.
 
-![Settings in target](https://cdn.sparrowcode.io/tutorials/product-page-optimization-alternative-icons/adding-settings-to-target.png)
+![Screenshot of the necessary settings in the project targets.](https://cdn.sparrowcode.io/tutorials/product-page-optimization-alternative-icons/adding-settings-to-target.png)
 
 We are interested in 3 parameters:
 

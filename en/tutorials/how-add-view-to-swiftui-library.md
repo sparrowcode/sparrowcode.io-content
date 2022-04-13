@@ -1,6 +1,6 @@
 The library in Xcode provides access to the SwiftUI `View`, `modifiers`, images, etc. You can drag the selected item or double-click it to add the `View` to the code.
 
-![Xcode View Library](https://cdn.sparrowcode.io/tutorials/how-add-view-to-swiftui-library/xcode_library.png)
+![Screenshot of `Views` library in Xcode.](https://cdn.sparrowcode.io/tutorials/how-add-view-to-swiftui-library/xcode_library.png)
 
 Let's make a custom `view` to be added to the library. I will create a user profile. Example model:
 
@@ -40,7 +40,7 @@ struct UserProfileView: View {
 
 And here's the result:
 
-![UserProfile_Preview](https://cdn.sparrowcode.io/tutorials/how-add-view-to-swiftui-library/user_profile_preview.png)
+![What `UserProfileView` will look like.](https://cdn.sparrowcode.io/tutorials/how-add-view-to-swiftui-library/user_profile_preview.png)
 
 Create the file `UserProfileLibrary.swift`. First, let's define a structure that inherits from [LibraryContentProvider](https://developer.apple.com/documentation/developertoolssupport/librarycontentprovider?changes=latest_minor).
 
@@ -71,7 +71,7 @@ struct UserProfileLibrary: LibraryContentProvider {
 Then use `LibraryContentProvider` to add custom views to the Xcode library.
 And now let's go to the `ContentView.swift` file and add a user.
 
-[UserProfileLibrary](https://cdn.sparrowcode.io/tutorials/how-add-view-to-swiftui-library/user_profile_library.mov)
+[Getting custom `view` from `UserProfileLibrary`.](https://cdn.sparrowcode.io/tutorials/how-add-view-to-swiftui-library/user_profile_library.mov)
 
 There are limitations:
 - You can't add a description to your `View`, so the box on the right stays blank - **No Details**.

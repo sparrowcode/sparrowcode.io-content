@@ -2,7 +2,7 @@ You control three indents - `imageEdgeInsets`, `titleEdgeInsets` and `contentEdg
 
 Before diving into the process, take a look at [example project](https://cdn.sparrowcode.io/tutorials/edge-insets-uibutton/example-project.zip). Each slider is responsible for a specific indent - you can combine them. The settings in the video are as follows: background color - red, icon color - yellow, and title - blue.
 
-[Edge Insets UIButton Example Project Preview](https://cdn.sparrowcode.io/tutorials/edge-insets-uibutton/edge-insets-uibutton-example-preview.mov)
+[An example of controlling the indentations in `UIButton`.](https://cdn.sparrowcode.io/tutorials/edge-insets-uibutton/edge-insets-uibutton-example-preview.mov)
 
 Indent the header and icon by `10pt`. When you get it, see if you can control the result or if it's random. At the end of the tutorial you will know how it works.
 
@@ -18,7 +18,7 @@ previewButton.contentEdgeInsets.top = 5
 previewButton.contentEdgeInsets.bottom = 5
 ```
 
-![contentEdgeInsets](https://cdn.sparrowcode.io/tutorials/edge-insets-uibutton/content-edge-insets.png)
+![Example `contentEdgeInsets` indents.](https://cdn.sparrowcode.io/tutorials/edge-insets-uibutton/content-edge-insets.png)
 
 Indentations appeared around the content. They are added proportionally and affect only the size of the button. They are needed to expand the clickable area if the button is small.
 
@@ -28,7 +28,7 @@ I put them in one section for a reason. More often than not, the task will boil 
 
 Let's add an indent between the picture and the header `10pt`. The first idea is to add an indent through the property `imageEdgeInsets`:
 
-[imageEdgeInsets space between icon and title](https://cdn.sparrowcode.io/tutorials/edge-insets-uibutton/image-edge-insets-space-icon-title.mov)
+[Example of `imageEdgeInsets` indentation between icon and text.](https://cdn.sparrowcode.io/tutorials/edge-insets-uibutton/image-edge-insets-space-icon-title.mov)
 
 The indentation is added, but it doesn't affect the size of the button and the icon goes behind the button. The partner `titleEdgeInsets` works the same way - it doesn't change button size. Let's add indent for title, but opposite to the icon indent. It will look like this:
 
@@ -80,7 +80,7 @@ Works for RTL localization. If there is no image, no indent is added. The develo
 
 Note, with iOS 15 our friends are marked `deprecated`.
 
-![Deprecated imageEdgeInsets and titleEdgeInsets](https://cdn.sparrowcode.io/tutorials/edge-insets-uibutton/depricated.png)
+![Screenshot from Apple Developer website.](https://cdn.sparrowcode.io/tutorials/edge-insets-uibutton/depricated.png)
 
 Properties will work for several years. Apple recommends using the configuration. Let's see what survives - the configuration or good old `padding`.
 

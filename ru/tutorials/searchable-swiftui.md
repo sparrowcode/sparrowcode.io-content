@@ -21,7 +21,7 @@ struct ContentView: View {
 }
 ```
 
-[Searchable init](https://cdn.sparrowcode.io/tutorials/searchable-swiftui/searchable_init.mov)
+[Пример работы `Searchable`.](https://cdn.sparrowcode.io/tutorials/searchable-swiftui/searchable_init.mov)
 
 Для изменения плейсхолдера в поисковой строке укажем `prompt`:
 
@@ -65,11 +65,11 @@ struct ContentView: View {
 }
 ```
 
-![Searchable Diff Placement](https://cdn.sparrowcode.io/tutorials/searchable-swiftui/searchable_diff_placement.png)
+![Варианты расположения.](https://cdn.sparrowcode.io/tutorials/searchable-swiftui/searchable_diff_placement.png)
 
 Применили модификатор к `SecondaryView()` и изменили расположение на `.navigationBarDrawer`. За положение поля ввода отвечает структура `SearchFieldPlacement()`. По умолчанию `placement` установлено в `.automatic`.
 
-[Searchable Placement](https://cdn.sparrowcode.io/tutorials/searchable-swiftui/searchable_placement.mov)
+[Изменяем `Searchable Placement`.](https://cdn.sparrowcode.io/tutorials/searchable-swiftui/searchable_placement.mov)
 
 ## Поиск
 
@@ -124,7 +124,7 @@ extension ContentView {
 }
 ```
 
-[Searchable Author Run](https://cdn.sparrowcode.io/tutorials/searchable-swiftui/searchable_author_run.mov)
+[Пример поиска автора статьи через `Searchable`.](https://cdn.sparrowcode.io/tutorials/searchable-swiftui/searchable_author_run.mov)
 
 Создадим `NavigationView` с `List`, который принимает массив авторов  и фильтрует его:
 
@@ -147,11 +147,11 @@ authors.filter { $0.name.contains(searchQuery) }
 }
 ```
 
-[Searchable suggestions](https://cdn.sparrowcode.io/tutorials/searchable-swiftui/searchable_suggestions.mov)
+[Пример `Searchable` подсказок.](https://cdn.sparrowcode.io/tutorials/searchable-swiftui/searchable_suggestions.mov)
 
 Предложения накладываются на основную вью:
 
-![Searchable overlay](https://cdn.sparrowcode.io/tutorials/searchable-swiftui/searchable_overlay.png)
+![Смотрим на интерфейс `Searchable`.](https://cdn.sparrowcode.io/tutorials/searchable-swiftui/searchable_overlay.png)
 
 Параметр `suggestions` принимает `@ViewBuilder`, поэтому можно сделать кастомную View и комбинировать варианты для поискового предложения. Код текущего проекта:
 
@@ -211,7 +211,7 @@ extension ContentView {
 }
 ```
 
-[Searchable onSubmit](https://cdn.sparrowcode.io/tutorials/searchable-swiftui/searchable_onsubmit.mov)
+[Пример работы триггера `onSubmit`.](https://cdn.sparrowcode.io/tutorials/searchable-swiftui/searchable_onsubmit.mov)
 
 Модификатор `.onSubmit()` сработает, когда будет отправлен поисковый запрос:
 

@@ -11,7 +11,7 @@ struct ContentView: View {
 }
 ```
 
-![Updating content](https://cdn.sparrowcode.io/tutorials/keyboard-shortcut-swiftui/refresh_content.jpg)
+![Example of adding shortcut information to the interface.](https://cdn.sparrowcode.io/tutorials/keyboard-shortcut-swiftui/refresh_content.jpg)
 
 Now by pressing the two keys `Command` + `R` we will display a message in the console.
 
@@ -46,7 +46,7 @@ struct ContentView: View {
 
 Press `⌘ + T` and change the switch position. Apply the modifier to all `VStack` elements.
 
-[Switch](https://cdn.sparrowcode.io/tutorials/keyboard-shortcut-swiftui/keyboard_shortcut_toggle.mov)
+[Example of changing the switch position via shortcut.](https://cdn.sparrowcode.io/tutorials/keyboard-shortcut-swiftui/keyboard_shortcut_toggle.mov)
 
 Another example:
 
@@ -80,4 +80,4 @@ struct ContentView: View {
 }
 ```
 
-[Synchronizing articles](https://cdn.sparrowcode.io/tutorials/keyboard-shortcut-swiftui/keyboard_sync_articles.mov)
+[An example of outputting a message to the console via shortcut.](https://cdn.sparrowcode.io/tutorials/keyboard-shortcut-swiftui/keyboard_sync_articles.mov)

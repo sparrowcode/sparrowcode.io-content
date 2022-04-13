@@ -1,6 +1,6 @@
 `async/await` — новый поход для работы с многопоточностью в Swift. Он упрощает написание сложных цепочек вызовов и делает код читаемым. Сначала разберёмся с теорией, а в конце туториала напишем инструмент для поиска приложений в App Store с использованием `async/await`.
 
-![async/await Preview](https://cdn.sparrowcode.io/tutorials/async-await/preview.png)
+![Короткая схема работы `async/await`.](https://cdn.sparrowcode.io/tutorials/async-await/preview.png)
 
 ## Как устроено
 
@@ -117,11 +117,11 @@ extension UIImageView {
 
 Теперь взглянем на схему для функции `setImage(url: URL)`:
 
-![How to work setImage(url: URL)](https://cdn.sparrowcode.io/tutorials/async-await/set-image-scheme.png)
+![Схема работы метода `setImage(url: URL)`.](https://cdn.sparrowcode.io/tutorials/async-await/set-image-scheme.png)
 
 и `loadImage(for: url)`:
 
-![How to work loadImage(for: URL)](https://cdn.sparrowcode.io/tutorials/async-await/load-image-scheme.png)
+![Схема работы метода `loadImage(for: URL)`.](https://cdn.sparrowcode.io/tutorials/async-await/load-image-scheme.png)
 
 Когда выполнение дойдёт до `await`, функция **может** остановиться, а может и нет. Система выполнит метод `loadImage(for: url)`, поток не заблокируется в ожидании результата. Когда метод закончит выполняться, система возобновит работу функции - продолжится выполнение `self.image = image`. Мы обновили UI, не переключая поток: это приравнивание автоматически сработает на главном потоке.
 

@@ -2,7 +2,7 @@ Today we'll learn how to reorder cells, drag and drop cells in groups, move cell
 
 Before we dive into the code, let's understand how the drag-and-drop lifecycle works.
 
-![preview](https://cdn.sparrowcode.io/tutorials/drag-and-drop-part-1/preview.jpg)
+![A still from the movie "Fast & Furious: Hobbs & Shaw".](https://cdn.sparrowcode.io/tutorials/drag-and-drop-part-1/preview.jpg)
 
 ## Models
 
@@ -91,7 +91,7 @@ The first method is called when drag has started and the second method is called
 
 Let's see what we get at this point.
 
-[Drag Preview](https://cdn.sparrowcode.io/tutorials/drag-and-drop-part-1/drag-delegate.mov)
+[Example of the beginning and end of the dredge.](https://cdn.sparrowcode.io/tutorials/drag-and-drop-part-1/drag-delegate.mov)
 
 The cell returns to its place because the drop is not yet ready, we implement it further.
 
@@ -112,7 +112,7 @@ func collectionView(_ collectionView: UICollectionView, itemsForAddingTo session
 
 The cells are now stacked. The stack can be reset as individual cells.
 
-[Drag Stack](https://cdn.sparrowcode.io/tutorials/drag-and-drop-part-1/drag-stack.mov)
+[An example of stacking cells during a drag race.](https://cdn.sparrowcode.io/tutorials/drag-and-drop-part-1/drag-stack.mov)
 
 ## Drop
 
@@ -205,7 +205,7 @@ func collectionView(_ collectionView: UICollectionView, performDropWith coordina
 
 Now the collection and data source are updated when you move it, and the cell is dropped at the new index. Let's see what happened:
 
-[Drag Preview](https://cdn.sparrowcode.io/tutorials/drag-and-drop-part-1/drop-delegate.mov)
+[Example of moving and dropping a cell in a collection.](https://cdn.sparrowcode.io/tutorials/drag-and-drop-part-1/drop-delegate.mov)
 
 To make the cells split to drop another cell, use Drop Proposal with `.insertAtDestinationIndexPath`. Any other intent won't do this. Sometimes bugs with collection, be careful.
 
@@ -251,7 +251,7 @@ tableView.isEditing = true
 
 That is, you can have a system cell reorder and drop in cells.
 
-[Table Drop](https://cdn.sparrowcode.io/tutorials/drag-and-drop-part-1/table-drop.mov)
+[Example of moving and dropping a cell from a collection to a table.](https://cdn.sparrowcode.io/tutorials/drag-and-drop-part-1/table-drop.mov)
 
 ## `DestinationIndexPath`
 
