@@ -1,53 +1,10 @@
 {
-    "how-add-view-to-swiftui-library" : {
-        "title" : "How to add custom SwiftUI View to View Library",
-        "description" : "In that article, I teach you how to add a code snippet to the Library.",
-        "category" : "swiftui",
-        "author" : "wmorgue",
-        "editors" : ["svtnck"],
-        "translator" : "svtnck",
-        "keywords" : [
-            "xcode",
-            "library",
-            "LibraryContentProvider"
-        ],
-        "updated_date" : "03.04.2022",
-        "added_date" : "03.02.2022"
-    },
-    "edge-insets-uibutton" : {
-        "title" : "Edge Insets for UIButton",
-        "description" : "How to add an indent between the picture and the header in a button. How to place the icon to the right of the header.",
-        "category" : "uikit",
-        "author" : "ivanvorobei",
-        "translator" : "svtnck",
-        "keywords" : [
-            "UIButton",
-            "imageEdgeInsets",
-            "contentEdgeInsets"
-        ],
-        "updated_date" : "03.04.2022",
-        "added_date" : "05.02.2022"
-    },
-    "async-await" : {
-        "title" : "Asynchrony with async/await/actor",
-        "description" : "Let's take apart async, await, and actor. Let's write an ace using the new tools.",
-        "category" : "development",
-        "author" : "somenkovnikita",
-        "editors" : ["ivanvorobei"],
-        "translator" : "svtnck",
-        "keywords" : [
-            "async",
-            "await",
-            "actor"
-        ],
-        "updated_date" : "03.04.2022",
-        "added_date" : "08.02.2022"
-    },
     "drag-and-drop-part-1" : {
         "title" : "Drag and Drop",
         "description" : "How to change the order of cells in a collection and a table. How to move cells to another collection. How to move multiple cells in a group.",
         "category" : "uikit",
         "author" : "ivanvorobei",
+        "editors" : ["svtnck"],
         "translator" : "svtnck",
         "keywords" : [
             "UICollectionViewDragDelegate",
@@ -57,8 +14,23 @@
             "UIDrag",
             "UIGestureRecognizer"
         ],
-        "updated_date" : "03.04.2022",
-        "added_date" : "17.02.2022"
+        "updated_date" : "13.04.2022",
+        "added_date" : "11.07.2021"
+    },
+    "uisheetpresentationcontroller" : {
+        "title" : "UISheetPresentationController as in the Maps application",
+        "description" : "In iOS 15, sheet controllers have appeared. They can be dragged and dropped with height changes. You've seen these controllers in the Maps and Shares apps.",
+        "category" : "uikit",
+        "author" : "ivanvorobei",
+        "translator" : "svtnck",
+        "keywords" : [
+            "UISheetPresentationController",
+            "Model Controllers",
+            "UIKit",
+            "iOS 15"
+        ],
+        "updated_date" : "13.04.2022",
+        "added_date" : "11.10.2021"
     },
     "how-to-delete-userdefaults-on-macos-catalyst" : {
         "title" : "How to clear UserDefaults for Mac Catalyst",
@@ -73,29 +45,89 @@
         "updated_date" : "04.04.2022",
         "added_date" : "11.12.2021"
     },
-    "keyboard-shortcut-swiftui" : {
-        "title" : "Key combinations in SwiftUI",
-        "description" : "Get to know the `keyboardShortcut` modifier. Let's add modifiers for keys `.command`, `.option`, `.shift`.",
-        "category" : "swiftui",
-        "author" : "wmorgue",
-        "editors" : ["ivanvorobei"],
+    "edge-insets-uibutton" : {
+        "title" : "Edge Insets for UIButton",
+        "description" : "How to add an indent between the picture and the header in a button. How to place the icon to the right of the header.",
+        "category" : "uikit",
+        "author" : "ivanvorobei",
+        "editors" : ["svtnck"],
         "translator" : "svtnck",
         "keywords" : [
-            "keyboard shortcut"
+            "UIButton",
+            "imageEdgeInsets",
+            "contentEdgeInsets"
         ],
-        "updated_date" : "04.04.2022",
-        "added_date" : "14.03.2022"
+        "updated_date" : "13.04.2022",
+        "added_date" : "13.12.2021"
     },
     "product-page-optimization-alternative-icons" : {
         "title" : "Alternative icons for Product Page Optimization",
         "description" : "How to add alternative icons for A/B tests on the application page.",
         "category" : "app_store_connect",
         "author" : "alxrguz",
+        "editors" : ["svtnck"],
         "translator" : "svtnck",
         "keywords" : [
             "alternative icons"
         ],
-        "updated_date" : "07.04.2022",
+        "updated_date" : "13.04.2022",
         "added_date" : "27.12.2021"
+    },
+    "how-add-view-to-swiftui-library" : {
+        "title" : "How to add custom SwiftUI View to View Library",
+        "description" : "In that article, I teach you how to add a code snippet to the Library.",
+        "category" : "swiftui",
+        "author" : "wmorgue",
+        "editors" : ["svtnck"],
+        "translator" : "svtnck",
+        "keywords" : [
+            "xcode",
+            "library",
+            "LibraryContentProvider"
+        ],
+        "updated_date" : "13.04.2022",
+        "added_date" : "02.02.2022"
+    },
+    "async-await" : {
+        "title" : "Asynchrony with async/await/actor",
+        "description" : "Let's take apart async, await, and actor. Let's write an ace using the new tools.",
+        "category" : "development",
+        "author" : "somenkovnikita",
+        "editors" : ["ivanvorobei", "svtnck"],
+        "translator" : "svtnck",
+        "keywords" : [
+            "async",
+            "await",
+            "actor"
+        ],
+        "updated_date" : "13.04.2022",
+        "added_date" : "06.02.2022"
+    },
+    "keyboard-shortcut-swiftui" : {
+        "title" : "Key combinations in SwiftUI",
+        "description" : "Get to know the `keyboardShortcut` modifier. Let's add modifiers for keys `.command`, `.option`, `.shift`.",
+        "category" : "swiftui",
+        "author" : "wmorgue",
+        "editors" : ["ivanvorobei", "svtnck"],
+        "translator" : "svtnck",
+        "keywords" : [
+            "keyboard shortcut"
+        ],
+        "updated_date" : "13.04.2022",
+        "added_date" : "14.03.2022"
+    },
+    "access-control" : {
+        "title" : "Access levels in Swift",
+        "description" : "Consider the access levels and how to secure your code with them.",
+        "category" : "development",
+        "author" : "liubowolkova",
+        "translator" : "svtnck",
+        "keywords" : [
+            "access control",
+            "access control swift",
+            "code safety"
+        ],
+        "updated_date": "13.04.2022",
+        "added_date": "22.03.2022"
     }
 }
