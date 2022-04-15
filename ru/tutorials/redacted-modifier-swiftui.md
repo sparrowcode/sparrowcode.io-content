@@ -8,7 +8,7 @@ VStack {
 }
 ```
 
-![Как выглядит прототип вью.](https://cdn.sparrowcode.io/tutorials/redacted-modifier-swiftui/redacted_placeholder.jpg)
+![Прототип вью.](https://cdn.sparrowcode.io/tutorials/redacted-modifier-swiftui/redacted_placeholder.jpg)
 
 Используйте прототип, чтобы:
 
@@ -32,7 +32,7 @@ extension Device {
         .init(
             name: "AirTag",
             systemIcon: "airtag",
-            description: "Cуперлёгкий способ находить свои вещи. Прикрепите один трекер AirTag к ключам, а другой — к рюкзаку. И теперь их видно на карте в приложении «Локатор»."
+            description: "Суперлёгкий способ находить свои вещи. Прикрепите один трекер AirTag к ключам, а другой — к рюкзаку. И теперь их видно на карте в приложении «Локатор»."
         )
 }
 ```
@@ -99,7 +99,7 @@ struct ContentView: View {
 }
 ```
 
-[Переключение между вью с модификатором и без с помощью переключателя.](https://cdn.sparrowcode.io/tutorials/redacted-modifier-swiftui/redacted_toggle.mov)
+[Переключение между вью с модификатором и без, с помощью переключателя.](https://cdn.sparrowcode.io/tutorials/redacted-modifier-swiftui/redacted_toggle.mov)
 
 ## Unredacted
 
@@ -143,13 +143,13 @@ VStack {
 }
 ```
 
-[Пример кликабельности кнопки после применения модификатора.](https://cdn.sparrowcode.io/tutorials/redacted-modifier-swiftui/redacted_available_button.mov)
+[Работа кнопки после применения модификатора.](https://cdn.sparrowcode.io/tutorials/redacted-modifier-swiftui/redacted_available_button.mov)
 
 Поведением кнопки управляйте вручную, ниже покажу как.
 
 ## Причины редактирования
 
-Apple спроектировала структуру [RedactionReasons](https://developer.apple.com/documentation/swiftui/redactionreasons), которая отвечает за **причину** редактирования, применяемую к вью.
+Apple спроектировала структуру [RedactionReasons](https://developer.apple.com/documentation/swiftui/redactionreasons), которая отвечает за **причину** редактирования, применяемую ко вью.
 Доступно варианты `privacy` и `placeholder`. Первый отвечает за данные, которые скрыты как приватная информация. Placeholder отвечает за обобщенный прототип.
 
 Реализовать кастомную причину можно так:
@@ -219,7 +219,7 @@ extension View {
 
 Если переключить, кнопка станет не кликабельной.
 
-![Как выглядит кастомный `unredacted`.](https://cdn.sparrowcode.io/tutorials/redacted-modifier-swiftui/redacted_custom_unredacted.jpg)
+![Кастомный `unredacted`.](https://cdn.sparrowcode.io/tutorials/redacted-modifier-swiftui/redacted_custom_unredacted.jpg)
 
 ## Собственный API
 

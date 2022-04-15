@@ -1,4 +1,4 @@
-С помощью  [Product Page Optimization](https://developer.apple.com/app-store/product-page-optimization/) вы можете создавать варианты скриншотов, промотекстов и иконок. Скриншоты и текст добавляются в App Store Connect, а вот иконки добавляет разработчик в Xcode-проект.
+С помощью  [Product Page Optimization](https://developer.apple.com/app-store/product-page-optimization/) вы можете создавать варианты скриншотов, промо-текстов и иконок. Скриншоты и текст добавляются в App Store Connect, а вот иконки добавляет разработчик в Xcode-проект.
 
 В документации написано: «Поместите иконки в Asset Catalog, отправьте бинарный файл в App Store Connect и используйте SDK». Правда, там не сказали, как закинуть иконки и что это за SDK. Давайте разбираться.
 
@@ -12,7 +12,7 @@
 
 Нам понадобится Xcode 13 и выше. Выберите таргет приложения и перейдите на вкладку `Build Settings`. В поиск вставьте `App Icon` — увидите секцию `Asset Catalog Compiler`.
 
-![Скриншот нужных настроек в таргетах проекта.](https://cdn.sparrowcode.io/tutorials/product-page-optimization-alternative-icons/adding-settings-to-target.png)
+![Параметры в таргете проекта.](https://cdn.sparrowcode.io/tutorials/product-page-optimization-alternative-icons/adding-settings-to-target.png)
 
 Нас интересуют 3 параметра:
 

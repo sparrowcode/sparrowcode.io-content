@@ -1,6 +1,6 @@
 Когда я был молодым, сделал [либу](https://github.com/ivanvorobei/SPStorkController) для управления высотой контроллера на снепшотах. Новые модальные контроллеры частично решили проблему нативно. А с iOS 15 управлять высотой можно из коробки:
 
-[Пример работы UISheetPresentationController со сторами посередине и вверху.](https://cdn.sparrowcode.io/tutorials/uisheetpresentationcontroller/header.mov)
+[Sheet-контроллер со стопорами посередине и сверху.](https://cdn.sparrowcode.io/tutorials/uisheetpresentationcontroller/header.mov)
 
 Выглядит круто, кейсов много. Чтобы показать дефолтный `sheet`-controller, используйте код:
 
@@ -38,7 +38,7 @@ sheetController.animateChanges {
 }
 ```
 
-Можно вызывать без блока анимации. Так же можно переключть стопор без возможности изменять его, для этого меняем доступные стопоры:
+Можно вызывать без блока анимации. Так же можно переключить стопор без возможности изменять его, для этого меняем доступные стопоры:
 
 ```swift
 sheetController.animateChanges {
@@ -46,7 +46,7 @@ sheetController.animateChanges {
 }
 ```
 
-Контроллер переключится в `.large()` стопор и не даст переключится жестом в `.medium()`.
+Контроллер переключиться в `.large()` стопор и не даст переключится жестом в `.medium()`.
 
 ## Dismiss
 
@@ -60,23 +60,23 @@ if let sheetController = nav.sheetPresentationController {
 }
 ```
 
-[Пример работы sheet-контроллера с запретом на закрытие.](https://cdn.sparrowcode.io/tutorials/uisheetpresentationcontroller/prevent-dismiss.mov)
+[Sheet-контроллер с запретом на закрытие.](https://cdn.sparrowcode.io/tutorials/uisheetpresentationcontroller/prevent-dismiss.mov)
 
 ## Scroll Контента
 
-Если активен `.medium()`-стопор и контент контроллера скролится, то если скролить вверх - модальный контрллер перейдет в `.large()` стопор. Контент останется на месте.
+Если активен `.medium()`-стопор и контент контроллера скроллится, то если скроллить вверх - модальный контрллер перейдет в `.large()` стопор. Контент останется на месте.
 
-[Пример стандартного скрола на sheet-контроллере.](https://cdn.sparrowcode.io/tutorials/uisheetpresentationcontroller/scrolling-expands-true.mov)
+[Стандартный скролл на sheet-контроллере.](https://cdn.sparrowcode.io/tutorials/uisheetpresentationcontroller/scrolling-expands-true.mov)
 
-Чтобы сначала скролить контент, укажите:
+Чтобы сначала скроллить контент, укажите:
 
 ```swift
 sheetController.prefersScrollingExpandsWhenScrolledToEdge = false
 ```
 
-[Пример скрола на sheet-контроллере с `prefersScrollingExpandsWhenScrolledToEdge = false`.](https://cdn.sparrowcode.io/tutorials/uisheetpresentationcontroller/scrolling-expands-false.mov)
+[Скролл на sheet-контроллере с `prefersScrollingExpandsWhenScrolledToEdge = false`.](https://cdn.sparrowcode.io/tutorials/uisheetpresentationcontroller/scrolling-expands-false.mov)
 
-Теперь при скроле вверх будет отрабатывать скрол контента. Чтобы перейти в большой стопор, нужно потянув за navigation-бар.
+Теперь при скролле вверх будет отрабатывать скролл контента. Чтобы перейти в большой стопор, нужно потянув за navigation-бар.
 
 ## Альбомная ориентация
 
@@ -88,7 +88,7 @@ sheetController.prefersEdgeAttachedInCompactHeight = true
 
 Вот как это выглядит:
 
-![Пример sheet-контроллера в альбомной ориентации с отступами по краям.](https://cdn.sparrowcode.io/tutorials/uisheetpresentationcontroller/edge-attached.png)
+![Sheet-контроллер в альбомной ориентации с отступами по краям.](https://cdn.sparrowcode.io/tutorials/uisheetpresentationcontroller/edge-attached.png)
 
 Чтобы контроллер учитывал prefered-размер, установите `widthFollowsPreferredContentSizeWhenEdgeAttached` в `true`.
 
@@ -100,7 +100,7 @@ sheetController.prefersEdgeAttachedInCompactHeight = true
 sheetController.largestUndimmedDetentIdentifier = .medium
 ```
 
-[Пример отключения затемнения для `.medium` стопора на sheet-контроллере.](https://cdn.sparrowcode.io/tutorials/uisheetpresentationcontroller/undimmed-detent.mov)
+[Sheet-контроллер с отключенным затемнением для `.medium` стопора.](https://cdn.sparrowcode.io/tutorials/uisheetpresentationcontroller/undimmed-detent.mov)
 
 Указано, что `.medium` затемняться не будет, а всё, что больше - будет. Можно убрать затемнение и для самого большого стопора.
 
@@ -108,13 +108,13 @@ sheetController.largestUndimmedDetentIdentifier = .medium
 
 Чтобы добавить индикатор вверху контроллера, установите `.prefersGrabberVisible` в `true`. По умолчанию индикатор спрятан. Индикатор не влияет на safe area и layout margins.
 
-![Пример grabber-индикатора на sheet-контроллере.](https://cdn.sparrowcode.io/tutorials/uisheetpresentationcontroller/grabber.png)
+![Grabber-индикатора на sheet-контроллере.](https://cdn.sparrowcode.io/tutorials/uisheetpresentationcontroller/grabber.png)
 
 ## Corner Radius
 
 Можно управлять закруглением краёв у контроллера. Установите значение для `.preferredCornerRadius`. Закругление меняется не только у презентуемого контроллера, но и у родителя.
 
-![Пример выставленного corner-радиуса на sheet-контроллере.](https://cdn.sparrowcode.io/tutorials/uisheetpresentationcontroller/corner-radius.png)
+![Corner-радиус у sheet-контроллера.](https://cdn.sparrowcode.io/tutorials/uisheetpresentationcontroller/corner-radius.png)
 
 На скриншоте я установил corner-радиус в `22`. Радиус сохраняется и для `.medium`-стопора. На этом всё. Напишите в [комментариях к посту](https://t.me/sparrowcode/71), будете ли использовать в своих проектах sheet-контроллеры.
 

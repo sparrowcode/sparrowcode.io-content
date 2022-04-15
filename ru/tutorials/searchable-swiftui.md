@@ -21,7 +21,7 @@ struct ContentView: View {
 }
 ```
 
-[Пример работы `Searchable`.](https://cdn.sparrowcode.io/tutorials/searchable-swiftui/searchable_init.mov)
+[Работа `Searchable`.](https://cdn.sparrowcode.io/tutorials/searchable-swiftui/searchable_init.mov)
 
 Для изменения плейсхолдера в поисковой строке укажем `prompt`:
 
@@ -124,7 +124,7 @@ extension ContentView {
 }
 ```
 
-[Пример поиска автора статьи через `Searchable`.](https://cdn.sparrowcode.io/tutorials/searchable-swiftui/searchable_author_run.mov)
+[Поиск автора статьи через `Searchable`.](https://cdn.sparrowcode.io/tutorials/searchable-swiftui/searchable_author_run.mov)
 
 Создадим `NavigationView` с `List`, который принимает массив авторов  и фильтрует его:
 
@@ -147,11 +147,11 @@ authors.filter { $0.name.contains(searchQuery) }
 }
 ```
 
-[Пример `Searchable` подсказок.](https://cdn.sparrowcode.io/tutorials/searchable-swiftui/searchable_suggestions.mov)
+[Подсказки `Searchable`.](https://cdn.sparrowcode.io/tutorials/searchable-swiftui/searchable_suggestions.mov)
 
 Предложения накладываются на основную вью:
 
-![Смотрим на интерфейс `Searchable`.](https://cdn.sparrowcode.io/tutorials/searchable-swiftui/searchable_overlay.png)
+![Интерфейс `Searchable`.](https://cdn.sparrowcode.io/tutorials/searchable-swiftui/searchable_overlay.png)
 
 Параметр `suggestions` принимает `@ViewBuilder`, поэтому можно сделать кастомную View и комбинировать варианты для поискового предложения. Код текущего проекта:
 
@@ -211,7 +211,7 @@ extension ContentView {
 }
 ```
 
-[Пример работы триггера `onSubmit`.](https://cdn.sparrowcode.io/tutorials/searchable-swiftui/searchable_onsubmit.mov)
+[Работа `onSubmit` триггера.](https://cdn.sparrowcode.io/tutorials/searchable-swiftui/searchable_onsubmit.mov)
 
 Модификатор `.onSubmit()` сработает, когда будет отправлен поисковый запрос:
 
@@ -224,7 +224,7 @@ extension ContentView {
 Доступно 2 значения: `\.isSearching` и `\.dismissSearch`.
 
 `isSearching` - взаимодействует ли пользователь в данный момент с полем поиска. `dismissSearch` требует от системы завершить текущее взаимодействие с полем поиска.
-Оба значения среды работают только в вью, где вызывается модификатор `.searchable()`:
+Оба значения среды работают только во вью, где вызывается модификатор `.searchable()`:
 
 ```swift
 struct ContentView: View {

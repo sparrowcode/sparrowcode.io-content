@@ -13,7 +13,7 @@
             "UIDrag",
             "UIGestureRecognizer"
         ],
-        "updated_date" : "13.04.2022",
+        "updated_date" : "15.04.2022",
         "added_date" : "11.07.2021"
     },
     "uisheetpresentationcontroller" : {
@@ -28,7 +28,7 @@
             "UIKit",
             "iOS 15"
         ],
-        "updated_date" : "10.04.2022",
+        "updated_date" : "15.04.2022",
         "added_date" : "11.10.2021"
     },
     "sf-symbols-3" : {
@@ -42,7 +42,7 @@
             "SwiftUI",
             "iOS 15"
         ],
-        "updated_date" : "13.04.2022",
+        "updated_date" : "15.04.2022",
         "added_date" : "28.10.2021"
     },
     "uiviewcontroller-lifecycle" : {
@@ -59,7 +59,7 @@
             "жизненный цикл uiviewcontroller",
             "жизненный цикл uiview"
         ],
-        "updated_date" : "13.04.2022",
+        "updated_date" : "15.04.2022",
         "added_date" : "19.11.2021"
     },
     "how-to-delete-userdefaults-on-macos-catalyst" : {
@@ -71,7 +71,7 @@
             "UserDefaults",
             "Catalyst"
         ],
-        "updated_date" : "14.12.2021",
+        "updated_date" : "15.12.2021",
         "added_date" : "11.12.2021"
     },
     "edge-insets-uibutton" : {
@@ -85,7 +85,7 @@
             "imageEdgeInsets",
             "contentEdgeInsets"
         ],
-        "updated_date" : "03.04.2022",
+        "updated_date" : "15.04.2022",
         "added_date" : "13.12.2021"
     },
     "product-page-optimization-alternative-icons" : {
@@ -97,7 +97,7 @@
         "keywords" : [
             "alternative icons"
         ],
-        "updated_date" : "13.04.2022",
+        "updated_date" : "15.04.2022",
         "added_date" : "27.12.2021"
     },
     "how-add-view-to-swiftui-library" : {
@@ -111,7 +111,7 @@
             "library",
             "LibraryContentProvider"
         ],
-        "updated_date": "13.04.2022",
+        "updated_date": "15.04.2022",
         "added_date": "02.02.2022"
     },
     "async-await" : {
@@ -125,7 +125,7 @@
             "await",
             "actor"
         ],
-        "updated_date": "13.04.2022",
+        "updated_date": "15.04.2022",
         "added_date": "06.02.2022"
     },
     "mastering-progressview-swiftui" : {
@@ -137,7 +137,7 @@
         "keywords" : [
             "ProgressView"
         ],
-        "updated_date": "13.04.2022",
+        "updated_date": "15.04.2022",
         "added_date": "09.02.2022"
     },
     "searchable-swiftui" : {
@@ -149,7 +149,7 @@
         "keywords" : [
             "searchable"
         ],
-        "updated_date": "13.04.2022",
+        "updated_date": "15.04.2022",
         "added_date": "21.02.2022"
     },
     "redacted-modifier-swiftui" : {
@@ -163,7 +163,7 @@
             "unredacted",
             "RedactionReasons"
         ],
-        "updated_date": "13.04.2022",
+        "updated_date": "15.04.2022",
         "added_date": "01.03.2022"
     },
     "keyboard-shortcut-swiftui" : {
@@ -175,7 +175,7 @@
         "keywords" : [
             "keyboard shortcut"
         ],
-        "updated_date": "13.04.2022",
+        "updated_date": "15.04.2022",
         "added_date": "14.03.2022"
     },
     "access-control" : {
@@ -189,7 +189,7 @@
             "access control swift",
             "code safety"
         ],
-        "updated_date": "25.03.2022",
+        "updated_date": "15.04.2022",
         "added_date": "22.03.2022"
     }
 }

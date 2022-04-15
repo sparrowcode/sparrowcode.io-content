@@ -1,6 +1,6 @@
 Библиотека в Xcode предоставляет доступ к SwiftUI View, модификаторам `modifiers`, изображениям и т. д. Вы можете перетянуть выбранный элемент или кликнуть по нему дважды, чтобы добавить `View` в код.
 
-![Скриншот библиотеки `Views` в Xcode.](https://cdn.sparrowcode.io/tutorials/how-add-view-to-swiftui-library/xcode_library.png)
+![Библиотека `Views` в Xcode.](https://cdn.sparrowcode.io/tutorials/how-add-view-to-swiftui-library/xcode_library.png)
 
 Сделаем кастомную вью, которую будем добавлять в библиотеку. Я создам профиль пользователя. Пример модели:
 
@@ -71,7 +71,7 @@ struct UserProfileLibrary: LibraryContentProvider {
 Потом с помощью `LibraryContentProvider` добавляем кастомные View в библиотеку Xcode.
 И теперь перейдём в `ContentView.swift` файл и добавим пользователя.
 
-[Получение кастомный `view` из `UserProfileLibrary`.](https://cdn.sparrowcode.io/tutorials/how-add-view-to-swiftui-library/user_profile_library.mov)
+[Получение кастомной `view` из `UserProfileLibrary`.](https://cdn.sparrowcode.io/tutorials/how-add-view-to-swiftui-library/user_profile_library.mov)
 
 Есть ограничения:
 - Нельзя добавить описание к своей View, поэтому поле справа остаётся пустым — **No Details**.
