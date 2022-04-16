@@ -80,9 +80,7 @@ import MapKit
 ```swift
 import UIKit
 import MapKit
-
 class ViewController: UIViewController {
-
     let mapView: MKMapView = {
         let map = MKMapView()
         map.translatesAutoresizingMaskIntoConstraints = false
@@ -122,7 +120,6 @@ struct AnchorsSetter {
 
 ```swift
 override func viewDidLoad() {
-
     super.viewDidLoad()
     view.addSubview(mapView)
     AnchorsSetter.setAllSides(for: mapView, with: view)
@@ -281,7 +278,7 @@ override func viewDidLoad() {
 
 Давайте посмотрим, как это выглядит в динамике.
 
-![Video Tiles Loading]()
+![Video Tiles Loading](https://cdn.sparrowcode.io/tutorials/mapkit/tiles-loading.mov)
 
 ### Вес
 
@@ -306,3 +303,84 @@ override func viewDidLoad() {
 - координаты тайлов (Tile Map Service (`ZXY`))
 
 `MapKit` использует градусы (`WGS84`).
+
+Мы разделим метки на три типа и подробнее рассмотрим каждый из них.
+
+### Location
+
+Локацией принято считать определение местоположения чего-либо. Также в обиходе можно встретить определение локации, как некоторой географической области. Мы будем использовать `location` для того, чтоб получать местонахождение устройства (пользователя) и обозначать координаты отображаемой области.
+
+Сейчас в нашем приложении отображается местоположение устройства. При этом уровень отображения один из начальных. Мы хотим, чтобы при открытии загружалась определённая область.
+
+В `MapKit` есть структура: 
+
+```swift
+struct CLLocationCoordinate2D {
+    var latitude: CLLocationDegrees // широта в градусах (WGS84)
+    var longitude: CLLocationDegrees // долгота в градусах (WGS84)
+
+    // ...
+}
+```  
+
+Мы воспользуемся ею для создания объекта на основе координат широты и долготы. Координаты должны быть нам известны. Воспользуемся поиском через `Google Maps`. Введём в запрос что-нибудь необычное, например, "Памятник почтальону Печкину". Жмём на предложенную достопримечательность. 
+
+![Google Maps поиск локации](https://cdn.sparrowcode.io/tutorials/mapkit/g-location-search.png)
+
+То, что нужно. 
+
+![Google Maps отображаемая локация](https://cdn.sparrowcode.io/tutorials/mapkit/g-location-view.png)
+
+Теперь обратите внимание на `url`-адрес:
+
+```
+https://www.google.ru/maps/place/.../@54.9502529,39.0187517,17z/data=...
+```
+
+Нас интересует:
+
+- `54.9502529` - широта
+- `39.0187517` - долгота
+- `17z` - `zoom = 17`
+
+Благодаря пометке `17z` мы видим отображение карты в более информативном и удобном для восприятия виде. Во `viewDidLoad()` вернём обратно `mapType` в схематичный вид и добавим `location`. 
+
+```swift
+override func viewDidLoad() {
+        
+        // ...
+        
+        mapView.mapType = .standard
+        let location = CLLocationCoordinate2D(latitude: 54.9502529 , longitude: 39.0187517)
+    }
+```
+
+Для отображения заданного региона воспользуемся методом `setRegion(_ region: MKCoordinateRegion, animated: Bool)`. Он переместит отображение в указанную локацию при помощи встроенной анимации масштабирования.
+
+Нам потребуется создать объект типа `MKCoordinateRegion(center centerCoordinate: CLLocationCoordinate2D, latitudinalMeters: CLLocationDistance, longitudinalMeters: CLLocationDistance)`, который представляет собой прямоугольный географический регион с центром вокруг указанной широты и долготы.
+
+`location` будет являться центральной точкой нашей карты. `regionRadius` отвечает за размер дистанции с севера на юг и с востока на запад.
+
+```swift
+override func viewDidLoad() {
+        
+        // ...
+        
+        mapView.mapType = .standard
+        let location = CLLocationCoordinate2D(latitude: 54.9502529 , longitude: 39.0187517)
+        let regionRadius: CLLocationDistance = 1000
+        let coordinateRegion = MKCoordinateRegion(center: location, latitudinalMeters: regionRadius, longitudinalMeters: regionRadius)
+        mapView.setRegion(coordinateRegion, animated: true)
+    }
+```
+
+Запустим и посмотрим, что получилось.
+
+![Отображение location](https://cdn.sparrowcode.io/tutorials/mapkit/zoom-to-location.png)
+
+### GeoPoint
+
+
+
+### GeoMarker
+
