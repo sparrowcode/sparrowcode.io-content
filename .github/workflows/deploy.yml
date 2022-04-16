@@ -6,7 +6,7 @@ on:
 
 jobs:
   deploy:
-    if: github.repository == 'sparrowcode/Website'
+    if: github.repository == 'sparrowcode.io-content'
     name: Deploy to site
     runs-on: ubuntu-latest
     steps:
