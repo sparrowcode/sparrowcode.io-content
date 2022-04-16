@@ -432,7 +432,7 @@ override func viewDidLoad() {
 
 Воспользуемся методом `setCameraBoundary(_ cameraBoundary: MKMapView.CameraBoundary?, animated: Bool)`. Он устанавливает границу камеры для представления карты с возможностью использования встроенной анимации. Параметр типа `CameraBoundary` отвечает за границу области, в пределах которой должен оставаться центр карты.
 
-```
+```swift
 override func viewDidLoad() {
     
     // ...
