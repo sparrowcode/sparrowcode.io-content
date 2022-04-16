@@ -378,6 +378,19 @@ override func viewDidLoad() {
 
 ![Отображение location](https://cdn.sparrowcode.io/tutorials/mapkit/zoom-to-location.png)
 
+Изменим `regionRadius`, чтоб немного увеличить отображение.
+
+``swift
+override func viewDidLoad() {
+        
+        // ...
+        
+        let regionRadius: CLLocationDistance = 500
+    }
+```
+
+![Отображение location 500](https://cdn.sparrowcode.io/tutorials/mapkit/zoom-to-location-500.png)
+
 ### GeoPoint
 
 
