@@ -380,7 +380,7 @@ override func viewDidLoad() {
 
 Изменим `regionRadius`, чтоб немного увеличить отображение.
 
-``swift
+```swift
 override func viewDidLoad() {
         
         // ...
