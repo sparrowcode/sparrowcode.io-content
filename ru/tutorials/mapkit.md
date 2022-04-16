@@ -9,10 +9,10 @@
     - [Уровни](#уровни)
     - [Вес](#вес)
 - [Метки](#метки)
-    - [Location]()
+    - [Location](#location)
     - [GeoPoint]()
     - [GeoMarker]()
-- [Камера]()
+- [Камера](#камера)
 - [Данные]()
     - [GeoJSON]()
     - [Описание]()
@@ -347,12 +347,12 @@ https://www.google.ru/maps/place/.../@54.9502529,39.0187517,17z/data=...
 
 ```swift
 override func viewDidLoad() {
-        
-        // ...
-        
-        mapView.mapType = .standard
-        let location = CLLocationCoordinate2D(latitude: 54.9502529 , longitude: 39.0187517)
-    }
+    
+    // ...
+    
+    mapView.mapType = .standard
+    let location = CLLocationCoordinate2D(latitude: 54.9502529 , longitude: 39.0187517)
+}
 ```
 
 Для отображения заданного региона воспользуемся методом `setRegion(_ region: MKCoordinateRegion, animated: Bool)`. Он переместит отображение в указанную локацию при помощи встроенной анимации масштабирования.
@@ -363,15 +363,15 @@ override func viewDidLoad() {
 
 ```swift
 override func viewDidLoad() {
-        
-        // ...
-        
-        mapView.mapType = .standard
-        let location = CLLocationCoordinate2D(latitude: 54.9502529 , longitude: 39.0187517)
-        let regionRadius: CLLocationDistance = 1000
-        let coordinateRegion = MKCoordinateRegion(center: location, latitudinalMeters: regionRadius, longitudinalMeters: regionRadius)
-        mapView.setRegion(coordinateRegion, animated: true)
-    }
+    
+    // ...
+    
+    mapView.mapType = .standard
+    let location = CLLocationCoordinate2D(latitude: 54.9502529 , longitude: 39.0187517)
+    let regionRadius: CLLocationDistance = 1000
+    let coordinateRegion = MKCoordinateRegion(center: location, latitudinalMeters: regionRadius, longitudinalMeters: regionRadius)
+    mapView.setRegion(coordinateRegion, animated: true)
+}
 ```
 
 Запустим и посмотрим, что получилось.
@@ -382,14 +382,43 @@ override func viewDidLoad() {
 
 ```swift
 override func viewDidLoad() {
-        
-        // ...
-        
-        let regionRadius: CLLocationDistance = 500
-    }
+    
+    // ...
+    
+    let regionRadius: CLLocationDistance = 500
+}
 ```
 
 ![Отображение location 500](https://cdn.sparrowcode.io/tutorials/mapkit/zoom-to-location-500.png)
+
+Для зумирования в симуляторе удерживайте клавишу `option` и, зажав левую кнопку мыши, перемещайте курсор. 
+
+Преобразуем наш код так, чтобы расчистить `viewDidLoad()`. Вынесем наши константы в `extension`, для этого сделаем их вычисляемыми свойствами.
+
+```swift
+extension UIViewController {
+    var location: CLLocationCoordinate2D {
+        CLLocationCoordinate2D(latitude: 54.9502529 , longitude: 39.0187517)
+    }
+    var regionRadius: CLLocationDistance { 500 }
+    var coordinateRegion: MKCoordinateRegion {
+        MKCoordinateRegion(center: location, latitudinalMeters: regionRadius, longitudinalMeters: regionRadius)
+    }
+}
+```
+
+Теперь `viewDidLoad` выглядит аккуратно:
+
+```swift
+override func viewDidLoad() {
+    super.viewDidLoad()
+    
+    view.addSubview(mapView)
+    AnchorsSetter.setAllSides(for: mapView)
+    mapView.mapType = .standard
+    mapView.setRegion(coordinateRegion, animated: true)
+}
+```
 
 ### GeoPoint
 
@@ -397,3 +426,43 @@ override func viewDidLoad() {
 
 ### GeoMarker
 
+## Камера
+
+`MapKit` может задать ограничения панорамирования и масштабирования карты в указанной области. Это полезно, когда необходимо сосредоточить пользователя на указанной области.
+
+Воспользуемся методом `setCameraBoundary(_ cameraBoundary: MKMapView.CameraBoundary?, animated: Bool)`. Он устанавливает границу камеры для представления карты с возможностью использования встроенной анимации. Параметр типа `CameraBoundary` отвечает за границу области, в пределах которой должен оставаться центр карты.
+
+```
+override func viewDidLoad() {
+    
+    // ...
+    
+    mapView.setCameraBoundary(MKMapView.CameraBoundary(coordinateRegion: coordinateRegion), animated: true)
+}
+```
+
+Также нам потребуется метод `setCameraZoomRange(_ cameraZoomRange: MKMapView.CameraZoomRange?, animated: Bool)`. С его помощью мы установим диапазон масштабирования камеры для просмотра карты.
+
+В `extension` добавим вычисляемое свойство `zoomRange`.
+
+```swift
+extension UIViewController {
+
+    // ...
+
+    var zoomRange: MKMapView.CameraZoomRange? {
+        MKMapView.CameraZoomRange(maxCenterCoordinateDistance: 150000)
+    }
+}
+```
+
+`maxCenterCoordinateDistance` - максимальное расстояние от центральной координаты представления карты, измеряемое в метрах.
+
+```swift
+override func viewDidLoad() {
+    
+    // ...
+    
+    mapView.setCameraZoomRange(zoomRange, animated: true)
+}
+```
