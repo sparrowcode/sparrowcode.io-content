@@ -422,6 +422,58 @@ override func viewDidLoad() {
 
 ### GeoPoint
 
+```swift
+extension UIViewController {
+
+    // ...
+    
+    var geoPoint: MKPlacemark {
+        MKPlacemark(coordinate: location)
+    }
+}
+```
+
+```swift
+override func viewDidLoad() {
+
+    // ...
+    
+    mapView.addAnnotation(geoPoint)
+}
+```
+
+![GeoPoint](https://cdn.sparrowcode.io/tutorials/mapkit/geo-point.png)
+
+```swift
+extension UIViewController {
+
+    // ...
+    
+    var annotation: MKPointAnnotation {
+        let ann = MKPointAnnotation()
+        ann.coordinate = location
+        ann.title = "Памятник почтальону Печкину"
+        ann.subtitle = "Достопримечательность"
+        
+        return ann
+    }
+}
+```
+
+```swift
+override func viewDidLoad() {
+
+    // ...
+    
+    mapView.addAnnotation(annotation)
+}
+```
+
+![GeoPoint Annotation](https://cdn.sparrowcode.io/tutorials/mapkit/geo-point-annotation.png)
+
+Нажмём на геоточку.
+
+![GeoPoint Annotation Full](https://cdn.sparrowcode.io/tutorials/mapkit/geo-point-annotation-full.png)
 
 
 ### GeoMarker
