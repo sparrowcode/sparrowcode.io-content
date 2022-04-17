@@ -4,6 +4,7 @@
         "description" : "Как изменить порядок ячеек в коллекции и таблице. Как перенести ячейки в другую коллекцию. Перемещение нескольких ячеек группой.",
         "category" : "uikit",
         "author" : "ivanvorobei",
+        "editors" : ["svtnck"],
         "keywords" : [
             "UICollectionViewDragDelegate",
             "UICollectionViewDropDelegate",
@@ -12,7 +13,7 @@
             "UIDrag",
             "UIGestureRecognizer"
         ],
-        "updated_date" : "03.04.2022",
+        "updated_date" : "15.04.2022",
         "added_date" : "11.07.2021"
     },
     "uisheetpresentationcontroller" : {
@@ -27,7 +28,7 @@
             "UIKit",
             "iOS 15"
         ],
-        "updated_date" : "10.04.2022",
+        "updated_date" : "15.04.2022",
         "added_date" : "11.10.2021"
     },
     "sf-symbols-3" : {
@@ -41,7 +42,7 @@
             "SwiftUI",
             "iOS 15"
         ],
-        "updated_date" : "06.02.2022",
+        "updated_date" : "15.04.2022",
         "added_date" : "28.10.2021"
     },
     "uiviewcontroller-lifecycle" : {
@@ -49,6 +50,7 @@
         "description" : "Рассмотрим когда вызываются методы контроллера и что можно делать внутри них. Когда настраивать вьюхи и данные.",
         "category" : "uikit",
         "author" : "ivanvorobei",
+        "editors" : ["svtnck"],
         "keywords" : [
             "UIKit",
             "UIViewController",
@@ -57,7 +59,7 @@
             "жизненный цикл uiviewcontroller",
             "жизненный цикл uiview"
         ],
-        "updated_date" : "27.12.2021",
+        "updated_date" : "15.04.2022",
         "added_date" : "19.11.2021"
     },
     "how-to-delete-userdefaults-on-macos-catalyst" : {
@@ -69,7 +71,7 @@
             "UserDefaults",
             "Catalyst"
         ],
-        "updated_date" : "14.12.2021",
+        "updated_date" : "15.12.2021",
         "added_date" : "11.12.2021"
     },
     "edge-insets-uibutton" : {
@@ -83,7 +85,7 @@
             "imageEdgeInsets",
             "contentEdgeInsets"
         ],
-        "updated_date" : "03.04.2022",
+        "updated_date" : "15.04.2022",
         "added_date" : "13.12.2021"
     },
     "product-page-optimization-alternative-icons" : {
@@ -91,10 +93,11 @@
         "description" : "Как добавить альтернативные иконки для A/B тестов на странице приложения.",
         "category" : "app_store_connect",
         "author" : "alxrguz",
+        "editors" : ["svtnck"],
         "keywords" : [
             "alternative icons"
         ],
-        "updated_date" : "27.12.2021",
+        "updated_date" : "15.04.2022",
         "added_date" : "27.12.2021"
     },
     "how-add-view-to-swiftui-library" : {
@@ -108,7 +111,7 @@
             "library",
             "LibraryContentProvider"
         ],
-        "updated_date": "03.04.2022",
+        "updated_date": "15.04.2022",
         "added_date": "02.02.2022"
     },
     "async-await" : {
@@ -116,13 +119,13 @@
         "description" : "Разберём async, await, actor. Напишем тузлу для поиска приложений в App Store, используя новые инструменты.",
         "category" : "development",
         "author" : "somenkovnikita",
-        "editors" : ["ivanvorobei"],
+        "editors" : ["ivanvorobei", "svtnck"],
         "keywords" : [
             "async",
             "await",
             "actor"
         ],
-        "updated_date": "03.04.2022",
+        "updated_date": "15.04.2022",
         "added_date": "06.02.2022"
     },
     "mastering-progressview-swiftui" : {
@@ -130,11 +133,11 @@
         "description" : "Как устроен ProgressView. Как настроить внешний вид: спиннер и прогресс-бар.",
         "category" : "swiftui",
         "author" : "wmorgue",
-        "editors" : ["ivanvorobei"],
+        "editors" : ["ivanvorobei", "svtnck"],
         "keywords" : [
             "ProgressView"
         ],
-        "updated_date": "17.02.2022",
+        "updated_date": "15.04.2022",
         "added_date": "09.02.2022"
     },
     "searchable-swiftui" : {
@@ -146,7 +149,7 @@
         "keywords" : [
             "searchable"
         ],
-        "updated_date": "09.03.2022",
+        "updated_date": "15.04.2022",
         "added_date": "21.02.2022"
     },
     "redacted-modifier-swiftui" : {
@@ -160,7 +163,7 @@
             "unredacted",
             "RedactionReasons"
         ],
-        "updated_date": "07.03.2022",
+        "updated_date": "15.04.2022",
         "added_date": "01.03.2022"
     },
     "keyboard-shortcut-swiftui" : {
@@ -168,11 +171,11 @@
         "description" : "Знакомимся с модификатором `keyboardShortcut`. Добавим модификаторы для клавиш `.command`, `.option`, `.shift`",
         "category" : "swiftui",
         "author" : "wmorgue",
-        "editors" : ["ivanvorobei"],
+        "editors" : ["ivanvorobei", "svtnck"],
         "keywords" : [
             "keyboard shortcut"
         ],
-        "updated_date": "18.03.2022",
+        "updated_date": "15.04.2022",
         "added_date": "14.03.2022"
     },
     "access-control" : {
@@ -180,13 +183,13 @@
         "description" : "Рассмотрим уровни доступа и как обезопасить свой код с ними.",
         "category" : "development",
         "author" : "liubowolkova",
-        "editors" : ["ivanvorobei"],
+        "editors" : ["ivanvorobei", "svtnck"],
         "keywords" : [
             "access control",
             "access control swift",
             "code safety"
         ],
-        "updated_date": "25.03.2022",
+        "updated_date": "15.04.2022",
         "added_date": "22.03.2022"
     }
 }

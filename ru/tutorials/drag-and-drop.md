@@ -2,7 +2,7 @@
 
 Перед погружением в код разберёмся, как устроен жизненный цикл драга и дропа.
 
-![preview](https://cdn.sparrowcode.io/tutorials/drag-and-drop-part-1/preview.jpg)
+![Кадр из фильма «Форсаж: Хоббс и Шоу».](https://cdn.sparrowcode.io/tutorials/drag-and-drop-part-1/preview.jpg)
 
 ## Модели
 
@@ -91,7 +91,7 @@ extension CollectionController: UICollectionViewDragDelegate {
 
 Давайте посмотрим, что получается на этом этапе.
 
-[Drag Preview](https://cdn.sparrowcode.io/tutorials/drag-and-drop-part-1/drag-delegate.mov)
+[Начало и завершение работы драга.](https://cdn.sparrowcode.io/tutorials/drag-and-drop-part-1/drag-delegate.mov)
 
 Ячейка возвращается на место потому что дроп еще не готов, его реализуем дальше.
 
@@ -112,7 +112,7 @@ func collectionView(_ collectionView: UICollectionView, itemsForAddingTo session
 
 Теперь ячейки собираются в стопку. Стопку можно сбрасывать как отдельные ячейки.
 
-[Drag Stack](https://cdn.sparrowcode.io/tutorials/drag-and-drop-part-1/drag-stack.mov)
+[Сбор ячеек в стопку во время драга.](https://cdn.sparrowcode.io/tutorials/drag-and-drop-part-1/drag-stack.mov)
 
 ## Drop
 
@@ -205,7 +205,7 @@ func collectionView(_ collectionView: UICollectionView, performDropWith coordina
 
 Теперь коллекция и data source обновляются при перемещении, ячейка дропается по новому индексу. Глянем, что получилось:
 
-[Drag Preview](https://cdn.sparrowcode.io/tutorials/drag-and-drop-part-1/drop-delegate.mov)
+[Перемещение и дроп ячейки в коллекцию.](https://cdn.sparrowcode.io/tutorials/drag-and-drop-part-1/drop-delegate.mov)
 
 Чтобы ячейки расступались для дропа другой ячейки, используйте Drop Proposal c `.insertAtDestinationIndexPath`. Любой другой интент не будет этого делать. Иногда багует с коллекцией, будьте осторожны.
 
@@ -241,7 +241,7 @@ public protocol UITableViewDragDelegate: NSObjectProtocol {
 }
 ```
 
-Дроп работает аналогично. Дроп работает без костылей в таблице, подозреваю что из-за отсутствие лейаута. 
+Дроп работает аналогично. Дроп работает без костылей в таблице, подозреваю что из-за отсутствия лейаута. 
 
 Редактирование таблицы никак не влияет на вызовы методов дропа.
 
@@ -251,7 +251,7 @@ tableView.isEditing = true
 
 То есть у вас может быть системный реордер ячеек и дроп внутрь ячеек.
 
-[Table Drop](https://cdn.sparrowcode.io/tutorials/drag-and-drop-part-1/table-drop.mov)
+[Перемещение и дроп ячейки из коллекции в таблицу.](https://cdn.sparrowcode.io/tutorials/drag-and-drop-part-1/table-drop.mov)
 
 ## `DestinationIndexPath`
 

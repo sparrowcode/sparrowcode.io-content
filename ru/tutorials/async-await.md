@@ -1,6 +1,6 @@
 `async/await` — новый поход для работы с многопоточностью в Swift. Он упрощает написание сложных цепочек вызовов и делает код читаемым. Сначала разберёмся с теорией, а в конце туториала напишем инструмент для поиска приложений в App Store с использованием `async/await`.
 
-![async/await Preview](https://cdn.sparrowcode.io/tutorials/async-await/preview.png)
+![Схема работы `async/await`.](https://cdn.sparrowcode.io/tutorials/async-await/preview.png)
 
 ## Как устроено
 
@@ -117,11 +117,11 @@ extension UIImageView {
 
 Теперь взглянем на схему для функции `setImage(url: URL)`:
 
-![How to work setImage(url: URL)](https://cdn.sparrowcode.io/tutorials/async-await/set-image-scheme.png)
+![Схема работы метода `setImage(url: URL)`.](https://cdn.sparrowcode.io/tutorials/async-await/set-image-scheme.png)
 
 и `loadImage(for: url)`:
 
-![How to work loadImage(for: URL)](https://cdn.sparrowcode.io/tutorials/async-await/load-image-scheme.png)
+![Схема работы метода `loadImage(for: URL)`.](https://cdn.sparrowcode.io/tutorials/async-await/load-image-scheme.png)
 
 Когда выполнение дойдёт до `await`, функция **может** остановиться, а может и нет. Система выполнит метод `loadImage(for: url)`, поток не заблокируется в ожидании результата. Когда метод закончит выполняться, система возобновит работу функции - продолжится выполнение `self.image = image`. Мы обновили UI, не переключая поток: это приравнивание автоматически сработает на главном потоке.
 
@@ -181,7 +181,7 @@ if downloadFileTask.isCancelled {
 } else {
     downloadFileTask.cancel()
     // Помечаем задачу как cancel
-    print("Загрука отменяется...")
+    print("Загрузка отменяется...")
 }
 ```
 
@@ -255,7 +255,7 @@ DispatchQueue.main.async {
 }
 ```
 
-`Task` по умолчанию наследует приоритет и контекст у задачи родителя, а если родителя нет, то наследует у текущего `actor`. Создавая Task в `viewWillAppear()`, мы неявно вызываем его в главном потоке. `cardsTask` и `userInfoTask` вызовутся на главном потоке, потому что `Task` наследует это из родительской задачи. Мы не сохранили `Task`, но содержимое отработает и `self` захватится сильно. Если удалили контроллер до того, как закроем его с помощью `dismiss()`, код `Task` продолжит выполняться. Но можно сохранить ссылку на на нашу задачу и отменить её:
+`Task` по умолчанию наследует приоритет и контекст у задачи родителя, а если родителя нет, то наследует у текущего `actor`. Создавая Task в `viewWillAppear()`, мы неявно вызываем его в главном потоке. `cardsTask` и `userInfoTask` вызовутся на главном потоке, потому что `Task` наследует это из родительской задачи. Мы не сохранили `Task`, но содержимое отработает и `self` захватится сильно. Если удалили контроллер до того, как закроем его с помощью `dismiss()`, код `Task` продолжит выполняться. Но можно сохранить ссылку на нашу задачу и отменить её:
 
 ```swift
 final class MyViewController: UIViewController {
@@ -450,7 +450,7 @@ Task {
 ```swift
 extension MainActor {
     func runOnMain() {
-        // напечается что-то вроде:
+        // напечатается что-то вроде:
         // <_NSMainThread: 0x600003cf04c0>{number = 1, name = main}
         print(Thread.current)
     }

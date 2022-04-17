@@ -18,7 +18,7 @@ struct ContentView: View {
 }
 ```
 
-[Indeterminate Activity Indicator](https://cdn.sparrowcode.io/tutorials/mastering-progressview-swiftui/indeterminate_activity_indicator.mov)
+[Работа с неопределённым activity-индикатором.](https://cdn.sparrowcode.io/tutorials/mastering-progressview-swiftui/indeterminate_activity_indicator.mov)
 
 По умолчанию `SwiftUI` определяет вращающийся бар загрузки (спиннер), а модификатор `.tint()` меняет цвет бара.
 
@@ -78,7 +78,7 @@ extension ContentView {
 }
 ```
 
-[Determinate Activity Indicator](https://cdn.sparrowcode.io/tutorials/mastering-progressview-swiftui/determinate_activity_indicator.mov)
+[Работа с определённым activity-индикатором.](https://cdn.sparrowcode.io/tutorials/mastering-progressview-swiftui/determinate_activity_indicator.mov)
 
 Если нажмём на `Load more`, то начнётся загрузка. Текст показывает прогресс, а кнопка `Reset` нужна для сброса. Когда загрузка закончится, текст на экране изменится, а кнопка `Load more` станет неактивной.
 
@@ -111,7 +111,7 @@ struct TimerProgressView: View {
 }
 ```
 
-[Timer Progress](https://cdn.sparrowcode.io/tutorials/mastering-progressview-swiftui/timer_progress.mov)
+[Работа с таймером.](https://cdn.sparrowcode.io/tutorials/mastering-progressview-swiftui/timer_progress.mov)
 
 Событие вызывается несколько раз при помощи таймера. Код:
 
@@ -128,7 +128,7 @@ let timer = Timer.publish(every: 0.05, on: .main, in: .common).autoconnect()
 
 В [документации Apple](https://developer.apple.com/documentation/foundation/timer/3329589-publish) описан метод `publish`. Больше инициализаторов — в документации Xcode или [на сайте](https://developer.apple.com/documentation/swiftui/progressview).
 
-![Documentation SwiftUI ProgressView](https://cdn.sparrowcode.io/tutorials/mastering-progressview-swiftui/progressview_init.png)
+![Скриншот с сайта Apple Developer.](https://cdn.sparrowcode.io/tutorials/mastering-progressview-swiftui/progressview_init.png)
 
 ## Дизайн
 
@@ -180,4 +180,4 @@ struct TimerProgressView: View {
 
 Теперь прогресс продолжается с середины в противоположные стороны:
 
-[RoundedProgressViewStyle](https://cdn.sparrowcode.io/tutorials/mastering-progressview-swiftui/rounded_progress_view.mov)
+[Загрузка с `RoundedProgressViewStyle`.](https://cdn.sparrowcode.io/tutorials/mastering-progressview-swiftui/rounded_progress_view.mov)
