@@ -17,7 +17,7 @@
         "added_date" : "11.07.2021"
     },
     "uisheetpresentationcontroller" : {
-        "title" : "UISheetPresentationController как в приложении Карты",
+        "title" : "´UISheetPresentationController´ как в приложении Карты",
         "description" : "В iOS 15 появились sheet-контроллеры. Их можно перетаскивать с изменением высоты. Вы встречали эти контроллеры в приложениях «Карты» и «Акции».",
         "category" : "uikit",
         "author" : "ivanvorobei",
@@ -46,7 +46,7 @@
         "added_date" : "28.10.2021"
     },
     "uiviewcontroller-lifecycle" : {
-        "title" : "Жизненный цикл UIViewController",
+        "title" : "Жизненный цикл ´UIViewController´",
         "description" : "Рассмотрим когда вызываются методы контроллера и что можно делать внутри них. Когда настраивать вьюхи и данные.",
         "category" : "uikit",
         "author" : "ivanvorobei",
@@ -75,7 +75,7 @@
         "added_date" : "11.12.2021"
     },
     "edge-insets-uibutton" : {
-        "title" : "Отступы Edge Insets для UIButton",
+        "title" : "Отступы Edge Insets для ´UIButton´",
         "description" : "Как добавить отступ между картинкой и заголовком в кнопке. Как поместить иконку справа от заголовка.",
         "category" : "uikit",
         "author" : "ivanvorobei",
@@ -89,7 +89,7 @@
         "added_date" : "13.12.2021"
     },
     "product-page-optimization-alternative-icons" : {
-        "title" : "Альтернативные иконки для Product Page Optimization",
+        "title" : "Альтернативные иконки для тестов Product Page Optimization",
         "description" : "Как добавить альтернативные иконки для A/B тестов на странице приложения.",
         "category" : "app_store_connect",
         "author" : "alxrguz",
@@ -129,7 +129,7 @@
         "added_date": "06.02.2022"
     },
     "mastering-progressview-swiftui" : {
-        "title" : "ProgressView в SwiftUI",
+        "title" : "Индикатор прогресса с ´ProgressView´ в SwiftUI",
         "description" : "Как устроен ProgressView. Как настроить внешний вид: спиннер и прогресс-бар.",
         "category" : "swiftui",
         "author" : "wmorgue",
@@ -141,7 +141,7 @@
         "added_date": "09.02.2022"
     },
     "searchable-swiftui" : {
-        "title" : "Searchable в SwiftUI",
+        "title" : "Поиск и модификатор ´Searchable´ в SwiftUI",
         "description" : "Поиск в SwiftUI. Работаем с модификатором `Searchable`.",
         "category" : "swiftui",
         "author" : "wmorgue",
@@ -153,7 +153,7 @@
         "added_date": "21.02.2022"
     },
     "redacted-modifier-swiftui" : {
-        "title" : "Модификатор redacted в SwiftUI",
+        "title" : "Прототип вью и модификатор ´redacted´ в SwiftUI",
         "description" : "Делаем прототип вью в SwiftUI. Скелет интерфейса, пока контент загружается.",
         "category" : "swiftui",
         "author" : "wmorgue",
@@ -167,7 +167,7 @@
         "added_date": "01.03.2022"
     },
     "keyboard-shortcut-swiftui" : {
-        "title" : "Сочетания клавиш в SwiftUI",
+        "title" : "Действия на сочетания клавиш в SwiftUI",
         "description" : "Знакомимся с модификатором `keyboardShortcut`. Добавим модификаторы для клавиш `.command`, `.option`, `.shift`",
         "category" : "swiftui",
         "author" : "wmorgue",
