@@ -10,14 +10,14 @@
     - [Вес](#вес)
 - [Метки](#метки)
     - [Location](#location)
-    - [GeoPoint]()
-    - [GeoMarker]()
+    - [GeoMarker](#geomarker)
 - [Камера](#камера)
 - [Данные]()
     - [GeoJSON]()
     - [Описание]()
     - [Изображения]()
 - [Шейпы]()
+    - [GeoPoint]()
     - [Polyline]()
     - [Polygon]()
     - [GeoDistance]()
@@ -81,6 +81,7 @@ import MapKit
 import UIKit
 import MapKit
 class ViewController: UIViewController {
+
     let mapView: MKMapView = {
         let map = MKMapView()
         map.translatesAutoresizingMaskIntoConstraints = false
@@ -104,6 +105,7 @@ map.translatesAutoresizingMaskIntoConstraints = false
 struct AnchorsSetter {
     
     static func setAllSides(for view: UIView) {
+    
         if let superview = view.superview {
             NSLayoutConstraint.activate([
                 view.topAnchor.constraint(equalTo: superview.safeAreaLayoutGuide.topAnchor),
@@ -120,7 +122,9 @@ struct AnchorsSetter {
 
 ```swift
 override func viewDidLoad() {
+
     super.viewDidLoad()
+    
     view.addSubview(mapView)
     AnchorsSetter.setAllSides(for: mapView, with: view)
 }
@@ -316,6 +320,7 @@ override func viewDidLoad() {
 
 ```swift
 struct CLLocationCoordinate2D {
+
     var latitude: CLLocationDegrees // широта в градусах (WGS84)
     var longitude: CLLocationDegrees // долгота в градусах (WGS84)
 
@@ -397,6 +402,7 @@ override func viewDidLoad() {
 
 ```swift
 extension UIViewController {
+
     var location: CLLocationCoordinate2D {
         CLLocationCoordinate2D(latitude: 54.9502529 , longitude: 39.0187517)
     }
@@ -411,6 +417,7 @@ extension UIViewController {
 
 ```swift
 override func viewDidLoad() {
+
     super.viewDidLoad()
     
     view.addSubview(mapView)
@@ -420,7 +427,7 @@ override func viewDidLoad() {
 }
 ```
 
-### GeoPoint
+### GeoMarker
 
 ```swift
 extension UIViewController {
@@ -475,9 +482,6 @@ override func viewDidLoad() {
 
 ![GeoPoint Annotation Full](https://cdn.sparrowcode.io/tutorials/mapkit/geo-point-annotation-full.png)
 
-
-### GeoMarker
-
 ## Камера
 
 `MapKit` может задать ограничения панорамирования и масштабирования карты в указанной области. Это полезно, когда необходимо сосредоточить пользователя на указанной области.
@@ -493,6 +497,8 @@ override func viewDidLoad() {
 }
 ```
 
+Запустите симулятор и попробуйте передвигаться по карте. Вы увидите, что она не прогружается дальше небольшой области.
+
 Также нам потребуется метод `setCameraZoomRange(_ cameraZoomRange: MKMapView.CameraZoomRange?, animated: Bool)`. С его помощью мы установим диапазон масштабирования камеры для просмотра карты.
 
 В `extension` добавим вычисляемое свойство `zoomRange`.
@@ -503,12 +509,14 @@ extension UIViewController {
     // ...
 
     var zoomRange: MKMapView.CameraZoomRange? {
-        MKMapView.CameraZoomRange(maxCenterCoordinateDistance: 150000)
+        MKMapView.CameraZoomRange(maxCenterCoordinateDistance: 1000)
     }
 }
 ```
 
 `maxCenterCoordinateDistance` - максимальное расстояние от центральной координаты представления карты, измеряемое в метрах.
+
+Запускаем и видим, что теперь нельзя отдалить карту более, чем на заданное нами расстояние. Можно также задать ограничение на приближение, для этого используется `MKMapView.CameraZoomRange(minCenterCoordinateDistance: CLLocationDistance)`.
 
 ```swift
 override func viewDidLoad() {
@@ -518,3 +526,45 @@ override func viewDidLoad() {
     mapView.setCameraZoomRange(zoomRange, animated: true)
 }
 ```
+
+`MKMapCamera` - виртуальная камера для определения внешнего вида карты.
+`MKMapCamera(lookingAtCenter centerCoordinate: CLLocationCoordinate2D, fromEyeCoordinate eyeCoordinate: CLLocationCoordinate2D, eyeAltitude: CLLocationDistance)` - возвращает новый объект камеры, используя указанную информацию об угле обзора.
+
+`centerCoordinate` - координатная точка, по которой должна быть центрирована карта
+`eyeCoordinate` - координатная точка, в которой нужно разместить камеру. Если значение этого параметра равно значению параметра centerCoordinate, карта отображается так, как если бы камера смотрела прямо вниз; если эта точка смещена от значения centerCoordinate, карта отображается с соответствующим углом наклона и направлением
+`eyeAltitude` - высота (в метрах) над землей, на которой нужно разместить камеру
+
+```swift
+extension UIViewController {
+
+    // ...
+
+    var location2: CLLocationCoordinate2D {
+        CLLocationCoordinate2D(latitude: 54.9502700 , longitude: 39.0187900)
+    }
+    
+    var camera: MKMapCamera {
+        MKMapCamera(lookingAtCenter: location, fromEyeCoordinate: location2, eyeAltitude: 500)
+    }
+}
+```
+
+```swift
+override func viewDidLoad() {
+    
+    // ...
+    
+    mapView.setCamera(camera, animated: true)
+}
+```
+
+![MKMapCamera](https://cdn.sparrowcode.io/tutorials/mapkit/map-camera.png)
+
+## Данные
+
+### GeoJSON
+
+### Описание
+
+### Изображения
+
