@@ -663,164 +663,124 @@ override func viewDidLoad() {
 ```json
 "geometry": {
     "type": "Point",
-    "coordinates": [
-        78.4918212890625,
-        22.304343762932216
-    ]
+    "coordinates": [longitude, latitude]
 }
 ```
 
 **MultiPoint**
 
-MultiPoint используется для хранения нескольких точек координат в одной геометрии. Каждый элемент в массиве координат сам по себе является координатой. Это может быть использовано для хранения списка любимых мест.
+`MultiPoint` содержит информацию о наборе независимых геоточек. Массив значений хранит набор координат.
 
 ```json
 "geometry": {
     "type": "MultiPoint",
     "coordinates": [
-        [80.26951432228088,13.09223800602329],
-        [80.27061939239502,13.091631907724683],
-        [80.2714991569519,13.09260375427521],
-        [80.27050137519836,13.093241199930675]
+        [longitude, latitude],
+        [longitude1, latitude1],
+        [longitude2, latitude2]
     ]
 }
 ```
 
 **LineString**
 
-Это линия точек. Структура JSON такая же, как и у MultiPoint, но поскольку это тип LinePoint, отдельные координаты рассматриваются как соединенная линия, а не точки, лежащие отдельно.
+В отличие от набора независимых точек `MultiPoint`, `LineString` содержит набор связанных точек, представляющих собой линию. Структура `coordinates` такая же, как и у `MultiPoint`.
 
 ```json
 "geometry": {
     "type": "LineString",
     "coordinates": [
-        [80.2122116088867,13.113586344333864],
-        [80.25959014892577,13.072121016365408],
-        [80.29048919677733,13.114923819297273],
-        [80.3207015991211,13.075799674224164],
-        [80.33477783203125,13.112248862097216]
+        [longitude, latitude],
+        [longitude1, latitude1],
+        [longitude2, latitude2]
     ]
 }
 ```
 
 **MultiLineString**
 
-используется для хранения более одной LineString в одной геометрии. Каждый элемент массива Coordinates похож на один массив LineString Coordinates.
+Содержит информацию о нескольких `LineString` (линиях). В `coordinates` записывается массив из набора координат `LineString`.
 
 ```json
 "geometry": {
     "type": "MultiLineString",
     "coordinates" : [
         [
-        [longitude,latitude],
-        [longitude,latitude],
-        [longitude,latitude]  
-         ],
+            [longitude,latitude],
+            [longitude,latitude],
+            [longitude,latitude]  
+        ],
         [
-        [longitude,latitude],
-        [longitude,latitude],
-        [longitude,latitude]  
-         ],
-        [
-        [longitude,latitude],
-        [longitude,latitude],
-        [longitude,latitude]  
-         ]
+            [longitude,latitude],
+            [longitude,latitude],
+            [longitude,latitude]  
+        ]
     ]
 }
 ```
 
 **Polygon**
 
-Спецификация RFC определяет полигоны как линейные кольца. Линейное кольцо, это многоугольники — то есть любая замкнутая форма, да буквально любая форма.
-
-Спецификация RFC также определяет, что многоугольники закрыты. Закрытая форма означает, что первая и последняя координаты будут одинаковыми.
-
-Они могут быть использованы для хранения границ. Будь то граница страны, города, села или границы области.
+`Polygon` - многоугольник, любая замкнутая фигура. Полигоны используют для записи информации о некоторой области. В `coordinates` хранится набор координат вершин многоугольника.
 
 ```json
 "geometry": {
     "type": "Polygon",
     "coordinates": [
         [
-            [78.44238281249999,22.62415215809042],
-            [77.8436279296875,22.151795575397756],
-            [78.486328125,21.764601405743978],
-            [79.0521240234375,22.233175265402785],
-            [78.44238281249999,22.62415215809042]
+            [longitude, latitude],
+            [longitude1, latitude1],
+            [longitude2, latitude2],
+            [longitude, latitude]
         ]
     ]
 }
 ```
 
-**MultiPolygon**
-
-Как и MultiPoint и MultiLine, MultiPolygon представляет собой набор полигонов. Вы можете использовать их для хранения информации о границах разных городов в штате.
-
 **Feature и FeatureCollection**
 
-Теперь самое интересное. До этого вы узнали, как хранить географические данные в различных структурах, таких как Points, Lines и Polygons. Но как хранить информацию об этих местах?
-
-Правильный способ хранения географической информации — использовать Feature и FeatureCollection.
-
-GeoJSON Feature и FeatureCollections сами по себе являются геометрией. Это своего рода описание геометрии, которая используется для хранения другой геометрии и свойств (информации) об этой геометрии.
-
-Типичная Feature выглядит так
+Для записи полной информации используется тип `Feature` - геометрия геометрии, по сути.
 
 ```json
 {
     "type": "Feature",
     "geometry": {
         "type": "Point",
-        "coordinates": [-10.0,-10.0]
+        "coordinates": [longitude, latitude]
     },
     "properties": {
-        "temperature": "4C",
-        "country": "IN",
-        "somepropertyName": "Some description"
+        "area": "20000 sq meters",
+        "city": "Funny City",
+        "description": "Very funny city"
     }
 }
 ```
 
-В приведенном выше GeoJSON геометрия может быть любого из типов, которые мы обсуждали ранее, например, Point, Line или Polygon, а Feature содержат данные и информацию об этой геометрии.
-
-Как следует из названия, `FeatureCollection GeoJSON` содержит набор `Features`.
+`FeatureCollection` содержит набор `Features`.
 
 ```json
 {
-  "type": "FeatureCollection",
-  "features": [
+    "type": "FeatureCollection",
+    "features": [
     {
-      "type": "Feature",
-      "properties": {},
-      "geometry": {
-        "type": "Point",
-        "coordinates": [78.31054687499999,22.39071391683855]
-      }
+        "type": "Feature",
+        "properties": {},
+        "geometry": {
+            "type": "Point",
+            "coordinates": [longitude, latitude]
+        }
     },
     {
-      "type": "Feature",
-      "properties": {},
-      "geometry": {
-        "type": "Point",
-        "coordinates": [78.486328125,11.43695521614319]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {},
-      "geometry": {
-        "type": "Point",
-        "coordinates": [77.9150390625,27.176469131898898]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {},
-      "geometry": {
-        "type": "Point",
-        "coordinates": [75.673828125,19.766703551716976]
-      }
+        "type": "Feature",
+        "properties": {},
+        "geometry": {
+            "type": "LineString",
+            "coordinates": [
+                [longitude, latitude],
+                [longitude1, latitude1],
+                [longitude2, latitude2]
+            ]
+        }
     }
   ]
 }
