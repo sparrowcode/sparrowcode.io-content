@@ -10,13 +10,13 @@ VStack {
 
 ![Прототип вью.](https://cdn.sparrowcode.io/tutorials/redacted-modifier-swiftui/redacted_placeholder.jpg)
 
-Используйте прототип, чтобы:
+Когда пригодится прототип:
 
-1. Показать вью, контент которой будет доступно после загрузки.
+1. Показать вью, контент которой будет доступен после загрузки.
 2. Показать недоступное или частично доступное содержимое.
 3. Использовать вместо `ProgressView()`, о которой я [рассказал в гайде](https://sparrowcode.io/ru/mastering-progressview-swiftui).
 
-Рассмотрим сложный пример:
+Давайте рассмотрим сложный пример:
 
 ```swift
 struct Device {
@@ -37,7 +37,7 @@ extension Device {
 }
 ```
 
-Модель имеет название, системную иконку и описание. Вынес `airTag` в расширение. Создадим отдельную вью:
+У модели есть название, системная иконка и описание. Я вынес `airTag` в расширение, а сейчас мы создадим отдельную вью:
 
 ```swift
 struct DeviceView: View {
@@ -80,7 +80,7 @@ struct ContentView: View {
 
 ![Результат `DeviceView`.](https://cdn.sparrowcode.io/tutorials/redacted-modifier-swiftui/redacted_deviceview.jpg)
 
-Слева - вью без модификатора. Справа - с ним. Для наглядности добавим переключатель:
+Слева вью без модификатора. Справа — с ним. Давайте для наглядности добавим переключатель:
 
 ```swift
 struct ContentView: View {
@@ -128,7 +128,7 @@ VStack(spacing: 20) {
 
 ## Кликабельность
 
-Кнопка остается кликабельной и совершает действия даже после применения модификатора:
+Кнопка остаётся кликабельной и работает даже после того, как применили модификатор:
 
 ```swift
 VStack {
@@ -145,14 +145,14 @@ VStack {
 
 [Работа кнопки после применения модификатора.](https://cdn.sparrowcode.io/tutorials/redacted-modifier-swiftui/redacted_available_button.mov)
 
-Поведением кнопки управляйте вручную, ниже покажу как.
+Поведением кнопки управляйте вручную, ниже покажу, как это сделать.
 
 ## Причины редактирования
 
 Apple спроектировала структуру [RedactionReasons](https://developer.apple.com/documentation/swiftui/redactionreasons), которая отвечает за **причину** редактирования, применяемую ко вью.
-Доступно варианты `privacy` и `placeholder`. Первый отвечает за данные, которые скрыты как приватная информация. Placeholder отвечает за обобщенный прототип.
+Есть варианты `privacy` и `placeholder`. Первый отвечает за данные, которые скрыты как приватная информация, а placeholder отвечает за обобщённый прототип.
 
-Реализовать кастомную причину можно так:
+Как можно реализовать кастомную причину:
 
 ```swift
 extension RedactionReasons {
@@ -217,13 +217,13 @@ extension View {
 }
 ```
 
-Если переключить, кнопка станет не кликабельной.
+Если переключить, кнопка станет некликабельной.
 
 ![Кастомный `unredacted`.](https://cdn.sparrowcode.io/tutorials/redacted-modifier-swiftui/redacted_custom_unredacted.jpg)
 
 ## Собственный API
 
-Начнем с реализации своих причин:
+Начнём с реализации своих причин:
 
 ```swift
 enum Reasons {
@@ -283,9 +283,9 @@ struct Blurred_Previews: PreviewProvider {
 }
 ```
 
-![Отображение с `Blurred` модификатором.](https://cdn.sparrowcode.io/tutorials/redacted-modifier-swiftui/redacted_blurred_previews.jpg)
+![Отображение с `Blurred`-модификатором.](https://cdn.sparrowcode.io/tutorials/redacted-modifier-swiftui/redacted_blurred_previews.jpg)
 
-Я взял `Blurred` модификатор. Перейдем к следующему модификатору вью `RedactableModifier`:
+Я взял `Blurred`-модификатор. Перейдём к следующему модификатору вью `RedactableModifier`:
 
 ```swift
 struct RedactableModifier: ViewModifier {
@@ -306,8 +306,9 @@ struct RedactableModifier: ViewModifier {
 }
 ```
 
-Структура имеет `reason` свойство, которое принимает опциональное перечисление `Reasons`.
-Последний шаг - реализация метода к протоколу `View`:
+У структуры есть `reason`-свойство, которое принимает опциональное перечисление `Reasons`.
+
+Последний шаг — реализовать метод к протоколу `View`:
 
 ```swift
 extension View {
@@ -318,7 +319,7 @@ extension View {
 }
 ```
 
-Я не сделал отдельную вью, в которой буду вызывать модификаторы. Вместо этого поместил все в live preview:
+Я не стал делать отдельную вью, в которой буду вызывать модификаторы. Вместо этого поместил всё в live preview:
 
 ```swift
 struct RedactableModifier_Previews: PreviewProvider {
