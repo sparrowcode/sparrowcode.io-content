@@ -501,6 +501,35 @@ override func viewDidLoad() {
 
 ![GeoPoint Annotation Full](https://cdn.sparrowcode.io/tutorials/mapkit/geo-point-annotation-full.png)
 
+```swift
+import Foundation
+import MapKit
+
+class Landmark: NSObject, MKAnnotation {
+    let coordinate: CLLocationCoordinate2D
+    let title: String?
+    let subtitle: String?
+    
+    init(coordinate: CLLocationCoordinate2D, title: String?, subtitle: String?) {
+        self.coordinate = coordinate
+        self.title = title
+        self.subtitle = subtitle
+        
+        super.init()
+    }
+}
+```
+
+```swift
+override func viewDidLoad() {
+    
+    // ...
+    
+    let landmark = Landmark(coordinate: location, title: "Памятник почтальону Печкину", subtitle: "Достопримечательность")
+    mapView.addAnnotation(landmark)
+}
+```
+
 ## Камера
 
 `MapKit` может задать ограничения панорамирования и масштабирования карты в указанной области. Это полезно, когда необходимо сосредоточить пользователя на конкретном месте.
