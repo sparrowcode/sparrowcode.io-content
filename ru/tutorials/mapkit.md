@@ -65,7 +65,7 @@ import MapKit
 Создадим проект с названием `MapKitTutorial`. Выберите `Storyboard`. `Storyboard`-файл мы трогать не будем, всё сделаем через код.
 
 Проект имеет стандартную начальную файловую структуру:
-````
+
 ```
 ├── MapKitTutorial
 │   ├── AppDelegate
@@ -76,7 +76,6 @@ import MapKit
 │   ├── LaunchScreen
 │   ├── Info
 ```
-````
 
 Переходим в файл `ViewController `. Импортируем `MapKit`.  В теле класса создаём постоянную `mapView` типа `MKMapView`. В качестве значения укажем ей сомовызывающуюся функцию, возвращающую экземпляр `MKMapView`.
 
@@ -875,6 +874,20 @@ override func viewDidLoad() {
 Обратите внимание, что при записи координат первой указывается долгота.
 
 >Если вы не знаете, как создать файл с нужным расширением в проекте, то создайте его вне проекта и добавьте.
+
+```
+├── MapKitTutorial
+│   ├── AppDelegate
+│   ├── SceneDelegate
+│   ├── ViewController
+│   ├── Main
+│   ├── Assets
+│   ├── LaunchScreen
+│   ├── Info
+│   ├── Helper
+│   ├── Landmark
+│   ├── data
+```
 
 ### Изображения
 
