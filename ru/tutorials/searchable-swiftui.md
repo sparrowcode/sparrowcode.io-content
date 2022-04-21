@@ -2,7 +2,7 @@
 
 ## Инициализация
 
-Добавим модификатор `.searchable(text:)` к `NavigationView()`:
+Сначала добавим модификатор `.searchable(text:)` к `NavigationView()`:
 
 ```swift
 struct ContentView: View {
@@ -23,7 +23,7 @@ struct ContentView: View {
 
 [Работа `Searchable`.](https://cdn.sparrowcode.io/tutorials/searchable-swiftui/searchable_init.mov)
 
-Для изменения плейсхолдера в поисковой строке укажем `prompt`:
+Чтобы изменить плейсхолдер в поисковой строке, укажем `prompt`:
 
 ```swift
 .searchable(text: $searchQuery, prompt: "Нажмите для поиска…")
@@ -31,7 +31,7 @@ struct ContentView: View {
 
 ## Расположение
 
-Инициализатор `searchable()` принимает `placement`. Есть четыре варианта:    `automatic`, `navigationBarDrawer`, `sidebar` и `toolbar`. Параметр указывает **предпочтительное** размещение - в зависимости от иерархии вью и платформы, размещение может не сработать:
+Инициализатор `searchable()` принимает `placement`. Есть четыре варианта: `automatic`, `navigationBarDrawer`, `sidebar` и `toolbar`. Параметр указывает **предпочтительное** размещение, при этом в зависимости от иерархии вью и платформы размещение может не сработать:
 
 ```swift
 struct PrimaryView: View {
@@ -67,13 +67,13 @@ struct ContentView: View {
 
 ![Варианты расположения.](https://cdn.sparrowcode.io/tutorials/searchable-swiftui/searchable_diff_placement.png)
 
-Применили модификатор к `SecondaryView()` и изменили расположение на `.navigationBarDrawer`. За положение поля ввода отвечает структура `SearchFieldPlacement()`. По умолчанию `placement` установлено в `.automatic`.
+Мы применили модификатор к `SecondaryView()` и изменили расположение на `.navigationBarDrawer`. За положение поля ввода отвечает структура `SearchFieldPlacement()`. По умолчанию `placement` установлено в `.automatic`.
 
 [Изменяем `Searchable Placement`.](https://cdn.sparrowcode.io/tutorials/searchable-swiftui/searchable_placement.mov)
 
 ## Поиск
 
-Сделаем поиск и выдачу результата. Создадим приложение, показывающее список авторов статей, в котором пользователь может найти определенного автора. Подготовим структуру:
+Сделаем поиск и выдачу результата. Создадим приложение, показывающее список авторов статей, в котором пользователь может найти определённого автора. Сперва подготовим структуру:
 
 ```swift
 struct Author {
@@ -93,7 +93,7 @@ extension Author: Identifiable {
 }
 ```
 
-Имеем одно проперти `name` и массив данных `placeholder`. Перейдем в `ContentView()`:
+У нас есть одно проперти `name` и массив данных `placeholder`. Перейдём в `ContentView()`:
 
 ```swift
 struct ContentView: View {
@@ -126,13 +126,13 @@ extension ContentView {
 
 [Поиск автора статьи через `Searchable`.](https://cdn.sparrowcode.io/tutorials/searchable-swiftui/searchable_author_run.mov)
 
-Создадим `NavigationView` с `List`, который принимает массив авторов  и фильтрует его:
+Создадим `NavigationView` с `List`, который принимает массив авторов и фильтрует его:
 
 ```swift
 authors.filter { $0.name.contains(searchQuery) }
 ```
 
-По умолчанию бар поиска появляется внутри списка, поэтому он скрыт. Чтобы поиск появился - скрольте список вниз. Вынес `authorsResult` в расширение `ContentView`, чтобы отделить логику от интерфейса.
+По умолчанию бар поиска появляется внутри списка, поэтому он скрыт. Чтобы поиск появился, скрольте список вниз. Я вынес `authorsResult` в расширение `ContentView`, чтобы отделить логику от интерфейса.
 
 ## Предложения Suggestions
 
@@ -153,7 +153,7 @@ authors.filter { $0.name.contains(searchQuery) }
 
 ![Интерфейс `Searchable`.](https://cdn.sparrowcode.io/tutorials/searchable-swiftui/searchable_overlay.png)
 
-Параметр `suggestions` принимает `@ViewBuilder`, поэтому можно сделать кастомную View и комбинировать варианты для поискового предложения. Код текущего проекта:
+Параметр `suggestions` принимает `@ViewBuilder`, поэтому можно сделать кастомную View и комбинировать варианты для поискового предложения. Вот код текущего проекта:
 
 ```swift
 struct ContentView: View {
@@ -195,7 +195,7 @@ extension ContentView {
 }
 ```
 
-Приложение упадет, если мы введем символы или цифры. Я оставил этот код, чтобы продемонстрировать комбинированные варианты предложений для поиска:
+Приложение упадёт, если мы введём символы или цифры. Я оставил этот код, чтобы продемонстрировать комбинированные варианты предложений для поиска:
 
 ```swift
 .searchCompletion(authorsResult.first!.name)
@@ -203,7 +203,7 @@ extension ContentView {
 
 ## Кастомизация
 
-Если вам нужно больше контроля - отслеживание поисковых запросов, поиск в локальной базе данных и т.д., используйте модификатор `.onSubmit(of: SubmitTriggers)`. Он определяет различные триггеры для старта действия. Доступно 2 проперти: `text` и `search`.
+Если вам нужно больше контроля, например, отслеживание поисковых запросов, поиск в локальной базе данных и т. д., используйте модификатор `.onSubmit(of: SubmitTriggers)`. Он определяет различные триггеры для старта действия. Есть 2 проперти: `text` и `search`.
 
 ```swift
 .onSubmit(of: .search) { 
@@ -213,18 +213,17 @@ extension ContentView {
 
 [Работа `onSubmit` триггера.](https://cdn.sparrowcode.io/tutorials/searchable-swiftui/searchable_onsubmit.mov)
 
-Модификатор `.onSubmit()` сработает, когда будет отправлен поисковый запрос:
+Модификатор `.onSubmit()` сработает, когда отправите поисковый запрос по нажатию:
 
-1. По нажатию предполагаемого варианта.
-2. По нажатию ввода (`return`).
-3. По нажатию ввода (`return`) на физической клавиатуре.
+1. предполагаемого варианта,
+2. ввода (`return`),
+3. ввода (`return`) на физической клавиатуре.
 
 ## Environment
 
 Доступно 2 значения: `\.isSearching` и `\.dismissSearch`.
 
-`isSearching` - взаимодействует ли пользователь в данный момент с полем поиска. `dismissSearch` требует от системы завершить текущее взаимодействие с полем поиска.
-Оба значения среды работают только во вью, где вызывается модификатор `.searchable()`:
+`isSearching` помогает понять, взаимодействует ли пользователь в данный момент с полем поиска. `dismissSearch` требует от системы завершить текущее взаимодействие с полем поиска. Оба значения среды работают только во вью, где вызывается модификатор `.searchable()`:
 
 ```swift
 struct ContentView: View {
@@ -253,4 +252,4 @@ struct ContentView: View {
 }
 ```
 
-Добавить поиск в приложение просто. Но настроить поведение сложнее.
+Добавить поиск в приложение просто, а вот настроить поведение сложнее.
