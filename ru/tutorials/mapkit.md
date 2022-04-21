@@ -980,5 +980,16 @@ override func viewDidLoad() {
 
 ![MKMapCamera](https://cdn.sparrowcode.io/tutorials/mapkit/geodata.png)
 
+Чтобы увидеть вторую геометку потребуется немного передвинуть карту. Для удобства изменим параметр `eyeAltitude` камеры на `1000`, так обе геометки будут видны на экране.
+
+```swift
+extension UIViewController {    
+    var camera: MKMapCamera {
+        MKMapCamera(lookingAtCenter: location, fromEyeCoordinate: location2, eyeAltitude: 1000)
+    }
+}
+```
+
 ### Изображения
+
 
