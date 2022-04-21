@@ -930,9 +930,9 @@ init? (feature: MKGeoJSONFeature) {
         let properties = feature.properties,
         let json = try? JSONSerialization.jsonObject(with: properties),
         let props = json as? [String: Any] 
-    else return nil
+    else { return nil }
 
-    coordinate = point.coordinate
+    coordinate = geoPoint.coordinate
     title = props["title"] as? String
     subtitle = props["subtitle"] as? String
 
@@ -940,15 +940,10 @@ init? (feature: MKGeoJSONFeature) {
 }
 ```
 
-Вернёмся в `UIViewController`. Создадим переменную под массив декодированных объектов.
+Вернёмся в `UIViewController`. Создадим свойство под массив декодированных объектов.
 
 ```swift
-extension UIViewController {
-
-    // ...
-    
-    var landmarks: [Landmark] { [] }
-}
+    var landmarks: [Landmark] = []
 ```
 
 Добавим метод `getData()`, где и будем декодировать `data.geojson`. Полученные объекты будем сразу добавлять в массив `landmarks`.
@@ -957,7 +952,7 @@ extension UIViewController {
 func getData() {
     guard let file = Bundle.main.url(forResource: "data", withExtension: "geojson"),
         let data = try? Data(contentsOf: file) 
-    else return
+    else { return }
 
     do {
         let features = try MKGeoJSONDecoder()
@@ -971,7 +966,7 @@ func getData() {
 }
 ```
 
-Теперь необходимо вызвать метод `getData()` и добавить массив с данным на карту. Постоянная `landmark` более не нужна, её можно удалить.
+Теперь необходимо вызвать метод `getData()` и добавить массив с данными на карту. Постоянная `landmark` более не нужна, её можно удалить.
 
 ```swift
 override func viewDidLoad() {
@@ -982,6 +977,8 @@ override func viewDidLoad() {
     mapView.addAnnotations(landmarks)
 }
 ```
+
+![MKMapCamera](https://cdn.sparrowcode.io/tutorials/mapkit/geodata.png)
 
 ### Изображения
 
