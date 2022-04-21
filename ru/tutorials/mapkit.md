@@ -496,9 +496,15 @@ override func viewDidLoad() {
 
 ![GeoPoint Annotation](https://cdn.sparrowcode.io/tutorials/mapkit/geo-point-annotation.png)
 
-Нажмём на геоточку.
+Нажмём на геомаркер.
 
 ![GeoPoint Annotation Full](https://cdn.sparrowcode.io/tutorials/mapkit/geo-point-annotation-full.png)
+
+Для удобства рассмотрим ещё один способ, завязанный на протоколе `MKAnnotation`, который удобно использовать при отображении множества данных.
+
+Создадим новый `swift`-файл `Landmark` с соответствующим классом. Класс `Landmark` должен соответствовать протоколу `MKAnnotation`, а значит должен наследоваться от `NSObject`, потому что `MKAnnotation` является `NSObjectProtocol`.
+
+`MKAnnotation` требует обязательное свойство `coordinate` типа `CLLocation` или `CLLocationCoordinate2D`.
 
 ```swift
 import Foundation
@@ -519,6 +525,10 @@ class Landmark: NSObject, MKAnnotation {
 }
 ```
 
+`title` и `subtitle` мы сделали `String?` потому, что координата у геоточки есть всегда, а вот заголовка и подзаголовка может и не быть, как мы не добавляли его в `geoPoint`.
+
+Экземпляр `Landmark` заменит `annotation`. Возвращаемся к `UIViewController`. Мы не можем создать экземпляр и передать в него `location` в расширении до инициализации класса, поэтому сделаем это во `viewDidLoad()`.
+
 ```swift
 override func viewDidLoad() {
     
@@ -528,6 +538,8 @@ override func viewDidLoad() {
     mapView.addAnnotation(landmark)
 }
 ```
+
+Запустите симулятор. Вы увидите, что разницы в отображении между `annotation` и `landmark` нет.
 
 ## Камера
 
@@ -855,25 +867,43 @@ override func viewDidLoad() {
 
 ### Описание
 
-В проекте создадим файл `data.geojson` и запишем  в него информацию о нашей геоточке.
+В проекте создадим файл `data.geojson` и запишем  в него информацию о нескольких геоточках.
 
 ```json
 {
-    "type": "Feature",
-    "geometry": {
-        "type": "Point",
-        "coordinates": [39.0187517, 54.9502529]
+    "type": "FeatureCollection",
+    "features": [
+    {
+        "type": "Feature",
+        "properties": {
+            "title": "Памятник почтальону Печкину",
+            "subtitle": "Достопримечательность"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [39.0187517, 54.9502529]
+        }
     },
-    "properties": {
-        "title": "Памятник почтальону Печкину",
-        "subtitle": "Достопримечательность"
+    {
+        "type": "Feature",
+        "properties": {
+            "title": "Почта",
+            "subtitle": "Услуги"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [39.0210369, 54.9500234]
+        }
     }
+  ]
 }
 ```
 
 Обратите внимание, что при записи координат первой указывается долгота.
 
->Если вы не знаете, как создать файл с нужным расширением в проекте, то создайте его вне проекта и добавьте.
+>Если вы не знаете, как создать файл с нужным расширением в проекте, то создайте его вне проекта и добавьте туда.
+
+Проверьте, что структура вашего проекта соответствует этой:
 
 ```
 ├── MapKitTutorial
@@ -887,6 +917,70 @@ override func viewDidLoad() {
 │   ├── Helper
 │   ├── Landmark
 │   ├── data
+```
+
+Получение данных из `JSON` называют "декодированием" или "парсингом". Мы воспользуемся объектом класса `MKGeoJSONDecoder`, который декодирует объекты `GeoJSON` в типы `MapKit` при помощи метода `decode(_ data: Data) throws -> [MKGeoJSONObject]`. При этом он возвращает массив объектов соответсвующих протоколу `MKGeoJSONObject`. Этот протокол реализует класс `MKGeoJSONFeature`.
+
+Перейдём в `Landmark` и напишем ещё один инициализатор. Нам нужна заготовка под декодированные данные.
+
+```swift
+init? (feature: MKGeoJSONFeature) {
+
+    guard let geoPoint = feature.geometry.first as? MKPointAnnotation,
+        let properties = feature.properties,
+        let json = try? JSONSerialization.jsonObject(with: properties),
+        let props = json as? [String: Any] 
+    else return nil
+
+    coordinate = point.coordinate
+    title = props["title"] as? String
+    subtitle = props["subtitle"] as? String
+
+    super.init()
+}
+```
+
+Вернёмся в `UIViewController`. Создадим переменную под массив декодированных объектов.
+
+```swift
+extension UIViewController {
+
+    // ...
+    
+    var landmarks: [Landmark] { [] }
+}
+```
+
+Добавим метод `getData()`, где и будем декодировать `data.geojson`. Полученные объекты будем сразу добавлять в массив `landmarks`.
+
+```swift
+func getData() {
+    guard let file = Bundle.main.url(forResource: "data", withExtension: "geojson"),
+        let data = try? Data(contentsOf: file) 
+    else return
+
+    do {
+        let features = try MKGeoJSONDecoder()
+            .decode(data)
+            .compactMap { $0 as? MKGeoJSONFeature }
+        let mapedData = features.compactMap(Landmark.init)
+        landmarks.append(contentsOf: mapedData)
+    } catch {
+        print("Error MKGeoJSONDecoder")
+    }
+}
+```
+
+Теперь необходимо вызвать метод `getData()` и добавить массив с данным на карту. Постоянная `landmark` более не нужна, её можно удалить.
+
+```swift
+override func viewDidLoad() {
+
+    // ...
+    
+    getData()
+    mapView.addAnnotations(landmarks)
+}
 ```
 
 ### Изображения
