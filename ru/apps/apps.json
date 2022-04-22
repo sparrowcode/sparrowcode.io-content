@@ -157,5 +157,16 @@
             "added_date":"06.04.2022"
          }
       ]
+   },
+   {
+      "developer_name":"Василий Петухов",
+      "github_username":"kopsap4ik",
+      "apps":[
+         {
+            "id":"1579159150",
+            "name":"ScoreBoard для OBS и Wirecast",
+            "added_date":"22.04.2022"
+         }
+      ]
    }
 ]
