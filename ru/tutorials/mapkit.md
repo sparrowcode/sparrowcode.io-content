@@ -18,14 +18,10 @@
 - [Данные](#данные)
     - [GeoJSON](#geojson)
     - [Описание](#описание)
-    - [Изображения]()
-- [Шейпы]()
-    - [GeoPoint]()
-    - [Polyline]()
-    - [Polygon]()
-    - [GeoDistance]()
-    - [GeoPath]()
-    - [Route]()
+- [MKOverlay](#mkoverlay)
+    - [MKCircle](#mkcircle)
+    - [MKPolyline](#mkpolyline)
+    - [MKPolygon](#mkpolygon)
 
 ## API
 Для создания приложения с картой нам потребуется встроенное или стороннее `API`. Под «API» (Application Programming Interface) будем понимать способ структурного взаимодействия с фреймворком или библиотекой.
@@ -990,6 +986,168 @@ extension UIViewController {
 }
 ```
 
-### Изображения
+## MKOverlay
 
+### MKCircle
+
+```swift
+class ViewController: UIViewController, MKMapViewDelegate { // ... }
+```
+
+```swift
+extension UIViewController {
+    var circle: MKCircle {
+        MKCircle(center: location, radius: 10)
+    }
+}
+```
+
+```swift
+override func viewDidLoad() {
+
+    super.viewDidLoad()
+    
+    mapView.delegate = self
+    
+    // ...
+    
+    mapView.addOverlay(circle)
+}
+```
+
+```swift
+    func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
+        if let circle = overlay as? MKCircle {
+            let renderer = MKCircleRenderer(circle: circle)
+            renderer.strokeColor = .red
+            
+            return renderer
+        }
+        
+        return MKOverlayRenderer(overlay: overlay)
+    }
+```
+
+![MKMapCamera](https://cdn.sparrowcode.io/tutorials/mapkit/circle-red.png)
+
+```swift
+func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
+    if let circle = overlay as? MKCircle {
+        let renderer = MKCircleRenderer(circle: circle)
+        renderer.fillColor = .blue.withAlphaComponent(0.3)
+        renderer.strokeColor = .blue
+        renderer.lineWidth = 1
+        
+        return renderer
+    }
+    
+    return MKOverlayRenderer(overlay: overlay)
+}
+```
+
+![MKMapCamera](https://cdn.sparrowcode.io/tutorials/mapkit/circle-blue-below.png)
+
+```swift
+override func viewDidLoad() {
+    
+    // ...
+    
+    mapView.addAnnotations(landmarks)
+    // mapView.setCamera(camera, animated: true)
+}
+```
+
+![MKMapCamera](https://cdn.sparrowcode.io/tutorials/mapkit/circle-blue.png)
+![MKMapCamera](https://cdn.sparrowcode.io/tutorials/mapkit/circle-blue-markers.png)
+
+### MKPolyline
+
+```swift
+extension UIViewController {
+    
+    // ...
+    
+    var location2: CLLocationCoordinate2D {
+        CLLocationCoordinate2D(latitude: 54.9500234 , longitude: 39.0210369)
+    }
+    
+    var polyline: MKPolyline {
+        MKPolyline(coordinates: [location, location2], count: 2)
+    }
+```
+
+```swift
+func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
+    
+    // ...
+    
+    if let polyline = overlay as? MKPolyline {
+        let renderer = MKPolylineRenderer(polyline: polyline)
+        renderer.strokeColor = .green
+        renderer.lineWidth = 5
+        
+        return renderer
+    }
+    
+    return MKOverlayRenderer(overlay: overlay)
+}
+```
+
+```swift
+override func viewDidLoad() {
+    
+    // ...
+    
+    mapView.addOverlay(polyline)
+}
+```
+
+![MKMapCamera](https://cdn.sparrowcode.io/tutorials/mapkit/circle-line.png)
+
+![MKMapCamera](https://cdn.sparrowcode.io/tutorials/mapkit/circle-line-markers.png)
+
+### MKPolygon
+
+```swift
+extension UIViewController {
+    
+    // ...
+    
+    var location3: CLLocationCoordinate2D {
+        CLLocationCoordinate2D(latitude: 54.9484931, longitude: 39.0170369)
+    }
+    
+    var polygon: MKPolygon {
+        MKPolygon(coordinates: [location, location2, location3], count: 3)
+    }
+```
+
+```swift
+func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
+    
+    // ...
+    
+    if let polygon = overlay as? MKPolygon {
+        let renderer = MKPolygonRenderer(polygon: polygon)
+        renderer.fillColor = .orange.withAlphaComponent(0.3)
+        renderer.strokeColor = .orange
+        renderer.lineWidth = 1
+        
+        return renderer
+    }
+    
+    return MKOverlayRenderer(overlay: overlay)
+}
+```
+
+```swift
+override func viewDidLoad() {
+    
+    // ...
+    
+    mapView.addOverlay(polygon)
+}
+```
+
+![MKMapCamera](https://cdn.sparrowcode.io/tutorials/mapkit/circle-line-triangle.png)
 
