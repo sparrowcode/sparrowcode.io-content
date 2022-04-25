@@ -22,8 +22,7 @@
     - [MKCircle](#mkcircle)
     - [MKPolyline](#mkpolyline)
     - [MKPolygon](#mkpolygon)
-- [Маршрут](#маршрут)
-- [Поиск](#поиск)
+    - [Маршрут](#маршрут)
 
 ## API
 Для создания приложения с картой нам потребуется встроенное или стороннее `API`. Под «API» (Application Programming Interface) будем понимать способ структурного взаимодействия с фреймворком или библиотекой.
@@ -1214,7 +1213,7 @@ override func viewDidLoad() {
 
 ![MKPolygon](https://cdn.sparrowcode.io/tutorials/mapkit/circle-line-triangle.png)
 
-## Маршрут
+### Маршрут
 
 Одна из наиболее востребованных функуций любого карточного сервиса - построение маршрута. Нам не придётся рассчитывать маршрут самостоятельно, это делает сервис `Apple`, мы лишь отправляем запрос и получаем в ответ возможные варианты маршрута. Нам потребуется класс `MKDirections` и связанные с ним. Он вычисляет направления и информацию о времени в пути на основе предоставленной информации (геоточки, способ перемещения и т.д.).
 
@@ -1300,5 +1299,3 @@ func createPath(sourceCLL: CLLocationCoordinate2D, destinationCLL: CLLocationCoo
 ```
 
 ![Route Walking](https://cdn.sparrowcode.io/tutorials/mapkit/route-walking.png)
-
-## Поиск
