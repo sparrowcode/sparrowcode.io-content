@@ -1218,46 +1218,87 @@ override func viewDidLoad() {
 
 Одна из наиболее востребованных функуций любого карточного сервиса - построение маршрута. Нам не придётся рассчитывать маршрут самостоятельно, это делает сервис `Apple`, мы лишь отправляем запрос и получаем в ответ возможные варианты маршрута. Нам потребуется класс `MKDirections` и связанные с ним. Он вычисляет направления и информацию о времени в пути на основе предоставленной информации (геоточки, способ перемещения и т.д.).
 
+Вернём отображение геомаркеров. Будем строить маршрут от `location` до `location2`. Также скроем отображение оверлеев. Наш маршрут также строится на основе оверлея `MKPolyline`, поэтому он отобразится с теми же параметрами, что и линия.
+
 ```swift
-func createPath(sourseCLL: CLLocationCoordinate2D, destinationCLL: CLLocationCoordinate2D) {
+override func viewDidLoad() {
+
+    // ...
+    
+    mapView.addAnnotations(landmarks)
+
+    // mapView.addOverlay(circle)
+    // mapView.addOverlay(polyline)
+    // mapView.addOverlay(polygon)
+}
+```
+
+Напишем метод `createPath(sourceCLL: CLLocationCoordinate2D, destinationCLL: CLLocationCoordinate2D)`. 
+
+- `sourceCLL` - координаты геоточки, начальная точка маршрута
+- `destinationCLL` - координаты геоточки, конечная точка маршрута
+
+Нам потребуется экземпляр `MKDirections.Request()`. С его помощью мы будем делать запрос на сервер `Apple` о маршрутах. В ответ придёт массив маршрутов или ошибка. 
+
+Прежде чем сделать запрос нужно указать значения для свойств `source`, `destination` и `transportType`. `transportType` отвечает за тип передвижения по маршруту и принимает значения типа `MKDirectionsTransportType`. Можно передать одно из четырёх значений:
+
+- `automobile` - на автомобиле
+- `walking` - пешком
+- `transit` - общественным транспортом
+- `any` - для любого транспорта
+
+При добавлении оверлея на карту укажем отображение поверх дорог.
+
+```swift
+func createPath(sourceCLL: CLLocationCoordinate2D, destinationCLL: CLLocationCoordinate2D) {
     let source = MKPlacemark(coordinate: sourceCLL, addressDictionary: nil)
     let destination = MKPlacemark(coordinate: destinationCLL, addressDictionary: nil)
 
     let directionRequest = MKDirections.Request()
-    directionRequest.source = source
-    directionRequest.destination = destination
+    directionRequest.source = MKMapItem(placemark: source)
+    directionRequest.destination = MKMapItem(placemark: destination)
     directionRequest.transportType = .automobile
     
     let direction = MKDirections(request: directionRequest)
 
     direction.calculate { (response, error) in
         guard let response = response else {
-            if let error = error {
-                print("ERROR FOUND : \(error.localizedDescription)")
+            if let err = error {
+                print("Error: \(err.localizedDescription)")
             }
             return
         }
         
         let route = response.routes[0]
-        mapView.addOverlay(route.polyline, level: MKOverlayLevel.aboveRoads)
-        
-        // let rect = route.polyline.boundingMapRect
-        
-        // mapView.setRegion(MKCoordinateRegion(rect), animated: true)
-        
+        self.mapView.addOverlay(route.polyline, level: MKOverlayLevel.aboveRoads)
     }
 }
 ```
+
+Вызываем метод `createPath(sourceCLL: CLLocationCoordinate2D, destinationCLL: CLLocationCoordinate2D)`.
 
 ```swift
 override func viewDidLoad() {
     
     // ...
     
-    createPath(sourseCLL: location, destinationCLL: location2)
+    createPath(sourceCLL: location, destinationCLL: location2)
 }
 ```
 
-http://www.wepstech.com/draw-route-in-ios/
+![Route Automobile](https://cdn.sparrowcode.io/tutorials/mapkit/route-automobile.png)
+
+Изменим тип передвижения по маршруту.
+
+```swift
+func createPath(sourceCLL: CLLocationCoordinate2D, destinationCLL: CLLocationCoordinate2D) {
+    
+    // ...
+    
+    directionRequest.transportType = .walking
+}
+```
+
+![Route Walking](https://cdn.sparrowcode.io/tutorials/mapkit/route-walking.png)
 
 ## Поиск
