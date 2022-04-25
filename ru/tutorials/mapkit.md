@@ -22,6 +22,8 @@
     - [MKCircle](#mkcircle)
     - [MKPolyline](#mkpolyline)
     - [MKPolygon](#mkpolygon)
+- [Маршрут](#маршрут)
+- [Поиск](#поиск)
 
 ## API
 Для создания приложения с картой нам потребуется встроенное или стороннее `API`. Под «API» (Application Programming Interface) будем понимать способ структурного взаимодействия с фреймворком или библиотекой.
@@ -163,22 +165,22 @@ override func viewDidLoad() {
 
 ```swift
 override func viewDidLoad() {
-        
-        // ...
-        
-        mapView.mapType = .satellite
-    }
+    
+    // ...
+    
+    mapView.mapType = .satellite
+}
 ```
 
 ![mapView Satellite](https://cdn.sparrowcode.io/tutorials/mapkit/mapview-satellite.png)
 
 ```swift
 override func viewDidLoad() {
-        
-        // ...
-        
-        mapView.mapType = .hybrid
-    }
+    
+    // ...
+    
+    mapView.mapType = .hybrid
+}
 ```
 
 ![mapView Hybrid](https://cdn.sparrowcode.io/tutorials/mapkit/mapview-hybrid.png)
@@ -222,7 +224,7 @@ override func viewDidLoad() {
 
 `Apple Maps`, `Google Maps` и `OSM` предоставляют свои карты в проекции `Меркатора`. Мы будем работать с ней.
 
-Посмотрим на соотношения между площадью каждой страны в проекции `Меркатора` (яркие цвета) и истинной площадью (полупрозрачные цвета):
+Посмотрим на соотношения между площадью каждой страны в проекции `Меркатора` (полупрозрачные цвета) и истинной площадью (яркие цвета):
 
 ![Соотношение площадей по Меркатору. Автор Гифки: Jakub Nowosad - собственная работа, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=73955926)](https://cdn.sparrowcode.io/tutorials/mapkit/mer-dif.png)
 
@@ -675,7 +677,7 @@ override func viewDidLoad() {
 Хранит массив координат долготы и широты. В данном случае важен порядок, в котором они указаны. Долгота указывается первой, затем - широта.
 
 ```json
-"coordinates": [longitude, latitude]
+"coordinates": [10.000001, 20.000001]
 ```
 
 **Geometry и Type**
@@ -691,7 +693,7 @@ override func viewDidLoad() {
 ```json
 "geometry": {
     "type": "Point",
-    "coordinates": [longitude, latitude]
+    "coordinates": [10.000001, 20.000001]
 }
 ```
 
@@ -700,10 +702,10 @@ override func viewDidLoad() {
     "type": "Polygon",
     "coordinates": [
         [
-            [longitude, latitude],
-            [longitude1, latitude1],
-            [longitude2, latitude2],
-            [longitude, latitude]
+            [10.000001, 20.000001],
+            [20.000001, 30.000001],
+            [30.000001, 40.000001],
+            [10.000001, 20.000001]
         ]
     ]
 }
@@ -724,7 +726,7 @@ override func viewDidLoad() {
     },
     "geometry": {
         "type": "Point",
-        "coordinates": [longitude, latitude]
+        "coordinates": [10.000001, 20.000001]
     }
 }
 ```
@@ -738,7 +740,7 @@ override func viewDidLoad() {
 ```json
 "geometry": {
     "type": "Point",
-    "coordinates": [longitude, latitude]
+    "coordinates": [10.000001, 20.000001]
 }
 ```
 
@@ -750,9 +752,9 @@ override func viewDidLoad() {
 "geometry": {
     "type": "MultiPoint",
     "coordinates": [
-        [longitude, latitude],
-        [longitude1, latitude1],
-        [longitude2, latitude2]
+        [10.000001, 20.000001],
+        [20.000001, 30.000001],
+        [30.000001, 40.000001]
     ]
 }
 ```
@@ -765,9 +767,9 @@ override func viewDidLoad() {
 "geometry": {
     "type": "LineString",
     "coordinates": [
-        [longitude, latitude],
-        [longitude1, latitude1],
-        [longitude2, latitude2]
+        [10.000001, 20.000001],
+        [20.000001, 30.000001],
+        [30.000001, 40.000001]
     ]
 }
 ```
@@ -781,14 +783,14 @@ override func viewDidLoad() {
     "type": "MultiLineString",
     "coordinates" : [
         [
-            [longitude,latitude],
-            [longitude,latitude],
-            [longitude,latitude]  
+            [10.000001, 20.000001],
+            [20.000001, 30.000001],
+            [30.000001, 40.000001]  
         ],
         [
-            [longitude,latitude],
-            [longitude,latitude],
-            [longitude,latitude]  
+            [50.000001, 40.000001],
+            [60.000001, 30.000001],
+            [70.000001, 20.000001]  
         ]
     ]
 }
@@ -803,10 +805,10 @@ override func viewDidLoad() {
     "type": "Polygon",
     "coordinates": [
         [
-            [longitude, latitude],
-            [longitude1, latitude1],
-            [longitude2, latitude2],
-            [longitude, latitude]
+            [10.000001, 20.000001],
+            [20.000001, 30.000001],
+            [30.000001, 40.000001],
+            [10.000001, 20.000001]
         ]
     ]
 }
@@ -821,7 +823,7 @@ override func viewDidLoad() {
     "type": "Feature",
     "geometry": {
         "type": "Point",
-        "coordinates": [longitude, latitude]
+        "coordinates": [10.000001, 20.000001]
     },
     "properties": {
         "area": "20000 sq meters",
@@ -842,7 +844,7 @@ override func viewDidLoad() {
         "properties": {},
         "geometry": {
             "type": "Point",
-            "coordinates": [longitude, latitude]
+            "coordinates": [10.000001, 20.000001]
         }
     },
     {
@@ -851,9 +853,9 @@ override func viewDidLoad() {
         "geometry": {
             "type": "LineString",
             "coordinates": [
-                [longitude, latitude],
-                [longitude1, latitude1],
-                [longitude2, latitude2]
+                [10.000001, 20.000001],
+                [20.000001, 30.000001],
+                [30.000001, 40.000001]
             ]
         }
     }
@@ -863,7 +865,7 @@ override func viewDidLoad() {
 
 ### Описание
 
-В проекте создадим файл `data.geojson` и запишем  в него информацию о нескольких геоточках.
+В проекте создадим файл `data.geojson` и запишем  в него информацию о нескольких геоточках. В `properties` мы можем задавать любую необходимую нам информацию, в том числе `url`-адреса изображений. Мы укажем только необходимый минимум.
 
 ```json
 {
@@ -1023,7 +1025,7 @@ extension UIViewController {
 }
 ```
 
-Во `viewDidLoad()` укажем, что делегатом для `mapView` выступает `UIViewController`. Добавим `circle` при помощи метода `addOverlay(_ overlay: MKOverlay)`.
+Во `viewDidLoad()` укажем, что делегатом для `mapView` выступает `UIViewController`. Добавим `circle` при помощи метода `addOverlay(_ overlay: MKOverlay)` на карту.
 
 ```swift
 override func viewDidLoad() {
@@ -1040,7 +1042,7 @@ override func viewDidLoad() {
 
 Теперь нужен обработчик, который будет отрисовывать объекты типа `MKOverlay`. Соответствие протоколу делегата `MKMapViewDelegate` позволяет нам использовать метод `mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer`. Добавим его в `UIViewController`. В теле метода будем проверять есть ли наложения типа `MKCircle`. Если есть, то создаём экземпляр визуального представления, можно называть его отрисовщиком, которому указываем параметры отрисовки. Т.е. при создании объекта `MKOverlay` мы указываем только необходимые параметры геометрии (количество точек и их координаты), а `MKOverlayRenderer` отвечает за визуальные параметры (цвет, толщина линий и т.д.).
 
-Можно возвращать ошибку, например, `fatalError("Наложений нет")`, в случае отсутствия соответсвующих оверлеев, но мы будем возвращать объект `MKOverlayRenderer`. Зададим нашему кругу только `strokeColor`, так в его центр не будет залит.
+Можно возвращать ошибку, например, `fatalError("Наложений нет")`, в случае отсутствия соответсвующих оверлеев, но мы будем возвращать объект `MKOverlayRenderer`. Зададим нашему кругу только `strokeColor`, так его центр не будет залит.
 
 ```swift
     func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
@@ -1103,7 +1105,7 @@ override func viewDidLoad() {
 
 Мы можем одновременно отображать все наши данные. Именно совокупность данных даёт наиболее информативную картину.
 
-![MKCircle Blue & GeoMarkers](https://cdn.sparrowcode.io/tutorials/mapkit/circle-blue-markers.png) **DELETE?**
+![MKCircle Blue & GeoMarkers](https://cdn.sparrowcode.io/tutorials/mapkit/circle-blue-marker.png)
 
 ### MKPolyline
 
@@ -1161,6 +1163,10 @@ override func viewDidLoad() {
 
 ### MKPolygon
 
+Для полигона - многоугольника, нужны минимум три точки. Когда мы разбирали структуру `GeoJSON`, то указывали первую и последнюю точку одинаковыми. Так принято по стандарту, это указывает на закрытый полигон. В `MapKit` же при создании объекта типа `MKPolygon` достаточно указать вершины без повтора, чтобы получился замкнутый многоугольник.
+
+Зададим координаты третьей геоточки и создадим полигон, как делали это с линией.
+
 ```swift
 extension UIViewController {
     
@@ -1174,6 +1180,8 @@ extension UIViewController {
         MKPolygon(coordinates: [location, location2, location3], count: 3)
     }
 ```
+
+Укажем параметры отрисовки полигонов. Пусть будут оранжевые с прозрачной заливкой и толщиной обводки `1`.
 
 ```swift
 func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
@@ -1193,6 +1201,8 @@ func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayR
 }
 ```
 
+Добавляем наш полигон на карту.
+
 ```swift
 override func viewDidLoad() {
     
@@ -1204,3 +1214,50 @@ override func viewDidLoad() {
 
 ![MKPolygon](https://cdn.sparrowcode.io/tutorials/mapkit/circle-line-triangle.png)
 
+## Маршрут
+
+Одна из наиболее востребованных функуций любого карточного сервиса - построение маршрута. Нам не придётся рассчитывать маршрут самостоятельно, это делает сервис `Apple`, мы лишь отправляем запрос и получаем в ответ возможные варианты маршрута. Нам потребуется класс `MKDirections` и связанные с ним. Он вычисляет направления и информацию о времени в пути на основе предоставленной информации (геоточки, способ перемещения и т.д.).
+
+```swift
+func createPath(sourseCLL: CLLocationCoordinate2D, destinationCLL: CLLocationCoordinate2D) {
+    let source = MKPlacemark(coordinate: sourceCLL, addressDictionary: nil)
+    let destination = MKPlacemark(coordinate: destinationCLL, addressDictionary: nil)
+
+    let directionRequest = MKDirections.Request()
+    directionRequest.source = source
+    directionRequest.destination = destination
+    directionRequest.transportType = .automobile
+    
+    let direction = MKDirections(request: directionRequest)
+
+    direction.calculate { (response, error) in
+        guard let response = response else {
+            if let error = error {
+                print("ERROR FOUND : \(error.localizedDescription)")
+            }
+            return
+        }
+        
+        let route = response.routes[0]
+        mapView.addOverlay(route.polyline, level: MKOverlayLevel.aboveRoads)
+        
+        // let rect = route.polyline.boundingMapRect
+        
+        // mapView.setRegion(MKCoordinateRegion(rect), animated: true)
+        
+    }
+}
+```
+
+```swift
+override func viewDidLoad() {
+    
+    // ...
+    
+    createPath(sourseCLL: location, destinationCLL: location2)
+}
+```
+
+http://www.wepstech.com/draw-route-in-ios/
+
+## Поиск
