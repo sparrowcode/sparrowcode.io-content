@@ -1,4 +1,4 @@
-Напишем приложение с использованием фреймворка MapKit. Научимся добавлять карту, гео-метки,  описание и картинки. Познакомимся с основными понятиями, знание и понимание которых необходимо для работы с карточными API.
+Напишем приложение с использованием фреймворка MapKit. Научимся добавлять карту, гео-метки,  описание и оверлеи. Познакомимся с основными понятиями, знание и понимание которых необходимо для работы с карточными API.
 
 - [API](#api)
 - [Подключение](#подключение)
@@ -974,7 +974,7 @@ override func viewDidLoad() {
 }
 ```
 
-![MKMapCamera](https://cdn.sparrowcode.io/tutorials/mapkit/geodata.png)
+![Отображение геоданных](https://cdn.sparrowcode.io/tutorials/mapkit/geodata.png)
 
 Чтобы увидеть вторую геометку потребуется немного передвинуть карту. Для удобства изменим параметр `eyeAltitude` камеры на `1000`, так обе геометки будут видны на экране.
 
@@ -988,11 +988,32 @@ extension UIViewController {
 
 ## MKOverlay
 
+Помимо геоточек часто возникает потребность в отображении другого рода данных. При работе с `GeoJSON` мы узнали, что также есть геометрии линий и полигонов. Получать данные мы уже научились, уделим внимание именно отображению.
+
+Мы воспользуемся `MapKit Overlays` - специальными наложениями для выделения географических данных. Нам потребуется класс нужного оверлея (`MKCircle`, `MKPolyline`, `MKPolygon`), его отрисовщика (`MKCircleRenderer`, `MKPolylineRenderer`, `MKPolygonRenderer`) и делегат `mapView`.
+
 ### MKCircle
+
+`MKCircle` - оверлей в форме круга с изменяемым радиусом в метрах, центром которого является переданная географическая пара координат. Удобен как для отображения геоточек, так и для конкретных областей, зон покрытий и т.д.
+
+Сперва укажем классу `ViewController` соответствие протоколу делегата `MKMapViewDelegate`. Это позволит нам использовать некоторые опциональные методы `MapKit`.
 
 ```swift
 class ViewController: UIViewController, MKMapViewDelegate { // ... }
 ```
+
+Для удобства восприятия отключим отрисовку геомаркеров, сосредоточимся на оверлеях.
+
+```swift
+override func viewDidLoad() {
+    
+    // ...
+    
+    // mapView.addAnnotations(landmarks)
+}
+```
+
+Создадим вычисляемое свойство типа `MKCircle`. Это будет круг с центром `location` и радиусом в `10` метров.
 
 ```swift
 extension UIViewController {
@@ -1001,6 +1022,8 @@ extension UIViewController {
     }
 }
 ```
+
+Во `viewDidLoad()` укажем, что делегатом для `mapView` выступает `UIViewController`. Добавим `circle` при помощи метода `addOverlay(_ overlay: MKOverlay)`.
 
 ```swift
 override func viewDidLoad() {
@@ -1015,6 +1038,10 @@ override func viewDidLoad() {
 }
 ```
 
+Теперь нужен обработчик, который будет отрисовывать объекты типа `MKOverlay`. Соответствие протоколу делегата `MKMapViewDelegate` позволяет нам использовать метод `mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer`. Добавим его в `UIViewController`. В теле метода будем проверять есть ли наложения типа `MKCircle`. Если есть, то создаём экземпляр визуального представления, можно называть его отрисовщиком, которому указываем параметры отрисовки. Т.е. при создании объекта `MKOverlay` мы указываем только необходимые параметры геометрии (количество точек и их координаты), а `MKOverlayRenderer` отвечает за визуальные параметры (цвет, толщина линий и т.д.).
+
+Можно возвращать ошибку, например, `fatalError("Наложений нет")`, в случае отсутствия соответсвующих оверлеев, но мы будем возвращать объект `MKOverlayRenderer`. Зададим нашему кругу только `strokeColor`, так в его центр не будет залит.
+
 ```swift
     func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
         if let circle = overlay as? MKCircle {
@@ -1024,11 +1051,13 @@ override func viewDidLoad() {
             return renderer
         }
         
-        return MKOverlayRenderer(overlay: overlay)
+        return  `MKOverlayRenderer`.(overlay: overlay)
     }
 ```
 
-![MKMapCamera](https://cdn.sparrowcode.io/tutorials/mapkit/circle-red.png)
+Запускаем и видим, что круг отображается под зданиями. Чтобы было более отчётливо, давайте изменим параметры круга добавив заливку, прозрачность, толщину обводки и сменим цвет.
+
+![MKCircle Red](https://cdn.sparrowcode.io/tutorials/mapkit/circle-red.png)
 
 ```swift
 func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
@@ -1045,22 +1074,40 @@ func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayR
 }
 ```
 
-![MKMapCamera](https://cdn.sparrowcode.io/tutorials/mapkit/circle-blue-below.png)
+Теперь любой объект типа `MKCircle` будет отображаться с такими визуальными параметрами. Также для самого `circle` изменим радиус на `1000`. **CHECK RADIUS**
+
+```swift
+extension UIViewController {
+    var circle: MKCircle {
+        MKCircle(center: location, radius: 1000)
+    }
+}
+```
+
+![MKCircle Blue Below Buildings](https://cdn.sparrowcode.io/tutorials/mapkit/circle-blue-below.png)
+
+Теперь нам более отчётливо видно, что `circle` отображается под слоем `buildings`. Такого быть не должно. В документации на этот счёт сказано, что такое происходит лишь с `3D-buildings`. Но у нас `2D`-карта. В данном случае на это влияет наша камера `MKMapCamera`. Закомментируем эту строчку, вернув настройки обзора к стандартным.
 
 ```swift
 override func viewDidLoad() {
     
     // ...
     
-    mapView.addAnnotations(landmarks)
     // mapView.setCamera(camera, animated: true)
 }
 ```
 
-![MKMapCamera](https://cdn.sparrowcode.io/tutorials/mapkit/circle-blue.png)
-![MKMapCamera](https://cdn.sparrowcode.io/tutorials/mapkit/circle-blue-markers.png)
+Теперь `circle` отображается как задумано. Такое отображение удобно для указания на области, распределение, зоны покрытия и досягаемости, и т.д.
+
+![MKCircle Blue](https://cdn.sparrowcode.io/tutorials/mapkit/circle-blue.png)
+
+Мы можем одновременно отображать все наши данные. Именно совокупность данных даёт наиболее информативную картину.
+
+![MKCircle Blue & GeoMarkers](https://cdn.sparrowcode.io/tutorials/mapkit/circle-blue-markers.png) **DELETE?**
 
 ### MKPolyline
+
+Теперь отрисуем линию. Как мы знаем, линии состоят из совокупности точек. Нам достаточно двух. Изменим координаты `location2`, чтоб расстояние между `location` и `location2` было заметным. Можем взять координаты второго геомаркера. Также добавим свойство `polyline` типа `MKPolyline`. При инициализации `MKPolyline` принимает на вход массив координат геоточек и количество этих точек.
 
 ```swift
 extension UIViewController {
@@ -1075,6 +1122,8 @@ extension UIViewController {
         MKPolyline(coordinates: [location, location2], count: 2)
     }
 ```
+
+Обновим `mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer`, добавив проверку на `MKPolyline` и задав всем таким линиям ширину `5` и зелёный цвет.
 
 ```swift
 func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
@@ -1093,6 +1142,8 @@ func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayR
 }
 ```
 
+Добавляем оверлей линии на карту.
+
 ```swift
 override func viewDidLoad() {
     
@@ -1102,9 +1153,11 @@ override func viewDidLoad() {
 }
 ```
 
-![MKMapCamera](https://cdn.sparrowcode.io/tutorials/mapkit/circle-line.png)
+![MKPolyline](https://cdn.sparrowcode.io/tutorials/mapkit/circle-line.png)
 
-![MKMapCamera](https://cdn.sparrowcode.io/tutorials/mapkit/circle-line-markers.png)
+Если мы включим отображение маркеров, то можно сказать, что мы нарисовали отображение кратчайшего расстояния между объектами. Но в случае отрисовки на карте маршрутов и дистанций важно учитывать форму Земли, и не всегда расстояние между двумя объектами на `2D`-карте будет выглядеть как прямая.
+
+![MKPolyline & GeoMarkers](https://cdn.sparrowcode.io/tutorials/mapkit/circle-line-markers.png)
 
 ### MKPolygon
 
@@ -1149,5 +1202,5 @@ override func viewDidLoad() {
 }
 ```
 
-![MKMapCamera](https://cdn.sparrowcode.io/tutorials/mapkit/circle-line-triangle.png)
+![MKPolygon](https://cdn.sparrowcode.io/tutorials/mapkit/circle-line-triangle.png)
 
