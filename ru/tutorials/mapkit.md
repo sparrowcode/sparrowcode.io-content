@@ -23,6 +23,7 @@
     - [MKPolyline](#mkpolyline)
     - [MKPolygon](#mkpolygon)
     - [Маршрут](#маршрут)
+- [Поиск](#поиск)
 
 ## API
 Для создания приложения с картой нам потребуется встроенное или стороннее `API`. Под «API» (Application Programming Interface) будем понимать способ структурного взаимодействия с фреймворком или библиотекой.
@@ -1299,3 +1300,83 @@ func createPath(sourceCLL: CLLocationCoordinate2D, destinationCLL: CLLocationCoo
 ```
 
 ![Route Walking](https://cdn.sparrowcode.io/tutorials/mapkit/route-walking.png)
+
+## Поиск
+
+Последнее что мы рассмотрим - возможность поиска по карте. Не будем использовать `UISearchController` и `UISearchBar`, а сосредоточимя на механизме поиска в `MapKit`. Нам потребуются классы `MKLocalSearch` и `MKLocalSearch.Request`. 
+
+`MKLocalSearch` используется для одного поискового запроса, в роли которого может выступать адрес, тип или названия интересующих объектов и мест. Результаты передаются в указанный нами обработчик. Используем инициализатор `init(request: MKLocalSearch.Request)`. `MKLocalSearch.Request` используется для поиска местоположения на карте на основе строки на естественном языке (`naturalLanguageQuery`).
+
+Объект типа `MKLocalSearch` используется для одного поискового запроса. Запросом может выступать адрес или названия интересующих объектов и мест. Результаты передаются в обработчик, который мы указываем. Включение региона карты при поиске сузит результаты поиска до указанной географической области.
+
+Переходим в `Landmark.swift` и добавляем ещё один инициализатор. Он потребуется, потому что координаты найденных мест приходят с типом `CLLocation`.
+
+```swift
+class Landmark: NSObject, MKAnnotation {
+    
+    // ...
+    
+    init? (coordinate: CLLocation, title: String?) {
+        
+        self.coordinate = CLLocationCoordinate2D(latitude: coordinate.coordinate.latitude, longitude: coordinate.coordinate.longitude)
+        self.title = title
+        self.subtitle = ""
+        
+        super.init()
+    }
+}
+```
+
+Добавим в `UIViewController` метод `search(place: String)`. `place` - место, которое мы собираемся искать. Создадим запрос `request` типа `MKLocalSearch.Request()`, на его основе сделаем поиск `search` типа `MKLocalSearch`, в обработчике которого будем создавать экземпляры `Landmark` на основе полученных результатов и сразу добавлять их на карту.
+
+```swift
+func search(place: String) {
+
+    let request = MKLocalSearch.Request()
+    request.naturalLanguageQuery = place
+    request.region = MKCoordinateRegion(center: location, latitudinalMeters: regionRadius, longitudinalMeters: regionRadius)
+
+    let search = MKLocalSearch(request: request)
+    search.start(completionHandler: {(response, error) in
+            
+        for item in response!.mapItems {
+            let landmark = Landmark(coordinate: item.placemark.location!, title: item.name)
+            self.mapView.addAnnotation(landmark!)
+        }
+    })
+}
+```
+
+Теперь можно вызвать метод `search(place: String)` во `viewDidLoad()`, запустить симулятор и посмотреть результаты поиска. Также снимем ограничение на панарамирование и масштабирование.
+
+```swift
+override func viewDidLoad() {
+    
+    // ...
+    
+    //mapView.setCameraBoundary(MKMapView.CameraBoundary(coordinateRegion: coordinateRegion), animated: true)
+    //mapView.setCameraZoomRange(zoomRange, animated: true)
+    search(place: "Почта")
+}
+```
+
+![Postoffice](https://cdn.sparrowcode.io/tutorials/mapkit/postoffice.png)
+
+Немного отдалим карту.
+
+![Postoffices](https://cdn.sparrowcode.io/tutorials/mapkit/postoffices.png)
+
+Изменим запрос поиска.
+
+```swift
+override func viewDidLoad() {
+    
+    // ...
+    
+    search(place: "Магазин")
+}
+```
+
+![Shops](https://cdn.sparrowcode.io/tutorials/mapkit/shops.png)
+
+Мы разобрали основные возможности `MapKit`, выучили базовые навыки и понятия. Этого достаточно для создания полноценного карточного приложения.
