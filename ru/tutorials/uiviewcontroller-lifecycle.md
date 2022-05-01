@@ -87,7 +87,7 @@ override func viewDidAppear(_ animated: Bool) {
 
 ![Схема жизненного цикла `ViewController`.](https://cdn.sparrowcode.io/tutorials/uiviewcontroller-lifecycle/header.jpg)
 
-Обратите внимание на пару антагонистов `viewWillDisappear()` и `viewDidDisappear`. Они вызываются, когда вью удаляется из иерархии представлений. Если вы показываете другой контроллер поверх, то методы не вызываются.
+Обратите внимание на пару антагонистов `viewWillDisappear()` и `viewDidDisappear()`. Они вызываются, когда вью удаляется из иерархии представлений. Если вы показываете другой контроллер поверх, то методы не вызываются.
 
 ## Layout
 
@@ -115,15 +115,12 @@ override func viewWillTransition(to size: CGSize, with coordinator: UIViewContro
 
 После будут вызваны методы `viewWillLayoutSubviews()` и `viewDidLayoutSubviews()`.
 
-## Кончается память
+## Кончилась память
 
-Вызывается, если память переполняется. Если вы не очистите объекты, из-за которых это происходит, iOS принудительно выключит приложение (для пользователя будет выглядеть как краш).
+Если вы не очистите объекты, из-за которых это происходит, iOS принудительно крашнет приложение.
 
 ```swift
 override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
 }
 ```
-
-На этом всё. Жизненный цикл контроллера большая тема, я мог что-то упустить. Дайте мне знать если нашли что-то или есть хороший пример для статьи.
-
