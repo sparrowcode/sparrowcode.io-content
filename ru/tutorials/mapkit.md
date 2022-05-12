@@ -1,30 +1,5 @@
 Напишем приложение с использованием фреймворка MapKit. Научимся добавлять карту, геомаркеры,  описание и оверлеи. Познакомимся с основными понятиями для работы с карточными API.
 
-- [API](#api)
-- [Подключение](#подключение)
-    - [Map View](#map-view)
-    - [Типы карт](#типы-карт)
-    - [Проекции](#проекции)
-    - [Подложки](#подложки)
-    - [Уровни](#уровни)
-    - [Вес](#вес)
-- [Метки](#метки)
-    - [Location](#location)
-    - [GeoMarker](#geomarker)
-- [Камера](#камера)
-    - [Boundary](#boundary)
-    - [ZoomRange](#zoomRange)
-    - [MKMapCamera](#mkmapcamera)
-- [Данные](#данные)
-    - [GeoJSON](#geojson)
-    - [Описание](#описание)
-- [MKOverlay](#mkoverlay)
-    - [MKCircle](#mkcircle)
-    - [MKPolyline](#mkpolyline)
-    - [MKPolygon](#mkpolygon)
-    - [Маршрут](#маршрут)
-- [Поиск](#поиск)
-
 ## API
 Для создания приложения с картой нам потребуется встроенное или стороннее `API` для структурного взаимодействия с фреймворком или библиотекой.
 
@@ -41,20 +16,6 @@ import MapKit
 В отличие от `Google Maps` у `Open Street Maps` нет единого фреймворка, но есть набор `iOS`-[библиотек](https://wiki.openstreetmap.org/wiki/Apple_iOS#Libraries_for_developers) с картами `OSM`.
 
 Можно использовать `MapKit`, а в качестве сервера с картами выбрать `Google Maps`, `OSM` или другой. Всё зависит от ваших нужд, детальности карт, частоты их обновления, качества и веса.
-
-Посмотрим, как отображается Лондон на разных картах.
-
-**Apple Maps**
-
-![Отображение Лондона в Apple Maps.](https://cdn.sparrowcode.io/tutorials/mapkit/london-apple.png)
-
-**Google Maps**
-
-![Отображение Лондона в Google Maps](https://cdn.sparrowcode.io/tutorials/mapkit/london-g-maps.png)
-
-**Open Street Maps**
-
-![Отображение Лондона в Open Street Maps](https://cdn.sparrowcode.io/tutorials/mapkit/london-osm.png)
 
 ## Подключение
 
@@ -128,7 +89,7 @@ override func viewDidLoad() {
 
 Запускаем симулятор и видим нашу карту.
 
-![Базовая карта.](https://cdn.sparrowcode.io/tutorials/mapkit/simple-mapview.png)
+![Базовая карта.](https://cdn.sparrowcode.io/tutorials/mapkit/simple-mapview.jpg)
 
 ### Типы карт
 
@@ -140,13 +101,7 @@ override func viewDidLoad() {
 
 Обычно пользователям не требуется спутниковая карта без отображения на ней дорог, объектов, границ и названий. Поэтому для них разработчики делят карты на два типа: схему и спутник, называя спутником именно гибридную карту. Вы могли видеть эти типы в навигаторах.
 
-**Схема**
-
-![Схематичное отображение.](https://cdn.sparrowcode.io/tutorials/mapkit/scheme-map.png)
-
-**Спутник**
-
-![Спутниковое отображение.](https://cdn.sparrowcode.io/tutorials/mapkit/satellite-map.png)
+![Типы карт.](https://cdn.sparrowcode.io/tutorials/mapkit/map-types.jpg)
 
 В нашем приложении мы видим именно схематическую карту.
 
@@ -183,19 +138,13 @@ mapView.mapType = .hybrid
 
 Посмотрим на схематичное и спутниковое изображение Земли.
 
-**Схема**
-
-![Схематичное изображение Земли.](https://cdn.sparrowcode.io/tutorials/mapkit/globe-scheme.png)
-
-**Спутник**
-
-![Спутниковое изображение Земли.](https://cdn.sparrowcode.io/tutorials/mapkit/globe-satellite.png)
+![Сравнение изображений Земли.](https://cdn.sparrowcode.io/tutorials/mapkit/globe-types.jpg)
 
 `Apple Maps`, `Google Maps` и `OSM` предоставляют свои карты в проекции Меркатора. Мы будем работать с ней.
 
 Посмотрим на соотношения между площадью каждой страны в проекции Меркатора (полупрозрачные цвета) и истинной площадью (яркие цвета):
 
-![Соотношение площадей по Меркатору.](https://cdn.sparrowcode.io/tutorials/mapkit/mer-dif.png)
+![Соотношение площадей по Меркатору.](https://cdn.sparrowcode.io/tutorials/mapkit/mer-dif.jpg)
 
 Такая проекция не сохраняет площади, поскольку имеет разный масштаб на разных участках. Больше всего разница в масштабе у тех объектов, что расположены ближе к полюсам (дальше от экватора), потому что там геоид сужается.
 
@@ -211,29 +160,19 @@ mapView.mapType = .hybrid
 
 Мы видим глобус, по сути - планету Земля.
 
-![Земля в Google Earth.](https://cdn.sparrowcode.io/tutorials/mapkit/g-earth.png)
+![Земля в Google Earth.](https://cdn.sparrowcode.io/tutorials/mapkit/g-earth.jpg)
 
 С точки зрения разработки это математически посчитанная фигура - геоид, с координатной разметкой, на которую натянули картинку. Это картинка - подложка. При увеличении объекты будут отображаться поверх неё. Подложка может представлять собой как 2D, так и 3D-изображение. В отличие от 2D, 3D-изображение помимо широт и долгот хранит информацию о высоте в каждой точке. Такая подложка называется `terrain`. Информация о высотах также может идти совместно с 2D-изображением формата `GeoTiff`, но по отображению будет отличаться от `terrain`.
 
-Посмотрим разницу в отображении 2D и 3D.
-
-**2D**
-
-![2D Земля в Google Earth.](https://cdn.sparrowcode.io/tutorials/mapkit/g-earth-2d.png)
-
-**3D**
-
-![3D Земля в Google Earth.](https://cdn.sparrowcode.io/tutorials/mapkit/g-earth-3d.png)
-
-Может показаться, что большой разницы нет. Для явного различия добавим измерение расстояния. 
+Посмотрим разницу в отображении 2D и 3D с измерением расстояния.
 
 **Измерение 2D**
 
-![2D Земля в Google Earth с измерением расстояния.](https://cdn.sparrowcode.io/tutorials/mapkit/g-earth-measure-2d.png)
+![2D Земля в Google Earth с измерением расстояния.](https://cdn.sparrowcode.io/tutorials/mapkit/g-earth-measure-2d.jpg)
 
 **Измерение 3D**
 
-![3D Земля в Google Earth с измерением расстояния.](https://cdn.sparrowcode.io/tutorials/mapkit/g-earth-measure-3d.png)
+![3D Земля в Google Earth с измерением расстояния.](https://cdn.sparrowcode.io/tutorials/mapkit/g-earth-measure-3d.jpg)
 
 > При разных отображениях мы получаем одинаковое расстояние измерений. Это происходит из-за учёта высоты в обоих случаях.
 
@@ -241,19 +180,19 @@ mapView.mapType = .hybrid
 
 Для удобства масштабирования и скорости просмотра используют специальный механизм - карта представляется в виде пирамиды тайлов.
 
-![Пирамида тайлов.](https://cdn.sparrowcode.io/tutorials/mapkit/pyramid-tiles.png)
+![Пирамида тайлов.](https://cdn.sparrowcode.io/tutorials/mapkit/pyramid-tiles.jpg)
 
 Самая большая область помещается в самое маленькое изображение - один тайл. Каждое последующее увеличение области представляет собой новый уровень, в котором она разделяется на большее число тайлов и т.д. Тайлы имеют одинаковый размер. Уровни также могут называться `zoom`, `level` и `zoom level`.
 
 Эти уровни совпадают не во всех API. Так 10-й уровень одной ГИС может соответствовать 12-му уровню другой.
 
-![Zoom Levels](https://cdn.sparrowcode.io/tutorials/mapkit/zoom-levels.png)
+![Zoom Levels](https://cdn.sparrowcode.io/tutorials/mapkit/zoom-levels.jpg)
 
 Упорядоченная совокупность тайлов представляет собой матрицу, в которой у каждого есть своё название по позиции в ней, координатные границы. При поиске области по координатам, алгоритм ищет тайл, в который попадает эта область, обращается к нему по матричной разметке и подгружает. 
 
 Давайте посмотрим, как это выглядит в динамике.
 
-[Прогрузка тайлов при зуме.](https://cdn.sparrowcode.io/tutorials/mapkit/tiles-loading.mov)
+[Прогрузка тайлов при зуме.](https://cdn.sparrowcode.io/tutorials/mapkit/tiles-loading.mp4)
 
 ### Вес
 
@@ -297,11 +236,11 @@ struct CLLocationCoordinate2D {
 
 Используем её для создания объекта на основе координат широты и долготы. Воспользуемся поиском через `Google Maps`. Введём в запрос что-нибудь необычное, например, "Памятник почтальону Печкину". Жмём на предложенную достопримечательность. 
 
-![Поиск локации в Google Maps.](https://cdn.sparrowcode.io/tutorials/mapkit/g-location-search.png)
+![Поиск локации в Google Maps.](https://cdn.sparrowcode.io/tutorials/mapkit/g-location-search.jpg)
 
 То, что нужно. 
 
-![Отображение найденной локации в Google Maps.](https://cdn.sparrowcode.io/tutorials/mapkit/g-location-view.png)
+![Отображение найденной локации в Google Maps.](https://cdn.sparrowcode.io/tutorials/mapkit/g-location-view.jpg)
 
 Теперь обратим внимание на `url`-адрес:
 
@@ -345,7 +284,7 @@ mapView.setRegion(coordinateRegion, animated: true)
 
 Запустим и посмотрим, что получилось.
 
-![](https://cdn.sparrowcode.io/tutorials/mapkit/zoom-to-location.png)
+![](https://cdn.sparrowcode.io/tutorials/mapkit/zoom-to-location.jpg)
 
 Изменим `regionRadius`, что бы немного увеличить отображение.
 
@@ -353,7 +292,7 @@ mapView.setRegion(coordinateRegion, animated: true)
 let regionRadius: CLLocationDistance = 500
 ```
 
-![Отображение локации c радиусом 500.](https://cdn.sparrowcode.io/tutorials/mapkit/zoom-to-location-500.png)
+![Отображение локации c радиусом 500.](https://cdn.sparrowcode.io/tutorials/mapkit/zoom-to-location-500.jpg)
 
 > Для зумирования в симуляторе удерживайте клавишу `option`, и зажав левую кнопку мыши, перемещайте курсор. 
 
@@ -407,7 +346,7 @@ mapView.addAnnotation(geoPoint)
 
 Запускаем симулятор.
 
-![GeoPoint](https://cdn.sparrowcode.io/tutorials/mapkit/geo-point.png)
+![GeoPoint](https://cdn.sparrowcode.io/tutorials/mapkit/geo-point.jpg)
 
 Минутка юмора от Apple. У нас появился геомаркер с дефолтным описанием, так как сами мы его не указывали. В предыдущих версиях `MapKit` это добавляло геомаркер без подписей.
 
@@ -430,11 +369,11 @@ var annotation: MKPointAnnotation {
 mapView.addAnnotation(annotation)
 ```
 
-![Геомаркер с коротким описанием.](https://cdn.sparrowcode.io/tutorials/mapkit/geo-point-annotation.png)
+![Геомаркер с коротким описанием.](https://cdn.sparrowcode.io/tutorials/mapkit/geo-point-annotation.jpg)
 
 Нажмём на геомаркер.
 
-![Геомаркер с полным описанием.](https://cdn.sparrowcode.io/tutorials/mapkit/geo-point-annotation-full.png)
+![Геомаркер с полным описанием.](https://cdn.sparrowcode.io/tutorials/mapkit/geo-point-annotation-full.jpg)
 
 Для удобства рассмотрим ещё один способ, завязанный на протоколе `MKAnnotation`, который удобно использовать при отображении множества данных.
 
@@ -545,7 +484,7 @@ extension UIViewController {
 mapView.setCamera(camera, animated: true)
 ```
 
-![Пример отображения.](https://cdn.sparrowcode.io/tutorials/mapkit/map-camera.png)
+![Пример отображения.](https://cdn.sparrowcode.io/tutorials/mapkit/map-camera.jpg)
 
 Мы видим, что карта по-прежнему центрируется в заданной нами точке, но изменился угол поворота и появился компас.
 
@@ -899,7 +838,7 @@ override func viewDidLoad() {
 }
 ```
 
-![Отображение геоданных.](https://cdn.sparrowcode.io/tutorials/mapkit/geodata.png)
+![Отображение геоданных.](https://cdn.sparrowcode.io/tutorials/mapkit/geodata.jpg)
 
 Чтобы увидеть вторую геометку потребуется немного передвинуть карту. Для удобства изменим параметр `eyeAltitude` камеры на `1000`, так будут видны обе геометки.
 
@@ -969,7 +908,7 @@ func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayR
 
 Запускаем и видим, что круг отображается под зданиями. Изменим параметры круга, добавив заливку, прозрачность, толщину обводки и сменим цвет, чтобы было видно детальнее.
 
-![`MKCircle` красного цвета.](https://cdn.sparrowcode.io/tutorials/mapkit/circle-red.png)
+![`MKCircle` красного цвета.](https://cdn.sparrowcode.io/tutorials/mapkit/circle-red.jpg)
 
 ```swift
 func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
@@ -994,7 +933,7 @@ var circle: MKCircle {
 }
 ```
 
-![Синий `MKCircle` под слоем `buildings`.](https://cdn.sparrowcode.io/tutorials/mapkit/circle-blue-below.png)
+![Синий `MKCircle` под слоем `buildings`.](https://cdn.sparrowcode.io/tutorials/mapkit/circle-blue-below.jpg)
 
 Теперь нам более отчётливо видно, что `circle` отображается под слоем `buildings` - такого быть не должно. В документации сказано, что такое происходит лишь с `3D-buildings`. Но у нас `2D`-карта. В данном случае на это влияет наша камера `MKMapCamera`. Закомментируем эту строчку, вернув настройки обзора к стандартным.
 
@@ -1004,11 +943,11 @@ var circle: MKCircle {
 
 Теперь `circle` отображается как задумано. Такое отображение удобно для указания на области, распределение, зоны покрытия и досягаемости, и т.д.
 
-![Синий `MKCircle`.](https://cdn.sparrowcode.io/tutorials/mapkit/circle-blue.png)
+![Синий `MKCircle`.](https://cdn.sparrowcode.io/tutorials/mapkit/circle-blue.jpg)
 
 Мы можем одновременно отображать все наши данные. Именно совокупность данных даёт наиболее информативную картину.
 
-![Синий `MKCircle` с геомаркерами.](https://cdn.sparrowcode.io/tutorials/mapkit/circle-blue-marker.png)
+![Синий `MKCircle` с геомаркерами.](https://cdn.sparrowcode.io/tutorials/mapkit/circle-blue-marker.jpg)
 
 ### MKPolyline
 
@@ -1045,11 +984,11 @@ func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayR
 mapView.addOverlay(polyline)
 ```
 
-![Пример `MKPolyline`.](https://cdn.sparrowcode.io/tutorials/mapkit/circle-line.png)
+![Пример `MKPolyline`.](https://cdn.sparrowcode.io/tutorials/mapkit/circle-line.jpg)
 
 Если мы включим отображение маркеров - получится, что мы нарисовали отображение кратчайшего расстояния между объектами. Но в случае отрисовки на карте маршрутов и дистанций важно учитывать форму Земли, и не всегда расстояние между двумя объектами на `2D`-карте будет выглядеть как прямая.
 
-![MKPolyline с геомаркерами.](https://cdn.sparrowcode.io/tutorials/mapkit/circle-line-markers.png)
+![MKPolyline с геомаркерами.](https://cdn.sparrowcode.io/tutorials/mapkit/circle-line-markers.jpg)
 
 ### MKPolygon
 
@@ -1089,7 +1028,7 @@ func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayR
 mapView.addOverlay(polygon)
 ```
 
-![Пример `MKPolygon`.](https://cdn.sparrowcode.io/tutorials/mapkit/circle-line-triangle.png)
+![Пример `MKPolygon`.](https://cdn.sparrowcode.io/tutorials/mapkit/circle-line-triangle.jpg)
 
 ### Маршрут
 
@@ -1154,7 +1093,7 @@ func createPath(sourceCLL: CLLocationCoordinate2D, destinationCLL: CLLocationCoo
 createPath(sourceCLL: location, destinationCLL: location2)
 ```
 
-![Маршрут для автомобиля.](https://cdn.sparrowcode.io/tutorials/mapkit/route-automobile.png)
+![Маршрут для автомобиля.](https://cdn.sparrowcode.io/tutorials/mapkit/route-automobile.jpg)
 
 Изменим тип передвижения по маршруту.
 
@@ -1162,7 +1101,7 @@ createPath(sourceCLL: location, destinationCLL: location2)
 directionRequest.transportType = .walking
 ```
 
-![Пеший маршрут.](https://cdn.sparrowcode.io/tutorials/mapkit/route-walking.png)
+![Пеший маршрут.](https://cdn.sparrowcode.io/tutorials/mapkit/route-walking.jpg)
 
 ## Поиск
 
@@ -1211,11 +1150,11 @@ func search(place: String) {
 search(place: "Почта")
 ```
 
-![Приближенный почтовый офис.](https://cdn.sparrowcode.io/tutorials/mapkit/postoffice.png)
+![Приближенный почтовый офис.](https://cdn.sparrowcode.io/tutorials/mapkit/postoffice.jpg)
 
 Немного отдалим карту.
 
-![Отдалённый почтовый офис.](https://cdn.sparrowcode.io/tutorials/mapkit/postoffices.png)
+![Отдалённый почтовый офис.](https://cdn.sparrowcode.io/tutorials/mapkit/postoffices.jpg)
 
 Изменим запрос поиска.
 
@@ -1223,4 +1162,4 @@ search(place: "Почта")
 search(place: "Магазин")
 ```
 
-![Магазины.](https://cdn.sparrowcode.io/tutorials/mapkit/shops.png)
+![Магазины.](https://cdn.sparrowcode.io/tutorials/mapkit/shops.jpg)
