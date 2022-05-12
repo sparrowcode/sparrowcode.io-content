@@ -48,7 +48,7 @@ class ViewController: UIViewController {
 
     let mapView: MKMapView = {
         let map = MKMapView()
-        map.translatesAutoresizingMaskIntoConstraints = false // Этой строкой мы включили возможность выставлять `anchors` для `mapView`
+        map.translatesAutoresizingMaskIntoConstraints = false // Возможность выставлять `anchors` для `mapView`
         
         return map
     }()
@@ -99,7 +99,7 @@ override func viewDidLoad() {
 - **Схема** - карта составлена схематическим образом.
 - **Гибрид** - объекты схематически нанесены на совокупность спутниковых снимков, иными словами - одновременное отображение *cпутника* и *cхемы*.
 
-Обычно пользователям не требуется спутниковая карта без отображения на ней дорог, объектов, границ и названий. Поэтому для них разработчики делят карты на два типа: схему и спутник, называя спутником именно гибридную карту. Вы могли видеть эти типы в навигаторах.
+Обычно пользователям не требуется спутниковая карта без отображения на ней дорог, объектов, границ и названий. Для них разработчики делят карты на два типа: схему и спутник, называя спутником именно гибридную карту. Вы могли видеть эти типы в навигаторах.
 
 ![Типы карт.](https://cdn.sparrowcode.io/tutorials/mapkit/map-types.jpg)
 
@@ -188,7 +188,7 @@ mapView.mapType = .hybrid
 
 ![Zoom Levels](https://cdn.sparrowcode.io/tutorials/mapkit/zoom-levels.jpg)
 
-Упорядоченная совокупность тайлов представляет собой матрицу, в которой у каждого есть своё название по позиции в ней, координатные границы. При поиске области по координатам, алгоритм ищет тайл, в который попадает эта область, обращается к нему по матричной разметке и подгружает. 
+Упорядоченная совокупность тайлов представляет собой матрицу, в которой у каждого есть своё название по позиции в ней и координатные границы. При поиске области по координатам, алгоритм ищет тайл, в который попадает эта область, обращается к нему по матричной разметке и подгружает. 
 
 Давайте посмотрим, как это выглядит в динамике.
 
@@ -490,7 +490,7 @@ mapView.setCamera(camera, animated: true)
 
 ## Данные
 
-В нашем примере мы отображаем пользователю только один объект. На деле их очень много, например магазины, рестораны и так далее. Геоинформационные данные обычно загружаются с сервера и хранятся в специальном формате.
+В нашем примере мы отображаем пользователю только один объект. На деле их очень много, например, магазины или рестораны. Геоинформационные данные обычно загружаются с сервера и хранятся в специальном формате.
 
 Запишем и отобразим свои данные.
 
@@ -819,7 +819,7 @@ func getData() {
 }
 ```
 
-Теперь необходимо вызвать метод `getData()` и добавить массив с данными на карту. Постоянная `landmark` больше не нужна, её можно удалить.
+Теперь необходимо вызвать метод `getData()` и добавить массив с данными на карту. Постоянная `landmark` больше не нужна, её можно удалить. Метод `addAnnotation()` заменяем на `addAnnotations()`.
 
 ```swift
 override func viewDidLoad() {
@@ -829,8 +829,8 @@ override func viewDidLoad() {
     AnchorsSetter.setAllSides(for: mapView)
     mapView.mapType = .standard
     mapView.setRegion(coordinateRegion, animated: true)
-    mapView.addAnnotation(annotation)
-    
+    mapView.setCameraBoundary(MKMapView.CameraBoundary(coordinateRegion: coordinateRegion), animated: true)
+    mapView.setCameraZoomRange(zoomRange, animated: true)
     mapView.setCamera(camera, animated: true)
     
     getData()
@@ -902,11 +902,11 @@ func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayR
         return renderer
     }
         
-    return  `MKOverlayRenderer`.(overlay: overlay)
+    return  MKOverlayRenderer(overlay: overlay)
 }
 ```
 
-Запускаем и видим, что круг отображается под зданиями. Изменим параметры круга, добавив заливку, прозрачность, толщину обводки и сменим цвет, чтобы было видно детальнее.
+Запускаем и видим, что круг отображается под зданиями. Изменим параметры круга, добавив заливку, прозрачность, толщину обводки, и сменим цвет. Так будет видно детальнее.
 
 ![`MKCircle` красного цвета.](https://cdn.sparrowcode.io/tutorials/mapkit/circle-red.jpg)
 
@@ -941,7 +941,7 @@ var circle: MKCircle {
 // mapView.setCamera(camera, animated: true)
 ```
 
-Теперь `circle` отображается как задумано. Такое отображение удобно для указания на области, распределение, зоны покрытия и досягаемости, и т.д.
+Теперь `circle` отображается как задумано. Такое отображение удобно для указания на области, распределение, зоны покрытия и досягаемости.
 
 ![Синий `MKCircle`.](https://cdn.sparrowcode.io/tutorials/mapkit/circle-blue.jpg)
 
@@ -954,6 +954,10 @@ var circle: MKCircle {
 Отрисуем линию. Она состоит из совокупности точек, нам достаточно двух. Изменим координаты `location2`, что бы расстояние между `location` и `location2` было заметным. Можем взять координаты второго геомаркера. Также добавим свойство `polyline` типа `MKPolyline`. При инициализации `MKPolyline` принимает на вход массив координат геоточек и их количество.
 
 ```swift
+var location2: CLLocationCoordinate2D {
+    CLLocationCoordinate2D(latitude: 54.9500234 , longitude: 39.0210369)
+}
+
 var polyline: MKPolyline {
     MKPolyline(coordinates: [location, location2], count: 2)
 }
@@ -997,6 +1001,10 @@ mapView.addOverlay(polyline)
 Зададим координаты третьей геоточки и создадим полигон, как делали это с линией.
 
 ```swift
+var location3: CLLocationCoordinate2D {
+    CLLocationCoordinate2D(latitude: 54.9484931, longitude: 39.0170369)
+}
+
 var polygon: MKPolygon {
     MKPolygon(coordinates: [location, location2, location3], count: 3)
 }
@@ -1112,9 +1120,9 @@ directionRequest.transportType = .walking
 Переходим в `Landmark.swift` и добавляем ещё один инициализатор. Он потребуется, потому что координаты найденных мест приходят с типом `CLLocation`.
 
 ```swift
-init? (coordinate: CLLocation, title: String?) {
+init? (location: CLLocation, title: String?) {
     
-    self.coordinate = CLLocationCoordinate2D(latitude: coordinate.coordinate.latitude, longitude: coordinate.coordinate.longitude)
+    self.coordinate = CLLocationCoordinate2D(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
     self.title = title
     self.subtitle = ""
     
@@ -1135,16 +1143,17 @@ func search(place: String) {
     search.start(completionHandler: {(response, error) in
             
         for item in response!.mapItems {
-            let landmark = Landmark(coordinate: item.placemark.location!, title: item.name)
+            let landmark = Landmark(location: item.placemark.location!, title: item.name)
             self.mapView.addAnnotation(landmark!)
         }
     })
 }
 ```
 
-Теперь можно вызвать метод `search(place: String)` во `viewDidLoad()`, запустить симулятор и посмотреть результаты поиска. Также снимем ограничение на панорамирование и масштабирование.
+Теперь можно вызвать метод `search(place: String)` во `viewDidLoad()`, запустить симулятор и посмотреть результаты поиска. Также снимем ограничение на панорамирование и масштабирование. 
 
 ```swift
+// mapView.addAnnotations(landmarks)
 // mapView.setCameraBoundary(MKMapView.CameraBoundary(coordinateRegion: coordinateRegion), animated: true)
 // mapView.setCameraZoomRange(zoomRange, animated: true)
 search(place: "Почта")
