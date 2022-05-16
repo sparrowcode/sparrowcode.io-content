@@ -1,31 +1,19 @@
-Напишем приложение с использованием фреймворка MapKit. Научимся добавлять карту, геомаркеры,  описание и оверлеи. Познакомимся с основными понятиями для работы с карточными API.
+Напишем приложение с использованием фреймворка MapKit. Добавим карту, геомаркеры, описание и оверлеи. В след. туториалах разберем TOFIX...
 
 ## API
-Для создания приложения с картой нам потребуется встроенное или стороннее `API` для структурного взаимодействия с фреймворком или библиотекой.
 
-Apple сделала собственный фреймворк для работы с картами - `MapKit`. Помимо него можно использовать `Google Maps`, `Open Street Maps` и другие фреймворки с `API` для `Swift`.
+Apple сделала фреймворк для работы с картами `MapKit`, здесь [официальная документация](https://developer.apple.com/documentation/mapkit/) по нему.
 
-Посмотрим [официальную документацию](https://developer.apple.com/documentation/mapkit/) `MapKit`. Эти наборы структур, классов и протоколов являются `API` для работы с фреймворком. 
-
-Для начала работы достаточно импортировать `MapKit` в свой проект:
-
-```swift
-import MapKit
-```
-
-В отличие от `Google Maps` у `Open Street Maps` нет единого фреймворка, но есть набор `iOS`-[библиотек](https://wiki.openstreetmap.org/wiki/Apple_iOS#Libraries_for_developers) с картами `OSM`.
-
-Можно использовать `MapKit`, а в качестве сервера с картами выбрать `Google Maps`, `OSM` или другой. Всё зависит от ваших нужд, детальности карт, частоты их обновления, качества и веса.
+TOFIX: документацию выделить как блок
+TOFIX: введение много воды, убрал все что не связано - нужно дополнить полезным.
 
 ## Подключение
 
 ### Map View
 
-Карта добавляется в проект аналогично любой другой `View`. Для `UIKit` предусмотрен класс `MKMapView`, а для `SwiftUI` - структура `Map`. В этом туториале мы будем работать с `UIKit`.
+Карта добавляется в иерархию как обычная `View`. В `UIKit` есть класс `MKMapView`, а в `SwiftUI` - структура `Map`. В этом туториале работаем с `UIKit`.
 
-Создадим проект с названием `MapKitTutorial`.
-
-Структура проекта должна выглядеть так:
+Создадим проект с названием `MapKitTutorial`. Структура проекта:
 
 ```
 ├── MapKitTutorial
@@ -38,7 +26,9 @@ import MapKit
 │   ├── Info
 ```
 
-Переходим в файл `ViewController` и импортируем `MapKit`. В теле класса создаём постоянную `mapView` типа `MKMapView`. В качестве значения укажем ей сомовызывающуюся функцию, возвращающую экземпляр `MKMapView`.
+TOFIX: Убрал блоки кода с лейатом и прочим, они не имеют отношение к мапкиту. Не нужно погружаться в лейаут и пояснять какие клоужеры-фуркеции с чем вызываются. Мы пишем про мапкит.
+
+Переходим в файл `ViewController` и импортируем `MapKit`. Поместим вью на экран:
 
 ```swift
 import UIKit
@@ -46,44 +36,18 @@ import MapKit
 
 class ViewController: UIViewController {
 
-    let mapView: MKMapView = {
-        let map = MKMapView()
-        map.translatesAutoresizingMaskIntoConstraints = false // Возможность выставлять `anchors` для `mapView`
-        
-        return map
-    }()
-}
-```
+    let mapView = MKMapView()
 
-Создадим и перейдём в новый файл с названием `Helper`. В нём будут вспомогательные объекты, что бы не засорять `ViewController`.
-
-Создадим структуру `AnchorsSetter` со `static` методом `setAllSides(for view: UIView)`, который выставит `view` в размер его `superview` с учётом верхней `safeArea`.
-
-```swift
-struct AnchorsSetter {
-    
-    static func setAllSides(for view: UIView) {
-    
-        if let superview = view.superview {
-            NSLayoutConstraint.activate([
-                view.topAnchor.constraint(equalTo: superview.safeAreaLayoutGuide.topAnchor),
-                view.rightAnchor.constraint(equalTo: superview.rightAnchor),
-                view.bottomAnchor.constraint(equalTo: superview.bottomAnchor),
-                view.leftAnchor.constraint(equalTo: superview.leftAnchor)
-            ])
-        }
+    func viewDidLoad() {
+        super.viewDidLoad()
+        view.addSubview(mapView)
     }
-}
-```
 
-Переключаемся на `ViewController`. Во `viewDidLoad()` добавляем `mapView` на основную `view` и позиционируем её.
-
-```swift
-override func viewDidLoad() {
-    super.viewDidLoad()
-    
-    view.addSubview(mapView)
-    AnchorsSetter.setAllSides(for: mapView)
+    // Лейаут вью на весь экран
+    func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        mapView.frame = view.bounds
+    }
 }
 ```
 
@@ -93,19 +57,22 @@ override func viewDidLoad() {
 
 ### Типы карт
 
+TOFIX: Не "можно разделить" а делятся. Написать кем, почему так. Если это эпл, написать что у эпла есть такие стили карт.
+
 Карты можно разделить на 3 типа отображения:
 
-- **Спутник** - карта составлена из совокупности снимков со спутника.
-- **Схема** - карта составлена схематическим образом.
-- **Гибрид** - объекты схематически нанесены на совокупность спутниковых снимков, иными словами - одновременное отображение *cпутника* и *cхемы*.
+- **Спутник** - совокупности снимков со спутника.
+- **Схема** - схематическая.
+- **Гибрид** - одновременное отображение *cпутника* и *cхемы*.
 
 Обычно пользователям не требуется спутниковая карта без отображения на ней дорог, объектов, границ и названий. Для них разработчики делят карты на два типа: схему и спутник, называя спутником именно гибридную карту. Вы могли видеть эти типы в навигаторах.
 
 ![Типы карт.](https://cdn.sparrowcode.io/tutorials/mapkit/map-types.jpg)
 
-В нашем приложении мы видим именно схематическую карту.
+В нашем приложении мы видим схематическую карту.
 
-За изменение типа отображаемой карты отвечает свойство `mapType`, принимающее значения типа `MKMapType` - перечисление, содержащее следующие кейсы:
+TOFIX: Чтобы зимнеить тип карты, установите....
+За изменение типа карты отвечает свойство `mapType`, принимающее значения типа `MKMapType` - перечисление, содержащее следующие кейсы:
 
 - `standard` - карта улиц, показывающая расположение всех дорог и названия некоторых дорог.
 - `satellite` - спутниковые снимки местности.
