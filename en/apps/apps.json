@@ -153,5 +153,16 @@
             "added_date":"03.05.2022"
          }
       ]
+   },
+   {
+      "developer_name" : "Viktor Yurchuk",
+      "github_username" : "YurchukV",
+      "apps" : [
+         {
+            "id" : "957083912",
+            "name" : "Exchange rates",
+            "added_date" : "21.05.2022"
+         }
+      ]
    }
 ]

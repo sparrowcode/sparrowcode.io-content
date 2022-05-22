@@ -168,5 +168,16 @@
             "added_date":"22.04.2022"
          }
       ]
+   },
+   {
+      "developer_name" : "Виктор Юрчук",
+      "github_username" : "YurchukV",
+      "apps" : [
+         {
+            "id" : "957083912",
+            "name" : "Курсы валют",
+            "added_date" : "21.05.2022"
+         }
+      ]
    }
 ]
