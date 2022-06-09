@@ -164,5 +164,16 @@
             "added_date" : "21.05.2022"
          }
       ]
-   }
+   },
+   {
+      "developer_name":"Egor Lazarev",
+      "github_username":"Rogue85",
+      "apps":[
+         {
+            "id":"1619685571",
+            "name":"Petapet - pet diary",
+            "added_date":"09.06.2022"
+         }
+      ]
+   },
 ]
