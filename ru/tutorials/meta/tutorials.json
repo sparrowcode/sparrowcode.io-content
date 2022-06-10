@@ -31,8 +31,8 @@
         "updated_date" : "15.04.2022",
         "added_date" : "11.10.2021"
     },
-    "sf-symbols-3" : {
-        "title" : "SF Symbols 3 и Render Mode",
+    "sf-symbols-and-render-mode" : {
+        "title" : "SF Symbols и Render Mode",
         "description" : "Вместе c iOS 15 обновили SF Symbols до 3-ей версии. Добавили 600 новых символов и разные способы покрасить их. Некоторые символы получили вариации форм.",
         "category" : "uikit",
         "author" : "ivanvorobei",
@@ -42,7 +42,7 @@
             "SwiftUI",
             "iOS 15"
         ],
-        "updated_date" : "15.04.2022",
+        "updated_date" : "10.06.2022",
         "added_date" : "28.10.2021"
     },
     "uiviewcontroller-lifecycle" : {
