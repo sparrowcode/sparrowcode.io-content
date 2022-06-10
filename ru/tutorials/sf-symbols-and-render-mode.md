@@ -1,7 +1,5 @@
 Примеры кода будут для `SwiftUI` и `UIKit`. Внимательно следите за совместимостью символов - не все доступны для 14 и предыдущих iOS. Глянуть с какой версии доступен символ можно [в приложении](https://developer.apple.com/sf-symbols/).
 
-## Render Modes
-
 Render Modes - это отрисовка иконки в цветовой схеме. Доступны монохром, иерархический, палетка и мульти-цвет. Наглядное превью:
 
 ![Render Modes в SFSymbols.](https://cdn.sparrowcode.io/tutorials/sf-symbols-3/render-modes-preview.jpg)

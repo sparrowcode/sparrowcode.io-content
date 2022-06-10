@@ -33,7 +33,7 @@
     },
     "sf-symbols-and-render-mode" : {
         "title" : "SF Symbols и Render Mode",
-        "description" : "Вместе c iOS 15 обновили SF Symbols до 3-ей версии. Добавили 600 новых символов и разные способы покрасить их. Некоторые символы получили вариации форм.",
+        "description" : "Как работают Monochrome, Hierarchical, Palette, Multicolor Render для SF Symbols.",
         "category" : "uikit",
         "author" : "ivanvorobei",
         "editors" : ["svtnck"],
