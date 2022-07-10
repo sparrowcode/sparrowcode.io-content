@@ -3,14 +3,15 @@
         "name": "Редакция Код Воробья",
         "description": "Делаем полезности для iOS разработчиков.",
         "avatar": "https://cdn.sparrowcode.io/authors/sparrowcode.jpg",
+        "github" : "sparrowcode",
         "buttons": [
             {
-                "name": "GitHub",
-                "link": "https://github.com/sparrowcode"
+                "title": "GitHub",
+                "url": "https://github.com/sparrowcode"
             },
             {
-                "name": "Telegram",
-                "link": "https://t.me/sparrowcode"
+                "title": "Telegram",
+                "url": "https://t.me/sparrowcode"
             }
         ]
     },
@@ -18,14 +19,15 @@
         "name" : "Иван Воробей",
         "description" : "iOS разработчик. Пишу библиотеки, веду телеграм-канал.",
         "avatar" : "https://cdn.sparrowcode.io/authors/ivanvorobei.jpg",
+        "github" : "ivanvorobei",
         "buttons" : [
             {
-                "name" : "GitHub",
-                "link" : "https://github.com/ivanvorobei"
+                "title" : "GitHub",
+                "url" : "https://github.com/ivanvorobei"
             },
             {
-                "name" : "App Store",
-                "link" : "https://apps.ivanvorobei.io"
+                "title" : "App Store",
+                "url" : "https://apps.ivanvorobei.io"
             }
         ]
     },
@@ -33,14 +35,15 @@
         "name" : "Александр Гузенко",
         "description" : "iOS разработчик. Люблю нативный дизайн и велик.",
         "avatar" : "https://cdn.sparrowcode.io/authors/alxrguz.jpg",
+        "github" : "alxrguz",
         "buttons" : [
             {
-                "name" : "GitHub",
-                "link" : "https://github.com/alxrguz"
+                "title" : "GitHub",
+                "url" : "https://github.com/alxrguz"
             },
             {
-                "name" : "App Store",
-                "link" : "https://apps.apple.com/developer/id1480235724"
+                "title" : "App Store",
+                "url" : "https://apps.apple.com/developer/id1480235724"
             }
         ]
     },
@@ -48,10 +51,11 @@
         "name": "Никита Россик",
         "description": "Увлекаюсь разработкой под .",
         "avatar": "https://cdn.sparrowcode.io/authors/wmorgue.jpg",
+        "github" : "wmorgue",
         "buttons": [
             {
-                "name": "GitHub",
-                "link": "https://github.com/wmorgue"
+                "title": "GitHub",
+                "url": "https://github.com/wmorgue"
             }
         ]
     },
@@ -59,14 +63,15 @@
         "name": "Никита Соменков",
         "description": "iOS разработчик. Развиваю свой проект, и тоже за нативный дизайн",
         "avatar": "https://cdn.sparrowcode.io/authors/somenkovnikita.jpg",
+        "github" : "somenkovnikita",
         "buttons": [
             {
-                "name": "GitHub",
-                "link": "https://github.com/somenkovnikita"
+                "title": "GitHub",
+                "url": "https://github.com/somenkovnikita"
             },
             {
-                "name" : "Projects",
-                "link" : "https://apps.somenkov.ru"
+                "title" : "Projects",
+                "url" : "https://apps.somenkov.ru"
             }
         ]
     },
@@ -74,14 +79,15 @@
         "name": "Николай Пелевин",
         "description": "iOS Разработчик, люблю конфеты.",
         "avatar": "https://cdn.sparrowcode.io/authors/svtnck.jpg",
+        "github" : "svtnck",
         "buttons": [
             {
-                "name": "GitHub",
-                "link": "https://github.com/svyatoynick"
+                "title": "GitHub",
+                "url": "https://github.com/svyatoynick"
             },
             {
-                "name" : "App Store",
-                "link" : "https://apps.pelevin.me"
+                "title" : "App Store",
+                "url" : "https://apps.pelevin.me"
             }
         ]
     },
@@ -89,10 +95,11 @@
         "name": "Любовь Волкова",
         "description": "Люблю матан, swift и 🐺",
         "avatar": "https://cdn.sparrowcode.io/authors/liubowolkova.jpg",
+        "github" : "liubowolkova",
         "buttons": [
             {
-                "name": "GitHub",
-                "link": "https://github.com/liubowolkova"
+                "title": "GitHub",
+                "url": "https://github.com/liubowolkova"
             }
         ]
     }

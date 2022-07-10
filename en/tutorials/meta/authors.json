@@ -3,14 +3,15 @@
         "name" : "Ivan Vorobei",
         "description" : "iOS Developer. Making opensource frameworks & writing tutorials.",
         "avatar" : "https://cdn.sparrowcode.io/authors/ivanvorobei.jpg",
+        "github" : "ivanvorobei",
         "buttons" : [
             {
-                "name" : "GitHub",
-                "link" : "https://github.com/ivanvorobei"
+                "title" : "GitHub",
+                "url" : "https://github.com/ivanvorobei"
             },
             {
-                "name" : "App Store",
-                "link" : "https://apps.ivanvorobei.io"
+                "title" : "App Store",
+                "url" : "https://apps.ivanvorobei.io"
             }
         ]
     },
@@ -18,14 +19,15 @@
         "name": "Nikolay Pelevin",
         "description": "iOS Developer, candy lover.",
         "avatar": "https://cdn.sparrowcode.io/authors/svtnck.jpg",
+        "github" : "svtnck",
         "buttons": [
             {
-                "name": "GitHub",
-                "link": "https://github.com/svyatoynick"
+                "title": "GitHub",
+                "url": "https://github.com/svyatoynick"
             },
             {
-                "name" : "App Store",
-                "link" : "https://apps.pelevin.me"
+                "title" : "App Store",
+                "url" : "https://apps.pelevin.me"
             }
         ]
     },
@@ -33,10 +35,11 @@
         "name": "Nikita Rossik",
         "description": "Reverse Engineering Enthusiast,  Developer.",
         "avatar": "https://cdn.sparrowcode.io/authors/wmorgue.jpg",
+        "github" : "wmorgue",
         "buttons": [
             {
-                "name": "GitHub",
-                "link": "https://github.com/wmorgue"
+                "title": "GitHub",
+                "url": "https://github.com/wmorgue"
             }
         ]
     },
@@ -44,14 +47,15 @@
         "name": "Nikita Somenkov",
         "description": "iOS developer. I'm developing my own project, and I'm also in favor of native design",
         "avatar": "https://cdn.sparrowcode.io/authors/somenkovnikita.jpg",
+        "github" : "somenkovnikita",
         "buttons": [
             {
-                "name": "GitHub",
-                "link": "https://github.com/somenkovnikita"
+                "title": "GitHub",
+                "url": "https://github.com/somenkovnikita"
             },
             {
-                "name" : "Projects",
-                "link" : "https://apps.somenkov.ru"
+                "title" : "Projects",
+                "url" : "https://apps.somenkov.ru"
             }
         ]
     },
@@ -59,10 +63,11 @@
         "name": "SparrowCode Editorial",
         "description": "We do articles and opensource for developers.",
         "avatar": "https://cdn.sparrowcode.io/authors/sparrowcode.jpg",
+        "github" : "sparrowcode",
         "buttons": [
             {
-                "name": "GitHub",
-                "link": "https://github.com/sparrowcode"
+                "title": "GitHub",
+                "url": "https://github.com/sparrowcode"
             }
         ]
     },
@@ -70,14 +75,15 @@
         "name" : "Alexander Guzenko",
         "description" : "iOS developer. I love native design and bike.",
         "avatar" : "https://cdn.sparrowcode.io/authors/alxrguz.jpg",
+        "github" : "alxrguz",
         "buttons" : [
             {
-                "name" : "GitHub",
-                "link" : "https://github.com/alxrguz"
+                "title" : "GitHub",
+                "url" : "https://github.com/alxrguz"
             },
             {
-                "name" : "App Store",
-                "link" : "https://apps.apple.com/developer/id1480235724"
+                "title" : "App Store",
+                "url" : "https://apps.apple.com/developer/id1480235724"
             }
         ]
     }

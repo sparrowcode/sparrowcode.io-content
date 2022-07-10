@@ -19,7 +19,7 @@
 var number = 3
 
 internal var number = 3
-``` 
+```
 
 Доступ к объектам с `internal` нельзя получить из другого модуля:
 
