@@ -87,5 +87,14 @@
         "keywords" : ["public", "private", "internal", "fileprivate"],
         "updated_date": "10.08.2022",
         "added_date": "22.03.2022"
+    },
+    "localisation-ios-apps" : {
+        "title" : "Локализация iOS приложений",
+        "description" : "Ультимативный гид по локализации. Текст, фото, значения.",
+        "categories" : ["swift", "development"],
+        "author" : "svtnck",
+        "keywords" : ["localisation", "nslocalisedstring", "strings", "infoplist"],
+        "updated_date": "10.07.2022",
+        "added_date": "10.07.2022"
     }
 }
