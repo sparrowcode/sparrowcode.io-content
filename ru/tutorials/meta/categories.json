@@ -1,23 +1,17 @@
 {
+    "foundation" : {
+        "title" : "Foundation"
+    },
+    "swift" : {
+        "title" : "Swift"
+    },
     "uikit" : {
-        "name" : "UIKit"
-    },
-    "swiftui" : {
-        "name" : "SwiftUI"
-    },
-    "storekit" : {
-        "name" : "StoreKit"
-    },
-    "compilation" : {
-        "name" : "Compilation"
+        "title" : "UIKit"
     },
     "development" : {
-        "name" : "Development"
+        "title" : "Разработка"
     },
-    "app_store_connect" : {
-        "name" : "App Store Connect"
-    },
-    "news" : {
-        "name" : "Новости"
+    "app-store-connect" : {
+        "title" : "App Store Connect"
     }
 }

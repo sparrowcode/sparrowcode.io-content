@@ -2,194 +2,90 @@
     "drag-and-drop" : {
         "title" : "Drag и Drop для таблицы и коллекции",
         "description" : "Как изменить порядок ячеек в коллекции и таблице. Как перенести ячейки в другую коллекцию. Перемещение нескольких ячеек группой.",
-        "category" : "uikit",
+        "categories" : ["uikit"],
         "author" : "ivanvorobei",
         "editors" : ["svtnck"],
-        "keywords" : [
-            "UICollectionViewDragDelegate",
-            "UICollectionViewDropDelegate",
-            "UITableViewDragDelegate",
-            "UITableViewDropDelegate",
-            "UIDrag",
-            "UIGestureRecognizer"
-        ],
-        "updated_date" : "15.04.2022",
+        "keywords" : ["UICollectionViewDragDelegate", "UICollectionViewDropDelegate", "UITableViewDragDelegate", "UITableViewDropDelegate", "UIGestureRecognizer", "UIDrag"],
+        "updated_date" : "10.08.2022",
         "added_date" : "11.07.2021"
     },
     "uisheetpresentationcontroller" : {
-        "title" : "´UISheetPresentationController´ как в приложении Карты",
+        "title" : "`UISheetPresentationController` как в приложении Карты",
         "description" : "В iOS 15 появились sheet-контроллеры. Их можно перетаскивать с изменением высоты. Вы встречали эти контроллеры в приложениях «Карты» и «Акции».",
-        "category" : "uikit",
+        "categories" : ["uikit"],
         "author" : "ivanvorobei",
         "editors" : ["svtnck"],
-        "keywords" : [
-            "UISheetPresentationController",
-            "Model Controllers",
-            "UIKit",
-            "iOS 15"
-        ],
-        "updated_date" : "15.04.2022",
+        "keywords" : ["UISheetPresentationController", "Map", "Карты", "Modal Controllers", "iOS 15"],
+        "updated_date" : "10.08.2022",
         "added_date" : "11.10.2021"
     },
     "sf-symbols-and-render-mode" : {
-        "title" : "SF Symbols и Render Mode",
+        "title" : "SF Symbols 4 и Render Mode",
         "description" : "Как работают Monochrome, Hierarchical, Palette, Multicolor Render для SF Symbols.",
-        "category" : "uikit",
+        "categories" : ["uikit"],
         "author" : "ivanvorobei",
         "editors" : ["svtnck"],
-        "keywords" : [
-            "UIKit",
-            "SwiftUI",
-            "iOS 15"
-        ],
-        "updated_date" : "10.06.2022",
+        "keywords" : ["SF Symbols", "SFSymbols", "SwiftUI", "iOS 15"],
+        "updated_date" : "10.08.2022",
         "added_date" : "28.10.2021"
     },
     "uiviewcontroller-lifecycle" : {
-        "title" : "Жизненный цикл ´UIViewController´",
+        "title" : "Жизненный цикл `UIViewController`",
         "description" : "Рассмотрим когда вызываются методы контроллера и что можно делать внутри них. Когда настраивать вьюхи и данные.",
-        "category" : "uikit",
+        "categories" : ["uikit"],
         "author" : "ivanvorobei",
         "editors" : ["svtnck"],
-        "keywords" : [
-            "UIKit",
-            "UIViewController",
-            "viewDidAppear",
-            "viewDidLoad",
-            "жизненный цикл uiviewcontroller",
-            "жизненный цикл uiview"
-        ],
-        "updated_date" : "15.04.2022",
+        "keywords" : ["UIViewController", "viewDidAppear", "viewDidLoad", "жизненный цикл uiviewcontroller"],
+        "updated_date" : "10.08.2022",
         "added_date" : "19.11.2021"
     },
     "how-to-delete-userdefaults-on-macos-catalyst" : {
         "title" : "Как очистить UserDefaults для Mac Catalyst",
         "description" : "Как очистить данные для приложения Catalyst включая AppGroup, Realm и UserDefaults.",
-        "category" : "development",
+        "categories" : ["development"],
         "author" : "ivanvorobei",
-        "keywords" : [
-            "UserDefaults",
-            "Catalyst"
-        ],
-        "updated_date" : "15.12.2021",
+        "keywords" : ["UserDefaults", "Catalyst", "MacCatalyst"],
+        "updated_date" : "10.08.2021",
         "added_date" : "11.12.2021"
     },
     "edge-insets-uibutton" : {
-        "title" : "Отступы Edge Insets для ´UIButton´",
+        "title" : "Отступы Edge Insets для `UIButton`",
         "description" : "Как добавить отступ между картинкой и заголовком в кнопке. Как поместить иконку справа от заголовка.",
-        "category" : "uikit",
+        "categories" : ["uikit"],
         "author" : "ivanvorobei",
         "editors" : ["svtnck"],
-        "keywords" : [
-            "imageEdgeInsets",
-            "imageEdgeInsets",
-            "contentEdgeInsets"
-        ],
-        "updated_date" : "15.04.2022",
+        "keywords" : ["imageEdgeInsets", "imageEdgeInsets", "contentEdgeInsets", "отсутп между заголовком и картинкой"],
+        "updated_date" : "10.08.2022",
         "added_date" : "13.12.2021"
     },
     "product-page-optimization-alternative-icons" : {
         "title" : "Альтернативные иконки для тестов Product Page Optimization",
         "description" : "Как добавить альтернативные иконки для A/B тестов на странице приложения.",
-        "category" : "app_store_connect",
+        "categories" : ["app-store-connect"],
         "author" : "alxrguz",
         "editors" : ["svtnck"],
-        "keywords" : [
-            "alternative icons"
-        ],
-        "updated_date" : "15.04.2022",
+        "keywords" : ["alternative icons"],
+        "updated_date" : "10.08.2022",
         "added_date" : "27.12.2021"
     },
-    "how-add-view-to-swiftui-library" : {
-        "title" : "Как добавить кастомную SwiftUI View в библиотеку Xcode",
-        "description" : "В этой статье я покажу как добавить свою View в Xcode Library с помощью LibraryContentProvider.",
-        "category" : "swiftui",
-        "author" : "wmorgue",
-        "editors" : ["ivanvorobei", "svtnck"],
-        "keywords" : [
-            "xcode",
-            "library",
-            "LibraryContentProvider"
-        ],
-        "updated_date": "15.04.2022",
-        "added_date": "02.02.2022"
-    },
     "async-await" : {
-        "title" : "Асинхронность с async/await/actor",
+        "title" : "Асинхронность с async/await и actor",
         "description" : "Разберём async, await, actor. Напишем тузлу для поиска приложений в App Store, используя новые инструменты.",
-        "category" : "development",
+        "categories" : ["swift"],
         "author" : "somenkovnikita",
         "editors" : ["ivanvorobei", "svtnck"],
-        "keywords" : [
-            "async",
-            "await",
-            "actor"
-        ],
-        "updated_date": "15.04.2022",
+        "keywords" : ["async", "await", "actor"],
+        "updated_date": "10.08.2022",
         "added_date": "06.02.2022"
-    },
-    "mastering-progressview-swiftui" : {
-        "title" : "Индикатор прогресса с ´ProgressView´ в SwiftUI",
-        "description" : "Как устроен ProgressView. Как настроить внешний вид: спиннер и прогресс-бар.",
-        "category" : "swiftui",
-        "author" : "wmorgue",
-        "editors" : ["ivanvorobei", "svtnck"],
-        "keywords" : [
-            "ProgressView"
-        ],
-        "updated_date": "15.04.2022",
-        "added_date": "09.02.2022"
-    },
-    "searchable-swiftui" : {
-        "title" : "Поиск и модификатор ´Searchable´ в SwiftUI",
-        "description" : "Поиск в SwiftUI. Работаем с модификатором `Searchable`.",
-        "category" : "swiftui",
-        "author" : "wmorgue",
-        "editors" : ["ivanvorobei", "svtnck"],
-        "keywords" : [
-            "searchable"
-        ],
-        "updated_date": "15.04.2022",
-        "added_date": "21.02.2022"
-    },
-    "redacted-modifier-swiftui" : {
-        "title" : "Прототип вью и модификатор ´redacted´ в SwiftUI",
-        "description" : "Делаем прототип вью в SwiftUI. Скелет интерфейса, пока контент загружается.",
-        "category" : "swiftui",
-        "author" : "wmorgue",
-        "editors" : ["ivanvorobei", "svtnck"],
-        "keywords" : [
-            "redacted",
-            "unredacted",
-            "RedactionReasons"
-        ],
-        "updated_date": "15.04.2022",
-        "added_date": "01.03.2022"
-    },
-    "keyboard-shortcut-swiftui" : {
-        "title" : "Действия на сочетания клавиш в SwiftUI",
-        "description" : "Знакомимся с модификатором `keyboardShortcut`. Добавим модификаторы для клавиш `.command`, `.option`, `.shift`",
-        "category" : "swiftui",
-        "author" : "wmorgue",
-        "editors" : ["ivanvorobei", "svtnck"],
-        "keywords" : [
-            "keyboard shortcut"
-        ],
-        "updated_date": "15.04.2022",
-        "added_date": "14.03.2022"
     },
     "access-control" : {
         "title" : "Уровни доступа в Swift",
-        "description" : "Рассмотрим уровни доступа и как обезопасить свой код с ними.",
-        "category" : "development",
+        "description" : "Уровни доступа делают код безопасным и разделенным, уменьшают случайные ошибки.",
+        "categories" : ["swift", "foundation"],
         "author" : "liubowolkova",
         "editors" : ["ivanvorobei", "svtnck"],
-        "keywords" : [
-            "access control",
-            "access control swift",
-            "code safety"
-        ],
-        "updated_date": "15.04.2022",
+        "keywords" : ["public", "private", "internal", "fileprivate"],
+        "updated_date": "10.08.2022",
         "added_date": "22.03.2022"
     }
 }

@@ -510,6 +510,7 @@ GET https://itunes.apple.com/search?entity=software?term=<запрос>
 ```
 
 Модель данных:
+
 ```swift
 struct ITunesResultsEntry: Decodable {
 
@@ -912,18 +913,13 @@ func saveWorkoutToHealthKitAsync(runWorkout: RunWorkout) async throws {
 
 ## Полезные материалы
 
-[Скачать проект-пример](https://cdn.sparrowcode.io/tutorials/async-await/app-store-search.zip): Попрактикуйтесь, добавив новый экран детали страницы App Store, решите проблему с загрузкой скриншотов и правильной отменой, если пользователь быстро закрыл страницу
-
+[Скачать проект-пример](https://cdn.sparrowcode.io/tutorials/async-await/app-store-search.zip): Попрактикуйтесь, добавив новый экран детали страницы App Store, решите проблему с загрузкой скриншотов и правильной отменой, если пользователь быстро закрыл страницу.
 [Серия статей о async/await](https://www.andyibanez.com/posts/modern-concurrency-in-swift-introduction/): Множество примеров использования async/await. Например, раскрыта тема `@TaskLocal`, есть и другие полезные мелочи.
-
-[Как устроены акторы](https://habr.com/ru/company/otus/blog/588540/): Если хотите больше узнать о реализации акторов под капотом
-
-[Исходный код Swift](https://github.com/apple/swift/tree/main/stdlib/public/Concurrency): Если хотите познать истину, то обратитесь к коду
+[Как устроены акторы](https://habr.com/ru/company/otus/blog/588540/): Если хотите больше узнать о реализации акторов под капотом.
+[Исходный код Swift](https://github.com/apple/swift/tree/main/stdlib/public/Concurrency): Если хотите познать истину, то обратитесь к коду.
 
 WWDC-сессии:
 
 [Protect mutable state with Swift actors](https://developer.apple.com/wwdc21/10133): Видео-туториал от Apple об actor. Рассказывают, какие проблемы он решает и как им пользоваться.
-
-[Explore structured concurrency in Swift](https://developer.apple.com/wwdc21/10134): Видео-туториал от Apple о структурном параллелизме, в частности, о `Task`, `Task.detached`, `TaskGroup` и приоритетах операции
-
+[Explore structured concurrency in Swift](https://developer.apple.com/wwdc21/10134): Видео-туториал от Apple о структурном параллелизме, в частности, о `Task`, `Task.detached`, `TaskGroup` и приоритетах операции.
 [Meet async/await in Swift](https://developer.apple.com/wwdc21/10132): Видео-туториал от Apple о том, как работает async/await. Есть наглядные схемы.
