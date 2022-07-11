@@ -172,6 +172,7 @@ XCode автоматически сгенерирует `xсloc` файл для
 ### BartyCrouch
 
 - Открываем терминал и вводим команду для установки [Homebrew](https://brew.sh), через который установим BartyCrouch:
+
 ```swift
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
