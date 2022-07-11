@@ -275,7 +275,7 @@ func headphonesCount(count: Int) -> String {
 
 Переходим в файл, видим следующую структуру:
 
-![Структура файла `Stringsdict`](https://cdn.sparrowcode.io/tutorials/localisation/pluralisation-stringsdict-empty.jpg)
+![Структура файла `Stringsdict`.](https://cdn.sparrowcode.io/tutorials/localisation/pluralisation-stringsdict-empty.jpg)
 
 - `Localised String Key` - локализационный ключ, который мы создали ранее (headphones count).
 - `Localised Format Key` - параметр, значение которого войдёт в строку результата. В нашем случае только один (count).
@@ -567,7 +567,7 @@ print(numberFormatter.locale.string(from: 123456))
 
 Выбираем языки, на которые хотим локализовать изображение (доступны все, добавленные в проект). Добавляем нужные изображения в появившихся полях.
 
-![`Asses` после настройки под разные языки.](https://cdn.sparrowcode.io/tutorials/localisation/image-ready.jpg)
+![`Assets` после настройки под разные языки.](https://cdn.sparrowcode.io/tutorials/localisation/image-ready.jpg)
 
 Проверяем как отображается изображение на разных языках.
 
