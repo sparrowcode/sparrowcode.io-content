@@ -1,6 +1,6 @@
 Расскажу как локализовать тексты, картинки, значения и даже пакеты. Что такое плюрализация и автогенерация. Полезные инструменты и тру-вей подход к локализации приложения.
 
-![Пародийный постер к фильму «Перевозчик 3».](https://cdn.sparrowcode.io/tutorials/localisation-ios-apps/preview-ru.jpg)
+![Пародийный постер к фильму «Перевозчик 3».](https://cdn.sparrowcode.io/tutorials/localisation/preview-ru.jpg)
 
 ### Структура
 
@@ -100,15 +100,15 @@ let localisedString = String.init(
 
 Переходим в Products и видим кнопки `Export` и `Import localizations...`.
 
-![Расположение кнопок в верхнем баре.](https://cdn.sparrowcode.io/tutorials/localisation-ios-apps/export-menu.jpg)
+![Расположение кнопок в верхнем баре.](https://cdn.sparrowcode.io/tutorials/localisation/export-menu.jpg)
 
 `Export` позволяет вывести локализационные ключи для перевода.
 
-![Содержимое `xcloc` каталога.](https://cdn.sparrowcode.io/tutorials/localisation-ios-apps/export-xcloc.jpg)
+![Содержимое `xcloc` каталога.](https://cdn.sparrowcode.io/tutorials/localisation/export-xcloc.jpg)
 
 XCode создаст `Localization Catalog` (папку с расширением файла `xcloc`), содержащий локализуемые ресурсы для каждого языка и региона. Для того что бы перевести приложение на нужный язык достаточно его открыть.
 
-![Встроенный в Xcode переводчик.](https://cdn.sparrowcode.io/tutorials/localisation-ios-apps/export-xcode-translator.jpg)
+![Встроенный в Xcode переводчик.](https://cdn.sparrowcode.io/tutorials/localisation/export-xcode-translator.jpg)
 
 Это встроенный в XCode переводчик. На сайдбаре есть 2 файла - `InfoPlist` и `Localizable`, здесь они переводятся отдельно.
 
@@ -116,7 +116,7 @@ XCode создаст `Localization Catalog` (папку с расширение�
 
 После того, как выполнили перевод - сохраняем файл и возвращаемся в проект. Снова переходим в Product, но уже выбираем `Import Localizations`. 
 
-![Импортирование `xcloc` каталогов в проект.](https://cdn.sparrowcode.io/tutorials/localisation-ios-apps/export-import.jpg)
+![Импортирование `xcloc` каталогов в проект.](https://cdn.sparrowcode.io/tutorials/localisation/export-import.jpg)
 
 Здесь по-отдельности выбираем каждый каталог и загружаем в проект. Вуаля! В файле `Localizable.strings` нужного языка появятся все переведённые ключи:
 
@@ -135,7 +135,7 @@ XCode создаст `Localization Catalog` (папку с расширение�
 
 /* No comment provided by engineer. */
 "key e" = "Буква Е";
-``` 
+```
 
 Перевод можно изменять прямо в файле, при следующем экспорте XCode считает это и изменения отобразятся в `xcloc`.
 
@@ -143,11 +143,11 @@ XCode создаст `Localization Catalog` (папку с расширение�
 
 Возвращаемся на 2 минуты назад. Мы снова в папке с `xсloc` каталогами. Вместо того, что бы открыть его левой кнопкой мыши - нажимаем правую и переходим в содержимое пакета.
 
-![Содержимое `xcloc` каталога.](https://cdn.sparrowcode.io/tutorials/localisation-ios-apps/export-xcloc-detail.jpg)
+![Содержимое `xcloc` каталога.](https://cdn.sparrowcode.io/tutorials/localisation/export-xcloc-detail.jpg)
 
 Глаза разбегаются, но не стоит паниковать - здесь нас интересует папка "Localized Contents". Внутри будет `xliff` файл, открываем его через `Poedit`.
 
-![Интерфейс Poedit.](https://cdn.sparrowcode.io/tutorials/localisation-ios-apps/export-poedit.jpg)
+![Интерфейс Poedit.](https://cdn.sparrowcode.io/tutorials/localisation/export-poedit.jpg)
 
 Здесь есть все ключи списком. Выбираете нужный, внизу появляется исходный ключ и поле для ввода перевода. Если перевели приложение на основной английский язык - вместо ключей будет отображаться он. Справа есть варианты перевода, ключ и комментарий. С премиумом можно автоматически перевести все ключи с основного языка. Poedit подсветит ошибки в локализации. 
 
@@ -157,7 +157,7 @@ XCode создаст `Localization Catalog` (папку с расширение�
 
 Что бы добавить новый язык нужно перейти в настройки проекта -> Info.
 
-![Добавление нового языка в настройках проекта.](https://cdn.sparrowcode.io/tutorials/localisation-ios-apps/autogeneration-new-language.jpg)
+![Добавление нового языка в настройках проекта.](https://cdn.sparrowcode.io/tutorials/localisation/autogeneration-new-language.jpg)
 
 Здесь ищем секцию "Localizations" и плюс, через который добавляем столько языков, сколько нам нужно.
 
@@ -185,7 +185,7 @@ bartycrouch init
 
 В папке появится скрытый файл `.bartycrouch.toml`. 
 
-![Стандартный файл-конфигуратор `Bartycrouch`.](https://cdn.sparrowcode.io/tutorials/localisation-ios-apps/autogeneration-bartycrouch-file.jpg)
+![Стандартный файл-конфигуратор `Bartycrouch`.](https://cdn.sparrowcode.io/tutorials/localisation/autogeneration-bartycrouch-file.jpg)
 
 Это стандартная конфигурация, которая закрывает большинство проблем. Её можно настроить, давайте разберёмся. 
 
@@ -245,7 +245,7 @@ fi
 
 Переходим в таргет проекта -> `Build Phase`, нажимаем на плюсик и создаём новый скрипт:
 
-![Добавление скрипта `Bartycrouch` в проект.](https://cdn.sparrowcode.io/tutorials/localisation-ios-apps/autogeneration-bartycrouch-script.jpg)
+![Добавление скрипта `Bartycrouch` в проект.](https://cdn.sparrowcode.io/tutorials/localisation/autogeneration-bartycrouch-script.jpg)
 
 Теперь `Bartycrouch` будет делать проверку автоматически и напомнит, если его надо установить. Например, если открыли проект на другом компьютере.
 
@@ -271,11 +271,11 @@ func headphonesCount(count: Int) -> String {
 
 Создаём новый файл. В поиске пишем "strings" и выбираем `Stringsdict File`. Даём ему название `Localizable`, добавляем в проект.
 
-![Добавление `Stringsdict` файла.](https://cdn.sparrowcode.io/tutorials/localisation-ios-apps/pluralisation-new-stringsdict.jpg)
+![Добавление `Stringsdict` файла.](https://cdn.sparrowcode.io/tutorials/localisation/pluralisation-new-stringsdict.jpg)
 
 Переходим в файл, видим следующую структуру:
 
-![Структура файла `Stringsdict`](https://cdn.sparrowcode.io/tutorials/localisation-ios-apps/pluralisation-stringsdict-empty.jpg)
+![Структура файла `Stringsdict`.](https://cdn.sparrowcode.io/tutorials/localisation/pluralisation-stringsdict-empty.jpg)
 
 - `Localised String Key` - локализационный ключ, который мы создали ранее (headphones count).
 - `Localised Format Key` - параметр, значение которого войдёт в строку результата. В нашем случае только один (count).
@@ -285,31 +285,31 @@ func headphonesCount(count: Int) -> String {
 
 Заполняем файл:
 
-![Заполненный ключ `headphones count`.](https://cdn.sparrowcode.io/tutorials/localisation-ios-apps/pluralisation-string-headphones-prepare.jpg)
+![Заполненный ключ `headphones count`.](https://cdn.sparrowcode.io/tutorials/localisation/pluralisation-string-headphones-prepare.jpg)
 
 Видим, что `two, few, many` и `other` повторяются. Обязательно только последнее, поэтому остальные убираем.
 
-![Отрефракторенный ключ `headphones count`.](https://cdn.sparrowcode.io/tutorials/localisation-ios-apps/pluralisation-string-headphones-ready.jpg)
+![Отрефракторенный ключ `headphones count`.](https://cdn.sparrowcode.io/tutorials/localisation/pluralisation-string-headphones-ready.jpg)
 
 Файл заполнен, но при вызове функции `headphonesCount(count: 1)` мы получим ключ `headphones count`, вместо перевода, потому что XCode не локализует `.stringsdict` автоматически.
 
 Переходим в инспектор -> кнопка `Localize...`
 
-![Расположение кнопки `Localize...` в инспекторе.](https://cdn.sparrowcode.io/tutorials/localisation-ios-apps/pluralisation-localize-button.jpg)
+![Расположение кнопки `Localize...` в инспекторе.](https://cdn.sparrowcode.io/tutorials/localisation/pluralisation-localize-button.jpg)
 
 Затем выбираем языки, для которых нужно создать `.stringsdict` файлы - доступны все, что добавлены в проект.
 
-![Выбор языков для перевода в инспекторе.](https://cdn.sparrowcode.io/tutorials/localisation-ios-apps/pluralisation-localize-languages.jpg)
+![Выбор языков для перевода в инспекторе.](https://cdn.sparrowcode.io/tutorials/localisation/pluralisation-localize-languages.jpg)
 
 Локализовать `.stringsdict` можно как в новом созданной файле, так и через `xcloc` файл после экспорта. Пойдём первым путём.
 
 Выбираем `Localizable (Russian)` в левом меню.
 
-![`stringsdict`-файлы на сайдбаре.](https://cdn.sparrowcode.io/tutorials/localisation-ios-apps/pluralisation-sidebar-languages.jpg)
+![`stringsdict`-файлы на сайдбаре.](https://cdn.sparrowcode.io/tutorials/localisation/pluralisation-sidebar-languages.jpg)
 
 Заполняем строки на русском, добавляем `few`, так как оно требуется для корректного перевода числа на этом языке.
 
-![Локализованный ключ `headphones count`.](https://cdn.sparrowcode.io/tutorials/localisation-ios-apps/pluralisation-string-headphones-translated.jpg)
+![Локализованный ключ `headphones count`.](https://cdn.sparrowcode.io/tutorials/localisation/pluralisation-string-headphones-translated.jpg)
 
 Теперь при передаче в функцию `headphonesCount(count:)` чисел 0, 1, 2 и 7 получим:
 
@@ -341,15 +341,15 @@ func applesCount(count: Int) -> String {
 
 Переходим в `.stringsdict`, создаём новое значение `apples count`. Настраиваем как раньше. 
 
-![Новый заполенный ключ `apples count`.](https://cdn.sparrowcode.io/tutorials/localisation-ios-apps/pluralisation-string-apples-ready.jpg)
+![Новый заполенный ключ `apples count`.](https://cdn.sparrowcode.io/tutorials/localisation/pluralisation-string-apples-ready.jpg)
 
 Что бы локализовать новое значение на другие языки - экспортируем локализацию и открываем нужный `xcloc`.
 
-![Локализация `stringsdict`-файла в переводчике Xcode.](https://cdn.sparrowcode.io/tutorials/localisation-ios-apps/export-xcode-translator.jpg)
+![Локализация `stringsdict`-файла в переводчике Xcode.](https://cdn.sparrowcode.io/tutorials/localisation/export-xcode-translator.jpg)
 
 Переводим и импортируем в проект. Видим, что в `.stringsdict` файле русского языка осталось лишнее значение `many` - удаляем его и приводим остальные в порядок.
 
-![Отрефракторенный ключ `apples count`.](https://cdn.sparrowcode.io/tutorials/localisation-ios-apps/pluralisation-string-apples-translated.jpg)
+![Отрефракторенный ключ `apples count`.](https://cdn.sparrowcode.io/tutorials/localisation/pluralisation-string-apples-translated.jpg)
 
 Для проверки вызывааем `applesCount(count:)`, передаем числа 0, 1, 7, 131, 152 и получим:
 
@@ -375,11 +375,11 @@ func applesCount(count: Int) -> String {
 
 Создаём папку `Resources`, в ней должен быть файл `Texts` и папка языка, но который мы хотим локализовать пакет, например `en.lproj`. В неё помещаем файл `Localizable.strings`, делаем так для каждого языка, меняя название папки. Структура пакета должна выглядеть примерно так: 
 
-![Структура локализуемого пакета.](https://cdn.sparrowcode.io/tutorials/localisation-ios-apps/package-configuration-structure.jpg)
+![Структура локализуемого пакета.](https://cdn.sparrowcode.io/tutorials/localisation/package-configuration-structure.jpg)
 
 В файле `Package` выставляем `defaultLocalization` - стандартный язык локализации, указываем нашу папку с файлами в `resources`.
 
-![Структура файла локализуемого пакета.](https://cdn.sparrowcode.io/tutorials/localisation-ios-apps/package-configuration-file.jpg)
+![Структура файла локализуемого пакета.](https://cdn.sparrowcode.io/tutorials/localisation/package-configuration-file.jpg)
 
 В файле `Texts` создаем `enum` и статические переменные, которые возвращают `NSLocalizedString` с `bundle: .module` в инициализаторе. 
 
@@ -391,7 +391,7 @@ enum Texts {
    static var third: String { NSLocalizedString("third key", bundle: .module, comment: "") }
     
 }
-``` 
+```
 
 Xcode не экспортирует и не импортирует локализационные ключи во встроенных в проект пакетах. Можно локализовать каждый ключ вручную, но мы воспользуемся костыльным вариантом. 
 
@@ -444,7 +444,7 @@ let langIdentifier = NSLocalizedString("language identifier", comment: "")
 ```swift
 // Русский `Localizable.strings` файл:
 "language identifier" = "ru_RU";
-``` 
+```
 
 **Второй способ.**
 
@@ -563,15 +563,15 @@ print(numberFormatter.locale.string(from: 123456))
 
 Переходим в инспектор -> кнопка `Localize...`
 
-![Расположение кнопки `Localize...` в `Assets` каталоге Xcode.](https://cdn.sparrowcode.io/tutorials/localisation-ios-apps/image-prepare.jpg)
+![Расположение кнопки `Localize...` в `Assets` каталоге Xcode.](https://cdn.sparrowcode.io/tutorials/localisation/image-prepare.jpg)
 
 Выбираем языки, на которые хотим локализовать изображение (доступны все, добавленные в проект). Добавляем нужные изображения в появившихся полях.
 
-![`Asses` после настройки под разные языки.](https://cdn.sparrowcode.io/tutorials/localisation-ios-apps/image-ready.jpg)
+![`Assets` после настройки под разные языки.](https://cdn.sparrowcode.io/tutorials/localisation/image-ready.jpg)
 
 Проверяем как отображается изображение на разных языках.
 
-![Превью локализованного изображения.](https://cdn.sparrowcode.io/tutorials/localisation-ios-apps/image-preview.jpg)
+![Превью локализованного изображения.](https://cdn.sparrowcode.io/tutorials/localisation/image-preview.jpg)
 
 ## Тру-вей в работе с локализациями
 
@@ -638,7 +638,7 @@ enum Shared {
     static var cancel: String { NSLocalizedString("shared cancel", comment: "") }
     static var delete: String { NSLocalizedString("shared delete", comment: "") }    
 }
-``` 
+```
 
 `Shared` можно вынести в отдельный пакет, что бы использовать для разных модулей проекта и менять в одном месте для всех сразу. 
 
@@ -686,4 +686,4 @@ NSLocalizedString("settings controller table feedback section footer", comment: 
 3. Проверяйте арабскую локализацию. При её установке интерфейс автоматически переворачивается, но некоторые элементы могут начать вести себя не так, как планировалось. 
 4. Если пользуетесь автопереводом - заранее подготовьте язык, от которого он будет работать. Обычно это английский. 
 
-Если знаете ещё - [дополните статью через PR](https://github.com/sparrowcode/sparrowcode.io-content/tree/main/ru/tutorials).
+Если знаете ещё - [дополните статью через PR](https://github.com/sparrowcode/sparrowcode.io-content/blob/main/ru/tutorials/localisation.md).
