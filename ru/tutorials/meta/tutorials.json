@@ -91,7 +91,7 @@
     "localisation" : {
         "title" : "Локализация iOS приложений",
         "description" : "Ультимативный гид по локализации. Текст, фото, значения.",
-        "categories" : ["swift", "development"],
+        "categories" : ["development", "foundation"],
         "author" : "svtnck",
         "keywords" : ["localisation", "nslocalisedstring", "strings", "infoplist"],
         "updated_date": "11.07.2022",
