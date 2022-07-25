@@ -1,3 +1,13 @@
 {
-
+	"product-page-optimization-alternative-icons" : {
+        "title" : "Alternative icons for Product Page Optimization tests",
+        "description" : "How to add alternative icons for A/B tests on the app page in the App Store.",
+        "categories" : ["app-store-connect"],
+        "author" : "alxrguz",
+        "translators": ["svtnck"],
+        "editors" : ["svtnck", "ivanvorobei"],
+        "keywords" : [],
+        "updated_date" : "25.07.2022",
+        "added_date" : "25.07.2022"
+    }
 }
