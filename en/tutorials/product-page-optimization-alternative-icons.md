@@ -20,7 +20,7 @@ We are interested in three parameters:
 - `Include All App Icon Assets` - set to `true` to include alternative icons in the assembly.
 - `Primary App Icon Set Name` - default icon name. Most likely, the alternate icon can be made the primary icon. Did not check.
 
-## Unloading
+## Uploading
 
 It remains to assemble the application and send it in for review.
 
