@@ -60,11 +60,11 @@
     },
     "product-page-optimization-alternative-icons" : {
         "title" : "Альтернативные иконки для тестов Product Page Optimization",
-        "description" : "Как добавить альтернативные иконки для A/B тестов на странице приложения.",
+        "description" : "Как добавить альтернативные иконки для A/B тестов на странице приложения в App Store.",
         "categories" : ["app-store-connect"],
         "author" : "alxrguz",
-        "editors" : ["svtnck"],
-        "keywords" : ["alternative icons"],
+        "editors" : ["svtnck", "ivanvorobei"],
+        "keywords" : [],
         "updated_date" : "10.08.2022",
         "added_date" : "27.12.2021"
     },
