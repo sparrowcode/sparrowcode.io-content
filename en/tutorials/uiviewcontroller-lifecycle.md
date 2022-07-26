@@ -85,7 +85,7 @@ Both methods are bundled. You don't need to do any customization here, but you c
 
 There are methods that report that the view disappears from the screen. Here's a schematic:
 
-![Lifecycle scheme of the `ViewController'.](https://cdn.sparrowcode.io/tutorials/uiviewcontroller-lifecycle/header-en.jpg)
+![Lifecycle scheme of the `ViewController`.](https://cdn.sparrowcode.io/tutorials/uiviewcontroller-lifecycle/header-en.jpg)
 
 Note the pair of antagonists `viewWillDisappear()` and `viewDidDisappear()`. They are called when the view is removed from the view hierarchy. If you show another controller on top, the methods are not called.
 
