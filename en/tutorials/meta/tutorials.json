@@ -9,5 +9,16 @@
         "keywords" : [],
         "updated_date" : "25.07.2022",
         "added_date" : "25.07.2022"
+    },
+    "uiviewcontroller-lifecycle" : {
+        "title" : "`UIViewController` Lifecycle",
+        "description" : "Consider when controller methods are called and what you can do inside them. When to configure views and data.",
+        "categories" : ["uikit"],
+        "author" : "ivanvorobei",
+        "translators" : ["svtnck"],
+        "editors" : ["svtnck"],
+        "keywords" : ["UIViewController", "viewDidAppear", "viewDidLoad", "uiviewcontroller lifecycle"],
+        "updated_date" : "26.07.2022",
+        "added_date" : "26.07.2022"
     }
 }

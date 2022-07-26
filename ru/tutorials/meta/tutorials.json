@@ -36,7 +36,7 @@
         "author" : "ivanvorobei",
         "editors" : ["svtnck"],
         "keywords" : ["UIViewController", "viewDidAppear", "viewDidLoad", "жизненный цикл uiviewcontroller"],
-        "updated_date" : "10.08.2022",
+        "updated_date" : "26.07.2022",
         "added_date" : "19.11.2021"
     },
     "how-to-delete-userdefaults-on-macos-catalyst" : {
