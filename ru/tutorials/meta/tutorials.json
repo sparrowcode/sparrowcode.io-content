@@ -4,7 +4,7 @@
         "description" : "Как изменить порядок ячеек в коллекции и таблице. Как перенести ячейки в другую коллекцию. Перемещение нескольких ячеек группой.",
         "categories" : ["uikit"],
         "author" : "ivanvorobei",
-        "editors" : ["svtnck"],
+        "editors" : ["svyatoynick"],
         "keywords" : ["UICollectionViewDragDelegate", "UICollectionViewDropDelegate", "UITableViewDragDelegate", "UITableViewDropDelegate", "UIGestureRecognizer", "UIDrag"],
         "updated_date" : "10.08.2022",
         "added_date" : "11.07.2021"
@@ -14,7 +14,7 @@
         "description" : "В iOS 15 появились sheet-контроллеры. Их можно перетаскивать с изменением высоты. Вы встречали эти контроллеры в приложениях «Карты» и «Акции».",
         "categories" : ["uikit"],
         "author" : "ivanvorobei",
-        "editors" : ["svtnck"],
+        "editors" : ["svyatoynick"],
         "keywords" : ["UISheetPresentationController", "Map", "Карты", "Modal Controllers", "iOS 15"],
         "updated_date" : "10.08.2022",
         "added_date" : "11.10.2021"
@@ -24,7 +24,7 @@
         "description" : "Как работают Monochrome, Hierarchical, Palette, Multicolor Render для SF Symbols.",
         "categories" : ["uikit"],
         "author" : "ivanvorobei",
-        "editors" : ["svtnck"],
+        "editors" : ["svyatoynick"],
         "keywords" : ["SF Symbols", "SFSymbols", "SwiftUI", "iOS 15"],
         "updated_date" : "10.08.2022",
         "added_date" : "28.10.2021"
@@ -34,7 +34,7 @@
         "description" : "Рассмотрим когда вызываются методы контроллера и что можно делать внутри них. Когда настраивать вьюхи и данные.",
         "categories" : ["uikit"],
         "author" : "ivanvorobei",
-        "editors" : ["svtnck"],
+        "editors" : ["svyatoynick"],
         "keywords" : ["UIViewController", "viewDidAppear", "viewDidLoad", "жизненный цикл uiviewcontroller"],
         "updated_date" : "26.07.2022",
         "added_date" : "19.11.2021"
@@ -62,7 +62,7 @@
         "description" : "Как добавить альтернативные иконки для A/B тестов на странице приложения в App Store.",
         "categories" : ["app-store-connect"],
         "author" : "alxrguz",
-        "editors" : ["svtnck", "ivanvorobei"],
+        "editors" : ["svyatoynick", "ivanvorobei"],
         "keywords" : [],
         "updated_date" : "25.07.2022",
         "added_date" : "27.12.2021"
@@ -72,7 +72,7 @@
         "description" : "Разберём async, await, actor. Напишем тузлу для поиска приложений в App Store, используя новые инструменты.",
         "categories" : ["swift"],
         "author" : "somenkovnikita",
-        "editors" : ["ivanvorobei", "svtnck"],
+        "editors" : ["ivanvorobei", "svyatoynick"],
         "keywords" : ["async", "await", "actor"],
         "updated_date": "10.08.2022",
         "added_date": "06.02.2022"
@@ -82,7 +82,7 @@
         "description" : "Уровни доступа делают код безопасным и разделенным, уменьшают случайные ошибки.",
         "categories" : ["swift", "foundation"],
         "author" : "liubowolkova",
-        "editors" : ["ivanvorobei", "svtnck"],
+        "editors" : ["ivanvorobei", "svyatoynick"],
         "keywords" : ["public", "private", "internal", "fileprivate"],
         "updated_date": "10.08.2022",
         "added_date": "22.03.2022"
@@ -91,7 +91,7 @@
         "title" : "Локализация iOS приложений",
         "description" : "Ультимативный гид по локализации. Текст, фото, значения.",
         "categories" : ["development", "foundation"],
-        "author" : "svtnck",
+        "author" : "svyatoynick",
         "keywords" : ["localisation", "nslocalisedstring", "strings", "infoplist"],
         "updated_date": "11.07.2022",
         "added_date": "10.07.2022"

@@ -75,11 +75,11 @@
             }
         ]
     },
-    "svtnck": {
+    "svyatoynick": {
         "name": "Николай Пелевин",
         "description": "iOS Разработчик, люблю конфеты.",
-        "avatar": "https://cdn.sparrowcode.io/authors/svtnck.jpg",
-        "github" : "svtnck",
+        "avatar": "https://cdn.sparrowcode.io/authors/svyatoynick.jpg",
+        "github" : "svyatoynick",
         "buttons": [
             {
                 "title": "GitHub",
