@@ -20,5 +20,15 @@
         "keywords" : ["UIViewController", "viewDidAppear", "viewDidLoad", "uiviewcontroller lifecycle"],
         "updated_date" : "26.07.2022",
         "added_date" : "26.07.2022"
+    },
+    "edge-insets-uibutton" : {
+        "title" : "Edge Insets indents for `UIButton`",
+        "description" : "How to add an indent between text and picture in `UIButton`. How to place an icon to the right of the text.",
+        "categories" : ["uikit"],
+        "author" : "ivanvorobei",
+        "translators" : ["svyatoynick"],
+        "keywords" : ["imageEdgeInsets", "imageEdgeInsets", "contentEdgeInsets", "отсутп между заголовком и картинкой"],
+        "updated_date" : "28.07.2022",
+        "added_date" : "28.07.2022"
     }
 }
