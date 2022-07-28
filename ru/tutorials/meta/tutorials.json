@@ -50,12 +50,11 @@
     },
     "edge-insets-uibutton" : {
         "title" : "Отступы Edge Insets для `UIButton`",
-        "description" : "Как добавить отступ между картинкой и заголовком в кнопке. Как поместить иконку справа от заголовка.",
+        "description" : "Как добавить отступ между текстом и картинкой в `UIButton`. Как поместить иконку справа от текста.",
         "categories" : ["uikit"],
         "author" : "ivanvorobei",
-        "editors" : ["svtnck"],
         "keywords" : ["imageEdgeInsets", "imageEdgeInsets", "contentEdgeInsets", "отсутп между заголовком и картинкой"],
-        "updated_date" : "10.08.2022",
+        "updated_date" : "28.07.2022",
         "added_date" : "13.12.2021"
     },
     "product-page-optimization-alternative-icons" : {
