@@ -27,7 +27,7 @@
         "categories" : ["uikit"],
         "author" : "ivanvorobei",
         "translators" : ["svyatoynick"],
-        "keywords" : ["imageEdgeInsets", "imageEdgeInsets", "contentEdgeInsets", "отсутп между заголовком и картинкой"],
+        "keywords" : ["imageEdgeInsets", "imageEdgeInsets", "contentEdgeInsets"],
         "updated_date" : "28.07.2022",
         "added_date" : "28.07.2022"
     }
