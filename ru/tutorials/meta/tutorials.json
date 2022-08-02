@@ -6,7 +6,7 @@
         "author" : "ivanvorobei",
         "editors" : ["svyatoynick"],
         "keywords" : ["UICollectionViewDragDelegate", "UICollectionViewDropDelegate", "UITableViewDragDelegate", "UITableViewDropDelegate", "UIGestureRecognizer", "UIDrag"],
-        "updated_date" : "10.08.2022",
+        "updated_date" : "10.07.2022",
         "added_date" : "11.07.2021"
     },
     "uisheetpresentationcontroller" : {
@@ -16,7 +16,7 @@
         "author" : "ivanvorobei",
         "editors" : ["svyatoynick"],
         "keywords" : ["UISheetPresentationController", "Map", "Карты", "Modal Controllers", "iOS 15"],
-        "updated_date" : "10.08.2022",
+        "updated_date" : "10.07.2022",
         "added_date" : "11.10.2021"
     },
     "sf-symbols-and-render-mode" : {
@@ -26,7 +26,7 @@
         "author" : "ivanvorobei",
         "editors" : ["svyatoynick"],
         "keywords" : ["SF Symbols", "SFSymbols", "SwiftUI", "iOS 15"],
-        "updated_date" : "10.08.2022",
+        "updated_date" : "10.07.2022",
         "added_date" : "28.10.2021"
     },
     "uiviewcontroller-lifecycle" : {
@@ -45,7 +45,7 @@
         "categories" : ["development"],
         "author" : "ivanvorobei",
         "keywords" : ["UserDefaults", "Catalyst", "MacCatalyst", "Realm", "AppGroup"],
-        "updated_date" : "10.08.2021",
+        "updated_date" : "02.08.2022",
         "added_date" : "11.12.2021"
     },
     "edge-insets-uibutton" : {
@@ -74,7 +74,7 @@
         "author" : "somenkovnikita",
         "editors" : ["ivanvorobei", "svyatoynick"],
         "keywords" : ["async", "await", "actor"],
-        "updated_date": "10.08.2022",
+        "updated_date": "10.07.2022",
         "added_date": "06.02.2022"
     },
     "access-control" : {
@@ -84,7 +84,7 @@
         "author" : "liubowolkova",
         "editors" : ["ivanvorobei", "svyatoynick"],
         "keywords" : ["public", "private", "internal", "fileprivate"],
-        "updated_date": "10.08.2022",
+        "updated_date": "10.07.2022",
         "added_date": "22.03.2022"
     },
     "localisation" : {
