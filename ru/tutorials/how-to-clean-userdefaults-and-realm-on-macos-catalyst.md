@@ -10,7 +10,7 @@
 
 Чтобы удалить дефолтный `UserDefaults`, откройте терминал и введите команду:
 
-```swift
+```
 // Удаляем `UserDefaults` целиком 
 defaults delete io.ivanvorobei.apps.debts
 
@@ -20,7 +20,7 @@ defaults delete io.ivanvorobei.apps.debts key
 
 Если использовали кастомный домен, вызывайте команду:
 
-```swift
+```
 // Создается так: 
 UserDefaults(suiteName: "Custom")
 
@@ -32,14 +32,14 @@ defaults delete Custom
 
 Если используете `AppGroup`, удалите эти папки:
 
-```swift
+```
 /Users/ivanvorobei/Library/Group Containers/group.io.ivanvorobei.apps.debts
 /Users/ivanvorobei/Library/Application Scripts/group.io.ivanvorobei.apps.debts
 ```
 
 Если хранили в дефолтном пути, удалите эту папку:
 
-```swift
+```
 /Users/ivanvorobei/Library/Containers/io.ivanvorobei.apps.debts
 ```
 

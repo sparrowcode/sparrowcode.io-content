@@ -10,7 +10,7 @@ Be careful, use the values from your application.
 
 To remove the default `UserDefaults`, open a terminal and type the command:
 
-```swift
+```
 // Delete `UserDefaults` entirely 
 defaults delete io.ivanvorobei.apps.debts
 
@@ -20,7 +20,7 @@ defaults delete io.ivanvorobei.apps.debts key
 
 If you used a custom domain, call the command:
 
-```swift
+```
 // Created like this: 
 UserDefaults(suiteName: "Custom")
 
@@ -32,14 +32,14 @@ defaults delete Custom
 
 If you use an `AppGroup`, delete these folders:
 
-```swift
+```
 /Users/ivanvorobei/Library/Group Containers/group.io.ivanvorobei.apps.debts
 /Users/ivanvorobei/Library/Application Scripts/group.io.ivanvorobei.apps.debts
 ```
 
 If stored in the default path, delete that folder:
 
-```swift
+```
 /Users/ivanvorobei/Library/Containers/io.ivanvorobei.apps.debts
 ```
 
