@@ -2,9 +2,6 @@
     "uikit" : {
         "title" : "UIKit"
     },
-    "swiftui" : {
-        "title" : "SwiftUI"
-    },
     "storekit" : {
         "title" : "StoreKit"
     },
@@ -16,8 +13,5 @@
     },
     "app_store_connect" : {
         "title" : "App Store Connect"
-    },
-    "news" : {
-        "title" : "News"
     }
 }
