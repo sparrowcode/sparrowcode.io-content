@@ -1,7 +1,7 @@
 To reset a macOS Catalyst application, you need to know these values:
 
-- User folder `ivanvorobei`.
-- Application Bundle `io.ivanvorobei.apps.debts`.
+- User folder `ivanvorobei`
+- Application Bundle `io.ivanvorobei.apps.debts`
 - AppGroup `group.io.ivanvorobei.apps.debts`.
 
 Be careful, use the values from your application.
