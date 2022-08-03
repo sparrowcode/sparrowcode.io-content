@@ -1,14 +1,14 @@
-Примеры кода будут для `SwiftUI` и `UIKit`. Внимательно следите за совместимостью символов - не все доступны для 14 и предыдущих iOS. Глянуть с какой версии доступен символ можно [в приложении](https://developer.apple.com/sf-symbols/).
+Следите за совместимостью символов - не все доступны для 14-ой и предыдущих iOS. Глянуть с какой версии доступен символ можно [в приложении](https://developer.apple.com/sf-symbols/). Примеры кода будут для `SwiftUI` и `UIKit`.
 
-Render Modes - это отрисовка иконки в цветовой схеме. Доступны монохром, иерархический, палетка и мульти-цвет. Наглядное превью:
+Render Modes - это отрисовка иконки в цветовой схеме. Доступны монохром, иерархический, палетка и мульти-цвет.
 
-![Render Modes в SFSymbols.](https://cdn.sparrowcode.io/tutorials/sf-symbols-3/render-modes-preview.jpg)
+![Render Modes в SFSymbols.](https://cdn.sparrowcode.io/tutorials/sf-symbols-and-render-mode/render-modes-preview.jpg)
 
-Рендеры доступны для каждого символа, но возможны ситуации когда результат для разных рендеров будет совпадать и иконка не изменит внешнего вида. Лучше выбирать [в приложении](https://developer.apple.com/sf-symbols/), предварительно установив нужный рендер.
+Символ может поддерживать не все рендеры. Если рендер не доступен, то символ будет отрисован в монохроме. Сравнить рендеры можно в официальном приложении [SF Symbols](https://developer.apple.com/sf-symbols/).
 
 ## Monochrome Render
 
-Иконка целиком красится в указанный цвет. Цвет управляется через `tintColor`.
+Иконка заливается цветом. Управлять цветом через `tintColor`.
 
 ```swift
 // UIKit
@@ -21,11 +21,13 @@ Image(systemName: "doc")
     .foregroundColor(.red)
 ```
 
-Способ работает для любых изображений, не только для SF Symbols.
+Способ работает не только для SF Symbols, а для любых изображений.
 
 ## Hierarchical Render
 
-Отрисовывает иконку в одном цвете, но создает глубину с помощью прозрачности для элементов символа.
+Рисует иконку в одном цвете, но создает глубину с помощью прозрачности для элементов символа.
+
+![Hierarchical Render в SFSymbols.](https://cdn.sparrowcode.io/tutorials/sf-symbols-and-render-mode/hierarchical-render.jpg)
 
 ```swift
 // UIKit
@@ -38,13 +40,13 @@ Image(systemName: "square.stack.3d.down.right.fill")
     .foregroundColor(.indigo)
 ```
 
-Обратите внимание, иногда рендер с моно-цветом совпадает с иерархическим.
-
-![Hierarchical Render в SFSymbols.](https://cdn.sparrowcode.io/tutorials/sf-symbols-3/hierarchical-render.jpg)
+Обратите внимание, иногда иерархический рендер выглядит так же, как `Monochrome Render`.
 
 ## Palette Render
 
-Отрисовывает иконку в кастомных цветах. Каждому символу нужно определенное количество цветов.
+Рисует иконку в кастомных цветах. Каждому символу нужно конкретное количество цветов.
+
+![Palette Render в SFSymbols.](https://cdn.sparrowcode.io/tutorials/sf-symbols-and-render-mode/palette-render.jpg)
 
 ```swift
 // UIKit
@@ -57,13 +59,18 @@ Image(systemName: "person.3.sequence.fill")
     .foregroundStyle(.red, .green, .blue)
 ```
 
-Если у символа 1 сегмент для цвета, он будет использовать первый указанный цвет. Если у символа 2 сегмента, но будет указан 1 цвет, он будет использоваться для обоих сегментов. Если укажете 2 цвета - они применятся соответственно. Если указать 3 цвета, третий игнорируется.
+Чтобы сохранить универсальный API, можно передать любое количество цветов. Вот правила, по которым это работает:
 
-![Palette Render в SFSymbols.](https://cdn.sparrowcode.io/tutorials/sf-symbols-3/palette-render.jpg)
+- Если у символа 1 сегмент для цвета, он будет использовать первый указанный цвет. 
+- Если у символа 2 сегмента, но будет указан 1 цвет, он будет использоваться для обоих сегментов.
+- Если укажете 2 цвета — они применятся соответственно.
+- Если указать 3 цвета для символа с 2-мя сегментами, третий игнорируется.
 
 ## Multicolor Render
 
-Важные элементы будут иметь фиксированный цвет, для заполняющего можно указать кастомный.
+Важные элементы будут покрашены в фиксированный цвет, а для заполняющего цвет можно настроить. На превью заполняющий цвет `.systemCyan`:
+
+![Multicolor Render в SFSymbols.](https://cdn.sparrowcode.io/tutorials/sf-symbols-and-render-mode/multicolor-render.jpg)
 
 ```swift
 // UIKit
@@ -75,9 +82,7 @@ Image(systemName: "externaldrive.badge.plus")
     .symbolRenderingMode(.multicolor)
 ```
 
-Изображения, у которых нет многоцветного варианта, будут автоматически отображаться в моно-цвете. На превью заполняющий цвет `.systemCyan`:
-
-![Multicolor Render в SFSymbols.](https://cdn.sparrowcode.io/tutorials/sf-symbols-3/multicolor-render.jpg)
+Изображения, у которых нет многоцветного варианта, будут автоматически отображаться в `Monochrome Render`.
 
 ## Symbol Variant
 
@@ -85,15 +90,15 @@ Image(systemName: "externaldrive.badge.plus")
 
 ```swift
 // Колокольчик перечеркнут
-Image(systemName: 'bell')
+Image(systemName: "bell")
     .symbolVariant(.slash)
 
 // Вписывает в квадрат
-Image(systemName: 'bell')
+Image(systemName: "bell")
     .symbolVariant(.square)
 
 // Можно комбинировать
-Image(systemName: 'bell')
+Image(systemName: "bell")
     .symbolVariant(.fill.slash)
 ```
 
@@ -101,12 +106,10 @@ Image(systemName: 'bell')
 
 ## Адаптация
 
-SwiftUI умеет отображать символы соответственно контексту. Для iOS Apple использует залитые иконки, но в macOS иконки без заливки, только линии. Если вы используете SF Symbols для Side Bar, то не нужно указывать, залитый символ или нет - он будет автоматически адаптироваться в зависимости от системы.
+SwiftUI умеет отображать символы соответственно контексту. Для iOS Apple использует залитые иконки, но в macOS иконки без заливки - только линии. Если вы используете SF Symbols для Side Bar, то это не нужно указывать специально - символ адаптируется.
 
 ```swift
-Label('Home', systemImage: 'person')
+Label("Home", systemImage: "person")
     .symbolVariant(.none)
 ```
-
-Это все изменения в новой версии. Напишите [в комментариях к посту](https://t.me/sparrowcode/82) была ли полезна статья, и используете ли SF Symbols в проектах.
 

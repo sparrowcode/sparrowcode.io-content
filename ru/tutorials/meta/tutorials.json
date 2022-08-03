@@ -21,12 +21,12 @@
     },
     "sf-symbols-and-render-mode" : {
         "title" : "SF Symbols 4 и Render Mode",
-        "description" : "Как работают Monochrome, Hierarchical, Palette, Multicolor Render для SF Symbols.",
+        "description" : "Как работают `Monochrome`, `Hierarchical`, `Palette`, `Multicolor Render` для SF Symbols. Примеры кода для `UIKit` и `SwiftUI`.",
         "categories" : ["uikit"],
         "author" : "ivanvorobei",
         "editors" : ["svyatoynick"],
         "keywords" : ["SF Symbols", "SFSymbols", "SwiftUI", "iOS 15"],
-        "updated_date" : "10.07.2022",
+        "updated_date" : "03.08.2022",
         "added_date" : "28.10.2021"
     },
     "uiviewcontroller-lifecycle" : {
