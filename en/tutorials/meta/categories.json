@@ -1,17 +1,17 @@
 {
+    "foundation" : {
+        "title" : "Foundation"
+    },
+    "swift" : {
+        "title" : "Swift"
+    },
     "uikit" : {
         "title" : "UIKit"
-    },
-    "storekit" : {
-        "title" : "StoreKit"
-    },
-    "compilation" : {
-        "title" : "Compilation"
     },
     "development" : {
         "title" : "Development"
     },
-    "app_store_connect" : {
+    "app-store-connect" : {
         "title" : "App Store Connect"
     }
 }

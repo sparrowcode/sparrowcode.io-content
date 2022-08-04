@@ -112,4 +112,3 @@ SwiftUI knows how to display characters according to context. For iOS, Apple use
 Label("Home", systemImage: "person")
     .symbolVariant(.none)
 ```
-

@@ -112,4 +112,3 @@ SwiftUI умеет отображать символы соответствен�
 Label("Home", systemImage: "person")
     .symbolVariant(.none)
 ```
-
