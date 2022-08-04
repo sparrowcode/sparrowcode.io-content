@@ -40,5 +40,15 @@
         "keywords" : ["UserDefaults", "Catalyst", "MacCatalyst", "Realm", "AppGroup"],
         "updated_date" : "02.08.2022",
         "added_date" : "02.08.2022"
+    },
+    "sf-symbols-and-render-mode" : {
+        "title" : "SF Symbols 4 and Render Mode",
+        "description" : "How `Monochrome`, `Hierarchical`, `Palette`, `Multicolor Render` work for SF Symbols. Code examples for `UIKit` and `SwiftUI`.",
+        "categories" : ["uikit"],
+        "author" : "ivanvorobei",
+        "translators" : ["svyatoynick"],
+        "keywords" : ["SF Symbols", "SFSymbols", "SwiftUI", "iOS 15"],
+        "updated_date" : "03.08.2022",
+        "added_date" : "03.08.2022"
     }
 }
