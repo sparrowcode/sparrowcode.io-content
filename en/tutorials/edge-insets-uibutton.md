@@ -35,7 +35,8 @@ previewButton.titleEdgeInsets.left = 10
 
 This is the symmetry I wrote about above.
 
-> `contentEdgeInsets` changes the size of the button. The `imageEdgeInsets` and `titleEdgeInsets` do not. 
+> `contentEdgeInsets` changes the size of the button. 
+> The `imageEdgeInsets` and `titleEdgeInsets` do not. 
 
 ## Icon to the right of the text
 

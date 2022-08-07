@@ -35,7 +35,8 @@ previewButton.titleEdgeInsets.left = 10
 
 Это та симметрия, про которую писал выше.
 
-> `contentEdgeInsets` меняет размер кнопки. `imageEdgeInsets` и `titleEdgeInsets` - не меняют. 
+> `contentEdgeInsets` меняет размер кнопки. 
+> `imageEdgeInsets` и `titleEdgeInsets` не меняют размер кнопки. 
 
 ## Иконка справа от текста
 
