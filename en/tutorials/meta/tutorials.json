@@ -50,5 +50,15 @@
         "keywords" : ["SF Symbols", "SFSymbols", "SwiftUI", "iOS 15"],
         "updated_date" : "03.08.2022",
         "added_date" : "03.08.2022"
+    },
+    "uisheetpresentationcontroller" : {
+        "title" : "`UISheetPresentationController` as in the Maps application",
+        "description" : "In iOS 15, there are sheet-controllers. These are modal controllers that use a gesture to change height. You've seen these controllers in the «Maps» and «Stocks» apps.",
+        "categories" : ["uikit"],
+        "author" : "ivanvorobei",
+        "translators" : ["svyatoynick"],
+        "keywords" : ["UISheetPresentationController", "Map", "Maps", "Modal Controllers", "iOS 15"],
+        "updated_date" : "09.08.2022",
+        "added_date" : "09.08.2022"
     }
 }
