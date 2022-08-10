@@ -68,7 +68,7 @@ if let sheetController = nav.sheetPresentationController {
 
 [Sheet controller with a prohibition to close.](https://cdn.sparrowcode.io/tutorials/uisheetpresentationcontroller/prevent-dismiss.mov)
 
-## Content scrolling
+## Content Scrolling
 
 If `.medium()`-detent is active and the controller content is scrolling, the modal controller will go to `.large()`-detent when scrolling up and the content will stay in place.
 
@@ -100,7 +100,7 @@ This is what it looks like:
 
 To make the controller take the prefered size, set `widthFollowsPreferredContentSizeWhenEdgeAttached` to `true`.
 
-## Darken the background
+## Dimmed background
 
 If the background is dimmed, the buttons behind the modal controller will not be clickable. To allow interaction with the background, you must remove the dimming. Specify the largest detent that doesn't need to be dimmed. Here's the code:
 

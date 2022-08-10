@@ -15,6 +15,11 @@
         "categories" : ["uikit"],
         "author" : "ivanvorobei",
         "editors" : ["svyatoynick"],
+        "google_structured_images": [
+            "https://cdn.sparrowcode.io/tutorials/uisheetpresentationcontroller/edge-attached.png",
+            "https://cdn.sparrowcode.io/tutorials/uisheetpresentationcontroller/grabber.png",
+            "https://cdn.sparrowcode.io/tutorials/uisheetpresentationcontroller/corner-radius.png"
+        ],
         "keywords" : ["UISheetPresentationController", "Map", "Карты", "Modal Controllers", "iOS 15"],
         "updated_date" : "09.08.2022",
         "added_date" : "11.10.2021"
@@ -25,6 +30,13 @@
         "categories" : ["uikit"],
         "author" : "ivanvorobei",
         "editors" : ["svyatoynick"],
+        "google_structured_images" : [
+            "https://cdn.sparrowcode.io/tutorials/sf-symbols-and-render-mode/multicolor-render.jpg",
+            "https://cdn.sparrowcode.io/tutorials/sf-symbols-and-render-mode/render-modes-preview.jpg",
+            "https://cdn.sparrowcode.io/tutorials/sf-symbols-and-render-mode/hierarchical-render.jpg",
+            "https://cdn.sparrowcode.io/tutorials/sf-symbols-and-render-mode/palette-render.jpg",
+            "https://cdn.sparrowcode.io/tutorials/sf-symbols-and-render-mode/multicolor-render.jpg"
+        ],
         "keywords" : ["SF Symbols", "SFSymbols", "SwiftUI", "iOS 15"],
         "updated_date" : "03.08.2022",
         "added_date" : "28.10.2021"
@@ -35,6 +47,10 @@
         "categories" : ["uikit"],
         "author" : "ivanvorobei",
         "editors" : ["svyatoynick"],
+        "google_structured_images" : [
+            "https://cdn.sparrowcode.io/tutorials/uiviewcontroller-lifecycle/hello.jpg",
+            "https://cdn.sparrowcode.io/tutorials/uiviewcontroller-lifecycle/header.jpg"
+        ],
         "keywords" : ["UIViewController", "viewDidAppear", "viewDidLoad", "жизненный цикл uiviewcontroller"],
         "updated_date" : "26.07.2022",
         "added_date" : "19.11.2021"
@@ -53,6 +69,10 @@
         "description" : "Как добавить отступ между текстом и картинкой в `UIButton`. Как поместить иконку справа от текста.",
         "categories" : ["uikit"],
         "author" : "ivanvorobei",
+        "google_structured_images" : [
+            "https://cdn.sparrowcode.io/tutorials/edge-insets-uibutton/content-edge-insets.png",
+            "https://cdn.sparrowcode.io/tutorials/edge-insets-uibutton/depricated.png"
+        ],
         "keywords" : ["imageEdgeInsets", "imageEdgeInsets", "contentEdgeInsets", "отсутп между заголовком и картинкой"],
         "updated_date" : "28.07.2022",
         "added_date" : "13.12.2021"
@@ -63,6 +83,10 @@
         "categories" : ["app-store-connect"],
         "author" : "alxrguz",
         "editors" : ["svyatoynick", "ivanvorobei"],
+        "google_structured_images": [
+            "https://cdn.sparrowcode.io/tutorials/product-page-optimization-alternative-icons/adding-icons-to-assets.png",
+            "https://cdn.sparrowcode.io/tutorials/product-page-optimization-alternative-icons/adding-settings-to-target.png"
+        ],
         "keywords" : [],
         "updated_date" : "25.07.2022",
         "added_date" : "27.12.2021"
