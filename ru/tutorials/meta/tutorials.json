@@ -5,8 +5,13 @@
         "categories" : ["uikit"],
         "author" : "ivanvorobei",
         "editors" : ["svyatoynick"],
+        "google_structured_images": [
+            "https://cdn.sparrowcode.io/tutorials/drag-and-drop/drag-delegate.jpg",
+            "https://cdn.sparrowcode.io/tutorials/drag-and-drop/drag-stack.jpg",
+            "https://cdn.sparrowcode.io/tutorials/drag-and-drop/drop-delegate.jpg"
+        ],
         "keywords" : ["UICollectionViewDragDelegate", "UICollectionViewDropDelegate", "UITableViewDragDelegate", "UITableViewDropDelegate", "UIGestureRecognizer", "UIDrag"],
-        "updated_date" : "10.07.2022",
+        "updated_date" : "25.08.2022",
         "added_date" : "11.07.2021"
     },
     "uisheetpresentationcontroller" : {
