@@ -1,16 +1,5 @@
 [
   {
-    "developer_name": "Иван Воробей",
-    "github_username": "ivanvorobei",
-    "apps": [
-      {
-        "id": "1570676244",
-        "name": "Долги - Учет расходов",
-        "added_date": "06.02.2022"
-      }
-    ]
-  },
-  {
     "developer_name": "Андрей Филипенков",
     "github_username": "kambala-decapitator",
     "apps": [
@@ -144,17 +133,6 @@
         "id": "1535523842",
         "name": "RedCalendar — Трекер цикла",
         "added_date": "05.04.2022"
-      }
-    ]
-  },
-  {
-    "developer_name": "Дима Остапченко",
-    "github_username": "jeytery",
-    "apps": [
-      {
-        "id": "1589786089",
-        "name": "RoleCards",
-        "added_date": "06.04.2022"
       }
     ]
   },
