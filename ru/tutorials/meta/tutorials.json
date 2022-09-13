@@ -121,8 +121,9 @@
         "description" : "Ультимативный гид по локализации. Текст, фото, значения.",
         "categories" : ["development", "foundation"],
         "author" : "svyatoynick",
+        "editors" : ["ivanvorobei"],
         "keywords" : ["localisation", "nslocalisedstring", "strings", "infoplist"],
-        "updated_date": "11.07.2022",
+        "updated_date": "13.09.2022",
         "added_date": "10.07.2022"
     }
 }
