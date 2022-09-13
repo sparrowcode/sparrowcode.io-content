@@ -84,5 +84,20 @@
         "keywords" : ["UISheetPresentationController", "Map", "Maps", "Modal Controllers", "iOS 15"],
         "updated_date" : "09.08.2022",
         "added_date" : "09.08.2022"
+    },
+    "drag-and-drop" : {
+        "title" : "Drag and Drop for table and collection",
+        "description" : "How to change the order of cells in a collection and a table. How to move cells to another collection. How to move multiple cells in a group.",
+        "categories" : ["uikit"],
+        "author" : "ivanvorobei",
+        "translators" : ["svyatoynick"],
+        "google_structured_images": [
+            "https://cdn.sparrowcode.io/tutorials/drag-and-drop/drag-delegate.jpg",
+            "https://cdn.sparrowcode.io/tutorials/drag-and-drop/drag-stack.jpg",
+            "https://cdn.sparrowcode.io/tutorials/drag-and-drop/drop-delegate.jpg"
+        ],
+        "keywords" : ["UICollectionViewDragDelegate", "UICollectionViewDropDelegate", "UITableViewDragDelegate", "UITableViewDropDelegate", "UIGestureRecognizer", "UIDrag"],
+        "updated_date" : "26.08.2022",
+        "added_date" : "26.08.2022"
     }
 }
