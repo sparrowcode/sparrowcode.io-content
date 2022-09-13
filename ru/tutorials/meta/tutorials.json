@@ -118,11 +118,21 @@
     },
     "localisation" : {
         "title" : "Локализация iOS приложений",
-        "description" : "Ультимативный гид по локализации. Текст, фото, значения.",
+        "description" : "Гид по локализации. Как адаптировать текст, фото, измерения и валюты. Обзор инструментов и автоматизаций.",
         "categories" : ["development", "foundation"],
         "author" : "svyatoynick",
         "editors" : ["ivanvorobei"],
-        "keywords" : ["localisation", "nslocalisedstring", "strings", "infoplist"],
+        "keywords" : ["localisation", "nslocalisedstring", "strings", "infoplist", "локализация"],
+        "google_structured_images": [
+            "https://cdn.sparrowcode.io/tutorials/localisation/autogeneration-new-language.jpg",
+            "https://cdn.sparrowcode.io/tutorials/localisation/export-menu.jpg",
+            "https://cdn.sparrowcode.io/tutorials/localisation/export-import.jpg",
+            "https://cdn.sparrowcode.io/tutorials/localisation/autogeneration-bartycrouch-file.jpg",
+            "https://cdn.sparrowcode.io/tutorials/localisation/pluralisation-new-stringsdict.jpg",
+            "https://cdn.sparrowcode.io/tutorials/localisation/pluralisation-stringsdict-empty.jpg",
+            "https://cdn.sparrowcode.io/tutorials/localisation/image-ready.jpg",
+            "https://cdn.sparrowcode.io/tutorials/localisation/image-preview.jpg"
+        ],
         "updated_date": "13.09.2022",
         "added_date": "10.07.2022"
     }
