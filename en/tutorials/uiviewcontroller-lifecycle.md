@@ -1,6 +1,6 @@
 > View is not created after controller initialization
 
-A system needs a reason to create a view. The lifecycle concept is built around this feature. Just keep in mind that a view is created out of necessity.
+A system needs a reason to create a `view`. The lifecycle concept is built around this feature. Just keep in mind that a controller's `view` is created out of necessity.
 
 ![About lifecycle of `UIViewController`](https://cdn.sparrowcode.io/tutorials/uiviewcontroller-lifecycle/hello.jpg)
 
