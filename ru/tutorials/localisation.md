@@ -27,7 +27,7 @@ let localisedString = NSLocalizedString(
 )
 ```
 
-Создайте файл `Localizable.strings`. Если языки автоматически не выбрались, поставьте галочки справа в инспекторе. В инспекторе будут все языки, которые поддерживает проект. 
+Создайте файл `Localizable.strings`. Если языки автоматически не выбрались, поставьте галочки справа в инспекторе - там будут все языки, которые поддерживает проект. 
 
 ![Инспектор с невыбранным языком.](https://cdn.sparrowcode.io/tutorials/localisation/string-localisation-inspector.jpg)
 
@@ -340,9 +340,11 @@ func headphonesCount(count: Int) -> String {
 
 ![Отрефракторенный ключ `headphones count`.](https://cdn.sparrowcode.io/tutorials/localisation/pluralisation-string-headphones-ready.jpg)
 
-Файл заполнен, но при вызове функции `headphonesCount(count: 1)` мы получим ключ `headphones count`, вместо перевода, потому что Xcode не локализует `.stringsdict` автоматически.
+Файл заполнен, но при вызове функции `headphonesCount(count: 1)` мы получим ключ `headphones count`, вместо перевода.
 
-Переходим в инспектор -> кнопка `Localize...`
+> Xcode не локализует `.stringsdict` автоматически.
+
+Для того что бы локализовать его: переходим в инспектор -> кнопка `Localize...`
 
 ![Расположение кнопки `Localize...` в инспекторе.](https://cdn.sparrowcode.io/tutorials/localisation/pluralisation-localize-button.jpg)
 
@@ -350,7 +352,7 @@ func headphonesCount(count: Int) -> String {
 
 ![Выбор языков для перевода в инспекторе.](https://cdn.sparrowcode.io/tutorials/localisation/pluralisation-localize-languages.jpg)
 
-Локализовать `.stringsdict` можно как в новом созданной файле, так и через `xcloc` файл после экспорта. Пойдём первым путём.
+Локализовать `.stringsdict` можно прямо в созданном файле.
 
 Выбираем `Localizable (Russian)` в левом меню.
 
@@ -386,7 +388,7 @@ headphonesCount(count: 7)
 // Tim has 7 headphones
 ```
 
-Если нужно локализовать другое слово - создайте новое значение в `.stringsdict` файле, например считаем яблоки.
+Если нужно локализовать другое слово - создайте новое значение в `.stringsdict` файле. Например, считаем яблоки:
 
 Создаём функцию с новым ключем.
 
@@ -402,11 +404,13 @@ func applesCount(count: Int) -> String {
 
 ![Новый заполненный ключ `apples count`.](https://cdn.sparrowcode.io/tutorials/localisation/pluralisation-string-apples-ready.jpg)
 
-Что бы локализовать новое значение на другие языки - экспортируем локализацию и открываем нужный `xcloc`.
+Новое значение все ещё можно локализовать вручную, прямо в файле. Но в этот раз для перевода используем другой способ и экспортируем локализацию через `Product` -> `Export Localizations...` 
+
+Открываем нужный `xcloc` каталог левой кнопкой мыши.
 
 ![Локализация `stringsdict`-файла в переводчике Xcode.](https://cdn.sparrowcode.io/tutorials/localisation/export-xcode-translator.jpg)
 
-Переводим и импортируем в проект. Видим, что в `.stringsdict` файле русского языка осталось лишнее значение `many` - удаляем его и приводим остальные в порядок.
+Переводим и импортируем в проект через `Product` -> `Import Localizations...`. Видим, что в `.stringsdict` файле русского языка осталось лишнее значение `many` - удаляем его и приводим остальные в порядок.
 
 ![Отрефракторенный ключ `apples count`.](https://cdn.sparrowcode.io/tutorials/localisation/pluralisation-string-apples-translated.jpg)
 
@@ -469,7 +473,7 @@ NSLocalizedString("first key", bundle: .module, comment: "")
 
 ![Экспорт локализации пакета.](https://cdn.sparrowcode.io/tutorials/localisation/package-export.jpg)
 
-Экспортируем локализацию, выбираем пакет. Переводим и импортируем обратно в проект. Готово - пакет локализован. 
+Экспортируем локализацию, выбираем пакет. Локализации пакетов так же выведутся при экспорте локализации проекта. Переводим и импортируем обратно в проект. Готово - пакет локализован. 
 
 > Xcode ниже 14 версии не экспортирует и не импортирует локализационные ключи во встроенных в проект пакетах. 
 
@@ -495,6 +499,8 @@ NSLocalizedString("first key", bundle: .module, comment: "")
 Пакет локализован. Сохраните проект для дальнейших локализаций.
 
 ## Локализация значений
+
+Понадобится, если захотите локализовать валюту в правильном формате. Например, сумму `3 000,00 ₽`, дату `24 апр. 2022 г.` или число `123 456`.
 
 ### Идентификаторы языка
 
