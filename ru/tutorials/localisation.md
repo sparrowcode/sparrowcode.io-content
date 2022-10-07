@@ -128,12 +128,11 @@ let localisedString = String(
 
 Когда добавляете в `Info.plist` разрешения, например для использования камеры - нужно объяснить для чего оно нужно приложению. Локализуем это сообщение. 
 
-// TODO: ПРИМЕР РАЗРЕШЕНИЯ ФОТО
-// TODO: Вставить ссылку
+![Пример текста в запросе разрешения.](https://cdn.sparrowcode.io/tutorials/localisation/infoplist-permission-example.jpg)
 
 Список всех ключей можно глянуть [здесь](https://github.com/sparrowcode/PermissionsKit#permissions). Вставляем ключ и локализуем:
 
-```text
+```txt
 /* Privacy - Camera Usage Description */
 "NSCameraUsageDescription" = "We use the camera to take pictures.";
 ```
@@ -224,11 +223,10 @@ bartycrouch init
 
 Это стандартная конфигурация. Прописываем `paths` и `codePaths` для быстрого поиска файлов:
 
-// TODO что за файлы здесь указывать
 ```swift
 // Указывайте путь к файлам в вашем проекте, например:
-paths = ["App/Localisations/"]
-codePaths = ["App/Data/"]
+paths = ["App/Localisations/"] // `strings`-файл
+codePaths = ["App/Data/"] // Файл с `enum`, есть используете `supportedLanguageEnumPaths`
 ```
 
 Для задачи `interfaces`:
@@ -246,13 +244,13 @@ codePaths = ["App/Data/"]
 Опций больше, весь список [в документации](https://github.com/FlineDev/BartyCrouch#configuration).
 
 После того, как настроили конфиг, можно запустить проверку:
-```swift
+```
 bartycrouch update
 ```
 
 `BartyCrouch` проверит ключи, добавит их `strings`-файлы и избавится от ненужных. Команды, которые вызываются через `update` меняются, например: 
 
-```swift
+```json
 [update]
 tasks = ["interfaces", "normalize", "code"]
 ```
@@ -303,11 +301,10 @@ func headphonesCount(count: Int) -> String {
 
 ![Структура файла `Stringsdict`.](https://cdn.sparrowcode.io/tutorials/localisation/pluralisation-stringsdict-empty.jpg)
 
-// TODO ПЕРЕФРАЗИРОВАТЬ НОРМАЛЬНО
 - `Localised String Key` - ключ локализации: headphones count.
-- `Localised Format Key` - параметр, значение которого войдёт в строку результата. В нашем случае только один: count.
-- `NSStringFormatSpecTypeKey` - указывает единственный возможный тип перевода `NSStringPluralRuleType`, который значит то, что в переводе встречается множество имён существительных (то, что мы хотим сделать) - его не трогаем.
-- `NSStringFormatValueTypeKey` - строковый спецификатор формата числа (например `d` для целых чисел).
+- `Localised Format Key` - параметр, значение которого войдёт в строку результата. В нашем случае только один: `count`.
+- `NSStringFormatSpecTypeKey` - указывает единственный возможный тип перевода `NSStringPluralRuleType`, который значит то, что в переводе встречается множество имён существительных (то, что мы хотим локализовать) - его не трогаем.
+- `NSStringFormatValueTypeKey` - строковый спецификатор формата числа (например `d` для целых чисел). Полный список [тут](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Strings/Articles/formatSpecifiers.html).
 - `zero, one, two, few, many, other` - различные формы множественного числа для языков. Обязательное `other` - оно будет использовано, если переданное число не удовлетворит ни одно из перечисленных условий. Остальные можно убрать, если они не требуются для локализуемого слова.
 
 Заполняем файл:
