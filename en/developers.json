@@ -153,5 +153,71 @@
         "added_date": "09.06.2022"
       }
     ]
+  },
+  {
+    "developer_name": "Ivan Vorobei",
+    "github_username": "ivanvorobei",
+    "repositories" : [
+      "https://github.com/sparrowcode/PermissionsKit",
+      "https://github.com/sparrowcode/SwiftBoost",
+      "https://github.com/sparrowcode/SafeSFSymbols",
+      "https://github.com/sparrowcode/SPSettingsIcons",
+      "https://github.com/sparrowcode/SPQRCode",
+      "https://github.com/ivanvorobei/SPAlert",
+      "https://github.com/ivanvorobei/SPIndicator",
+      "https://github.com/ivanvorobei/SPPerspective",
+      "https://github.com/ivanvorobei/SPPageController"
+    ],
+    "apps": [
+      {
+        "id": "1624477055",
+        "name": "Seqvoia - My Plants",
+        "added_date": "09.10.2022"
+      },
+      {
+        "id": "1625641322",
+        "name": "OTP Authenticator 2FA",
+        "added_date": "09.10.2022"
+      },
+      {
+        "id": "875280793",
+        "name": "Salat Learning (Salah)",
+        "added_date": "09.10.2022"
+      },
+      {
+        "id": "743843090",
+        "name": "Athan Pro: Quran, Azan, Qibla",
+        "added_date": "09.10.2022"
+      },
+      {
+        "id": "537070378",
+        "name": "Quran Pro",
+        "added_date": "09.10.2022"
+      },
+      {
+        "id": "1570676244",
+        "name": "Debts - Debt Tracker",
+        "added_date": "09.10.2022"
+      },
+      {
+        "id": "1617055933",
+        "name": "Recipes by Arabesque Kitchen",
+        "added_date": "09.10.2022"
+      }
+    ]
+  },
+  {
+    "developer_name": "Nikolay Pelevin",
+    "github_username": "svyatoynick",
+    "repositories" : [
+      "https://github.com/svyatoynick/GAuthSwiftParser"
+    ],
+    "apps": [
+      {
+        "id": "1625641322",
+        "name": "OTP Authenticator 2FA",
+        "added_date": "09.10.2022"
+      }
+    ]
   }
 ]
