@@ -157,7 +157,7 @@
   {
     "developer_name": "Ivan Vorobei",
     "github_username": "ivanvorobei",
-    "repositories" : [
+    "repositories": [
       "https://github.com/sparrowcode/PermissionsKit",
       "https://github.com/sparrowcode/SwiftBoost",
       "https://github.com/sparrowcode/SafeSFSymbols",
@@ -209,7 +209,7 @@
   {
     "developer_name": "Nikolay Pelevin",
     "github_username": "svyatoynick",
-    "repositories" : [
+    "repositories": [
       "https://github.com/svyatoynick/GAuthSwiftParser"
     ],
     "apps": [
