@@ -98,7 +98,7 @@
     },
     "async-await" : {
         "title" : "Асинхронность с async/await и actor",
-        "description" : "Разберём async, await, actor. Напишем тузлу для поиска приложений в App Store, используя новые инструменты.",
+        "description" : "Разберём async, await, actor. Напишем тузлу для поиска приложений в App Store.",
         "categories" : ["swift"],
         "author" : "somenkovnikita",
         "editors" : ["ivanvorobei", "svyatoynick"],
@@ -118,11 +118,11 @@
     },
     "localisation" : {
         "title" : "Локализация iOS приложений",
-        "description" : "Гид по локализации. Как адаптировать текст, фото, измерения и валюты. Обзор инструментов и автоматизаций.",
+        "description" : "Большой гайд по локализации. Как перевести текст, фото, вес и валюты. Обзор инструментов и автоматизаций.",
         "categories" : ["development", "foundation"],
         "author" : "svyatoynick",
         "editors" : ["ivanvorobei"],
-        "keywords" : ["localisation", "nslocalisedstring", "strings", "infoplist", "локализация"],
+        "keywords" : ["localisation", "nslocalisedstring", "strings", "infoplist", "локализация", "spm"],
         "google_structured_images": [
             "https://cdn.sparrowcode.io/tutorials/localisation/add-new-language.jpg",
             "https://cdn.sparrowcode.io/tutorials/localisation/export-menu.jpg",
@@ -133,7 +133,7 @@
             "https://cdn.sparrowcode.io/tutorials/localisation/image-ready.jpg",
             "https://cdn.sparrowcode.io/tutorials/localisation/image-preview.jpg"
         ],
-        "updated_date": "07.10.2022",
+        "updated_date": "10.10.2022",
         "added_date": "10.07.2022"
     }
 }
