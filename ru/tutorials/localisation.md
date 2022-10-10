@@ -1,4 +1,4 @@
-Это большой ультимативный гайд по локализации. Если вы только начинаете изучить локализацию - рекомендуем читайте по порядку. Все инструменты в статье редакция выстрадала опытом и временем.
+Это большой ультимативный гайд по локализации. Если вы только начинаете изучить локализацию - рекомендуем читать по порядку. Все инструменты в статье редакция выстрадала опытом и временем.
 
 ![Пародийный постер к фильму `Перевозчик 3`.](https://cdn.sparrowcode.io/tutorials/localisation/preview-ru.jpg)
 
@@ -52,7 +52,7 @@ let localisedString = NSLocalizedString(
 Перейдём к примеру. Давайте создадим объект `String` с инициализатором `format`:
 
 ```swift
-let parametrString = "Parametr Example" // параметр, который будем передать 
+let parametrString = "Parametr Example" // параметр, который будем передавать 
 
 let localisedString = String(
     format: NSLocalizedString(
@@ -108,7 +108,7 @@ let parametrInt = 941
 
 let localisedString = String(
     format: NSLocalizedString("label text", comment: ""), 
-    secondParametrString, parametrString, parametrInt // Меняем parametrString и secondParametrString местами
+    secondParametrString, parametrString, parametrInt // меняем parametrString и secondParametrString местами
 )
 ```
 
@@ -191,7 +191,7 @@ let localisedString = String(
 
 ### Poedit
 
-Это альтернативная IDE для редактирования `xсloc`-каталогов. Она покажет ошибки в переводе, отсутствующие строки и автоматически переведет ключи на другой язык. 
+Это альтернативная IDE для редактирования `xсloc`-каталогов. Она покажет ошибки в переводе, отсутствующие строки и автоматически переведёт ключи на другой язык. 
 
 Poedit умеет читать только `xliff`-файлы, поэтому открываем `xcloc`-каталог правой кнопкой и переходим в содержимое пакета.
 
@@ -342,7 +342,7 @@ func headphonesCount(count: Int) -> String {
 
 ![`stringsdict`-файлы на сайдбаре.](https://cdn.sparrowcode.io/tutorials/localisation/pluralisation-sidebar-languages.jpg)
 
-Заполняем строки на русском, добавляем `few` для корректного перевода числа на русском.
+Заполняем строки, добавляем `few` для корректного перевода числа на русском.
 
 ![Локализованный ключ `headphones count`.](https://cdn.sparrowcode.io/tutorials/localisation/pluralisation-string-headphones-translated.jpg)
 
@@ -554,7 +554,7 @@ enum Texts {
 titleLabel.text = Texts.FirstController.title
 ```
 
-Если переменных много, можно создать несколько файлов и разгрупировать ключи.
+Если переменных много, можно создать несколько файлов и разгруппировать ключи.
 
 #### Часто используемые слова
 
@@ -595,7 +595,7 @@ fruitNameLabel.text = Texts.fruitName(name: "Apple")
 NSLocalizedString("settings controller table feedback section footer", comment: "")
 ```
 
-> Рекомендуем не заполнять пустые пространства нижним подчеркиванием `_`. Даже в небольших проектах клбчи становятся большими - Xcode криво переносит длинные строки. Сохраняйте пробелы.
+> Рекомендуем не заполнять пустые пространства нижним подчеркиванием `_`. Даже в маленьких проектах ключи становятся большими - Xcode криво переносит длинные строки. Сохраняйте пробелы.
 
 ### Полезные инструменты
 
