@@ -8,6 +8,9 @@
     "uikit" : {
         "title" : "UIKit"
     },
+    "swiftui" : {
+        "title" : "SwiftUI"
+    },
     "development" : {
         "title" : "Разработка"
     },

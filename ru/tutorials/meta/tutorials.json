@@ -135,5 +135,16 @@
         ],
         "updated_date": "10.10.2022",
         "added_date": "10.07.2022"
+    },
+    "live-activities" : {
+        "title" : "Dynamic Island и Live Activity в `ActivityKit`",
+        "description" : "",
+        "categories" : ["development", "uikit", "swiftui"],
+        "author" : "ivanvorobei",
+        "editors" : [],
+        "keywords" : [],
+        "google_structured_images": [],
+        "updated_date": "20.10.2022",
+        "added_date": "20.10.2022"
     }
 }
