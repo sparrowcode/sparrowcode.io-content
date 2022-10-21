@@ -17,7 +17,7 @@
     },
     "ivanvorobei" : {
         "name" : "Иван Воробей",
-        "description" : "iOS разработчик. Пишу библиотеки, веду телеграм-канал.",
+        "description" : "iOS разработчик. Пишу библиотеки, веду телеграм-канал Код Воробья.",
         "avatar" : "https://cdn.sparrowcode.io/authors/ivanvorobei.jpg",
         "github" : "ivanvorobei",
         "buttons" : [
@@ -26,8 +26,8 @@
                 "url" : "https://github.com/ivanvorobei"
             },
             {
-                "title" : "App Store",
-                "url" : "https://apps.ivanvorobei.io"
+                "title" : "Телеграм-канал",
+                "url" : "https://t.me/sparrowcode"
             }
         ]
     },

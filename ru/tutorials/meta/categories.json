@@ -11,6 +11,9 @@
     "swiftui" : {
         "title" : "SwiftUI"
     },
+    "extensions" : {
+        "title" : "Extensions"
+    },
     "development" : {
         "title" : "Разработка"
     },

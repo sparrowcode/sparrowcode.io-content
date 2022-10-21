@@ -55,7 +55,7 @@
     },
     "sf-symbols-and-render-mode" : {
         "title" : "SF Symbols 4 and Render Mode",
-        "description" : "How `Monochrome`, `Hierarchical`, `Palette`, `Multicolor Render` work for SF Symbols. Code examples for `UIKit` and `SwiftUI`.",
+        "description" : "How `Monochrome`, `Hierarchical`, `Palette`, `Multicolor Render` work for SF Symbols. Code examples for UIKit and SwiftUI.",
         "categories" : ["uikit"],
         "author" : "ivanvorobei",
         "translators" : ["svyatoynick"],

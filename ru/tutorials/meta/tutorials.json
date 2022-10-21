@@ -31,7 +31,7 @@
     },
     "sf-symbols-and-render-mode" : {
         "title" : "SF Symbols 4 и Render Mode",
-        "description" : "Как работают `Monochrome`, `Hierarchical`, `Palette`, `Multicolor Render` для SF Symbols. Примеры кода для `UIKit` и `SwiftUI`.",
+        "description" : "Как работают `Monochrome`, `Hierarchical`, `Palette`, `Multicolor Render` для SF Symbols. Примеры кода для UIKit и SwiftUI.",
         "categories" : ["uikit"],
         "author" : "ivanvorobei",
         "editors" : ["svyatoynick"],
@@ -117,12 +117,12 @@
         "added_date": "22.03.2022"
     },
     "localisation" : {
-        "title" : "Локализация iOS приложений",
+        "title" : "Локализация приложений",
         "description" : "Большой гайд по локализации. Как перевести текст, фото, дату и валюты. Обзор инструментов и автоматизаций.",
         "categories" : ["development", "foundation"],
         "author" : "svyatoynick",
         "editors" : ["ivanvorobei"],
-        "keywords" : ["localisation", "nslocalisedstring", "strings", "infoplist", "локализация", "spm"],
+        "keywords" : ["localisation", "nslocalisedstring", "strings", "infoplist", "локализация", "spm", "локализация для iOS", "локализация swift"],
         "google_structured_images": [
             "https://cdn.sparrowcode.io/tutorials/localisation/add-new-language.jpg",
             "https://cdn.sparrowcode.io/tutorials/localisation/export-menu.jpg",
@@ -137,13 +137,21 @@
         "added_date": "10.07.2022"
     },
     "live-activities" : {
-        "title" : "Dynamic Island и Live Activity в `ActivityKit`",
-        "description" : "",
-        "categories" : ["development", "uikit", "swiftui"],
+        "title" : "Live Activity и Dynamic Island",
+        "description" : "Как создаить, обновлять и завершить Live Activity. Интерфейс Live Activity. Как работать с Dynamic Island.",
+        "categories" : ["swiftui", "extensions"],
         "author" : "ivanvorobei",
         "editors" : [],
-        "keywords" : [],
-        "google_structured_images": [],
+        "keywords" : ["Dynamic Island", "динамический остров", "SwiftUI", "Live Activity", "WidgetKit"],
+        "google_structured_images": [
+            "https://cdn.sparrowcode.io/tutorials/live-activities/header.png",
+            "https://cdn.sparrowcode.io/tutorials/live-activities/add-widget-target.png",
+            "https://cdn.sparrowcode.io/tutorials/live-activities/type-compact.png",
+            "https://cdn.sparrowcode.io/tutorials/live-activities/type-minimal.png",
+            "https://cdn.sparrowcode.io/tutorials/live-activities/type-expanded.png",
+            "https://cdn.sparrowcode.io/tutorials/live-activities/live-activity-areas.png",
+            "https://cdn.sparrowcode.io/tutorials/live-activities/live-activity-leading-expanded.png"
+        ],
         "updated_date": "20.10.2022",
         "added_date": "20.10.2022"
     }
