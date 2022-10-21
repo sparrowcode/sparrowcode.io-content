@@ -99,5 +99,25 @@
         "keywords" : ["UICollectionViewDragDelegate", "UICollectionViewDropDelegate", "UITableViewDragDelegate", "UITableViewDropDelegate", "UIGestureRecognizer", "UIDrag"],
         "updated_date" : "26.08.2022",
         "added_date" : "26.08.2022"
+    },
+    "live-activities" : {
+        "title" : "Live Activity & Dynamic Island",
+        "description" : "How to create, update, and end a Live Activity. The Live Activity interface. How to work with Dynamic Island.",
+        "categories" : ["swiftui", "extensions"],
+        "author" : "ivanvorobei",
+        "editors" : [],
+        "keywords" : ["Dynamic Island", "SwiftUI", "Live Activity", "WidgetKit"],
+        "google_structured_images": [
+            "https://cdn.sparrowcode.io/tutorials/live-activities/header.png",
+            "https://cdn.sparrowcode.io/tutorials/live-activities/add-widget-target.png",
+            "https://cdn.sparrowcode.io/tutorials/live-activities/shared-file-between-targets.png",
+            "https://cdn.sparrowcode.io/tutorials/live-activities/live-activity-type-compact.png",
+            "https://cdn.sparrowcode.io/tutorials/live-activities/live-activity-type-minimal.png",
+            "https://cdn.sparrowcode.io/tutorials/live-activities/live-activity-type-expanded.png",
+            "https://cdn.sparrowcode.io/tutorials/live-activities/live-activity-areas.png",
+            "https://cdn.sparrowcode.io/tutorials/live-activities/live-activity-leading-expanded.png"
+        ],
+        "updated_date": "21.10.2022",
+        "added_date": "21.10.2022"
     }
 }

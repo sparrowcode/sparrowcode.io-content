@@ -138,7 +138,7 @@
     },
     "live-activities" : {
         "title" : "Live Activity и Dynamic Island",
-        "description" : "Как создаить, обновлять и завершить Live Activity. Интерфейс Live Activity. Как работать с Dynamic Island.",
+        "description" : "Как создать, обновлять и завершить Live Activity. Интерфейс Live Activity. Как работать с Dynamic Island.",
         "categories" : ["swiftui", "extensions"],
         "author" : "ivanvorobei",
         "editors" : [],
@@ -146,9 +146,10 @@
         "google_structured_images": [
             "https://cdn.sparrowcode.io/tutorials/live-activities/header.png",
             "https://cdn.sparrowcode.io/tutorials/live-activities/add-widget-target.png",
-            "https://cdn.sparrowcode.io/tutorials/live-activities/type-compact.png",
-            "https://cdn.sparrowcode.io/tutorials/live-activities/type-minimal.png",
-            "https://cdn.sparrowcode.io/tutorials/live-activities/type-expanded.png",
+            "https://cdn.sparrowcode.io/tutorials/live-activities/shared-file-between-targets.png",
+            "https://cdn.sparrowcode.io/tutorials/live-activities/live-activity-type-compact.png",
+            "https://cdn.sparrowcode.io/tutorials/live-activities/live-activity-type-minimal.png",
+            "https://cdn.sparrowcode.io/tutorials/live-activities/live-activity-type-expanded.png",
             "https://cdn.sparrowcode.io/tutorials/live-activities/live-activity-areas.png",
             "https://cdn.sparrowcode.io/tutorials/live-activities/live-activity-leading-expanded.png"
         ],

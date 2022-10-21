@@ -1,4 +1,4 @@
-Live Activity объединяют пуш-уведомления в один интерактивный баннер. Например, когда подъежает такси, вам придет пуш что водитель едет, водитель уже рядом и водитель ждет. С новым инструментом разработчики смогут объеденить пуши в Live Activity и обновлять его. 
+Live Activity объединяют пуш-уведомления в один интерактивный баннер. Например, когда подъежает такси, вам придет пуш что водитель едет, водитель уже рядом и водитель ждет. С новым инструментом разработчики смогут объеденить пуши в Live Activity и обновлять его.
 
 > Live Activity доступны с iOS 14.1 и Xcode 14.1.
 
@@ -43,7 +43,7 @@ struct LiveActivityWidget: Widget {
 <true/>
 ```
 
-`StaticConfiguration` используется для виджетов и компликейшнов. Скоро мы заменим его на другой, но сначала определим модель данных. 
+`StaticConfiguration` используется для виджетов и компликейшнов. Скоро мы заменим его на другой, но сначала определим модель данных.
 
 ## Модель данных
 
@@ -99,7 +99,7 @@ struct LiveActivityWidget: Widget {
 
 Два замыкания, первое - для UI на заблокированном экране, второе - для динамического острова. Обратите внимание, указываем класс атрибутов `ActivityAttribute.self` - это модель данных, которую определили выше.
 
-> В Live Activity игнорируются модификаторы анимаций. 
+> В Live Activity игнорируются модификаторы анимаций.
 
 ### Lock Screen
 
@@ -147,7 +147,7 @@ struct LiveActivityWidget: Widget {
 > Углы динамического острова закруглили в 44 точки. Это соответствует закруглению камере TrueDepth.
 
 #### Compact & Minimal
- 
+
 Если запущена одна активность - то контент можно разместить слева и справа от динамического острова.
 
 ![Compact Live Activity в Dynamic Island.](https://cdn.sparrowcode.io/tutorials/live-activities/live-activity-type-compact.png)
@@ -223,7 +223,7 @@ guard ActivityAuthorizationInfo().areActivitiesEnabled else {
 }
 ```
 
-Можно отслеживать статус: 
+Можно отслеживать статус:
 
 ```swift
 for await enabled in ActivityAuthorizationInfo().activityEnablementUpdates {
@@ -292,13 +292,13 @@ await activity?.end(using: attributes, dismissalPolicy: .default)
 
 Live Activity обновится финальными данными и будет на экране еще некоторое время. Система закроет активность, когда убедится что юзер увидел новые данные или максимум через 4 часа - что наступит раньше.
 
-У Live Activity нет таймлайна как для виджетов. Чтобы обновить или закрыть Live Activity когда приложение в фоне, нужно использовать [Background Tasks](https://developer.apple.com/documentation/backgroundtasks). 
+У Live Activity нет таймлайна как для виджетов. Чтобы обновить или закрыть Live Activity когда приложение в фоне, нужно использовать [Background Tasks](https://developer.apple.com/documentation/backgroundtasks).
 
 > Background Tasks не гарантируют выполнение вовремя.
 
 ### Через Push-уведомления
 
-При создании Live Activity получаем `pushToken`. Он используется, чтобы обновлять Live Activity через пуш-уведомления. 
+При создании Live Activity получаем `pushToken`. Он используется, чтобы обновлять Live Activity через пуш-уведомления.
 
 > Предварительно нужно зарегистрировать приложение для получения пушей.
 
