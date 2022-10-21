@@ -296,7 +296,7 @@ Live Activity does not have a timeline like widgets. To update or close Live Act
 
 > Background Tasks are not guaranteed to run on time.
 
-### Through Push Notifications
+#### Through Push Notifications
 
 When we create a Live Activity, we get a `pushToken`. It is used to update the Live Activity via push notifications.
 
