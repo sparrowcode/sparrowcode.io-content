@@ -105,7 +105,7 @@
         "description" : "How to create, update, and end a Live Activity. The Live Activity interface. How to work with Dynamic Island.",
         "categories" : ["swiftui", "extensions"],
         "author" : "ivanvorobei",
-        "editors" : [],
+        "translators" : ["svyatoynick"],
         "keywords" : ["Dynamic Island", "SwiftUI", "Live Activity", "WidgetKit"],
         "google_structured_images": [
             "https://cdn.sparrowcode.io/tutorials/live-activities/header.png",

@@ -1,22 +1,22 @@
-Live Activity объединяют пуш-уведомления в один интерактивный баннер. Например, когда подъежает такси, вам придет пуш что водитель едет, водитель уже рядом и водитель ждет. С новым инструментом разработчики смогут объеденить пуши в Live Activity и обновлять его.
+Live Activity combines push notifications into one interactive banner. For example, when a cab pulls up, you get a push that the driver is coming, the driver is nearby, and the driver is waiting. With the new tool, developers will be able to merge push notifications into Live Activity and update it.
 
-> Live Activity доступны с iOS 14.1 и Xcode 14.1.
+> Live Activity is available with iOS 14.1 and Xcode 14.1.
 
-Live Activity не виджет - нет таймлайнов и соответственно обновлений по времени. Основной способ обновления - пуши. Способы обновления разберем в секции [Как обновить и завершить Live Activity](https://beta.sparrowcode.io/ru/tutorials/live-activities).
+Live Activity is not a widget - there are no timelines and therefore no updates by time. The main way to update is by pushing. See [how to update and terminate Live Activity](https://beta.sparrowcode.io/ru/tutorials/live-activities) for the update methods.
 
-![Compact и Expanded Live Activity.](https://cdn.sparrowcode.io/tutorials/live-activities/header.png)
+![Compact and Expanded Live Activity.](https://cdn.sparrowcode.io/tutorials/live-activities/header.png)
 
-Live Activity показываются на устройствах с Dynamic Island и без него. На заблокированном экране это будет похоже на обычное пуш-уведомление. Для устройств с Dynamic Island Live Activity показывается вокруг камер.
+Live Activity is shown on devices with and without Dynamic Island. On a locked screen, it will look like a normal push notification. For devices with Dynamic Island, Live Activity is shown around the cameras.
 
-[Проект-пример на GitHub](https://github.com/sparrowcode/live-activity-example): Как добавить Live Activity, обновить и закрыть. UI для Live Activity.
+[Sample project on GitHub](https://github.com/sparrowcode/live-activity-example): How to add a Live Activity, update and close. UI for Live Activity.
 
-## Добавляем Live Activity в проект
+## Adding Live Activity to the project
 
-Live Activity используют фреймворк ActivityKit. Живут Live Activity в таргете виджета:
+Live Activity uses the ActivityKit framework. Live Activity lives in the widget's targeting:
 
-![Добавляем таргет WidgetKit в проект.](https://cdn.sparrowcode.io/tutorials/live-activities/add-widget-target.png)
+![Add the WidgetKit Target to the project.](https://cdn.sparrowcode.io/tutorials/live-activities/add-widget-target.png)
 
-Перейдите в таргет, и оставьте код:
+Go to Target, and leave the code:
 
 ```swift
 @main
@@ -34,20 +34,20 @@ struct LiveActivityWidget: Widget {
 }
 ```
 
-> Если у вас уже есть виджеты, используйте `WidgetBundle` чтобы определить несколько `Widget`.
+> If you already have widgets, use `WidgetBundle` to define multiple `Widgets`.
 
-В `Info.plist` добавьте атрибут `Supports Live Activities`:
+In `Info.plist`, add the attribute `Supports Live Activities`:
 
 ```
 <key>NSSupportsLiveActivities</key>
 <true/>
 ```
 
-`StaticConfiguration` используется для виджетов и компликейшнов. Скоро мы заменим его на другой, но сначала определим модель данных.
+`StaticConfiguration` is used for widgets and complications. We will replace it with another one soon, but first we will define the data model.
 
-## Модель данных
+## Data model
 
-Live Activity создается в самом приложении, а модель будет использоваться и в приложении и в виджете. Поэтому хорошо бы сделать один класс и пошарить его между таргетами. Создайте новый файл для модели, Наследуемся от `ActivityAttributes`:
+Live Activity is created in the application itself, and the model will be used in both the application and the widget. So it's a good idea to make one class and poke around between the targetets. Create a new file for the model, inherit from `ActivityAttributes`:
 
 ```swift
 import ActivityKit
@@ -56,7 +56,7 @@ struct ActivityAttribute: ActivityAttributes {
     
     public struct ContentState: Codable, Hashable {
         
-        // Динамические данные
+        // Dynamic data
         
         var dynamicStringValue: String
         var dynamicIntValue: Int
@@ -64,7 +64,7 @@ struct ActivityAttribute: ActivityAttributes {
         
     }
     
-    // Статические данные
+    // Static data
     
     var staticStringValue: String
     var staticIntValue: Int
@@ -72,15 +72,15 @@ struct ActivityAttribute: ActivityAttributes {
 }
 ```
 
-В структуре `ContentState` определяем динамические данные - они будут меняться и обновлять UI. За пределами `ContentState` - статические данные, они доступны только при создании Live Activity.
+Define dynamic data in the `ContentState` structure - it will change and update the UI. Outside `ContentState` - static data, it is available only when creating Live Activity.
 
-Пошарьте файл между двумя таргетами, для этого в инспекторе справа выберите главный таргет приложения и таргет виджета:
+Share the file between the two targets by selecting the application's main target and widget target in the inspector on the right:
 
-![Файл будет доступен в главном и виджет-таргетах.](https://cdn.sparrowcode.io/tutorials/live-activities/shared-file-between-targets.png)
+![The file will be available in the main and widget-targets.](https://cdn.sparrowcode.io/tutorials/live-activities/shared-file-between-targets.png)
 
 ## UI
 
-В объекте `LiveActivityWidget` поменяйте конфигурацию на `ActivityConfiguration`:
+In the `LiveActivityWidget` object, change the configuration to `ActivityConfiguration`:
 
 ```swift
 struct LiveActivityWidget: Widget {
@@ -89,21 +89,21 @@ struct LiveActivityWidget: Widget {
     
     var body: some WidgetConfiguration {
         ActivityConfiguration(for: ActivityAttribute.self) { context in
-            // Здесь UI для активи на заблокированном экране
+            // Here is the UI for activity on the locked screen
         } dynamicIsland: { context in
-            // Здесь UI для Dynamic Island
+            // Here is the UI for Dynamic Island
         }
     }
 }
 ```
 
-Два замыкания, первое - для UI на заблокированном экране, второе - для динамического острова. Обратите внимание, указываем класс атрибутов `ActivityAttribute.self` - это модель данных, которую определили выше.
+Two closures, the first for the UI on the locked screen, the second for the dynamic island. Note, we specify attribute class `ActivityAttribute.self` - this is the data model we defined above.
 
-> В Live Activity игнорируются модификаторы анимаций.
+> Live Activity ignores animation modifiers.
 
 ### Lock Screen
 
-Эта View показывается на заблокированном экране. Все инструменты для виджетов доступны в Live Activity. Укажите проперти `context` чтобы передать модель данных:
+This view is shown on the locked screen. All widget tools are available in Live Activity. Specify a property `context` to pass the data model:
 
 ```swift
 struct LockScreenLiveActivityView: View {
@@ -121,9 +121,9 @@ struct LockScreenLiveActivityView: View {
 }
 ```
 
-> Максимальная высота Live Activity на Lock Screen 160 точек.
+> The maximum height of the Live Activity on Lock Screen is 160 points.
 
-В примере я распечатал и динамические, и статические проперти из `ActivityAttribute`. Укажем вью в виджете:
+In the example I printed both dynamic and static properties from `ActivityAttribute`. Let's specify the view in the widget:
 
 ```swift
 struct LiveActivityWidget: Widget {
@@ -134,7 +134,7 @@ struct LiveActivityWidget: Widget {
         ActivityConfiguration(for: ActivityAttribute.self) { context in
             LockScreenLiveActivityView(context: context)
         } dynamicIsland: { context in
-            // Здесь UI для Dynamic Island
+            // Here is the UI for Dynamic Island
         }
     }
 }
@@ -142,26 +142,26 @@ struct LiveActivityWidget: Widget {
 
 ### Dynamic Island
 
-Динамический остров имеет 3 вида: компактное, минимальное и развернутое.
+The dynamic island has 3 kinds: compact, minimal and expanded.
 
-> Углы динамического острова закруглили в 44 точки. Это соответствует закруглению камере TrueDepth.
+> The corners of the dynamic island are rounded at 44 points. This corresponds to the rounding of the TrueDepth camera.
 
 #### Compact & Minimal
 
-Если запущена одна активность - то контент можно разместить слева и справа от динамического острова.
+If one activity is running - then the content can be placed to the left and right of the dynamic island.
 
-![Compact Live Activity в Dynamic Island.](https://cdn.sparrowcode.io/tutorials/live-activities/live-activity-type-compact.png)
+![Compact Live Activity in Dynamic Island.](https://cdn.sparrowcode.io/tutorials/live-activities/live-activity-type-compact.png)
 
-Если запущено несколько Live Activity, система выберет 2 из них. Одна будет показываться слева, прикреплена к острову, а другую справа - отделенной от острова в кружке.
+If more than one Live Activity is running, the system will select 2 of them. One will show on the left, attached to the island, and the other on the right, separated from the island in a circle.
 
-![Minimal Live Activity в Dynamic Island.](https://cdn.sparrowcode.io/tutorials/live-activities/live-activity-type-minimal.png)
+![Minimal Live Activity in Dynamic Island.](https://cdn.sparrowcode.io/tutorials/live-activities/live-activity-type-minimal.png)
 
-Код для каждого варианта отображения:
+The code for each display option:
 
 ```swift
 DynamicIsland {
-    // Здесь будет код для развернутого вида.
-    // Его разберем в след. пункте.
+    // Here is the code for the expanded view.
+    // We'll analyze it in the next paragraph.
 } compactLeading: {
     Text("Leading")
 } compactTrailing: {
@@ -173,11 +173,11 @@ DynamicIsland {
 
 #### Expanded
 
-Развернутое Live Activity показывается когда человек нажимает и удерживает компатный или минимальный вид. Когда Live Activity обновляется, развернутый вид появляется автоматически на пару секунд.
+The expanded Live Activity is shown when a person clicks and holds the compact or minimal view. When Live Activity is updated, the expanded view appears automatically for a couple of seconds.
 
 ![Expanded Live Activity в Dynamic Island.](https://cdn.sparrowcode.io/tutorials/live-activities/live-activity-type-expanded.png)
 
-Код для развернутого вида. Каждое замыкание определяет область на Live Activity.
+The code for the expanded view. Each closure defines an area on the Live Activity.
 
 ```swift
 DynamicIslandExpandedRegion(.center) {}
@@ -186,20 +186,20 @@ DynamicIslandExpandedRegion(.trailing) {}
 DynamicIslandExpandedRegion(.bottom) {}
 ```
 
-Разметка областей:
+Area markup:
 
-![Области Dynamic Island.](https://cdn.sparrowcode.io/tutorials/live-activities/live-activity-areas.png)
+![Dynamic Island areas.](https://cdn.sparrowcode.io/tutorials/live-activities/live-activity-areas.png)
 
-- **center** контент под камерой.
-- **leading** пространство от левого угла до камеры. Если использовать вертикальный стек, будет доступно пространство ниже.
-- **trailing** аналогично `leading`, но для правого края.
-- **bottom** контент под всеми другими областями.
+- **center** content below the camera.
+- **leading** space from the left corner to the camera. If you use the vertical stack, the space below will be available.
+- **trailing** similar to `leading` but for the right edge.
+- **bottom** content below all other areas.
 
-Если контент в левой и правой областях не помещается, можно объединить его с `Bottom`. Область будет адаптивная, на скриншоте максимальные размеры:
+If the content does not fit in the left and right areas, you can merge it with the `Bottom` area. The area will be adaptive, the screenshot shows the maximum size:
 
-![Если не хватает места, обласи Dynamic Island можно объединить.](https://cdn.sparrowcode.io/tutorials/live-activities/live-activity-leading-expanded.png)
+![If there is not enough space, the Dynamic Island areas can be combined.](https://cdn.sparrowcode.io/tutorials/live-activities/live-activity-leading-expanded.png)
 
-Чтобы разрешить области использовать пространство ниже, укажите `verticalPlacement`:
+To allow an area to use the space below, specify `verticalPlacement`:
 
 ```swift
 DynamicIslandExpandedRegion(.leading) {
@@ -208,13 +208,13 @@ DynamicIslandExpandedRegion(.leading) {
 }
 ```
 
-> Максимальная высота Live Activity на Dynamic Island 160 точек.
+> The maximum height of the Live Activity on Dynamic Island is 160 points.
 
-## Добавить новую Live Activity
+## Add a new Live Activity
 
-Live Activity можно создать только внутри приложения. Обновлять и закончить Live Activity можно и внутри приложения, и по пуш-уведомлению.
+Live Activity can only be created within an app. You can update and end a Live Activity both within the app and via push notification.
 
-Сначала проверьте доступность Live Activity - пользователь мог запретить их или в системе достигнут лимит. Чтобы проверить, используем код:
+First, check the availability of Live Activities - the user may have banned them or the system has reached the limit. To check, use the code:
 
 ```swift
 guard ActivityAuthorizationInfo().areActivitiesEnabled else {
@@ -223,15 +223,15 @@ guard ActivityAuthorizationInfo().areActivitiesEnabled else {
 }
 ```
 
-Можно отслеживать статус:
+You can track the status:
 
 ```swift
 for await enabled in ActivityAuthorizationInfo().activityEnablementUpdates {
-    // Здесь ваш код
+    // Here is your code
 }
 ```
 
-Чтобы создать новую Live Activity, создайте атрибуты и после вызовите `request`:
+To create a new Live Activity, create attributes and then call `request`:
 
 ```swift
 // 
@@ -247,11 +247,11 @@ do {
 }
 ```
 
-Обратите внимание, здесь разделились статические и обновляемся проперти на два объекта.
+Note, here the static and updatable properties are separated into two objects.
 
-## Список текущих Live Activity
+## List of current Live Activities
 
-Чтобы получить созданные Live Activity, нужно указать модель аттрибутов:
+To get the Live Activity created, you must specify an attribute model:
 
 ```swift
 for actviity in Activity<ActivityAttribute>.activities {
@@ -259,18 +259,18 @@ for actviity in Activity<ActivityAttribute>.activities {
 }
 ```
 
-## Обновить и завершить Live Activity
+## Update and end Live Activity
 
-Обновлять и завершать Live Activity можно только с динамическими параметрами - Content State.
+The Live Activity can only be updated and terminated with dynamic parameters - Content State.
 
-> Размер обновления Content State должен быть меньше 4KB.
+> The size of the Content State update must be less than 4KB.
 
-### Внутри приложения
+#### Inside the app
 
-Чтобы обновить Live Activity из приложения:
+To update Live Activity from within the app:
 
 ```swift
-// Новые данные
+// New data
 let contentState = ActivityAttribute.ContentState(...)
 
 Task {    
@@ -278,39 +278,39 @@ Task {
 }
 ```
 
-Чтобы завершить Live Activity, вызвать:
+To terminate a Live Activity, call:
 
 ```swift
 await activity?.end(dismissalPolicy: .immediate)
 ```
 
-Live Activity закроется сразу. Чтобы Live Activity осталось еще некоторое время на экране:
+The Live Activity will close immediately. To keep the Live Activity on the screen for a while longer:
 
 ```swift
 await activity?.end(using: attributes, dismissalPolicy: .default)
 ```
 
-Live Activity обновится финальными данными и будет на экране еще некоторое время. Система закроет активность, когда убедится что юзер увидел новые данные или максимум через 4 часа - что наступит раньше.
+The Live Activity will be updated with the final data and will be on the screen for some more time. The system will close the activity when the user sees the new data or at most 4 hours later, whichever comes first.
 
-У Live Activity нет таймлайна как для виджетов. Чтобы обновить или закрыть Live Activity когда приложение в фоне, нужно использовать [Background Tasks](https://developer.apple.com/documentation/backgroundtasks).
+Live Activity does not have a timeline like widgets. To update or close Live Activity when the application is in the background, you need to use [Background Tasks](https://developer.apple.com/documentation/backgroundtasks).
 
-> Background Tasks не гарантируют выполнение вовремя.
+> Background Tasks are not guaranteed to run on time.
 
-### Через Push-уведомления
+### Through Push Notifications
 
-При создании Live Activity получаем `pushToken`. Он используется, чтобы обновлять Live Activity через пуш-уведомления.
+When we create a Live Activity, we get a `pushToken`. It is used to update the Live Activity via push notifications.
 
-> Предварительно нужно зарегистрировать приложение для получения пушей.
+> You need to register the application to receive push notifications beforehand.
 
-Сформируем пуш для обновления Live Activity. Заголовки:
+Let's form a push to update a Live Activity. Headers:
 
 ```
 apns-topic: {Your App Bundle ID}.push-type.liveactivity
-apns-push-type: liveactivity
+apns-push-type: {liveactivity
 authorization: bearer {Auth Token}
 ```
 
-Тело:
+Body:
 
 ```
 "aps": {
@@ -328,11 +328,11 @@ authorization: bearer {Auth Token}
 }
 ```
 
-Словарь `content-state` должен совпадать с моделью атрибутов `ActivityAttribute.ContentState`. Мы можем обновлять только динамические проперти. Проперти не в Content State обновить не получится.
+The `content-state` dictionary must match the attribute model `ActivityAttribute.ContentState`. We can only update dynamic properties. Properties not in ContentState cannot be updated.
 
-## Отследить нажатие
+## Trace Press
 
-По нажатию на Live Activity хорошо открывать релеватный экран, для этого нужно реализовать Deep Link. Установите модификатор `widgetURL(_:)`. Можно задать разные ссылки для каждой области:
+Clicking on Live Activity is good to open the relay screen, for this you need to implement Deep Link. Set the modifier `widgetURL(_:)`. You can set a different link for each area:
 
 ```swift
 DynamicIslandExpandedRegion(.leading) {
@@ -341,4 +341,4 @@ DynamicIslandExpandedRegion(.leading) {
 }
 ```
 
-Развернутый вид Dynamic Island поддерживает [Link](https://developer.apple.com/documentation/SwiftUI/Link).
+The expanded view of Dynamic Island supports [Link](https://developer.apple.com/documentation/SwiftUI/Link).
