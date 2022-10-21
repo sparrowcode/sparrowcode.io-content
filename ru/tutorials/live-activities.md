@@ -146,11 +146,11 @@ struct LiveActivityWidget: Widget {
  
 Если запущена одна активность - то контент можно разместить слева и справа от динамического острова.
 
-![Compact Live Activity в Dynamic Island.](https://cdn.sparrowcode.io/tutorials/live-activities/type-compact.png)
+![Compact Live Activity в Dynamic Island.](https://cdn.sparrowcode.io/tutorials/live-activities/live-activity-type-compact.png)
 
 Если запущено несколько Live Activity, система выберет 2 из них. Одна будет показываться слева, прикреплена к острову, а другую справа - отделенной от острова в кружке.
 
-![Minimal Live Activity в Dynamic Island.](https://cdn.sparrowcode.io/tutorials/live-activities/type-minimal.png)
+![Minimal Live Activity в Dynamic Island.](https://cdn.sparrowcode.io/tutorials/live-activities/live-activity-type-minimal.png)
 
 Код для каждого варианта отображения:
 
@@ -171,7 +171,7 @@ DynamicIsland {
 
 Развернутое Live Activity показывается когда человек нажимает и удерживает компатный или минимальный вид. Когда Live Activity обновляется, развернутый вид появляется автоматически на пару секунд.
 
-![Expanded Live Activity в Dynamic Island.](https://cdn.sparrowcode.io/tutorials/live-activities/type-expanded.png)
+![Expanded Live Activity в Dynamic Island.](https://cdn.sparrowcode.io/tutorials/live-activities/live-activity-type-expanded.png)
 
 Код для развернутого вида. Каждое замыкание определяет область на Live Activity.
 
