@@ -61,7 +61,6 @@ struct ActivityAttribute: ActivityAttributes {
         var dynamicStringValue: String
         var dynamicIntValue: Int
         var dynamicBoolValue: Bool
-        
     }
     
     // Статические данные

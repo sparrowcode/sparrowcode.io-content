@@ -56,7 +56,7 @@
             "https://cdn.sparrowcode.io/tutorials/uiviewcontroller-lifecycle/hello.jpg",
             "https://cdn.sparrowcode.io/tutorials/uiviewcontroller-lifecycle/header.jpg"
         ],
-        "keywords" : ["UIViewController", "viewDidAppear", "viewDidLoad", "жизненный цикл uiviewcontroller"],
+        "keywords" : ["UIViewController", "viewDidAppear", "viewDidLoad", "жизненный цикл uiviewcontroller", "жизненный цикл вью контроллер", "viewcontroller", "вью контроллер", "жизненный цикл view controller swift", "uiviewcontroller lifecycle"],
         "updated_date" : "04.10.2022",
         "added_date" : "19.11.2021"
     },
@@ -102,22 +102,22 @@
         "categories" : ["swift"],
         "author" : "somenkovnikita",
         "editors" : ["ivanvorobei", "svyatoynick"],
-        "keywords" : ["async", "await", "actor"],
+        "keywords" : ["async", "await", "actor", "swift async await"],
         "updated_date": "10.07.2022",
         "added_date": "06.02.2022"
     },
     "access-control" : {
-        "title" : "Уровни доступа в Swift",
+        "title" : "Модификаторы доступа в Swift",
         "description" : "Уровни доступа делают код безопасным и разделенным, уменьшают случайные ошибки.",
         "categories" : ["swift", "foundation"],
         "author" : "liubowolkova",
         "editors" : ["ivanvorobei", "svyatoynick"],
-        "keywords" : ["public", "private", "internal", "fileprivate"],
+        "keywords" : ["модификаторы ", "уровни доступа swift", "public", "private", "internal", "fileprivate", "swift"],
         "updated_date": "13.09.2022",
         "added_date": "22.03.2022"
     },
     "localisation" : {
-        "title" : "Локализация приложений",
+        "title" : "Как локализовать приложение",
         "description" : "Большой гайд по локализации. Как перевести текст, фото, дату и валюты. Обзор инструментов и автоматизаций.",
         "categories" : ["development", "foundation"],
         "author" : "svyatoynick",
@@ -133,7 +133,7 @@
             "https://cdn.sparrowcode.io/tutorials/localisation/image-ready.jpg",
             "https://cdn.sparrowcode.io/tutorials/localisation/image-preview.jpg"
         ],
-        "updated_date": "10.10.2022",
+        "updated_date": "22.10.2022",
         "added_date": "10.07.2022"
     },
     "live-activities" : {
