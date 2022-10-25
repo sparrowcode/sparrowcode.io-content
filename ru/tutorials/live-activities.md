@@ -2,7 +2,7 @@ Live Activity объединяют пуш-уведомления в один и�
 
 > Live Activity доступны с iOS 14.1 и Xcode 14.1.
 
-Live Activity не виджет - нет таймлайнов и соответственно обновлений по времени. Основной способ обновления - пуши. Способы обновления разберем в секции [Как обновить и завершить Live Activity](https://beta.sparrowcode.io/ru/tutorials/live-activities).
+Live Activity не виджет - нет таймлайнов и соответственно обновлений по времени. Основной способ обновления - пуши. Способы обновления разберем в секции [Как обновить и завершить Live Activity](https://sparrowcode.io/ru/tutorials/live-activities).
 
 ![Compact и Expanded Live Activity.](https://cdn.sparrowcode.io/tutorials/live-activities/header.png)
 
@@ -233,7 +233,6 @@ for await enabled in ActivityAuthorizationInfo().activityEnablementUpdates {
 Чтобы создать новую Live Activity, создайте атрибуты и после вызовите `request`:
 
 ```swift
-// 
 let attributes = ActivityAttribute(...)
 let contentState = ActivityAttribute.ContentState(...)
 do {

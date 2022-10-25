@@ -2,7 +2,7 @@ Live Activity combines push notifications into one interactive banner. For examp
 
 > Live Activity is available with iOS 14.1 and Xcode 14.1.
 
-Live Activity is not a widget - there are no timelines and therefore no updates by time. The main way to update is by pushing. See [how to update and terminate Live Activity](https://beta.sparrowcode.io/ru/tutorials/live-activities) for the update methods.
+Live Activity is not a widget - there are no timelines and therefore no updates by time. The main way to update is by pushing. See [how to update and terminate Live Activity](https://sparrowcode.io/ru/tutorials/live-activities) for the update methods.
 
 ![Compact and Expanded Live Activity.](https://cdn.sparrowcode.io/tutorials/live-activities/header.png)
 
@@ -233,7 +233,6 @@ for await enabled in ActivityAuthorizationInfo().activityEnablementUpdates {
 To create a new Live Activity, create attributes and then call `request`:
 
 ```swift
-// 
 let attributes = ActivityAttribute(...)
 let contentState = ActivityAttribute.ContentState(...)
 do {
