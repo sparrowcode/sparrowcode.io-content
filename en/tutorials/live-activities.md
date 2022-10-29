@@ -1,6 +1,6 @@
 Live Activity combines push notifications into one interactive banner. For example, when a cab pulls up, you get a push that the driver is coming, the driver is nearby, and the driver is waiting. With the new tool, developers will be able to merge push notifications into Live Activity and update it.
 
-> Live Activity is available with iOS 14.1 and Xcode 14.1.
+> Live Activity is available with iOS 16.1 and Xcode 14.1.
 
 Live Activity is not a widget - there are no timelines and therefore no updates by time. The main way to update is by pushing. See [how to update and terminate Live Activity](https://sparrowcode.io/ru/tutorials/live-activities) for the update methods.
 
