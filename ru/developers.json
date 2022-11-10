@@ -194,6 +194,20 @@
       "https://github.com/ivanvorobei/SPPerspective",
       "https://github.com/ivanvorobei/SPPageController"
     ],
+    "projects" : [
+      {
+        "name" : "Код Воробья",
+        "description" : "Туториалы для iOS разработчиков.",
+        "url" : "https://sparrowcode.io",
+        "added_date": "03.11.2022"
+      },
+      {
+        "name" : "Телеграм-канал",
+        "description" : "Новости для iOS разработчиков.",
+        "url" : "https://t.me/sparrowcode",
+        "added_date": "03.11.2022"
+      }
+    ],
     "apps": [
       {
         "id": "1624477055",

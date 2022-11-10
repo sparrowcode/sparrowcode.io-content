@@ -117,9 +117,11 @@ func collectionView(_ collectionView: UICollectionView, itemsForAddingTo session
 
 ## Drop
 
+Драг - половина дела. Теперь научимся сбрасывать ячейку.
+
 ### Для `CollectionView`
 
-Драг - половина дела. Теперь научимся сбрасывать ячейку. Реализуем протокол `UICollectionViewDropDelegate`:
+Реализуем протокол `UICollectionViewDropDelegate`:
 
 ```swift
 extension CollectionController: UICollectionViewDropDelegate {

@@ -117,7 +117,7 @@
         "added_date": "22.03.2022"
     },
     "localisation" : {
-        "title" : "Как локализовать приложение",
+        "title" : "Как локализовать приложение с `NSLocalisedString`",
         "description" : "Большой гайд по локализации. Как перевести текст, фото, дату и валюты. Обзор инструментов и автоматизаций.",
         "categories" : ["development", "foundation"],
         "author" : "svyatoynick",
