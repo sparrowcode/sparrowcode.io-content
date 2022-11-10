@@ -5,6 +5,8 @@
 
 [Управление отступами у `UIButton`.](https://cdn.sparrowcode.io/tutorials/edge-insets-uibutton/edge-insets-uibutton-example-preview.mov)
 
+![Про `contentEdgeInsets` в Swift.](https://cdn.sparrowcode.io/tutorials/edge-insets-uibutton/preview.png)
+
 ## `contentEdgeInsets`
 
 Добавляет отступы вокруг заголовка и иконки. Если поставить отрицательные значения - отступ будет уменьшаться. Код:

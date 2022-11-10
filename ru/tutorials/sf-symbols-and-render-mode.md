@@ -1,5 +1,7 @@
 Следите за совместимостью символов - не все доступны для 14-ой и предыдущих iOS. Глянуть с какой версии доступен символ можно [в приложении](https://developer.apple.com/sf-symbols/). Примеры кода будут для `SwiftUI` и `UIKit`.
 
+![Про Render Modes в SF Symbols.](https://cdn.sparrowcode.io/tutorials/sf-symbols-and-render-mode/preview.png)
+
 Render Modes - это отрисовка иконки в цветовой схеме. Доступны монохром, иерархический, палетка и мульти-цвет.
 
 ![Render Modes в SFSymbols.](https://cdn.sparrowcode.io/tutorials/sf-symbols-and-render-mode/render-modes-preview.jpg)

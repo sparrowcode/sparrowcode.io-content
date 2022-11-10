@@ -1,3 +1,5 @@
+![Пародийный постер к фильму «Бойцовский клуб».](https://cdn.sparrowcode.io/tutorials/async-await/preview-fight-club.png)
+
 `async/await` — новый поход для работы с многопоточностью в Swift. Он упрощает написание сложных цепочек вызовов и делает код читаемым. Сначала разберёмся с теорией, а в конце туториала напишем инструмент для поиска приложений в App Store с использованием `async/await`.
 
 ![Схема работы `async/await`.](https://cdn.sparrowcode.io/tutorials/async-await/preview.png)
