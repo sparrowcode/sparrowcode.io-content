@@ -1,3 +1,5 @@
+![Сравнение кастового контроллера с `UISheetPresentationController`.](https://cdn.sparrowcode.io/tutorials/uisheetpresentationcontroller/preview.png)
+
 Когда я был молодым, то сделал [либу](https://github.com/ivanvorobei/SPStorkController) с походим поведением на снепшотах. В iOS 13 Apple представила обновленные модальные контроллеры, а с iOS 15 можно управлять их высотой:
 
 [Sheet-контроллер со стопорами посередине и сверху.](https://cdn.sparrowcode.io/tutorials/uisheetpresentationcontroller/header.mov)
