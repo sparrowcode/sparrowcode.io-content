@@ -251,11 +251,11 @@ do {
 
 ## Список активных Live Activity
 
-Чтобы получить уже созданные Live Activity, укажите модель аттрибутов:
+Чтобы получить уже созданные Live Activity, укажите модель атрибутов:
 
 ```swift
-for actviity in Activity<ActivityAttribute>.activities {
-    print("Activity details: \(actviity.contentState)")
+for activity in Activity<ActivityAttribute>.activities {
+    print("Activity details: \(activity.contentState)")
 }
 ```
 
@@ -290,7 +290,7 @@ Live Activity закроется сразу. А вот как сделать, ч
 await activity?.end(using: attributes, dismissalPolicy: .default)
 ```
 
-Live Activity обновится финальными данными и будет на экране ещё некоторое время. Система закроет активность через 4 часа или когда убедится, что юзер увидел новые данные. Зависит от того, что наступит раньше.
+Live Activity обновится финальными данными и будет на экране ещё некоторое время. Система закроет активность через 4 часа или когда убедится, что пользователь увидел новые данные. Зависит от того, что наступит раньше.
 
 У Live Activity нет таймлайна, как для виджетов. Для обновления или закрытия Live Activity — когда приложение в фоне — используйте [Background Tasks](https://developer.apple.com/documentation/backgroundtasks).
 
@@ -332,7 +332,7 @@ authorization: bearer {Auth Token}
 
 ## Отследить нажатие на Live Activity
 
-По нажатию на Live Activity хорошо открывать релеватный экран, для этого реализуйте Deep Link. Установите модификатор `widgetURL(_:)`. Можно задать разные ссылки для каждой области:
+По нажатию на Live Activity хорошо открывать релевантный экран, для этого реализуйте Deep Link. Установите модификатор `widgetURL(_:)`. Можно задать разные ссылки для каждой области:
 
 ```swift
 DynamicIslandExpandedRegion(.leading) {

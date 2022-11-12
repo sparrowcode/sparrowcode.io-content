@@ -252,8 +252,8 @@ Note, here the static and updatable properties are separated into two objects.
 To get the Live Activity created, you must specify an attribute model:
 
 ```swift
-for actviity in Activity<ActivityAttribute>.activities {
-    print("Activity details: \(actviity.contentState)")
+for activity in Activity<ActivityAttribute>.activities {
+    print("Activity details: \(activity.contentState)")
 }
 ```
 
