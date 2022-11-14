@@ -1,11 +1,11 @@
+![Про `contentEdgeInsets` в Swift.](https://cdn.sparrowcode.io/tutorials/edge-insets-uibutton/preview.png)
+
 Вы управляете тремя отступами - `imageEdgeInsets`, `titleEdgeInsets` и `contentEdgeInsets`. Перед погружением в процесс, гляньте [проект-пример](https://cdn.sparrowcode.io/tutorials/edge-insets-uibutton/example-project.zip). В проекте наглядно показывается как работают комбинации отступов. На видео я поставил заливку для элементов:
 - Красный -> фон
 - Жёлтая -> иконка
 - Синий -> заголовок
 
 [Управление отступами у `UIButton`.](https://cdn.sparrowcode.io/tutorials/edge-insets-uibutton/edge-insets-uibutton-example-preview.mov)
-
-![Про `contentEdgeInsets` в Swift.](https://cdn.sparrowcode.io/tutorials/edge-insets-uibutton/preview.png)
 
 ## `contentEdgeInsets`
 
