@@ -6,9 +6,7 @@
         "author" : "ivanvorobei",
         "editors" : ["svyatoynick"],
         "google_structured_images": [
-            "https://cdn.sparrowcode.io/tutorials/drag-and-drop/drag-delegate.jpg",
-            "https://cdn.sparrowcode.io/tutorials/drag-and-drop/drag-stack.jpg",
-            "https://cdn.sparrowcode.io/tutorials/drag-and-drop/drop-delegate.jpg"
+            "https://cdn.sparrowcode.io/tutorials/drag-and-drop/preview.jpg"
         ],
         "keywords" : ["UICollectionViewDragDelegate", "UICollectionViewDropDelegate", "UITableViewDragDelegate", "UITableViewDropDelegate", "UIGestureRecognizer", "UIDrag"],
         "updated_date" : "25.08.2022",
@@ -21,6 +19,7 @@
         "author" : "ivanvorobei",
         "editors" : ["svyatoynick"],
         "google_structured_images": [
+            "https://cdn.sparrowcode.io/tutorials/uisheetpresentationcontroller/preview.png",
             "https://cdn.sparrowcode.io/tutorials/uisheetpresentationcontroller/edge-attached.png",
             "https://cdn.sparrowcode.io/tutorials/uisheetpresentationcontroller/grabber.png",
             "https://cdn.sparrowcode.io/tutorials/uisheetpresentationcontroller/corner-radius.png"
@@ -36,7 +35,7 @@
         "author" : "ivanvorobei",
         "editors" : ["svyatoynick"],
         "google_structured_images" : [
-            "https://cdn.sparrowcode.io/tutorials/sf-symbols-and-render-mode/multicolor-render.jpg",
+            "https://cdn.sparrowcode.io/tutorials/sf-symbols-and-render-mode/preview.png",
             "https://cdn.sparrowcode.io/tutorials/sf-symbols-and-render-mode/render-modes-preview.jpg",
             "https://cdn.sparrowcode.io/tutorials/sf-symbols-and-render-mode/hierarchical-render.jpg",
             "https://cdn.sparrowcode.io/tutorials/sf-symbols-and-render-mode/palette-render.jpg",
@@ -75,6 +74,7 @@
         "categories" : ["uikit"],
         "author" : "ivanvorobei",
         "google_structured_images" : [
+            "https://cdn.sparrowcode.io/tutorials/edge-insets-uibutton/preview.png",
             "https://cdn.sparrowcode.io/tutorials/edge-insets-uibutton/content-edge-insets.png",
             "https://cdn.sparrowcode.io/tutorials/edge-insets-uibutton/depricated.png"
         ],
@@ -103,6 +103,13 @@
         "author" : "somenkovnikita",
         "editors" : ["ivanvorobei", "svyatoynick"],
         "keywords" : ["async", "await", "actor", "swift async await"],
+        "google_structured_images": [
+            "https://cdn.sparrowcode.io/tutorials/async-await/preview-fight-club.png",
+            "https://cdn.sparrowcode.io/tutorials/async-await/preview.png",
+            "https://cdn.sparrowcode.io/tutorials/async-await/set-image-scheme.png",
+            "https://cdn.sparrowcode.io/tutorials/async-await/load-image-scheme.png"
+            
+        ],
         "updated_date": "10.11.2022",
         "added_date": "06.02.2022"
     },
@@ -113,6 +120,15 @@
         "author" : "liubowolkova",
         "editors" : ["ivanvorobei", "svyatoynick"],
         "keywords" : ["модификаторы ", "уровни доступа swift", "public", "private", "internal", "fileprivate", "swift"],
+        "google_structured_images": [
+            "https://cdn.sparrowcode.io/tutorials/access-control/preview.png",
+            "https://cdn.sparrowcode.io/tutorials/access-control/internal.png",
+            "https://cdn.sparrowcode.io/tutorials/access-control/public.png",
+            "https://cdn.sparrowcode.io/tutorials/access-control/open.png",
+            "https://cdn.sparrowcode.io/tutorials/access-control/private.png",
+            "https://cdn.sparrowcode.io/tutorials/access-control/fileprivate.png"
+            
+        ],
         "updated_date": "13.09.2022",
         "added_date": "22.03.2022"
     },
@@ -124,12 +140,33 @@
         "editors" : ["ivanvorobei"],
         "keywords" : ["localisation", "nslocalisedstring", "strings", "infoplist", "локализация", "spm", "локализация для iOS", "локализация swift"],
         "google_structured_images": [
+            "https://cdn.sparrowcode.io/tutorials/localisation/preview-ru.jpg",
             "https://cdn.sparrowcode.io/tutorials/localisation/add-new-language.jpg",
+            "https://cdn.sparrowcode.io/tutorials/localisation/string-localisation-inspector.jpg",
+            "https://cdn.sparrowcode.io/tutorials/localisation/infoplist-permission-example.jpg",
             "https://cdn.sparrowcode.io/tutorials/localisation/export-menu.jpg",
+            "https://cdn.sparrowcode.io/tutorials/localisation/export-xcloc.jpg",
+            "https://cdn.sparrowcode.io/tutorials/localisation/export-xcode-translator.jpg",
             "https://cdn.sparrowcode.io/tutorials/localisation/export-import.jpg",
+            "https://cdn.sparrowcode.io/tutorials/localisation/export-xcloc-detail.jpg",
+            "https://cdn.sparrowcode.io/tutorials/localisation/export-poedit.jpg",
             "https://cdn.sparrowcode.io/tutorials/localisation/autogeneration-bartycrouch-file.jpg",
+            "https://cdn.sparrowcode.io/tutorials/localisation/autogeneration-bartycrouch-script.jpg",
             "https://cdn.sparrowcode.io/tutorials/localisation/pluralisation-new-stringsdict.jpg",
             "https://cdn.sparrowcode.io/tutorials/localisation/pluralisation-stringsdict-empty.jpg",
+            "https://cdn.sparrowcode.io/tutorials/localisation/pluralisation-string-headphones-prepare.jpg",
+            "https://cdn.sparrowcode.io/tutorials/localisation/pluralisation-string-headphones-ready.jpg",
+            "https://cdn.sparrowcode.io/tutorials/localisation/pluralisation-localize-button.jpg",
+            "https://cdn.sparrowcode.io/tutorials/localisation/pluralisation-localize-languages.jpg",
+            "https://cdn.sparrowcode.io/tutorials/localisation/pluralisation-sidebar-languages.jpg",
+            "https://cdn.sparrowcode.io/tutorials/localisation/pluralisation-string-headphones-translated.jpg",
+            "https://cdn.sparrowcode.io/tutorials/localisation/pluralisation-string-apples-ready.jpg",
+            "https://cdn.sparrowcode.io/tutorials/localisation/export-xcode-translator.jpg",
+            "https://cdn.sparrowcode.io/tutorials/localisation/pluralisation-string-apples-translated.jpg",
+            "https://cdn.sparrowcode.io/tutorials/localisation/package-configuration-structure.jpg",
+            "https://cdn.sparrowcode.io/tutorials/localisation/package-configuration-file.jpg",
+            "https://cdn.sparrowcode.io/tutorials/localisation/package-export.jpg",
+            "https://cdn.sparrowcode.io/tutorials/localisation/image-prepare.jpg",
             "https://cdn.sparrowcode.io/tutorials/localisation/image-ready.jpg",
             "https://cdn.sparrowcode.io/tutorials/localisation/image-preview.jpg"
         ],
@@ -144,6 +181,7 @@
         "editors" : [],
         "keywords" : ["Dynamic Island", "динамический остров", "SwiftUI", "Live Activity", "WidgetKit"],
         "google_structured_images": [
+            "https://cdn.sparrowcode.io/tutorials/live-activities/preview.png",
             "https://cdn.sparrowcode.io/tutorials/live-activities/header.png",
             "https://cdn.sparrowcode.io/tutorials/live-activities/add-widget-target.png",
             "https://cdn.sparrowcode.io/tutorials/live-activities/shared-file-between-targets.png",
