@@ -4,7 +4,7 @@
 
 ![Схема работы `async/await`.](https://cdn.sparrowcode.io/tutorials/async-await/preview.png)
 
-## Как устроено
+# Как устроено
 
 Код для скачивания изображения с `URLSession`:
 
@@ -158,7 +158,7 @@ func loadUserPage(id: String) async throws -> (UIImage, CertificateModel) {
 
 Функции `loadImage` и `loadCertificates` запускаются параллельно. Значение вернётся, когда оба запроса выполнятся. Если одна из функций вернёт ошибку, `loadUserPage` вернёт эту же ошибку.
 
-## Task
+# Task
 
 `Task` - базовый юнит асинхронной задачи, место вызова асинхронного кода. Асинхронные функции выполняются как часть `Task`. Это аналог потока. `Task` — структура:
 
@@ -372,7 +372,7 @@ func loadUserImages(for id: String) async throws -> [UIImage] {
 }
 ```
 
-## actor
+# actor
 
 `actor` - новый тип данных. Он нужен для синхронизации и предотвращает состояние гонки. Компилятор проверяет его на стадии компиляции:
 
@@ -490,7 +490,7 @@ Task(priority: .background) {
 
 Можно помечать функции и классы - тогда у методов по умолчанию будут атрибуты. `UIView`, `UIViewController` Apple пометила как `@MainActor`, поэтому вызовы на обновление интерфейса после работы сервиса работают корректно.
 
-## Практика
+# Практика
 
 Напишем инструмент для поиска приложений в App Store. Он будет показывать позицию сервиса для поиска приложений:
 
@@ -828,7 +828,7 @@ extension AppSearchViewController: UISearchControllerDelegate, UISearchBarDelega
 
 Нажимаем «Search» - отменяем предыдущий поиск, запускаем новый. В задаче `searchingTask` не забываем проверить, что поиск ещё актуален. Сложная концепция умещается в 15 строк кода.
 
-## Обратная совместимость
+# Обратная совместимость
 
 Работает iOS 13 из-за того, что фича требует нового рантайма.
 
@@ -913,7 +913,7 @@ func saveWorkoutToHealthKitAsync(runWorkout: RunWorkout) async throws {
 }
 ```
 
-## Полезные материалы
+# Полезные материалы
 
 [Скачать проект-пример](https://cdn.sparrowcode.io/tutorials/async-await/app-store-search.zip): Попрактикуйтесь, добавив новый экран детали страницы App Store, решите проблему с загрузкой скриншотов и правильной отменой, если пользователь быстро закрыл страницу.
 [Серия статей о async/await](https://www.andyibanez.com/posts/modern-concurrency-in-swift-introduction/): Множество примеров использования async/await. Например, раскрыта тема `@TaskLocal`, есть и другие полезные мелочи.

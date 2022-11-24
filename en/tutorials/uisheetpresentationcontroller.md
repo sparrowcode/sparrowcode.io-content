@@ -2,7 +2,7 @@ When I was young, I made [package](https://github.com/ivanvorobei/SPStorkControl
 
 [Sheet controller with detents in the middle and at the top.](https://cdn.sparrowcode.io/tutorials/uisheetpresentationcontroller/header.mov)
 
-## Quick Start 
+# Quick Start 
 
 To show the default sheet-controller, use the code:
 
@@ -16,7 +16,7 @@ present(controller, animated: true)
 
 This is a regular modal controller that has been added complex behavior. You can wrap the sheet-controller into a navigation controller, add a header and bar buttons. If the project supports previous versions of iOS, wrap the code with `sheetController` in `if #available(iOS 15.0, *) {}`.
 
-## Detents
+# Detents
 
 Detent - the height to which the controller aspires. Similar to situations with scroll paging or when the electron is not at its energy level.
 
@@ -34,7 +34,7 @@ sheetController.detents = [.medium(), .large()]
 
 If you specify only one detent, you cannot switch between them with a gesture.
 
-### Switching between detents by code
+## Switching between detents by code
 
 To go from one detent to another, use the code:
 
@@ -54,7 +54,7 @@ sheetController.animateChanges {
 
 The controller will switch to `.large()`-detent and will no longer allow the gesture to switch to `.medium()`.
 
-## Lock Dismiss
+# Lock Dismiss
 
 If you want to lock a controller in one detent without being able to close it, set `isModalInPresentation` to `true` for the parent. In the example, the parent is the navigation controller:
 
@@ -68,7 +68,7 @@ if let sheetController = nav.sheetPresentationController {
 
 [Sheet controller with a prohibition to close.](https://cdn.sparrowcode.io/tutorials/uisheetpresentationcontroller/prevent-dismiss.mov)
 
-## Content Scrolling
+# Content Scrolling
 
 If `.medium()`-detent is active and the controller content is scrolling, the modal controller will go to `.large()`-detent when scrolling up and the content will stay in place.
 
@@ -86,7 +86,7 @@ Scrolling up will now work for content scrolling.
 
 > To go to the big detent, pull the navigation bar.
 
-## Album orientation
+# Album orientation
 
 By default, the sheet-controller in landscape orientation looks like a normal controller. The point is that `.medium()`-detent is not available, and `.large()` is the default mode of the modal controller. But you can add edge indentation.
 
@@ -100,7 +100,7 @@ This is what it looks like:
 
 To make the controller take the prefered size, set `widthFollowsPreferredContentSizeWhenEdgeAttached` to `true`.
 
-## Dimmed background
+# Dimmed background
 
 If the background is dimmed, the buttons behind the modal controller will not be clickable. To allow interaction with the background, you must remove the dimming. Specify the largest detent that doesn't need to be dimmed. Here's the code:
 
@@ -112,13 +112,13 @@ sheetController.largestUndimmedDetentIdentifier = .medium
 
 It is specified that the `.medium' will not dim, but anything larger will. It is possible to remove the dimming for the largest detent as well.
 
-## Indicator
+# Indicator
 
 To add an indicator on top of the controller, set `.prefersGrabberVisible` to `true`. By default the indicator is hidden. The indicator has no effect on safe area and layout margins.
 
 ![Grabber indicator on the sheet-controller.](https://cdn.sparrowcode.io/tutorials/uisheetpresentationcontroller/grabber.png)
 
-## Corner Radius
+# Corner Radius
 
 You can control the edge rounding of the controller. Set a value for `.preferredCornerRadius`. The rounding changes not only for the presented controller, but also for the parent.
 

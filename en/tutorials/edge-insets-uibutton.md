@@ -5,7 +5,7 @@ You control three indents - `imageEdgeInsets`, `titleEdgeInsets` and `contentEdg
 
 [Indent control in `UIButton`.](https://cdn.sparrowcode.io/tutorials/edge-insets-uibutton/edge-insets-uibutton-example-preview.mov)
 
-## `contentEdgeInsets`
+# `contentEdgeInsets`
 
 Adds indents around the header and icon. If you put negative values, the indentation will be reduced. Code:
 
@@ -20,7 +20,7 @@ previewButton.contentEdgeInsets.bottom = 5
 
 The indentation around the content affects only the button size. The frame and the clickable area are enlarged accordingly.
 
-## `imageEdgeInsets` and `titleEdgeInsets`
+# `imageEdgeInsets` and `titleEdgeInsets`
 
 They are in the same section, because your task is to add indents on one side and reduce them on the other. Let's add an indent between the picture and the header `10pt`. The first idea is to add an indent through the property `imageEdgeInsets`:
 
@@ -38,7 +38,7 @@ This is the symmetry I wrote about above.
 > `contentEdgeInsets` changes the size of the button. 
 > The `imageEdgeInsets` and `titleEdgeInsets` do not. 
 
-## Icon to the right of the text
+# Icon to the right of the text
 
 Let's put the icon to the right of the header:
 
@@ -69,7 +69,7 @@ previewButton.imageEdgeInsets = UIEdgeInsets(
 )
 ```
 
-## Deprecated
+# Deprecated
 
 Note, from iOS 15 the indentations are marked as `deprecated`.
 

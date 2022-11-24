@@ -10,7 +10,7 @@ Live Activity is shown on devices with and without Dynamic Island. On a locked s
 
 [Sample project on GitHub](https://github.com/sparrowcode/live-activity-example): How to add a Live Activity, update and close. UI for Live Activity.
 
-## Adding Live Activity to the project
+# Adding Live Activity to the project
 
 Live Activity uses the ActivityKit framework. Live Activity lives in the widget's targeting:
 
@@ -45,7 +45,7 @@ In `Info.plist`, add the attribute `Supports Live Activities`:
 
 `StaticConfiguration` is used for widgets and complications. We will replace it with another one soon, but first we will define the data model.
 
-## Data model
+# Data model
 
 Live Activity is created in the application itself, and the model will be used in both the application and the widget. So it's a good idea to make one class and poke around between the targetets. Create a new file for the model, inherit from `ActivityAttributes`:
 
@@ -77,7 +77,7 @@ Share the file between the two targets by selecting the application's main targe
 
 ![The file will be available in the main and widget-targets.](https://cdn.sparrowcode.io/tutorials/live-activities/shared-file-between-targets.png)
 
-## UI
+# UI
 
 In the `LiveActivityWidget` object, change the configuration to `ActivityConfiguration`:
 
@@ -100,7 +100,7 @@ Two closures, the first for the UI on the locked screen, the second for the dyna
 
 > Live Activity ignores animation modifiers.
 
-### Lock Screen
+## Lock Screen
 
 This view is shown on the locked screen. All widget tools are available in Live Activity. Specify a property `context` to pass the data model:
 
@@ -139,13 +139,13 @@ struct LiveActivityWidget: Widget {
 }
 ```
 
-### Dynamic Island
+## Dynamic Island
 
 The dynamic island has 3 kinds: compact, minimal and expanded.
 
 > The corners of the dynamic island are rounded at 44 points. This corresponds to the rounding of the TrueDepth camera.
 
-#### Compact & Minimal
+### Compact & Minimal
 
 If one activity is running - then the content can be placed to the left and right of the dynamic island.
 
@@ -170,7 +170,7 @@ DynamicIsland {
 }
 ```
 
-#### Expanded
+### Expanded
 
 The expanded Live Activity is shown when a person clicks and holds the compact or minimal view. When Live Activity is updated, the expanded view appears automatically for a couple of seconds.
 
@@ -209,7 +209,7 @@ DynamicIslandExpandedRegion(.leading) {
 
 > The maximum height of the Live Activity on Dynamic Island is 160 points.
 
-## Add a new Live Activity
+# Add a new Live Activity
 
 Live Activity can only be created within an app. You can update and end a Live Activity both within the app and via push notification.
 
@@ -247,7 +247,7 @@ do {
 
 Note, here the static and updatable properties are separated into two objects.
 
-## List of current Live Activities
+# List of current Live Activities
 
 To get the Live Activity created, you must specify an attribute model:
 
@@ -257,13 +257,13 @@ for activity in Activity<ActivityAttribute>.activities {
 }
 ```
 
-## Update and end Live Activity
+# Update and end Live Activity
 
 The Live Activity can only be updated and terminated with dynamic parameters - Content State.
 
 > The size of the Content State update must be less than 4KB.
 
-#### Inside the app
+### Inside the app
 
 To update Live Activity from within the app:
 
@@ -294,7 +294,7 @@ Live Activity does not have a timeline like widgets. To update or close Live Act
 
 > Background Tasks are not guaranteed to run on time.
 
-#### Through Push Notifications
+### Through Push Notifications
 
 When we create a Live Activity, we get a `pushToken`. It is used to update the Live Activity via push notifications.
 
@@ -328,7 +328,7 @@ Body:
 
 The `content-state` dictionary must match the attribute model `ActivityAttribute.ContentState`. We can only update dynamic properties. Properties not in ContentState cannot be updated.
 
-## Trace Press
+# Trace Press
 
 Clicking on Live Activity is good to open the relay screen, for this you need to implement Deep Link. Set the modifier `widgetURL(_:)`. You can set a different link for each area:
 

@@ -4,7 +4,7 @@ Before diving into the code, let's understand how the life cycle of drag and dro
 
 ![A still from the movie «Fast & Furious Presents: Hobbs & Shaw».](https://cdn.sparrowcode.io/tutorials/drag-and-drop/preview.jpg)
 
-## Models
+# Models
 
 The drag is responsible for moving the object, and the drop is responsible for resetting the object and a new position. When a finger with a cell crawls across the screen, the delegate method is called. Very similar to `UIScrollViewDelegate` with `scrollViewDidScroll` method.
 
@@ -34,9 +34,9 @@ extension YourClass: NSItemProviderWriting {
 
 We're ready.
 
-## Drag
+# Drag
 
-### One cell
+## One cell
 
 Let's take a collection as an example. I advise you to use `UICollectionViewController`, it does more out of the box. But a simple collection view will do just as well.
 
@@ -97,7 +97,7 @@ Let's see what we get at this stage.
 
 The cell returns to its place because the drop is not yet ready, we implement it further.
 
-### Multiple Cells
+## Multiple Cells
 
 In the `UICollectionViewDragDelegate` protocol, we implemented the `itemsForBeginning` method, which returned a drag object. To add more objects to the current drag, implement the `itemsForAddingTo` method:
 
@@ -115,9 +115,9 @@ The cells are now stacked. The stack can be reset as individual cells.
 
 [Collecting cells in a stack during drag.](https://cdn.sparrowcode.io/tutorials/drag-and-drop/drag-stack.mov)
 
-## Drop
+# Drop
 
-### For `CollectionView`
+## For `CollectionView`
 
 Drag is half the battle. Now let's learn how to drop a cell. Let's implement the `UICollectionViewDropDelegate` protocol:
 
@@ -227,7 +227,7 @@ override func layoutAttributesForItem(at indexPath: IndexPath) -> UICollectionVi
 
 `.insertAtDestinationIndexPath' works poorly when pulling a cell from one collection to another. The application crashes when dragging outside the first section, this is related to the layout. Tables have no problem.
 
-### For `TableView`
+## For `TableView`
 
 For a table, there are similar protocols `UITableViewDragDelegate` and `UITableViewDropDelegate`. The methods are repeated with a disclaimer on the table:
 
@@ -252,7 +252,7 @@ That is, you can have a system cell reorder and drop in cells.
 
 [Moving and dropping a cell from a collection to a table.](https://cdn.sparrowcode.io/tutorials/drag-and-drop/table-drop.mov)
 
-## `DestinationIndexPath`
+# `DestinationIndexPath`
 
 The system parameter `DestinationIndexPath` does not always determine the position perfectly. For example, if you go beyond the edge of the collection content, the system will not offer to reset the cell as the last one.
 

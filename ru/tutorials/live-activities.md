@@ -12,7 +12,7 @@ Live Activity показываются на устройствах с Dynamic Is
 
 [Проект-пример на GitHub](https://github.com/sparrowcode/live-activity-example): Как добавить Live Activity, обновить и закрыть. UI для Live Activity.
 
-## Добавляем Live Activity в проект
+# Добавляем Live Activity в проект
 
 Live Activity используют фреймворк ActivityKit. Живут Live Activity в таргете виджета:
 
@@ -47,7 +47,7 @@ struct LiveActivityWidget: Widget {
 
 `StaticConfiguration` используется для виджетов и компликейшнов. Скоро мы заменим его на другой, но сначала определим модель данных.
 
-## Определяем модель данных
+# Определяем модель данных
 
 Live Activity создаётся в самом приложении, а модель будет использоваться и в приложении, и в виджете. Поэтому хорошо бы сделать один класс и пошарить его между таргетами. Создайте новый файл для модели. Для этого наследуемся от `ActivityAttributes`:
 
@@ -79,7 +79,7 @@ struct ActivityAttribute: ActivityAttributes {
 
 ![Файл будет доступен в главном и виджет-таргетах.](https://cdn.sparrowcode.io/tutorials/live-activities/shared-file-between-targets.png)
 
-## UI
+# UI
 
 В объекте `LiveActivityWidget` поменяйте конфигурацию на `ActivityConfiguration`:
 
@@ -102,7 +102,7 @@ struct LiveActivityWidget: Widget {
 
 > В Live Activity игнорируются модификаторы анимаций.
 
-### Lock Screen
+## Lock Screen
 
 Эта View показывается на заблокированном экране. Все инструменты для виджетов доступны в Live Activity. Укажите проперти `context`, чтобы передать модель данных:
 
@@ -141,13 +141,13 @@ struct LiveActivityWidget: Widget {
 }
 ```
 
-### Dynamic Island
+## Dynamic Island
 
 У динамического острова есть 3 вида: компактный, минимальный и развёрнутый.
 
 > Углы динамического острова закруглили в 44 точки. Это соответствует закруглению камеры TrueDepth.
 
-#### Compact & Minimal
+### Compact & Minimal
 
 Если запущена одна активность, то контент можно разместить слева и справа от динамического острова.
 
@@ -172,7 +172,7 @@ DynamicIsland {
 }
 ```
 
-#### Expanded
+### Expanded
 
 Развёрнутая Live Activity показывается, когда человек нажимает и удерживает компатный или минимальный вид. Когда Live Activity обновляется, развёрнутый вид появляется автоматически на пару секунд.
 
@@ -211,7 +211,7 @@ DynamicIslandExpandedRegion(.leading) {
 
 > Максимальная высота Live Activity на Dynamic Island 160 точек.
 
-## Как добавить новую Live Activity
+# Как добавить новую Live Activity
 
 Live Activity можно создать только внутри приложения. Обновить и закончить Live Activity можно и внутри приложения, и по пуш-уведомлению.
 
@@ -249,7 +249,7 @@ do {
 
 Обратите внимание - здесь разделились статические и динамические проперти на два объекта.
 
-## Список активных Live Activity
+# Список активных Live Activity
 
 Чтобы получить уже созданные Live Activity, укажите модель атрибутов:
 
@@ -259,13 +259,13 @@ for activity in Activity<ActivityAttribute>.activities {
 }
 ```
 
-## Обновить и завершить Live Activity
+# Обновить и завершить Live Activity
 
 Обновлять и завершать Live Activity можно только с динамическими параметрами — Content State.
 
 > Размер обновления Content State должен быть меньше 4KB.
 
-### Внутри приложения
+## Внутри приложения
 
 Как обновить Live Activity из приложения:
 
@@ -296,7 +296,7 @@ Live Activity обновится финальными данными и буде
 
 > Background Tasks не гарантируют своевременного выполнения.
 
-### Через push-уведомления
+## Через push-уведомления
 
 При создании Live Activity получаем `pushToken`. Он используется, чтобы обновлять Live Activity через пуш-уведомления.
 
@@ -330,7 +330,7 @@ authorization: bearer {Auth Token}
 
 Словарь `content-state` должен совпадать с моделью атрибутов `ActivityAttribute.ContentState`. Мы можем обновлять только динамические проперти. Проперти не в Content State обновить не получится.
 
-## Отследить нажатие на Live Activity
+# Отследить нажатие на Live Activity
 
 По нажатию на Live Activity хорошо открывать релевантный экран, для этого реализуйте Deep Link. Установите модификатор `widgetURL(_:)`. Можно задать разные ссылки для каждой области:
 

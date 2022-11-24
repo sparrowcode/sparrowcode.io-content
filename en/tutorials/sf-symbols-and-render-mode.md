@@ -6,7 +6,7 @@ Render Modes is to render an icon in a color scheme. Monochrome, Hierarchical, P
 
 The symbol may not support all renderings. If no rendering is available, the symbol will be rendered in monochrome. You can compare renders in the official [SF Symbols](https://developer.apple.com/sf-symbols/) application.
 
-## Monochrome Render
+# Monochrome Render
 
 The icon is filled with color. Control the color through `tintColor`.
 
@@ -23,7 +23,7 @@ Image(systemName: "doc")
 
 The method works not only for SF Symbols, but for any image.
 
-## Hierarchical Render
+# Hierarchical Render
 
 Draws the icon in one color, but creates depth with transparency for the elements of the symbol.
 
@@ -42,7 +42,7 @@ Image(systemName: "square.stack.3d.down.right.fill")
 
 Note that sometimes the hierarchical render looks the same as the `Monochrome Render`.
 
-## Palette Render
+# Palette Render
 
 Draws the icon in custom colors. Each symbol needs a specific number of colors.
 
@@ -66,7 +66,7 @@ To preserve the universal API, you can pass any number of colors. Here are the r
 - If you specify 2 colors, they will be applied accordingly.
 - If you specify 3 colors for a symbol with 2 segments, the third is ignored.
 
-## Multicolor Render
+# Multicolor Render
 
 Important elements will be painted in a fixed color, while the filler color can be customized. In the preview, the filler color is `.systemCyan`:
 
@@ -84,7 +84,7 @@ Image(systemName: "externaldrive.badge.plus")
 
 Images that do not have a multicolor version will automatically be displayed in `Monochrome Render`.
 
-## Symbol Variant
+# Symbol Variant
 
 Some symbols have shape support, for example the bell `bell` can be inscribed in a square or a circle. In `UIKit` you have to call them by name - for example `bell.square`, but in SwiftUI there is a modifier `.symbolVariant()`:
 
@@ -104,7 +104,7 @@ Image(systemName: "bell")
 
 Note, in the last example you can combine character variants.
 
-## Adaptation
+# Adaptation
 
 SwiftUI knows how to display characters according to context. For iOS, Apple uses filled icons, but in macOS, icons without a fill - just lines. If you use SF Symbols for the Side Bar, you don't need to specify this specifically - the symbol adapts.
 

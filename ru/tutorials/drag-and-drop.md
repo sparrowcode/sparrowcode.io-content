@@ -4,7 +4,7 @@
 
 ![Кадр из фильма «Форсаж: Хоббс и Шоу».](https://cdn.sparrowcode.io/tutorials/drag-and-drop/preview.jpg)
 
-## Модели
+# Модели
 
 Драг отвечает за перемещение объекта, а дроп — за сброс объекта и новое положение. Когда палец с ячейкой ползёт по экрану, вызывается метод делегата. Очень похоже на `UIScrollViewDelegate` с методом `scrollViewDidScroll`.
 
@@ -34,9 +34,9 @@ extension YourClass: NSItemProviderWriting {
 
 Мы готовы. Потянули!
 
-## Drag
+# Drag
 
-### Одна ячейка
+## Одна ячейка
 
 Разберем на примере коллекции. Советую использовать `UICollectionViewController`, из коробки он умеет больше. Но и простая collection-вью подойдёт.
 
@@ -97,7 +97,7 @@ extension CollectionController: UICollectionViewDragDelegate {
 
 Ячейка возвращается на место потому что дроп еще не готов, его реализуем дальше.
 
-### Несколько ячеек
+## Несколько ячеек
 
 В протоколе `UICollectionViewDragDelegate` мы реализовывали метод `itemsForBeginning`, который возвращал объект драга. Чтобы к текущему драгу добавить ещё объекты, реализуйте метод `itemsForAddingTo`:
 
@@ -115,11 +115,11 @@ func collectionView(_ collectionView: UICollectionView, itemsForAddingTo session
 
 [Сбор ячеек в стопку во время драга.](https://cdn.sparrowcode.io/tutorials/drag-and-drop/drag-stack.mov)
 
-## Drop
+# Drop
 
 Драг - половина дела. Теперь научимся сбрасывать ячейку.
 
-### Для `CollectionView`
+## Для `CollectionView`
 
 Реализуем протокол `UICollectionViewDropDelegate`:
 
@@ -229,7 +229,7 @@ override func layoutAttributesForItem(at indexPath: IndexPath) -> UICollectionVi
 
 `.insertAtDestinationIndexPath` работает плохо, если тянуть ячейку из одной коллекции в другую. Приложение крашнется при драге за пределы первой секции, это связано с лейаутом. У таблиц проблем нет.
 
-### Для `TableView`
+## Для `TableView`
 
 Для таблицы есть аналогичные протоколы `UITableViewDragDelegate` и `UITableViewDropDelegate`. Методы повторяются с оговоркой на таблицу:
 
@@ -254,7 +254,7 @@ tableView.isEditing = true
 
 [Перемещение и дроп ячейки из коллекции в таблицу.](https://cdn.sparrowcode.io/tutorials/drag-and-drop/table-drop.mov)
 
-## `DestinationIndexPath`
+# `DestinationIndexPath`
 
 Системный параметр `DestinationIndexPath` не всегда идеально определяет положение. Например, если вы выйдете за края контента коллекции, то система не предложит сбросить ячейку как последнюю.
 

@@ -6,7 +6,7 @@
 
 Будьте внимательны, используйте значения от вашего приложения.
 
-## Очистить UserDefaults
+# Очистить UserDefaults
 
 Чтобы удалить дефолтный `UserDefaults`, откройте терминал и введите команду:
 
@@ -28,7 +28,7 @@ UserDefaults(suiteName: "Custom")
 defaults delete Custom
 ```
 
-## AppGroup
+# AppGroup
 
 Если используете `AppGroup`, удалите эти папки:
 
@@ -43,6 +43,6 @@ defaults delete Custom
 /Users/ivanvorobei/Library/Containers/io.ivanvorobei.apps.debts
 ```
 
-## База данных Realm
+# База данных Realm
 
 Файлы базы данных `Realm` хранятся как обычные файлы. Они находятся либо в AppGroup, либо в дефолтной папке. Если выполните пункты выше, база данных удалится.

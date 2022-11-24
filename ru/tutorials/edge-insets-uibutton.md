@@ -7,7 +7,7 @@
 
 [Управление отступами у `UIButton`.](https://cdn.sparrowcode.io/tutorials/edge-insets-uibutton/edge-insets-uibutton-example-preview.mov)
 
-## `contentEdgeInsets`
+# `contentEdgeInsets`
 
 Добавляет отступы вокруг заголовка и иконки. Если поставить отрицательные значения - отступ будет уменьшаться. Код:
 
@@ -22,7 +22,7 @@ previewButton.contentEdgeInsets.bottom = 5
 
 Отступы вокруг контента влияют только на размер кнопки. Фрейм и кликабельная область увеличиваются соответственно.
 
-## `imageEdgeInsets` и `titleEdgeInsets`
+# `imageEdgeInsets` и `titleEdgeInsets`
 
 Они в одной секции, потому что ваша задача добавить отступы с одной стороны и уменьшить их с другой. Добавим отступ между картинкой и заголовком `10pt`. Первая идея - добавить отступ через проперти `imageEdgeInsets`:
 
@@ -40,7 +40,7 @@ previewButton.titleEdgeInsets.left = 10
 > `contentEdgeInsets` меняет размер кнопки. 
 > `imageEdgeInsets` и `titleEdgeInsets` не меняют размер кнопки. 
 
-## Иконка справа от текста
+# Иконка справа от текста
 
 Давайте поставим иконку справа от заголовка:
 
@@ -71,7 +71,7 @@ previewButton.imageEdgeInsets = UIEdgeInsets(
 )
 ```
 
-## Deprecated
+# Deprecated
 
 Обратите внимание, с iOS 15 отступы помечены как `depriсated`.
 

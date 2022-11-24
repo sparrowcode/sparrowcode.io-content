@@ -6,7 +6,7 @@ To reset a macOS Catalyst application, you need to know these values:
 
 Be careful, use the values from your application.
 
-## Clear UserDefaults
+# Clear UserDefaults
 
 To remove the default `UserDefaults`, open a terminal and type the command:
 
@@ -28,7 +28,7 @@ UserDefaults(suiteName: "Custom")
 defaults delete Custom
 ```
 
-## AppGroup
+# AppGroup
 
 If you use an `AppGroup`, delete these folders:
 
@@ -43,6 +43,6 @@ If stored in the default path, delete that folder:
 /Users/ivanvorobei/Library/Containers/io.ivanvorobei.apps.debts
 ```
 
-## Realm database
+# Realm database
 
 The `Realm` database files are stored as normal files. They are either in the AppGroup or in the default folder. If you follow the steps above, the database is deleted.
