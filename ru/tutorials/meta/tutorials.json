@@ -6,7 +6,10 @@
         "author" : "ivanvorobei",
         "editors" : ["svyatoynick"],
         "google_structured_images": [
-            "https://cdn.sparrowcode.io/tutorials/drag-and-drop/preview.jpg"
+            "https://cdn.sparrowcode.io/tutorials/drag-and-drop/preview.jpg",
+            "https://cdn.sparrowcode.io/tutorials/drag-and-drop/drag-delegate.jpg",
+            "https://cdn.sparrowcode.io/tutorials/drag-and-drop/drag-stack.jpg",
+            "https://cdn.sparrowcode.io/tutorials/drag-and-drop/drop-delegate.jpg"
         ],
         "keywords" : ["UICollectionViewDragDelegate", "UICollectionViewDropDelegate", "UITableViewDragDelegate", "UITableViewDropDelegate", "UIGestureRecognizer", "UIDrag"],
         "updated_date" : "25.08.2022",
@@ -140,33 +143,12 @@
         "editors" : ["ivanvorobei"],
         "keywords" : ["localisation", "nslocalisedstring", "strings", "infoplist", "локализация", "spm", "локализация для iOS", "локализация swift"],
         "google_structured_images": [
-            "https://cdn.sparrowcode.io/tutorials/localisation/preview-ru.jpg",
             "https://cdn.sparrowcode.io/tutorials/localisation/add-new-language.jpg",
-            "https://cdn.sparrowcode.io/tutorials/localisation/string-localisation-inspector.jpg",
-            "https://cdn.sparrowcode.io/tutorials/localisation/infoplist-permission-example.jpg",
             "https://cdn.sparrowcode.io/tutorials/localisation/export-menu.jpg",
-            "https://cdn.sparrowcode.io/tutorials/localisation/export-xcloc.jpg",
-            "https://cdn.sparrowcode.io/tutorials/localisation/export-xcode-translator.jpg",
             "https://cdn.sparrowcode.io/tutorials/localisation/export-import.jpg",
-            "https://cdn.sparrowcode.io/tutorials/localisation/export-xcloc-detail.jpg",
-            "https://cdn.sparrowcode.io/tutorials/localisation/export-poedit.jpg",
             "https://cdn.sparrowcode.io/tutorials/localisation/autogeneration-bartycrouch-file.jpg",
-            "https://cdn.sparrowcode.io/tutorials/localisation/autogeneration-bartycrouch-script.jpg",
             "https://cdn.sparrowcode.io/tutorials/localisation/pluralisation-new-stringsdict.jpg",
             "https://cdn.sparrowcode.io/tutorials/localisation/pluralisation-stringsdict-empty.jpg",
-            "https://cdn.sparrowcode.io/tutorials/localisation/pluralisation-string-headphones-prepare.jpg",
-            "https://cdn.sparrowcode.io/tutorials/localisation/pluralisation-string-headphones-ready.jpg",
-            "https://cdn.sparrowcode.io/tutorials/localisation/pluralisation-localize-button.jpg",
-            "https://cdn.sparrowcode.io/tutorials/localisation/pluralisation-localize-languages.jpg",
-            "https://cdn.sparrowcode.io/tutorials/localisation/pluralisation-sidebar-languages.jpg",
-            "https://cdn.sparrowcode.io/tutorials/localisation/pluralisation-string-headphones-translated.jpg",
-            "https://cdn.sparrowcode.io/tutorials/localisation/pluralisation-string-apples-ready.jpg",
-            "https://cdn.sparrowcode.io/tutorials/localisation/export-xcode-translator.jpg",
-            "https://cdn.sparrowcode.io/tutorials/localisation/pluralisation-string-apples-translated.jpg",
-            "https://cdn.sparrowcode.io/tutorials/localisation/package-configuration-structure.jpg",
-            "https://cdn.sparrowcode.io/tutorials/localisation/package-configuration-file.jpg",
-            "https://cdn.sparrowcode.io/tutorials/localisation/package-export.jpg",
-            "https://cdn.sparrowcode.io/tutorials/localisation/image-prepare.jpg",
             "https://cdn.sparrowcode.io/tutorials/localisation/image-ready.jpg",
             "https://cdn.sparrowcode.io/tutorials/localisation/image-preview.jpg"
         ],
@@ -187,9 +169,7 @@
             "https://cdn.sparrowcode.io/tutorials/live-activities/shared-file-between-targets.png",
             "https://cdn.sparrowcode.io/tutorials/live-activities/live-activity-type-compact.png",
             "https://cdn.sparrowcode.io/tutorials/live-activities/live-activity-type-minimal.png",
-            "https://cdn.sparrowcode.io/tutorials/live-activities/live-activity-type-expanded.png",
-            "https://cdn.sparrowcode.io/tutorials/live-activities/live-activity-areas.png",
-            "https://cdn.sparrowcode.io/tutorials/live-activities/live-activity-leading-expanded.png"
+            "https://cdn.sparrowcode.io/tutorials/live-activities/live-activity-type-expanded.png"
         ],
         "updated_date": "12.11.2022",
         "added_date": "21.10.2022"
