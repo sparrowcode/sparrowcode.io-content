@@ -6,7 +6,7 @@ The controller needs a reason to create the `view` object. The lifecycle concept
 
 ![About lifecycle of `UIViewController`](https://cdn.sparrowcode.io/tutorials/uiviewcontroller-lifecycle/hello.jpg)
 
-## Initializing the UIViewController
+# Initializing the UIViewController
 
 Consider the `UIViewController`. Two initializers are available:
 
@@ -24,7 +24,7 @@ There is also an initializer without parameters `init()`, but this is a wrapper 
 
 At this point, the controller initializes the property and fills the initializer body. View is not loaded, outlets are not active. Only file name is saved in initializer with nib, but file itself is not loaded.
 
-## Loading View
+# Loading View
 
 When a developer presents a controller, it is a reason for the system to load a view. The controller has lifecycle methods with which we monitor the process and add our logic.
 
@@ -69,7 +69,7 @@ If the modal controller is closed, the view is unloaded from memory, but the con
 
 Nothing will break in your project, `viewDidLoad()` is rarely called multiple times. Separate the data and view setup in the next project.
 
-## Show and Hide View
+# Show and Hide View
 
 The appearance of the controller starts with the `viewWillAppear` method:
 
@@ -93,7 +93,7 @@ There are methods that report that the view disappears from the screen. Here's a
 
 Note the pair of antagonists `viewWillDisappear()` and `viewDidDisappear()`. They are called when the view is removed from the view hierarchy. If you show another controller on top, the methods are not called.
 
-## Layout
+# Layout
 
 Layout methods are tied to the view lifecycle. Three methods are available:
 
@@ -119,7 +119,7 @@ override func viewWillTransition(to size: CGSize, with coordinator: UIViewContro
 
 The `viewWillLayoutSubviews()` and `viewDidLayoutSubviews()` methods are called after it.
 
-## Memory is out
+# Memory is out
 
 If you don't clear the objects that cause it to happen, iOS will forcibly crash the app. This method is a warning, you have a chance to free up some memory.
 
