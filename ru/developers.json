@@ -264,5 +264,16 @@
         "added_date": "09.10.2022"
       }
     ]
+  },
+  {
+    "developer_name": "Andrii Zozulych",
+    "github_username": "andreyZozulych",
+    "apps": [
+      {
+        "id": "1638726940",
+        "name": "Fitbody: HIIT Workout Fitness",
+        "added_date": "27.11.2022"
+      }
+    ]
   }
 ]
