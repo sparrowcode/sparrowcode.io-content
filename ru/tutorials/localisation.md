@@ -428,84 +428,17 @@ NSLocalizedString("first key", bundle: .module, comment: "")
 
 # Локализация специальных данных
 
-Она пригодится, если захотите локализовать валюту в правильном формате. Например, сумму `3 000,00 ₽`, дату `24 апр. 2022 г.` или число `123456`.
+Она пригодится, если захотите локализовать данные в правильном формате в зависимости от выбранного языка. Например, сумму `3 000,00 ₽`, дату `24 апр. 2022 г.` или процент `54 %`.
 
-## Идентификаторы языка
+![Пример локализации процента на разные языки с помощью форматтера.](https://cdn.sparrowcode.io/tutorials/localisation/formatters-preview.jpg)
+
+Подробнее в нашей статье по форматтерам. 
+
+# Идентификаторы языка
 
 Чтобы получить идентификатор локали, вызовите `Locale.current.identifier`. Вернётся значение `языкприложения_ЯЗЫКРЕГИОНА`, например, `en_US`. Полный список таких идентификаторов найдёте [по ссылке](https://gist.github.com/jacobbubu/1836273)
 
 > Apple используют ISO стандартизацию, поэтому если на устройстве язык, который не соответствует региону, вернутся разные значения. Например, для `en_RU` вместо `₽` вернётся `RUB`.
-
-## Валюта
-
-Создадим объект `NumberFormatter`:
-
-```swift
-let currencyFormatter = NumberFormatter()
-currencyFormatter.numberStyle = .currency
-```
-
-Укажем локаль:
-
-```swift
-currencyFormatter.locale = Locale.current
-```
-
-Получим локализованное значение для 3000:
-
-```swift
-print(currencyFormatter.string(from: 3000)!)
-```
-
-В консоли будет `3 000,00 ₽`.
-
-## Дата
-
-Получаем текущую дату:
-
-```swift
-let currentDate = Date() 
-```
-
-Создаём и настраиваем объект класса `DateFormatter`:
-
-```swift
-let dateFormatter = DateFormatter()
-// Задаём стиль, например `.medium`
-dateFormatter.dateStyle = DateFormatter.Style.medium
-dateFormatter.timeStyle = DateFormatter.Style.medium 
-
-// Указываем локаль
-dateFormatter.locale = Locale.current
-```
-
-Выводим локализованную дату:
-
-```swift
-print(dateFormatter.string(from: currentDate))
-```
-
-В консоли будет `24 апр. 2022 г., 02:05:34`.
-
-## Числа
-
-Создаём и настраиваем объект класса `NumberFormatter`:
-
-```swift
-let numberFormatter = NumberFormatter()
-formatter.numberStyle = .decimal
-
-// Указываем локаль
-numberFormatter.locale = Locale.current
-```
-
-Выводим локализованное число:
-
-```swift
-print(numberFormatter.locale.string(from: 123456))
-```
-
-Получаем `123 456` в консоли.
 
 # Локализация изображений
 
