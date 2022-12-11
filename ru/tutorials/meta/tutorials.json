@@ -173,5 +173,17 @@
         ],
         "updated_date": "12.11.2022",
         "added_date": "21.10.2022"
+    },
+    "formatters" : {
+        "title" : "Как форматировать значения с Formatters",
+        "description" : "Как форматировать значения в Swift при помощи форматтеров. Валюта, дата, фото и другое.",
+        "categories" : ["development", "foundation"],
+        "author" : "svyatoynick",
+        "keywords" : ["formatters", "formatters swift", "форматтеры"],
+        "google_structured_images": [
+            "https://cdn.sparrowcode.io/tutorials/formatters/formatters-preview.jpg"
+        ],
+        "updated_date": "10.11.2022",
+        "added_date": "10.11.2022"
     }
 }
