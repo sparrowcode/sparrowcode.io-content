@@ -432,7 +432,7 @@ NSLocalizedString("first key", bundle: .module, comment: "")
 
 ![Пример локализации процента на разные языки с помощью форматтера.](https://cdn.sparrowcode.io/tutorials/localisation/formatters-preview.jpg)
 
-Подробнее в нашей статье по форматтерам. 
+В английском языке процент пишется слитно с числом `61%`, а в немецком - раздельно `61 %`. Что бы значения автоматически изменялись правильно - существуют форматтеры, подробнее о них в нашей [статье по форматтерам](https://sparrowcode.io/ru/tutorials/formatters).
 
 # Идентификаторы языка
 
@@ -456,15 +456,88 @@ NSLocalizedString("first key", bundle: .module, comment: "")
 
 # Языки справа налево
 
-// to add показать что такое язык и что он читается справа на лево. какая гурппа языков и где используется.
+Чаще всего приложения используют `Left-To-Right` ориентацию, сокращенно `LTR`. Она используется в английском, русском, немецком и других языках, где текст пишется слева-направо. 
+
+![Пример `LTR` интерфейса.](https://cdn.sparrowcode.io/tutorials/localisation/left-to-right-preview.jpg)
+
+Для языков, в которых текст пишется справа-налево, например в иврите, персидском или арабском, существует `RTL`.
+
+![Пример `RTL` интерфейса.](https://cdn.sparrowcode.io/tutorials/localisation/right-to-left-preview.jpg)
 
 ## Как определить
 
-// to add как опрелдлеить в интерфейсе и в локализации. 
+Можно определить направление интерфейса по всему приложению:
+
+```swift
+if UIApplication.shared.userInterfaceLayoutDirection == .leftToRight {
+    // Код для LTR направления
+} else {
+    // Код для RTL направления
+}
+```
+
+Или у конкретной вьюхи при помощи метода `effectiveUserInterfaceLayoutDirection`:
+
+```swift
+if view.effectiveUserInterfaceLayoutDirection == .leftToRight {
+    // Код для LTR направления
+} else {
+    // Код для RTL направления
+}
+``` 
 
 ## Лейаут
 
-// to add как лейаутить на фреймах и констрейнтах. про концепцию лидинг и трейлинг у констрейнтов обязательно + примеры
+В `RTL` все лейблы и вьюхи привязываются к правому краю. Изображения не переворачиваются, если это картинка (например, фото кота). Если используется символ или иллюстрация, их надо отзеркалить с помощью метода `imageFlippedForRightToLeftLayoutDirection()`.
+
+> Если в символе присутсвуют элементы картинки, например солнце и горы - его не надо отзеркаливать.
+
+Для лейблов выставляется `textAlignment = .natural`, в `LTR` это `.left`, в `RTL` - `.right`. Подробнее о поведении интерфейса справа-налево [на сайте](https://developer.apple.com/design/human-interface-guidelines/foundations/right-to-left/).
+
+### Фреймы
+
+Создаем квадрат размером 100 на 100. Задаем `frame` с точкой `x`, которая будем менять свое положение в зависимости от `effectiveUserInterfaceLayoutDirection`:
+
+```swift
+let x: CGFloat = 30
+let size: CGFloat = 100
+        
+squareView.frame = .init(
+    x: squareView.effectiveUserInterfaceLayoutDirection == .leftToRight ? x : view.frame.width - x - size,
+    y: 200,
+    width: size,
+    height: size
+)
+```
+
+Теперь, если `effectiveUserInterfaceLayoutDirection = .leftToRight` - квадрат будет стоять в 30 пикселях по иксу от левого края. Если `.rightToLeft` - в 30 пикселях от правого:
+
+![Поведение отлейаученного на фреймах квадрата в `LTR` и `RTL`](https://cdn.sparrowcode.io/tutorials/localisation/ltr-rtl-layout-preview.jpg)
+
+### Констрейнты
+
+У констрейнтов существует 4 точки отсчета: верхняя `topAnchor`, левая `leftAnchor`, нижняя `bottomAnchor` и правая `rightAnchor`. По ним вью встает в указанных краях вне зависимости от направления интерфейса.
+
+Если использовать `leftAnchor` и `rightAnchor` в `LTR` направлении - все будет нормально, но в `RTL` вью останется на левом / правом краю экрана, вместо противоположного.
+
+Для `RTL` нам понадобится левая точка отсчета `leadingAnchor` и правая `trailingAnchor`. Они автоматически зеркалятся при изменении направления интерфейса.
+
+Создаем квадрат размером 100 на 100. Указываем `leadingAnchor` и активируем констрейнты:
+
+```swift
+let constraints = [
+    squareView.topAnchor.constraint(equalTo: view.topAnchor, constant: 200),
+    squareView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 30),
+    squareView.widthAnchor.constraint(equalToConstant: 100),
+    squareView.heightAnchor.constraint(equalToConstant: 100)
+]
+
+NSLayoutConstraint.activate(constraints)
+```
+
+Теперь в `LTR` направлении квадрат будет стоять в 30 пикселях от левого края, а в `RTL` - от правого. `trailingAnchor` работает так же, только для правого края экрана.
+
+![Поведение отлейаученного на констрейнтах квадрата в `LTR` и `RTL`](https://cdn.sparrowcode.io/tutorials/localisation/ltr-rtl-layout-preview.jpg)
 
 # Рекомендации
 
