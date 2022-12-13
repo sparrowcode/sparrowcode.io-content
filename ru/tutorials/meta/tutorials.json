@@ -137,11 +137,11 @@
     },
     "localisation" : {
         "title" : "Как локализовать приложение с `NSLocalisedString`",
-        "description" : "Большой гайд по локализации. Как перевести текст, фото, дату и валюты. Обзор инструментов и автоматизаций.",
+        "description" : "Большой гайд по локализации. Как перевести текст, фото и значения. Обзор инструментов и автоматизаций.",
         "categories" : ["development", "foundation"],
         "author" : "svyatoynick",
         "editors" : ["ivanvorobei"],
-        "keywords" : ["localisation", "nslocalisedstring", "strings", "infoplist", "локализация", "spm", "локализация для iOS", "локализация swift"],
+        "keywords" : ["localisation", "nslocalisedstring", "strings", "infoplist", "локализация", "spm", "локализация для iOS", "локализация swift", "rtl"],
         "google_structured_images": [
             "https://cdn.sparrowcode.io/tutorials/localisation/add-new-language.jpg",
             "https://cdn.sparrowcode.io/tutorials/localisation/export-menu.jpg",
@@ -150,9 +150,13 @@
             "https://cdn.sparrowcode.io/tutorials/localisation/pluralisation-new-stringsdict.jpg",
             "https://cdn.sparrowcode.io/tutorials/localisation/pluralisation-stringsdict-empty.jpg",
             "https://cdn.sparrowcode.io/tutorials/localisation/image-ready.jpg",
-            "https://cdn.sparrowcode.io/tutorials/localisation/image-preview.jpg"
+            "https://cdn.sparrowcode.io/tutorials/localisation/image-preview.jpg",
+            "https://cdn.sparrowcode.io/tutorials/localisation/formatters-preview.jpg",
+            "https://cdn.sparrowcode.io/tutorials/localisation/left-to-right-preview.jpg",
+            "https://cdn.sparrowcode.io/tutorials/localisation/right-to-left-preview.jpg",
+            "https://cdn.sparrowcode.io/tutorials/localisation/ltr-rtl-layout-preview.jpg"
         ],
-        "updated_date": "10.11.2022",
+        "updated_date": "12.11.2022",
         "added_date": "10.07.2022"
     },
     "live-activities" : {
