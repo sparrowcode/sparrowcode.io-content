@@ -152,11 +152,10 @@
             "https://cdn.sparrowcode.io/tutorials/localisation/image-ready.jpg",
             "https://cdn.sparrowcode.io/tutorials/localisation/image-preview.jpg",
             "https://cdn.sparrowcode.io/tutorials/localisation/formatters-preview.jpg",
-            "https://cdn.sparrowcode.io/tutorials/localisation/left-to-right-preview.jpg",
-            "https://cdn.sparrowcode.io/tutorials/localisation/right-to-left-preview.jpg",
+            "https://cdn.sparrowcode.io/tutorials/localisation/ltr-rtl-preview.jpg",
             "https://cdn.sparrowcode.io/tutorials/localisation/ltr-rtl-layout-preview.jpg"
         ],
-        "updated_date": "12.11.2022",
+        "updated_date": "15.11.2022",
         "added_date": "10.07.2022"
     },
     "live-activities" : {
