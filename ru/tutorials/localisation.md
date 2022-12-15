@@ -40,7 +40,7 @@ let localisedString = NSLocalizedString(
 
 Структура папок на диске будет отличаться. Xcode создаст папку с идентификатором локали `en.lproj` и файлы локализации будет помещать в неё. Так в папке может быть несколько файлов одной локализации.
 
-// to add картинку как выглядят файлы в xcode проекте
+![Как выглядят файлы локализации в папке.](https://cdn.sparrowcode.io/tutorials/localisation/locale-folder-files.jpg)
 
 ## Передача параметра в строку
 
@@ -454,19 +454,15 @@ NSLocalizedString("first key", bundle: .module, comment: "")
 
 ![Превью локализованного изображения.](https://cdn.sparrowcode.io/tutorials/localisation/image-preview.jpg)
 
-# Языки справа налево
+# Языки справа-налево RTL
 
-Чаще всего приложения используют `Left-To-Right` ориентацию, сокращенно `LTR`. Она используется в английском, русском, немецком и других языках, где текст пишется слева-направо. 
+В английском, русском, немецком и других языках текст пишется слева-направо. Но есть языки с направлением справа-налево, например иврит, персидский и арабский.
 
-![Пример `LTR` интерфейса.](https://cdn.sparrowcode.io/tutorials/localisation/left-to-right-preview.jpg)
+> Направление текста слева-направо называется Left-to-Right, сокр. LTR. Направление справа-налево называется RTL.
 
-Для языков, в которых текст пишется справа-налево, например в иврите, персидском или арабском, существует `RTL`.
+![Пример LTR и RTL интерфейса.](https://cdn.sparrowcode.io/tutorials/localisation/ltr-rtl-preview.jpg)
 
-![Пример `RTL` интерфейса.](https://cdn.sparrowcode.io/tutorials/localisation/right-to-left-preview.jpg)
-
-## Как определить
-
-Можно определить направление интерфейса по всему приложению:
+Направление текста, а соответственно и интерфейса, можно определить разными способами. Глобальное направление приложения определяется в объекте `UIApplication`:
 
 ```swift
 if UIApplication.shared.userInterfaceLayoutDirection == .leftToRight {
@@ -476,7 +472,7 @@ if UIApplication.shared.userInterfaceLayoutDirection == .leftToRight {
 }
 ```
 
-Или у конкретной вьюхи при помощи метода `effectiveUserInterfaceLayoutDirection`:
+Иногда направление конкретной вью не соответствует направлению приложения. Чтобы получить направление для конкретной вью, используйте `effectiveUserInterfaceLayoutDirection`:
 
 ```swift
 if view.effectiveUserInterfaceLayoutDirection == .leftToRight {
@@ -484,19 +480,40 @@ if view.effectiveUserInterfaceLayoutDirection == .leftToRight {
 } else {
     // Код для RTL направления
 }
-``` 
+```
 
-## Лейаут
+## Картинки
 
-В `RTL` все лейблы и вьюхи привязываются к правому краю. Изображения не переворачиваются, если это картинка (например, фото кота). Если используется символ или иллюстрация, их надо отзеркалить с помощью метода `imageFlippedForRightToLeftLayoutDirection()`.
+В RTL отзеркаливаются иконки, SFSymbols умеют это из коробки.
 
-> Если в символе присутсвуют элементы картинки, например солнце и горы - его не надо отзеркаливать.
+![Направление SFSymbols в LTR и RTL.](https://cdn.sparrowcode.io/tutorials/localisation/rtl-ltr-sfsymbols-preview.jpg)
 
-Для лейблов выставляется `textAlignment = .natural`, в `LTR` это `.left`, в `RTL` - `.right`. Подробнее о поведении интерфейса справа-налево [на сайте](https://developer.apple.com/design/human-interface-guidelines/foundations/right-to-left/).
+Собственные иконки прийдется отзеркалить вручную с помощью метода `imageFlippedForRightToLeftLayoutDirection()`: 
 
-### Фреймы
+```swift
+let image = UIImage.init(named: "icon") // Оригинальная иконка
+let flippedImage = image?.imageFlippedForRightToLeftLayoutDirection() // Отзеркаленная
+```
 
-Создаем квадрат размером 100 на 100. Задаем `frame` с точкой `x`, которая будем менять свое положение в зависимости от `effectiveUserInterfaceLayoutDirection`:
+> Иконки, которые повторяют реальные объекты, логотипы, фотографии и иллюстрации не надо отзеркаливать.
+
+![Изображения, которые не нужно отзеркаливать.](https://cdn.sparrowcode.io/tutorials/localisation/rtl-flipping-preview.jpg)
+
+## Текст
+
+Для лейблов выставляем `textAlignment = .natural`, оно вернет правильное выравнивание текста для используемого в приложении языка. В LTR это `.left`, а в RTL - `.right`.
+
+Если в приложении есть текст больше трех строк, направление которого отличается от основного языка - выставляйте ему своё выравнивание. Например, в арабском приложении текст пишется справа-налево, а абзац на английском - слева-направо:
+
+![Выравнивание текста на разных языках.](https://cdn.sparrowcode.io/tutorials/localisation/rtl-paragraph-alignment.jpg)
+
+> Если у вас есть список на разных языках, выравнивание выставляется по направлению интерфейса приложения. 
+
+![Выравнивание текста на разных языках в списке.](https://cdn.sparrowcode.io/tutorials/localisation/rtl-list-alignment.jpg)
+
+## Фреймы
+
+Создаем квадрат размером 100 на 100. Задаем `frame` с точкой `x`, которая будем менять свое положение в зависимости от направления лейаута:
 
 ```swift
 let x: CGFloat = 30
@@ -510,34 +527,26 @@ squareView.frame = .init(
 )
 ```
 
-Теперь, если `effectiveUserInterfaceLayoutDirection = .leftToRight` - квадрат будет стоять в 30 пикселях по иксу от левого края. Если `.rightToLeft` - в 30 пикселях от правого:
+Теперь, если лейаут LTR - квадрат будет стоять в 30 пикселях от левого края. Если RTL - в 30 пикселях от правого:
 
-![Поведение отлейаученного на фреймах квадрата в `LTR` и `RTL`](https://cdn.sparrowcode.io/tutorials/localisation/ltr-rtl-layout-preview.jpg)
+![Лейаут квадрата на фреймах в LTR и RTL](https://cdn.sparrowcode.io/tutorials/localisation/ltr-rtl-layout-preview.jpg)
 
-### Констрейнты
+## Auto Layout
 
-У констрейнтов существует 4 точки отсчета: верхняя `topAnchor`, левая `leftAnchor`, нижняя `bottomAnchor` и правая `rightAnchor`. По ним вью встает в указанных краях вне зависимости от направления интерфейса.
+Если использовать `leftAnchor` и `rightAnchor` в RTL - все вью останутся у своих краев, поэтому для лейаута к левому и правому краю нам нужны `leadingAnchor` и `trailingAnchor`. Они автоматически зеркалятся при изменении направления интерфейса.
 
-Если использовать `leftAnchor` и `rightAnchor` в `LTR` направлении - все будет нормально, но в `RTL` вью останется на левом / правом краю экрана, вместо противоположного.
-
-Для `RTL` нам понадобится левая точка отсчета `leadingAnchor` и правая `trailingAnchor`. Они автоматически зеркалятся при изменении направления интерфейса.
-
-Создаем квадрат размером 100 на 100. Указываем `leadingAnchor` и активируем констрейнты:
+Создаем квадрат размером 100 на 100. Указываем `leadingAnchor` и  констрейнты:
 
 ```swift
-let constraints = [
-    squareView.topAnchor.constraint(equalTo: view.topAnchor, constant: 200),
-    squareView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 30),
-    squareView.widthAnchor.constraint(equalToConstant: 100),
-    squareView.heightAnchor.constraint(equalToConstant: 100)
-]
-
-NSLayoutConstraint.activate(constraints)
+squareView.topAnchor.constraint(equalTo: view.topAnchor, constant: 200),
+squareView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 30),
+squareView.widthAnchor.constraint(equalToConstant: 100),
+squareView.heightAnchor.constraint(equalToConstant: 100)
 ```
 
-Теперь в `LTR` направлении квадрат будет стоять в 30 пикселях от левого края, а в `RTL` - от правого. `trailingAnchor` работает так же, только для правого края экрана.
+Теперь в LTR направлении квадрат будет стоять в 30 пикселях от левого края, а в RTL - от правого. `trailingAnchor` работает так же, только для правого края.
 
-![Поведение отлейаученного на констрейнтах квадрата в `LTR` и `RTL`](https://cdn.sparrowcode.io/tutorials/localisation/ltr-rtl-layout-preview.jpg)
+![Авто лейаут квадрата в `LTR` и `RTL`](https://cdn.sparrowcode.io/tutorials/localisation/ltr-rtl-layout-preview.jpg)
 
 # Рекомендации
 
