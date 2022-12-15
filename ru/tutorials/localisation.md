@@ -462,7 +462,7 @@ NSLocalizedString("first key", bundle: .module, comment: "")
 
 ![Пример LTR и RTL интерфейса.](https://cdn.sparrowcode.io/tutorials/localisation/ltr-rtl-preview.jpg)
 
-Направление текста, а соответственно и интерфейса, можно определить разными способами. Глобальное направление приложения определяется в объекте `UIApplication`:
+Направление текста и интерфейса можно определить для приложения и для каждой вью отдельно. Направление приложения определяется в объекте `UIApplication`:
 
 ```swift
 if UIApplication.shared.userInterfaceLayoutDirection == .leftToRight {
@@ -476,75 +476,77 @@ if UIApplication.shared.userInterfaceLayoutDirection == .leftToRight {
 
 ```swift
 if view.effectiveUserInterfaceLayoutDirection == .leftToRight {
-    // Код для LTR направления
+    // Код для LTR
 } else {
-    // Код для RTL направления
+    // Код для RTL
 }
 ```
 
 ## Картинки
 
-В RTL отзеркаливаются иконки, SFSymbols умеют это из коробки.
+Картинки тоже подчинаются направлению интерфейса. Символы из SFSymbols отзеркаливаются из коробки.
 
 ![Направление SFSymbols в LTR и RTL.](https://cdn.sparrowcode.io/tutorials/localisation/rtl-ltr-sfsymbols-preview.jpg)
 
-Собственные иконки прийдется отзеркалить вручную с помощью метода `imageFlippedForRightToLeftLayoutDirection()`: 
+Кастомные иконки нужно отзеркаливать вручную, используйте метод `imageFlippedForRightToLeftLayoutDirection()`: 
 
 ```swift
-let image = UIImage.init(named: "icon") // Оригинальная иконка
-let flippedImage = image?.imageFlippedForRightToLeftLayoutDirection() // Отзеркаленная
+// Оригинальная иконка
+let image = UIImage.init(named: "icon")
+
+// Отзеркаленная
+let flippedImage = image?.imageFlippedForRightToLeftLayoutDirection() 
 ```
 
-> Иконки, которые повторяют реальные объекты, логотипы, фотографии и иллюстрации не надо отзеркаливать.
+> Логотипы, фотографии и иллюстрации отзеркаливать не нужно. Иконки, которые повторяют реальные объекты, тоже не нужно отзеркаливать.
 
-![Изображения, которые не нужно отзеркаливать.](https://cdn.sparrowcode.io/tutorials/localisation/rtl-flipping-preview.jpg)
+![Эти изображения не нужно отзеркаливать.](https://cdn.sparrowcode.io/tutorials/localisation/rtl-flipping-preview.jpg)
 
 ## Текст
 
-Для лейблов выставляем `textAlignment = .natural`, оно вернет правильное выравнивание текста для используемого в приложении языка. В LTR это `.left`, а в RTL - `.right`.
+Для лейблов выставляем `textAlignment = .natural`. Так текст будет выравниваться согласно языку приложения: `.left` для LTR, `.right` для RTL.
 
-Если в приложении есть текст больше трех строк, направление которого отличается от основного языка - выставляйте ему своё выравнивание. Например, в арабском приложении текст пишется справа-налево, а абзац на английском - слева-направо:
+Есть исключения. Например, ваш арабский текст включает абзац английского текста в одну или две строки. Тогда можно оставить направление справа-налево для обоих языков. Но если абзац больше 3 строк, то выравнивание должно соответствовать языку.
 
 ![Выравнивание текста на разных языках.](https://cdn.sparrowcode.io/tutorials/localisation/rtl-paragraph-alignment.jpg)
 
-> Если у вас есть список на разных языках, выравнивание выставляется по направлению интерфейса приложения. 
+> Списки на разных языках выравниваются по направлению интерфейса приложения. 
 
-![Выравнивание текста на разных языках в списке.](https://cdn.sparrowcode.io/tutorials/localisation/rtl-list-alignment.jpg)
+![Выравнивание списка на разных языках.](https://cdn.sparrowcode.io/tutorials/localisation/rtl-list-alignment.jpg)
 
 ## Фреймы
 
-Создаем квадрат размером 100 на 100. Задаем `frame` с точкой `x`, которая будем менять свое положение в зависимости от направления лейаута:
+Создаем квадрат размером 100 на 100. Позицию `x` будем менять согласно направлению интерфейса:
 
 ```swift
-let x: CGFloat = 30
-let size: CGFloat = 100
-        
-squareView.frame = .init(
-    x: squareView.effectiveUserInterfaceLayoutDirection == .leftToRight ? x : view.frame.width - x - size,
-    y: 200,
-    width: size,
-    height: size
-)
+let space = 30
+squareView.frame = .init(x: 0, y: 0, width: 100, height: 100);
+
+if squareView.effectiveUserInterfaceLayoutDirection == .leftToRight {
+    squareView.frame.origin.x = space
+} else {
+    squareView.frame.origin.x = view.frame.width - space - squareView.frame.width
+}
 ```
 
-Теперь, если лейаут LTR - квадрат будет стоять в 30 пикселях от левого края. Если RTL - в 30 пикселях от правого:
+Теперь, если лейаут LTR - квадрат будет стоять в 30 поинтах от левого края. Если RTL - в 30 поинтах от правого:
 
 ![Лейаут квадрата на фреймах в LTR и RTL](https://cdn.sparrowcode.io/tutorials/localisation/ltr-rtl-layout-preview.jpg)
 
 ## Auto Layout
 
-Если использовать `leftAnchor` и `rightAnchor` в RTL - все вью останутся у своих краев, поэтому для лейаута к левому и правому краю нам нужны `leadingAnchor` и `trailingAnchor`. Они автоматически зеркалятся при изменении направления интерфейса.
+`leftAnchor` и `rightAnchor` это всегда левый и правый край соответственно. Даже в RTL это не меняется. Но если использовать `leadingAnchor` и `trailingAnchor`, то края поменяются местами для направления справа-налево. Для LTR это будет левый и правый край, для RTL наоборот - правый и левый.
 
-Создаем квадрат размером 100 на 100. Указываем `leadingAnchor` и  констрейнты:
+Создаем квадрат размером 100 на 100. Указываем `leadingAnchor` и констрейнты:
 
 ```swift
-squareView.topAnchor.constraint(equalTo: view.topAnchor, constant: 200),
-squareView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 30),
-squareView.widthAnchor.constraint(equalToConstant: 100),
-squareView.heightAnchor.constraint(equalToConstant: 100)
+squareView.topAnchor.constraint(equalTo: view.topAnchor, constant: 200).isActive = true
+squareView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 30).isActive = true
+squareView.widthAnchor.constraint(equalToConstant: 100).isActive = true
+squareView.heightAnchor.constraint(equalToConstant: 100).isActive = true
 ```
 
-Теперь в LTR направлении квадрат будет стоять в 30 пикселях от левого края, а в RTL - от правого. `trailingAnchor` работает так же, только для правого края.
+Теперь в LTR направлении квадрат будет стоять в 30 поинтах от левого края, а в RTL - от правого. `trailingAnchor` работает так же, только для правого края.
 
 ![Авто лейаут квадрата в `LTR` и `RTL`](https://cdn.sparrowcode.io/tutorials/localisation/ltr-rtl-layout-preview.jpg)
 
