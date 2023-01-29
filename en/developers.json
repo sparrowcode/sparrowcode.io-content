@@ -208,5 +208,16 @@
         "added_date": "09.10.2022"
       }
     ]
+  },
+  {
+    "developer_name": "Artem Davydov",
+    "github_username": "ardavydov",
+    "apps": [
+      {
+        "id": "1537409012",
+        "name": "Playsit - Your game library",
+        "added_date": "29.01.2023"
+      }
+    ]
   }
 ]
