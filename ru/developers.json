@@ -275,5 +275,21 @@
         "added_date": "27.11.2022"
       }
     ]
+  },
+  {
+    "developer_name": "Evgeny Konkin",
+    "github_username": "konnnn",
+    "apps": [
+      {
+        "id": "1193567206",
+        "name": "Регионы — Коды регионов России",
+        "added_date": "11.01.2017"
+      },
+      {
+        "id": "1517243559",
+        "name": "PLAY IPTV — IPTV / OTT Player",
+        "added_date": "02.02.2021"
+      }
+    ]
   }
 ]
