@@ -1,146 +1,146 @@
 {
-   "kambala-decapitator": {
-      "apps": [
+   "kambala-decapitator":{
+      "apps":[
          {
-            "id": "482487701",
-            "added_date": "07.02.2022"
+            "id":"482487701",
+            "added_date":"07.02.2022"
          },
          {
-            "id": "609753150",
-            "added_date": "07.02.2022"
+            "id":"609753150",
+            "added_date":"07.02.2022"
          },
          {
-            "id": "644228154",
-            "added_date": "07.02.2022"
+            "id":"644228154",
+            "added_date":"07.02.2022"
          }
       ]
    },
-   "rastaman111": {
-      "apps": [
+   "rastaman111":{
+      "apps":[
          {
-            "id": "1586640348",
-            "added_date": "18.11.2021"
+            "id":"1586640348",
+            "added_date":"18.11.2021"
          }
       ]
    },
-   "Viktorianec": {
-      "apps": [
+   "Viktorianec":{
+      "apps":[
          {
-            "id": "1473622434",
-            "added_date": "05.04.2022"
+            "id":"1473622434",
+            "added_date":"05.04.2022"
          },
          {
-            "id": "1017699433",
-            "added_date": "05.04.2022"
+            "id":"1017699433",
+            "added_date":"05.04.2022"
          },
          {
-            "id": "1029476822",
-            "added_date": "05.04.2022"
+            "id":"1029476822",
+            "added_date":"05.04.2022"
          },
          {
-            "id": "1088581020",
-            "added_date": "05.04.2022"
+            "id":"1088581020",
+            "added_date":"05.04.2022"
          },
          {
-            "id": "1574916839",
-            "added_date": "05.04.2022"
+            "id":"1574916839",
+            "added_date":"05.04.2022"
          }
       ]
    },
-   "baksogen": {
-      "apps": [
+   "baksogen":{
+      "apps":[
          {
-            "id": "1529716191",
-            "added_date": "05.04.2022"
+            "id":"1529716191",
+            "added_date":"05.04.2022"
          },
          {
-            "id": "891797540",
-            "added_date": "05.04.2022"
+            "id":"891797540",
+            "added_date":"05.04.2022"
          },
          {
-            "id": "889580711",
-            "added_date": "05.04.2022"
+            "id":"889580711",
+            "added_date":"05.04.2022"
          },
          {
-            "id": "1382928700",
-            "added_date": "05.04.2022"
+            "id":"1382928700",
+            "added_date":"05.04.2022"
          },
          {
-            "id": "1386377748",
-            "added_date": "05.04.2022"
+            "id":"1386377748",
+            "added_date":"05.04.2022"
          },
          {
-            "id": "576182327",
-            "added_date": "05.04.2022"
+            "id":"576182327",
+            "added_date":"05.04.2022"
          },
          {
-            "id": "1229503218",
-            "added_date": "05.04.2022"
+            "id":"1229503218",
+            "added_date":"05.04.2022"
          }
       ]
    },
-   "artembolotov": {
-      "apps": [
+   "artembolotov":{
+      "apps":[
          {
-            "id": "1535523842",
-            "added_date": "05.04.2022"
+            "id":"1535523842",
+            "added_date":"05.04.2022"
          }
       ]
    },
-   "kopsap4ik": {
-      "apps": [
+   "kopsap4ik":{
+      "apps":[
          {
-            "id": "1579159150",
-            "added_date": "22.04.2022"
+            "id":"1579159150",
+            "added_date":"22.04.2022"
          }
       ]
    },
-   "NathanFallet": {
-      "apps": [
+   "NathanFallet":{
+      "apps":[
          {
-            "id": "1598813588",
-            "added_date": "03.05.2022"
+            "id":"1598813588",
+            "added_date":"03.05.2022"
          },
          {
-            "id": "1575388217",
-            "added_date": "03.05.2022"
+            "id":"1575388217",
+            "added_date":"03.05.2022"
          },
          {
-            "id": "1609456234",
-            "added_date": "03.05.2022"
+            "id":"1609456234",
+            "added_date":"03.05.2022"
          }
       ]
    },
-   "YurchukV": {
-      "apps": [
+   "YurchukV":{
+      "apps":[
          {
-            "id": "957083912",
-            "added_date": "21.05.2022"
+            "id":"957083912",
+            "added_date":"21.05.2022"
          }
       ]
    },
-   "Rogue85": {
-      "apps": [
+   "Rogue85":{
+      "apps":[
          {
-            "id": "1619685571",
-            "added_date": "09.06.2022"
+            "id":"1619685571",
+            "added_date":"09.06.2022"
          }
       ]
    },
-   "alxrguz": {
-      "apps": [
+   "alxrguz":{
+      "apps":[
          {
-            "id": "1521429599",
-            "added_date": "15.07.2022"
+            "id":"1521429599",
+            "added_date":"15.07.2022"
          },
          {
-            "id": "6443957774",
-            "added_date": "24.11.2022"
+            "id":"6443957774",
+            "added_date":"24.11.2022"
          }
       ]
    },
-   "ivanvorobei": {
-      "repositories": [
+   "ivanvorobei":{
+      "repositories":[
          "https://github.com/sparrowcode/PermissionsKit",
          "https://github.com/sparrowcode/SwiftBoost",
          "https://github.com/sparrowcode/SafeSFSymbols",
@@ -151,88 +151,101 @@
          "https://github.com/ivanvorobei/SPPerspective",
          "https://github.com/ivanvorobei/SPPageController"
       ],
-      "projects": [
+      "projects":[
          {
-            "name": {
-               "en" : "Код Воробья",
-               "ru" : "Sparrow Code"
+            "name":{
+               "en":"Код Воробья",
+               "ru":"Sparrow Code"
             },
-            "description": "Туториалы для iOS разработчиков.",
-            "url": "https://sparrowcode.io",
-            "added_date": "03.11.2022"
+            "description":"Туториалы для iOS разработчиков.",
+            "url":"https://sparrowcode.io",
+            "added_date":"03.11.2022"
          }
       ],
-      "apps": [
+      "apps":[
          {
-            "id": "1624477055",
-            "added_date": "09.10.2022"
+            "id":"1624477055",
+            "added_date":"09.10.2022"
          },
          {
-            "id": "1625641322",
-            "added_date": "09.10.2022"
+            "id":"1625641322",
+            "added_date":"09.10.2022"
          },
          {
-            "id": "875280793",
-            "added_date": "09.10.2022"
+            "id":"875280793",
+            "added_date":"09.10.2022"
          },
          {
-            "id": "743843090",
-            "added_date": "09.10.2022"
+            "id":"743843090",
+            "added_date":"09.10.2022"
          },
          {
-            "id": "537070378",
-            "added_date": "09.10.2022"
+            "id":"537070378",
+            "added_date":"09.10.2022"
          },
          {
-            "id": "1570676244",
-            "added_date": "09.10.2022"
+            "id":"1570676244",
+            "added_date":"09.10.2022"
          },
          {
-            "id": "1617055933",
-            "added_date": "09.10.2022"
+            "id":"1617055933",
+            "added_date":"09.10.2022"
          }
       ]
    },
-   "svyatoynick": {
-      "repositories": [
+   "svyatoynick":{
+      "repositories":[
          "https://github.com/svyatoynick/GAuthSwiftParser"
       ],
-      "apps": [
+      "apps":[
          {
-            "id": "1625641322",
-            "added_date": "09.10.2022"
+            "id":"1625641322",
+            "added_date":"09.10.2022"
          }
       ]
    },
-   "andreyZozulych": {
-      "github_username": "andreyZozulych",
-      "apps": [
+   "andreyZozulych":{
+      "github_username":"andreyZozulych",
+      "apps":[
          {
-            "id": "1638726940",
-            "added_date": "27.11.2022"
+            "id":"1638726940",
+            "added_date":"27.11.2022"
          },
          {
-            "id": "1665459546",
-            "added_date": "07.03.2023"
+            "id":"1665459546",
+            "added_date":"07.03.2023"
          }
       ]
    },
-   "konnnn": {
-      "apps": [
+   "konnnn":{
+      "apps":[
          {
-            "id": "1193567206",
-            "added_date": "07.03.2023"
+            "id":"1193567206",
+            "added_date":"07.03.2023"
          },
          {
-            "id": "1517243559",
-            "added_date": "07.03.2023"
+            "id":"1517243559",
+            "added_date":"07.03.2023"
          }
       ]
    },
-      "TopScrech": {
-      "apps": [
-            "id": "1639409934",
-            "added_date": "09.03.2023"
-      ] 
+   "TopScrech":{
+      "apps":[
+         {
+            "id":"1639409934",
+            "added_date":"09.03.2023"
+         }
+      ]
+   },
+   "izyumkin":{
+      "repositories":[
+         "https://github.com/izyumkin/MCEmojiPicker"
+      ],
+      "apps":[
+         {
+            "id":"1500111859",
+            "added_date":"09.03.2023"
+         }
+      ]
    }
 }
