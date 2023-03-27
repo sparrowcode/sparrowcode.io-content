@@ -342,3 +342,5 @@ DynamicIslandExpandedRegion(.leading) {
 ```
 
 Развёрнутый вид Dynamic Island поддерживает [Link](https://developer.apple.com/documentation/SwiftUI/Link).
+
+> Apple [отвечает на 10 вопросов](https://developer.apple.com/news/?id=qpqf1gru) про Live Activity.
