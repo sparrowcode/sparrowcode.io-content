@@ -60,7 +60,7 @@
         ]
     },
     "sparrowcode": {
-        "name": "SparrowCode Editorial",
+        "name": "Sparrow Code Editorial",
         "description": "We do articles and opensource for developers.",
         "avatar": "https://cdn.sparrowcode.io/authors/sparrowcode.jpg",
         "github" : "sparrowcode",
@@ -68,6 +68,18 @@
             {
                 "title": "GitHub",
                 "url": "https://github.com/sparrowcode"
+            },
+            {
+                "title": "Twitter",
+                "url": "https://twitter.com/sparrowcode_en"
+            },
+            {
+                "title": "Mastodon",
+                "url": "https://mastodon.social/@sparrowcode"
+            },
+            {
+                "title": "Telegram",
+                "url": "https://t.me/sparrowcode_en"
             }
         ]
     },

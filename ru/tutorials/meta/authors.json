@@ -10,8 +10,28 @@
                 "url": "https://github.com/sparrowcode"
             },
             {
-                "title": "Telegram",
+                "title": "Телеграм-канал",
                 "url": "https://t.me/sparrowcode"
+            },
+            {
+                "title": "Телеграм-чат",
+                "url": "https://t.me/sparrowcodechat"
+            },
+            {
+                "title": "Youtube",
+                "url": "https://youtube.com/@sparrowcode"
+            },
+            {
+                "title": "Twitter",
+                "url": "https://twitter.com/sparrowcode_"
+            },
+            {
+                "title": "Instgram",
+                "url": "https://www.instagram.com/sparrowcode/"
+            },
+            {
+                "title": "TikTok",
+                "url": "https://www.tiktok.com/@sparrowcode"
             }
         ]
     },
