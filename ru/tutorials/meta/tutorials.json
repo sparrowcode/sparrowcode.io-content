@@ -1,192 +1,344 @@
 {
-    "drag-and-drop" : {
-        "title" : "Drag и Drop для таблицы и коллекции",
-        "description" : "Как изменить порядок ячеек в коллекции и таблице. Как перенести ячейки в другую коллекцию. Перемещение нескольких ячеек группой.",
-        "categories" : ["uikit"],
-        "author" : "ivanvorobei",
-        "editors" : ["svyatoynick"],
-        "google_structured_images": [
-            "https://cdn.sparrowcode.io/tutorials/drag-and-drop/preview.jpg",
-            "https://cdn.sparrowcode.io/tutorials/drag-and-drop/drag-delegate.jpg",
-            "https://cdn.sparrowcode.io/tutorials/drag-and-drop/drag-stack.jpg",
-            "https://cdn.sparrowcode.io/tutorials/drag-and-drop/drop-delegate.jpg"
-        ],
-        "keywords" : ["UICollectionViewDragDelegate", "UICollectionViewDropDelegate", "UITableViewDragDelegate", "UITableViewDropDelegate", "UIGestureRecognizer", "UIDrag"],
-        "updated_date" : "25.08.2022",
-        "added_date" : "11.07.2021"
-    },
-    "uisheetpresentationcontroller" : {
-        "title" : "`UISheetPresentationController` как в приложении Карты",
-        "description" : "В iOS 15 появились sheet-контроллеры. Это модальные контроллеры, которые с помощью жеста меняют высоту. Вы встречали эти контроллеры в приложениях «Карты» и «Акции».",
-        "categories" : ["uikit"],
-        "author" : "ivanvorobei",
-        "editors" : ["svyatoynick"],
-        "google_structured_images": [
-            "https://cdn.sparrowcode.io/tutorials/uisheetpresentationcontroller/preview.png",
-            "https://cdn.sparrowcode.io/tutorials/uisheetpresentationcontroller/edge-attached.png",
-            "https://cdn.sparrowcode.io/tutorials/uisheetpresentationcontroller/grabber.png",
-            "https://cdn.sparrowcode.io/tutorials/uisheetpresentationcontroller/corner-radius.png"
-        ],
-        "keywords" : ["UISheetPresentationController", "Map", "Карты", "Modal Controllers", "iOS 15"],
-        "updated_date" : "10.11.2022",
-        "added_date" : "11.10.2021"
-    },
-    "sf-symbols-and-render-mode" : {
-        "title" : "SF Symbols 4 и Render Mode",
-        "description" : "Как работают `Monochrome`, `Hierarchical`, `Palette`, `Multicolor Render` для SF Symbols. Примеры кода для UIKit и SwiftUI.",
-        "categories" : ["uikit"],
-        "author" : "ivanvorobei",
-        "editors" : ["svyatoynick"],
-        "google_structured_images" : [
-            "https://cdn.sparrowcode.io/tutorials/sf-symbols-and-render-mode/preview.png",
-            "https://cdn.sparrowcode.io/tutorials/sf-symbols-and-render-mode/render-modes-preview.jpg",
-            "https://cdn.sparrowcode.io/tutorials/sf-symbols-and-render-mode/hierarchical-render.jpg",
-            "https://cdn.sparrowcode.io/tutorials/sf-symbols-and-render-mode/palette-render.jpg",
-            "https://cdn.sparrowcode.io/tutorials/sf-symbols-and-render-mode/multicolor-render.jpg"
-        ],
-        "keywords" : ["SF Symbols", "SFSymbols", "SwiftUI", "iOS 15"],
-        "updated_date" : "11.11.2022",
-        "added_date" : "28.10.2021"
-    },
-    "uiviewcontroller-lifecycle" : {
-        "title" : "Жизненный цикл `UIViewController`",
-        "description" : "Рассмотрим когда вызываются методы контроллера и что можно делать внутри них. Когда настраивать вьюхи и данные.",
-        "categories" : ["uikit"],
-        "author" : "ivanvorobei",
-        "editors" : ["svyatoynick"],
-        "google_structured_images" : [
-            "https://cdn.sparrowcode.io/tutorials/uiviewcontroller-lifecycle/hello.jpg",
-            "https://cdn.sparrowcode.io/tutorials/uiviewcontroller-lifecycle/header.jpg"
-        ],
-        "keywords" : ["UIViewController", "viewDidAppear", "viewDidLoad", "жизненный цикл uiviewcontroller", "жизненный цикл вью контроллер", "viewcontroller", "вью контроллер", "жизненный цикл view controller swift", "uiviewcontroller lifecycle"],
-        "updated_date" : "04.10.2022",
-        "added_date" : "19.11.2021"
-    },
-    "how-to-clean-userdefaults-and-realm-on-macos-catalyst" : {
-        "title" : "Как очистить UserDefaults и Realm для Mac Catalyst",
-        "description" : "Как очистить данные для приложения Catalyst включая AppGroup, Realm и UserDefaults.",
-        "categories" : ["development"],
-        "author" : "ivanvorobei",
-        "keywords" : ["UserDefaults", "Catalyst", "MacCatalyst", "Realm", "AppGroup"],
-        "updated_date" : "02.08.2022",
-        "added_date" : "11.12.2021"
-    },
-    "edge-insets-uibutton" : {
-        "title" : "Отступы Edge Insets для `UIButton`",
-        "description" : "Как добавить отступ между текстом и картинкой в `UIButton`. Как поместить иконку справа от текста.",
-        "categories" : ["uikit"],
-        "author" : "ivanvorobei",
-        "google_structured_images" : [
-            "https://cdn.sparrowcode.io/tutorials/edge-insets-uibutton/preview.png",
-            "https://cdn.sparrowcode.io/tutorials/edge-insets-uibutton/content-edge-insets.png",
-            "https://cdn.sparrowcode.io/tutorials/edge-insets-uibutton/depricated.png"
-        ],
-        "keywords" : ["imageEdgeInsets", "imageEdgeInsets", "contentEdgeInsets", "отсутп между заголовком и картинкой"],
-        "updated_date" : "10.11.2022",
-        "added_date" : "13.12.2021"
-    },
-    "product-page-optimization-alternative-icons" : {
-        "title" : "Альтернативные иконки для тестов Product Page Optimization",
-        "description" : "Как добавить альтернативные иконки для A/B тестов на странице приложения в App Store.",
-        "categories" : ["app-store-connect"],
-        "author" : "alxrguz",
-        "editors" : ["svyatoynick", "ivanvorobei"],
-        "google_structured_images": [
-            "https://cdn.sparrowcode.io/tutorials/product-page-optimization-alternative-icons/adding-icons-to-assets.png",
-            "https://cdn.sparrowcode.io/tutorials/product-page-optimization-alternative-icons/adding-settings-to-target.png"
-        ],
-        "keywords" : [],
-        "updated_date" : "25.07.2022",
-        "added_date" : "27.12.2021"
-    },
-    "async-await" : {
-        "title" : "Асинхронность с async/await и actor",
-        "description" : "Разберём async, await, actor. Напишем тузлу для поиска приложений в App Store.",
-        "categories" : ["swift"],
-        "author" : "somenkovnikita",
-        "editors" : ["ivanvorobei", "svyatoynick"],
-        "keywords" : ["async", "await", "actor", "swift async await"],
-        "google_structured_images": [
-            "https://cdn.sparrowcode.io/tutorials/async-await/preview-fight-club.png",
-            "https://cdn.sparrowcode.io/tutorials/async-await/preview.png",
-            "https://cdn.sparrowcode.io/tutorials/async-await/set-image-scheme.png",
-            "https://cdn.sparrowcode.io/tutorials/async-await/load-image-scheme.png"
-            
-        ],
-        "updated_date": "10.11.2022",
-        "added_date": "06.02.2022"
-    },
-    "access-control" : {
-        "title" : "Модификаторы доступа в Swift",
-        "description" : "Уровни доступа делают код безопасным и разделенным, уменьшают случайные ошибки.",
-        "categories" : ["swift", "foundation"],
-        "author" : "liubowolkova",
-        "editors" : ["ivanvorobei", "svyatoynick"],
-        "keywords" : ["модификаторы ", "уровни доступа swift", "public", "private", "internal", "fileprivate", "swift"],
-        "google_structured_images": [
-            "https://cdn.sparrowcode.io/tutorials/access-control/preview.png",
-            "https://cdn.sparrowcode.io/tutorials/access-control/internal.png",
-            "https://cdn.sparrowcode.io/tutorials/access-control/public.png",
-            "https://cdn.sparrowcode.io/tutorials/access-control/open.png",
-            "https://cdn.sparrowcode.io/tutorials/access-control/private.png",
-            "https://cdn.sparrowcode.io/tutorials/access-control/fileprivate.png"
-            
-        ],
-        "updated_date": "13.09.2022",
-        "added_date": "22.03.2022"
-    },
-    "localisation" : {
-        "title" : "Как локализовать приложение с `NSLocalisedString`",
-        "description" : "Большой гайд по локализации. Как перевести текст, фото и значения. Обзор инструментов и автоматизаций.",
-        "categories" : ["development", "foundation"],
-        "author" : "svyatoynick",
-        "editors" : ["ivanvorobei"],
-        "keywords" : ["localisation", "nslocalisedstring", "strings", "infoplist", "локализация", "spm", "локализация для iOS", "локализация swift", "rtl"],
-        "google_structured_images": [
-            "https://cdn.sparrowcode.io/tutorials/localisation/add-new-language.jpg",
-            "https://cdn.sparrowcode.io/tutorials/localisation/export-menu.jpg",
-            "https://cdn.sparrowcode.io/tutorials/localisation/export-import.jpg",
-            "https://cdn.sparrowcode.io/tutorials/localisation/autogeneration-bartycrouch-file.jpg",
-            "https://cdn.sparrowcode.io/tutorials/localisation/pluralisation-new-stringsdict.jpg",
-            "https://cdn.sparrowcode.io/tutorials/localisation/pluralisation-stringsdict-empty.jpg",
-            "https://cdn.sparrowcode.io/tutorials/localisation/image-ready.jpg",
-            "https://cdn.sparrowcode.io/tutorials/localisation/image-preview.jpg",
-            "https://cdn.sparrowcode.io/tutorials/localisation/formatters-preview.jpg",
-            "https://cdn.sparrowcode.io/tutorials/localisation/ltr-rtl-preview.jpg",
-            "https://cdn.sparrowcode.io/tutorials/localisation/ltr-rtl-layout-preview.jpg"
-        ],
-        "updated_date": "15.11.2022",
-        "added_date": "10.07.2022"
-    },
-    "live-activities" : {
-        "title" : "Live Activity и Dynamic Island",
-        "description" : "Как создать, обновлять и завершить Live Activity. Интерфейс Live Activity. Как работать с Dynamic Island.",
-        "categories" : ["swiftui", "extensions"],
-        "author" : "ivanvorobei",
-        "editors" : [],
-        "keywords" : ["Dynamic Island", "динамический остров", "SwiftUI", "Live Activity", "WidgetKit"],
-        "google_structured_images": [
-            "https://cdn.sparrowcode.io/tutorials/live-activities/preview.png",
-            "https://cdn.sparrowcode.io/tutorials/live-activities/header.png",
-            "https://cdn.sparrowcode.io/tutorials/live-activities/add-widget-target.png",
-            "https://cdn.sparrowcode.io/tutorials/live-activities/shared-file-between-targets.png",
-            "https://cdn.sparrowcode.io/tutorials/live-activities/live-activity-type-compact.png",
-            "https://cdn.sparrowcode.io/tutorials/live-activities/live-activity-type-minimal.png",
-            "https://cdn.sparrowcode.io/tutorials/live-activities/live-activity-type-expanded.png"
-        ],
-        "updated_date": "27.03.2023",
-        "added_date": "21.10.2022"
-    },
-    "formatters" : {
-        "title" : "Как форматировать значения с Formatters",
-        "description" : "Как форматировать значения в Swift при помощи форматтеров. Валюта, дата, фото и другое.",
-        "categories" : ["development", "foundation"],
-        "author" : "svyatoynick",
-        "keywords" : ["formatters", "formatters swift", "форматтеры"],
-        "google_structured_images": [
-            "https://cdn.sparrowcode.io/tutorials/formatters/formatters-preview.jpg"
-        ],
-        "updated_date": "10.11.2022",
-        "added_date": "10.11.2022"
-    }
+   "drag-and-drop": {
+      "title": "Drag и Drop для таблицы и коллекции",
+      "description": "Как изменить порядок ячеек в коллекции и таблице. Как перенести ячейки в другую коллекцию. Перемещение нескольких ячеек группой.",
+      "categories": [
+         "uikit"
+      ],
+      "author": "sparrowcode",
+      "editors": [
+         "ivanvorobei"
+      ],
+      "google_structured_images": [
+         "https://cdn.sparrowcode.io/tutorials/drag-and-drop/preview.jpg",
+         "https://cdn.sparrowcode.io/tutorials/drag-and-drop/drag-delegate.jpg",
+         "https://cdn.sparrowcode.io/tutorials/drag-and-drop/drag-stack.jpg",
+         "https://cdn.sparrowcode.io/tutorials/drag-and-drop/drop-delegate.jpg"
+      ],
+      "keywords": [
+         "UICollectionViewDragDelegate",
+         "UICollectionViewDropDelegate",
+         "UITableViewDragDelegate",
+         "UITableViewDropDelegate",
+         "UIGestureRecognizer",
+         "UIDrag"
+      ],
+      "updated_date": "06.11.2023",
+      "added_date": "11.07.2021"
+   },
+   "uisheetpresentationcontroller": {
+      "title": "`UISheetPresentationController` как в приложении Карты",
+      "description": "В iOS 15 появились sheet-контроллеры. Это модальные контроллеры, которые с помощью жеста меняют высоту. Вы встречали эти контроллеры в приложениях «Карты» и «Акции».",
+      "categories": [
+         "uikit"
+      ],
+      "author": "sparrowcode",
+      "editors": [
+         "ivanvorobei"
+      ],
+      "google_structured_images": [
+         "https://cdn.sparrowcode.io/tutorials/uisheetpresentationcontroller/preview.png",
+         "https://cdn.sparrowcode.io/tutorials/uisheetpresentationcontroller/edge-attached.png",
+         "https://cdn.sparrowcode.io/tutorials/uisheetpresentationcontroller/grabber.png",
+         "https://cdn.sparrowcode.io/tutorials/uisheetpresentationcontroller/corner-radius.png"
+      ],
+      "keywords": [
+         "UISheetPresentationController",
+         "Map",
+         "Карты",
+         "Modal Controllers",
+         "iOS 15"
+      ],
+      "updated_date": "06.11.2023",
+      "added_date": "11.10.2021"
+   },
+   "sf-symbols-and-render-mode": {
+      "title": "SF Symbols 4 и Render Mode",
+      "description": "Как работают `Monochrome`, `Hierarchical`, `Palette`, `Multicolor Render` для SF Symbols. Примеры кода для UIKit и SwiftUI.",
+      "categories": [
+         "uikit"
+      ],
+      "author": "sparrowcode",
+      "editors": [
+         "ivanvorobei"
+      ],
+      "google_structured_images": [
+         "https://cdn.sparrowcode.io/tutorials/sf-symbols-and-render-mode/preview.png",
+         "https://cdn.sparrowcode.io/tutorials/sf-symbols-and-render-mode/render-modes-preview.jpg",
+         "https://cdn.sparrowcode.io/tutorials/sf-symbols-and-render-mode/hierarchical-render.jpg",
+         "https://cdn.sparrowcode.io/tutorials/sf-symbols-and-render-mode/palette-render.jpg",
+         "https://cdn.sparrowcode.io/tutorials/sf-symbols-and-render-mode/multicolor-render.jpg"
+      ],
+      "keywords": [
+         "SF Symbols",
+         "SFSymbols",
+         "SwiftUI",
+         "iOS 15"
+      ],
+      "updated_date": "06.11.2023",
+      "added_date": "28.10.2021"
+   },
+   "uiviewcontroller-lifecycle": {
+      "title": "Жизненный цикл `UIViewController`",
+      "description": "Рассмотрим когда вызываются методы контроллера и что можно делать внутри них. Когда настраивать вьюхи и данные.",
+      "categories": [
+         "uikit"
+      ],
+      "author": "sparrowcode",
+      "editors": [
+         "ivanvorobei"
+      ],
+      "google_structured_images": [
+         "https://cdn.sparrowcode.io/tutorials/uiviewcontroller-lifecycle/hello.jpg",
+         "https://cdn.sparrowcode.io/tutorials/uiviewcontroller-lifecycle/header.jpg"
+      ],
+      "keywords": [
+         "UIViewController",
+         "viewDidAppear",
+         "viewDidLoad",
+         "жизненный цикл uiviewcontroller",
+         "жизненный цикл вью контроллер",
+         "viewcontroller",
+         "вью контроллер",
+         "жизненный цикл view controller swift",
+         "uiviewcontroller lifecycle"
+      ],
+      "updated_date": "06.11.2023",
+      "added_date": "19.11.2021"
+   },
+   "how-to-clean-userdefaults-and-realm-on-macos-catalyst": {
+      "title": "Как очистить UserDefaults и Realm для Mac Catalyst",
+      "description": "Как очистить данные для приложения Catalyst включая AppGroup, Realm и UserDefaults.",
+      "categories": [
+         "development"
+      ],
+      "author": "sparrowcode",
+      "editors": [
+         "ivanvorobei"
+      ],
+      "keywords": [
+         "UserDefaults",
+         "Catalyst",
+         "MacCatalyst",
+         "Realm",
+         "AppGroup"
+      ],
+      "updated_date": "06.11.2023",
+      "added_date": "11.12.2021"
+   },
+   "edge-insets-uibutton": {
+      "title": "Отступы Edge Insets для `UIButton`",
+      "description": "Как добавить отступ между текстом и картинкой в `UIButton`. Как поместить иконку справа от текста.",
+      "categories": [
+         "uikit"
+      ],
+      "author": "sparrowcode",
+      "editors": [
+         "ivanvorobei"
+      ],
+      "google_structured_images": [
+         "https://cdn.sparrowcode.io/tutorials/edge-insets-uibutton/preview.png",
+         "https://cdn.sparrowcode.io/tutorials/edge-insets-uibutton/content-edge-insets.png",
+         "https://cdn.sparrowcode.io/tutorials/edge-insets-uibutton/depricated.png"
+      ],
+      "keywords": [
+         "imageEdgeInsets",
+         "imageEdgeInsets",
+         "contentEdgeInsets",
+         "отсутп между заголовком и картинкой"
+      ],
+      "updated_date": "06.11.2023",
+      "added_date": "13.12.2021"
+   },
+   "product-page-optimization-alternative-icons": {
+      "title": "Альтернативные иконки для тестов Product Page Optimization",
+      "description": "Как добавить альтернативные иконки для A/B тестов на странице приложения в App Store.",
+      "categories": [
+         "app-store-connect"
+      ],
+      "author": "alxrguz",
+      "editors": [
+         "ivanvorobei"
+      ],
+      "google_structured_images": [
+         "https://cdn.sparrowcode.io/tutorials/product-page-optimization-alternative-icons/adding-icons-to-assets.png",
+         "https://cdn.sparrowcode.io/tutorials/product-page-optimization-alternative-icons/adding-settings-to-target.png"
+      ],
+      "keywords": [],
+      "updated_date": "25.07.2022",
+      "added_date": "27.12.2021"
+   },
+   "async-await": {
+      "title": "Асинхронность с async/await и actor",
+      "description": "Разберём async, await, actor. Напишем тузлу для поиска приложений в App Store.",
+      "categories": [
+         "swift"
+      ],
+      "author": "somenkovnikita",
+      "editors": [
+         "ivanvorobei"
+      ],
+      "keywords": [
+         "async",
+         "await",
+         "actor",
+         "swift async await"
+      ],
+      "google_structured_images": [
+         "https://cdn.sparrowcode.io/tutorials/async-await/preview-fight-club.png",
+         "https://cdn.sparrowcode.io/tutorials/async-await/preview.png",
+         "https://cdn.sparrowcode.io/tutorials/async-await/set-image-scheme.png",
+         "https://cdn.sparrowcode.io/tutorials/async-await/load-image-scheme.png"
+      ],
+      "updated_date": "06.11.2023",
+      "added_date": "06.02.2022"
+   },
+   "access-control": {
+      "title": "Модификаторы доступа в Swift",
+      "description": "Уровни доступа делают код безопасным и разделенным, уменьшают случайные ошибки.",
+      "categories": [
+         "swift",
+         "foundation"
+      ],
+      "author": "liubowolkova",
+      "editors": [
+         "ivanvorobei",
+         "svyatoynick"
+      ],
+      "keywords": [
+         "модификаторы ",
+         "уровни доступа swift",
+         "public",
+         "private",
+         "internal",
+         "fileprivate",
+         "swift"
+      ],
+      "google_structured_images": [
+         "https://cdn.sparrowcode.io/tutorials/access-control/preview.png",
+         "https://cdn.sparrowcode.io/tutorials/access-control/internal.png",
+         "https://cdn.sparrowcode.io/tutorials/access-control/public.png",
+         "https://cdn.sparrowcode.io/tutorials/access-control/open.png",
+         "https://cdn.sparrowcode.io/tutorials/access-control/private.png",
+         "https://cdn.sparrowcode.io/tutorials/access-control/fileprivate.png"
+      ],
+      "updated_date": "13.09.2022",
+      "added_date": "22.03.2022"
+   },
+   "localisation": {
+      "title": "Как локализовать приложение с `NSLocalisedString`",
+      "description": "Большой гайд по локализации. Как перевести текст, фото и значения. Обзор инструментов и автоматизаций.",
+      "categories": [
+         "development",
+         "foundation"
+      ],
+      "author": "svyatoynick",
+      "editors": [
+         "ivanvorobei"
+      ],
+      "keywords": [
+         "localisation",
+         "nslocalisedstring",
+         "strings",
+         "infoplist",
+         "локализация",
+         "spm",
+         "локализация для iOS",
+         "локализация swift",
+         "rtl"
+      ],
+      "google_structured_images": [
+         "https://cdn.sparrowcode.io/tutorials/localisation/add-new-language.jpg",
+         "https://cdn.sparrowcode.io/tutorials/localisation/export-menu.jpg",
+         "https://cdn.sparrowcode.io/tutorials/localisation/export-import.jpg",
+         "https://cdn.sparrowcode.io/tutorials/localisation/autogeneration-bartycrouch-file.jpg",
+         "https://cdn.sparrowcode.io/tutorials/localisation/pluralisation-new-stringsdict.jpg",
+         "https://cdn.sparrowcode.io/tutorials/localisation/pluralisation-stringsdict-empty.jpg",
+         "https://cdn.sparrowcode.io/tutorials/localisation/image-ready.jpg",
+         "https://cdn.sparrowcode.io/tutorials/localisation/image-preview.jpg",
+         "https://cdn.sparrowcode.io/tutorials/localisation/formatters-preview.jpg",
+         "https://cdn.sparrowcode.io/tutorials/localisation/ltr-rtl-preview.jpg",
+         "https://cdn.sparrowcode.io/tutorials/localisation/ltr-rtl-layout-preview.jpg"
+      ],
+      "updated_date": "15.11.2022",
+      "added_date": "10.07.2022"
+   },
+   "live-activities": {
+      "title": "Live Activity и Dynamic Island",
+      "description": "Как создать, обновлять и завершить Live Activity. Интерфейс Live Activity. Как работать с Dynamic Island.",
+      "categories": [
+         "swiftui",
+         "extensions"
+      ],
+      "author": "sparrowcode",
+      "editors": [
+         "ivanvorobei"
+      ],
+      "keywords": [
+         "Dynamic Island",
+         "динамический остров",
+         "SwiftUI",
+         "Live Activity",
+         "WidgetKit"
+      ],
+      "google_structured_images": [
+         "https://cdn.sparrowcode.io/tutorials/live-activities/preview.png",
+         "https://cdn.sparrowcode.io/tutorials/live-activities/header.png",
+         "https://cdn.sparrowcode.io/tutorials/live-activities/add-widget-target.png",
+         "https://cdn.sparrowcode.io/tutorials/live-activities/shared-file-between-targets.png",
+         "https://cdn.sparrowcode.io/tutorials/live-activities/live-activity-type-compact.png",
+         "https://cdn.sparrowcode.io/tutorials/live-activities/live-activity-type-minimal.png",
+         "https://cdn.sparrowcode.io/tutorials/live-activities/live-activity-type-expanded.png"
+      ],
+      "updated_date": "06.11.2023",
+      "added_date": "21.10.2022"
+   },
+   "formatters": {
+      "title": "Форматировать цифры, время, валюты и другое с Formatters",
+      "description": "Как форматировать значения в Swift при помощи форматтеров. Валюта, дата, фото и другое.",
+      "categories": [
+         "development",
+         "foundation"
+      ],
+      "author": "svyatoynick",
+      "editors": [
+         "ivanvorobei"
+      ],
+      "keywords": [
+         "formatters",
+         "formatters swift",
+         "форматтеры"
+      ],
+      "google_structured_images": [
+         "https://cdn.sparrowcode.io/tutorials/formatters/formatters-preview.jpg"
+      ],
+      "updated_date": "10.11.2022",
+      "added_date": "10.11.2022"
+   },
+   "how-to-get-root-view-controller": {
+      "title": "Как получить RootViewController",
+      "description": "Пример кода для iOS 13 и выше когда добавили сцены. И для iOS 12 и ниже, когда были только окна. Как получить root в SwiftUI.",
+      "categories": [
+         "uikit",
+         "swiftui"
+      ],
+      "author": "sparrowcode",
+      "editors": [
+         "ivanvorobei"
+      ],
+      "keywords": [
+         "RootViewController",
+         "Root View Controller",
+         "Controller",
+         "Root View",
+         "рут вью контроллер",
+         "рут вью"
+      ],
+      "google_structured_images": [
+         "https://cdn.sparrowcode.io/tutorials/how-to-get-root-view-controller/uiwindowscene.jpg",
+         "https://cdn.sparrowcode.io/tutorials/how-to-get-root-view-controller/uiwindow.jpg"
+      ],
+      "updated_date": "06.11.2023",
+      "added_date": "06.11.2023"
+   }
 }

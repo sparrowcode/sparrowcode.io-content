@@ -1,102 +1,94 @@
 {
-    "ivanvorobei" : {
-        "name" : "Ivan Vorobei",
-        "description" : "iOS Developer. Making opensource frameworks & writing tutorials.",
-        "avatar" : "https://cdn.sparrowcode.io/authors/ivanvorobei.jpg",
-        "github" : "ivanvorobei",
-        "buttons" : [
-            {
-                "title" : "GitHub",
-                "url" : "https://github.com/ivanvorobei"
-            },
-            {
-                "title" : "App Store",
-                "url" : "https://apps.ivanvorobei.io"
-            }
-        ]
-    },
-    "svyatoynick": {
-        "name": "Nikolay Pelevin",
-        "description": "iOS Developer, candy lover.",
-        "avatar": "https://cdn.sparrowcode.io/authors/svyatoynick.jpg",
-        "github" : "svyatoynick",
-        "buttons": [
-            {
-                "title": "GitHub",
-                "url": "https://github.com/svyatoynick"
-            },
-            {
-                "title" : "App Store",
-                "url" : "https://apps.pelevin.me"
-            }
-        ]
-    },
-    "wmorgue": {
-        "name": "Nikita Rossik",
-        "description": "Reverse Engineering Enthusiast,  Developer.",
-        "avatar": "https://cdn.sparrowcode.io/authors/wmorgue.jpg",
-        "github" : "wmorgue",
-        "buttons": [
-            {
-                "title": "GitHub",
-                "url": "https://github.com/wmorgue"
-            }
-        ]
-    },
-    "somenkovnikita": {
-        "name": "Nikita Somenkov",
-        "description": "iOS developer. I'm developing my own project, and I'm also in favor of native design",
-        "avatar": "https://cdn.sparrowcode.io/authors/somenkovnikita.jpg",
-        "github" : "somenkovnikita",
-        "buttons": [
-            {
-                "title": "GitHub",
-                "url": "https://github.com/somenkovnikita"
-            },
-            {
-                "title" : "Projects",
-                "url" : "https://apps.somenkov.ru"
-            }
-        ]
-    },
-    "sparrowcode": {
-        "name": "Sparrow Code Editorial",
-        "description": "We do articles and opensource for developers.",
-        "avatar": "https://cdn.sparrowcode.io/authors/sparrowcode.jpg",
-        "github" : "sparrowcode",
-        "buttons": [
-            {
-                "title": "GitHub",
-                "url": "https://github.com/sparrowcode"
-            },
-            {
-                "title": "Twitter",
-                "url": "https://twitter.com/sparrowcode_en"
-            },
-            {
-                "title": "Mastodon",
-                "url": "https://mastodon.social/@sparrowcode"
-            },
-            {
-                "title": "Telegram",
-                "url": "https://t.me/sparrowcode_en"
-            }
-        ]
-    },
-    "alxrguz" : {
-        "name" : "Alexander Guzenko",
-        "description" : "iOS developer. I love native design and bike.",
-        "avatar" : "https://cdn.sparrowcode.io/authors/alxrguz.jpg",
-        "github" : "alxrguz",
-        "buttons" : [
-            {
-                "title" : "GitHub",
-                "url" : "https://github.com/alxrguz"
-            },
-            {
-                "title" : "App Store",
-                "url" : "https://apps.apple.com/developer/id1480235724"
-            }
-        ]
-    }
+   "ivanvorobei": {
+      "name": "Ivan Vorobei",
+      "description": "iOS Developer. Making opensource frameworks & tutorials.",
+      "avatar": "https://cdn.sparrowcode.io/authors/ivanvorobei.jpg",
+      "github": "ivanvorobei",
+      "buttons": [
+         {
+            "title": "GitHub",
+            "url": "https://github.com/ivanvorobei"
+         },
+         {
+            "title": "Twitter",
+            "url": "https://twitter.com/sparrowcode_en"
+         },
+         {
+            "title": "Telegram",
+            "url": "https://t.me/sparrowcode_en"
+         }
+      ]
+   },
+   "svyatoynick": {
+      "name": "Nikolay Pelevin",
+      "description": "iOS Developer, candy lover.",
+      "avatar": "https://cdn.sparrowcode.io/authors/svyatoynick.jpg",
+      "github": "svyatoynick",
+      "buttons": [
+         {
+            "title": "GitHub",
+            "url": "https://github.com/svyatoynick"
+         },
+         {
+            "title": "App Store",
+            "url": "https://apps.pelevin.me"
+         }
+      ]
+   },
+   "somenkovnikita": {
+      "name": "Nikita Somenkov",
+      "description": "iOS developer. I'm developing my own project, and I'm also in favor of native design",
+      "avatar": "https://cdn.sparrowcode.io/authors/somenkovnikita.jpg",
+      "github": "somenkovnikita",
+      "buttons": [
+         {
+            "title": "GitHub",
+            "url": "https://github.com/somenkovnikita"
+         },
+         {
+            "title": "Projects",
+            "url": "https://apps.somenkov.ru"
+         }
+      ]
+   },
+   "sparrowcode": {
+      "name": "Sparrow Code Editorial",
+      "description": "We do tutorials and opensource for iOS developers.",
+      "avatar": "https://cdn.sparrowcode.io/authors/sparrowcode.jpg",
+      "github": "sparrowcode",
+      "buttons": [
+         {
+            "title": "GitHub",
+            "url": "https://github.com/sparrowcode"
+         },
+         {
+            "title": "Twitter",
+            "url": "https://twitter.com/sparrowcode_en"
+         },
+         {
+            "title": "App Store",
+            "url": "https://apps.apple.com/developer/id1617623165"
+         },
+         {
+            "title": "Telegram",
+            "url": "https://t.me/sparrowcode_en"
+         }
+      ]
+   },
+   "alxrguz": {
+      "name": "Alexander Guzenko",
+      "description": "iOS developer. I love native design and bike.",
+      "avatar": "https://cdn.sparrowcode.io/authors/alxrguz.jpg",
+      "github": "alxrguz",
+      "buttons": [
+         {
+            "title": "GitHub",
+            "url": "https://github.com/alxrguz"
+         },
+         {
+            "title": "App Store",
+            "url": "https://apps.apple.com/developer/id1480235724"
+         }
+      ]
+   }
 }

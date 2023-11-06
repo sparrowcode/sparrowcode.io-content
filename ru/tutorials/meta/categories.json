@@ -1,23 +1,23 @@
 {
-    "foundation" : {
-        "title" : "Foundation"
-    },
-    "swift" : {
-        "title" : "Swift"
-    },
-    "uikit" : {
-        "title" : "UIKit"
-    },
-    "swiftui" : {
-        "title" : "SwiftUI"
-    },
-    "extensions" : {
-        "title" : "Extensions"
-    },
-    "development" : {
-        "title" : "Разработка"
-    },
-    "app-store-connect" : {
-        "title" : "App Store Connect"
-    }
+   "foundation": {
+      "title": "Foundation"
+   },
+   "swift": {
+      "title": "Swift"
+   },
+   "uikit": {
+      "title": "UIKit"
+   },
+   "swiftui": {
+      "title": "SwiftUI"
+   },
+   "extensions": {
+      "title": "Extensions"
+   },
+   "development": {
+      "title": "Разработка"
+   },
+   "app-store-connect": {
+      "title": "App Store Connect"
+   }
 }

@@ -22,16 +22,12 @@
                 "url": "https://youtube.com/@sparrowcode"
             },
             {
+                "title": "App Store",
+                "url": "https://apps.apple.com/developer/id1617623165"
+            },
+            {
                 "title": "Twitter",
                 "url": "https://twitter.com/sparrowcode_"
-            },
-            {
-                "title": "Instgram",
-                "url": "https://www.instagram.com/sparrowcode/"
-            },
-            {
-                "title": "TikTok",
-                "url": "https://www.tiktok.com/@sparrowcode"
             }
         ]
     },
@@ -48,6 +44,10 @@
             {
                 "title" : "Телеграм-канал",
                 "url" : "https://t.me/sparrowcode"
+            },
+            {
+                "title": "Youtube",
+                "url": "https://youtube.com/@sparrowcode"
             }
         ]
     },
@@ -64,18 +64,6 @@
             {
                 "title" : "App Store",
                 "url" : "https://apps.apple.com/developer/id1480235724"
-            }
-        ]
-    },
-    "wmorgue": {
-        "name": "Никита Россик",
-        "description": "Увлекаюсь разработкой под .",
-        "avatar": "https://cdn.sparrowcode.io/authors/wmorgue.jpg",
-        "github" : "wmorgue",
-        "buttons": [
-            {
-                "title": "GitHub",
-                "url": "https://github.com/wmorgue"
             }
         ]
     },
