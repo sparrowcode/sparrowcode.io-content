@@ -2,241 +2,118 @@
    "product-page-optimization-alternative-icons": {
       "title": "Alternative icons for Product Page Optimization tests",
       "description": "How to add alternative icons for A/B tests on the app page in the App Store.",
-      "categories": [
-         "app-store-connect"
-      ],
+      "categories": ["app-store-connect"],
       "author": "alxrguz",
-      "translators": [
-         "svyatoynick"
-      ],
-      "editors": [
-         "svyatoynick",
-         "ivanvorobei"
-      ],
-      "google_structured_images": [
-         "https://cdn.sparrowcode.io/tutorials/product-page-optimization-alternative-icons/adding-icons-to-assets.png",
-         "https://cdn.sparrowcode.io/tutorials/product-page-optimization-alternative-icons/adding-settings-to-target.png"
-      ],
-      "keywords": [
-      ],
+      "translators": ["svyatoynick"],
+      "editors": ["svyatoynick", "ivanvorobei"],
+      "google_structured_images": ["https://cdn.sparrowcode.io/tutorials/product-page-optimization-alternative-icons/adding-icons-to-assets.png", "https://cdn.sparrowcode.io/tutorials/product-page-optimization-alternative-icons/adding-settings-to-target.png"],
+      "keywords": [],
       "updated_date": "25.07.2022",
       "added_date": "25.07.2022"
    },
    "uiviewcontroller-lifecycle": {
       "title": "`UIViewController` Lifecycle",
       "description": "Consider when controller methods are called and what you can do inside them. When to configure views and data.",
-      "categories": [
-         "uikit"
-      ],
+      "categories": ["uikit"],
       "author": "sparrowcode",
-      "translators": [
-         "svyatoynick"
-      ],
-      "editors": [
-         "ivanvorobei"
-      ],
-      "google_structured_images": [
-         "https://cdn.sparrowcode.io/tutorials/uiviewcontroller-lifecycle/hello.jpg",
-         "https://cdn.sparrowcode.io/tutorials/uiviewcontroller-lifecycle/header-en.jpg"
-      ],
-      "keywords": [
-         "UIViewController",
-         "viewDidAppear",
-         "viewDidLoad",
-         "uiviewcontroller lifecycle"
-      ],
+      "translators": ["svyatoynick"],
+      "editors": ["ivanvorobei"],
+      "google_structured_images": ["https://cdn.sparrowcode.io/tutorials/uiviewcontroller-lifecycle/hello.jpg", "https://cdn.sparrowcode.io/tutorials/uiviewcontroller-lifecycle/header-en.jpg"],
+      "keywords": ["UIViewController", "viewDidAppear", "viewDidLoad", "uiviewcontroller lifecycle"],
       "updated_date": "06.11.2023",
       "added_date": "26.07.2022"
    },
    "edge-insets-uibutton": {
       "title": "Edge Insets indents for `UIButton`",
       "description": "How to add an indent between text and picture in `UIButton`. How to place an icon to the right of the text.",
-      "categories": [
-         "uikit"
-      ],
+      "categories": ["uikit"],
       "author": "sparrowcode",
-      "translators": [
-         "svyatoynick"
-      ],
-      "editors": [
-         "ivanvorobei"
-      ],
-      "google_structured_images": [
-         "https://cdn.sparrowcode.io/tutorials/edge-insets-uibutton/content-edge-insets.png",
-         "https://cdn.sparrowcode.io/tutorials/edge-insets-uibutton/depricated.png"
-      ],
-      "keywords": [
-         "imageEdgeInsets",
-         "imageEdgeInsets",
-         "contentEdgeInsets"
-      ],
+      "translators": ["svyatoynick"],
+      "editors": ["ivanvorobei"],
+      "google_structured_images": ["https://cdn.sparrowcode.io/tutorials/edge-insets-uibutton/content-edge-insets.png", "https://cdn.sparrowcode.io/tutorials/edge-insets-uibutton/depricated.png"],
+      "keywords": ["imageEdgeInsets", "imageEdgeInsets", "contentEdgeInsets"],
       "updated_date": "06.11.2023",
       "added_date": "28.07.2022"
    },
    "how-to-clean-userdefaults-and-realm-on-macos-catalyst": {
       "title": "How to clear UserDefaults and Realm for Mac Catalyst",
       "description": "How to clear data for Catalyst application including AppGroup, Realm and UserDefaults.",
-      "categories": [
-         "development"
-      ],
+      "categories": ["development"],
       "author": "sparrowcode",
-      "translators": [
-         "svyatoynick"
-      ],
-      "editors": [
-         "ivanvorobei"
-      ],
-      "keywords": [
-         "UserDefaults",
-         "Catalyst",
-         "MacCatalyst",
-         "Realm",
-         "AppGroup"
-      ],
+      "translators": ["svyatoynick"],
+      "editors": ["ivanvorobei"],
+      "keywords": ["UserDefaults", "Catalyst", "MacCatalyst", "Realm", "AppGroup"],
       "updated_date": "06.11.2023",
       "added_date": "02.08.2022"
    },
    "sf-symbols-and-render-mode": {
       "title": "SF Symbols 4 and Render Mode",
       "description": "How `Monochrome`, `Hierarchical`, `Palette`, `Multicolor Render` work for SF Symbols. Code examples for UIKit and SwiftUI.",
-      "categories": [
-         "uikit"
-      ],
+      "categories": ["uikit"],
       "author": "sparrowcode",
-      "translators": [
-         "svyatoynick"
-      ],
-      "editors": [
-         "ivanvorobei"
-      ],
-      "google_structured_images": [
-         "https://cdn.sparrowcode.io/tutorials/sf-symbols-and-render-mode/multicolor-render.jpg",
-         "https://cdn.sparrowcode.io/tutorials/sf-symbols-and-render-mode/render-modes-preview.jpg",
-         "https://cdn.sparrowcode.io/tutorials/sf-symbols-and-render-mode/hierarchical-render.jpg",
-         "https://cdn.sparrowcode.io/tutorials/sf-symbols-and-render-mode/palette-render.jpg",
-         "https://cdn.sparrowcode.io/tutorials/sf-symbols-and-render-mode/multicolor-render.jpg"
-      ],
-      "keywords": [
-         "SF Symbols",
-         "SFSymbols",
-         "SwiftUI",
-         "iOS 15"
-      ],
+      "translators": ["svyatoynick"],
+      "editors": ["ivanvorobei"],
+      "google_structured_images": ["https://cdn.sparrowcode.io/tutorials/sf-symbols-and-render-mode/multicolor-render.jpg", "https://cdn.sparrowcode.io/tutorials/sf-symbols-and-render-mode/render-modes-preview.jpg", "https://cdn.sparrowcode.io/tutorials/sf-symbols-and-render-mode/hierarchical-render.jpg", "https://cdn.sparrowcode.io/tutorials/sf-symbols-and-render-mode/palette-render.jpg", "https://cdn.sparrowcode.io/tutorials/sf-symbols-and-render-mode/multicolor-render.jpg"],
+      "keywords": ["SF Symbols", "SFSymbols", "SwiftUI", "iOS 15"],
       "updated_date": "06.11.2023",
       "added_date": "03.08.2022"
    },
    "uisheetpresentationcontroller": {
       "title": "`UISheetPresentationController` as in the Maps application",
       "description": "In iOS 15, there are sheet-controllers. These are modal controllers that use a gesture to change height. You've seen these controllers in the «Maps» and «Stocks» apps.",
-      "categories": [
-         "uikit"
-      ],
+      "categories": ["uikit"],
       "author": "sparrowcode",
-      "translators": [
-         "svyatoynick"
-      ],
-      "editors": [
-         "ivanvorobei"
-      ],
-      "google_structured_images": [
-         "https://cdn.sparrowcode.io/tutorials/uisheetpresentationcontroller/edge-attached.png",
-         "https://cdn.sparrowcode.io/tutorials/uisheetpresentationcontroller/grabber.png",
-         "https://cdn.sparrowcode.io/tutorials/uisheetpresentationcontroller/corner-radius.png"
-      ],
-      "keywords": [
-         "UISheetPresentationController",
-         "Map",
-         "Maps",
-         "Modal Controllers",
-         "iOS 15"
-      ],
+      "translators": ["svyatoynick"],
+      "editors": ["ivanvorobei"],
+      "google_structured_images": ["https://cdn.sparrowcode.io/tutorials/uisheetpresentationcontroller/edge-attached.png", "https://cdn.sparrowcode.io/tutorials/uisheetpresentationcontroller/grabber.png", "https://cdn.sparrowcode.io/tutorials/uisheetpresentationcontroller/corner-radius.png"],
+      "keywords": ["UISheetPresentationController", "Map", "Maps", "Modal Controllers", "iOS 15"],
       "updated_date": "06.11.2023",
       "added_date": "09.08.2022"
    },
    "drag-and-drop": {
       "title": "Drag and Drop for table and collection",
       "description": "How to change the order of cells in a collection and a table. How to move cells to another collection. How to move multiple cells in a group.",
-      "categories": [
-         "uikit"
-      ],
+      "categories": ["uikit"],
       "author": "sparrowcode",
-      "translators": [
-         "svyatoynick"
-      ],
-      "editors": [
-         "ivanvorobei"
-      ],
-      "google_structured_images": [
-         "https://cdn.sparrowcode.io/tutorials/drag-and-drop/drag-delegate.jpg",
-         "https://cdn.sparrowcode.io/tutorials/drag-and-drop/drag-stack.jpg",
-         "https://cdn.sparrowcode.io/tutorials/drag-and-drop/drop-delegate.jpg"
-      ],
-      "keywords": [
-         "UICollectionViewDragDelegate",
-         "UICollectionViewDropDelegate",
-         "UITableViewDragDelegate",
-         "UITableViewDropDelegate",
-         "UIGestureRecognizer",
-         "UIDrag"
-      ],
+      "translators": ["svyatoynick"],
+      "editors": ["ivanvorobei"],
+      "google_structured_images": ["https://cdn.sparrowcode.io/tutorials/drag-and-drop/drag-delegate.jpg", "https://cdn.sparrowcode.io/tutorials/drag-and-drop/drag-stack.jpg", "https://cdn.sparrowcode.io/tutorials/drag-and-drop/drop-delegate.jpg"],
+      "keywords": ["UICollectionViewDragDelegate", "UICollectionViewDropDelegate", "UITableViewDragDelegate", "UITableViewDropDelegate", "UIGestureRecognizer", "UIDrag"],
       "updated_date": "06.11.2023",
       "added_date": "26.08.2022"
    },
    "live-activities": {
       "title": "Live Activity & Dynamic Island",
       "description": "How to create, update, and end a Live Activity. The Live Activity interface. How to work with Dynamic Island.",
-      "categories": [
-         "swiftui",
-         "extensions"
-      ],
+      "categories": ["swiftui", "extensions"],
       "author": "sparrowcode",
-      "translators": [
-         "svyatoynick"
-      ],
-      "editors": [
-         "ivanvorobei"
-      ],
-      "keywords": [
-         "Dynamic Island",
-         "SwiftUI",
-         "Live Activity",
-         "WidgetKit"
-      ],
-      "google_structured_images": [
-         "https://cdn.sparrowcode.io/tutorials/live-activities/header.png",
-         "https://cdn.sparrowcode.io/tutorials/live-activities/add-widget-target.png",
-         "https://cdn.sparrowcode.io/tutorials/live-activities/shared-file-between-targets.png",
-         "https://cdn.sparrowcode.io/tutorials/live-activities/live-activity-type-compact.png",
-         "https://cdn.sparrowcode.io/tutorials/live-activities/live-activity-type-minimal.png",
-         "https://cdn.sparrowcode.io/tutorials/live-activities/live-activity-type-expanded.png",
-         "https://cdn.sparrowcode.io/tutorials/live-activities/live-activity-areas.png",
-         "https://cdn.sparrowcode.io/tutorials/live-activities/live-activity-leading-expanded.png"
-      ],
+      "translators": ["svyatoynick"],
+      "editors": ["ivanvorobei"],
+      "keywords": ["Dynamic Island", "SwiftUI", "Live Activity", "WidgetKit"],
+      "google_structured_images": ["https://cdn.sparrowcode.io/tutorials/live-activities/header.png", "https://cdn.sparrowcode.io/tutorials/live-activities/add-widget-target.png", "https://cdn.sparrowcode.io/tutorials/live-activities/shared-file-between-targets.png", "https://cdn.sparrowcode.io/tutorials/live-activities/live-activity-type-compact.png", "https://cdn.sparrowcode.io/tutorials/live-activities/live-activity-type-minimal.png", "https://cdn.sparrowcode.io/tutorials/live-activities/live-activity-type-expanded.png", "https://cdn.sparrowcode.io/tutorials/live-activities/live-activity-areas.png", "https://cdn.sparrowcode.io/tutorials/live-activities/live-activity-leading-expanded.png"],
       "updated_date": "06.11.2023",
       "added_date": "21.10.2022"
    },
    "how-to-get-root-view-controller": {
       "title": "How to get a RootViewController",
       "description": "Example code for iOS 13 and above when scenes were added. And for iOS 12 and below when there were only windows. How to get root in SwiftUI.",
-      "categories": [
-         "uikit",
-         "swiftui"
-      ],
+      "categories": ["uikit", "swiftui"],
       "author": "sparrowcode",
-      "editors": [
-         "ivanvorobei"
-      ],
-      "keywords": [
-         "RootViewController",
-         "Root View Controller",
-         "Controller",
-         "Root View"
-      ],
-      "google_structured_images": [
-         "https://cdn.sparrowcode.io/tutorials/how-to-get-root-view-controller/uiwindowscene.jpg",
-         "https://cdn.sparrowcode.io/tutorials/how-to-get-root-view-controller/uiwindow.jpg"
-      ],
+      "editors": ["ivanvorobei"],
+      "keywords": ["RootViewController", "Root View Controller", "Controller", "Root View"],
+      "google_structured_images": ["https://cdn.sparrowcode.io/tutorials/how-to-get-root-view-controller/uiwindowscene.jpg", "https://cdn.sparrowcode.io/tutorials/how-to-get-root-view-controller/uiwindow.jpg"],
       "updated_date": "06.11.2023",
       "added_date": "06.11.2023"
+   },
+   "custom-swiftui-modifier": {
+      "title": "How to make a custom SwiftUI modifier",
+      "description": "Example of a custom modifier. How to make modifier extension to call it natively.",
+      "categories": ["swiftui", "extensions"],
+      "author": "sparrowcode",
+      "editors": ["ivanvorobei"],
+      "keywords": ["modifiers", "swiftui", "custom modifier"],
+      "google_structured_images": [],
+      "updated_date": "14.11.2023",
+      "added_date": "14.11.2023"
    }
 }
