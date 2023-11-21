@@ -5,8 +5,9 @@
       "categories": ["uikit"],
       "author": "sparrowcode",
       "editors": ["ivanvorobei"],
+      "graph_image": "https://cdn.sparrowcode.io/tutorials/drag-and-drop/preview.jpg",
       "google_structured_images": [
-         "https://cdn.sparrowcode.io/tutorials/drag-and-drop/preview.jpg", "https://cdn.sparrowcode.io/tutorials/drag-and-drop/drag-delegate.jpg", "https://cdn.sparrowcode.io/tutorials/drag-and-drop/drag-stack.jpg", "https://cdn.sparrowcode.io/tutorials/drag-and-drop/drop-delegate.jpg"
+         "https://cdn.sparrowcode.io/tutorials/drag-and-drop/drag-delegate.jpg", "https://cdn.sparrowcode.io/tutorials/drag-and-drop/drag-stack.jpg", "https://cdn.sparrowcode.io/tutorials/drag-and-drop/drop-delegate.jpg"
       ],
       "keywords": ["UICollectionViewDragDelegate", "UICollectionViewDropDelegate", "UITableViewDragDelegate", "UITableViewDropDelegate", "UIGestureRecognizer", "UIDrag"],
       "updated_date": "06.11.2023",
@@ -18,8 +19,9 @@
       "categories": ["uikit"],
       "author": "sparrowcode",
       "editors": ["ivanvorobei"],
+      "graph_image": "https://cdn.sparrowcode.io/tutorials/uisheetpresentationcontroller/preview.png",
       "google_structured_images": [
-         "https://cdn.sparrowcode.io/tutorials/uisheetpresentationcontroller/preview.png", "https://cdn.sparrowcode.io/tutorials/uisheetpresentationcontroller/edge-attached.png", "https://cdn.sparrowcode.io/tutorials/uisheetpresentationcontroller/grabber.png", "https://cdn.sparrowcode.io/tutorials/uisheetpresentationcontroller/corner-radius.png"
+         "https://cdn.sparrowcode.io/tutorials/uisheetpresentationcontroller/edge-attached.png", "https://cdn.sparrowcode.io/tutorials/uisheetpresentationcontroller/grabber.png", "https://cdn.sparrowcode.io/tutorials/uisheetpresentationcontroller/corner-radius.png"
       ],
       "keywords": ["UISheetPresentationController", "Map", "Карты", "Modal Controllers", "iOS 15"],
       "updated_date": "06.11.2023",
@@ -31,8 +33,9 @@
       "categories": ["uikit"],
       "author": "sparrowcode",
       "editors": ["ivanvorobei"],
+      "graph_image": "https://cdn.sparrowcode.io/tutorials/sf-symbols-and-render-mode/preview.png",
       "google_structured_images": [
-         "https://cdn.sparrowcode.io/tutorials/sf-symbols-and-render-mode/preview.png", "https://cdn.sparrowcode.io/tutorials/sf-symbols-and-render-mode/render-modes-preview.jpg", "https://cdn.sparrowcode.io/tutorials/sf-symbols-and-render-mode/hierarchical-render.jpg", "https://cdn.sparrowcode.io/tutorials/sf-symbols-and-render-mode/palette-render.jpg", "https://cdn.sparrowcode.io/tutorials/sf-symbols-and-render-mode/multicolor-render.jpg"
+         "https://cdn.sparrowcode.io/tutorials/sf-symbols-and-render-mode/hierarchical-render.jpg", "https://cdn.sparrowcode.io/tutorials/sf-symbols-and-render-mode/palette-render.jpg", "https://cdn.sparrowcode.io/tutorials/sf-symbols-and-render-mode/multicolor-render.jpg"
       ],
       "keywords": ["SF Symbols", "SFSymbols", "SwiftUI", "iOS 15"],
       "updated_date": "06.11.2023",
@@ -44,8 +47,9 @@
       "categories": ["uikit"],
       "author": "sparrowcode",
       "editors": ["ivanvorobei"],
+      "graph_image": "https://cdn.sparrowcode.io/tutorials/uiviewcontroller-lifecycle/hello.jpg",
       "google_structured_images": [
-         "https://cdn.sparrowcode.io/tutorials/uiviewcontroller-lifecycle/hello.jpg", "https://cdn.sparrowcode.io/tutorials/uiviewcontroller-lifecycle/header.jpg"
+         "https://cdn.sparrowcode.io/tutorials/uiviewcontroller-lifecycle/header.jpg"
       ],
       "keywords": ["UIViewController", "viewDidAppear", "viewDidLoad", "жизненный цикл uiviewcontroller", "жизненный цикл вью контроллер", "viewcontroller", "вью контроллер", "жизненный цикл view controller swift", "uiviewcontroller lifecycle"],
       "updated_date": "06.11.2023",
@@ -67,8 +71,9 @@
       "categories": ["uikit"],
       "author": "sparrowcode",
       "editors": ["ivanvorobei"],
+      "graph_image": "https://cdn.sparrowcode.io/tutorials/edge-insets-uibutton/preview.png",
       "google_structured_images": [
-         "https://cdn.sparrowcode.io/tutorials/edge-insets-uibutton/preview.png", "https://cdn.sparrowcode.io/tutorials/edge-insets-uibutton/content-edge-insets.png", "https://cdn.sparrowcode.io/tutorials/edge-insets-uibutton/depricated.png"
+         "https://cdn.sparrowcode.io/tutorials/edge-insets-uibutton/content-edge-insets.png", "https://cdn.sparrowcode.io/tutorials/edge-insets-uibutton/depricated.png"
       ],
       "keywords": ["imageEdgeInsets", "imageEdgeInsets", "contentEdgeInsets", "отсутп между заголовком и картинкой"],
       "updated_date": "06.11.2023",
@@ -80,6 +85,7 @@
       "categories": ["app-store-connect"],
       "author": "alxrguz",
       "editors": ["ivanvorobei"],
+      "graph_image": "https://cdn.sparrowcode.io/tutorials/product-page-optimization-alternative-icons/adding-icons-to-assets.png",
       "google_structured_images": [
          "https://cdn.sparrowcode.io/tutorials/product-page-optimization-alternative-icons/adding-icons-to-assets.png", "https://cdn.sparrowcode.io/tutorials/product-page-optimization-alternative-icons/adding-settings-to-target.png"
       ],
@@ -94,8 +100,9 @@
       "author": "somenkovnikita",
       "editors": ["ivanvorobei"],
       "keywords": ["async", "await", "actor", "swift async await"],
+      "graph_image": "https://cdn.sparrowcode.io/tutorials/async-await/preview-fight-club.png",
       "google_structured_images": [
-         "https://cdn.sparrowcode.io/tutorials/async-await/preview-fight-club.png", "https://cdn.sparrowcode.io/tutorials/async-await/preview.png", "https://cdn.sparrowcode.io/tutorials/async-await/set-image-scheme.png", "https://cdn.sparrowcode.io/tutorials/async-await/load-image-scheme.png"
+         "https://cdn.sparrowcode.io/tutorials/async-await/preview.png", "https://cdn.sparrowcode.io/tutorials/async-await/set-image-scheme.png", "https://cdn.sparrowcode.io/tutorials/async-await/load-image-scheme.png"
       ],
       "updated_date": "06.11.2023",
       "added_date": "06.02.2022"
@@ -107,8 +114,9 @@
       "author": "liubowolkova",
       "editors": ["ivanvorobei", "svyatoynick"],
       "keywords": ["модификаторы ", "уровни доступа swift", "public", "private", "internal", "fileprivate", "swift"],
+      "graph_image": "https://cdn.sparrowcode.io/tutorials/access-control/preview.png",
       "google_structured_images": [
-         "https://cdn.sparrowcode.io/tutorials/access-control/preview.png", "https://cdn.sparrowcode.io/tutorials/access-control/internal.png", "https://cdn.sparrowcode.io/tutorials/access-control/public.png", "https://cdn.sparrowcode.io/tutorials/access-control/open.png", "https://cdn.sparrowcode.io/tutorials/access-control/private.png", "https://cdn.sparrowcode.io/tutorials/access-control/fileprivate.png"
+         "https://cdn.sparrowcode.io/tutorials/access-control/internal.png", "https://cdn.sparrowcode.io/tutorials/access-control/public.png", "https://cdn.sparrowcode.io/tutorials/access-control/open.png", "https://cdn.sparrowcode.io/tutorials/access-control/private.png", "https://cdn.sparrowcode.io/tutorials/access-control/fileprivate.png"
       ],
       "updated_date": "13.09.2022",
       "added_date": "22.03.2022"
@@ -120,6 +128,7 @@
       "author": "svyatoynick",
       "editors": ["ivanvorobei"],
       "keywords": ["localisation", "nslocalisedstring", "strings", "infoplist", "локализация", "spm", "локализация для iOS", "локализация swift", "rtl"],
+      "graph_image": "https://cdn.sparrowcode.io/tutorials/localisation/preview-ru.jpg",
       "google_structured_images": [
          "https://cdn.sparrowcode.io/tutorials/localisation/add-new-language.jpg", "https://cdn.sparrowcode.io/tutorials/localisation/export-menu.jpg", "https://cdn.sparrowcode.io/tutorials/localisation/export-import.jpg", "https://cdn.sparrowcode.io/tutorials/localisation/autogeneration-bartycrouch-file.jpg", "https://cdn.sparrowcode.io/tutorials/localisation/pluralisation-new-stringsdict.jpg", "https://cdn.sparrowcode.io/tutorials/localisation/pluralisation-stringsdict-empty.jpg", "https://cdn.sparrowcode.io/tutorials/localisation/image-ready.jpg", "https://cdn.sparrowcode.io/tutorials/localisation/image-preview.jpg", "https://cdn.sparrowcode.io/tutorials/localisation/formatters-preview.jpg", "https://cdn.sparrowcode.io/tutorials/localisation/ltr-rtl-preview.jpg", "https://cdn.sparrowcode.io/tutorials/localisation/ltr-rtl-layout-preview.jpg"
       ],
@@ -133,8 +142,9 @@
       "author": "sparrowcode",
       "editors": ["ivanvorobei"],
       "keywords": ["Dynamic Island", "динамический остров", "SwiftUI", "Live Activity", "WidgetKit"],
+      "graph_image": "https://cdn.sparrowcode.io/tutorials/live-activities/preview.png",
       "google_structured_images": [
-         "https://cdn.sparrowcode.io/tutorials/live-activities/preview.png", "https://cdn.sparrowcode.io/tutorials/live-activities/header.png", "https://cdn.sparrowcode.io/tutorials/live-activities/add-widget-target.png", "https://cdn.sparrowcode.io/tutorials/live-activities/shared-file-between-targets.png", "https://cdn.sparrowcode.io/tutorials/live-activities/live-activity-type-compact.png", "https://cdn.sparrowcode.io/tutorials/live-activities/live-activity-type-minimal.png", "https://cdn.sparrowcode.io/tutorials/live-activities/live-activity-type-expanded.png"
+         "https://cdn.sparrowcode.io/tutorials/live-activities/header.png", "https://cdn.sparrowcode.io/tutorials/live-activities/add-widget-target.png", "https://cdn.sparrowcode.io/tutorials/live-activities/shared-file-between-targets.png", "https://cdn.sparrowcode.io/tutorials/live-activities/live-activity-type-compact.png", "https://cdn.sparrowcode.io/tutorials/live-activities/live-activity-type-minimal.png", "https://cdn.sparrowcode.io/tutorials/live-activities/live-activity-type-expanded.png"
       ],
       "updated_date": "06.11.2023",
       "added_date": "21.10.2022"
@@ -148,6 +158,7 @@
       "author": "svyatoynick",
       "editors": ["ivanvorobei"],
       "keywords": ["formatters", "formatters swift", "форматтеры"],
+      "graph_image": "https://cdn.sparrowcode.io/tutorials/formatters/formatters-preview.jpg",
       "google_structured_images": [
          "https://cdn.sparrowcode.io/tutorials/formatters/formatters-preview.jpg"
       ],
@@ -161,6 +172,7 @@
       "author": "sparrowcode",
       "editors": ["ivanvorobei"],
       "keywords": ["RootViewController", "Root View Controller", "Controller", "Root View", "рут вью контроллер", "рут вью"],
+      "graph_image": "https://cdn.sparrowcode.io/tutorials/how-to-get-root-view-controller/uiwindowscene.jpg",
       "google_structured_images": [
          "https://cdn.sparrowcode.io/tutorials/how-to-get-root-view-controller/uiwindowscene.jpg", "https://cdn.sparrowcode.io/tutorials/how-to-get-root-view-controller/uiwindow.jpg"
       ],
@@ -185,6 +197,7 @@
       "author": "sparrowcode",
       "editors": ["ivanvorobei"],
       "keywords": ["storyboard", "удалить сториборды", "launch screen", "сториборд", "как удалить launch screen", "добавить launch screen swiftui"],
+      "graph_image": "https://cdn.sparrowcode.io/tutorials/set-launch-screen-via-plist/with-uiimagename-result.jpg",
       "google_structured_images": [
          "https://cdn.sparrowcode.io/tutorials/set-launch-screen-via-plist/delete-launchscreen-storyboard-file.jpg", "https://cdn.sparrowcode.io/tutorials/set-launch-screen-via-plist/delete-launch-screen-interface-file-base-name-key.jpg", "https://cdn.sparrowcode.io/tutorials/set-launch-screen-via-plist/add-uilaunchscreen-key.jpg", "https://cdn.sparrowcode.io/tutorials/set-launch-screen-via-plist/add-color-to-assets.jpg", "https://cdn.sparrowcode.io/tutorials/set-launch-screen-via-plist/add-background-color-launch-screen-key.jpg", "https://cdn.sparrowcode.io/tutorials/set-launch-screen-via-plist/with-uicolorname-result.jpg", "https://cdn.sparrowcode.io/tutorials/set-launch-screen-via-plist/with-uiimagename-result.jpg", "https://cdn.sparrowcode.io/tutorials/set-launch-screen-via-plist/add-uitabbar-key.jpg", "https://cdn.sparrowcode.io/tutorials/set-launch-screen-via-plist/with-uitabbar-result.jpg", "https://cdn.sparrowcode.io/tutorials/set-launch-screen-via-plist/with-uitoolbar-result.jpg"
       ],
