@@ -1,4 +1,4 @@
-# Как удалить `LaunchScreen.storyboard`
+# Как удалить LaunchScreen.storyboard
 
 По умолчанию `LaunchScreen.storyboard`-файл создается только для UIKit-проектов. Сначала удалите его:
 

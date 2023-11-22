@@ -1,4 +1,4 @@
-# How to drop `LaunchScreen.storyboard`
+# How to drop LaunchScreen.storyboard
 
 By default `LaunchScreen.storyboard` file is created only for UIKit projects. Delete it first:
 

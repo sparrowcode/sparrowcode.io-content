@@ -191,7 +191,7 @@
       "added_date": "14.11.2023"
    },
    "set-launch-screen-via-plist": {
-      "title": "Добавим Launch screen через plist-файл",
+      "title": "Добавим Launch Screen через plist-файл",
       "description": "Удалим сторбиорд-файл и создадим Launch Screen через plist.",
       "categories": ["development"],
       "author": "sparrowcode",
