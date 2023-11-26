@@ -73,7 +73,7 @@
    "edge-insets-uibutton": {
       "title": "Edge Insets indents for `UIButton`",
       "description": "How to add an indent between text and picture in `UIButton`. How to place an icon to the right of the text.",
-      "categories": ["uikit"],
+      "categories": ["uikit", "layout"],
       "author": "sparrowcode",
       "translators": ["svyatoynick"],
       "editors": ["ivanvorobei"],

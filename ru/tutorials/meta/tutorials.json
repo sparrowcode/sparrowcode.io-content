@@ -68,7 +68,7 @@
    "edge-insets-uibutton": {
       "title": "Отступы Edge Insets для `UIButton`",
       "description": "Как добавить отступ между текстом и картинкой в `UIButton`. Как поместить иконку справа от текста.",
-      "categories": ["uikit"],
+      "categories": ["uikit", "layout"],
       "author": "sparrowcode",
       "editors": ["ivanvorobei"],
       "graph_image": "https://cdn.sparrowcode.io/tutorials/edge-insets-uibutton/preview.png",
