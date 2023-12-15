@@ -350,5 +350,16 @@
             "added_date": "13.11.2023"
          }
       ]
+   },
+   "Kylmakalle": {
+      "apps": [
+         {
+            "id": "6471879502",
+            "added_date": "15.12.2023"
+         },
+      ],
+      "repositories": [
+         "https://github.com/Swiftgram/TDLibKit"
+      ]
    }
 }
