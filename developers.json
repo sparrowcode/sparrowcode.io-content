@@ -319,17 +319,17 @@
          "https://github.com/Swiftgram/TDLibKit"
       ]
    },
-  "AlexeyBrilyov": {
+   "AlexeyBrilyov": {
       "apps": [
          {
             "id": "667579844",
             "added_date": "22.12.2023"
-         }, 
-        {
+         }, {
             "id": "1081939665",
             "added_date": "22.12.2023"
          }
-        },
+      ]
+   },
    "ardavydov": {
       "apps": [
          {
