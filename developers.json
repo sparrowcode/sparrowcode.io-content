@@ -318,5 +318,13 @@
       "repositories": [
          "https://github.com/Swiftgram/TDLibKit"
       ]
+   },
+   "ardavydov": {
+      "apps": [
+         {
+            "id": "1537409012",
+            "added_date": "21.12.2023"
+         }
+      ]
    }
 }
