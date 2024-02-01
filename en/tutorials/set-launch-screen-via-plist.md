@@ -18,11 +18,11 @@ The dictionary can be left blank, then the background will be the color `.system
 
 Available for UIKit and SwiftUI starting with iOS 14.
 
-You can add Tab/Nav/Tool-bar placeholders to make the transition between Launch Screen and Root Controller smooth. You can also set the background color and put a image. For all this we specify special keys in plist-file.
+You can add Tab/Nav/Tool-bar placeholders to make the transition between Launch Screen and Root Controller smooth. You can also set the background color and put an image. For all this we specify special keys in plist-file.
 
-> You can combine keys, for example set background, image and Tab bar together.
+> You can combine keys, for example, set background, image and Tab bar.
 
-Let's check all 6 keys:
+Let's check all six keys:
 
 ## Background color
 

@@ -169,7 +169,7 @@ func collectionView(_ collectionView: UICollectionView, dropSessionDidUpdate ses
 }
 ```
 
-`destinationIndexPath` — system calculation where a cell can be dropped. It is not binding to anything, moreover, we can drop it somewhere else. 
+`destinationIndexPath` — System calculation where a cell can be dropped. It is not binding to anything; moreover, we can drop it somewhere else. 
 
 Now let's move on to the next method `performDropWith`. Here we do the most important things: change the data, rearrange the cells, and notify the system where the view was dropped so that the system draws the animation.
 
@@ -225,7 +225,7 @@ override func layoutAttributesForItem(at indexPath: IndexPath) -> UICollectionVi
 }
 ```
 
-`.insertAtDestinationIndexPath' works poorly when pulling a cell from one collection to another. The application crashes when dragging outside the first section, this is related to the layout. Tables have no problem.
+`.insertAtDestinationIndexPath` works poorly when pulling a cell from one collection to another. The application crashes when dragging outside the first section, this is related to the layout. Tables have no problem.
 
 ## For `TableView`
 

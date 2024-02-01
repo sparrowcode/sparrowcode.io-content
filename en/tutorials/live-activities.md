@@ -141,7 +141,7 @@ struct LiveActivityWidget: Widget {
 
 ## Dynamic Island
 
-The dynamic island has 3 kinds: compact, minimal and expanded.
+The dynamic island has three kinds: compact, minimal and expanded.
 
 > The corners of the dynamic island are rounded at 44 points. This corresponds to the rounding of the TrueDepth camera.
 
@@ -151,7 +151,7 @@ If one activity is running - then the content can be placed to the left and righ
 
 ![Compact Live Activity in Dynamic Island.](https://cdn.sparrowcode.io/tutorials/live-activities/live-activity-type-compact.png)
 
-If more than one Live Activity is running, the system will select 2 of them. One will show on the left, attached to the island, and the other on the right, separated from the island in a circle.
+If more than one Live Activity is running, the system will select two of them. One will show on the left, attached to the island, and the other on the right, separated from the island in a circle.
 
 ![Minimal Live Activity in Dynamic Island.](https://cdn.sparrowcode.io/tutorials/live-activities/live-activity-type-minimal.png)
 

@@ -110,11 +110,11 @@ sheetController.largestUndimmedDetentIdentifier = .medium
 
 [Sheet controller with disabled dimming for the `.medium` stopper.](https://cdn.sparrowcode.io/tutorials/uisheetpresentationcontroller/undimmed-detent.mov)
 
-It is specified that the `.medium' will not dim, but anything larger will. It is possible to remove the dimming for the largest detent as well.
+It is specified that the `.medium` will not dim, but anything larger will. It is possible to remove the dimming for the largest detent as well.
 
 # Indicator
 
-To add an indicator on top of the controller, set `.prefersGrabberVisible` to `true`. By default the indicator is hidden. The indicator has no effect on safe area and layout margins.
+To add an indicator on top of the controller, set `.prefersGrabberVisible` to `true`. By default, the indicator is hidden. The indicator has no effect on safe area and layout margins.
 
 ![Grabber indicator on the sheet-controller.](https://cdn.sparrowcode.io/tutorials/uisheetpresentationcontroller/grabber.png)
 

@@ -264,7 +264,7 @@ let value = energyFormatter.string(fromValue: 69.5, unit: .calorie)
 ```
 
 Доступны разные `unit`:
-- `.calorie` -  калории
+- `.calorie` - калории
 - `.joule` - джоули
 - `.kilocalorie` - килокалории
 - `.kilojoule` - килоджоули
@@ -295,7 +295,7 @@ let value = massFormatter.string(fromValue: 75.2, unit: .kilogram)
 ```
 
 Доступны разные `unit`:
-- `.kilogram` -  килограмм
+- `.kilogram` - килограмм
 - `.gram` - грамм
 - `.pound` - фунт
 - `.ounce` - унция

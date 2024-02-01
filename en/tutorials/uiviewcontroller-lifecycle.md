@@ -2,7 +2,7 @@ The controller class contains a `view`. You add your views exactly to this contr
 
 > `View` is not created with controller initialization.
 
-The controller needs a reason to create the `view` object. The lifecycle concept is built around this feature. Just keep in mind that the controller's `view` is not created immediately, but as needed.
+The controller needs a reason to create the `view` object. The lifecycle concept is built around this feature. Keep in mind that the controller's `view` is not created immediately, but as needed.
 
 ![About lifecycle of `UIViewController`](https://cdn.sparrowcode.io/tutorials/uiviewcontroller-lifecycle/hello.jpg)
 

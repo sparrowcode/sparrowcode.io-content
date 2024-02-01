@@ -328,7 +328,7 @@ authorization: bearer {Auth Token}
 }
 ```
 
-Словарь `content-state` должен совпадать с моделью атрибутов `ActivityAttribute.ContentState`. Мы можем обновлять только динамические проперти. Проперти не в Content State обновить не получится.
+Словарь `content-state` должен совпадать с моделью атрибутов `ActivityAttribute.ContentState`. Мы можем обновлять только динамические проперти. Проперти вне Content State обновить не получится.
 
 # Отследить нажатие на Live Activity
 

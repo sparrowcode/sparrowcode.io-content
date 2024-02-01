@@ -2,7 +2,7 @@ To get root control, you need to look at the application hierarchy.
 
 # Scenes for iOS 13 and later
 
-Clearly the UI architecture with iOS 13:
+The UI architecture with iOS 13:
 
 ![`UIWindowScene` c iOS 13 and above.](https://cdn.sparrowcode.io/tutorials/how-to-get-root-view-controller/uiwindowscene.jpg)
 

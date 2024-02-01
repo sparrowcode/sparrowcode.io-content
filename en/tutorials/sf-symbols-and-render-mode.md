@@ -61,10 +61,10 @@ Image(systemName: "person.3.sequence.fill")
 
 To preserve the universal API, you can pass any number of colors. Here are the rules by which this works:
 
-- If a symbol has 1 segment for a color, it will use the first color specified. 
-- If the symbol has 2 segments, but 1 color is specified, it will be used for both segments.
-- If you specify 2 colors, they will be applied accordingly.
-- If you specify 3 colors for a symbol with 2 segments, the third is ignored.
+- If a symbol has one segment for a color, it will use the first color specified. 
+- If the symbol has two segments, but one color is specified, it will be used for both segments.
+- If you specify two colors, they will be applied accordingly.
+- If you specify three colors for a symbol with two segments, the third is ignored.
 
 # Multicolor Render
 
