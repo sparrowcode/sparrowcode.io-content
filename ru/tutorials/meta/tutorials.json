@@ -203,5 +203,19 @@
       ],
       "updated_date": "21.11.2023",
       "added_date": "21.11.2023"
+   },
+   "storekit-external-purchase-link-entitlement-ru": {
+      "title": "Как получить StoreKit External Purchase Link Entitlement (RU)",
+      "description": "История и инструкция как добавить покупки по внешней ссылке в App Store в России.",
+      "categories": ["development", "app-store-connect"],
+      "author": "rentel",
+      "editors": ["sparrowcode"],
+      "keywords": ["storyboard", "удалить сториборды", "launch screen", "сториборд", "как удалить launch screen", "добавить launch screen swiftui"],
+      "graph_image": "https://cdn.sparrowcode.io/tutorials/set-launch-screen-via-plist/with-uiimagename-result.jpg",
+      "google_structured_images": [
+         "https://cdn.sparrowcode.io/tutorials/set-launch-screen-via-plist/delete-launchscreen-storyboard-file.jpg", "https://cdn.sparrowcode.io/tutorials/set-launch-screen-via-plist/delete-launch-screen-interface-file-base-name-key.jpg", "https://cdn.sparrowcode.io/tutorials/set-launch-screen-via-plist/add-uilaunchscreen-key.jpg", "https://cdn.sparrowcode.io/tutorials/set-launch-screen-via-plist/add-color-to-assets.jpg", "https://cdn.sparrowcode.io/tutorials/set-launch-screen-via-plist/add-background-color-launch-screen-key.jpg", "https://cdn.sparrowcode.io/tutorials/set-launch-screen-via-plist/with-uicolorname-result.jpg", "https://cdn.sparrowcode.io/tutorials/set-launch-screen-via-plist/with-uiimagename-result.jpg", "https://cdn.sparrowcode.io/tutorials/set-launch-screen-via-plist/add-uitabbar-key.jpg", "https://cdn.sparrowcode.io/tutorials/set-launch-screen-via-plist/with-uitabbar-result.jpg", "https://cdn.sparrowcode.io/tutorials/set-launch-screen-via-plist/with-uitoolbar-result.jpg"
+      ],
+      "updated_date": "15.02.2024",
+      "added_date": "15.02.2024"
    }
 }

@@ -1,115 +1,123 @@
 {
-    "sparrowcode": {
-        "name": "Редакция Код Воробья",
-        "description": "Делаем полезности для iOS разработчиков.",
-        "avatar": "https://cdn.sparrowcode.io/authors/sparrowcode.jpg?v=5",
-        "github" : "sparrowcode",
-        "social_url" : "https://t.me/sparrowcode",
-        "buttons": [
-            {
-                "title": "GitHub",
-                "url": "https://github.com/sparrowcode"
-            },
-            {
-                "title": "Телеграм-канал",
-                "url": "https://t.me/sparrowcode"
-            },
-            {
-                "title": "Телеграм-чат",
-                "url": "https://t.me/sparrowcodechat"
-            },
-            {
-                "title": "Youtube",
-                "url": "https://youtube.com/@sparrowcode"
-            },
-            {
-                "title": "App Store",
-                "url": "https://apps.apple.com/developer/id1617623165"
-            },
-            {
-                "title": "Twitter",
-                "url": "https://twitter.com/sparrowcode_"
-            }
-        ]
-    },
-    "ivanvorobei" : {
-        "name" : "Иван Воробей",
-        "description" : "iOS разработчик. Пишу библиотеки, веду телеграм-канал Код Воробья.",
-        "avatar" : "https://cdn.sparrowcode.io/authors/ivanvorobei.jpg",
-        "github" : "ivanvorobei",
-        "buttons" : [
-            {
-                "title" : "GitHub",
-                "url" : "https://github.com/ivanvorobei"
-            },
-            {
-                "title" : "Телеграм-канал",
-                "url" : "https://t.me/sparrowcode"
-            },
-            {
-                "title": "Youtube",
-                "url": "https://youtube.com/@sparrowcode"
-            }
-        ]
-    },
-    "alxrguz" : {
-        "name" : "Александр Гузенко",
-        "description" : "iOS разработчик. Люблю нативный дизайн и велик.",
-        "avatar" : "https://cdn.sparrowcode.io/authors/alxrguz.jpg",
-        "github" : "alxrguz",
-        "buttons" : [
-            {
-                "title" : "GitHub",
-                "url" : "https://github.com/alxrguz"
-            },
-            {
-                "title" : "App Store",
-                "url" : "https://apps.apple.com/developer/id1480235724"
-            }
-        ]
-    },
-    "somenkovnikita": {
-        "name": "Никита Соменков",
-        "description": "iOS разработчик. Развиваю свой проект, и тоже за нативный дизайн",
-        "avatar": "https://cdn.sparrowcode.io/authors/somenkovnikita.jpg",
-        "github" : "somenkovnikita",
-        "buttons": [
-            {
-                "title": "GitHub",
-                "url": "https://github.com/somenkovnikita"
-            },
-            {
-                "title" : "Projects",
-                "url" : "https://apps.somenkov.ru"
-            }
-        ]
-    },
-    "svyatoynick": {
-        "name": "Николай Пелевин",
-        "description": "iOS Разработчик, люблю конфеты.",
-        "avatar": "https://cdn.sparrowcode.io/authors/svyatoynick.jpg",
-        "github" : "svyatoynick",
-        "buttons": [
-            {
-                "title": "GitHub",
-                "url": "https://github.com/svyatoynick"
-            },
-            {
-                "title" : "App Store",
-                "url" : "https://apps.pelevin.me"
-            }
-        ]
-    },
-    "liubowolkova": {
-        "name": "Любовь Волкова",
-        "description": "Люблю матан, swift и 🐺",
-        "avatar": "https://cdn.sparrowcode.io/authors/liubowolkova.jpg",
-        "github" : "liubowolkova",
-        "buttons": [
-            {
-                "title": "GitHub",
-                "url": "https://github.com/liubowolkova"
-            }
-        ]
-    }
+   "sparrowcode": {
+      "name": "Редакция Код Воробья",
+      "description": "Делаем полезности для iOS разработчиков.",
+      "avatar": "https://cdn.sparrowcode.io/authors/sparrowcode.jpg?v=5",
+      "github": "sparrowcode",
+      "social_url": "https://t.me/sparrowcode",
+      "buttons": [
+         {
+            "title": "GitHub",
+            "url": "https://github.com/sparrowcode"
+         }, {
+            "title": "Телеграм-канал",
+            "url": "https://t.me/sparrowcode"
+         }, {
+            "title": "Телеграм-чат",
+            "url": "https://t.me/sparrowcodechat"
+         }, {
+            "title": "Youtube",
+            "url": "https://youtube.com/@sparrowcode"
+         }, {
+            "title": "App Store",
+            "url": "https://apps.apple.com/developer/id1617623165"
+         }, {
+            "title": "Twitter",
+            "url": "https://twitter.com/sparrowcode_"
+         }
+      ]
+   },
+   "ivanvorobei": {
+      "name": "Иван Воробей",
+      "description": "iOS разработчик. Пишу библиотеки, веду телеграм-канал Код Воробья.",
+      "avatar": "https://cdn.sparrowcode.io/authors/ivanvorobei.jpg",
+      "github": "ivanvorobei",
+      "buttons": [
+         {
+            "title": "GitHub",
+            "url": "https://github.com/ivanvorobei"
+         }, {
+            "title": "Телеграм-канал",
+            "url": "https://t.me/sparrowcode"
+         }, {
+            "title": "Youtube",
+            "url": "https://youtube.com/@sparrowcode"
+         }
+      ]
+   },
+   "alxrguz": {
+      "name": "Александр Гузенко",
+      "description": "iOS разработчик. Люблю нативный дизайн и велик.",
+      "avatar": "https://cdn.sparrowcode.io/authors/alxrguz.jpg",
+      "github": "alxrguz",
+      "buttons": [
+         {
+            "title": "GitHub",
+            "url": "https://github.com/alxrguz"
+         }, {
+            "title": "App Store",
+            "url": "https://apps.apple.com/developer/id1480235724"
+         }
+      ]
+   },
+   "somenkovnikita": {
+      "name": "Никита Соменков",
+      "description": "iOS разработчик. Развиваю свой проект, и тоже за нативный дизайн",
+      "avatar": "https://cdn.sparrowcode.io/authors/somenkovnikita.jpg",
+      "github": "somenkovnikita",
+      "buttons": [
+         {
+            "title": "GitHub",
+            "url": "https://github.com/somenkovnikita"
+         }, {
+            "title": "Projects",
+            "url": "https://apps.somenkov.ru"
+         }
+      ]
+   },
+   "svyatoynick": {
+      "name": "Николай Пелевин",
+      "description": "iOS Разработчик, люблю конфеты.",
+      "avatar": "https://cdn.sparrowcode.io/authors/svyatoynick.jpg",
+      "github": "svyatoynick",
+      "buttons": [
+         {
+            "title": "GitHub",
+            "url": "https://github.com/svyatoynick"
+         }, {
+            "title": "App Store",
+            "url": "https://apps.pelevin.me"
+         }
+      ]
+   },
+   "liubowolkova": {
+      "name": "Любовь Волкова",
+      "description": "Люблю матан, swift и 🐺",
+      "avatar": "https://cdn.sparrowcode.io/authors/liubowolkova.jpg",
+      "github": "liubowolkova",
+      "buttons": [
+         {
+            "title": "GitHub",
+            "url": "https://github.com/liubowolkova"
+         }
+      ]
+   },
+   "rentel": {
+      "name": "Команда Rentel",
+      "description": "Мобильная касса для iOS-устройств на SwiftUI",
+      "avatar": "https://cdn.sparrowcode.io/authors/rentel.jpg",
+      "github": "iOSRentel",
+      "buttons": [
+         {
+            "title": "Сайи",
+            "url": "https://rentel.app/"
+         }, {
+            "title": "Приложение",
+            "url": "https://apps.apple.com/ru/developer/rentel-ooo/id1632637158"
+         }, {
+            "title": "GitHub",
+            "url": "https://github.com/iOSRentel"
+         }
+      ]
+   }
 }
