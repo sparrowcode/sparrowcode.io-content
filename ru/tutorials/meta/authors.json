@@ -109,8 +109,11 @@
       "github": "iOSRentel",
       "buttons": [
          {
-            "title": "Сайи",
+            "title": "Сайт",
             "url": "https://rentel.app/"
+         }, {
+            "title": "Телеграм-канал",
+            "url": "https://t.me/rentelbusiness"
          }, {
             "title": "Приложение",
             "url": "https://apps.apple.com/ru/developer/rentel-ooo/id1632637158"
