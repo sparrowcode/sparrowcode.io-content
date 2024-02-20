@@ -211,7 +211,7 @@
       "author": "rentel",
       "editors": ["sparrowcode"],
       "keywords": [""],
-      "graph_image": "https://cdn.sparrowcode.io/tutorials/set-launch-screen-via-plist/with-uiimagename-result.jpg",
+      "graph_image": "https://cdn.sparrowcode.io/tutorials/storekit-external-purchase-link-entitlement-ru/reject.jpg?v=4",
       "google_structured_images": [
          "https://cdn.sparrowcode.io/tutorials/set-launch-screen-via-plist/delete-launchscreen-storyboard-file.jpg", "https://cdn.sparrowcode.io/tutorials/set-launch-screen-via-plist/delete-launch-screen-interface-file-base-name-key.jpg", "https://cdn.sparrowcode.io/tutorials/set-launch-screen-via-plist/add-uilaunchscreen-key.jpg", "https://cdn.sparrowcode.io/tutorials/set-launch-screen-via-plist/add-color-to-assets.jpg", "https://cdn.sparrowcode.io/tutorials/set-launch-screen-via-plist/add-background-color-launch-screen-key.jpg", "https://cdn.sparrowcode.io/tutorials/set-launch-screen-via-plist/with-uicolorname-result.jpg", "https://cdn.sparrowcode.io/tutorials/set-launch-screen-via-plist/with-uiimagename-result.jpg", "https://cdn.sparrowcode.io/tutorials/set-launch-screen-via-plist/add-uitabbar-key.jpg", "https://cdn.sparrowcode.io/tutorials/set-launch-screen-via-plist/with-uitabbar-result.jpg", "https://cdn.sparrowcode.io/tutorials/set-launch-screen-via-plist/with-uitoolbar-result.jpg"
       ],
