@@ -49,9 +49,9 @@ Apple [разрешила](https://t.me/sparrowcode/450) направлять п
 
 Нашу заявку отклонили через 7 дней, потому что эквайринг ЮКасса в этот момент находился под санкциями. Мы сменили эквайринг на Райффайзен, заполнили новую заявку. Но не смогли её отправить — наша старая заявка висела в статусе рассмотрения.
 
-В течении месяца мы писали на eurodev@apple.com, чтобы аннулировать первую заявку. Она блокировала подачу новой заявки. Так мы потеряли время из-за обстоятельств, о которых не могли предполагать.
+В течении месяца мы писали на eurodev@apple.com, чтобы аннулировать первую заявку. Она блокировала подачу новой заявки. Так мы потеряли время.
 
-Через 7 дней после отправки второй заявки в Apple Developer что стал доступен `Additional Capabilities` для бандла приложения.
+Я отправил вторую заявку. Через 7 дней увидел в Apple Developer что мне доступен `Additional Capabilities` для бандла приложения.
 
 ![Новый Capability](https://cdn.sparrowcode.io/tutorials/storekit-external-purchase-link-entitlement-ru/additional-capabilities.jpg?v=1)
 
@@ -122,4 +122,4 @@ Apple [разрешила](https://t.me/sparrowcode/450) направлять п
 [Официальная Инструкция для RU](https://developer.apple.com/contact/request/storekit-external-entitlement-ru): Официальная инструкция и запрос StoreKit Entitlement. Ссылка открывается только если аккаунт владельца с регионом РФ
 [Инструкиця для US](https://developer.apple.com/support/storekit-external-entitlement-us/): Не для RU региона, но внутри полезные скриншоты.
 [Скачать иконку](https://developer.apple.com/support/downloads/Link-out-template.zip): Оригинальная иконка для кнопки на оплату на сайте.
-["Первыми в App Store внедрили оплату подписки на расчётный счет ООО в РФ"](https://vc.ru/u/rentel/1024516-pervymi-v-app-store-vnedrili-oplatu-podpiski-na-raschetnyy-schet-ooo-v-rf): Организационно-правовой аспект внедрения внешних покупок, плюсы и минусы данного механизма.
+["Первыми в App Store внедрили оплату подписки на расчётный счет ООО в РФ"](https://vc.ru/u/rentel/1024516-pervymi-v-app-store-vnedrili-oplatu-podpiski-na-raschetnyy-schet-ooo-v-rf): Плюсы и минусы внешних покупок по закону
