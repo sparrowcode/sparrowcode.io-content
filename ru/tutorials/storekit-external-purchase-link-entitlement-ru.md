@@ -1,4 +1,4 @@
-Apple [разрешила](https://t.me/sparrowcode/450) направлять пользователей из РФ на оплату цифровых покупок в приложении на **внешнем сайте**, минуя AppStore payments. Но чтобы вы могли это делать, нужно подать заявку, [получить разрешение](https://developer.apple.com/support/storekit-external-entitlement/) и обновить приложения.
+Apple [разрешила](https://t.me/sparrowcode/450) направлять пользователей из РФ на оплату цифровых покупок в приложении на **внешнем сайте**, минуя App Store payments. Но чтобы вы могли это делать, нужно подать заявку, получить разрешение и обновить приложения.
 
 > Внутри одного региона вы **не можете** одновременно принимать и внешние платежи, и классические платежи через App Store. Но можно использовать внешние платежи для РФ, а для других регионов - классические.
 
@@ -122,4 +122,4 @@ Apple [разрешила](https://t.me/sparrowcode/450) направлять п
 [Официальная Инструкция для RU](https://developer.apple.com/contact/request/storekit-external-entitlement-ru): Официальная инструкция и запрос StoreKit Entitlement. Ссылка открывается только если аккаунт владельца с регионом РФ
 [Инструкиця для US](https://developer.apple.com/support/storekit-external-entitlement-us/): Не для RU региона, но внутри полезные скриншоты.
 [Скачать иконку](https://developer.apple.com/support/downloads/Link-out-template.zip): Оригинальная иконка для кнопки на оплату на сайте.
-["Первыми в App Store внедрили оплату подписки на расчётный счет ООО в РФ"](https://vc.ru/u/rentel/1024516-pervymi-v-app-store-vnedrili-oplatu-podpiski-na-raschetnyy-schet-ooo-v-rf): Плюсы и минусы внешних покупок по закону
+[Статья "Первыми в App Store внедрили оплату подписки на расчётный счет ООО в РФ"](https://vc.ru/u/rentel/1024516-pervymi-v-app-store-vnedrili-oplatu-podpiski-na-raschetnyy-schet-ooo-v-rf): Плюсы и минусы внешних покупок по закону
