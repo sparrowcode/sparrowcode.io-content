@@ -1,384 +1,437 @@
 {
-   "ilya-kovalenko": {
-      "apps": [
-         {
-            "id": "6474761795",
-            "added_date": "30.01.2024"
-         }, {
-            "id": "6459408926",
-            "added_date": "30.01.2024"
-         }, {
-            "id": "1503981169",
-            "added_date": "30.01.2024"
-         }
-      ]
-   },
-   "kambala-decapitator": {
-      "apps": [
-         {
-            "id": "482487701",
-            "added_date": "07.02.2022"
-         }, {
-            "id": "609753150",
-            "added_date": "07.02.2022"
-         }, {
-            "id": "644228154",
-            "added_date": "07.02.2022"
-         }
-      ]
-   },
-   "rastaman111": {
-      "apps": [
-         {
-            "id": "1586640348",
-            "added_date": "18.11.2021"
-         }
-      ]
-   },
-   "Viktorianec": {
-      "apps": [
-         {
-            "id": "1473622434",
-            "added_date": "05.04.2022"
-         }, {
-            "id": "1017699433",
-            "added_date": "05.04.2022"
-         }, {
-            "id": "1029476822",
-            "added_date": "05.04.2022"
-         }, {
-            "id": "1088581020",
-            "added_date": "05.04.2022"
-         }, {
-            "id": "1574916839",
-            "added_date": "05.04.2022"
-         }
-      ]
-   },
-   "baksogen": {
-      "apps": [
-         {
-            "id": "1529716191",
-            "added_date": "05.04.2022"
-         }, {
-            "id": "891797540",
-            "added_date": "05.04.2022"
-         }, {
-            "id": "889580711",
-            "added_date": "05.04.2022"
-         }, {
-            "id": "1382928700",
-            "added_date": "05.04.2022"
-         }, {
-            "id": "1386377748",
-            "added_date": "05.04.2022"
-         }, {
-            "id": "576182327",
-            "added_date": "05.04.2022"
-         }, {
-            "id": "1229503218",
-            "added_date": "05.04.2022"
-         }
-      ]
-   },
-   "artembolotov": {
-      "apps": [
-         {
-            "id": "1535523842",
-            "added_date": "05.04.2022"
-         }
-      ]
-   },
-   "kopsap4ik": {
-      "apps": [
-         {
-            "id": "1579159150",
-            "added_date": "22.04.2022"
-         }
-      ]
-   },
-   "NathanFallet": {
-      "apps": [
-         {
-            "id": "1598813588",
-            "added_date": "03.05.2022"
-         }, {
-            "id": "1575388217",
-            "added_date": "03.05.2022"
-         }
-      ]
-   },
-   "YurchukV": {
-      "apps": [
-         {
-            "id": "957083912",
-            "added_date": "21.05.2022"
-         }, {
-            "id": "1238801709",
-            "added_date": "21.05.2022"
-         }, {
-            "id": "942061038",
-            "added_date": "21.05.2022"
-         }, {
-            "id": "1672420617",
-            "added_date": "21.05.2022"
-         }, {
-            "id": "1323520875",
-            "added_date": "21.05.2022"
-         }
-      ]
-   },
-   "Rogue85": {
-      "apps": [
-         {
-            "id": "1619685571",
-            "added_date": "09.06.2022"
-         }
-      ]
-   },
-   "alxrguz": {
-      "apps": [
-         {
-            "id": "1521429599",
-            "added_date": "15.07.2022"
-         }, {
-            "id": "6443957774",
-            "added_date": "24.11.2022"
-         }
-      ]
-   },
-   "ivanvorobei": {
-      "repositories": [
-         "https://github.com/sparrowcode/PermissionsKit", "https://github.com/sparrowcode/SwiftBoost", "https://github.com/sparrowcode/SafeSFSymbols", "https://github.com/sparrowcode/SettingsIconGenerator", "https://github.com/sparrowcode/SPQRCode", "https://github.com/sparrowcode/AlertKit", "https://github.com/ivanvorobei/SPIndicator", "https://github.com/ivanvorobei/SPPerspective", "https://github.com/ivanvorobei/SPPageController"
-      ],
-      "projects": [
-         {
-            "name": {
-               "en": "Код Воробья",
-               "ru": "Sparrow Code"
-            },
-            "description": "Туториалы для iOS разработчиков.",
-            "url": "https://sparrowcode.io",
-            "added_date": "03.11.2022"
-         }
-      ],
-      "apps": [
-         {
-            "id": "1624477055",
-            "added_date": "09.10.2022"
-         }, {
-            "id": "1625641322",
-            "added_date": "09.10.2022"
-         }, {
-            "id": "875280793",
-            "added_date": "09.10.2022"
-         }, {
-            "id": "743843090",
-            "added_date": "09.10.2022"
-         }, {
-            "id": "537070378",
-            "added_date": "09.10.2022"
-         }, {
-            "id": "1617055933",
-            "added_date": "09.10.2022"
-         }, {
-            "id": "6449774982",
-            "added_date": "16.08.2023"
-         }
-      ]
-   },
-   "svyatoynick": {
-      "repositories": [
-         "https://github.com/svyatoynick/GAuthSwiftParser"
-      ],
-      "apps": [
-         {
-            "id": "1625641322",
-            "added_date": "09.10.2022"
-         }
-      ]
-   },
-   "konnnn": {
-      "apps": [
-         {
-            "id": "1193567206",
-            "added_date": "07.03.2023"
-         }, {
-            "id": "1517243559",
-            "added_date": "07.03.2023"
-         }
-      ]
-   },
-   "TopScrech": {
-      "apps": [
-         {
-            "id": "1639409934",
-            "added_date": "09.03.2023"
-         }
-      ]
-   },
-   "izyumkin": {
-      "repositories": [
-         "https://github.com/izyumkin/MCEmojiPicker"
-      ],
-      "apps": [
-         {
-            "id": "1500111859",
-            "added_date": "09.03.2023"
-         }
-      ]
-   },
-   "astat-narek": {
-      "apps": [
-         {
-            "id": "6447767130",
-            "added_date": "19.04.2023"
-         }
-      ]
-   },
-   "tact": {
-      "apps": [
-         {
-            "id": "6446785685",
-            "added_date": "19.04.2023"
-         }, {
-            "id": "1664121598",
-            "added_date": "19.04.2023"
-         }, {
-            "id": "1658749136",
-            "added_date": "19.04.2023"
-         }, {
-            "id": "6444840823",
-            "added_date": "19.04.2023"
-         }, {
-            "id": "1615759035",
-            "added_date": "19.04.2023"
-         }, {
-            "id": "1584162246",
-            "added_date": "19.04.2023"
-         }
-      ]
-   },
-   "Alimkhan": {
-      "apps": [
-         {
-            "id": "6444829117",
-            "added_date": "27.04.2023"
-         }
-      ]
-   },
-   "tym2013": {
-      "apps": [
-         {
-            "id": "6447381211",
-            "added_date": "06.07.2023"
-         }
-      ]
-   },
-   "IKorabel": {
-      "apps": [
-         {
-            "id": "6450536462",
-            "added_date": "24.07.2023"
-         }, {
-            "id": "1491193921",
-            "added_date": "24.07.2023"
-         }
-      ]
-   },
-   "Ru5C55an": {
-      "apps": [
-         {
-            "id": "6444661422",
-            "added_date": "26.07.2023"
-         }, {
-            "id": "6450873870",
-            "added_date": "26.07.2023"
-         }, {
-            "id": "6447188102",
-            "added_date": "26.07.2023"
-         }
-      ]
-   },
-   "azaiv": {
-      "apps": [
-         {
-            "id": "6449774982",
-            "added_date": "10.08.2023"
-         }
-      ]
-   },
-   "andreyZozulych": {
-      "apps": [
-         {
-            "id": "1665459546",
-            "added_date": "13.11.2023"
-         }, {
-            "id": "1638726940",
-            "added_date": "13.11.2023"
-         }
-      ]
-   },
-   "Kylmakalle": {
-      "apps": [
-         {
-            "id": "6471879502",
-            "added_date": "15.12.2023"
-         }
-      ],
-      "repositories": [
-         "https://github.com/Swiftgram/TDLibKit"
-      ]
-   },
-   "AlexeyBrilyov": {
-      "apps": [
-         {
-            "id": "667579844",
-            "added_date": "22.12.2023"
-         }, {
-            "id": "1081939665",
-            "added_date": "22.12.2023"
-         }
-      ]
-   },
-   "ardavydov": {
-      "apps": [
-         {
-            "id": "1537409012",
-            "added_date": "21.12.2023"
-         }
-      ]
-   },
-   "dm-zharov": {
-      "apps": [
-         {
-            "id": "6472495887",
-            "added_date": "26.12.2023"
-         }
-      ]
-   },
-   "fedafone": {
-      "apps": [
-         {
-            "id": "6474557776",
-            "added_date": "27.12.2023"
-         }
-      ]
-   },
-   "AppNest": {
-      "apps": [
-         {
-            "id": "6473675965",
-            "added_date": "24.01.2024"
-         }
-      ]
-   },
-   "prooxyyy": {
-      "apps": [
-         {
-            "id": "6476628951",
-            "added_date": "21.02.2024"
-         }
-      ]
-   }
+	"ilya-kovalenko": {
+		"apps": [
+			{
+				"id": "6474761795",
+				"added_date": "30.01.2024"
+			},
+			{
+				"id": "6459408926",
+				"added_date": "30.01.2024"
+			},
+			{
+				"id": "1503981169",
+				"added_date": "30.01.2024"
+			}
+		]
+	},
+	"kambala-decapitator": {
+		"apps": [
+			{
+				"id": "482487701",
+				"added_date": "07.02.2022"
+			},
+			{
+				"id": "609753150",
+				"added_date": "07.02.2022"
+			},
+			{
+				"id": "644228154",
+				"added_date": "07.02.2022"
+			}
+		]
+	},
+	"rastaman111": {
+		"apps": [
+			{
+				"id": "1586640348",
+				"added_date": "18.11.2021"
+			}
+		]
+	},
+	"Viktorianec": {
+		"apps": [
+			{
+				"id": "1473622434",
+				"added_date": "05.04.2022"
+			},
+			{
+				"id": "1017699433",
+				"added_date": "05.04.2022"
+			},
+			{
+				"id": "1029476822",
+				"added_date": "05.04.2022"
+			},
+			{
+				"id": "1088581020",
+				"added_date": "05.04.2022"
+			},
+			{
+				"id": "1574916839",
+				"added_date": "05.04.2022"
+			}
+		]
+	},
+	"baksogen": {
+		"apps": [
+			{
+				"id": "1529716191",
+				"added_date": "05.04.2022"
+			},
+			{
+				"id": "891797540",
+				"added_date": "05.04.2022"
+			},
+			{
+				"id": "889580711",
+				"added_date": "05.04.2022"
+			},
+			{
+				"id": "1382928700",
+				"added_date": "05.04.2022"
+			},
+			{
+				"id": "1386377748",
+				"added_date": "05.04.2022"
+			},
+			{
+				"id": "576182327",
+				"added_date": "05.04.2022"
+			},
+			{
+				"id": "1229503218",
+				"added_date": "05.04.2022"
+			}
+		]
+	},
+	"artembolotov": {
+		"apps": [
+			{
+				"id": "1535523842",
+				"added_date": "05.04.2022"
+			}
+		]
+	},
+	"kopsap4ik": {
+		"apps": [
+			{
+				"id": "1579159150",
+				"added_date": "22.04.2022"
+			}
+		]
+	},
+	"NathanFallet": {
+		"apps": [
+			{
+				"id": "1598813588",
+				"added_date": "03.05.2022"
+			},
+			{
+				"id": "1575388217",
+				"added_date": "03.05.2022"
+			}
+		]
+	},
+	"YurchukV": {
+		"apps": [
+			{
+				"id": "957083912",
+				"added_date": "21.05.2022"
+			},
+			{
+				"id": "1238801709",
+				"added_date": "21.05.2022"
+			},
+			{
+				"id": "942061038",
+				"added_date": "21.05.2022"
+			},
+			{
+				"id": "1672420617",
+				"added_date": "21.05.2022"
+			},
+			{
+				"id": "1323520875",
+				"added_date": "21.05.2022"
+			}
+		]
+	},
+	"Rogue85": {
+		"apps": [
+			{
+				"id": "1619685571",
+				"added_date": "09.06.2022"
+			}
+		]
+	},
+	"alxrguz": {
+		"apps": [
+			{
+				"id": "1521429599",
+				"added_date": "15.07.2022"
+			},
+			{
+				"id": "6443957774",
+				"added_date": "24.11.2022"
+			}
+		]
+	},
+	"ivanvorobei": {
+		"repositories": [
+			"https://github.com/sparrowcode/PermissionsKit",
+			"https://github.com/sparrowcode/SwiftBoost",
+			"https://github.com/sparrowcode/SafeSFSymbols",
+			"https://github.com/sparrowcode/SettingsIconGenerator",
+			"https://github.com/sparrowcode/SPQRCode",
+			"https://github.com/sparrowcode/AlertKit",
+			"https://github.com/ivanvorobei/SPIndicator",
+			"https://github.com/ivanvorobei/SPPerspective",
+			"https://github.com/ivanvorobei/SPPageController"
+		],
+		"projects": [
+			{
+				"name": {
+					"en": "Код Воробья",
+					"ru": "Sparrow Code"
+				},
+				"description": "Туториалы для iOS разработчиков.",
+				"url": "https://sparrowcode.io",
+				"added_date": "03.11.2022"
+			}
+		],
+		"apps": [
+			{
+				"id": "1624477055",
+				"added_date": "09.10.2022"
+			},
+			{
+				"id": "1625641322",
+				"added_date": "09.10.2022"
+			},
+			{
+				"id": "875280793",
+				"added_date": "09.10.2022"
+			},
+			{
+				"id": "743843090",
+				"added_date": "09.10.2022"
+			},
+			{
+				"id": "537070378",
+				"added_date": "09.10.2022"
+			},
+			{
+				"id": "1617055933",
+				"added_date": "09.10.2022"
+			},
+			{
+				"id": "6449774982",
+				"added_date": "16.08.2023"
+			}
+		]
+	},
+	"svyatoynick": {
+		"repositories": [
+			"https://github.com/svyatoynick/GAuthSwiftParser"
+		],
+		"apps": [
+			{
+				"id": "1625641322",
+				"added_date": "09.10.2022"
+			}
+		]
+	},
+	"konnnn": {
+		"apps": [
+			{
+				"id": "1193567206",
+				"added_date": "07.03.2023"
+			},
+			{
+				"id": "1517243559",
+				"added_date": "07.03.2023"
+			}
+		]
+	},
+	"TopScrech": {
+		"apps": [
+			{
+				"id": "1639409934",
+				"added_date": "09.03.2023"
+			}
+		]
+	},
+	"izyumkin": {
+		"repositories": [
+			"https://github.com/izyumkin/MCEmojiPicker"
+		],
+		"apps": [
+			{
+				"id": "1500111859",
+				"added_date": "09.03.2023"
+			}
+		]
+	},
+	"astat-narek": {
+		"apps": [
+			{
+				"id": "6447767130",
+				"added_date": "19.04.2023"
+			}
+		]
+	},
+	"tact": {
+		"apps": [
+			{
+				"id": "6446785685",
+				"added_date": "19.04.2023"
+			},
+			{
+				"id": "1664121598",
+				"added_date": "19.04.2023"
+			},
+			{
+				"id": "1658749136",
+				"added_date": "19.04.2023"
+			},
+			{
+				"id": "6444840823",
+				"added_date": "19.04.2023"
+			},
+			{
+				"id": "1615759035",
+				"added_date": "19.04.2023"
+			},
+			{
+				"id": "1584162246",
+				"added_date": "19.04.2023"
+			}
+		]
+	},
+	"Alimkhan": {
+		"apps": [
+			{
+				"id": "6444829117",
+				"added_date": "27.04.2023"
+			}
+		]
+	},
+	"tym2013": {
+		"apps": [
+			{
+				"id": "6447381211",
+				"added_date": "06.07.2023"
+			}
+		]
+	},
+	"IKorabel": {
+		"apps": [
+			{
+				"id": "6450536462",
+				"added_date": "24.07.2023"
+			},
+			{
+				"id": "1491193921",
+				"added_date": "24.07.2023"
+			}
+		]
+	},
+	"Ru5C55an": {
+		"apps": [
+			{
+				"id": "6444661422",
+				"added_date": "26.07.2023"
+			},
+			{
+				"id": "6450873870",
+				"added_date": "26.07.2023"
+			},
+			{
+				"id": "6447188102",
+				"added_date": "26.07.2023"
+			}
+		]
+	},
+	"azaiv": {
+		"apps": [
+			{
+				"id": "6449774982",
+				"added_date": "10.08.2023"
+			}
+		]
+	},
+	"andreyZozulych": {
+		"apps": [
+			{
+				"id": "1665459546",
+				"added_date": "13.11.2023"
+			},
+			{
+				"id": "1638726940",
+				"added_date": "13.11.2023"
+			}
+		]
+	},
+	"Kylmakalle": {
+		"apps": [
+			{
+				"id": "6471879502",
+				"added_date": "15.12.2023"
+			}
+		],
+		"repositories": [
+			"https://github.com/Swiftgram/TDLibKit"
+		]
+	},
+	"AlexeyBrilyov": {
+		"apps": [
+			{
+				"id": "667579844",
+				"added_date": "22.12.2023"
+			},
+			{
+				"id": "1081939665",
+				"added_date": "22.12.2023"
+			}
+		]
+	},
+	"ardavydov": {
+		"apps": [
+			{
+				"id": "1537409012",
+				"added_date": "21.12.2023"
+			}
+		]
+	},
+	"dm-zharov": {
+		"apps": [
+			{
+				"id": "6472495887",
+				"added_date": "26.12.2023"
+			}
+		]
+	},
+	"fedafone": {
+		"apps": [
+			{
+				"id": "6474557776",
+				"added_date": "27.12.2023"
+			}
+		]
+	},
+	"AppNest": {
+		"apps": [
+			{
+				"id": "6473675965",
+				"added_date": "24.01.2024"
+			}
+		]
+	},
+	"prooxyyy": {
+		"apps": [
+			{
+				"id": "6476628951",
+				"added_date": "21.02.2024"
+			}
+		]
+	},
+	"Shadow: скрыть приложения": {
+		"apps": [
+			{
+				"id": "1671650132",
+				"added_date": "22.03.2024"
+			}
+		]
+	}
 }
