@@ -217,5 +217,17 @@
       ],
       "updated_date": "15.02.2024",
       "added_date": "15.02.2024"
+   },
+   "tipkit": {
+      "title": "TipKit",
+      "description": "TipKit",
+      "categories": ["development", "swiftui", "uikit"],
+      "author": "sparrowcode",
+      "editors": [],
+      "keywords": [""],
+      "graph_image": "https://cdn.sparrowcode.io/tutorials/tipkit/reject.jpg",
+      "google_structured_images": [],
+      "updated_date": "27.03.2024",
+      "added_date": "27.03.2024"
    }
 }
