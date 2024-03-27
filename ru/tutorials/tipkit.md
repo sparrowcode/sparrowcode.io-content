@@ -80,7 +80,7 @@ Image(systemName: "heart")
 ![Всплывающие `Popever` посказки](https://cdn.sparrowcode.io/tutorials/tipkit/popover.png)
 
 // Поправить
-У Popever-подсказок стрелочка есть всегда, но направление которое вы указали не гарантируется.
+У Popever-подсказок стрелочка есть всегда, но направление которое вы указали не гарантируется. Как показывается стрелка примеры на скриншоте.
 
 ## Встраиваемые `Inline`
 
@@ -96,7 +96,7 @@ VStack {
 }
 ```
 
-![Встроенные подсказки](https://cdn.sparrowcode.io/tutorials/tipkit/inline-arrow.png)
+![Встроенные подсказки. Можно со стрелкой и без.](https://cdn.sparrowcode.io/tutorials/tipkit/inline-arrow.png)
 
 У Inline-подсказак стрелка опциональная:
 
@@ -109,12 +109,23 @@ TipView(inlineTip, arrowEdge: .bottom)
 
 ## Добавляем кнопку
 
+// много лишнего
+[Добавляем кнопки](https://cdn.sparrowcode.io/tutorials/tipkit/action-tipkit.mp4)
+
 Кнопки прописываются в протоколе в поле `actions`:
 
+// Показать целиком
 ```swift
-var actions: [Action] {
-    Action(id: "reset-password", title: "Сбросить Пароль")
-    Action(id: "not-reset-password", title: "Отменить сброс")
+struct PopoverTip: Tip {
+
+    var title: Text {...}
+    var message: Text? {...}
+    var image: Image? {...}
+    
+    var actions: [Action] {
+        Action(id: "reset-password", title: "Сбросить Пароль")
+        Action(id: "not-reset-password", title: "Отменить сброс")
+    }
 }
 ```
 
@@ -124,17 +135,10 @@ var actions: [Action] {
 TipView(tip) { action in
 
     if action.id == "reset-password" {
-    
-    }
-    
-    if action.id == "not-reset-password" {
-        
+        // Логика по кнопке
     }
 }
 ```
-
-// много лишнего
-[Добавляем кнопки](https://cdn.sparrowcode.io/tutorials/tipkit/action-tipkit.mp4)
 
 # Закрываем подсказку
 
