@@ -1,10 +1,16 @@
-[TipKit](https://developer.apple.com/documentation/tipkit) - позволяет легко отображать подсказки в приложениях. Появился в iOS 17 и доступен для iPhone, iPad, Mac, Apple Watch и Apple TV.
+[TipKit](https://developer.apple.com/documentation/tipkit) показывает подсказки. Выглядят вот так:
 
-![Вступление](https://cdn.sparrowcode.io/tutorials/tipkit/tipkit-example.jpg)
+![Как выглядят подсказки TipKit](https://cdn.sparrowcode.io/tutorials/tipkit/tipkit-example.jpg)
 
-# Инициализация и настройка для приложения
+// поправить текст и системы
+Добавили в iOS 17. Доступен для iOS, macOS, Apple Watch и Apple TV и visionOS.
 
-В точке входа приложения импортируем `TipKit` и добавляем `Tips.configure`.
+// Найти конкурентов на гитхабе
+// Встроить в вввдение "Use TipKit to show contextual tips that highlight new, interesting, or unused features people haven’t discovered on their own yet."
+
+# Инициализация
+
+Импортируем `TipKit` и в точке входа в приложение вызываем `Tips.configure`:
 
 ```swift
 import SwiftUI
@@ -12,6 +18,7 @@ import TipKit
 
 @main
 struct TipKitExampleApp: App {
+
     var body: some Scene {
         WindowGroup {
             TipKitDemo()
@@ -26,30 +33,31 @@ struct TipKitExampleApp: App {
 }
 ```
 
-`Tips.configure()` - конфигурация состояния всех подсказок в приложении.
+`displayFrequency` определяет как часто показывать подсказку:
 
-`displayFrequency` - частота отображения подсказки: 
-<ul>
-    <li>immediate - будут отображаться сразу</li>
-    <li>hourly - ежечасно</li>
-    <li>daily - ежедневно</li>
-    <li>weekle - еженедельно</li>
-    <li>monthly - ежемесячно</li>
-</ul>
+- immediate - будут отображаться сразу
+- hourly - ежечасно
+- daily - ежедневно
+- weekle - еженедельно
+- monthly - ежемесячно
 
+// Непонятно: что там хранится, какие есть варианты, что ставим чаще всего если варианты не однозначные. Сумарно поменять предложение.
 `datastoreLocation` - расположение хранилища данных, по умолчанию является каталогом `support`.
 
-# Подсказки
+# Создаем подсказку
 
-Чтобы создать подсказку нужно принять протокол Tip, этот протокол определяет содержание и условия. Подсказка состоит из обязательного поля `title` и опциональных `message` и `image`.
+Ппротокол Tip определяет контент и когда показывать подсказку. У подсказки есть обязательное поля `title` и опциональне `message` и `image`.
+
 ```swift
-struct InlineTip: Tip {
+struct PopoverTip: Tip {
+
     var title: Text {
+        // Другой заголовок
         Text("Для начала")
     }
 
     var message: Text? {
-        Text("Проведите пальцем влево/вправо для навигации. Коснитесь фотографии, чтобы просмотреть ее детали.")
+        Text("Проведите пальцем влево/вправо для навигации.")
     }
 
     var image: Image? {
@@ -58,62 +66,50 @@ struct InlineTip: Tip {
 }
 ```
 
-Есть два вида подсказок:
+Есть два вида подсказок Popover показывается поверх интерерфейса, а Inline встраивается как обычная вью.
 
-### Inline - встраиваемые
+## Всплывающие `Popever`
 
-Временно перестраивает интерфейс вокруг себя, чтобы их ничего не перекрывало. Создаем экземпляр `TipView` и передаем ему подсказку для отображения.
+Вызываем модификатор `popoverTip` к вью, к которой нужно показать подсказку:
 
 ```swift
-struct TipKitDemo: View {
+Image(systemName: "heart")
+    .popoverTip(PopoverTip(), arrowEdge: .bottom)
+```
 
-    private let inlineTip = InlineTip()
+![Всплывающие `Popever` посказки](https://cdn.sparrowcode.io/tutorials/tipkit/popover.png)
 
-    var body: some View {
-        VStack {
-            Image("pug")
-                .resizable()
-                .scaledToFit()
-                .clipShape(RoundedRectangle(cornerRadius: 12))
-            TipView(inlineTip) // Inline Tip
-        }
-        .padding()
-    }
+// Поправить
+У Popever-подсказок стрелочка есть всегда, но направление которое вы указали не гарантируется.
+
+## Встраиваемые `Inline`
+
+Inline-подскази меняют лейаут. Ведут себя как вью и не перекрывают интерфейс приложения.
+
+```swift
+VStack {
+    Image("pug")
+        .resizable()
+        .scaledToFit()
+        .clipShape(RoundedRectangle(cornerRadius: 12))
+    TipView(inlineTip)
 }
+```
 
-// Так же можно указать `arrowEdge` - напраление стрелочки подсказки.
+![Встроенные подсказки](https://cdn.sparrowcode.io/tutorials/tipkit/inline-arrow.png)
+
+У Inline-подсказак стрелка опциональная:
+
+```swift
 TipView(inlineTip, arrowEdge: .top)
 TipView(inlineTip, arrowEdge: .leading)
 TipView(inlineTip, arrowEdge: .trailing)
 TipView(inlineTip, arrowEdge: .bottom)
 ```
 
-![Встроенные подсказки](https://cdn.sparrowcode.io/tutorials/tipkit/inline-arrow.png)
+## Добавляем кнопку
 
-### Popever - всплывающие
-
-Отображаются по верх интерфейса. Прикрепляем модификатор `popoverTip` кнопке или другим элементам интерфейса.
-
-```swift
-struct TipKitDemo: View {
-    
-    private let popoverTip = PopoverTip()
-    
-    var body: some View {
-        HStack {
-            Image(systemName: "heart")
-                .font(.largeTitle)
-                .popoverTip(popoverTip, arrowEdge: .bottom) // Popover Tip
-        }
-        
-    }
-}
-```
-![Всплывающие посказки](https://cdn.sparrowcode.io/tutorials/tipkit/popover.png)
-
-# Добавляем кнопоки в подсказку
-
-Чтобы появилась кнопка, в протокол нужно добавить поле `actions`:
+Кнопки прописываются в протоколе в поле `actions`:
 
 ```swift
 var actions: [Action] {
@@ -122,43 +118,43 @@ var actions: [Action] {
 }
 ```
 
-Выше мы указывали id, именно по нему будем определять какое действие было вызвано.
+`id` определяет какую кнопку нажали:
 
 ```swift
-TipView(tip, arrowEdge: .bottom) { action in
+TipView(tip) { action in
 
     if action.id == "reset-password" {
-        // действие reset-password
+    
     }
     
     if action.id == "not-reset-password" {
-        // действие not-reset-password
+        
     }
-    
 }
 ```
 
+// много лишнего
 [Добавляем кнопки](https://cdn.sparrowcode.io/tutorials/tipkit/action-tipkit.mp4)
 
-# Закрыть подсказку
+# Закрываем подсказку
 
-Можно нажать на крестик или закрыть кодом, используя метод `invalidate`.
+Можно нажать на крестик или закрыть кодом:
 
 ```swift
 inlineTip.invalidate(reason: .actionPerformed)
 ```
-Список причин по которым можно делать `invalidate`:
 
-* `.actionPerformed` - пользователь выполнил действие, описанное в подсказке.
+В метод укажите причину, почему закрыли подсказку. Список причин:
 
-* `.displayCountExceeded` - подсказка показана максимальное количество раз.
+`.actionPerformed` - пользователь выполнил действие, описанное в подсказке
+`.displayCountExceeded` - подсказка показана максимальное количество раз
+`.actionPerformed` - пользователь явное закрыл подсказку
 
-* `.actionPerformed` - пользователь явное закрыл подсказку.
 
+// Спорный пункт
+# Правила для подсказок, когда показывать
 
-# Правила отображения подсказки
-
-Правила на основе параметров отслеживают состояние приложения. В примере ниже `Rule` проверяет значение переменной `hasViewedGetStartedTip`, когда значение равно true, подсказка отобразится.
+Когда показывать подсказку настраивается с помощью параметров
 
 ```swift
 struct FavoriteRuleTip: Tip {
@@ -177,14 +173,17 @@ struct FavoriteRuleTip: Tip {
     var rules: [Rule] {
         #Rule(Self.$hasViewedGetStartedTip) { $0 == true }
     }
-
 }
 ```
 
+`Rule` проверяет значение переменной `hasViewedGetStartedTip`, когда значение равно true, подсказка отобразится.
+
+// Поменять на кнопку
+// Пример сложный
+// Потмер показать просто через кнопку, которая меняет параметр
 ```swift
 struct ParameterRule: View {
-    @State private var showDetail = false
-    
+
     var body: some View {
         VStack {
             Rectangle()
@@ -192,9 +191,10 @@ struct ParameterRule: View {
                 .popoverTip(FavoriteRuleTip(), arrowEdge: .top)
             .onTapGesture {
                 
-                // пользователь выполнил действие описанное в подсказке, отключаем подсказку GettingStartedTip
+                // Закрываем кодом: пользователь выполнил действие
                 GettingStartedTip().invalidate(reason: .actionPerformed)
                 
+                // НЕПОНЯТНО 
                 // значение hasViewedGetStartedTip true, показываем подсказку FavoriteRuleTip
                 FavoriteRuleTip.hasViewedGetStartedTip = true
             }
@@ -204,18 +204,23 @@ struct ParameterRule: View {
     }
 }
 ```
+
+// Видос на замену
 [Правила](https://cdn.sparrowcode.io/tutorials/tipkit/rules-video.mp4)
 
-# Preview
+# `TipKit` в Preview
 
-Если закрыть подсказку в preview она больше не покажется, это не очень удобно. Чтобы такого не происходило нужно сбросить хранилище данных подсказок `Tips.resetDatastore()`
+Когда дебажите в Preview и закроете подсказу, то она больше не покажется  — это не удобно. Чтобы подсказки появлилсь каждый раз, нужно сбросить хранилище данных:
 
 ```swift
 #Preview {
     TipKitDemo()
         .task {
+        
+            // Cбрасываем хранилище
             try? Tips.resetDatastore()
             
+            // Конфигурируем
             try? Tips.configure([
                 .displayFrequency(.immediate),
                 .datastoreLocation(.applicationDefault)
@@ -223,3 +228,5 @@ struct ParameterRule: View {
         }
 }
 ```
+
+// Примеры на UIKit? 
