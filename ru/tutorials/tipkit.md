@@ -1,6 +1,6 @@
 [TipKit](https://developer.apple.com/documentation/tipkit) - позволяет легко отображать подсказки в приложениях. Появился в iOS 17 и доступен для iPhone, iPad, Mac, Apple Watch и Apple TV.
 
-![](tipkit-example.png)
+![Вступление](https://cdn.sparrowcode.io/tutorials/tipkit/tipkit-example.jpg)
 
 # Инициализация и настройка для приложения
 
@@ -88,7 +88,7 @@ TipView(inlineTip, arrowEdge: .trailing)
 TipView(inlineTip, arrowEdge: .bottom)
 ```
 
-![](inline-arrow.png)
+![Встроенные подсказки](https://cdn.sparrowcode.io/tutorials/tipkit/inline-arrow.png)
 
 ### Popever - всплывающие
 
@@ -109,7 +109,7 @@ struct TipKitDemo: View {
     }
 }
 ```
-![](popover.png)
+![Всплывающие посказки](https://cdn.sparrowcode.io/tutorials/tipkit/popover.png)
 
 # Добавляем кнопоки в подсказку
 
@@ -137,9 +137,8 @@ TipView(tip, arrowEdge: .bottom) { action in
     
 }
 ```
-![](actions.png)
-### <a href="#">Здесь видео</a>
-<video src="action-tipkit.mp4" controls></video>
+
+[Добавляем кнопки](https://cdn.sparrowcode.io/tutorials/tipkit/action-tipkit.mp4)
 
 # Закрыть подсказку
 
@@ -205,8 +204,7 @@ struct ParameterRule: View {
     }
 }
 ```
-### <a href="#">Здесь видео</a>
-<video src="rules-video.mp4" controls></video>
+[Правила](https://cdn.sparrowcode.io/tutorials/tipkit/rules-video.mp4)
 
 # Preview
 
