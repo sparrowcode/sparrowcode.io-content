@@ -2,11 +2,9 @@
 
 ![Как выглядят подсказки TipKit](https://cdn.sparrowcode.io/tutorials/tipkit/tipkit-example.jpg)
 
-// поправить текст и системы
-Добавили в iOS 17. Доступен для iOS, macOS, Apple Watch и Apple TV и visionOS.
+Добавили в iOS 17. Доступен для iOS, iPadOS, macOS, watchOS, watchOS и visionOS.
 
-// Найти конкурентов на гитхабе
-// Встроить в вввдение "Use TipKit to show contextual tips that highlight new, interesting, or unused features people haven’t discovered on their own yet."
+Используйте TipKit чтобы показать контекстные подсказки, которые выделяют новые, интересные или неиспользуемые функции, о которых пользователи еще не знают.
 
 # Инициализация
 
@@ -41,34 +39,33 @@ struct TipKitExampleApp: App {
 - weekle - еженедельно
 - monthly - ежемесячно
 
-// Непонятно: что там хранится, какие есть варианты, что ставим чаще всего если варианты не однозначные. Сумарно поменять предложение.
-`datastoreLocation` - расположение хранилища данных, по умолчанию является каталогом `support`.
+`datastoreLocation` - хранилище данных подсказок. 
+По умолчанию используется `.applicationDefault`, это папка `support` на устройсте. `.url` используется чтобы указать свой путь. Чтобы использовать одно хранилище для группы приложений `.groupContainer`.
 
 # Создаем подсказку
 
-Ппротокол Tip определяет контент и когда показывать подсказку. У подсказки есть обязательное поля `title` и опциональне `message` и `image`.
+Протокол Tip определяет контент и когда показывать подсказку. У подсказки есть обязательное поле `title` и опциональные `message` и `image`.
 
 ```swift
 struct PopoverTip: Tip {
 
     var title: Text {
-        // Другой заголовок
-        Text("Для начала")
+        Text("Добавить в избранное")
     }
 
     var message: Text? {
-        Text("Проведите пальцем влево/вправо для навигации.")
+        Text("Этот пользователь будет добавлен в папку избранное.")
     }
 
     var image: Image? {
-        Image(systemName: "hand.draw")
+        Image(systemName: "heart")
     }
 }
 ```
 
-Есть два вида подсказок Popover показывается поверх интерерфейса, а Inline встраивается как обычная вью.
+Есть два вида подсказок **Popover** показывается поверх интерерфейса, а **Inline** встраивается как обычная вью.
 
-## Всплывающие `Popever`
+## Всплывающие `Popover`
 
 Вызываем модификатор `popoverTip` к вью, к которой нужно показать подсказку:
 
@@ -77,10 +74,9 @@ Image(systemName: "heart")
     .popoverTip(PopoverTip(), arrowEdge: .bottom)
 ```
 
-![Всплывающие `Popever` посказки](https://cdn.sparrowcode.io/tutorials/tipkit/popover.png)
-
-// Поправить
 У Popever-подсказок стрелочка есть всегда, но направление которое вы указали не гарантируется. Как показывается стрелка примеры на скриншоте.
+
+![Всплывающие `Popever` посказки](https://cdn.sparrowcode.io/tutorials/tipkit/popover.png)
 
 ## Встраиваемые `Inline`
 
@@ -98,7 +94,7 @@ VStack {
 
 ![Встроенные подсказки. Можно со стрелкой и без.](https://cdn.sparrowcode.io/tutorials/tipkit/inline-arrow.png)
 
-У Inline-подсказак стрелка опциональная:
+У Inline-подсказак стрелочка опциональная и ее направление стабильно:
 
 ```swift
 TipView(inlineTip, arrowEdge: .top)
@@ -109,12 +105,10 @@ TipView(inlineTip, arrowEdge: .bottom)
 
 ## Добавляем кнопку
 
-// много лишнего
-[Добавляем кнопки](https://cdn.sparrowcode.io/tutorials/tipkit/action-tipkit.mp4)
+![Добавляем кнопки](https://cdn.sparrowcode.io/tutorials/tipkit/action.png)
 
 Кнопки прописываются в протоколе в поле `actions`:
 
-// Показать целиком
 ```swift
 struct PopoverTip: Tip {
 
@@ -148,14 +142,12 @@ TipView(tip) { action in
 inlineTip.invalidate(reason: .actionPerformed)
 ```
 
-В метод укажите причину, почему закрыли подсказку. Список причин:
+В методе укажите причину, почему закрыли подсказку. Список причин:
 
 `.actionPerformed` - пользователь выполнил действие, описанное в подсказке
 `.displayCountExceeded` - подсказка показана максимальное количество раз
 `.actionPerformed` - пользователь явное закрыл подсказку
 
-
-// Спорный пункт
 # Правила для подсказок, когда показывать
 
 Когда показывать подсказку настраивается с помощью параметров
@@ -163,58 +155,41 @@ inlineTip.invalidate(reason: .actionPerformed)
 ```swift
 struct FavoriteRuleTip: Tip {
 
-    var title: Text {
-        Text("Добавить в избранное")
-    }
-    
-    var message: Text? {
-        Text("Этот пользователь будет добавлен в папку избранное.")
-    }
+    var title: Text {...}
+    var message: Text? {...}
 
     @Parameter
-    static var hasViewedGetStartedTip: Bool = false
+    static var hasViewedTip: Bool = false
 
     var rules: [Rule] {
-        #Rule(Self.$hasViewedGetStartedTip) { $0 == true }
+        #Rule(Self.$hasViewedTip) { $0 == true }
     }
 }
 ```
 
-`Rule` проверяет значение переменной `hasViewedGetStartedTip`, когда значение равно true, подсказка отобразится.
+`Rule` проверяет значение переменной `hasViewedTip`, когда значение равно true, подсказка отобразится.
 
-// Поменять на кнопку
-// Пример сложный
-// Потмер показать просто через кнопку, которая меняет параметр
 ```swift
 struct ParameterRule: View {
-
+    
     var body: some View {
         VStack {
-            Rectangle()
-                .frame(height: 100)
-                .popoverTip(FavoriteRuleTip(), arrowEdge: .top)
-            .onTapGesture {
-                
-                // Закрываем кодом: пользователь выполнил действие
-                GettingStartedTip().invalidate(reason: .actionPerformed)
-                
-                // НЕПОНЯТНО 
-                // значение hasViewedGetStartedTip true, показываем подсказку FavoriteRuleTip
-                FavoriteRuleTip.hasViewedGetStartedTip = true
+            Spacer()
+            Button("Rule"){
+                FavoriteRuleTip.hasViewedTip = true
             }
-            TipView(GettingStartedTip())
+            .buttonStyle(.borderedProminent)
+            .popoverTip(FavoriteRuleTip(), arrowEdge: .top)
         }
-        .padding()
     }
 }
 ```
 
-// Видос на замену
-[Правила](https://cdn.sparrowcode.io/tutorials/tipkit/rules-video.mp4)
+![Правила](https://cdn.sparrowcode.io/tutorials/tipkit/rules.png)
 
 # `TipKit` в Preview
 
-Когда дебажите в Preview и закроете подсказу, то она больше не покажется  — это не удобно. Чтобы подсказки появлилсь каждый раз, нужно сбросить хранилище данных:
+Когда дебажите в Preview и закроете подсказу, то она больше не покажется  — это не удобно. Чтобы подсказки появлялись каждый раз, нужно сбросить хранилище данных:
 
 ```swift
 #Preview {
@@ -233,4 +208,131 @@ struct ParameterRule: View {
 }
 ```
 
-// Примеры на UIKit? 
+# `UIKit`
+
+## Инициализация
+
+```swift
+func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+    Task {
+    try? Tips.configure([
+        .displayFrequency(.immediate),
+        .datastoreLocation(.applicationDefault)])
+    }
+    return true
+}
+```
+
+## Создаем подсказку
+
+```swift
+struct FavoritesTip: Tip {
+
+    var title: Text {
+        Text("Добавить в избранное")
+    }
+
+    var message: Text? {
+        Text("Этот пользователь будет добавлен в папку избранное.")
+    }
+
+    var image: Image? {
+        Image(systemName: "heart")
+    }
+}
+```
+
+### Всплывающие `Popover`
+
+```swift
+override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        Task { @MainActor in
+            for await shouldDisplay in FavoritesTip().shouldDisplayUpdates {
+
+                if shouldDisplay {
+                    let controller = TipUIPopoverViewController(FavoritesTip(), sourceItem: favoriteButton)
+                    present(controller, animated: true)
+                } else if presentedViewController is TipUIPopoverViewController {
+                    dismiss(animated: true)
+                }
+            }
+        }
+    }
+```
+
+### Встраиваемые `Inline`
+
+```swift
+if shouldDisplay {
+    let tipView = TipUIView(FavoritesTip())
+    view.addSubview(tipView)
+} else if let tipView = view.subviews.first(where: { $0 is TipUIView }) {
+    tipView.removeFromSuperview()
+}
+```
+
+### Добавляем кнопку
+
+```swift
+struct PopoverTip: Tip {
+
+    var title: Text {...}
+    var message: Text? {...}
+    var image: Image? {...}
+    
+    var actions: [Action] {
+        Action(id: "reset-password", title: "Сбросить Пароль")
+        Action(id: "not-reset-password", title: "Отменить сброс")
+    }
+}
+```
+
+```swift
+if shouldDisplay {
+    let tipView = TipUIView(ActionsTip()) { action in
+        guard action.id == "reset-password" else { return }
+        let controller = TipKitViewController()
+        self.present(controller, animated: true)
+    }
+    view.addSubview(tipView)
+} else if let tipView = view.subviews.first(where: { $0 is TipUIView }) {
+    tipView.removeFromSuperview()
+}
+```
+
+## Закрываем подсказку
+
+```swift
+//Popover
+if presentedViewController is TipUIPopoverViewController {
+    dismiss(animated: true)
+}
+```
+
+```swift
+// Inline
+if let tipView = view.subviews.first(where: { $0 is TipUIView }) {
+    tipView.removeFromSuperview()
+}
+```
+
+## Правила для подсказок, когда показывать
+
+```swift
+if shouldDisplay {
+    let controller = TipUIPopoverViewController(FavoriteRuleTip(), sourceItem: favoriteButton)
+    present(controller, animated: true)
+} else if presentedViewController is TipUIPopoverViewController {
+    dismiss(animated: true)
+}
+```
+
+```swift
+@objc func favoriteButtonPressed() {
+    FavoriteRuleTip.hasViewedTip = true
+}
+```
+
+# `TipKit` в Preview
