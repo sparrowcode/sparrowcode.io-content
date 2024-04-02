@@ -1,4 +1,4 @@
-С помощью TipKit разработчики обращают внимание пользователей на новые фичи. Это нативные подсказки. Выглядят вот так:
+С помощью TipKit разработчики показывают нативные подскази. Так можно сделать туториал или обратить внимание пользователя на новые фичи. Выглядят вот так:
 
 ![Подсказки `TipKit`](https://cdn.sparrowcode.io/tutorials/tipkit/tipkit-example.jpg)
 
@@ -313,8 +313,6 @@ Task { @MainActor in
     FavoriteRuleTip.hasViewedTip = true
 }
 ```
-
-![Правила](https://cdn.sparrowcode.io/tutorials/tipkit/rules.png)
 
 # `TipKit` в Preview
 
