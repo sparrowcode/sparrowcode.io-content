@@ -2,7 +2,7 @@
 
 ![Подсказки `TipKit`](https://cdn.sparrowcode.io/tutorials/tipkit/tipkit-example.jpg)
 
-Apple сделала и UI, и управление когда показывать подсказки. Фраемворк появился в iOS 17. Подскази доступны для всех платформ — для iOS, iPadOS, macOS, watchOS и visionOS.
+Apple сделала и UI, и управление когда показывать подсказки. Фраемворк появился в iOS 17. Подсказки доступны для всех платформ — для iOS, iPadOS, macOS, watchOS и visionOS.
 
 [Framework `TipKit`](https://developer.apple.com/documentation/tipkit): Официальная документация Apple по TipKit
 
