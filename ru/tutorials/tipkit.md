@@ -2,7 +2,7 @@
 
 ![Подсказки `TipKit`](https://cdn.sparrowcode.io/tutorials/tipkit/tipkit-example.jpg)
 
-Apple сделала и UI, и управление когда показывать подсказки. Фраемворк появился в iOS 17. Подскази доступны для всех платформ — для iOS, iPadOS, macOS, watchOS и visionOS.
+Apple сделала и UI, и управление когда показывать подсказки. Фреймворк появился в iOS 17. Подсказки доступны для всех платформ — для iOS, iPadOS, macOS, watchOS и visionOS.
 
 [Framework `TipKit`](https://developer.apple.com/documentation/tipkit): Официальная документация Apple по TipKit
 
@@ -83,7 +83,7 @@ struct FavoritesTip: Tip {
 
 ## Всплывающие `Popover`
 
-**SwiftUI** 
+**Для SwiftUI** 
 
 Вызываем модификатор `popoverTip` у вью, к которой добавить подсказку:
 
@@ -92,9 +92,9 @@ Image(systemName: "heart")
     .popoverTip(FavoritesTip(), arrowEdge: .bottom)
 ```
 
-**UIKit** 
+**Для UIKit** 
 
-Слушаем подсказки через асинхронный метод. Когда `shouldDisplay` будет в тру, добавляем popover-контроллер. Передаем ему подсказку и вью, к которой привзяать подсказку:
+Слушаем подсказки через асинхронный метод. Когда `shouldDisplay` будет в тру, добавляем popover-контроллер. Передаем ему подсказку и вью, к которой привязать подсказку:
 
 ```swift
 override func viewDidAppear(_ animated: Bool) {
@@ -122,7 +122,7 @@ override func viewDidAppear(_ animated: Bool) {
 
 `Inline`-подскази встраиваются между ваших вью и меняют лейаут. Они не перекрывают интерфейс приложения как `Popever`-подсказки. Добавлять их как обычные вью:
 
-**SwiftUI**
+**Для SwiftUI**
 
 ```swift
 VStack {
@@ -134,7 +134,7 @@ VStack {
 }
 ```
 
-**UIKit**
+**Для UIKit**
 
 Добавляем так же через асинхронный метод, только когда shouldDisplay в тру:
 
@@ -192,7 +192,7 @@ struct ActionsTip: Tip {
 
 `id` нужен чтобы определить какую кнопку нажали:
 
-**SwiftUI**
+**Для SwiftUI**
 
 ```swift
 TipView(tip) { action in
@@ -203,7 +203,7 @@ TipView(tip) { action in
 }
 ```
 
-**UIKit**
+**Для UIKit**
 
 ```swift
 Task { @MainActor in
@@ -276,7 +276,7 @@ struct FavoriteRuleTip: Tip {
 
 `Rule` проверяет значение переменной `hasViewedTip`, когда значение равно true, подсказка отобразится.
 
-**SwiftUI**
+**Для SwiftUI**
 
 ```swift
 struct ParameterRule: View {
@@ -294,7 +294,7 @@ struct ParameterRule: View {
 }
 ```
 
-**UIKit**
+**Для UIKit**
 
 ```swift
 Task { @MainActor in
