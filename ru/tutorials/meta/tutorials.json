@@ -210,7 +210,7 @@
       "categories": ["development", "app-store-connect"],
       "author": "rentel",
       "editors": ["sparrowcode"],
-      "keywords": [""],
+      "keywords": ["storekit"],
       "graph_image": "https://cdn.sparrowcode.io/tutorials/storekit-external-purchase-link-entitlement-ru/reject.jpg?v=4",
       "google_structured_images": [
          "https://cdn.sparrowcode.io/tutorials/set-launch-screen-via-plist/delete-launchscreen-storyboard-file.jpg", "https://cdn.sparrowcode.io/tutorials/set-launch-screen-via-plist/delete-launch-screen-interface-file-base-name-key.jpg", "https://cdn.sparrowcode.io/tutorials/set-launch-screen-via-plist/add-uilaunchscreen-key.jpg", "https://cdn.sparrowcode.io/tutorials/set-launch-screen-via-plist/add-color-to-assets.jpg", "https://cdn.sparrowcode.io/tutorials/set-launch-screen-via-plist/add-background-color-launch-screen-key.jpg", "https://cdn.sparrowcode.io/tutorials/set-launch-screen-via-plist/with-uicolorname-result.jpg", "https://cdn.sparrowcode.io/tutorials/set-launch-screen-via-plist/with-uiimagename-result.jpg", "https://cdn.sparrowcode.io/tutorials/set-launch-screen-via-plist/add-uitabbar-key.jpg", "https://cdn.sparrowcode.io/tutorials/set-launch-screen-via-plist/with-uitabbar-result.jpg", "https://cdn.sparrowcode.io/tutorials/set-launch-screen-via-plist/with-uitoolbar-result.jpg"
@@ -219,12 +219,12 @@
       "added_date": "15.02.2024"
    },
    "tipkit": {
-      "title": "Основы работы с TipKit",
-      "description": "Узнаем как использовать подсказки. Разберем примеры на SwiftUI и UIKit.",
+      "title": "TipKit чтобы подсветить функции в приложении",
+      "description": "Как добавить подсказки в интерфейс. Примеры кода на SwiftUI и UIKit.",
       "categories": ["development", "swiftui", "uikit"],
       "author": "sparrowcode",
       "editors": [],
-      "keywords": [""],
+      "keywords": ["tipkit", "подсказки", "tipkit на uikit", "tipkit framework"],
       "graph_image": "https://cdn.sparrowcode.io/tutorials/tipkit/tipkit-example.jpg",
       "google_structured_images": [],
       "updated_date": "27.03.2024",

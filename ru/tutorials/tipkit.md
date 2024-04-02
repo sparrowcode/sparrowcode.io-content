@@ -1,12 +1,16 @@
-[TipKit](https://developer.apple.com/documentation/tipkit) нужен чтобы показать контекстные подсказки. Они выделяют новые или неиспользуемые функции, о которых пользователь еще не знает. Выглядят вот так:
+С помощью TipKit разработчики обращают внимание пользователей на новые фичи. Это нативные подсказки. Выглядят вот так:
 
-![Как выглядят подсказки TipKit](https://cdn.sparrowcode.io/tutorials/tipkit/tipkit-example.jpg)
+![Подсказки `TipKit`](https://cdn.sparrowcode.io/tutorials/tipkit/tipkit-example.jpg)
 
-Добавили в iOS 17. Доступен для iOS, iPadOS, macOS, watchOS, watchOS и visionOS.
+Apple сделала и UI, и управление когда показывать подсказки. Фраемворк появился в iOS 17. Подскази доступны для всех платформ — для iOS, iPadOS, macOS, watchOS и visionOS.
+
+[Framework `TipKit`](https://developer.apple.com/documentation/tipkit): Официальная документация Apple по TipKit
+
+В каждом разделе туториала примеры и на SwiftUI, и на UIKit.
 
 # Инициализация
 
-Импортируем `TipKit` и в точке входа в приложение вызываем `Tips.configure`:
+Импортируем `TipKit` и в точке входа в приложение вызываем метод конфигураци:
 
 **Для SwiftUI**
 
@@ -31,7 +35,7 @@ struct TipKitExampleApp: App {
 }
 ```
 
-**Для UIKit** в AppDelegate добавляем `Tips.configure`
+**Для UIKit**, в AppDelegate:
 
 ```swift
 func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
@@ -39,27 +43,24 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
     try? Tips.configure([
         .displayFrequency(.immediate),
         .datastoreLocation(.applicationDefault)])
+        
     return true
 }
 ```
 
-`displayFrequency` определяет как часто показывать подсказку:
-
-immediate - будут отображаться сразу. Есть варианты показа - ежечасно, ежедневно, еженедельно и ежемесячно.
+`displayFrequency` определяет как часто показывать подсказку. В примере стоит `.immediate`, подсказки будут показываться сразу. Можно поставить ежечасно, ежедневно, еженедельно и ежемесячно.
 
 `datastoreLocation` - хранилище данных подсказок. Это может быть: 
 
-1. `.applicationDefault` - это папка `support`. Она лежит в песочнице приложения, каталоге Data Container.
+- `.applicationDefault` — дефолтная локация, доступно только приложению
+- `.groupContainer` - через группу, доступно между таргетами
+- `.url` - указываете свой путь
 
-2. `.url` - указать свой путь. 
-
-3. `.groupContainer` - чтобы использовать одно хранилище для группы приложений.
-
-По умолчанию используется `.applicationDefault`.
+По умолчанию стоит `.applicationDefault`.
 
 # Создаем подсказку
 
-Протокол Tip определяет контент и когда показывать подсказку. У подсказки есть обязательное поле `title` и опциональные `message` и `image`.
+Протокол `Tip` определяет контент и когда показывать подсказку. Картинка и подзаголовок опциональные:
 
 ```swift
 struct FavoritesTip: Tip {
@@ -78,18 +79,22 @@ struct FavoritesTip: Tip {
 }
 ```
 
-Есть два вида подсказок **Popover** показывается поверх интерерфейса, а **Inline** встраивается как обычная вью.
+Есть два вида подсказок — **Popover** показывается поверх интерерфейса, а **Inline** встраивается как обычная вью.
 
 ## Всплывающие `Popover`
 
-**Для SwiftUI** Вызываем модификатор `popoverTip` у вью, к которой нужно показать подсказку
+**SwiftUI** 
+
+Вызываем модификатор `popoverTip` у вью, к которой добавить подсказку:
 
 ```swift
 Image(systemName: "heart")
     .popoverTip(FavoritesTip(), arrowEdge: .bottom)
 ```
 
-**В UIKit** прослушиваем подсказки через асинхронный метод. Если подсказка сделана правильно, в `shouldDisplay` будет значение true. Добавляем popover контроллер, который принимает подсказку и вью на которой будет вызвана эта посказка.
+**UIKit** 
+
+Слушаем подсказки через асинхронный метод. Когда `shouldDisplay` будет в тру, добавляем popover-контроллер. Передаем ему подсказку и вью, к которой привзяать подсказку:
 
 ```swift
 override func viewDidAppear(_ animated: Bool) {
@@ -102,20 +107,20 @@ override func viewDidAppear(_ animated: Bool) {
                 let popoverController = TipUIPopoverViewController(FavoritesTip(), sourceItem: favoriteButton)
                 present(popoverController, animated: true)
             }
-            //не работает крестик, все слодно. Читайте в разделе Закрываем подсказку
+            
+            // Сейчас крестик работать не будет, это нормально.
+            // Разберем дальше как это поправить
         }
     }
 ```
 
-У `Popever`-подсказок стрелочка есть всегда, но указанное направление не гарантируется, в UIKit направление не доступно.
+У `Popever`-подсказок стрелочка есть всегда, но направление стрелки может отличаться от того что укажите. В UIKit направление стрелочки выбрать нельзя.
 
-Примеры как позывается стрелка:
-
-![Всплывающие `Popever` посказки](https://cdn.sparrowcode.io/tutorials/tipkit/popover.png)
+![Всплывающие `Popever` посказки со стрелками](https://cdn.sparrowcode.io/tutorials/tipkit/popover.png)
 
 ## Встраиваемые `Inline`
 
-`Inline`-подскази меняют лейаут. Ведут себя как вью и не перекрывают интерфейс приложения.
+`Inline`-подскази встраиваются между ваших вью и меняют лейаут. Они не перекрывают интерфейс приложения как `Popever`-подсказки. Добавлять их как обычные вью:
 
 **SwiftUI**
 
@@ -131,6 +136,8 @@ VStack {
 
 **UIKit**
 
+Добавляем так же через асинхронный метод, только когда shouldDisplay в тру:
+
 ```swift
 Task { @MainActor in
     for await shouldDisplay in FavoritesTip().shouldDisplayUpdates {
@@ -139,14 +146,16 @@ Task { @MainActor in
             let tipView = TipUIView(FavoritesTip())
             view.addSubview(tipView)
         }
-        //не работает крестик, все слодно. Читайте в разделе Закрываем подсказку
+        
+        // Сейчас крестик работать не будет, это нормально.
+        // Разберем дальше как это поправить
     }
 }
 ```
 
-![Встроенные подсказки. Можно со стрелкой и без.](https://cdn.sparrowcode.io/tutorials/tipkit/inline-arrow.png)
+![`Inline`-подсказки. Они могут быть со стрелкой и без.](https://cdn.sparrowcode.io/tutorials/tipkit/inline-arrow.png)
 
-У `Inline`-подсказак стрелочка опциональная и ее направление работает нормально:
+У `Inline`-подсказок стрелочка опциональная. Направление стрелки будет именно такое, как вы укажите:
 
 ```swift
 // SwiftUI
@@ -161,11 +170,11 @@ TipUIView(FavoritesTip(), arrowEdge: .bottom)
 
 ## Добавляем кнопку
 
-В подсказках есть кнопки, чтобы расширить их возможности.
+В подсказку можно добавить кнопку, а по кнопке выызвать вашу логику. Можно использовать чтобы открыть подробный туториал или направить на нужный экран.
 
-![Добавляем кнопки](https://cdn.sparrowcode.io/tutorials/tipkit/actions.png)
+![Как выглядят кнопки в подсказках `TipKit`](https://cdn.sparrowcode.io/tutorials/tipkit/actions.png)
 
-Кнопки прописываются в протоколе, поле `actions`:
+Кнопки прописываются в протоколе в поле `actions`:
 
 ```swift
 struct ActionsTip: Tip {
@@ -181,7 +190,7 @@ struct ActionsTip: Tip {
 }
 ```
 
-`id` определяет какую кнопку нажали:
+`id` нужен чтобы определить какую кнопку нажали:
 
 **SwiftUI**
 
@@ -189,7 +198,7 @@ struct ActionsTip: Tip {
 TipView(tip) { action in
 
     if action.id == "reset-password" {
-        // Логика по кнопке
+        // Делаем то что нужно по нажатию
     }
 }
 ```
@@ -204,7 +213,7 @@ Task { @MainActor in
             let tipView = TipUIView(ActionsTip()) { action in
 
                 if action.id == "reset-password" {
-                    // Логика по кнопке
+                    // Делаем то что нужно по нажатию
                 }
 
                 let controller = TipKitViewController()
@@ -218,41 +227,37 @@ Task { @MainActor in
 
 # Закрываем подсказку
 
-Можно нажать на крестик или закрыть кодом, работает одинакого для SwiftUI и UIKit:
+Подсказку может закрыть пользователь, когда нажмет на крестик. Но можно закрыть и кодом. Код одинаковый для SwiftUI и UIKit:
 
 ```swift
 inlineTip.invalidate(reason: .actionPerformed)
 ```
 
-В методе укажите причину, почему закрыли подсказку. Список причин:
+В методе укажите причину, почему закрыли подсказку:
 
-`.actionPerformed` - пользователь выполнил действие, описанное в подсказке
-`.displayCountExceeded` - подсказка показана максимальное количество раз
-`.actionPerformed` - пользователь явное закрыл подсказку
+- `.actionPerformed` - пользователь выполнил действие в подсказке
+- `.displayCountExceeded` - подсказку показали максимальное количество раз
+- `.actionPerformed` - пользователь явное закрыл подсказку
 
-**В UIKit** чтобы заработал крестик, нужно работать как с обычным контроллером или вью.
-
- В `popover`-подсказке нужно закрыть контроллер:
+В UIKit для крестика нужно дописать код. Для `popover`-подсказки закрываем контроллер:
 
 ```swift
-//Popover
 if presentedViewController is TipUIPopoverViewController {
     dismiss(animated: true)
 }
 ```
 
-Для `inline`-подсказки нужно удалить вью:
+Для `inline`-подсказки удаляем вью:
 
 ```swift
-// Inline
 if let tipView = view.subviews.first(where: { $0 is TipUIView }) {
     tipView.removeFromSuperview()
 }
 ```
 
-# Правила для подсказок, когда показывать
+# Правила для подсказок: когда показывать
 
-Когда показывать подсказку настраивается с помощью параметров
+Когда показывать подсказку настраивается с помощью параметров:
 
 ```swift
 struct FavoriteRuleTip: Tip {
@@ -279,7 +284,7 @@ struct ParameterRule: View {
     var body: some View {
         VStack {
             Spacer()
-            Button("Rule"){
+            Button("Rule") {
                 FavoriteRuleTip.hasViewedTip = true
             }
             .buttonStyle(.borderedProminent)
@@ -313,9 +318,9 @@ Task { @MainActor in
 
 # `TipKit` в Preview
 
-Когда дебажите в Preview и закроете подсказу, то она больше не покажется  — это не удобно. Чтобы подсказки появлялись каждый раз, нужно сбросить хранилище данных:
+Если закроете подсказку в Preview, она больше не покажется  — это не удобно. Чтобы подсказки появлялись каждый раз, нужно сбросить хранилище данных:
 
-`SwiftUI`
+**SwiftUI**
 
 ```swift
 #Preview {
@@ -334,12 +339,12 @@ Task { @MainActor in
 }
 ```
 
-**Для UIKit** Добавить в AppDelegate:
+**UIKit** 
+
+Добавить в AppDelegate:
 
 ```swift
-    try? Tips.resetDatastore()
+try? Tips.resetDatastore()
 ```
 
-В превью на UIKit не сбрасывается.
-
-> Не забудьте убрать resetDatastore, иначе в релизе подсказки будут постоянно показываться.
+> Не забудьте убрать `.resetDatastore`, иначе в релизе подсказки будут показываться постоянно.
