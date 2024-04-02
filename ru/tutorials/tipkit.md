@@ -21,17 +21,17 @@ import TipKit
 @main
 struct TipKitExampleApp: App {
 
-    var body: some Scene {
-        WindowGroup {
-            TipKitDemo()
-                .task {
-                    try? Tips.configure([
-                        .displayFrequency(.immediate),
-                        .datastoreLocation(.applicationDefault)
-                    ])
-                }
-        }
-    }
+   var body: some Scene {
+       WindowGroup {
+          TipKitDemo()
+             .task {
+                 try? Tips.configure([
+                     .displayFrequency(.immediate),
+                     .datastoreLocation(.applicationDefault)
+                 ])
+             }
+       }
+   }
 }
 ```
 
@@ -40,11 +40,11 @@ struct TipKitExampleApp: App {
 ```swift
 func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
-    try? Tips.configure([
-        .displayFrequency(.immediate),
-        .datastoreLocation(.applicationDefault)])
+   try? Tips.configure([
+      .displayFrequency(.immediate),
+      .datastoreLocation(.applicationDefault)])
         
-    return true
+   return true
 }
 ```
 
@@ -65,17 +65,17 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 ```swift
 struct FavoritesTip: Tip {
 
-    var title: Text {
-        Text("Добавить в избранное")
-    }
+   var title: Text {
+      Text("Добавить в избранное")
+   }
 
-    var message: Text? {
-        Text("Этот пользователь будет добавлен в папку избранное.")
-    }
+   var message: Text? {
+      Text("Этот пользователь будет добавлен в папку избранное.")
+   }
 
-    var image: Image? {
-        Image(systemName: "heart")
-    }
+   var image: Image? {
+      Image(systemName: "heart")
+   }
 }
 ```
 
@@ -89,7 +89,7 @@ struct FavoritesTip: Tip {
 
 ```swift
 Image(systemName: "heart")
-    .popoverTip(FavoritesTip(), arrowEdge: .bottom)
+   .popoverTip(FavoritesTip(), arrowEdge: .bottom)
 ```
 
 **Для UIKit** 
@@ -98,20 +98,20 @@ Image(systemName: "heart")
 
 ```swift
 override func viewDidAppear(_ animated: Bool) {
-    super.viewDidAppear(animated)
+   super.viewDidAppear(animated)
     
-    Task { @MainActor in
-        for await shouldDisplay in FavoritesTip().shouldDisplayUpdates {
+   Task { @MainActor in
+      for await shouldDisplay in FavoritesTip().shouldDisplayUpdates {
 
-            if shouldDisplay {
-                let popoverController = TipUIPopoverViewController(FavoritesTip(), sourceItem: favoriteButton)
-                present(popoverController, animated: true)
-            }
-            
-            // Сейчас крестик работать не будет, это нормально.
-            // Разберем дальше как это поправить
-        }
-    }
+         if shouldDisplay {
+            let popoverController = TipUIPopoverViewController(FavoritesTip(), sourceItem: favoriteButton)
+            present(popoverController, animated: true)
+         }
+    
+         // Сейчас крестик работать не будет, это нормально.
+         // Разберем дальше как это поправить
+      }
+   }
 ```
 
 У `Popever`-подсказок стрелочка есть всегда, но направление стрелки может отличаться от того что укажите. В UIKit направление стрелочки выбрать нельзя.
@@ -126,11 +126,11 @@ override func viewDidAppear(_ animated: Bool) {
 
 ```swift
 VStack {
-    Image("pug")
-        .resizable()
-        .scaledToFit()
-        .clipShape(RoundedRectangle(cornerRadius: 12))
-    TipView(FavoritesTip())
+   Image("pug")
+      .resizable()
+      .scaledToFit()
+      .clipShape(RoundedRectangle(cornerRadius: 12))
+   TipView(FavoritesTip())
 }
 ```
 
@@ -140,16 +140,16 @@ VStack {
 
 ```swift
 Task { @MainActor in
-    for await shouldDisplay in FavoritesTip().shouldDisplayUpdates {
+   for await shouldDisplay in FavoritesTip().shouldDisplayUpdates {
 
-        if shouldDisplay {
-            let tipView = TipUIView(FavoritesTip())
-            view.addSubview(tipView)
-        }
+      if shouldDisplay {
+         let tipView = TipUIView(FavoritesTip())
+         view.addSubview(tipView)
+      }
         
-        // Сейчас крестик работать не будет, это нормально.
-        // Разберем дальше как это поправить
-    }
+      // Сейчас крестик работать не будет, это нормально.
+      // Разберем дальше как это поправить
+   }
 }
 ```
 
@@ -179,14 +179,14 @@ TipUIView(FavoritesTip(), arrowEdge: .bottom)
 ```swift
 struct ActionsTip: Tip {
 
-    var title: Text {...}
-    var message: Text? {...}
-    var image: Image? {...}
+   var title: Text {...}
+   var message: Text? {...}
+   var image: Image? {...}
     
-    var actions: [Action] {
-        Action(id: "reset-password", title: "Сбросить Пароль")
-        Action(id: "not-reset-password", title: "Отменить сброс")
-    }
+   var actions: [Action] {
+      Action(id: "reset-password", title: "Сбросить Пароль")
+      Action(id: "not-reset-password", title: "Отменить сброс")
+   }
 }
 ```
 
@@ -197,9 +197,9 @@ struct ActionsTip: Tip {
 ```swift
 TipView(tip) { action in
 
-    if action.id == "reset-password" {
-        // Делаем то что нужно по нажатию
-    }
+   if action.id == "reset-password" {
+      // Делаем то что нужно по нажатию
+   }
 }
 ```
 
@@ -207,21 +207,21 @@ TipView(tip) { action in
 
 ```swift
 Task { @MainActor in
-    for await shouldDisplay in ActionsTip().shouldDisplayUpdates {
+   for await shouldDisplay in ActionsTip().shouldDisplayUpdates {
 
-        if shouldDisplay {
-            let tipView = TipUIView(ActionsTip()) { action in
+      if shouldDisplay {
+         let tipView = TipUIView(ActionsTip()) { action in
 
-                if action.id == "reset-password" {
-                    // Делаем то что нужно по нажатию
-                }
-
-                let controller = TipKitViewController()
-                self.present(controller, animated: true)
+            if action.id == "reset-password" {
+               // Делаем то что нужно по нажатию
             }
-            view.addSubview(tipView)
-        }
-    }
+
+            let controller = TipKitViewController()
+            self.present(controller, animated: true)
+         }
+         view.addSubview(tipView)
+      }
+   }
 }
 ```
 
@@ -243,7 +243,7 @@ inlineTip.invalidate(reason: .actionPerformed)
 
 ```swift
 if presentedViewController is TipUIPopoverViewController {
-    dismiss(animated: true)
+   dismiss(animated: true)
 }
 ```
 
@@ -251,7 +251,7 @@ if presentedViewController is TipUIPopoverViewController {
 
 ```swift
 if let tipView = view.subviews.first(where: { $0 is TipUIView }) {
-    tipView.removeFromSuperview()
+   tipView.removeFromSuperview()
 }
 ```
 
@@ -262,15 +262,15 @@ if let tipView = view.subviews.first(where: { $0 is TipUIView }) {
 ```swift
 struct FavoriteRuleTip: Tip {
 
-    var title: Text {...}
-    var message: Text? {...}
+   var title: Text {...}
+   var message: Text? {...}
 
-    @Parameter
-    static var hasViewedTip: Bool = false
+   @Parameter
+   static var hasViewedTip: Bool = false
 
-    var rules: [Rule] {
-        #Rule(Self.$hasViewedTip) { $0 == true }
-    }
+   var rules: [Rule] {
+      #Rule(Self.$hasViewedTip) { $0 == true }
+   }
 }
 ```
 
@@ -281,16 +281,16 @@ struct FavoriteRuleTip: Tip {
 ```swift
 struct ParameterRule: View {
     
-    var body: some View {
-        VStack {
-            Spacer()
-            Button("Rule") {
-                FavoriteRuleTip.hasViewedTip = true
-            }
-            .buttonStyle(.borderedProminent)
-            .popoverTip(FavoriteRuleTip(), arrowEdge: .top)
-        }
-    }
+   var body: some View {
+      VStack {
+         Spacer()
+         Button("Rule") {
+            FavoriteRuleTip.hasViewedTip = true
+         }
+         .buttonStyle(.borderedProminent)
+         .popoverTip(FavoriteRuleTip(), arrowEdge: .top)
+      }
+   }
 }
 ```
 
@@ -298,19 +298,19 @@ struct ParameterRule: View {
 
 ```swift
 Task { @MainActor in
-    for await shouldDisplay in FavoriteRuleTip().shouldDisplayUpdates {
+   for await shouldDisplay in FavoriteRuleTip().shouldDisplayUpdates {
 
-        if shouldDisplay {
-            let rulesController = TipUIPopoverViewController(FavoriteRuleTip(), sourceItem: favoriteButton)
-            present(rulesController , animated: true)
-        } else if presentedViewController is TipUIPopoverViewController {
-            dismiss(animated: true)
-        }
-    }
+      if shouldDisplay {
+         let rulesController = TipUIPopoverViewController(FavoriteRuleTip(), sourceItem: favoriteButton)
+         present(rulesController , animated: true)
+      } else if presentedViewController is TipUIPopoverViewController {
+         dismiss(animated: true)
+      }
+   }
 }
 
 @objc func favoriteButtonPressed() {
-    FavoriteRuleTip.hasViewedTip = true
+   FavoriteRuleTip.hasViewedTip = true
 }
 ```
 
@@ -322,19 +322,19 @@ Task { @MainActor in
 
 ```swift
 #Preview {
-    TipKitDemo()
-        .task {
+   TipKitDemo()
+      .task {
         
-            // Cбрасываем хранилище
-            try? Tips.resetDatastore()
+         // Cбрасываем хранилище
+         try? Tips.resetDatastore()
             
-            // Конфигурируем
-            try? Tips.configure([
-                .displayFrequency(.immediate),
-                .datastoreLocation(.applicationDefault)
-            ])
-        }
-}
+         // Конфигурируем
+         try? Tips.configure([
+            .displayFrequency(.immediate),
+            .datastoreLocation(.applicationDefault)
+         ])
+      }
+   }
 ```
 
 **UIKit** 
