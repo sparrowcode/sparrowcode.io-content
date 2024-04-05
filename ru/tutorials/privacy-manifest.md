@@ -39,14 +39,11 @@
 
 ![Nutrition Label](https://cdn.sparrowcode.io/tutorials/privacy-manifest/nutrition-label-app-store.png)
 
-1. **Collected Data Type** - тип собираемых данных, например email, id или контакты. Подробно и понятно о каждом пункте в [документации](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests#4250555).
-
-2. **Linked to User** -  собранные данные связаные с личностью пользователя. Данные из приложения, часто связаны с личностью пользователя.
-
-3. **Used for Tracking** - используются ли эти данные для отслеживания
-
-4. **Collection Purposes** - массив в котором перечислены причины, по которым собираются данные:
-
+- **Collected Data Type** - тип собираемых данных, например email, id или контакты. Подробно и понятно о каждом пункте в [документации](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests#4250555).
+- **Linked to User** -  собранные данные связаные с личностью пользователя. Данные из приложения, часто связаны с личностью пользователя.
+- **Used for Tracking** - используются ли эти данные для отслеживания
+- **Collection Purposes** - массив в котором перечислены причины, по которым собираются данные:
+- 
 - Analytics - любая аналитика
 - App functionality - функциональность приложения, например аутентификация, безопасность, производительность и т. д.
 - Developer’s advertising or marketing - показ своей рекламы в приложении, отправка рекламных сообщений
@@ -102,12 +99,12 @@
 
 Распрастранненые пути манифеста: 
 
- - framework/Sources/PrivacyInfo.xcprivacy
- - framework/Source/PrivacyInfo.xcprivacy
- - framework/Sources/Resources/PrivacyInfo.xcprivacy
- - framework/Sources/Library/Resources/PrivacyInfo.xcprivacy
+- framework/Sources/PrivacyInfo.xcprivacy
+- framework/Source/PrivacyInfo.xcprivacy
+- framework/Sources/Resources/PrivacyInfo.xcprivacy
+- framework/Sources/Library/Resources/PrivacyInfo.xcprivacy
 
- Если во фрейме есть манифест и он заполнен, то не нужно дублировать информацию в главный манифест. Все манифесты объединяются в один при публикации.
+Если во фрейме есть манифест и он заполнен, то не нужно дублировать информацию в главный манифест. Все манифесты объединяются в один при публикации.
 
 # Пример заполненого Манифеста
 
@@ -143,19 +140,15 @@
 
 # Если манифест не заполнен
 
-Если манифест не правильно или не полностью заполнен. Сразу после отправки на проверку, придет
+Если манифест не правильно или не полностью заполнен. Сразу после отправки на проверку придет
 письмо с указанием проблем. В тексте ошибки обратите внимание на **API categories** и ключ который начинается с **NS**. В массиве **Privacy Accessed API Types** манифеста, нужно указать что именно используется в приложении.
 
 ![Некорректный манифест](https://cdn.sparrowcode.io/tutorials/privacy-manifest/nocorrect-manifest.png)
 
-## NS ключи и ссылки на документацию по ним:
+## NS ключи и ссылки на документацию по ним
 
-`NSPrivacyAccessedAPICategoryFileTimestamp` [File timestamp APIs](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api#4278393) - даты создания файлов
-
-`NSPrivacyAccessedAPICategorySystemBootTime` [System boot time APIs](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api#4278394) - информация о времени работы ОС
-
-`NSPrivacyAccessedAPICategoryDiskSpace` [Disk space APIs](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api#4278397) - информация о доступном пространстве в хранилище устройства
-
-`NSPrivacyAccessedAPICategoryActiveKeyboards` [Active keyboard APIs](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api#4278400) - доступ к списку активных клавиатур
-
-`NSPrivacyAccessedAPICategoryUserDefaults` [User defaults APIs](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api#4278401) - хранение настроек и прочей информации
+[File timestamp APIs](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api#4278393): `NSPrivacyAccessedAPICategoryFileTimestamp`  даты создания файлов
+[System boot time APIs](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api#4278394): `NSPrivacyAccessedAPICategorySystemBootTime` информация о времени работы ОС
+[Disk space APIs](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api#4278397): `NSPrivacyAccessedAPICategoryDiskSpace` информация о доступном пространстве в хранилище устройства
+[Active keyboard APIs](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api#4278400): `NSPrivacyAccessedAPICategoryActiveKeyboards` доступ к списку активных клавиатур
+[User defaults APIs](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api#4278401): `NSPrivacyAccessedAPICategoryUserDefaults` хранение настроек и прочей информации
