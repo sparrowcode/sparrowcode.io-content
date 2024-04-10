@@ -11,120 +11,55 @@
 
 ![App Privacy](https://cdn.sparrowcode.io/tutorials/privacy-manifest/app-privacy.png)
 
-Можно создать несколько манифестов, при создании указываем к какому таргету относится манифест. Обратите внимание, он должен билдится вместе с таргетом.
+Можно создать несколько манифестов для каждого таргета, указываем к какому таргету относится манифест. Он должен билдится вместе с таргетом.
 
 ![таргет](https://cdn.sparrowcode.io/tutorials/privacy-manifest/enable-target.png)
 
-# Его структура
+# Структура Манифеста
 
 Манифест это plist файл с расширением .xcprivacy. Plist - обычный XML.
 
-![PrivacyInfo](https://cdn.sparrowcode.io/tutorials/privacy-manifest/base-app-manifest.png)
+![Privacy Info](https://cdn.sparrowcode.io/tutorials/privacy-manifest/base-app-manifest.png)
 
-XML - для более глубокого понимания. Например хотим затащить в проект какую-то спорную или не особо популярную либу, но у нас в проекте есть ограничения на сбор каких то данных. Можно быстро глянуть XML на gitHub  и не тащить ее в проект чтобы читать манифест.
+Если вы не знаете сторонняя библиотека собирает данные или нет, а в проекте вы не можете трекать. Можно посмотреть что они указали в XML на гитхабе.
 
-Здесь XML пустого манифеста, что бы познакомиться с общей структурой:
+Манифест состоит из ключей. Одни отвечают за трекинг, другие за API которые вы используете. Сейчас разберем все по очереди:
 
-```xml
-<plist version="1.0">
-<dict>
-	<key>NSPrivacyCollectedDataTypes</key> // App Privacy Configuration
-	<array>  // Privacy Nutrition Label Types
-		<dict>
-			<key>NSPrivacyCollectedDataType</key>  // Collected Data Type
-			<string></string>
-			<key>NSPrivacyCollectedDataTypeLinked</key>  // Linked to User
-			<false/>
-			<key>NSPrivacyCollectedDataTypeTracking</key>   // Used for Tracking
-			<false/>
-			<key>NSPrivacyCollectedDataTypePurposes</key>   // Collection Purposes
-			<array>
-				<string></string>
-			</array>
-		</dict>
-	</array>
-	<key>NSPrivacyAccessedAPITypes</key>   // Privacy Accessed API Types
-	<array>
-		<dict>
-			<key>NSPrivacyAccessedAPIType</key> // Privacy Accessed API Type
-			<string></string>
-			<key>NSPrivacyAccessedAPITypeReasons</key>   // Privacy Accessed API Reasons
-			<array>
-				<string></string>
-			</array>
-		</dict>
-	</array>
-	<key>NSPrivacyTracking</key>  // Privacy Tracking Enabled
-	<false/>
-	<key>NSPrivacyTrackingDomains</key> // Privacy Tracking Domains
-	<array/>
-</dict>
-</plist>
-```
+## Если трекаете пользователя
 
-Манифест состоит из:
-
-## Privacy Nutrition Label Types
-
-Это массив словарей, он описывает какие данные вы собираете о пользователе, именно он показывается в поле App Privacy в App Store:
+`Privacy Nutrition Label Types` описывает какие данные собираем о пользователе, именно он показывается в поле App Privacy в App Store:
 
 ![Nutrition Label](https://cdn.sparrowcode.io/tutorials/privacy-manifest/nutrition-label-app-store.png)
 
-### Collected Data Type
+В `Privacy Nutrition Label Types` входят:
 
-Описывает категории данных, например email, device id или аудио. Подробно и понятно о каждом пункте в [документации](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests#4250555).
+1. **Collected Data Type** - здесь из списка выбираем категорию данных. В [документации](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests#4250555) это поле **Data type**.
 
 ![Collected Data Type](https://cdn.sparrowcode.io/tutorials/privacy-manifest/collected-data-type.png)
 
-### Linked to User
+2. **Linked to User** - если собираем данные связанные с личностью пользователя, ставим YES.
 
-Если собираем данные свзязанные с личностью пользователя, ставим YES.
+3. **Used for Tracking** - если ли данные из Nutrition Label используюся для отслеживания, ставим YES.
 
-![Linked to User](https://cdn.sparrowcode.io/tutorials/privacy-manifest/linked-to-user.png)
-
-### Used for Tracking
-
-Если ли данные из Nutrition Label используюся для отслеживания, ставим YES.
-
-![Used for Tracking](https://cdn.sparrowcode.io/tutorials/privacy-manifest/used-for-tracking.png)
-
-### Collection Purposes
-
-Массив, в котором нужно выбрать причины, по которым собираются данные, например аналитика, реклама, аутентификация.
+4. **Collection Purposes** - выбираем из списка ![причины](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests#4250556), по которым собираем данные. Например аналитика, реклама, аутентификация.
 
 ![Collection Purposes](https://cdn.sparrowcode.io/tutorials/privacy-manifest/collection-purposes.png)
 
-## Privacy Accessed API Types
+## Использование API
 
-Важное поле, как раз по нему и прилетает письмо с ошибками от apple. Это массив словарей, в котором нужно выбрать АРІ, которые по мнению Apple несут угрозу личным данным пользователя и указать что именно вы используете.
-
-### Privacy Accessed API Type
-
-Здесь указываем API.
-
-![Privacy Accessed API Type](https://cdn.sparrowcode.io/tutorials/privacy-manifest/privacy-accessed-api-type.png)
-
-### Privacy Accessed API Reasons
-
-указываем что именно мы используем в этом API. Естественно указанные значения должны быть связанными с Privacy Accessed API Type.
+`Privacy Accessed API Types` важное поле, как раз по нему и прилетает письмо с ошибками от apple. В нем выбираем **тип АРІ**, которые по мнению Apple несут угрозу личным данным пользователя и указываем почему используем его:
 
 ![Privacy Accessed API Reasons](https://cdn.sparrowcode.io/tutorials/privacy-manifest/privacy-accessed-api-reasons.png)
 
-## Privacy Tracking Enabled
+## Если используете IDFA
 
-Если используем IDFA, указываем YES.
+В поле **Privacy Tracking Enabled** указываем YES.
 
-![Privacy Tracking Enabled](https://cdn.sparrowcode.io/tutorials/privacy-manifest/privacy-tracking-enabled.png)
+В поле **Privacy Tracking Domains** указываем домены, которые участвуют в отслеживании IDFA. Если для Privacy Tracking Enabled установлено в YES, то нужно указать хотя бы один домен.
 
-## Privacy Tracking Domains
+![Privacy Tracking Domains](https://cdn.sparrowcode.io/tutorials/privacy-manifest/tracking-enabled-tracking-domains.png)
 
-Это массив строк, в нем нужно указывать домены, которые участвуют в отслеживании IDFA. Если для Privacy Tracking Enabled установлено в YES, то нужно указать хотя бы один домен. Можно проверить в профайлере какие домены отслеживают данные.
-
-![Privacy Tracking Domains](https://cdn.sparrowcode.io/tutorials/privacy-manifest/privacy-tracking-domains.png)
-
-# Проверяем Домены
-
-Воспользуемся профайлером чтобы это узнать.
+Если вы не знаете какие домены отслеживают данные, можно воспользоваться профайлером:
 
 ![открывает profile](https://cdn.sparrowcode.io/tutorials/privacy-manifest/open-profile.png)
 
@@ -144,27 +79,23 @@ XML - для более глубокого понимания. Например 
 
 # Если фрейворк не добавил манифест
 
-Проверяйте наличие манифеста и его содержание. Его кладут в проект, просто посмотрите файлы с расширением `.xcprivacy`. Обращатите внимание на поле **Privacy Accessed API Types**, это проблемное место. Как раз по нему и приходит письмо с ошибками от apple.
+Перед тем как добовлять библиотеку проверте у нее наличие манифеста. Его кладут в проект, смотрим файлы с расширением `.xcprivacy`. 
 
-# Пример ошибки в стороннем Манифесте
+Обратите внимание на поле **Privacy Accessed API Types**, это проблемное место. Если поле пустое, а фрейворк собирает какие либо данные, от apple придет письмо с ошибками. Все что трекает фрейворк можно указать в своем манифесте.
 
-Здесь посмотрим реальную проблему с доменом firebase crashlytics. Обратите внимание на домен **firebase-settings.crashlytics.com** в главном манифесте.
+# Ошибка в Манифесте библиотеки
 
-![заполненый манифест](https://cdn.sparrowcode.io/tutorials/privacy-manifest/full-manifest.png)
-
-Хороший пример того, как профайлер указал что домен firebase crashlytics нужно добать в **Privacy Tracking Domains**. Google почему-то решил не добавлять его в свой манифест. 
-
-![Points of Interest](https://cdn.sparrowcode.io/tutorials/privacy-manifest/full-manifest-points-domens.png)
-
-Манифест Firebase crashlytics, как видим поле с доменом пустое:
+В манифесте firebase crashlytics, профайлер находит использование домена **firebase-settings.crashlytics.com**. Но в своем манифесте они это не указали.
 
 ![Firebase манифест](https://cdn.sparrowcode.io/tutorials/privacy-manifest/firebase-manifest.png)
 
-Не стоит надеяться на то, что в стороних фрейворках манифест будет правильно заполнен. Вся ответственность на вас, поэтому не забываем проверять все сами.
+В такой ситуации добавляем домен в свой манифест, это перекроет проблемное поле в манифесте firebase. 
 
-# Как посмотреть финальный манифест
+Не стоит надеяться на то, что в стороних фрейворках манифест будет правильно заполнен. Поэтому не забываем перепроверять за другими фрейворками.
 
-Чтобы увидеть все собираемые данные нами и сторонними фрейворками в приложении,  получим подробный отчёт. Для этого нужно собрать архив.
+# Посмотреть финальный манифест
+
+Собираем архив:
 
 ![создаем архив](https://cdn.sparrowcode.io/tutorials/privacy-manifest/create-archive.png)
 
@@ -172,23 +103,21 @@ XML - для более глубокого понимания. Например 
 
 ![Generate Privacy Report](https://cdn.sparrowcode.io/tutorials/privacy-manifest/generate-privacy-report.png)
 
-Сгенерируется PDF. Как говорилось выше, все манифесты объединились:
+В экспорте будет PDF. Все манифесты объединились:
 
 ![PDF отчет](https://cdn.sparrowcode.io/tutorials/privacy-manifest/pdf-report.png)
 
-Все что с расширением `.app`, относится к главному манифесту приложения. Этот манифест как раз в главе “Пример ошибки в стороннем Манифесте”. Все остальное сторонние фрейворки.
+Все что с расширением `.app`, это ваш манифест. Все остальное сторонние фрейворки.
 
 
 
 # Если вы ошиблись
 
-Сразу после отправки на проверку придет письмо с указанием проблем. В тексте ошибки обратите внимание на **API categories** и ключ который начинается с **NS**. Потому что ITMS-91053: Missing API declaration - в доке не описывается, в отличии от ключей. Ниже краткое описание ключей и ссылки на документацию по ним.
+>Когда вы выгружаете приложение, ошибка не придет. Чтобы пришла ошибка нужно обязательно отправить на ревью.
 
-Missing API declaration относится к полю **Privacy Accessed API Types**, нужно указать что именно используется в приложении.
+Если вы не понимаете как искать ошибки. Вам нужно посмотреть описание и найти ключ который начинается с `NS`, именно его и нужно будет добавить.
 
-![Некорректный манифест](https://cdn.sparrowcode.io/tutorials/privacy-manifest/nocorrect-manifest.png)
-
-## NS ключи и ссылки на документацию
+## NS ключи, описание на сайте apple
 
 [File timestamp APIs](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api#4278393): `NSPrivacyAccessedAPICategoryFileTimestamp`  даты создания файлов
 [System boot time APIs](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api#4278394): `NSPrivacyAccessedAPICategorySystemBootTime` информация о времени работы ОС
