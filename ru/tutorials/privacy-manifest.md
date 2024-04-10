@@ -4,8 +4,7 @@
 
 > Если во фреймворке есть манифест и он заполнен, то не нужно дублировать информацию в главный манифест. Все манифесты объединяются в один, когда собираем архив.
 
-
-# Добавляем манифест
+# Добавляем Манифест
 
 Манифест добовляется в проект. Нажимаем ⌘+N. В окне template опускаемся до раздела Resource и Выбираем App Privacy
 
@@ -21,13 +20,11 @@
 
 ![Privacy Info](https://cdn.sparrowcode.io/tutorials/privacy-manifest/base-app-manifest.png)
 
-Если вы не знаете сторонняя библиотека собирает данные или нет, а в проекте вы не можете трекать. Можно посмотреть что они указали в XML на гитхабе.
-
 Манифест состоит из ключей. Одни отвечают за трекинг, другие за API которые вы используете. Сейчас разберем все по очереди:
 
-## Если трекаете пользователя
+## Трекинг пользователя
 
-`Privacy Nutrition Label Types` описывает какие данные собираем о пользователе, именно он показывается в поле App Privacy в App Store:
+`Privacy Nutrition Label Types` описывает какие данные собираем о пользователе. Он виден в поле App Privacy на странице приложения:
 
 ![Nutrition Label](https://cdn.sparrowcode.io/tutorials/privacy-manifest/nutrition-label-app-store.png)
 
@@ -41,17 +38,17 @@
 
 3. **Used for Tracking** - если ли данные из Nutrition Label используюся для отслеживания, ставим YES.
 
-4. **Collection Purposes** - выбираем из списка ![причины](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests#4250556), по которым собираем данные. Например аналитика, реклама, аутентификация.
+4. **Collection Purposes** - выбираем [причины](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests#4250556) почему собираем данные. Например аналитика, реклама, аутентификация.
 
 ![Collection Purposes](https://cdn.sparrowcode.io/tutorials/privacy-manifest/collection-purposes.png)
 
-## Использование API
+## Системное API
 
 `Privacy Accessed API Types` важное поле, как раз по нему и прилетает письмо с ошибками от apple. В нем выбираем **тип АРІ**, которые по мнению Apple несут угрозу личным данным пользователя и указываем почему используем его:
 
-![Privacy Accessed API Reasons](https://cdn.sparrowcode.io/tutorials/privacy-manifest/privacy-accessed-api-reasons.png)
+![Privacy Accessed API Reasons](https://cdn.sparrowcode.io/tutorials/privacy-manifest/privacy-accessed-api-reasons.png?v=2)
 
-## Если используете IDFA
+## IDFA
 
 В поле **Privacy Tracking Enabled** указываем YES.
 
@@ -77,13 +74,17 @@
 
 Зная домены можно погуглит и выяснить сиспользуют они IDFA или нет.
 
-# Если фрейворк не добавил манифест
+# Манифест в библиотеках
+
+Если вы не знаете сторонняя библиотека собирает данные или нет, а в проекте вы не можете трекать. Можно посмотреть что они указали в XML на гитхабе.
+
+## Не добавили Манифест
 
 Перед тем как добовлять библиотеку проверте у нее наличие манифеста. Его кладут в проект, смотрим файлы с расширением `.xcprivacy`. 
 
 Обратите внимание на поле **Privacy Accessed API Types**, это проблемное место. Если поле пустое, а фрейворк собирает какие либо данные, от apple придет письмо с ошибками. Все что трекает фрейворк можно указать в своем манифесте.
 
-# Ошибка в Манифесте библиотеки
+## Манифест есть, но с ошибками
 
 В манифесте firebase crashlytics, профайлер находит использование домена **firebase-settings.crashlytics.com**. Но в своем манифесте они это не указали.
 
@@ -93,7 +94,21 @@
 
 Не стоит надеяться на то, что в стороних фрейворках манифест будет правильно заполнен. Поэтому не забываем перепроверять за другими фрейворками.
 
-# Посмотреть финальный манифест
+# Ошибки в Манифесте
+
+>Когда вы выгружаете приложение, ошибка не придет. Чтобы пришла ошибка нужно обязательно отправить на ревью.
+
+Если вы не понимаете как искать ошибки. Вам нужно посмотреть описание и найти ключ который начинается с `NS`, именно его и нужно будет добавить.
+
+NS ключи, описание на сайте apple
+
+[File timestamp APIs](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api#4278393): `NSPrivacyAccessedAPICategoryFileTimestamp`  даты создания файлов
+[System boot time APIs](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api#4278394): `NSPrivacyAccessedAPICategorySystemBootTime` информация о времени работы ОС
+[Disk space APIs](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api#4278397): `NSPrivacyAccessedAPICategoryDiskSpace` информация о доступном пространстве в хранилище устройства
+[Active keyboard APIs](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api#4278400): `NSPrivacyAccessedAPICategoryActiveKeyboards` доступ к списку активных клавиатур
+[User defaults APIs](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api#4278401): `NSPrivacyAccessedAPICategoryUserDefaults` хранение настроек и прочей информации
+
+# Финальный Манифест
 
 Собираем архив:
 
@@ -108,19 +123,3 @@
 ![PDF отчет](https://cdn.sparrowcode.io/tutorials/privacy-manifest/pdf-report.png)
 
 Все что с расширением `.app`, это ваш манифест. Все остальное сторонние фрейворки.
-
-
-
-# Если вы ошиблись
-
->Когда вы выгружаете приложение, ошибка не придет. Чтобы пришла ошибка нужно обязательно отправить на ревью.
-
-Если вы не понимаете как искать ошибки. Вам нужно посмотреть описание и найти ключ который начинается с `NS`, именно его и нужно будет добавить.
-
-## NS ключи, описание на сайте apple
-
-[File timestamp APIs](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api#4278393): `NSPrivacyAccessedAPICategoryFileTimestamp`  даты создания файлов
-[System boot time APIs](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api#4278394): `NSPrivacyAccessedAPICategorySystemBootTime` информация о времени работы ОС
-[Disk space APIs](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api#4278397): `NSPrivacyAccessedAPICategoryDiskSpace` информация о доступном пространстве в хранилище устройства
-[Active keyboard APIs](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api#4278400): `NSPrivacyAccessedAPICategoryActiveKeyboards` доступ к списку активных клавиатур
-[User defaults APIs](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api#4278401): `NSPrivacyAccessedAPICategoryUserDefaults` хранение настроек и прочей информации
