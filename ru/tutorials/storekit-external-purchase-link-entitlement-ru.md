@@ -55,7 +55,7 @@ Apple [разрешила](https://t.me/sparrowcode/450) направлять п
 
 ![Новый Capability](https://cdn.sparrowcode.io/tutorials/storekit-external-purchase-link-entitlement-ru/additional-capabilities.jpg?v=1)
 
-Уведомлений на почту не приходило, так что регулярно проверяйте Developer, Certifies,Identifiers & Profiles.
+Уведомлений на почту не приходило, так что регулярно проверяйте Developer, Certifies, Identifiers & Profiles.
 
 Внутри `Additional Capabilities` выбираете `ExternalPurchaseLink` и применяете изменения. Теперь нужно интегрировать эту capabilty в приложение.  
 
@@ -77,9 +77,9 @@ Apple [разрешила](https://t.me/sparrowcode/450) направлять п
 
 Аббревиатура страны по стандарту ISO.
 
-Сайт внешних покупок нужно открывать не как ссылку, а вызывать `try await ExternalPurchaseLink.open()` из StoreKit. Пользователю покажут системный диклеймер, что “полномочия Apple всё”, и если что-то пойдёт не так, разбираться с разработчиком придётся самостоятельно.
+Сайт внешних покупок нужно открывать не как ссылку, а вызывать `try await ExternalPurchaseLink.open()` из StoreKit. Пользователю покажут системный дисклеймер, что “полномочия Apple всё”, и если что-то пойдёт не так, разбираться с разработчиком придётся самостоятельно.
 
-![Системный диклеймер перед редиректом](https://cdn.sparrowcode.io/tutorials/storekit-external-purchase-link-entitlement-ru/system-dicamer-before-payment.png?v=1)
+![Системный дисклеймер перед редиректом](https://cdn.sparrowcode.io/tutorials/storekit-external-purchase-link-entitlement-ru/system-dicamer-before-payment.png?v=1)
 
 # Проверка приложения
 
@@ -120,6 +120,6 @@ Apple [разрешила](https://t.me/sparrowcode/450) направлять п
 # Ссылки по теме
 
 [Официальная Инструкция для RU](https://developer.apple.com/contact/request/storekit-external-entitlement-ru): Официальная инструкция и запрос StoreKit Entitlement. Ссылка открывается только если аккаунт владельца с регионом РФ
-[Инструкиця для US](https://developer.apple.com/support/storekit-external-entitlement-us/): Не для RU региона, но внутри полезные скриншоты.
+[Инструкция для US](https://developer.apple.com/support/storekit-external-entitlement-us/): Не для RU региона, но внутри полезные скриншоты.
 [Скачать иконку](https://developer.apple.com/support/downloads/Link-out-template.zip): Оригинальная иконка для кнопки на оплату на сайте.
 [Статья "Первыми в App Store внедрили оплату подписки на расчётный счет ООО в РФ"](https://vc.ru/u/rentel/1024516-pervymi-v-app-store-vnedrili-oplatu-podpiski-na-raschetnyy-schet-ooo-v-rf): Плюсы и минусы внешних покупок по закону
