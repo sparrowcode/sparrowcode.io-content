@@ -1,38 +1,38 @@
-Вы несете ответственность за код который интрегрируете в приложение, все данные которые вы сохраняете или собираете теперь нужно указывать в манифесте. Эти данные появятся на странице приложения, пользователи смогут отрыть их и посмотреть. 
+Все данные которые вы сохраняете или собираете теперь нужно указывать в манифесте. Эти данные появятся на странице приложения, пользователи смогут открыть их и посмотреть. Библиотеки тоже должны добавлять манифест. Вы несете ответственность за библиотеки которые добавляете.
 
-Сторонние фреймворки тоже должны добавлять манифест, но ответственность в любом случае лежит на вас. На данный момент не у всех фрейморков заполнен манифест. А какие-то его вообще могут не иметь.
-
-> Если во фреймворке есть манифест и он заполнен, то не нужно дублировать информацию в главный манифест. Все манифесты объединяются в один, когда собираем архив.
+> Если в библиотеке есть манифест и он заполнен, то не нужно дублировать информацию в главный манифест. Все манифесты объединяются в один, когда собираем архив.
 
 # Добавляем Манифест
 
-Манифест добовляется в проект. Нажимаем ⌘+N. В окне template опускаемся до раздела Resource и Выбираем App Privacy
+Нажимаем ⌘+N. В окне template опускаемся до раздела Resource и Выбираем App Privacy
 
-![App Privacy](https://cdn.sparrowcode.io/tutorials/privacy-manifest/app-privacy.png)
+![Создаем новый App Privacy файл](https://cdn.sparrowcode.io/tutorials/privacy-manifest/app-privacy.png?v=1)
 
-Можно создать несколько манифестов для каждого таргета, указываем к какому таргету относится манифест. Он должен билдится вместе с таргетом.
+Можно создать несколько манифестов для каждого таргета, указываем к какому таргету относится манифест.
 
-![таргет](https://cdn.sparrowcode.io/tutorials/privacy-manifest/enable-target.png)
+![Указываем к какому таргету относится манифест](https://cdn.sparrowcode.io/tutorials/privacy-manifest/enable-target.png?v=1)
 
 # Структура Манифеста
 
-Манифест это plist файл с расширением .xcprivacy. Plist - обычный XML.
+Манифест это plist файл с расширением .xcprivacy.
 
-![Privacy Info](https://cdn.sparrowcode.io/tutorials/privacy-manifest/base-app-manifest.png)
+![Манифест приложения](https://cdn.sparrowcode.io/tutorials/privacy-manifest/base-app-manifest.png?v=1)
 
-Манифест состоит из ключей. Одни отвечают за трекинг, другие за API которые вы используете. Сейчас разберем все по очереди:
+Манифест состоит из полей которые отвечают за `трекинг` - например собираете Email или Payment info, за `системные API` - например используете User Defaults или использование `IDFA`. Сейчас разберем все по очереди:
 
 ## Трекинг пользователя
 
-`Privacy Nutrition Label Types` описывает какие данные собираем о пользователе. Он виден в поле App Privacy на странице приложения:
+Поле `Privacy Nutrition Label Types` описывает какие данные собираем о пользователе. Он виден в поле App Privacy на странице приложения:
 
-![Nutrition Label](https://cdn.sparrowcode.io/tutorials/privacy-manifest/nutrition-label-app-store.png)
+![Иформация о собираемых данных в App Store](https://cdn.sparrowcode.io/tutorials/privacy-manifest/nutrition-label-app-store.png?v=1)
 
-В `Privacy Nutrition Label Types` входят:
+В это поле можем добавлять:
 
 1. **Collected Data Type** - здесь из списка выбираем категорию данных. В [документации](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests#4250555) это поле **Data type**.
 
-![Collected Data Type](https://cdn.sparrowcode.io/tutorials/privacy-manifest/collected-data-type.png)
+![Документация по Collected Data Type](https://cdn.sparrowcode.io/tutorials/privacy-manifest/collected-data-type.png?v=1)
+
+Для каждого отдельного Data Type создается новый item и все поля снизу будут указываться каждый раз.
 
 2. **Linked to User** - если собираем данные связанные с личностью пользователя, ставим YES.
 
@@ -40,86 +40,100 @@
 
 4. **Collection Purposes** - выбираем [причины](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests#4250556) почему собираем данные. Например аналитика, реклама, аутентификация.
 
-![Collection Purposes](https://cdn.sparrowcode.io/tutorials/privacy-manifest/collection-purposes.png)
+![Документация по Collection Purposes](https://cdn.sparrowcode.io/tutorials/privacy-manifest/collection-purposes.png?v=1)
 
 ## Системное API
 
-`Privacy Accessed API Types` важное поле, как раз по нему и прилетает письмо с ошибками от apple. В нем выбираем **тип АРІ**, которые по мнению Apple несут угрозу личным данным пользователя и указываем почему используем его:
+`Privacy Accessed API Types` важное поле, как раз по нему и прилетает письмо с ошибками от apple. В нем выбираем **тип системного АРІ**, указываем почему используем его:
 
-![Privacy Accessed API Reasons](https://cdn.sparrowcode.io/tutorials/privacy-manifest/privacy-accessed-api-reasons.png?v=2)
+![Тип API и причина его использования](https://cdn.sparrowcode.io/tutorials/privacy-manifest/privacy-accessed-api-reasons.png?v=1)
+
+[File timestamp](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api#4278393): `NSPrivacyAccessedAPICategoryFileTimestamp`  даты создания файлов.
+
+[System boot time](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api#4278394): `NSPrivacyAccessedAPICategorySystemBootTime` информация о времени работы ОС.
+
+[Disk space](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api#4278397): `NSPrivacyAccessedAPICategoryDiskSpace` информация о доступном пространстве в хранилище устройства.
+
+[Active keyboard](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api#4278400): `NSPrivacyAccessedAPICategoryActiveKeyboards` доступ к списку активных клавиатур.
+
+[User defaults](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api#4278401): `NSPrivacyAccessedAPICategoryUserDefaults` хранение настроек и прочей информации.
 
 ## IDFA
 
-В поле **Privacy Tracking Enabled** указываем YES.
+Если отслеживаете IDFA, в **Privacy Tracking Enabled** указываем YES. В поле **Privacy Tracking Domains** указываем домены, они участвуют в отслеживании IDFA.
 
-В поле **Privacy Tracking Domains** указываем домены, которые участвуют в отслеживании IDFA. Если для Privacy Tracking Enabled установлено в YES, то нужно указать хотя бы один домен.
+![Подтверждение импользования IDFA и домены](https://cdn.sparrowcode.io/tutorials/privacy-manifest/tracking-enabled-tracking-domains.png?v=1)
 
-![Privacy Tracking Domains](https://cdn.sparrowcode.io/tutorials/privacy-manifest/tracking-enabled-tracking-domains.png)
+> Если поле Privacy Tracking Enabled установлено в YES, то нужно обязательно указать хотя бы один домен.
 
-Если вы не знаете какие домены отслеживают данные, можно воспользоваться профайлером:
+Если вы не знаете какие домены отслеживают данные, используйте профайлер:
 
-![открывает profile](https://cdn.sparrowcode.io/tutorials/privacy-manifest/open-profile.png)
+![Открывает профайлер](https://cdn.sparrowcode.io/tutorials/privacy-manifest/open-profile.png?v=1)
 
 В открывшимся окне выбираем Network и жмем Choose
 
-![profile network](https://cdn.sparrowcode.io/tutorials/privacy-manifest/profile-network.png)
+![Окно профайлера](https://cdn.sparrowcode.io/tutorials/privacy-manifest/profile-network.png?v=1)
 
-В левом верхнем углу жмем кнопку **Start recording**. Выбираем вкладку **Points of Interest**, здесь показан список всех доменов. В примере обратите внимание на поле name в котором запись **Fault**, это значит что есть проблемы. В поле **Start Message** видно домен и указано что его не добавили в **Privacy Tracking Domains**
+В левом верхнем углу жмем кнопку Start recording. Выбираем вкладку **Points of Interest**, здесь показан список всех доменов. В колонке **Start Message** видно домен и указано что его не добавили в **Privacy Tracking Domains**.
 
-![Points of Interest](https://cdn.sparrowcode.io/tutorials/privacy-manifest/points-of-interest.png)
+![Домены приложения в Points of Interest](https://cdn.sparrowcode.io/tutorials/privacy-manifest/points-of-interest.png?v=1)
 
-На случай если профайлер будет косячить в Points of Interest, домены можно посмотреть в сессиях, во вкладке вашего приложения. Но здесь не указано нужно или нет добавлять их в **Tracking Domains**. Тут можно получить хоть какую-то инфюрмации по доменам в приложении.
+Если в **Points of Interest** ничего не показывает или пропадает, есть еще один способ посмотреть домены. Выбираем вкладку вашего приложения, в сессиях виды все домены.
 
-![app sessions](https://cdn.sparrowcode.io/tutorials/privacy-manifest/app-sessions.png)
+![Все домены в сессиях приложения](https://cdn.sparrowcode.io/tutorials/privacy-manifest/app-sessions.png?v=1)
 
-Зная домены можно погуглит и выяснить сиспользуют они IDFA или нет.
+Вы нашли домены. Теперь проверьте каждый из них, учавствует он отслеживание IDFA или нет. Сделать это придется вам самим.
 
 # Манифест в библиотеках
 
-Если вы не знаете сторонняя библиотека собирает данные или нет, а в проекте вы не можете трекать. Можно посмотреть что они указали в XML на гитхабе.
+Если вы не знаете библиотека собирает данные или нет, а в проекте вы не можете трекать. Можно посмотреть что они указали в XML на гитхабе.
 
 ## Не добавили Манифест
 
-Перед тем как добовлять библиотеку проверте у нее наличие манифеста. Его кладут в проект, смотрим файлы с расширением `.xcprivacy`. 
+Смотрим в проекте файлы с расширением `.xcprivacy`. Если манифест пустой или его вообще нет, а библиотека собирает какие либо данные и вы их не указали, от apple придет письмо с ошибками. Все что трекает фрейворк можно указать в своем манифесте.
 
-Обратите внимание на поле **Privacy Accessed API Types**, это проблемное место. Если поле пустое, а фрейворк собирает какие либо данные, от apple придет письмо с ошибками. Все что трекает фрейворк можно указать в своем манифесте.
+Если в библиотеке есть манифест и он заполнен, то не нужно дублировать информацию в главный манифест. Все манифесты объединяются в один, когда собираем архив.
 
 ## Манифест есть, но с ошибками
 
-В манифесте firebase crashlytics, профайлер находит использование домена **firebase-settings.crashlytics.com**. Но в своем манифесте они это не указали.
+Firebase crashlytics использует домен **firebase-settings.crashlytics.com**. В своем манифесте они это не указали:
 
-![Firebase манифест](https://cdn.sparrowcode.io/tutorials/privacy-manifest/firebase-manifest.png)
+![Ошибка манифесте Firebase](https://cdn.sparrowcode.io/tutorials/privacy-manifest/firebase-manifest.png?v=1)
 
-В такой ситуации добавляем домен в свой манифест, это перекроет проблемное поле в манифесте firebase. 
+Мы это нашли с помощью [профайлера](https://beta.sparrowcode.io/ru/tutorials/privacy-manifest#idfa). В такой ситуации добавляем домен в свой манифест, это перекроет проблемное поле в манифесте firebase. 
 
 Не стоит надеяться на то, что в стороних фрейворках манифест будет правильно заполнен. Поэтому не забываем перепроверять за другими фрейворками.
 
 # Ошибки в Манифесте
 
->Когда вы выгружаете приложение, ошибка не придет. Чтобы пришла ошибка нужно обязательно отправить на ревью.
+>На почту придет список ошибок, только когда отправите на ревью. Если просто выгрузите - не придет.
 
-Если вы не понимаете как искать ошибки. Вам нужно посмотреть описание и найти ключ который начинается с `NS`, именно его и нужно будет добавить.
+Описание ошибок в письме не самое лучшее. Поэтому ввидите в поиске `NS` и вы найдете все NS ключи
 
-NS ключи, описание на сайте apple
+![Письмо с ошибками в манифесте](https://cdn.sparrowcode.io/tutorials/privacy-manifest/nocorrect-manifest-letter.png)
 
-[File timestamp APIs](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api#4278393): `NSPrivacyAccessedAPICategoryFileTimestamp`  даты создания файлов
-[System boot time APIs](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api#4278394): `NSPrivacyAccessedAPICategorySystemBootTime` информация о времени работы ОС
-[Disk space APIs](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api#4278397): `NSPrivacyAccessedAPICategoryDiskSpace` информация о доступном пространстве в хранилище устройства
-[Active keyboard APIs](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api#4278400): `NSPrivacyAccessedAPICategoryActiveKeyboards` доступ к списку активных клавиатур
-[User defaults APIs](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api#4278401): `NSPrivacyAccessedAPICategoryUserDefaults` хранение настроек и прочей информации
+NS ключи, описание на сайте apple:
+
+1. [NSPrivacyAccessedAPICategoryFileTimestamp](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api#4278393)
+
+2. [NSPrivacyAccessedAPICategorySystemBootTime](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api#4278394)
+
+3. [NSPrivacyAccessedAPICategoryDiskSpace](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api#4278397)
+
+4. [NSPrivacyAccessedAPICategoryActiveKeyboards](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api#4278400)
+
+5. [NSPrivacyAccessedAPICategoryUserDefaults](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api#4278401)
 
 # Финальный Манифест
 
-Собираем архив:
-
-![создаем архив](https://cdn.sparrowcode.io/tutorials/privacy-manifest/create-archive.png)
+Собираем архив Product -> Archive.
 
 Правой кнопкой по архиву, выбераем Generate Privacy Report.
 
-![Generate Privacy Report](https://cdn.sparrowcode.io/tutorials/privacy-manifest/generate-privacy-report.png)
+![Создание архива](https://cdn.sparrowcode.io/tutorials/privacy-manifest/generate-privacy-report.png?v=1)
 
 В экспорте будет PDF. Все манифесты объединились:
 
-![PDF отчет](https://cdn.sparrowcode.io/tutorials/privacy-manifest/pdf-report.png)
+![PDF отчет со всеми манифестами](https://cdn.sparrowcode.io/tutorials/privacy-manifest/pdf-report.png?v=1)
 
 Все что с расширением `.app`, это ваш манифест. Все остальное сторонние фрейворки.
