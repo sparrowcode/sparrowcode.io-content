@@ -231,15 +231,15 @@
       "added_date": "27.03.2024"
    },
    "privacy-manifest": {
-      "title": "Как настроить Privacy Manifest",
-      "description": "Подробно разберем что такое Privacy Manifest и как его готовить.",
+      "title": "Как добавить Privacy Manifest",
+      "description": "Разберем что добавлять в Privacy Manifest, нужно ли указывать что используют сторонние библиотеки и как исправить ошибки.",
       "categories": ["development"],
       "author": "sparrowcode",
       "editors": [],
-      "keywords": ["privacy manifest", "privacy", "manifest", "plist"],
-      "graph_image": "https://cdn.sparrowcode.io/tutorials/privacy-manifest/privacy-manifest.png",
+      "keywords": ["privacy manifest", "privacy", "manifest", "plist", "NSPrivacyAccessedAPICategoryUserDefaults"],
+      "graph_image": "https://cdn.sparrowcode.io/tutorials/privacy-manifest/privacy-manifest-email.png",
       "google_structured_images": [],
-      "updated_date": "05.04.2024",
+      "updated_date": "15.04.2024",
       "added_date": "05.04.2024"
    }
 }
