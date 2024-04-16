@@ -153,5 +153,17 @@
       ],
       "updated_date": "21.11.2023",
       "added_date": "21.11.2023"
+   },
+   "privacy-manifest": {
+      "title": "How to add a Privacy Manifest",
+      "description": "Let's break down what to add to the Privacy Manifest, whether it is necessary to specify that third-party libraries are used and how to fix errors.",
+      "categories": ["development"],
+      "author": "sparrowcode",
+      "editors": [],
+      "keywords": ["privacy manifest", "privacy", "manifest", "plist", "NSPrivacyAccessedAPICategoryUserDefaults"],
+      "graph_image": "https://cdn.sparrowcode.io/tutorials/privacy-manifest/privacy-manifest-email.png",
+      "google_structured_images": [],
+      "updated_date": "15.04.2024",
+      "added_date": "05.04.2024"
    }
 }
