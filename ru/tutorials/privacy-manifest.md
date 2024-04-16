@@ -96,7 +96,7 @@
 
 ![Ошибка манифесте Firebase](https://cdn.sparrowcode.io/tutorials/privacy-manifest/firebase-manifest.png?v=1)
 
-Мы это нашли с помощью [профайлера](https://beta.sparrowcode.io/ru/tutorials/privacy-manifest#idfa). В такой ситуации добавляем домен в свой манифест, это перекроет проблемное поле в манифесте от Firebase. 
+Мы это нашли с помощью [профайлера](https://sparrowcode.io/ru/tutorials/privacy-manifest#idfa). В такой ситуации добавляем домен в свой манифест, это перекроет проблемное поле в манифесте от Firebase. 
 
 В манифестах библиотек допускают ошибки — обязательно перепроверяйте.
 
