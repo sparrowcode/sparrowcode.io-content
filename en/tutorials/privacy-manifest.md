@@ -64,7 +64,7 @@ For each API by link you get a list of availalbe reasons. You can't specify your
 
 ## IDFA
 
-If you are using IDFA, add the **Privacy Tracking Enabled** field and set `YES`. Ddd the **Privacy Tracking Domains** field as well, here you need to specify all domains that work in IDFA.
+If you are using IDFA, add the **Privacy Tracking Enabled** field and set `YES`. Add the **Privacy Tracking Domains** field as well, here you need to specify all domains that work in IDFA.
 
 ![Fields for IDFA in Manifest](https://cdn.sparrowcode.io/tutorials/privacy-manifest/tracking-enabled-tracking-domains.png?v=1)
 
