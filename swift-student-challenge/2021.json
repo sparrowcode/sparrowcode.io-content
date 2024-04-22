@@ -1,0 +1,839 @@
+{
+   "developers": [
+      {
+         "name": "A. Alkan Caner",
+         "source": "https://github.com/AlkanCaner/StylizedArt",
+         "video": "https://www.youtube.com/watch?v=V2-lZlgsD1k&t=4s",
+         "frameworks": ["SwiftUI", "CoreML"],
+         "status": "submitted"
+      }, {
+         "name": "Adam Zhao",
+         "source": null,
+         "video": "https://youtu.be/_wrRRgDcfdA",
+         "frameworks": ["Accelerate", "PencilKit", "UIKit"],
+         "status": "submitted"
+      }, {
+         "name": "Alan Yan",
+         "source": "https://github.com/yan-alan/Dance-Party",
+         "video": null,
+         "frameworks": ["Vision", "AVFoundation", "SwiftUI", "UIKit"],
+         "status": "accepted"
+      }, {
+         "name": "Alperen Örence",
+         "source": "https://github.com/alperenorence/chatbots",
+         "video": null,
+         "frameworks": ["SwiftUI", "Combine"],
+         "status": "accepted"
+      }, {
+         "name": "Alvin Hsueh",
+         "source": "https://github.com/HaXAlvin/WWDC21_Hello_World",
+         "video": null,
+         "frameworks": ["SwiftUI", "SpriteKit", "ARKit", "UIKit"],
+         "status": "accepted"
+      }, {
+         "name": "Anant Kanchan",
+         "source": "https://github.com/anantcodes/NaviOS",
+         "video": null,
+         "frameworks": ["SwiftUI"],
+         "status": "accepted"
+      }, {
+         "name": "Anav Mehta",
+         "source": "https://github.com/anavmehta/ChessRealityPlaygroundBook",
+         "video": "https://youtu.be/tLK6NKbC-NQ",
+         "frameworks": ["RealityKit", "AVKit", "RealityComposer"],
+         "status": "accepted"
+      }, {
+         "name": "Andrean Lay",
+         "source": "https://github.com/andreanlay/jebot-wwdc21",
+         "video": null,
+         "frameworks": ["SwiftUI", "AVFoundation"],
+         "status": "accepted"
+      }, {
+         "name": "Andrew Glen",
+         "source": "https://github.com/nanothread/Functional-Programming-With-Physics",
+         "video": null,
+         "frameworks": ["SpriteKit", "SwiftUI"],
+         "status": "accepted"
+      }, {
+         "name": "Andrew Z",
+         "source": "https://github.com/aheze/AccessibleReality",
+         "video": "https://www.youtube.com/watch?v=BH2HONBJiF0",
+         "frameworks": ["SwiftUI", "ARKit", "Vision"],
+         "status": "accepted"
+      }, {
+         "name": "Arjun Dureja",
+         "source": "https://github.com/arjun-dureja/WWDC21-Swift-Student-Challenge",
+         "video": "https://www.youtube.com/watch?v=BNntCgua848",
+         "frameworks": ["UIKit"],
+         "status": "accepted"
+      }, {
+         "name": "Atulya Weise",
+         "source": "https://github.com/atultw/physics-swift",
+         "video": null,
+         "frameworks": ["SpriteKit", "SwiftUI"],
+         "status": "submitted"
+      }, {
+         "name": "Baran Önen",
+         "source": "https://github.com/baranonen/WWDC21-Barcodes",
+         "video": null,
+         "frameworks": ["SwiftUI", "SpriteKit"],
+         "status": "accepted"
+      }, {
+         "name": "Barbra Eliza",
+         "source": "https://github.com/barbraeliza/WWDC2021",
+         "video": "https://www.youtube.com/watch?v=p1udeXu4F4U",
+         "frameworks": ["SpriteKit", "AVFoundation"],
+         "status": "accepted"
+      }, {
+         "name": "Batuhan Karababa",
+         "source": "https://github.com/batuhankrbb/AppleHeroes",
+         "video": "https://www.youtube.com/watch?v=w1ceszjuaco",
+         "frameworks": ["SwiftUI"],
+         "status": "submitted"
+      }, {
+         "name": "Benjamin Hutter",
+         "source": "https://github.com/benjaminhtr/WWDC21",
+         "video": null,
+         "frameworks": ["SwiftUI", "SpriteKit", "UIKit"],
+         "status": "submitted"
+      }, {
+         "name": "Benji Burgess",
+         "source": "https://github.com/benjiburgess/wwdc21",
+         "video": null,
+         "frameworks": ["SwiftUI"],
+         "status": "submitted"
+      }, {
+         "name": "Berkin Ceylan",
+         "source": "https://github.com/berkinceylan/WWDC21",
+         "video": null,
+         "frameworks": ["SwiftUI", "AVFoundation"],
+         "status": "submitted"
+      }, {
+         "name": "Bryanza Novirahman",
+         "source": "https://github.com/bryanzanr/skipper",
+         "video": "https://youtu.be/rUaxRIN6_CE",
+         "frameworks": ["SwiftUI"],
+         "status": "rejected"
+      }, {
+         "name": "Can Balkaya",
+         "source": "https://github.com/canbalkaya/Machine-Dreams-WWDC21",
+         "video": null,
+         "frameworks": ["ARKit", "SceneKit", "CoreML", "SwiftUI"],
+         "status": "submitted"
+      }, {
+         "name": "Choyi Jeong",
+         "source": "https://github.com/iamcho2/WWDC-2021",
+         "video": null,
+         "frameworks": ["SwiftUI", "SpriteKit"],
+         "status": "submitted"
+      }, {
+         "name": "Christian Privitelli",
+         "source": "https://github.com/Priva28/Swift3D",
+         "video": null,
+         "frameworks": ["SwiftUI", "SceneKit", "ARKit"],
+         "status": "accepted"
+      }, {
+         "name": "Corentin Medina",
+         "source": "https://github.com/CorentiOS/WWDC2021",
+         "video": "https://www.youtube.com/watch?v=IRqJCoCRcs4",
+         "frameworks": ["SpriteKit", "GameplayKit", "AVFoundation"],
+         "status": "submitted"
+      }, {
+         "name": "Cristian Garske",
+         "source": "https://github.com/CristianGarske/WWDC21",
+         "video": "https://youtu.be/26w5qdg78_s",
+         "frameworks": ["SwiftUI"],
+         "status": "accepted"
+      }, {
+         "name": "Darshil Agrawal",
+         "source": "https://github.com/darshilagrawal/WWDC2021-Submission-Accepted-",
+         "video": null,
+         "frameworks": ["CrytpoKit", "SwiftUI"],
+         "status": "accepted"
+      }, {
+         "name": "David Knothe",
+         "source": "https://github.com/knothed/Symmetries",
+         "video": null,
+         "frameworks": ["Accelerate", "CoreAnimation"],
+         "status": "accepted"
+      }, {
+         "name": "Davin Djayadi",
+         "source": "https://github.com/davindj/add-modulo",
+         "video": null,
+         "frameworks": ["SpriteKit", "AVFoundation"],
+         "status": "accepted"
+      }, {
+         "name": "Deniz Karakay",
+         "source": "https://github.com/dkarakay/wwdc-2021-perfec0",
+         "video": null,
+         "frameworks": ["SpriteKit", "AVFoundation", "SwiftUI", "UIKit"],
+         "status": "submitted"
+      }, {
+         "name": "Derek Hsieh",
+         "source": "https://github.com/DerekHsiehDev/WWDC-2021.git",
+         "video": null,
+         "frameworks": ["AVFoundation", "Natural Language", "SwiftUI", "CoreML", "CreateML", "AVSpeechSynthesizer"],
+         "status": "accepted"
+      }, {
+         "name": "Dhanraj Chavan",
+         "source": "https://github.com/dhanrajdc7/CryptoCam",
+         "video": "https://youtu.be/gMEdtcLDdGU",
+         "frameworks": ["UIKit", "Vision", "AVFoundation"],
+         "status": "accepted"
+      }, {
+         "name": "Djenifer R Pereira",
+         "source": "https://github.com/djeni98/naipi-and-taroba",
+         "video": "https://www.youtube.com/watch?v=NP4XIpNLOc4",
+         "frameworks": ["SpriteKit"],
+         "status": "accepted"
+      }, {
+         "name": "Don Chia",
+         "source": "https://github.com/dhs17y2adonchia/WWDC2021",
+         "video": null,
+         "frameworks": ["SwiftUI", "UIKit", "WKWebView"],
+         "status": "accepted"
+      }, {
+         "name": "Elaine Cruz",
+         "source": "https://github.com/elainecruz/WWDC21",
+         "video": null,
+         "frameworks": ["UIKit", "RealityKit"],
+         "status": "submitted"
+      }, {
+         "name": "Erick Almeida",
+         "source": "https://github.com/erick2280/dines-donkey-playground",
+         "video": null,
+         "frameworks": ["SwiftUI"],
+         "status": "submitted"
+      }, {
+         "name": "Federico Ciardi",
+         "source": "https://github.com/fedeci/WWDC2021",
+         "video": null,
+         "frameworks": ["SceneKit", "SpriteKit", "AVFoundation", "Combine"],
+         "status": "accepted"
+      }, {
+         "name": "Filip Kania",
+         "source": "https://github.com/filipkania/getout.",
+         "video": null,
+         "frameworks": ["SceneKit", "AVFoundation", "AppKit"],
+         "status": "rejected"
+      }, {
+         "name": "Fred P",
+         "source": "https://github.com/fredpi/WWDC2021",
+         "video": null,
+         "frameworks": ["UIKit", "Core Animation", "Core Graphics"],
+         "status": "accepted"
+      }, {
+         "name": "Frederico Lacis",
+         "source": "https://github.com/fredlacis/GeneticAlgorithms_WWDC21",
+         "video": "https://www.youtube.com/watch?v=-wLLsycY_cs",
+         "frameworks": ["SwiftUI"],
+         "status": "accepted"
+      }, {
+         "name": "Furkan Hancı",
+         "source": "https://github.com/Furkanus/BioShine",
+         "video": null,
+         "frameworks": ["SwiftUI"],
+         "status": "rejected"
+      }, {
+         "name": "Gabriel Muelas",
+         "source": "https://github.com/MuelasU/wwdc21-float-or-sink",
+         "video": "https://youtu.be/fin79NjjNHw",
+         "frameworks": ["SwiftUI"],
+         "status": "accepted"
+      }, {
+         "name": "Garima Bothra",
+         "source": "https://github.com/garima94921/DoubleSpending-WWDC21",
+         "video": null,
+         "frameworks": ["CryptoKit", "SwiftUI"],
+         "status": "accepted"
+      }, {
+         "name": "Garv Shah",
+         "source": "https://github.com/garv-shah/WWDC21-Galton-Board",
+         "video": null,
+         "frameworks": ["SpriteKit", "UIKit"],
+         "status": "accepted"
+      }, {
+         "name": "Gokul R Nair",
+         "source": "https://github.com/gokulnair2001/WWDC_SSC_2021",
+         "video": null,
+         "frameworks": ["UIKit"],
+         "status": "rejected"
+      }, {
+         "name": "Gustavo Tatarem",
+         "source": "https://github.com/gustatarem/choose-your-car",
+         "video": "https://youtu.be/QINtUIOSEDc",
+         "frameworks": ["SpriteKit", "AVFoundation"],
+         "status": "accepted"
+      }, {
+         "name": "Haobo Xu",
+         "source": "https://github.com/haoboxuxu/WWDC2021-TheHackOfRayTracing",
+         "video": "https://youtu.be/LqT7yQC8kk4",
+         "frameworks": ["MetalKit", "Ray-Tracing algorithms"],
+         "status": "submitted"
+      }, {
+         "name": "Haotian Zheng",
+         "source": "https://github.com/JustinFincher/WWDC2021ScholarshipProject",
+         "video": "https://www.youtube.com/watch?v=AT6XDYx_aRg",
+         "frameworks": ["ARKit", "SceneKit", "MetalKit", "SwiftUI"],
+         "status": "rejected"
+      }, {
+         "name": "Henri Bredt",
+         "source": "https://github.com/henribredt/UserExperience-WWDC21",
+         "video": null,
+         "frameworks": ["SwiftUI"],
+         "status": "accepted"
+      }, {
+         "name": "Hugo Lispector",
+         "source": null,
+         "video": "https://youtu.be/Vm2tvazcDwU",
+         "frameworks": ["SpriteKit"],
+         "status": "accepted"
+      }, {
+         "name": "Ibrahim Berat Kaya",
+         "source": "https://github.com/iberatkaya/wwdc21",
+         "video": "https://www.youtube.com/watch?v=AhJjLU_ENXs",
+         "frameworks": ["SwiftUI"],
+         "status": "accepted"
+      }, {
+         "name": "Íris Soares",
+         "source": "https://github.com/irixs/irix-playground",
+         "video": "https://www.youtube.com/watch?v=rDYsMPE_YUs",
+         "frameworks": ["SwiftUI"],
+         "status": "accepted"
+      }, {
+         "name": "Ishan Chhabra",
+         "source": "https://github.com/ishan-chhabra/spacewalk",
+         "video": "https://www.youtube.com/watch?v=lOLcMdaWx5s",
+         "frameworks": ["AVFoundation", "SpriteKit"],
+         "status": "accepted"
+      }, {
+         "name": "Izabella Melo",
+         "source": "https://github.com/izmcm/WhatIsSQLi",
+         "video": null,
+         "frameworks": ["SwiftUI"],
+         "status": "accepted"
+      }, {
+         "name": "Jakub Florek",
+         "source": "https://github.com/MAJKFL/Wonderful_Icons-WWDC21",
+         "video": "https://youtu.be/6VkkqBUv13s",
+         "frameworks": ["SwiftUI", "UIKit", "Combine", "AVFoundation"],
+         "status": "accepted"
+      }, {
+         "name": "Jan Luca Siewert",
+         "source": "https://github.com/jlsiewert/SwiftAR",
+         "video": "https://youtu.be/3GeFRthFBs8",
+         "frameworks": ["ARKit", "SceneKit", "SwiftUI"],
+         "status": "accepted"
+      }, {
+         "name": "Javier Gallo Roca",
+         "source": "https://github.com/Happygallo/LangtonsAnt.git",
+         "video": "https://youtu.be/gCRG00CTZCo",
+         "frameworks": ["SpriteKIt", "SwiftUI"],
+         "status": "rejected"
+      }, {
+         "name": "Jia Chen",
+         "source": "https://github.com/jiachenyee/wwdc21explorer",
+         "video": null,
+         "frameworks": ["SceneKit", "UIKit", "SwiftUI", "Natural Language"],
+         "status": "accepted"
+      }, {
+         "name": "Jimmy Tan",
+         "source": "https://github.com/JimmyTan823/wwdc",
+         "video": "https://www.youtube.com/watch?v=hwe_fkz52fs",
+         "frameworks": ["SwiftUI", "AVFoundation"],
+         "status": "accepted"
+      }, {
+         "name": "João Carlos Magalhães",
+         "source": "https://github.com/joaocarlos-mag/WWDC-2021-Scholarship-Submission",
+         "video": null,
+         "frameworks": ["UIKit", "SpriteKit", "SceneKit", "Accelerate"],
+         "status": "submitted"
+      }, {
+         "name": "João Gabriel",
+         "source": "https://github.com/joogps/WWDC-2021",
+         "video": null,
+         "frameworks": ["SwiftUI", "AVFoundation"],
+         "status": "accepted"
+      }, {
+         "name": "Joe Naveau",
+         "source": null,
+         "video": "https://www.youtube.com/watch?v=3pef6mkJGJc&list=PLZw7eGQJuMjlFtuO2dc1DazkhwaOIgfSo&index=36&t=1s",
+         "frameworks": ["SpriteKit", "AVFoundation"],
+         "status": "submitted"
+      }, {
+         "name": "Jose Adolfo Talactac",
+         "source": "https://github.com/devjoseadolfo/CircuitPlay",
+         "video": "https://youtu.be/pm3mlDZJSes",
+         "frameworks": ["SwiftUI", "Accelerate", "RealityKit", "ARKit"],
+         "status": "accepted"
+      }, {
+         "name": "Julian Benedikt Heuschen",
+         "source": "https://github.com/jbheuschen/Cryptography",
+         "video": null,
+         "frameworks": ["SwiftUI", "Security", "CryptoKit", "CommonCrypto"],
+         "status": "accepted"
+      }, {
+         "name": "Julian Schiavo",
+         "source": "https://github.com/julianschiavo/wwdc/",
+         "video": null,
+         "frameworks": ["AVFoundation", "CoreML", "SwiftUI", "Vision"],
+         "status": "accepted"
+      }, {
+         "name": "Juliano Vaz",
+         "source": "https://www.github.com/julianoctvaz/jardimHarmonico",
+         "video": null,
+         "frameworks": ["UIKit", "AVFoundation"],
+         "status": "submitted"
+      }, {
+         "name": "Jun Murakami",
+         "source": "https://github.com/juneforceone/iRecognizer",
+         "video": "https://youtu.be/9_jidssBG9c",
+         "frameworks": ["SwiftUI", "CoreML", "ARKit"],
+         "status": "submitted"
+      }, {
+         "name": "Junaid Abdurahman",
+         "source": null,
+         "video": "https://youtu.be/GUCHvjWpotY",
+         "frameworks": ["UIKit", "CoreML", "QuartzCore"],
+         "status": "accepted"
+      }, {
+         "name": "Kee Meng",
+         "source": "https://github.com/KeeMeng/swift-kaleidoscope",
+         "video": null,
+         "frameworks": ["UIKit"],
+         "status": "accepted"
+      }, {
+         "name": "Kenneth Chew",
+         "source": "https://github.com/kthchew/wwdc21-combustion",
+         "video": null,
+         "frameworks": ["SpriteKit", "SwiftUI"],
+         "status": "accepted"
+      }, {
+         "name": "Krish Jain",
+         "source": "https://github.com/Krish-sysadmin/WWDC2021",
+         "video": null,
+         "frameworks": ["UIKit", "SpriteKit"],
+         "status": "accepted"
+      }, {
+         "name": "Kunal Bagaria",
+         "source": "https://github.com/kb24x7/wwdc-2021",
+         "video": null,
+         "frameworks": ["AVFoundation", "SwiftUI"],
+         "status": "rejected"
+      }, {
+         "name": "Lambo Zhuang",
+         "source": "https://github.com/Lambozhuang/Playground_CameraSimulator",
+         "video": null,
+         "frameworks": ["UIKit"],
+         "status": "accepted"
+      }, {
+         "name": "Leon Zhao",
+         "source": "https://github.com/Confucius52/WWDC2021_submission",
+         "video": null,
+         "frameworks": ["UIKit"],
+         "status": "accepted"
+      }, {
+         "name": "Lee Jaeho",
+         "source": "https://github.com/jaeho0718/WWDC2021_Student_Challenge",
+         "video": null,
+         "frameworks": ["SpriteKit", "UIKit", "PlaygroundBook"],
+         "status": "accepted"
+      }, {
+         "name": "Liam Rosenfeld",
+         "source": "https://github.com/liamrosenfeld/SeamCarving",
+         "video": null,
+         "frameworks": ["Metal", "CoreGraphics", "Accelerate", "SwiftUI"],
+         "status": "submitted"
+      }, {
+         "name": "Luis Genesius",
+         "source": "https://github.com/lgenesius/unity-in-diversity-wwdc21",
+         "video": null,
+         "frameworks": ["UIKit", "AVFoundation", "AVSpeechSynthesizer"],
+         "status": "accepted"
+      }, {
+         "name": "M. Bertan Tarakçıoğlu",
+         "source": "https://github.com/BertanT/The-ADHD-Exploration-WWDC21",
+         "video": null,
+         "frameworks": ["SwiftUI", "Combine", "PhotosUI"],
+         "status": "accepted"
+      }, {
+         "name": "Maiara Martins",
+         "source": "https://github.com/MaiaraM/WWDC21-Ballet",
+         "video": "https://youtu.be/tkAKTPRCCf8",
+         "frameworks": ["SpriteKit", "AVSpeechUtterance", "AVSpeechSynthesizer", "AVPlayer", "UIKit"],
+         "status": "accepted"
+      }, {
+         "name": "Makwan Barzan",
+         "source": "https://github.com/m1bki0n/Kazhe",
+         "video": null,
+         "frameworks": ["SwiftUI", "AVFoundation"],
+         "status": "rejected"
+      }, {
+         "name": "Maria Fernanda Azolin",
+         "source": "https://github.com/azolinmf/wwdc21-mixedFeelings",
+         "video": "https://www.youtube.com/watch?v=KZIUHNLthZg",
+         "frameworks": ["SpriteKit", "UIKit"],
+         "status": "accepted"
+      }, {
+         "name": "Mason Dierkes",
+         "source": "https://github.com/mjdierkes/SkinCancers",
+         "video": "https://youtu.be/jaWeCtgJg_8",
+         "frameworks": ["SwiftUI"],
+         "status": "accepted"
+      }, {
+         "name": "Mateus Levi Fernandes",
+         "source": "https://github.com/mateuslevisf/wwdc21-compgraphics101",
+         "video": null,
+         "frameworks": ["SpriteKit"],
+         "status": "accepted"
+      }, {
+         "name": "Matheus Andrade",
+         "source": "https://github.com/matheusvtna/Mixed-Juice",
+         "video": null,
+         "frameworks": ["SwiftUI", "AVKit"],
+         "status": "accepted"
+      }, {
+         "name": "Matheus S. Moreira",
+         "source": "https://github.com/matheussmoreira/Squance",
+         "video": null,
+         "frameworks": ["SwiftUI"],
+         "status": "submitted"
+      }, {
+         "name": "Matheus Gois",
+         "source": null,
+         "video": "https://youtu.be/_-NE_9EmK7c",
+         "frameworks": ["UIKit", "SpriteKit"],
+         "status": "accepted"
+      }, {
+         "name": "Maxime Madrau",
+         "source": "https://github.com/Maxmad68/Lightning-Simulator",
+         "video": null,
+         "frameworks": ["SpriteKit"],
+         "status": "accepted"
+      }, {
+         "name": "Mehdi Hussain",
+         "source": "https://github.com/mehdihdev/WWDC2021",
+         "video": "https://youtu.be/T32k8JW4J0g",
+         "frameworks": ["UIKit", "SpriteKit", "SceneKit"],
+         "status": "accepted"
+      }, {
+         "name": "Mrinal Tyagi",
+         "source": "https://github.com/MrinalTyagi/WWDC-2021-Swift-Challenge-Submission",
+         "video": null,
+         "frameworks": ["UIKit"],
+         "status": "rejected"
+      }, {
+         "name": "Murilo Gonçalves",
+         "source": "https://github.com/murilo-goncalves/WWDC2021-VSSS",
+         "video": null,
+         "frameworks": ["SpriteKit"],
+         "status": "accepted"
+      }, {
+         "name": "Nathaniel Fargo",
+         "source": "https://github.com/theParadox42/Relativity",
+         "video": null,
+         "frameworks": ["SpriteKit", "SceneKit"],
+         "status": "accepted"
+      }, {
+         "name": "Nguyen Vu",
+         "source": "https://github.com/ThanhNguyenVu/Meal-WWDC21",
+         "video": null,
+         "frameworks": ["SwiftUI", "AVFoundation"],
+         "status": "submitted"
+      }, {
+         "name": "Niall Kehoe",
+         "source": "https://github.com/niallkehoe/GreatMinds",
+         "video": "https://www.youtube.com/watch?v=_m4rY34BQbM",
+         "frameworks": ["SwiftUI", "ARKit", "RealityKit", "SpriteKit"],
+         "status": "accepted"
+      }, {
+         "name": "Niklas Bülow",
+         "source": "https://github.com/insightmind/WWDC21SwiftStudentChallenge",
+         "video": null,
+         "frameworks": ["SpriteKit", "UIKit", "AVFoundation"],
+         "status": "accepted"
+      }, {
+         "name": "Omar Abusharar",
+         "source": null,
+         "video": "https://youtu.be/fo5AtVe_PJk",
+         "frameworks": ["SwiftUI"],
+         "status": "submitted"
+      }, {
+         "name": "Oscar Fridh",
+         "source": "https://github.com/OscarFridh/SwiftSearch",
+         "video": null,
+         "frameworks": ["SpriteKit"],
+         "status": "accepted"
+      }, {
+         "name": "Oscar Gorog",
+         "source": "https://github.com/OscarGorog/WWDC21-Playground",
+         "video": null,
+         "frameworks": ["SwiftUI", "Combine", "RealityKit", "AVFoundation"],
+         "status": "rejected"
+      }, {
+         "name": "Ozan Mirza",
+         "source": "https://github.com/ozanm/WWDC-2021-Neural-Networks",
+         "video": null,
+         "frameworks": ["UIKit", "CoreGraphics", "Accelerate"],
+         "status": "accepted"
+      }, {
+         "name": "Peter Yaacoub",
+         "source": "https://github.com/Yaacoub/Swift-Student-Challenge/tree/master/WWDC%202021",
+         "video": "https://youtu.be/pjSYAEYOPhk",
+         "frameworks": ["AVFoundation", "CoreMotion", "SpriteKit", "UIKit"],
+         "status": "accepted"
+      }, {
+         "name": "Prajwal Kulkarni",
+         "source": "https://github.com/prajwalkulkarni/WWDC21",
+         "video": "https://youtu.be/GgATVEkmmKI",
+         "frameworks": ["AVFoundation", "SpriteKit", "SwiftUI", "UIKit"],
+         "status": "accepted"
+      }, {
+         "name": "Riccardo Persello",
+         "source": "https://github.com/persello/ssc21",
+         "video": null,
+         "frameworks": ["Accelerate"],
+         "status": "accepted"
+      }, {
+         "name": "Richard Qi Zhi",
+         "source": "https://github.com/riccqi/Encryption-Book",
+         "video": null,
+         "frameworks": ["CryptoKit", "SpriteKit", "SwiftUI"],
+         "status": "accepted"
+      }, {
+         "name": "Riku Arakawa",
+         "source": "https://github.com/rikulh/Ohajiki",
+         "video": null,
+         "frameworks": ["SwiftUI", "SpriteKit"],
+         "status": "rejected"
+      }, {
+         "name": "Rodrigo Matos",
+         "source": "https://github.com/Rudigus/shaderland",
+         "video": null,
+         "frameworks": ["SceneKit", "SpriteKit", "UIKit"],
+         "status": "submitted"
+      }, {
+         "name": "Roy Rao",
+         "source": "https://github.com/RoyRao2333/WWDC21-Apple-Scholarship",
+         "video": null,
+         "frameworks": ["Cocoa", "SwiftUI", "Combine", "AVKit"],
+         "status": "submitted"
+      }, {
+         "name": "Ryan Du",
+         "source": "https://github.com/ryendu/exploring-ml",
+         "video": "https://youtu.be/K9yRi89Ub5U",
+         "frameworks": ["SwiftUI", "SpriteKit"],
+         "status": "accepted"
+      }, {
+         "name": "Ryan Rudes",
+         "source": "https://github.com/Ryan-Rudes/wwdc21",
+         "video": "https://www.youtube.com/watch?v=sLm7Xin9u0g",
+         "frameworks": ["SwiftUI", "AVFoundation"],
+         "status": "rejected"
+      }, {
+         "name": "Sabesh Bharathi",
+         "source": "https://github.com/programVeins/rubysdilemma",
+         "video": "https://www.youtube.com/watch?v=6KlwMRYOupk",
+         "frameworks": ["SwiftUI", "AVFoundation", "RealityKit", "ARKit"],
+         "status": "accepted"
+      }, {
+         "name": "Sai Ranga Reddy",
+         "source": "https://github.com/irangareddy/Carbon-Footprint",
+         "video": "https://youtu.be/4uh_Aet8dMM",
+         "frameworks": ["SwiftUI", "AVKit", "SceneKit"],
+         "status": "accepted"
+      }, {
+         "name": "Sascha Salles",
+         "source": "https://github.com/saschasalles/WWDC2021",
+         "video": null,
+         "frameworks": ["ARKit", "SceneKit", "AVFoundation", "SwiftUI"],
+         "status": "accepted"
+      }, {
+         "name": "Seunghun Yang",
+         "source": "https://github.com/Yabby1997/WWDC21-Swift-Student-Challenge",
+         "video": "https://youtu.be/HVTCB2lDpjg",
+         "frameworks": ["SpriteKit", "AVFoundation"],
+         "status": "accepted"
+      }, {
+         "name": "Shaun Ku",
+         "source": "https://github.com/Grotion/2021WWDC_Swift-Student-Challenge_Time-Flies",
+         "video": "https://www.youtube.com/watch?v=k0bBiF7P3lc",
+         "frameworks": ["SwiftUI", "AVFoundation"],
+         "status": "accepted"
+      }, {
+         "name": "Shengjiu Shi",
+         "source": "https://github.com/John-ssj/WWDC2021",
+         "video": null,
+         "frameworks": ["UIKit", "SpriteKit"],
+         "status": "submitted"
+      }, {
+         "name": "Shengyuan Lu",
+         "source": null,
+         "video": "https://youtu.be/dY1R0TIHwjY",
+         "frameworks": ["SwiftUI", "ARKit", "SceneKit", "CoreMotion"],
+         "status": "accepted"
+      }, {
+         "name": "Stephen Fang",
+         "source": "https://github.com/iamStephenFang/KnowledgeGraph",
+         "video": null,
+         "frameworks": ["SwiftUI", "AVKit"],
+         "status": "accepted"
+      }, {
+         "name": "Stvya Sharma",
+         "source": "https://github.com/StvyaSharma/Mini_Games",
+         "video": null,
+         "frameworks": ["UIKit", "SpriteKit", "AVFoundation", "SwiftUI"],
+         "status": "accepted"
+      }, {
+         "name": "Subhronil Saha",
+         "source": "https://github.com/subhronilsaha/wwdc-21-submission",
+         "video": "https://www.youtube.com/watch?v=uFCORfnsnzw",
+         "frameworks": ["SwiftUI", "AVKit"],
+         "status": "submitted"
+      }, {
+         "name": "Swapnanil Dhol",
+         "source": "https://github.com/SwapnanilDhol/Inclusivity",
+         "video": "https://www.youtube.com/watch?v=ELeCD3yY7uU",
+         "frameworks": ["Vision", "SwiftUI", "AVKit"],
+         "status": "accepted"
+      }, {
+         "name": "Sylvain Guillier",
+         "source": null,
+         "video": "https://www.youtube.com/watch?v=MqWFkvcpAMk",
+         "frameworks": ["Vision", "SwiftUI", "AVFoundation"],
+         "status": "accepted"
+      }, {
+         "name": "Tamerlan Satualdypov",
+         "source": "https://github.com/onl1ner/Hands",
+         "video": null,
+         "frameworks": ["UIKit", "AVFoundation", "Vision"],
+         "status": "rejected"
+      }, {
+         "name": "Tejas Mehta",
+         "source": "https://github.com/tmthecoder/MultiCalcPlayground",
+         "video": null,
+         "frameworks": ["Vision", "PencilKit", "CoreGraphics", "UIKit"],
+         "status": "accepted"
+      }, {
+         "name": "Theo Caldas",
+         "source": "https://github.com/TheoCaldas/BoweBetterTalk-WWDC21",
+         "video": "https://youtu.be/7Y4D_xJ7EwU",
+         "frameworks": ["SpriteKit", "AVFoundation", "CoreMotion"],
+         "status": "accepted"
+      }, {
+         "name": "Thiago Nitschke Simões",
+         "source": "https://github.com/thnitschke/WWDC21",
+         "video": null,
+         "frameworks": ["SwiftUI", "NaturalLanguage"],
+         "status": "accepted"
+      }, {
+         "name": "Ufuk Köşker",
+         "source": "https://github.com/ufukkosker/LineTicTacToe",
+         "video": "https://youtu.be/dYNNTnfAdK4",
+         "frameworks": ["SwiftUI", "CoreMotion", "CoreAnimation"],
+         "status": "accepted"
+      }, {
+         "name": "Varun Bhoir",
+         "source": "https://github.com/varunBhoir/SwiftStudentChallenge2021-CoHealthAwareness",
+         "video": "https://www.youtube.com/watch?v=qaoJAVnAlFU",
+         "frameworks": ["SwiftUI", "Combine"],
+         "status": "accepted"
+      }, {
+         "name": "Victor Duarte",
+         "source": "https://github.com/vixtord/amazonia-wwdc21-playground",
+         "video": "https://www.youtube.com/watch?v=J8GnzilWF_g",
+         "frameworks": ["SwiftUI", "UIKit", "AVFoundation", "AVKit"],
+         "status": "accepted"
+      }, {
+         "name": "Vitor Grechi Kuninari",
+         "source": "https://github.com/VitorGK/WWDC21-Swift-Student-Challenge",
+         "video": null,
+         "frameworks": ["UIKit", "SpriteKit"],
+         "status": "accepted"
+      }, {
+         "name": "Viggo Overes",
+         "source": "https://github.com/vxvrs/wwdc21-CellularAutomaton",
+         "video": null,
+         "frameworks": ["UIKit"],
+         "status": "submitted"
+      }, {
+         "name": "Wenqing Ge",
+         "source": "https://github.com/XiaoGeNintendo/MIST",
+         "video": null,
+         "frameworks": ["SwiftUI", "SpriteKit"],
+         "status": "rejected"
+      }, {
+         "name": "Wenzheng Du",
+         "source": "https://github.com/InsightfulAI/recyclingrace",
+         "video": "https://youtu.be/5TcIQGhZ8oc",
+         "frameworks": ["CoreML", "Vision", "AVFoundation", "UIKit"],
+         "status": "accepted"
+      }, {
+         "name": "William Taylor",
+         "source": null,
+         "video": "https://www.youtube.com/watch?v=G6KYe352l7I",
+         "frameworks": ["SceneKit", "UIKit", "ARKit", "SwiftUI"],
+         "status": "accepted"
+      }, {
+         "name": "Xinyi Xiang",
+         "source": "https://github.com/xinyixiang/Rubikat",
+         "video": null,
+         "frameworks": ["SwiftUI", "Foundation", "Combine"],
+         "status": "accepted"
+      }, {
+         "name": "Ya Zou",
+         "source": "https://github.com/ZouYa99/PitchBlock",
+         "video": "https://youtu.be/15ncJPaBK2M",
+         "frameworks": ["Accelerate", "UIKit", "SpriteKit", "AVFoundation"],
+         "status": "accepted"
+      }, {
+         "name": "Yauheni Stsefankou",
+         "source": "https://github.com/stefjen07/WWDC21-4DVisualization",
+         "video": null,
+         "frameworks": ["SceneKit"],
+         "status": "accepted"
+      }, {
+         "name": "Yihan Huang",
+         "source": "https://github.com/GetToSet/UnicodeTour",
+         "video": null,
+         "frameworks": ["SwiftUI", "SceneKit", "CoreData", "CoreText"],
+         "status": "accepted"
+      }, {
+         "name": "Yugantar Jain",
+         "source": "https://github.com/yugantarjain/wwdc21",
+         "video": null,
+         "frameworks": ["SwiftUI", "SpriteKit", "AVFoundation"],
+         "status": "accepted"
+      }, {
+         "name": "Yuma Soerianto",
+         "source": null,
+         "video": "https://www.youtube.com/watch?v=Hyd1orSpdxA",
+         "frameworks": ["ARKit", "SceneKit", "SwiftUI", "UIKit", "CoreML"],
+         "status": "accepted"
+      }, {
+         "name": "Yusuf Berk Çekic",
+         "source": "https://github.com/YuBeCe/Free-Yourself",
+         "video": "https://www.youtube.com/watch?v=lX_FfeCJBX8",
+         "frameworks": ["SwiftUI", "SpriteKit"],
+         "status": "submitted"
+      }, {
+         "name": "Zachary Lineman",
+         "source": null,
+         "video": "https://www.youtube.com/watch?v=qPPdZWZiEEY",
+         "frameworks": ["SwiftUI", "UIKit", "Genetic Algorithms"],
+         "status": "accepted"
+      }, {
+         "name": "Zhiyu Zhu",
+         "source": "https://github.com/ApolloZhu/HearSee",
+         "video": null,
+         "frameworks": ["ARKit", "RealityKit", "SwiftUI", "AVFoundation"],
+         "status": "accepted"
+      }, {
+         "name": "Zijian Zhao",
+         "source": "https://github.com/JackZhao98/WWDC21",
+         "video": "https://b23.tv/vwZ9PM",
+         "frameworks": ["SwiftUI"],
+         "status": "accepted"
+      }
+   ]
+}

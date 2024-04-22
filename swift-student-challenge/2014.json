@@ -1,0 +1,449 @@
+{
+   "developers": [
+      {
+         "name": "Tosin Afolabi",
+         "source": "https://github.com/TosinAF/WWDC-2014",
+         "video": "https://youtu.be/OVu5M5hHTB8",
+         "frameworks": [],
+         "status": "accepted"
+      }, {
+         "name": "Sjors Snoeren",
+         "source": "https://github.com/SjorsSnoeren/WWDC-App-2014",
+         "video": null,
+         "frameworks": [],
+         "status": "accepted"
+      }, {
+         "name": "Alex Telek",
+         "source": null,
+         "video": "https://www.youtube.com/watch?v=B8GLQ-ZnjjQ",
+         "frameworks": [],
+         "status": "accepted"
+      }, {
+         "name": "Kyle Ryan",
+         "source": "https://github.com/kylry/kyleryan",
+         "video": "https://www.facebook.com/photo.php?v=10152013038854149",
+         "frameworks": [],
+         "status": "accepted"
+      }, {
+         "name": "Rohan Kapur",
+         "source": "https://github.com/MCKapur/WWDC-2014-Scholarship-App",
+         "video": null,
+         "frameworks": [],
+         "status": "accepted"
+      }, {
+         "name": "Frederik Riedel",
+         "source": null,
+         "video": "https://youtu.be/8oy6gPt551Q",
+         "frameworks": [],
+         "status": "accepted"
+      }, {
+         "name": "Jak Tiano",
+         "source": "https://github.com/Jakintosh/WWDC-2014-Application",
+         "video": "https://www.youtube.com/watch?v=6_zIcACwhuk",
+         "frameworks": [],
+         "status": "accepted"
+      }, {
+         "name": "Jeroen van Rijn",
+         "source": null,
+         "video": "https://www.youtube.com/watch?v=xUt5UCBAoLI",
+         "frameworks": [],
+         "status": "accepted"
+      }, {
+         "name": "Coulton Vento",
+         "source": "https://github.com/coultonvento/WWDC-2014",
+         "video": null,
+         "frameworks": [],
+         "status": "accepted"
+      }, {
+         "name": "Louis Harboe",
+         "source": null,
+         "video": null,
+         "frameworks": [],
+         "status": "accepted"
+      }, {
+         "name": "Patrick Balestra",
+         "source": "https://github.com/BalestraPatrick/WWDC-2014-Scholarship",
+         "video": "https://youtu.be/1nrBQDeDeQg",
+         "frameworks": [],
+         "status": "accepted"
+      }, {
+         "name": "Isaac Rodríguez",
+         "source": null,
+         "video": "https://www.youtube.com/watch?v=LQFMa-yRrlk",
+         "frameworks": [],
+         "status": "accepted"
+      }, {
+         "name": "Chris Galzerano",
+         "source": null,
+         "video": "https://www.youtube.com/watch?v=XImIArqS3ww&feature=youtu.be",
+         "frameworks": [],
+         "status": "accepted"
+      }, {
+         "name": "Jonah Grant",
+         "source": "https://github.com/jonahgrant/wwdc",
+         "video": "https://www.facebook.com/photo.php?v=10203790746388689",
+         "frameworks": [],
+         "status": "accepted"
+      }, {
+         "name": "Conrad Kramer",
+         "source": "https://github.com/conradev/WWDC2014",
+         "video": "https://www.youtube.com/watch?v=hzAjT7hbJSM",
+         "frameworks": [],
+         "status": "accepted"
+      }, {
+         "name": "Isaiah Turner",
+         "source": "https://github.com/IsaiahJTurner/IsaiahJTurner",
+         "video": "https://www.facebook.com/photo.php?v=712518992128745",
+         "frameworks": [],
+         "status": "accepted"
+      }, {
+         "name": "Finn Gaida",
+         "source": "https://github.com/finngaida/wwdc/tree/master/2014",
+         "video": "https://www.youtube.com/watch?v=OKKF6o9wduI",
+         "frameworks": [],
+         "status": "rejected"
+      }, {
+         "name": "Clemens Schulz",
+         "source": null,
+         "video": "https://www.youtube.com/watch?v=mn4ZPR9sNnA",
+         "frameworks": [],
+         "status": "accepted"
+      }, {
+         "name": "Braeden Mayer",
+         "source": "https://github.com/Braeden-Mayer/Braeden-Mayer",
+         "video": null,
+         "frameworks": [],
+         "status": "rejected"
+      }, {
+         "name": "Moshe Berman",
+         "source": "https://github.com/mosheberman/MosheBerman-iOS",
+         "video": null,
+         "frameworks": [],
+         "status": "accepted"
+      }, {
+         "name": "Ben Pasternak",
+         "source": null,
+         "video": "https://www.youtube.com/watch?v=uuAS4n3zozs&feature=youtu.be",
+         "frameworks": [],
+         "status": "accepted"
+      }, {
+         "name": "Nate Chiger",
+         "source": "https://github.com/natechiger/WWDC-2014-Scholarship",
+         "video": null,
+         "frameworks": [],
+         "status": "accepted"
+      }, {
+         "name": "Sanjeet Suhag",
+         "source": "https://github.com/sanjeetsuhag/WWDC-2014-Scholarship-App",
+         "video": null,
+         "frameworks": [],
+         "status": "accepted"
+      }, {
+         "name": "Mert Dümenci",
+         "source": null,
+         "video": "https://www.youtube.com/watch?v=z_se6loQj-w",
+         "frameworks": [],
+         "status": "accepted"
+      }, {
+         "name": "Leonard Pauli",
+         "source": null,
+         "video": "https://www.youtube.com/watch?v=kvRqZf4E2mU",
+         "frameworks": [],
+         "status": "accepted"
+      }, {
+         "name": "Austin Valleskey",
+         "source": null,
+         "video": "https://www.facebook.com/photo.php?v=526092777508950",
+         "frameworks": [],
+         "status": "accepted"
+      }, {
+         "name": "Ashwin Agarwal",
+         "source": null,
+         "video": "https://www.facebook.com/photo.php?v=662160460499436",
+         "frameworks": [],
+         "status": "accepted"
+      }, {
+         "name": "Andrew Breckenridge",
+         "source": null,
+         "video": null,
+         "frameworks": [],
+         "status": "accepted"
+      }, {
+         "name": "Lukáš Petr",
+         "source": null,
+         "video": "https://www.youtube.com/watch?feature=player_embedded&v=kDQ-nnGX9RA",
+         "frameworks": [],
+         "status": "accepted"
+      }, {
+         "name": "David Roman",
+         "source": "https://github.com/Dromaguirre/WWDC-2014-Scholarship-App",
+         "video": null,
+         "frameworks": [],
+         "status": "accepted"
+      }, {
+         "name": "Lars Schwegmann",
+         "source": "https://github.com/larsschwegmann/WWDC-14",
+         "video": "https://www.facebook.com/photo.php?v=637685916301320",
+         "frameworks": [],
+         "status": "accepted"
+      }, {
+         "name": "Michal Smialko",
+         "source": "https://github.com/Moriquendi/WWDC2014",
+         "video": "https://twitter.com/msmialko/status/455832748247506944",
+         "frameworks": [],
+         "status": "accepted"
+      }, {
+         "name": "Matis De Schutter",
+         "source": null,
+         "video": "https://www.youtube.com/watch?v=N_YwxvRMpRE",
+         "frameworks": [],
+         "status": "accepted"
+      }, {
+         "name": "Nicholas Gibson",
+         "source": null,
+         "video": "https://www.youtube.com/watch?v=-KaUURIz9TA",
+         "frameworks": [],
+         "status": "accepted"
+      }, {
+         "name": "Farzad Nazifi",
+         "source": null,
+         "video": "https://youtu.be/gmgbqeiYvFU",
+         "frameworks": [],
+         "status": "accepted"
+      }, {
+         "name": "Ahmed Fathi",
+         "source": "https://github.com/AFathi/WWDC2014",
+         "video": null,
+         "frameworks": [],
+         "status": "accepted"
+      }, {
+         "name": "Canzhi Ye",
+         "source": null,
+         "video": null,
+         "frameworks": [],
+         "status": "accepted"
+      }, {
+         "name": "Nicola Giancecchi",
+         "source": null,
+         "video": "https://youtu.be/V3D9OzG3wAQ",
+         "frameworks": [],
+         "status": "accepted"
+      }, {
+         "name": "Rameez Remsudeen",
+         "source": null,
+         "video": null,
+         "frameworks": [],
+         "status": "accepted"
+      }, {
+         "name": "Douglas Ferreira",
+         "source": null,
+         "video": "https://www.youtube.com/watch?v=eXRwoUBnGXo",
+         "frameworks": [],
+         "status": "accepted"
+      }, {
+         "name": "Adrien Truong",
+         "source": "https://github.com/adrientruong/WWDC2014",
+         "video": null,
+         "frameworks": [],
+         "status": "accepted"
+      }, {
+         "name": "Benedikt Hirmer",
+         "source": "https://github.com/bhr/WWDC2014-Scholarship-Application",
+         "video": "https://www.youtube.com/watch?v=p0MilL8QPUk",
+         "frameworks": [],
+         "status": "rejected"
+      }, {
+         "name": "Tyler Flowers",
+         "source": "https://github.com/Tdflowers/WWDC2014",
+         "video": null,
+         "frameworks": [],
+         "status": "accepted"
+      }, {
+         "name": "Madhav Narayan",
+         "source": null,
+         "video": null,
+         "frameworks": [],
+         "status": "rejected"
+      }, {
+         "name": "Eytan Schulman",
+         "source": null,
+         "video": "https://cloudup.com/iUd2KCpRcYB",
+         "frameworks": [],
+         "status": "accepted"
+      }, {
+         "name": "Adam Bell",
+         "source": null,
+         "video": null,
+         "frameworks": [],
+         "status": "accepted"
+      }, {
+         "name": "Douglas Bumby",
+         "source": "https://github.com/istx25/WWDC-2014-Submissions",
+         "video": "https://www.dropbox.com/s/2cwuvmfjkmm7git/ios-wwdc-app.mov",
+         "frameworks": [],
+         "status": "accepted"
+      }, {
+         "name": "Neeraj Baid",
+         "source": "https://github.com/neerajbaid/WWDC2014",
+         "video": null,
+         "frameworks": [],
+         "status": "accepted"
+      }, {
+         "name": "Vijay Sridhar",
+         "source": null,
+         "video": "https://www.youtube.com/watch?v=VKcvYUD1pio",
+         "frameworks": [],
+         "status": "accepted"
+      }, {
+         "name": "Nick Frey",
+         "source": null,
+         "video": null,
+         "frameworks": [],
+         "status": "accepted"
+      }, {
+         "name": "Veeral Patel",
+         "source": null,
+         "video": null,
+         "frameworks": [],
+         "status": "accepted"
+      }, {
+         "name": "Jaxon Stevens",
+         "source": null,
+         "video": null,
+         "frameworks": [],
+         "status": "accepted"
+      }, {
+         "name": "Daniel Van Der Merwe",
+         "source": "https://github.com/danieljvdm/Daniel-van-der-Merwe",
+         "video": null,
+         "frameworks": [],
+         "status": "accepted"
+      }, {
+         "name": "Akhil Tolani",
+         "source": "https://github.com/Saltb0xApps/WWDC-2014-Scholarship-Application",
+         "video": null,
+         "frameworks": [],
+         "status": "accepted"
+      }, {
+         "name": "Aaron Wojnowski",
+         "source": "https://github.com/awojnowski/WWDC2013",
+         "video": null,
+         "frameworks": [],
+         "status": "accepted"
+      }, {
+         "name": "Matt Zanchelli",
+         "source": "https://github.com/mdznr/WWDC-2014-Scholarship-Application",
+         "video": null,
+         "frameworks": [],
+         "status": "accepted"
+      }, {
+         "name": "Ashwin Agarwal",
+         "source": "https://github.com/aaga/WWDC-2014-Scholarship-Entry",
+         "video": null,
+         "frameworks": [],
+         "status": "accepted"
+      }, {
+         "name": "Mayank Jain",
+         "source": "https://github.com/mjmayank/WWDC",
+         "video": null,
+         "frameworks": [],
+         "status": "accepted"
+      }, {
+         "name": "Kolin Krewinkel",
+         "source": "https://github.com/kolinkrewinkel/WWDC14",
+         "video": null,
+         "frameworks": [],
+         "status": "accepted"
+      }, {
+         "name": "Khaos Tian",
+         "source": "https://github.com/KhaosT/WWDC-14-Scholarship-Entry",
+         "video": null,
+         "frameworks": [],
+         "status": "accepted"
+      }, {
+         "name": "Brian Jett",
+         "source": "https://github.com/bdjett/WWDC-2014",
+         "video": null,
+         "frameworks": [],
+         "status": "accepted"
+      }, {
+         "name": "Cole Dunsby",
+         "source": "https://github.com/Coledunsby/WWDC14",
+         "video": null,
+         "frameworks": [],
+         "status": "accepted"
+      }, {
+         "name": "Victor Ilisei",
+         "source": "https://github.com/TechGeniusApps/WWDC-App",
+         "video": null,
+         "frameworks": [],
+         "status": "accepted"
+      }, {
+         "name": "Sam Turner",
+         "source": "https://github.com/samturner/wwdc-scholarship-2014",
+         "video": "https://www.youtube.com/watch?v=lu_0gVWN8hA&feature=youtu.be",
+         "frameworks": [],
+         "status": "accepted"
+      }, {
+         "name": "iPhonig",
+         "source": "https://github.com/iPhonig/WWDC-2014-Student-Scholarship-App",
+         "video": null,
+         "frameworks": [],
+         "status": "accepted"
+      }, {
+         "name": "Lea Marolt Sonnenschein",
+         "source": "https://github.com/leamars/LeaMaroltSonnenschein",
+         "video": null,
+         "frameworks": [],
+         "status": "accepted"
+      }, {
+         "name": "Justin Loew",
+         "source": "https://github.com/jloloew/BrailleLearner",
+         "video": null,
+         "frameworks": [],
+         "status": "accepted"
+      }, {
+         "name": "Maijid Moujaled",
+         "source": "https://github.com/DrJid/Personal-Portfolio-app",
+         "video": null,
+         "frameworks": [],
+         "status": "accepted"
+      }, {
+         "name": "Marc Cuva",
+         "source": "https://github.com/mjcuva/WWDC2014",
+         "video": null,
+         "frameworks": [],
+         "status": "accepted"
+      }, {
+         "name": "Lukas Spieß",
+         "source": null,
+         "video": "https://vimeo.com/94400719",
+         "frameworks": [],
+         "status": "accepted"
+      }, {
+         "name": "Radek Pietruszewski",
+         "source": null,
+         "video": "https://www.youtube.com/watch?v=ouumNZu1RAA",
+         "frameworks": [],
+         "status": "accepted"
+      }, {
+         "name": "Kyle Spadaro",
+         "source": null,
+         "video": null,
+         "frameworks": [],
+         "status": "accepted"
+      }, {
+         "name": "Brian Chan",
+         "source": "https://github.com/b123400/wwdc2014",
+         "video": "https://www.youtube.com/watch?v=CTET-LYe3vY",
+         "frameworks": [],
+         "status": "accepted"
+      }, {
+         "name": "Yichen Cao",
+         "source": null,
+         "video": null,
+         "frameworks": [],
+         "status": "accepted"
+      }
+   ]
+}

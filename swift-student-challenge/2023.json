@@ -1,0 +1,83 @@
+{
+   "developers": [
+      {
+         "name": "Alperen Örence",
+         "source": "https://github.com/alperenorence/HandSignal",
+         "video": "",
+         "frameworks": ["SwiftUI", "CoreML"],
+         "status": "accepted"
+      }, {
+         "name": "Amelia While",
+         "source": "https://github.com/elihwyma/WWDC2023-Semaphores",
+         "video": "",
+         "frameworks": ["UIKit", "AVFoundation", "Vision"],
+         "status": "submitted"
+      }, {
+         "name": "Chongin Jeong",
+         "source": "https://github.com/chongin12/Sometimes",
+         "video": "https://www.youtube.com/watch?v=qT3PcCvPN44",
+         "frameworks": ["SwiftUI", "AVFoundation", "SpriteKit"],
+         "status": "submitted"
+      }, {
+         "name": "Daniel Riege",
+         "source": "https://github.com/danielriege/WWDC23-Submission",
+         "video": "",
+         "frameworks": ["simd", "SceneKit", "SwiftUI"],
+         "status": "accepted"
+      }, {
+         "name": "David Mazzeo",
+         "source": "https://github.com/TheIntelCorei9/Swift-Student-Challenge-23",
+         "video": "https://www.youtube.com/watch?v=ViGDWfh0ViA",
+         "frameworks": ["UIKit", "SpriteKit", "Core Motion"],
+         "status": "submitted"
+      }, {
+         "name": "Henri Bredt",
+         "source": "https://github.com/henribredt",
+         "video": "https://www.youtube.com/watch?v=0ZGPRZ1uUi0",
+         "frameworks": ["SwiftUI"],
+         "status": "submitted"
+      }, {
+         "name": "John Seong",
+         "source": "https://github.com/wonmor/Atomizer-Swift-Challenge",
+         "video": "https://www.youtube.com/watch?v=kHcdvyaqslU",
+         "frameworks": ["SwiftUI", "SceneKit", "ARKit", "Vision"],
+         "status": "submitted"
+      }, {
+         "name": "Jose Adolfo Talactac",
+         "source": "https://github.com/devjoseadolfo/LogicBoard",
+         "video": "https://youtu.be/Pg_R5nvF2Tw",
+         "frameworks": ["SwiftUI", "SpriteKit", "UIKit"],
+         "status": "accepted"
+      }, {
+         "name": "Myung Geun Choi",
+         "source": "https://github.com/mgdgc/earth-debugger",
+         "video": "https://youtu.be/prc4jeNdFfA",
+         "frameworks": ["SwiftUI"],
+         "status": "accepted"
+      }, {
+         "name": "Riccardo Persello",
+         "source": "https://github.com/persello/ssc23",
+         "video": "",
+         "frameworks": ["Accelerate", "AVFoundation", "SwiftUI", "Vision"],
+         "status": "submitted"
+      }, {
+         "name": "Rithul Kamesh",
+         "source": "https://github.com/rithulkamesh/fitness",
+         "video": "",
+         "frameworks": ["SwiftUI"],
+         "status": "submitted"
+      }, {
+         "name": "Yanan Li",
+         "source": "",
+         "video": "https://youtu.be/2CStbcJK0qM",
+         "frameworks": ["SwiftUI", "Swift Charts"],
+         "status": "submitted"
+      }, {
+         "name": "Yi Cao",
+         "source": "https://github.com/xiaoyu2006/IFS",
+         "video": "",
+         "frameworks": ["SwiftUI", "UIKit"],
+         "status": "rejected"
+      }
+   ]
+}

@@ -1,0 +1,59 @@
+{
+   "developers": [
+      {
+         "name": "Kyoya Yamaguchi",
+         "source": "https://github.com/kyoya1123",
+         "video": null,
+         "frameworks": [],
+         "status": "accepted"
+      }, {
+         "name": "Carlos Mbendera",
+         "source": "https://github.com/carlosmbe/Better-Talk",
+         "video": null,
+         "frameworks": [],
+         "status": "accepted"
+      }, {
+         "name": "Mercen-Lee",
+         "source": "https://github.com/Mercen-Lee/App-Pilot",
+         "video": null,
+         "frameworks": [],
+         "status": "accepted"
+      }, {
+         "name": "Henri Bredt",
+         "source": "https://github.com/henribredt/Sampler-WWDC24",
+         "video": null,
+         "frameworks": [],
+         "status": "accepted"
+      }, {
+         "name": "Vedant",
+         "source": "https://github.com/vedantapps/MagiCode",
+         "video": null,
+         "frameworks": [],
+         "status": "accepted"
+      }, {
+         "name": "Jose Adolfo Talactac",
+         "source": "https://github.com/devjoseadolfo/PowerGrid",
+         "video": null,
+         "frameworks": [],
+         "status": "accepted"
+      }, {
+         "name": "Raissa Parente",
+         "source": "https://github.com/raissaparente/Grannys-Recipebook-WWDC",
+         "video": null,
+         "frameworks": [],
+         "status": "accepted"
+      }, {
+         "name": "Rivian Pratama",
+         "source": "https://github.com/rivianpratama/WWDC24_MyopiaSim?tab=readme-ov-file",
+         "video": "https://www.youtube.com/watch?v=sHBY8pKAU_g&feature=youtu.be",
+         "frameworks": [],
+         "status": "accepted"
+      }, {
+         "name": "Syuan-Yu Chen",
+         "source": "https://github.com/dongdong867/SimPOS",
+         "video": null,
+         "frameworks": [],
+         "status": "accepted"
+      }
+   ]
+}

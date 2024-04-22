@@ -1,0 +1,581 @@
+{
+   "developers": [
+      {
+         "name": "Agisilaos Tsaraboulidis",
+         "source": null,
+         "video": null,
+         "frameworks": [],
+         "status": "accepted"
+      }, {
+         "name": "Ahan Malhotra",
+         "source": "https://itunes.apple.com/us/app/tedxcoconutgrove/id1078121660",
+         "video": null,
+         "frameworks": ["CloudKit", "Maps"],
+         "status": "accepted"
+      }, {
+         "name": "Al Park",
+         "source": "https://itunes.apple.com/us/app/reax-witness-america-right/id1076183758",
+         "video": null,
+         "frameworks": ["3D Touch"],
+         "status": "accepted"
+      }, {
+         "name": "Alexander Groß",
+         "source": "https://itunes.apple.com/ai/app/doyokno/id1016053500?mt=8",
+         "video": null,
+         "frameworks": [],
+         "status": "accepted"
+      }, {
+         "name": "Alex Hoppen",
+         "source": null,
+         "video": "https://github.com/ahoppen/WWDC-Scholarship-2016",
+         "frameworks": [],
+         "status": "accepted"
+      }, {
+         "name": "Alex Melnychuck",
+         "source": "https://itunes.apple.com/app/apple-store/id1020281972?mt=8",
+         "video": null,
+         "frameworks": ["CareKit", "NSLinguisticTagger"],
+         "status": "accepted"
+      }, {
+         "name": "Alex Telek",
+         "source": null,
+         "video": null,
+         "frameworks": [],
+         "status": "accepted"
+      }, {
+         "name": "Alisson Selistre",
+         "source": null,
+         "video": "https://www.youtube.com/watch?v=R4MG_5iwtoE",
+         "frameworks": [],
+         "status": null
+      }, {
+         "name": "Aman Jain",
+         "source": "https://itunes.apple.com/in/app/hurtle/id1085122455?mt=8",
+         "video": "https://www.youtube.com/watch?v=hpqBGLglLTs",
+         "frameworks": ["SpriteKit", "3D Touch"],
+         "status": "accepted"
+      }, {
+         "name": "Amit Kalra",
+         "source": "https://itunes.apple.com/us/app/6284-calc/id1006996600?mt=8",
+         "video": "https://www.youtube.com/watch?v=2JnI8qE-LKs",
+         "frameworks": [],
+         "status": "accepted"
+      }, {
+         "name": "Andreas Neusuess",
+         "source": "https://itunes.apple.com/app/id848979893",
+         "video": "https://youtu.be/7It2i-9BCp8",
+         "frameworks": [],
+         "status": null
+      }, {
+         "name": "Andrew Ke",
+         "source": "https://itunes.apple.com/us/app/formative/id1032617767?mt=8",
+         "video": null,
+         "frameworks": ["Push Notifications", "3D Touch"],
+         "status": "accepted"
+      }, {
+         "name": "Andrew Robinson",
+         "source": "https://itunes.apple.com/us/app/brio-dont-fall!/id1087287522?mt=8",
+         "video": null,
+         "frameworks": [],
+         "status": null
+      }, {
+         "name": "Antoine Cormery",
+         "source": null,
+         "video": "https://github.com/legomanfish/peereversi",
+         "frameworks": ["Multipeer Connectivity"],
+         "status": "rejected"
+      }, {
+         "name": "Anushk Mittal",
+         "source": "https://itunes.apple.com/us/app/sleepisle/id1039746876?mt=8",
+         "video": null,
+         "frameworks": ["HealthKit", "3D Touch"],
+         "status": "accepted"
+      }, {
+         "name": "Arik Sosman",
+         "source": null,
+         "video": "https://youtu.be/TtHM31sxxbU",
+         "frameworks": [],
+         "status": null
+      }, {
+         "name": "Arnav Gudibande",
+         "source": "https://github.com/SFHSHacks/DriveSafe",
+         "video": "https://www.youtube.com/watch?v=4Ft6264U1PU",
+         "frameworks": ["MapKit", "CoreLocation"],
+         "status": "accepted"
+      }, {
+         "name": "Aryan Kashyap",
+         "source": null,
+         "video": "https://www.youtube.com/watch?v=qD-uxBhNKb4",
+         "frameworks": [],
+         "status": null
+      }, {
+         "name": "Aubert Charles",
+         "source": "https://geo.itunes.apple.com/fr/app/charlietranslater/id1033023882?mt=8",
+         "video": "https://github.com/Charliebegood/WWDC-2106-App.git",
+         "frameworks": ["MapKit", "Scene/SpriteKit"],
+         "status": "rejected"
+      }, {
+         "name": "Ayuna Vogel",
+         "source": "https://github.com/ayunav/Neverlate",
+         "video": "https://github.com/ayunav/Neverlate",
+         "frameworks": ["Geofences", "Venmo API"],
+         "status": "accepted"
+      }, {
+         "name": "Ayush Aggarwal",
+         "source": null,
+         "video": null,
+         "frameworks": [],
+         "status": "accepted"
+      }, {
+         "name": "Benjamin Herzog",
+         "source": "https://itunes.apple.com/de/app/lovoo-match/id1078169975?mt=8",
+         "video": null,
+         "frameworks": ["tvOS", "UIKit"],
+         "status": "rejected"
+      }, {
+         "name": "Brendan Boyle",
+         "source": "https://itunes.apple.com/us/app/universal-presenter-remote/id866740670?ls=1&mt=8",
+         "video": "https://github.com/brendancboyle/Universal-Presenter-Remote-iOS/",
+         "frameworks": ["watchOS 2", "3D Touch"],
+         "status": "accepted"
+      }, {
+         "name": "Cheng-Yu Hsu",
+         "source": "https://hop.appfinca.com",
+         "video": "https://github.com/cyhsutw/imaji",
+         "frameworks": [],
+         "status": "rejected"
+      }, {
+         "name": "Cristian Tabuyo",
+         "source": "https://itunes.apple.com/es/app/alternativa-a-un-termometro/id1098259543?mt=8",
+         "video": null,
+         "frameworks": [],
+         "status": null
+      }, {
+         "name": "Damian Camilleri",
+         "source": null,
+         "video": null,
+         "frameworks": ["3D Touch", "Collection Views"],
+         "status": "accepted"
+      }, {
+         "name": "Dean Eigenmann",
+         "source": "https://www.parkly.ch",
+         "video": null,
+         "frameworks": [],
+         "status": null
+      }, {
+         "name": "Duan Wen",
+         "source": null,
+         "video": "https://github.com/wddwycc/Freehand",
+         "frameworks": [],
+         "status": "rejected"
+      }, {
+         "name": "Eduardo Santi",
+         "source": null,
+         "video": "https://github.com/santieduardo/WWDC16",
+         "frameworks": ["3D Touch", "MapKit"],
+         "status": null
+      }, {
+         "name": "Eli Yazdi",
+         "source": "https://itunes.apple.com/us/app/3dtones/id1108446298?mt=8",
+         "video": "https://github.com/eliyazdi/3dtones",
+         "frameworks": [],
+         "status": null
+      }, {
+         "name": "Erik Sargent",
+         "source": "https://itunes.apple.com/us/app/taxbot-automatic-mile-tracker/id461781884?mt=8",
+         "video": null,
+         "frameworks": ["Core Location", "Core Motion"],
+         "status": "accepted"
+      }, {
+         "name": "Evan Dekhayser",
+         "source": "https://itunes.apple.com/us/app/contact-archiver/id733594022?mt=8",
+         "video": "https://github.com/edekhayser/WWDC-2016-Scholarship-App",
+         "frameworks": [],
+         "status": "accepted"
+      }, {
+         "name": "Eytan Schulman",
+         "source": "https://itunes.apple.com/us/app/journey-creator/id1065269702?mt=8",
+         "video": null,
+         "frameworks": ["MapKit", "3D Touch"],
+         "status": "accepted"
+      }, {
+         "name": "Felipe Silva",
+         "source": "https://itunes.apple.com/us/app/aliens-jelly/id1100376973?l=pt&ls=1&mt=8",
+         "video": null,
+         "frameworks": ["Siri Remote", "SpriteKit"],
+         "status": null
+      }, {
+         "name": "Felix Knispel",
+         "source": null,
+         "video": null,
+         "frameworks": ["HomeKit"],
+         "status": "accepted"
+      }, {
+         "name": "Finn Gaida",
+         "source": "https://itunes.apple.com/us/app/customizable-keys-keyboard/id1104673201?mt=8",
+         "video": "https://github.com/finngaida/wwdc/tree/master/2016",
+         "frameworks": ["Live Photos", "UIVisualEffects"],
+         "status": "rejected"
+      }, {
+         "name": "Florian Pfisterer",
+         "source": "https://itunes.apple.com/app/flowlog-find-your-flow-in/id1072346312",
+         "video": null,
+         "frameworks": ["CoreAnimation", "Notifications"],
+         "status": "accepted"
+      }, {
+         "name": "George Turner",
+         "source": null,
+         "video": null,
+         "frameworks": ["Apple Watch", "Push Notifications"],
+         "status": "rejected"
+      }, {
+         "name": "Gustaf Rosenblad",
+         "source": "https://itunes.apple.com/se/app/skolmaten/id416550379?mt=8",
+         "video": null,
+         "frameworks": [],
+         "status": null
+      }, {
+         "name": "Hari",
+         "source": null,
+         "video": null,
+         "frameworks": ["Core Motion", "GLKit"],
+         "status": "rejected"
+      }, {
+         "name": "Harish Yerra",
+         "source": null,
+         "video": null,
+         "frameworks": ["3D Touch", "MapKit"],
+         "status": "accepted"
+      }, {
+         "name": "Henrique Valcanaia",
+         "source": "https://itunes.apple.com/br/app/rett-syndrome/id1043536159?mt=8",
+         "video": "https://itunes.apple.com/br/app/teamboard-for-tv/id1109057770?l=tr&mt=8",
+         "frameworks": ["ResearchKit", "3D Touch"],
+         "status": "rejected"
+      }, {
+         "name": "Hollis Liu",
+         "source": "https://itunes.apple.com/us/app/spread-get-things-done/id1061507772?mt=8",
+         "video": null,
+         "frameworks": ["3D Touch", "HealthKit"],
+         "status": "accepted"
+      }, {
+         "name": "Jan Philip Bernius",
+         "source": null,
+         "video": null,
+         "frameworks": ["3D Touch", "MapKit"],
+         "status": "accepted"
+      }, {
+         "name": "Jari Martens",
+         "source": "https://itunes.apple.com/app/connectr-all-social-media/id905696962?mt=8",
+         "video": null,
+         "frameworks": [],
+         "status": null
+      }, {
+         "name": "Jaxon Kneipp",
+         "source": null,
+         "video": null,
+         "frameworks": ["3D Touch", "Apple Watch"],
+         "status": "accepted"
+      }, {
+         "name": "Jeremy Stucki",
+         "source": "https://www.parkly.ch",
+         "video": null,
+         "frameworks": [],
+         "status": null
+      }, {
+         "name": "Jessica Yeh",
+         "source": "https://itunes.apple.com/us/app/omnibuzz-location-alarm-for/id1076106050",
+         "video": null,
+         "frameworks": ["MapKit", "Core Location"],
+         "status": "accepted"
+      }, {
+         "name": "Jimmy Liu",
+         "source": "https://itunes.apple.com/app/apple-store/id967147939?mt=8",
+         "video": null,
+         "frameworks": [],
+         "status": "accepted"
+      }, {
+         "name": "John Ciocca",
+         "source": null,
+         "video": null,
+         "frameworks": ["CloudKit", "3D Touch"],
+         "status": "rejected"
+      }, {
+         "name": "Josh Bruce",
+         "source": null,
+         "video": null,
+         "frameworks": [],
+         "status": null
+      }, {
+         "name": "Kabir Oberai",
+         "source": null,
+         "video": null,
+         "frameworks": [],
+         "status": null
+      }, {
+         "name": "Kai Aldag",
+         "source": null,
+         "video": null,
+         "frameworks": ["3D Touch", "Core Spotlight Search"],
+         "status": "accepted"
+      }, {
+         "name": "Kesi Maduka",
+         "source": null,
+         "video": "https://stm.io",
+         "frameworks": ["CoreAudio", "3D Touch"],
+         "status": "rejected"
+      }, {
+         "name": "Kilian Koeltzsch",
+         "source": "https://parkendd.de",
+         "video": null,
+         "frameworks": ["MapKit", "3D Touch"],
+         "status": "accepted"
+      }, {
+         "name": "Klemens Strasser",
+         "source": "https://itunes.apple.com/us/app/elementary-minute/id889417668?mt=8",
+         "video": "https://itunes.apple.com/at/app/asymmetric/id1020657631?mt=8",
+         "frameworks": ["SpriteKit", "UIKit", "Accessibility", "3D Touch", "Apple TV Support"],
+         "status": "rejected"
+      }, {
+         "name": "Kyle Bashour",
+         "source": "https://itunes.apple.com/app/id1050023116",
+         "video": "https://github.com/kylebshr/grove",
+         "frameworks": [],
+         "status": "rejected"
+      }, {
+         "name": "Kyle Spadaro",
+         "source": null,
+         "video": "https://github.com/kylespadaro/KyleSpadaro",
+         "frameworks": ["WebKit", "UIKit"],
+         "status": "accepted"
+      }, {
+         "name": "Luqman Fauzi",
+         "source": "https://itunes.apple.com/app/movfeedly/id1085496373",
+         "video": null,
+         "frameworks": [],
+         "status": "rejected"
+      }, {
+         "name": "Leonard Mehlig",
+         "source": "https://itunes.apple.com/de/app/jedox-social-analytics/id980605596",
+         "video": "https://github.com/leoMehlig/SwiftEnigma",
+         "frameworks": ["3D Touch", "Maps"],
+         "status": "accepted"
+      }, {
+         "name": "Marcel Voss",
+         "source": null,
+         "video": "https://www.youtube.com/watch?v=dZljrMjzJN0",
+         "frameworks": [],
+         "status": "accepted"
+      }, {
+         "name": "Martijn de Vos",
+         "source": "https://itunes.apple.com/us/app/newlinq/id950231000?l=nl&ls=1&mt=8",
+         "video": null,
+         "frameworks": [],
+         "status": null
+      }, {
+         "name": "Maurice Breit",
+         "source": "https://itunes.apple.com/de/app/4fahrt-schuler/id1105478291?mt=8",
+         "video": null,
+         "frameworks": [],
+         "status": null
+      }, {
+         "name": "Maximilian Litteral",
+         "source": "https://maximilianlitteral.com/TelevisionTime/iTunes/index.html",
+         "video": null,
+         "frameworks": ["CloudKit", "3D Touch"],
+         "status": "rejected"
+      }, {
+         "name": "Michael Dugan",
+         "source": null,
+         "video": null,
+         "frameworks": ["MapKit", "3D Touch"],
+         "status": "accepted"
+      }, {
+         "name": "Michael Royzen",
+         "source": "https://itunes.apple.com/us/app/recipereadr-your-recipes-read/id963588160?ls=1&mt=8",
+         "video": null,
+         "frameworks": ["AVSpeechSynthesizer", "3D Touch"],
+         "status": "accepted"
+      }, {
+         "name": "Natanel Niazoff",
+         "source": "https://itunes.apple.com/us/app/zmanim-for-yu/id1071006216?mt=8",
+         "video": null,
+         "frameworks": [],
+         "status": null
+      }, {
+         "name": "Nicholas Gibson",
+         "source": "https://itunes.apple.com/us/app/predsnu/id917520140?mt=8",
+         "video": null,
+         "frameworks": [],
+         "status": null
+      }, {
+         "name": "Philippe Yu",
+         "source": null,
+         "video": "https://github.com/philippejlyu/Philippe-Yu-WWDC",
+         "frameworks": ["Core Animation", "AVFoundation"],
+         "status": "rejected"
+      }, {
+         "name": "Ritvik Upadhyaya",
+         "source": null,
+         "video": null,
+         "frameworks": ["Multipeer Connectivity"],
+         "status": "accepted"
+      }, {
+         "name": "Rehaan Advani",
+         "source": null,
+         "video": "https://www.youtube.com/watch?v=mUDBBcXHkLI",
+         "frameworks": ["MapKit", "3D Touch"],
+         "status": "accepted"
+      }, {
+         "name": "Saif Al-Dilaimi",
+         "source": "https://itunes.apple.com/us/app/pray-for-world-add-any-flag/id1075363176?mt=8",
+         "video": null,
+         "frameworks": ["3D Touch", "Push Notifications"],
+         "status": "rejected"
+      }, {
+         "name": "Salman Husain",
+         "source": "https://github.com/shusain93/Ettiquete",
+         "video": "https://www.youtube.com/watch?v=pjTiw9Mc19o",
+         "frameworks": ["3D Touch", "Accessibility"],
+         "status": "rejected"
+      }, {
+         "name": "Sam Eckert",
+         "source": "https://geo.itunes.apple.com/us/app/simple-counter-count-everything!/id961653412?mt=8",
+         "video": "https://www.youtube.com/watch?v=4uFP_xQWOX4",
+         "frameworks": ["3D Touch", "watchOS"],
+         "status": "rejected"
+      }, {
+         "name": "Sam Patzer",
+         "source": null,
+         "video": "https://www.youtube.com/watch?v=-DFINkoEZhU",
+         "frameworks": [],
+         "status": null
+      }, {
+         "name": "Sebastian Dobrincu",
+         "source": "https://itunes.apple.com/us/app/voya-your-personal-travel/id1082760606",
+         "video": "https://www.youtube.com/watch?v=fbTMWC0y9hs",
+         "frameworks": [],
+         "status": "accepted"
+      }, {
+         "name": "Shashank Sharma",
+         "source": null,
+         "video": null,
+         "frameworks": ["HomeKit"],
+         "status": "accepted"
+      }, {
+         "name": "Shunzhe Ma",
+         "source": null,
+         "video": null,
+         "frameworks": [],
+         "status": null
+      }, {
+         "name": "Siddhant Chaurasia",
+         "source": "https://itunes.apple.com/us/app/places-sst/id921357959?mt=8",
+         "video": null,
+         "frameworks": [],
+         "status": null
+      }, {
+         "name": "Simon Christian Krüger",
+         "source": "https://appsto.re/de/vsYj7.i",
+         "video": null,
+         "frameworks": ["HealthKit", "CoreAnimation"],
+         "status": "accepted"
+      }, {
+         "name": "Stephen McMillan",
+         "source": "https://itunes.apple.com/app/daily-riddle-fun-challenging/id932546719",
+         "video": null,
+         "frameworks": ["WatchKit", "3D Touch"],
+         "status": "accepted"
+      }, {
+         "name": "Stephen Melinyshyn",
+         "source": null,
+         "video": "https://github.com/Melinysh/WWDC-Student-Scholarship-App-2016",
+         "frameworks": ["UIDynamics", "3D Touch"],
+         "status": "accepted"
+      }, {
+         "name": "Tejen Patel",
+         "source": null,
+         "video": "https://x.tejen.net/hzc",
+         "frameworks": [],
+         "status": "accepted"
+      }, {
+         "name": "Timur Galimov",
+         "source": "https://itunes.apple.com/us/app/adicty-awesome-dictionary/id979262617?mt=8",
+         "video": null,
+         "frameworks": ["3D Touch", "Spotlight Search"],
+         "status": "accepted"
+      }, {
+         "name": "Tom Morrell",
+         "source": "https://saker.io",
+         "video": null,
+         "frameworks": ["ResearchKit", "3D Touch"],
+         "status": "accepted"
+      }, {
+         "name": "Varun Shenoy",
+         "source": "https://itunes.apple.com/us/app/summit-summarized-news-reader/id1106793298?mt=8",
+         "video": null,
+         "frameworks": ["3D Touch", "MapKit"],
+         "status": "accepted"
+      }, {
+         "name": "Vegard Solheim Theriault",
+         "source": null,
+         "video": "https://github.com/vegather/2048-Multiplayer",
+         "frameworks": ["SpriteKit"],
+         "status": "accepted"
+      }, {
+         "name": "Vignesh Varadarajan",
+         "source": "https://itunes.apple.com/us/app/brainychess-play-learn-chess/id778336641?mt=8",
+         "video": "https://www.youtube.com/watch?v=H429tmvM0zI",
+         "frameworks": [],
+         "status": null
+      }, {
+         "name": "Vincent Le",
+         "source": "https://github.com/QSport/QSport",
+         "video": "https://www.youtube.com/watch?v=f1vPOc-EaQ8",
+         "frameworks": [],
+         "status": null
+      }, {
+         "name": "Vladimir Danila",
+         "source": "https://itunes.apple.com/us/app/codinator/id1024671232?ls=1&mt=8",
+         "video": null,
+         "frameworks": [],
+         "status": null
+      }, {
+         "name": "Weiran Xiong",
+         "source": null,
+         "video": null,
+         "frameworks": [],
+         "status": null
+      }, {
+         "name": "Will Oakley",
+         "source": "https://itunes.apple.com/ie/app/coincident-3d-touch-game/id1069735902?mt=8",
+         "video": "https://github.com/woakley5/DPHS-App",
+         "frameworks": [],
+         "status": "accepted"
+      }, {
+         "name": "Yichen Cao",
+         "source": "https://itunes.apple.com/us/app/pixel/id936267373?ls=1&mt=8",
+         "video": null,
+         "frameworks": ["Keyboard Extension", "3D Touch"],
+         "status": "rejected"
+      }, {
+         "name": "Yifei He",
+         "source": "https://itunes.apple.com/us/app/gu-shi-yi-zhi-dan/id1030296579?l=zh&ls=1&mt=8",
+         "video": null,
+         "frameworks": ["Apple Watch", "iBeacon"],
+         "status": "accepted"
+      }, {
+         "name": "Zach Simone",
+         "source": "https://itunes.apple.com/au/app/daily-steps-simple-step-counting/id720629415?mt=8",
+         "video": null,
+         "frameworks": ["Apple Watch", "3D Touch"],
+         "status": "accepted"
+      }, {
+         "name": "Zuhayeer Musa",
+         "source": "https://itunes.apple.com/app/apple-store/id967147939?mt=8",
+         "video": null,
+         "frameworks": [],
+         "status": null
+      }
+   ]
+}
