@@ -47,7 +47,7 @@
          "source": null,
          "video": "https://www.youtube.com/watch?v=R4MG_5iwtoE",
          "frameworks": [],
-         "status": null
+         "status": "submitted"
       }, {
          "name": "Aman Jain",
          "source": "https://itunes.apple.com/in/app/hurtle/id1085122455?mt=8",
@@ -65,7 +65,7 @@
          "source": "https://itunes.apple.com/app/id848979893",
          "video": "https://youtu.be/7It2i-9BCp8",
          "frameworks": [],
-         "status": null
+         "status":  "submitted"
       }, {
          "name": "Andrew Ke",
          "source": "https://itunes.apple.com/us/app/formative/id1032617767?mt=8",
@@ -77,7 +77,7 @@
          "source": "https://itunes.apple.com/us/app/brio-dont-fall!/id1087287522?mt=8",
          "video": null,
          "frameworks": [],
-         "status": null
+         "status":  "submitted"
       }, {
          "name": "Antoine Cormery",
          "source": null,
@@ -95,7 +95,7 @@
          "source": null,
          "video": "https://youtu.be/TtHM31sxxbU",
          "frameworks": [],
-         "status": null
+         "status": "submitted"
       }, {
          "name": "Arnav Gudibande",
          "source": "https://github.com/SFHSHacks/DriveSafe",
@@ -107,7 +107,7 @@
          "source": null,
          "video": "https://www.youtube.com/watch?v=qD-uxBhNKb4",
          "frameworks": [],
-         "status": null
+         "status": "submitted"
       }, {
          "name": "Aubert Charles",
          "source": "https://geo.itunes.apple.com/fr/app/charlietranslater/id1033023882?mt=8",
@@ -149,7 +149,7 @@
          "source": "https://itunes.apple.com/es/app/alternativa-a-un-termometro/id1098259543?mt=8",
          "video": null,
          "frameworks": [],
-         "status": null
+         "status": "submitted"
       }, {
          "name": "Damian Camilleri",
          "source": null,
@@ -161,7 +161,7 @@
          "source": "https://www.parkly.ch",
          "video": null,
          "frameworks": [],
-         "status": null
+         "status": "submitted"
       }, {
          "name": "Duan Wen",
          "source": null,
@@ -173,13 +173,13 @@
          "source": null,
          "video": "https://github.com/santieduardo/WWDC16",
          "frameworks": ["3D Touch", "MapKit"],
-         "status": null
+         "status": "submitted"
       }, {
          "name": "Eli Yazdi",
          "source": "https://itunes.apple.com/us/app/3dtones/id1108446298?mt=8",
          "video": "https://github.com/eliyazdi/3dtones",
          "frameworks": [],
-         "status": null
+         "status": "submitted"
       }, {
          "name": "Erik Sargent",
          "source": "https://itunes.apple.com/us/app/taxbot-automatic-mile-tracker/id461781884?mt=8",
@@ -203,7 +203,7 @@
          "source": "https://itunes.apple.com/us/app/aliens-jelly/id1100376973?l=pt&ls=1&mt=8",
          "video": null,
          "frameworks": ["Siri Remote", "SpriteKit"],
-         "status": null
+         "status": "submitted"
       }, {
          "name": "Felix Knispel",
          "source": null,
@@ -233,7 +233,7 @@
          "source": "https://itunes.apple.com/se/app/skolmaten/id416550379?mt=8",
          "video": null,
          "frameworks": [],
-         "status": null
+         "status": "submitted"
       }, {
          "name": "Hari",
          "source": null,
@@ -269,7 +269,7 @@
          "source": "https://itunes.apple.com/app/connectr-all-social-media/id905696962?mt=8",
          "video": null,
          "frameworks": [],
-         "status": null
+         "status": "submitted"
       }, {
          "name": "Jaxon Kneipp",
          "source": null,
@@ -281,7 +281,7 @@
          "source": "https://www.parkly.ch",
          "video": null,
          "frameworks": [],
-         "status": null
+         "status": "submitted"
       }, {
          "name": "Jessica Yeh",
          "source": "https://itunes.apple.com/us/app/omnibuzz-location-alarm-for/id1076106050",
@@ -305,13 +305,13 @@
          "source": null,
          "video": null,
          "frameworks": [],
-         "status": null
+         "status": "submitted"
       }, {
          "name": "Kabir Oberai",
          "source": null,
          "video": null,
          "frameworks": [],
-         "status": null
+         "status": "submitted"
       }, {
          "name": "Kai Aldag",
          "source": null,
@@ -371,13 +371,13 @@
          "source": "https://itunes.apple.com/us/app/newlinq/id950231000?l=nl&ls=1&mt=8",
          "video": null,
          "frameworks": [],
-         "status": null
+         "status": "submitted"
       }, {
          "name": "Maurice Breit",
          "source": "https://itunes.apple.com/de/app/4fahrt-schuler/id1105478291?mt=8",
          "video": null,
          "frameworks": [],
-         "status": null
+         "status": "submitted"
       }, {
          "name": "Maximilian Litteral",
          "source": "https://maximilianlitteral.com/TelevisionTime/iTunes/index.html",
@@ -401,13 +401,13 @@
          "source": "https://itunes.apple.com/us/app/zmanim-for-yu/id1071006216?mt=8",
          "video": null,
          "frameworks": [],
-         "status": null
+         "status": "submitted"
       }, {
          "name": "Nicholas Gibson",
          "source": "https://itunes.apple.com/us/app/predsnu/id917520140?mt=8",
          "video": null,
          "frameworks": [],
-         "status": null
+         "status": "submitted"
       }, {
          "name": "Philippe Yu",
          "source": null,
@@ -449,7 +449,7 @@
          "source": null,
          "video": "https://www.youtube.com/watch?v=-DFINkoEZhU",
          "frameworks": [],
-         "status": null
+         "status": "submitted"
       }, {
          "name": "Sebastian Dobrincu",
          "source": "https://itunes.apple.com/us/app/voya-your-personal-travel/id1082760606",
@@ -467,13 +467,13 @@
          "source": null,
          "video": null,
          "frameworks": [],
-         "status": null
+         "status": "submitted"
       }, {
          "name": "Siddhant Chaurasia",
          "source": "https://itunes.apple.com/us/app/places-sst/id921357959?mt=8",
          "video": null,
          "frameworks": [],
-         "status": null
+         "status": "submitted"
       }, {
          "name": "Simon Christian Krüger",
          "source": "https://appsto.re/de/vsYj7.i",
@@ -527,25 +527,25 @@
          "source": "https://itunes.apple.com/us/app/brainychess-play-learn-chess/id778336641?mt=8",
          "video": "https://www.youtube.com/watch?v=H429tmvM0zI",
          "frameworks": [],
-         "status": null
+         "status": "submitted"
       }, {
          "name": "Vincent Le",
          "source": "https://github.com/QSport/QSport",
          "video": "https://www.youtube.com/watch?v=f1vPOc-EaQ8",
          "frameworks": [],
-         "status": null
+         "status": "submitted"
       }, {
          "name": "Vladimir Danila",
          "source": "https://itunes.apple.com/us/app/codinator/id1024671232?ls=1&mt=8",
          "video": null,
          "frameworks": [],
-         "status": null
+         "status": "submitted"
       }, {
          "name": "Weiran Xiong",
          "source": null,
          "video": null,
          "frameworks": [],
-         "status": null
+         "status": "submitted"
       }, {
          "name": "Will Oakley",
          "source": "https://itunes.apple.com/ie/app/coincident-3d-touch-game/id1069735902?mt=8",
@@ -575,7 +575,7 @@
          "source": "https://itunes.apple.com/app/apple-store/id967147939?mt=8",
          "video": null,
          "frameworks": [],
-         "status": null
+         "status": "submitted"
       }
    ]
 }
