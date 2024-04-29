@@ -144,6 +144,14 @@
          "video": null,
          "frameworks": [],
          "status": "accepted"
+      }, {
+         "name": "Till Brügmann",
+         "github_username" : "stoobit",
+         "twitter_username": "stoobitofficial",
+         "source": "https://github.com/stoobit/Vitality-Pro/tree/main",
+         "video": null,
+         "frameworks": ["SwiftUI", "CoreML", "AVFoundation", "Vision"],
+         "status": "accepted"
       }
    ]
 }
