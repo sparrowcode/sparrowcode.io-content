@@ -1,761 +1,1138 @@
 {
-   "developers": [
-      {
-         "name": "Aarti Parikh",
-         "source": "https://github.com/aarti/wwdc-scholarship-app",
-         "video": null,
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Adil Virani",
-         "source": "https://github.com/AdilVirani/WWDC-2015",
-         "video": null,
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Aditya Chugh",
-         "source": "https://github.com/adityachugh/WWDC-2015",
-         "video": null,
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Ahmed Fathi",
-         "source": "https://github.com/AFathi/WWDC2015",
-         "video": "https://www.youtube.com/watch?v=JgWXbT7npC0",
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Aleem Dhanji",
-         "source": "https://github.com/adhanji/AleemDhanji",
-         "video": null,
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Alexander Groß",
-         "source": "https://github.com/alexthedeveloper",
-         "video": null,
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Alex Studnicka",
-         "source": "https://github.com/alex-alex/WWDC-2015-Scholarship",
-         "video": null,
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Alston Clark",
-         "source": "https://github.com/Acespace/WWDC15",
-         "video": null,
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Aman Jain",
-         "source": "https://github.com/amannayak0007/Aman-Jain",
-         "video": "https://www.youtube.com/watch?v=9iRIbTPamNQ",
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Amelia Boli",
-         "source": "https://github.com/AmeliaBoli/AmeliaBoli",
-         "video": null,
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Amit Kalra",
-         "source": "https://github.com/AMITNKALRA/Amit-Nivedan-Kalra-WWDC-15-Student-Scholorship-Application-",
-         "video": null,
-         "frameworks": [],
-         "status": "rejected"
-      }, {
-         "name": "Andrew Clissold",
-         "source": "https://github.com/aclissold/wwdc-scholarship",
-         "video": null,
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Andrew Overton",
-         "source": "https://github.com/andrewoverton/WWDC-Scholarship-App",
-         "video": null,
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Andrew Robinson",
-         "source": "https://github.com/SirArkimedes/WWDC-2015",
-         "video": null,
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Arik Sosman",
-         "source": "https://github.com/arik-so/WWDC-2015-Application",
-         "video": "https://www.youtube.com/watch?v=paRnOg6_t6k",
-         "frameworks": [],
-         "status": "rejected"
-      }, {
-         "name": "Ash Bhat",
-         "source": "https://github.com/ashbhat/wwdc-2015",
-         "video": null,
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Bastian Aigner",
-         "source": "https://github.com/bastiaigner/WWDC15",
-         "video": null,
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Ben Maliel",
-         "source": null,
-         "video": null,
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Ben Rosen",
-         "source": "https://github.com/benrosen78/2015-WWDC-Scholarship-app",
-         "video": null,
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Bojan Stefanovic",
-         "source": "https://github.com/bojanstef/WWDC15-Scholarship-Application",
-         "video": null,
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Braeden Mayer",
-         "source": null,
-         "video": null,
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Brandon Shaw",
-         "source": "https://github.com/unobrandon/WWDC15-Brandon",
-         "video": null,
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Brian Huynh",
-         "source": "https://github.com/comps3/Brian-Huynh",
-         "video": null,
-         "frameworks": [],
-         "status": "rejected"
-      }, {
-         "name": "Bryan Keller",
-         "source": null,
-         "video": "https://vimeo.com/126077764",
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Cal Stephens",
-         "source": "https://github.com/Calda/About-Cal",
-         "video": "https://www.youtube.com/watch?v=6HlfvftH24s",
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Caue Alves",
-         "source": "https://github.com/CaueAlvesSilva/Caue-Alves---WWDC15",
-         "video": null,
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Charles Truluck",
-         "source": "https://github.com/charlestruluck/WWDC-2015",
-         "video": null,
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Daniel Chen",
-         "source": "https://github.com/cheniel/wwdc-scholarship-2015",
-         "video": null,
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Daniel Eisterhold",
-         "source": "https://github.com/deisterhold/WWDC-Submission",
-         "video": null,
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Daniel Muckerman",
-         "source": "https://github.com/DMuckerman/wwdc2015",
-         "video": null,
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Diego dos Santos",
-         "source": "https://github.com/diegodossantos95",
-         "video": "https://www.youtube.com/watch?v=svdHeZCTXNo",
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Eddie Kaiger",
-         "source": "https://github.com/eddiekaiger/PortfolioApp",
-         "video": null,
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Enrique Melgarejo",
-         "source": "https://github.com/Enriquecm/EnriqueCM",
-         "video": null,
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Erik van der Plas",
-         "source": null,
-         "video": null,
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Evan Dekhayser",
-         "source": "https://github.com/edekhayser/WWDC-2015-Scholarship",
-         "video": null,
-         "frameworks": [],
-         "status": "rejected"
-      }, {
-         "name": "Felipe Polidori Rios",
-         "source": "https://github.com/fpr0001/FelipeRios2015WWDC",
-         "video": null,
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Filipe Alvarenga",
-         "source": "https://github.com/filipealva/WWDC15-Scholarship",
-         "video": "https://www.youtube.com/watch?v=9UalIxQE5Cw",
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Finn Gaida",
-         "source": "https://github.com/finngaida/wwdc",
-         "video": "https://www.youtube.com/watch?v=yY-ZYiP68bE",
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Gautam Mittal",
-         "source": "https://github.com/gmittal/wwdc-2015",
-         "video": "https://www.youtube.com/watch?v=ryTamhlDfEU",
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Georges Kanaan",
-         "source": "https://github.com/Ge0rges/WWDC-2015-Scholarship",
-         "video": null,
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Giovanni Alcantara",
-         "source": "https://github.com/gvsi/WWDC-2015",
-         "video": null,
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Guglielmo Faglioni",
-         "source": null,
-         "video": null,
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Guilherme Moresco Bisotto",
-         "source": "https://github.com/GuilhermeMBisotto/WWDC2015",
-         "video": null,
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Guilherme Leite Colares",
-         "source": "https://github.com/guicolares/WWDC-2015-scholarship",
-         "video": "https://www.youtube.com/watch?v=c3BODiT722E",
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Harrison Weinerman",
-         "source": "https://github.com/harrisonw1/Harrison-Weinerman-WWDC-2015-Scholarship-App",
-         "video": null,
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Henrique Velloso",
-         "source": "https://github.com/henriquevelloso/WWDC-2015-Scholarship",
-         "video": "https://youtu.be/ZFll2pRZKY0",
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Hollis Liu",
-         "source": null,
-         "video": "https://www.youtube.com/watch?v=Xp4jH-kiSv4",
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Ipalibo Whyte",
-         "source": "https://github.com/IpaliboWhyte/WWDC-2015",
-         "video": null,
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Isaac Rodriguez",
-         "source": null,
-         "video": null,
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Jak Tiano",
-         "source": "https://github.com/Jakintosh/WWDC-2015-Application",
-         "video": null,
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "James Brooks",
-         "source": null,
-         "video": null,
-         "frameworks": [],
-         "status": "rejected"
-      }, {
-         "name": "Jan Fruechtl",
-         "source": "https://github.com/coolcut/WWDC-Scholarship-2015",
-         "video": null,
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Jared Stefanowicz",
-         "source": "https://github.com/BigxMac/WWDC-2015",
-         "video": null,
-         "frameworks": [],
-         "status": "rejected"
-      }, {
-         "name": "Jari Martens",
-         "source": "https://github.com/jarimartens10/wwdc-2015",
-         "video": null,
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Jill Handy",
-         "source": "https://github.com/Jaemu/jill-handy",
-         "video": null,
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Jimmy Liu",
-         "source": "https://github.com/lele0108/WWDC_2015",
-         "video": null,
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Joan Molinas",
-         "source": "https://github.com/ulidev/WWDC2015",
-         "video": "https://www.youtube.com/watch?v=OU44fRY2PYs",
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Johannes Lund",
-         "source": "https://github.com/Anviking/WWDC",
-         "video": null,
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "John Harding",
-         "source": null,
-         "video": "https://www.youtube.com/watch?v=c63fmWDcn08",
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Jonathan Andrade",
-         "source": "https://github.com/jcandrade/WWDC2015",
-         "video": null,
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Jonathan Chan",
-         "source": "https://github.com/NathanJang/WWDC2015",
-         "video": "https://www.youtube.com/watch?v=dgaVsig4dKs",
-         "frameworks": [],
-         "status": "rejected"
-      }, {
-         "name": "Jordan Singer",
-         "source": "https://github.com/jordansinger/WWDC-15",
-         "video": "https://cl.ly/am7C",
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Jorge Ovalle",
-         "source": "https://github.com/lojals/JorgeOvalleWWDC",
-         "video": null,
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Josh Bruce",
-         "source": null,
-         "video": null,
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Josh Trommel",
-         "source": "https://github.com/trommel/JoshTrommel",
-         "video": null,
-         "frameworks": [],
-         "status": "rejected"
-      }, {
-         "name": "Joshua Liu",
-         "source": "https://github.com/joshliu/WWDC-2015",
-         "video": null,
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Juan Chomali",
-         "source": "https://github.com/jchomali/WWDC15App",
-         "video": "https://www.youtube.com/watch?v=7WFw3axl8lM",
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Jurvis Tan",
-         "source": "https://github.com/jurvis/wwdc-2015",
-         "video": "https://www.youtube.com/watch?v=t19pO05jzSQ",
-         "frameworks": [],
-         "status": "rejected"
-      }, {
-         "name": "Justin Ehlert",
-         "source": "https://github.com/jtehlert/WWDC",
-         "video": null,
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Kai Aldag",
-         "source": null,
-         "video": "https://www.youtube.com/watch?v=tYKSzLFIIic",
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Kat Slump",
-         "source": "https://github.com/katslump/WWDC2015",
-         "video": "https://vimeo.com/126157477",
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Kamesh Vedula",
-         "source": "https://github.com/kvedula/WWDC2015",
-         "video": "https://www.youtube.com/watch?v=BZpe8h0Ox_w",
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Kevin Ayuque",
-         "source": "https://github.com/KevinAyuque/WWDC-2015-Scholarship",
-         "video": null,
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Kyle Spadaro",
-         "source": null,
-         "video": null,
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Laurin Brandner",
-         "source": "https://github.com/larcus94/Scholarship",
-         "video": null,
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Lea Marolt",
-         "source": "https://github.com/leamars/WWDC2015",
-         "video": null,
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Leo Mehlig",
-         "source": "https://github.com/leoMehlig/EnigmaBombe",
-         "video": null,
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Lorenzo Gentile",
-         "source": "https://github.com/Lorenzo45/WWDC2015",
-         "video": null,
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Luis Chavez",
-         "source": "https://github.com/Spr-Luis/WWDC-Scholarship-Application-2015",
-         "video": "https://www.youtube.com/watch?v=UexdNvhXEW8",
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Lukas Schmidt",
-         "source": "https://github.com/lightsprint09/wwdc-2015-scholarship",
-         "video": null,
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Marcel Voss",
-         "source": "https://github.com/marcelvoss/WWDC15-Scholarship",
-         "video": null,
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Marcos Borges",
-         "source": null,
-         "video": "https://www.youtube.com/watch?v=thB-skN19Q0",
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Matheus Alberton",
-         "source": "https://github.com/matheusfrozzi/wwdcprofile",
-         "video": null,
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Matheus Cavalca",
-         "source": "https://github.com/MatheusCavalca/WWDCScholarship2015",
-         "video": null,
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Matheus Rabelo",
-         "source": "https://github.com/omatheusr/MatheusRabelo",
-         "video": null,
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Matthew Palmer",
-         "source": null,
-         "video": "https://www.dropbox.com/s/7mhn66qp57dsyxc/wwdc-15-demo.mov?dl=0",
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Maximilian Litteral",
-         "source": null,
-         "video": "https://www.youtube.com/watch?v=Z4lGNU_uoe4&spfreload=10",
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Neeraj Baid",
-         "source": "https://github.com/neerajbaid/WWDC2015",
-         "video": null,
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Nicola Giancecchi",
-         "source": "https://github.com/nicorsm/Nicola-Giancecchi-WWDC15-App",
-         "video": null,
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Odie Edo-Osagie",
-         "source": "https://github.com/oduwa/WWDC2015-Scholarship-App",
-         "video": null,
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Oscar Morrison",
-         "source": null,
-         "video": "https://www.youtube.com/watch?v=4Tlb7cBmnOE",
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Patricia Abreu",
-         "source": "https://github.com/PatriciaAbreu/WWDC/tree/master/WWDCPatriciaAbreu",
-         "video": null,
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Patrick Balestra",
-         "source": "https://github.com/BalestraPatrick/WWDC-2015-Scholarship",
-         "video": "https://www.youtube.com/watch?v=4I3MBT2QXHw",
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Patrick Murray",
-         "source": "https://github.com/PatMurrayDEV/wwdc15-application",
-         "video": "https://vimeo.com/127332925",
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Prithiv Dev",
-         "source": null,
-         "video": null,
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Raphael Silva",
-         "source": "https://github.com/peagasilva/WWDC15-Scholarship",
-         "video": null,
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Ravin Sardal",
-         "source": "https://github.com/randomite/ss-wwdc",
-         "video": null,
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Remi Santos",
-         "source": "https://github.com/Kemcake/WWDC2015",
-         "video": null,
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Remsudeen Rameez",
-         "source": null,
-         "video": null,
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Rene Argento",
-         "source": "https://github.com/reneargento/wwdc-2015-scholarship-application",
-         "video": null,
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Robert Mozayeni",
-         "source": "https://github.com/rsmoz/WWDC-2015-Scholarship-Application",
-         "video": "https://vimeo.com/126084087",
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Rodrigo Andrade",
-         "source": "https://github.com/rodrigoschmitt/rodrigoandrade",
-         "video": null,
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Rodrigo Leite",
-         "source": null,
-         "video": "https://youtu.be/PNKl0TjWa1E",
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Rodrigo Nascimento",
-         "source": "https://github.com/rodrigok/wwwdc-2015-scholarship-rodrigo-nascimento",
-         "video": null,
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Sachin Patel",
-         "source": "https://github.com/gizmosachin/WWDC15",
-         "video": null,
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Sahand Edrisian",
-         "source": "https://github.com/SahandTheGreat/WWDC-2015-Scholarship-Winner",
-         "video": null,
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Salavat Khanov",
-         "source": "https://github.com/khanov/WWDC-2015",
-         "video": "https://youtu.be/uuk-5Fur9Nc",
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Salman Husain",
-         "source": "https://github.com/shusain93/WWDC2015",
-         "video": "https://www.youtube.com/watch?v=tcxozqPQzng",
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Sam Eckert",
-         "source": null,
-         "video": null,
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Sarah Olson",
-         "source": "https://github.com/saraheolson/SarahOlson",
-         "video": null,
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Sebastian Dobrincu",
-         "source": "https://github.com/sebyddd/WWDC2015-Submission",
-         "video": "https://www.youtube.com/watch?v=8FIxP19dM1Q",
-         "frameworks": [],
-         "status": "rejected"
-      }, {
-         "name": "Snaheth Thumathy",
-         "source": "https://github.com/snaheth/WWDC2015",
-         "video": null,
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Stasys Meclazcke",
-         "source": "https://github.com/aeip/2015-WWDC-Scholarship-App",
-         "video": "https://www.youtube.com/watch?v=Q05r7ALxmZY",
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Stephan Rabanser",
-         "source": "https://github.com/steverab/WWDC-2015",
-         "video": "https://dl.dropboxusercontent.com/u/14601827/WWDC-2015-Scholarship.mp4",
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Stephen McMillan",
-         "source": "https://github.com/StephenMcMillan/WWDC-2015-Scholarship-App",
-         "video": null,
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Stephen Melinyshyn",
-         "source": "https://github.com/Melinysh/WWDC-2015-Student-App",
-         "video": null,
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Thomas Vagning",
-         "source": "https://github.com/Vagning/WWDC-2015",
-         "video": null,
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Tillson Galloway",
-         "source": "https://github.com/tillson/wwdc-2015",
-         "video": null,
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Tom de Ruiter",
-         "source": null,
-         "video": "https://www.youtube.com/watch?v=JaVJUHh56Rk",
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Tosin Afolabi",
-         "source": "https://github.com/TosinAF/WWDC-2015",
-         "video": "https://www.youtube.com/watch?v=Mo172Xj923M",
-         "frameworks": [],
-         "status": "rejected"
-      }, {
-         "name": "Trent Rand",
-         "source": "https://github.com/trentrand/WWDC-2015-Scholarship",
-         "video": null,
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Txai Wieser",
-         "source": "https://github.com/txaidw/WWDC15-Txai-Wieser",
-         "video": "https://www.youtube.com/watch?v=s-ZKPdDrEow",
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Tyler Flowers",
-         "source": "https://github.com/Tdflowers/WWDC2015",
-         "video": null,
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Valentin Perez",
-         "source": "https://github.com/valentin7/wwdc2015app",
-         "video": null,
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Vignesh Varadarajan",
-         "source": null,
-         "video": "https://www.youtube.com/watch?v=yvDgPOn-1",
-         "frameworks": [],
-         "status": "accepted"
-      }, {
-         "name": "Valentin Perez",
-         "source": "https://github.com/valentin7/wwdc2015app",
-         "video": null,
-         "frameworks": [],
-         "status": "accepted"
-      }
-   ]
+    "developers": [
+        {
+            "name": "Aarti Parikh",
+            "source": "https://github.com/aarti/wwdc-scholarship-app",
+            "video": null,
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": "aarti",
+            "twitter_username": null
+        },
+        {
+            "name": "Adil Virani",
+            "source": "https://github.com/AdilVirani/WWDC-2015",
+            "video": null,
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": "AdilVirani",
+            "twitter_username": null
+        },
+        {
+            "name": "Aditya Chugh",
+            "source": "https://github.com/adityachugh/WWDC-2015",
+            "video": null,
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": "adityachugh",
+            "twitter_username": null
+        },
+        {
+            "name": "Ahmed Fathi",
+            "source": "https://github.com/AFathi/WWDC2015",
+            "video": "https://www.youtube.com/watch?v=JgWXbT7npC0",
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": "AFathi",
+            "twitter_username": null
+        },
+        {
+            "name": "Aleem Dhanji",
+            "source": "https://github.com/adhanji/AleemDhanji",
+            "video": null,
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": "adhanji",
+            "twitter_username": null
+        },
+        {
+            "name": "Alexander Gro\u00df",
+            "source": "https://github.com/alexthedeveloper",
+            "video": null,
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": "alexthedeveloper",
+            "twitter_username": null
+        },
+        {
+            "name": "Alex Studnicka",
+            "source": "https://github.com/alex-alex/WWDC-2015-Scholarship",
+            "video": null,
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": "alex-alex",
+            "twitter_username": null
+        },
+        {
+            "name": "Alston Clark",
+            "source": "https://github.com/Acespace/WWDC15",
+            "video": null,
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": "Acespace",
+            "twitter_username": null
+        },
+        {
+            "name": "Aman Jain",
+            "source": "https://github.com/amannayak0007/Aman-Jain",
+            "video": "https://www.youtube.com/watch?v=9iRIbTPamNQ",
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": "amannayak0007",
+            "twitter_username": null
+        },
+        {
+            "name": "Amelia Boli",
+            "source": "https://github.com/AmeliaBoli/AmeliaBoli",
+            "video": null,
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": "AmeliaBoli",
+            "twitter_username": null
+        },
+        {
+            "name": "Amit Kalra",
+            "source": "https://github.com/AMITNKALRA/Amit-Nivedan-Kalra-WWDC-15-Student-Scholorship-Application-",
+            "video": null,
+            "frameworks": [],
+            "status": "rejected",
+            "github_username": "AMITNKALRA",
+            "twitter_username": null
+        },
+        {
+            "name": "Andrew Clissold",
+            "source": "https://github.com/aclissold/wwdc-scholarship",
+            "video": null,
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": "aclissold",
+            "twitter_username": null
+        },
+        {
+            "name": "Andrew Overton",
+            "source": "https://github.com/andrewoverton/WWDC-Scholarship-App",
+            "video": null,
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": "andrewoverton",
+            "twitter_username": null
+        },
+        {
+            "name": "Andrew Robinson",
+            "source": "https://github.com/SirArkimedes/WWDC-2015",
+            "video": null,
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": "SirArkimedes",
+            "twitter_username": null
+        },
+        {
+            "name": "Arik Sosman",
+            "source": "https://github.com/arik-so/WWDC-2015-Application",
+            "video": "https://www.youtube.com/watch?v=paRnOg6_t6k",
+            "frameworks": [],
+            "status": "rejected",
+            "github_username": "arik-so",
+            "twitter_username": null
+        },
+        {
+            "name": "Ash Bhat",
+            "source": "https://github.com/ashbhat/wwdc-2015",
+            "video": null,
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": "ashbhat",
+            "twitter_username": null
+        },
+        {
+            "name": "Bastian Aigner",
+            "source": "https://github.com/bastiaigner/WWDC15",
+            "video": null,
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": "bastiaigner",
+            "twitter_username": null
+        },
+        {
+            "name": "Ben Maliel",
+            "source": null,
+            "video": null,
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": null,
+            "twitter_username": null
+        },
+        {
+            "name": "Ben Rosen",
+            "source": "https://github.com/benrosen78/2015-WWDC-Scholarship-app",
+            "video": null,
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": "benrosen78",
+            "twitter_username": null
+        },
+        {
+            "name": "Bojan Stefanovic",
+            "source": "https://github.com/bojanstef/WWDC15-Scholarship-Application",
+            "video": null,
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": "bojanstef",
+            "twitter_username": null
+        },
+        {
+            "name": "Braeden Mayer",
+            "source": null,
+            "video": null,
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": null,
+            "twitter_username": null
+        },
+        {
+            "name": "Brandon Shaw",
+            "source": "https://github.com/unobrandon/WWDC15-Brandon",
+            "video": null,
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": "unobrandon",
+            "twitter_username": null
+        },
+        {
+            "name": "Brian Huynh",
+            "source": "https://github.com/comps3/Brian-Huynh",
+            "video": null,
+            "frameworks": [],
+            "status": "rejected",
+            "github_username": "comps3",
+            "twitter_username": null
+        },
+        {
+            "name": "Bryan Keller",
+            "source": null,
+            "video": "https://vimeo.com/126077764",
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": null,
+            "twitter_username": null
+        },
+        {
+            "name": "Cal Stephens",
+            "source": "https://github.com/Calda/About-Cal",
+            "video": "https://www.youtube.com/watch?v=6HlfvftH24s",
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": "Calda",
+            "twitter_username": null
+        },
+        {
+            "name": "Caue Alves",
+            "source": "https://github.com/CaueAlvesSilva/Caue-Alves---WWDC15",
+            "video": null,
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": "CaueAlvesSilva",
+            "twitter_username": null
+        },
+        {
+            "name": "Charles Truluck",
+            "source": "https://github.com/charlestruluck/WWDC-2015",
+            "video": null,
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": "charlestruluck",
+            "twitter_username": null
+        },
+        {
+            "name": "Daniel Chen",
+            "source": "https://github.com/cheniel/wwdc-scholarship-2015",
+            "video": null,
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": "cheniel",
+            "twitter_username": null
+        },
+        {
+            "name": "Daniel Eisterhold",
+            "source": "https://github.com/deisterhold/WWDC-Submission",
+            "video": null,
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": "deisterhold",
+            "twitter_username": null
+        },
+        {
+            "name": "Daniel Muckerman",
+            "source": "https://github.com/DMuckerman/wwdc2015",
+            "video": null,
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": "DMuckerman",
+            "twitter_username": null
+        },
+        {
+            "name": "Diego dos Santos",
+            "source": "https://github.com/diegodossantos95",
+            "video": "https://www.youtube.com/watch?v=svdHeZCTXNo",
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": "diegodossantos95",
+            "twitter_username": null
+        },
+        {
+            "name": "Eddie Kaiger",
+            "source": "https://github.com/eddiekaiger/PortfolioApp",
+            "video": null,
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": "eddiekaiger",
+            "twitter_username": null
+        },
+        {
+            "name": "Enrique Melgarejo",
+            "source": "https://github.com/Enriquecm/EnriqueCM",
+            "video": null,
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": "Enriquecm",
+            "twitter_username": null
+        },
+        {
+            "name": "Erik van der Plas",
+            "source": null,
+            "video": null,
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": null,
+            "twitter_username": null
+        },
+        {
+            "name": "Evan Dekhayser",
+            "source": "https://github.com/edekhayser/WWDC-2015-Scholarship",
+            "video": null,
+            "frameworks": [],
+            "status": "rejected",
+            "github_username": "edekhayser",
+            "twitter_username": null
+        },
+        {
+            "name": "Felipe Polidori Rios",
+            "source": "https://github.com/fpr0001/FelipeRios2015WWDC",
+            "video": null,
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": "fpr0001",
+            "twitter_username": null
+        },
+        {
+            "name": "Filipe Alvarenga",
+            "source": "https://github.com/filipealva/WWDC15-Scholarship",
+            "video": "https://www.youtube.com/watch?v=9UalIxQE5Cw",
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": "filipealva",
+            "twitter_username": null
+        },
+        {
+            "name": "Finn Gaida",
+            "source": "https://github.com/finngaida/wwdc",
+            "video": "https://www.youtube.com/watch?v=yY-ZYiP68bE",
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": "finngaida",
+            "twitter_username": null
+        },
+        {
+            "name": "Gautam Mittal",
+            "source": "https://github.com/gmittal/wwdc-2015",
+            "video": "https://www.youtube.com/watch?v=ryTamhlDfEU",
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": "gmittal",
+            "twitter_username": null
+        },
+        {
+            "name": "Georges Kanaan",
+            "source": "https://github.com/Ge0rges/WWDC-2015-Scholarship",
+            "video": null,
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": "Ge0rges",
+            "twitter_username": null
+        },
+        {
+            "name": "Giovanni Alcantara",
+            "source": "https://github.com/gvsi/WWDC-2015",
+            "video": null,
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": "gvsi",
+            "twitter_username": null
+        },
+        {
+            "name": "Guglielmo Faglioni",
+            "source": null,
+            "video": null,
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": null,
+            "twitter_username": null
+        },
+        {
+            "name": "Guilherme Moresco Bisotto",
+            "source": "https://github.com/GuilhermeMBisotto/WWDC2015",
+            "video": null,
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": "GuilhermeMBisotto",
+            "twitter_username": null
+        },
+        {
+            "name": "Guilherme Leite Colares",
+            "source": "https://github.com/guicolares/WWDC-2015-scholarship",
+            "video": "https://www.youtube.com/watch?v=c3BODiT722E",
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": "guicolares",
+            "twitter_username": null
+        },
+        {
+            "name": "Harrison Weinerman",
+            "source": "https://github.com/harrisonw1/Harrison-Weinerman-WWDC-2015-Scholarship-App",
+            "video": null,
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": "harrisonw1",
+            "twitter_username": null
+        },
+        {
+            "name": "Henrique Velloso",
+            "source": "https://github.com/henriquevelloso/WWDC-2015-Scholarship",
+            "video": "https://youtu.be/ZFll2pRZKY0",
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": "henriquevelloso",
+            "twitter_username": null
+        },
+        {
+            "name": "Hollis Liu",
+            "source": null,
+            "video": "https://www.youtube.com/watch?v=Xp4jH-kiSv4",
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": null,
+            "twitter_username": null
+        },
+        {
+            "name": "Ipalibo Whyte",
+            "source": "https://github.com/IpaliboWhyte/WWDC-2015",
+            "video": null,
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": "IpaliboWhyte",
+            "twitter_username": null
+        },
+        {
+            "name": "Isaac Rodriguez",
+            "source": null,
+            "video": null,
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": null,
+            "twitter_username": null
+        },
+        {
+            "name": "Jak Tiano",
+            "source": "https://github.com/Jakintosh/WWDC-2015-Application",
+            "video": null,
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": "Jakintosh",
+            "twitter_username": null
+        },
+        {
+            "name": "James Brooks",
+            "source": null,
+            "video": null,
+            "frameworks": [],
+            "status": "rejected",
+            "github_username": null,
+            "twitter_username": null
+        },
+        {
+            "name": "Jan Fruechtl",
+            "source": "https://github.com/coolcut/WWDC-Scholarship-2015",
+            "video": null,
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": "coolcut",
+            "twitter_username": null
+        },
+        {
+            "name": "Jared Stefanowicz",
+            "source": "https://github.com/BigxMac/WWDC-2015",
+            "video": null,
+            "frameworks": [],
+            "status": "rejected",
+            "github_username": "BigxMac",
+            "twitter_username": null
+        },
+        {
+            "name": "Jari Martens",
+            "source": "https://github.com/jarimartens10/wwdc-2015",
+            "video": null,
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": "jarimartens10",
+            "twitter_username": null
+        },
+        {
+            "name": "Jill Handy",
+            "source": "https://github.com/Jaemu/jill-handy",
+            "video": null,
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": "Jaemu",
+            "twitter_username": null
+        },
+        {
+            "name": "Jimmy Liu",
+            "source": "https://github.com/lele0108/WWDC_2015",
+            "video": null,
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": "lele0108",
+            "twitter_username": null
+        },
+        {
+            "name": "Joan Molinas",
+            "source": "https://github.com/ulidev/WWDC2015",
+            "video": "https://www.youtube.com/watch?v=OU44fRY2PYs",
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": "ulidev",
+            "twitter_username": null
+        },
+        {
+            "name": "Johannes Lund",
+            "source": "https://github.com/Anviking/WWDC",
+            "video": null,
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": "Anviking",
+            "twitter_username": null
+        },
+        {
+            "name": "John Harding",
+            "source": null,
+            "video": "https://www.youtube.com/watch?v=c63fmWDcn08",
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": null,
+            "twitter_username": null
+        },
+        {
+            "name": "Jonathan Andrade",
+            "source": "https://github.com/jcandrade/WWDC2015",
+            "video": null,
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": "jcandrade",
+            "twitter_username": null
+        },
+        {
+            "name": "Jonathan Chan",
+            "source": "https://github.com/NathanJang/WWDC2015",
+            "video": "https://www.youtube.com/watch?v=dgaVsig4dKs",
+            "frameworks": [],
+            "status": "rejected",
+            "github_username": "NathanJang",
+            "twitter_username": null
+        },
+        {
+            "name": "Jordan Singer",
+            "source": "https://github.com/jordansinger/WWDC-15",
+            "video": "https://cl.ly/am7C",
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": "jordansinger",
+            "twitter_username": null
+        },
+        {
+            "name": "Jorge Ovalle",
+            "source": "https://github.com/lojals/JorgeOvalleWWDC",
+            "video": null,
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": "lojals",
+            "twitter_username": null
+        },
+        {
+            "name": "Josh Bruce",
+            "source": null,
+            "video": null,
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": null,
+            "twitter_username": null
+        },
+        {
+            "name": "Josh Trommel",
+            "source": "https://github.com/trommel/JoshTrommel",
+            "video": null,
+            "frameworks": [],
+            "status": "rejected",
+            "github_username": "trommel",
+            "twitter_username": null
+        },
+        {
+            "name": "Joshua Liu",
+            "source": "https://github.com/joshliu/WWDC-2015",
+            "video": null,
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": "joshliu",
+            "twitter_username": null
+        },
+        {
+            "name": "Juan Chomali",
+            "source": "https://github.com/jchomali/WWDC15App",
+            "video": "https://www.youtube.com/watch?v=7WFw3axl8lM",
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": "jchomali",
+            "twitter_username": null
+        },
+        {
+            "name": "Jurvis Tan",
+            "source": "https://github.com/jurvis/wwdc-2015",
+            "video": "https://www.youtube.com/watch?v=t19pO05jzSQ",
+            "frameworks": [],
+            "status": "rejected",
+            "github_username": "jurvis",
+            "twitter_username": null
+        },
+        {
+            "name": "Justin Ehlert",
+            "source": "https://github.com/jtehlert/WWDC",
+            "video": null,
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": "jtehlert",
+            "twitter_username": null
+        },
+        {
+            "name": "Kai Aldag",
+            "source": null,
+            "video": "https://www.youtube.com/watch?v=tYKSzLFIIic",
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": null,
+            "twitter_username": null
+        },
+        {
+            "name": "Kat Slump",
+            "source": "https://github.com/katslump/WWDC2015",
+            "video": "https://vimeo.com/126157477",
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": "katslump",
+            "twitter_username": null
+        },
+        {
+            "name": "Kamesh Vedula",
+            "source": "https://github.com/kvedula/WWDC2015",
+            "video": "https://www.youtube.com/watch?v=BZpe8h0Ox_w",
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": "kvedula",
+            "twitter_username": null
+        },
+        {
+            "name": "Kevin Ayuque",
+            "source": "https://github.com/KevinAyuque/WWDC-2015-Scholarship",
+            "video": null,
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": "KevinAyuque",
+            "twitter_username": null
+        },
+        {
+            "name": "Kyle Spadaro",
+            "source": null,
+            "video": null,
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": null,
+            "twitter_username": null
+        },
+        {
+            "name": "Laurin Brandner",
+            "source": "https://github.com/larcus94/Scholarship",
+            "video": null,
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": "larcus94",
+            "twitter_username": null
+        },
+        {
+            "name": "Lea Marolt",
+            "source": "https://github.com/leamars/WWDC2015",
+            "video": null,
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": "leamars",
+            "twitter_username": null
+        },
+        {
+            "name": "Leo Mehlig",
+            "source": "https://github.com/leoMehlig/EnigmaBombe",
+            "video": null,
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": "leoMehlig",
+            "twitter_username": null
+        },
+        {
+            "name": "Lorenzo Gentile",
+            "source": "https://github.com/Lorenzo45/WWDC2015",
+            "video": null,
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": "Lorenzo45",
+            "twitter_username": null
+        },
+        {
+            "name": "Luis Chavez",
+            "source": "https://github.com/Spr-Luis/WWDC-Scholarship-Application-2015",
+            "video": "https://www.youtube.com/watch?v=UexdNvhXEW8",
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": "Spr-Luis",
+            "twitter_username": null
+        },
+        {
+            "name": "Lukas Schmidt",
+            "source": "https://github.com/lightsprint09/wwdc-2015-scholarship",
+            "video": null,
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": "lightsprint09",
+            "twitter_username": null
+        },
+        {
+            "name": "Marcel Voss",
+            "source": "https://github.com/marcelvoss/WWDC15-Scholarship",
+            "video": null,
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": "marcelvoss",
+            "twitter_username": null
+        },
+        {
+            "name": "Marcos Borges",
+            "source": null,
+            "video": "https://www.youtube.com/watch?v=thB-skN19Q0",
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": null,
+            "twitter_username": null
+        },
+        {
+            "name": "Matheus Alberton",
+            "source": "https://github.com/matheusfrozzi/wwdcprofile",
+            "video": null,
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": "matheusfrozzi",
+            "twitter_username": null
+        },
+        {
+            "name": "Matheus Cavalca",
+            "source": "https://github.com/MatheusCavalca/WWDCScholarship2015",
+            "video": null,
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": "MatheusCavalca",
+            "twitter_username": null
+        },
+        {
+            "name": "Matheus Rabelo",
+            "source": "https://github.com/omatheusr/MatheusRabelo",
+            "video": null,
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": "omatheusr",
+            "twitter_username": null
+        },
+        {
+            "name": "Matthew Palmer",
+            "source": null,
+            "video": "https://www.dropbox.com/s/7mhn66qp57dsyxc/wwdc-15-demo.mov?dl=0",
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": null,
+            "twitter_username": null
+        },
+        {
+            "name": "Maximilian Litteral",
+            "source": null,
+            "video": "https://www.youtube.com/watch?v=Z4lGNU_uoe4&spfreload=10",
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": null,
+            "twitter_username": null
+        },
+        {
+            "name": "Neeraj Baid",
+            "source": "https://github.com/neerajbaid/WWDC2015",
+            "video": null,
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": "neerajbaid",
+            "twitter_username": null
+        },
+        {
+            "name": "Nicola Giancecchi",
+            "source": "https://github.com/nicorsm/Nicola-Giancecchi-WWDC15-App",
+            "video": null,
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": "nicorsm",
+            "twitter_username": null
+        },
+        {
+            "name": "Odie Edo-Osagie",
+            "source": "https://github.com/oduwa/WWDC2015-Scholarship-App",
+            "video": null,
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": "oduwa",
+            "twitter_username": null
+        },
+        {
+            "name": "Oscar Morrison",
+            "source": null,
+            "video": "https://www.youtube.com/watch?v=4Tlb7cBmnOE",
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": null,
+            "twitter_username": null
+        },
+        {
+            "name": "Patricia Abreu",
+            "source": "https://github.com/PatriciaAbreu/WWDC/tree/master/WWDCPatriciaAbreu",
+            "video": null,
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": "PatriciaAbreu",
+            "twitter_username": null
+        },
+        {
+            "name": "Patrick Balestra",
+            "source": "https://github.com/BalestraPatrick/WWDC-2015-Scholarship",
+            "video": "https://www.youtube.com/watch?v=4I3MBT2QXHw",
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": "BalestraPatrick",
+            "twitter_username": null
+        },
+        {
+            "name": "Patrick Murray",
+            "source": "https://github.com/PatMurrayDEV/wwdc15-application",
+            "video": "https://vimeo.com/127332925",
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": "PatMurrayDEV",
+            "twitter_username": null
+        },
+        {
+            "name": "Prithiv Dev",
+            "source": null,
+            "video": null,
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": null,
+            "twitter_username": null
+        },
+        {
+            "name": "Raphael Silva",
+            "source": "https://github.com/peagasilva/WWDC15-Scholarship",
+            "video": null,
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": "peagasilva",
+            "twitter_username": null
+        },
+        {
+            "name": "Ravin Sardal",
+            "source": "https://github.com/randomite/ss-wwdc",
+            "video": null,
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": "randomite",
+            "twitter_username": null
+        },
+        {
+            "name": "Remi Santos",
+            "source": "https://github.com/Kemcake/WWDC2015",
+            "video": null,
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": "Kemcake",
+            "twitter_username": null
+        },
+        {
+            "name": "Remsudeen Rameez",
+            "source": null,
+            "video": null,
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": null,
+            "twitter_username": null
+        },
+        {
+            "name": "Rene Argento",
+            "source": "https://github.com/reneargento/wwdc-2015-scholarship-application",
+            "video": null,
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": "reneargento",
+            "twitter_username": null
+        },
+        {
+            "name": "Robert Mozayeni",
+            "source": "https://github.com/rsmoz/WWDC-2015-Scholarship-Application",
+            "video": "https://vimeo.com/126084087",
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": "rsmoz",
+            "twitter_username": null
+        },
+        {
+            "name": "Rodrigo Andrade",
+            "source": "https://github.com/rodrigoschmitt/rodrigoandrade",
+            "video": null,
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": "rodrigoschmitt",
+            "twitter_username": null
+        },
+        {
+            "name": "Rodrigo Leite",
+            "source": null,
+            "video": "https://youtu.be/PNKl0TjWa1E",
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": null,
+            "twitter_username": null
+        },
+        {
+            "name": "Rodrigo Nascimento",
+            "source": "https://github.com/rodrigok/wwwdc-2015-scholarship-rodrigo-nascimento",
+            "video": null,
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": "rodrigok",
+            "twitter_username": null
+        },
+        {
+            "name": "Sachin Patel",
+            "source": "https://github.com/gizmosachin/WWDC15",
+            "video": null,
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": "gizmosachin",
+            "twitter_username": null
+        },
+        {
+            "name": "Sahand Edrisian",
+            "source": "https://github.com/SahandTheGreat/WWDC-2015-Scholarship-Winner",
+            "video": null,
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": "SahandTheGreat",
+            "twitter_username": null
+        },
+        {
+            "name": "Salavat Khanov",
+            "source": "https://github.com/khanov/WWDC-2015",
+            "video": "https://youtu.be/uuk-5Fur9Nc",
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": "khanov",
+            "twitter_username": null
+        },
+        {
+            "name": "Salman Husain",
+            "source": "https://github.com/shusain93/WWDC2015",
+            "video": "https://www.youtube.com/watch?v=tcxozqPQzng",
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": "shusain93",
+            "twitter_username": null
+        },
+        {
+            "name": "Sam Eckert",
+            "source": null,
+            "video": null,
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": null,
+            "twitter_username": null
+        },
+        {
+            "name": "Sarah Olson",
+            "source": "https://github.com/saraheolson/SarahOlson",
+            "video": null,
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": "saraheolson",
+            "twitter_username": null
+        },
+        {
+            "name": "Sebastian Dobrincu",
+            "source": "https://github.com/sebyddd/WWDC2015-Submission",
+            "video": "https://www.youtube.com/watch?v=8FIxP19dM1Q",
+            "frameworks": [],
+            "status": "rejected",
+            "github_username": "sebyddd",
+            "twitter_username": null
+        },
+        {
+            "name": "Snaheth Thumathy",
+            "source": "https://github.com/snaheth/WWDC2015",
+            "video": null,
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": "snaheth",
+            "twitter_username": null
+        },
+        {
+            "name": "Stasys Meclazcke",
+            "source": "https://github.com/aeip/2015-WWDC-Scholarship-App",
+            "video": "https://www.youtube.com/watch?v=Q05r7ALxmZY",
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": "aeip",
+            "twitter_username": null
+        },
+        {
+            "name": "Stephan Rabanser",
+            "source": "https://github.com/steverab/WWDC-2015",
+            "video": "https://dl.dropboxusercontent.com/u/14601827/WWDC-2015-Scholarship.mp4",
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": "steverab",
+            "twitter_username": null
+        },
+        {
+            "name": "Stephen McMillan",
+            "source": "https://github.com/StephenMcMillan/WWDC-2015-Scholarship-App",
+            "video": null,
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": "StephenMcMillan",
+            "twitter_username": null
+        },
+        {
+            "name": "Stephen Melinyshyn",
+            "source": "https://github.com/Melinysh/WWDC-2015-Student-App",
+            "video": null,
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": "Melinysh",
+            "twitter_username": null
+        },
+        {
+            "name": "Thomas Vagning",
+            "source": "https://github.com/Vagning/WWDC-2015",
+            "video": null,
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": "Vagning",
+            "twitter_username": null
+        },
+        {
+            "name": "Tillson Galloway",
+            "source": "https://github.com/tillson/wwdc-2015",
+            "video": null,
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": "tillson",
+            "twitter_username": null
+        },
+        {
+            "name": "Tom de Ruiter",
+            "source": null,
+            "video": "https://www.youtube.com/watch?v=JaVJUHh56Rk",
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": null,
+            "twitter_username": null
+        },
+        {
+            "name": "Tosin Afolabi",
+            "source": "https://github.com/TosinAF/WWDC-2015",
+            "video": "https://www.youtube.com/watch?v=Mo172Xj923M",
+            "frameworks": [],
+            "status": "rejected",
+            "github_username": "TosinAF",
+            "twitter_username": null
+        },
+        {
+            "name": "Trent Rand",
+            "source": "https://github.com/trentrand/WWDC-2015-Scholarship",
+            "video": null,
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": "trentrand",
+            "twitter_username": null
+        },
+        {
+            "name": "Txai Wieser",
+            "source": "https://github.com/txaidw/WWDC15-Txai-Wieser",
+            "video": "https://www.youtube.com/watch?v=s-ZKPdDrEow",
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": "txaidw",
+            "twitter_username": null
+        },
+        {
+            "name": "Tyler Flowers",
+            "source": "https://github.com/Tdflowers/WWDC2015",
+            "video": null,
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": "Tdflowers",
+            "twitter_username": null
+        },
+        {
+            "name": "Valentin Perez",
+            "source": "https://github.com/valentin7/wwdc2015app",
+            "video": null,
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": "valentin7",
+            "twitter_username": null
+        },
+        {
+            "name": "Vignesh Varadarajan",
+            "source": null,
+            "video": "https://www.youtube.com/watch?v=yvDgPOn-1",
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": null,
+            "twitter_username": null
+        },
+        {
+            "name": "Valentin Perez",
+            "source": "https://github.com/valentin7/wwdc2015app",
+            "video": null,
+            "frameworks": [],
+            "status": "accepted",
+            "github_username": "valentin7",
+            "twitter_username": null
+        }
+    ]
 }

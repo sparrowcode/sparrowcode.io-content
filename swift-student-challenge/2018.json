@@ -1,1283 +1,2766 @@
 {
-   "developers": [
-      {
-         "name": "Aaron Cheung",
-         "source": "https://github.com/AaronCheung430/WWDC2018",
-         "video": "https://youtu.be/t9Bp4rkPh7E",
-         "frameworks": ["UIKit", "AVFoundation", "Gesture Recognizer"],
-         "status": "rejected"
-      }, {
-         "name": "Aaron Nguyen",
-         "source": "https://github.com/attwelveDev/WWDC18-Submission",
-         "video": null,
-         "frameworks": ["UIKit", "AVFoundation"],
-         "status": "rejected"
-      }, {
-         "name": "Aashna Narula",
-         "source": "https://github.com/aashna94/shapify",
-         "video": "https://youtu.be/INsfbSmFpyA",
-         "frameworks": ["SpriteKit", "UIKit"],
-         "status": "accepted"
-      }, {
-         "name": "Adann Simões",
-         "source": "https://github.com/adannsergio/WWDC18",
-         "video": null,
-         "frameworks": ["PlaygroundBooks", "UIKit", "CoreGraphics"],
-         "status": "submitted"
-      }, {
-         "name": "Adrian Labbé",
-         "source": "https://github.com/ColdGrub1384/WWDC18",
-         "video": null,
-         "frameworks": ["SpriteKit", "UIKit"],
-         "status": "rejected"
-      }, {
-         "name": "Adrián Rubio",
-         "source": "https://github.com/Adrxx/Elastic-Cat-Toaster",
-         "video": "https://youtu.be/Gc8bZLghYFY",
-         "frameworks": ["SpriteKit", "GameplayKit"],
-         "status": "accepted"
-      }, {
-         "name": "Akshaya Dinesh",
-         "source": "https://github.com/akshayadinesh/SpaceMathPlayground",
-         "video": null,
-         "frameworks": ["SpriteKit", "UIKit"],
-         "status": "accepted"
-      }, {
-         "name": "Albert Sanchez",
-         "source": "https://github.com/AlbertSanIza/TheHawkingCosmos",
-         "video": "https://youtu.be/7TKopNBXiHk",
-         "frameworks": ["SpriteKit", "SceneKit", "AVFoundation", "Foundation", "AppKit"],
-         "status": "accepted"
-      }, {
-         "name": "Alessandro Izzo",
-         "source": "https://github.com/Hantex9/PuzzlePipe",
-         "video": "https://youtu.be/SG972hlY8Ds",
-         "frameworks": ["UIKit", "GameplayKit", "AVFoundation"],
-         "status": "submitted"
-      }, {
-         "name": "Alessandro Minopoli",
-         "source": "https://github.com/alex010x/HackNscape",
-         "video": null,
-         "frameworks": ["SpriteKit", "PlaygroundBook"],
-         "status": "accepted"
-      }, {
-         "name": "Alexandre Vassinievski",
-         "source": "https://github.com/alexvassini/ArDrawing",
-         "video": null,
-         "frameworks": ["UIKit", "ARKit", "SceneKit"],
-         "status": "submitted"
-      }, {
-         "name": "Alex Santarelli",
-         "source": "https://github.com/Alexs2424/WWDC18Submission",
-         "video": "https://youtu.be/1nwITyqhbsk",
-         "frameworks": ["ARKit", "JSON Parsing"],
-         "status": "accepted"
-      }, {
-         "name": "Alexis Aubry",
-         "source": "https://github.com/alexaubry/MLMOJI",
-         "video": "https://www.youtube.com/watch?v=Z7jdLrorctQ",
-         "frameworks": ["Core ML", "Core Image", "TensorFlow", "Playground Book"],
-         "status": "rejected"
-      }, {
-         "name": "Ali Kheirkhah",
-         "source": "https://github.com/alikheirkhah/WWDC2018-student-Ali/",
-         "video": null,
-         "frameworks": ["UIKit", "SpriteKit", "ARKit"],
-         "status": "accepted"
-      }, {
-         "name": "Amanda Southworth",
-         "source": null,
-         "video": null,
-         "frameworks": ["UIKit", "CoreML", "AVFoundation", "Vision", "Foundation"],
-         "status": "submitted"
-      }, {
-         "name": "Amit Kalra",
-         "source": "https://github.com/AMITNKALRA/WWDC--18-Playground--Student-Scholarship-",
-         "video": "https://www.youtube.com/watch?v=_5lBBduQzLo",
-         "frameworks": ["UIKit", "AVFoundation", "Gesture Recognizer"],
-         "status": "accepted"
-      }, {
-         "name": "Andreas Neusuess",
-         "source": "https://github.com/Tantalum73/WWDC18ScholarshipSubmission",
-         "video": null,
-         "frameworks": ["AVFoundation", "UIKit", "CoreAnimation", "CoreImage"],
-         "status": "accepted"
-      }, {
-         "name": "Andy Vainauskas",
-         "source": "https://github.com/AndyJVain/crack-the-code",
-         "video": null,
-         "frameworks": ["AVFoundation", "UIKit"],
-         "status": "accepted"
-      }, {
-         "name": "Anıl Gürses",
-         "source": "https://github.com/anlgrses/wwdc2018submission",
-         "video": null,
-         "frameworks": ["UIKit", "AVFoundation"],
-         "status": "submitted"
-      }, {
-         "name": "Anirudh Natarajan",
-         "source": "https://github.com/aniNatarajan12/RushToWWDC",
-         "video": "https://www.youtube.com/watch?v=IN3XOPIYWsY",
-         "frameworks": ["ARKit", "SceneKit", "SpriteKit", "AVFoundation"],
-         "status": "accepted"
-      }, {
-         "name": "Antonio Zaitoun",
-         "source": "https://github.com/Minitour/Micro-Interface-Builder",
-         "video": "https://www.youtube.com/watch?v=G0yjMRrsG7c",
-         "frameworks": ["UIKit", "SceneKit", "CoreGraphics", "CoreAnimation"],
-         "status": "submitted"
-      }, {
-         "name": "Arno Appenzeller",
-         "source": "https://github.com/arnoappenzeller/WWC18-Scholarship-Submission",
-         "video": null,
-         "frameworks": ["UIKit", "PlaygroundBook"],
-         "status": "submitted"
-      }, {
-         "name": "Arthur Schiller",
-         "source": null,
-         "video": "https://www.youtube.com/watch?v=5CnECMTf42k&t",
-         "frameworks": ["UIKit", "ARKit", "SceneKit", "SpriteKit", "Metal", "GameplayKit"],
-         "status": "accepted"
-      }, {
-         "name": "Arved Viehweger",
-         "source": "https://github.com/arvedviehweger/WWDC2018/tree/master",
-         "video": "https://www.youtube.com/watch?v=A6qPTykNCCQ&lc=",
-         "frameworks": ["UIKit", "SceneKit", "AVFoundation"],
-         "status": "accepted"
-      }, {
-         "name": "Aryan Kashyap",
-         "source": null,
-         "video": null,
-         "frameworks": ["UIKit", "SpriteKit", "AVFoundation", "PlaygroundSupport", "PlaygroundBook"],
-         "status": "accepted"
-      }, {
-         "name": "Aryeh Greenberg",
-         "source": "https://github.com/arr00/WWDC-2018-Playground",
-         "video": "https://www.youtube.com/watch?v=UoPWOobgWnk",
-         "frameworks": ["SpriteKit", "AVFoundation", "UIKit"],
-         "status": "accepted"
-      }, {
-         "name": "August Heegaard",
-         "source": "https://github.com/agisboye/PokeGAN",
-         "video": null,
-         "frameworks": ["AppKit", "CoreML", "Foundation"],
-         "status": "accepted"
-      }, {
-         "name": "Aulene De",
-         "source": "https://github.com/Aulene/CaptureTheAlien",
-         "video": null,
-         "frameworks": ["SpriteKit"],
-         "status": "accepted"
-      }, {
-         "name": "Austin Fuller",
-         "source": "https://github.com/AustinFuller/WWDC2018Playground",
-         "video": null,
-         "frameworks": ["UIKit", "AVFoundation", "CoreGraphics"],
-         "status": "rejected"
-      }, {
-         "name": "Axel Boberg",
-         "source": "https://github.com/axelboberg/WWDC18",
-         "video": null,
-         "frameworks": ["CoreML", "AVFoundation", "UIKit"],
-         "status": "accepted"
-      }, {
-         "name": "Bart Wesselink",
-         "source": "https://github.com/bartwesselink/wwdc18-smart-cars",
-         "video": "https://youtu.be/DXJYjCuj7YI",
-         "frameworks": ["AVFoundation", "SpriteKit", "PlaygroundBooks"],
-         "status": "accepted"
-      }, {
-         "name": "Batuhan Saka",
-         "source": null,
-         "video": null,
-         "frameworks": ["SpriteKit", "UIKit", "AVFoundation"],
-         "status": "accepted"
-      }, {
-         "name": "Bahadir Oncel",
-         "source": "https://github.com/b-onc/GuessTheView",
-         "video": null,
-         "frameworks": ["UIKit"],
-         "status": "rejected"
-      }, {
-         "name": "Ben Emdon",
-         "source": "https://github.com/BenEmdon/8-Bit-MusicMaker",
-         "video": null,
-         "frameworks": ["UIKit", "AVFoundation"],
-         "status": "accepted"
-      }, {
-         "name": "Bernardo Sarto de Lucena",
-         "source": "https://github.com/bslucena/wwdc18",
-         "video": "https://youtu.be/oVV-3rXvtx4",
-         "frameworks": ["UIKit", "SpriteKit"],
-         "status": "submitted"
-      }, {
-         "name": "Bradley Mackey",
-         "source": "https://github.com/bradleymackey/rsa-playground",
-         "video": "https://youtu.be/d36YmVfUD9s",
-         "frameworks": ["SpriteKit", "SceneKit", "GameplayKit", "UIKit"],
-         "status": "accepted"
-      }, {
-         "name": "Brandon Chester",
-         "source": "https://github.com/nexusCFX/Mixer",
-         "video": null,
-         "frameworks": ["UIKit", "AVFoundation", "Core Animation"],
-         "status": "accepted"
-      }, {
-         "name": "Brenda Lau",
-         "source": null,
-         "video": "https://youtu.be/GBjFjhVzFdc",
-         "frameworks": ["CoreML", "Vision", "AVKit"],
-         "status": "accepted"
-      }, {
-         "name": "Bruno Chagas",
-         "source": "https://github.com/bruno3chagas/ShapeRave",
-         "video": "https://youtu.be/fM53qPnnk5M",
-         "frameworks": ["SpriteKit", "UIKit"],
-         "status": "submitted"
-      }, {
-         "name": "Bruno Scheltzke",
-         "source": "https://github.com/BrunoScheltzke/Rhythm-Learning-Playground",
-         "video": "https://www.youtube.com/watch?v=-_mpH9haHxE&feature=youtu.be",
-         "frameworks": ["UIKit", "AVFoundation"],
-         "status": "accepted"
-      }, {
-         "name": "Carlo Carpio",
-         "source": "https://github.com/CarloCarpio93/ProjectTesla",
-         "video": "https://www.youtube.com/watch?v=bxd26oV6p48&t=16s",
-         "frameworks": ["SpriteKit", "UIKit", "Playground books"],
-         "status": "accepted"
-      }, {
-         "name": "Carlo Palumbo",
-         "source": "https://github.com/patana93/Go-To-Space-With-Electronic-WWDC18",
-         "video": "https://youtu.be/QkqDQUVv5VQ",
-         "frameworks": ["SpriteKit", "Playground books"],
-         "status": "accepted"
-      }, {
-         "name": "Chan Jing Hong",
-         "source": "https://github.com/cjinghong/RiddlePhoneX",
-         "video": "https://www.youtube.com/watch?v=IDysiA4j1RU",
-         "frameworks": ["UIKit"],
-         "status": "accepted"
-      }, {
-         "name": "Chip Beck",
-         "source": "https://github.com/ch1pa/WWDC-2018-Scholarship-Application/",
-         "video": null,
-         "frameworks": ["UIKit", "MapKit", "AVKit", "CoreGraphics"],
-         "status": "accepted"
-      }, {
-         "name": "Charles Schacher",
-         "source": "https://github.com/quoimec/Colour",
-         "video": null,
-         "frameworks": ["UIKit"],
-         "status": "accepted"
-      }, {
-         "name": "Charles-Olivier Demers",
-         "source": "https://github.com/charlot567/WWDC-2018",
-         "video": null,
-         "frameworks": ["UIKit", "SpriteKit", "Playground book"],
-         "status": "rejected"
-      }, {
-         "name": "Christian Schnorr",
-         "source": "https://github.com/jenox/WWDC-2018-Bezier-Curves-in-Typography/",
-         "video": null,
-         "frameworks": ["CoreGraphics", "CoreText"],
-         "status": "submitted"
-      }, {
-         "name": "Cibele Paulino",
-         "source": null,
-         "video": "https://www.youtube.com/watch?v=ciyNZGnbcRw",
-         "frameworks": ["SpriteKit", "UIKit", "Playground books"],
-         "status": "accepted"
-      }, {
-         "name": "Collin DeWaters",
-         "source": "https://github.com/ctdewaters/WWDC18-Scholarship-Submission",
-         "video": "https://www.youtube.com/watch?v=pjHS3-3j1xQ",
-         "frameworks": ["AppKit", "SceneKit", "AVFoundation"],
-         "status": "accepted"
-      }, {
-         "name": "Dalton Prescott",
-         "source": "https://github.com/dustarion/wwdc18",
-         "video": null,
-         "frameworks": ["UIKit", "SceneKit", "CoreML", "AVFoundation"],
-         "status": "accepted"
-      }, {
-         "name": "Daniel Gruber",
-         "source": "https://repo.goma-cms.org/users/daniel.gruber/repos/wwdc-2018/browse",
-         "video": null,
-         "frameworks": ["UIKit", "PlaygroundBooks", "CoreGraphics"],
-         "status": "accepted"
-      }, {
-         "name": "Daniel Inderwies",
-         "source": "https://github.com/daniel4Duniel/WWDC2018",
-         "video": "https://www.youtube.com/watch?v=aJufQDs8PLA",
-         "frameworks": ["UIKit", "SpriteKit", "AVFoundation"],
-         "status": "accepted"
-      }, {
-         "name": "David Nadoba",
-         "source": "https://github.com/dnadoba/games-and-math-playgroundbook",
-         "video": "https://youtu.be/95x6WlrhlG4",
-         "frameworks": ["SpriteKit", "UIKit"],
-         "status": "submitted"
-      }, {
-         "name": "Débora Moura",
-         "source": "https://github.com/deboramour4/KeepCalm",
-         "video": "https://www.youtube.com/watch?v=Z-cjsfjlDfQ",
-         "frameworks": ["UIKit", "CoreGraphics"],
-         "status": "accepted"
-      }, {
-         "name": "Dowland Aiello",
-         "source": "https://github.com/dowlandaiello/Pop",
-         "video": "https://youtu.be/MWhHSGbS3gM",
-         "frameworks": ["AppKit", "SpriteKit", "Foundation"],
-         "status": "submitted"
-      }, {
-         "name": "Eduardo Yutaka Nakanishi",
-         "source": "https://github.com/eduardoyutaka/magical-sketch",
-         "video": "https://www.youtube.com/watch?v=H1Jo0hcLpIE",
-         "frameworks": ["UIKit", "CoreMotion"],
-         "status": "submitted"
-      }, {
-         "name": "Egor Zhdan",
-         "source": "https://github.com/egorzhdan/wwdc18",
-         "video": null,
-         "frameworks": ["Cocoa", "SpriteKit"],
-         "status": "accepted"
-      }, {
-         "name": "Eliott Hauteclair",
-         "source": null,
-         "video": null,
-         "frameworks": ["AVFoundation", "UIKit"],
-         "status": "rejected"
-      }, {
-         "name": "Emannuel Carvalho",
-         "source": "https://github.com/emannuelOC/WWDC2018",
-         "video": "https://www.youtube.com/watch?v=o0N6a5QapB0&feature=youtu.be",
-         "frameworks": ["Vision", "CALayer", "Core Animation", "AVCapture", "UIKit"],
-         "status": "submitted"
-      }, {
-         "name": "Erick Borges",
-         "source": "https://github.com/ericklborges/Animandalas",
-         "video": "https://www.youtube.com/watch?v=ljRl9g29zg0&feature=youtu.be",
-         "frameworks": ["Core Graphics"],
-         "status": "accepted"
-      }, {
-         "name": "Erik Martin",
-         "source": "https://github.com/techgeek1129/WWDC-2018-Scholarship-Submission",
-         "video": null,
-         "frameworks": ["SpriteKit", "Cocoa"],
-         "status": "accepted"
-      }, {
-         "name": "Erik Maximilian Martens",
-         "source": "https://github.com/erikmartens/WWDC-2018-Scholarship-Submission",
-         "video": null,
-         "frameworks": ["UIKit", "SpriteKit"],
-         "status": "rejected"
-      }, {
-         "name": "Ethan Humphrey",
-         "source": "https://github.com/EthanTheInnovator/SearchForMacOS",
-         "video": "https://youtu.be/cUQqg0XxhhM",
-         "frameworks": ["SpriteKit"],
-         "status": "accepted"
-      }, {
-         "name": "Ferdinand Loesch",
-         "source": "https://github.com/ferdinandl007/WWDC-project-2018",
-         "video": null,
-         "frameworks": ["AVFoundation", "CIDetector", "SpriteKit", "Cocoa"],
-         "status": "accepted"
-      }, {
-         "name": "Florian Pfisterer",
-         "source": "https://github.com/FlorianPfisterer/wwdc18-playground",
-         "video": null,
-         "frameworks": ["CoreGraphics", "CoreAnimation", "UIKit", "CoreText"],
-         "status": "submitted"
-      }, {
-         "name": "Francesc Bruguera",
-         "source": "https://github.com/ifrins/wwdc-2018-atc-playground/",
-         "video": "https://youtu.be/pWUEkQliDcc",
-         "frameworks": ["UIKit", "CoreGraphics", "PlaygroundBooks"],
-         "status": "submitted"
-      }, {
-         "name": "Francesco Chiusolo",
-         "source": "https://github.com/Donald90/ExploringSpace",
-         "video": null,
-         "frameworks": ["SpriteKit"],
-         "status": "rejected"
-      }, {
-         "name": "Francesco Trusiano",
-         "source": "https://github.com/FrancescoTr/WWDC-2018-Scholarship-Submission/",
-         "video": "https://youtu.be/XqmbZuS13Lo",
-         "frameworks": ["SpriteKit", "UIKit", "PlaygroundBooks"],
-         "status": "submitted"
-      }, {
-         "name": "Francisco Fabregat",
-         "source": null,
-         "video": null,
-         "frameworks": ["SpriteKit", "GameplayKit", "AVFoundation", "UIKit"],
-         "status": "accepted"
-      }, {
-         "name": "Gabriel D'Luca",
-         "source": "https://github.com/gabrieldluca/celestial",
-         "video": "https://www.youtube.com/watch?v=iRJNFNwN-RE",
-         "frameworks": ["UIKit", "SceneKit", "AVFoundation"],
-         "status": "accepted"
-      }, {
-         "name": "Gautham Elango",
-         "source": "https://github.com/gg2001/SwiftChain",
-         "video": "https://youtu.be/4i_TtI5YmCs",
-         "frameworks": ["UIKit"],
-         "status": "rejected"
-      }, {
-         "name": "Gennaro Amura",
-         "source": null,
-         "video": "https://www.youtube.com/watch?v=hahbjaHiTOo",
-         "frameworks": ["UIKit", "Playground Book"],
-         "status": "submitted"
-      }, {
-         "name": "Geomar Bastiani",
-         "source": "https://github.com/geomarb/wwdc2018",
-         "video": "https://youtu.be/WpgWFSBuUa0",
-         "frameworks": ["SpriteKit"],
-         "status": "submitted"
-      }, {
-         "name": "Giovani Pereira",
-         "source": "https://github.com/giovaninppc/SwiftPlaygrounds/tree/master/Hueco%20Mundo",
-         "video": null,
-         "frameworks": ["UIKit", "SpriteKit"],
-         "status": "rejected"
-      }, {
-         "name": "Giovanni Bassolino",
-         "source": null,
-         "video": "https://youtu.be/qjQM4c7tfRs",
-         "frameworks": ["SpriteKit", "GameplayKit", "UIKit", "AVFoundation"],
-         "status": "accepted"
-      }, {
-         "name": "Giovanni Luigi Bruno",
-         "source": "https://github.com/GiovanniLuigi/DotsAndBoxesPlayground/tree/master",
-         "video": "https://www.youtube.com/watch?v=FIID-XjP4DQ&feature=youtu.be",
-         "frameworks": ["SpriteKit", "Gameplay Kit", "AVFoundation"],
-         "status": "accepted"
-      }, {
-         "name": "Grant Emerson",
-         "source": "https://github.com/GrantJEmerson/Fireworks",
-         "video": null,
-         "frameworks": ["AVKit", "SpriteKit", "UIKit", "GameplayKit"],
-         "status": "accepted"
-      }, {
-         "name": "Guillermo Cique",
-         "source": "https://github.com/GuiyeC/WWDC-2018",
-         "video": "https://youtu.be/MtLMERAibp8",
-         "frameworks": ["UIKit", "Playground Books", "SpriteKit"],
-         "status": "accepted"
-      }, {
-         "name": "Guozheng Zhang",
-         "source": "https://github.com/Daniel612/MusicBall",
-         "video": "https://youtu.be/pjckwZjeH7U",
-         "frameworks": ["ARKit", "SceneKit", "PlaygroundBooks"],
-         "status": "accepted"
-      }, {
-         "name": "Gustavo Crivelli",
-         "source": "https://github.com/gmCrivelli/Day-in-the-Park-WWDC18",
-         "video": null,
-         "frameworks": ["UIKit", "SpriteKit"],
-         "status": "accepted"
-      }, {
-         "name": "Haodong Hong",
-         "source": "https://github.com/scauos/WWDC18-Scholarship",
-         "video": "https://www.youtube.com/watch?v=_axv3XeIfuw&t=193s",
-         "frameworks": ["UIKit", "CoreMotion", "SceneKit", "SpriteKit", "PlaygroundBook"],
-         "status": "accepted"
-      }, {
-         "name": "Haotian Zheng",
-         "source": "https://github.com/JustinFincher/WWDC-18-Scholarship-Project",
-         "video": null,
-         "frameworks": ["UIKit", "SceneKit", "ModelIO", "GameplayKit"],
-         "status": "accepted"
-      }, {
-         "name": "Harish Yerra",
-         "source": "https://github.com/hyerra/PixelFun",
-         "video": null,
-         "frameworks": ["CoreML", "ARKit", "Core Image"],
-         "status": "accepted"
-      }, {
-         "name": "Harshita Arora",
-         "source": "https://github.com/harshitaarora/Alice-in-codeLand",
-         "video": "https://youtu.be/X0fZRXtIpkM",
-         "frameworks": ["UIKit"],
-         "status": "submitted"
-      }, {
-         "name": "Hengyu Liu",
-         "source": null,
-         "video": null,
-         "frameworks": ["UIKit", "PlaygroundBooks"],
-         "status": "rejected"
-      }, {
-         "name": "Hengyu Zhou",
-         "source": null,
-         "video": "https://www.youtube.com/watch?v=cZHQ5dmkglA",
-         "frameworks": ["ARKit", "CoreGraphics", "SceneKit", "UIKit"],
-         "status": "rejected"
-      }, {
-         "name": "Henrik Storch",
-         "source": "https://github.com/thisisthefoxe/wwdc18",
-         "video": "https://www.youtube.com/watch?v=EDvdbKoTuR4",
-         "frameworks": ["UIKit", "SceneKit", "ARKit", "PlaygroundBook"],
-         "status": "accepted"
-      }, {
-         "name": "Henrique Velloso",
-         "source": null,
-         "video": null,
-         "frameworks": ["UIKit", "ARKit", "Playground"],
-         "status": "accepted"
-      }, {
-         "name": "Henry Gu",
-         "source": "https://github.com/hg1722/mnist_invaders",
-         "video": null,
-         "frameworks": ["UIKit", "SpriteKit", "CoreML", "AVFoundation"],
-         "status": "submitted"
-      }, {
-         "name": "Hugo Lispector",
-         "source": "https://github.com/HugoLis/WWDC18-Scholarship",
-         "video": "https://itunes.apple.com/br/app/aster/id1385736929?l=en&mt=8",
-         "frameworks": ["SpriteKit", "AVFoundation"],
-         "status": "accepted"
-      }, {
-         "name": "Hugo Lundin",
-         "source": "https://github.com/hugolundin/TuringMachines",
-         "video": null,
-         "frameworks": ["UIKit", "PlaygroundBooks"],
-         "status": "submitted"
-      }, {
-         "name": "Iaconelli Luca",
-         "source": "https://github.com/Luca9307/WWDC_2018",
-         "video": null,
-         "frameworks": ["UIKit", "PlaygroundBooks"],
-         "status": "submitted"
-      }, {
-         "name": "Igor Rinkovec",
-         "source": "https://github.com/TheWildHorse/GuillochePlayground",
-         "video": "https://www.youtube.com/watch?v=UzRLZKDSB0I",
-         "frameworks": ["SceneKit", "UIKit", "PlaygroundBooks"],
-         "status": "accepted"
-      }, {
-         "name": "Ilias Ennmouri",
-         "source": "https://github.com/iIias/Blastar-wwdc18/",
-         "video": null,
-         "frameworks": ["GameplayKit", "SpriteKit"],
-         "status": "accepted"
-      }, {
-         "name": "Jack Bruienne",
-         "source": "https://github.com/MCJack123/Copy-and-Place",
-         "video": "https://jackmacwindows.tumblr.com",
-         "frameworks": ["Core ML", "ARKit", "SpriteKit", "AVFoundation"],
-         "status": "rejected"
-      }, {
-         "name": "Jack Elms",
-         "source": "https://github.com/elmo364/WWDC-CraigBot",
-         "video": null,
-         "frameworks": ["SpriteKit", "UIKit", "AVFoundation", "CoreGraphics"],
-         "status": "accepted"
-      }, {
-         "name": "Jacky Yu",
-         "source": "https://github.com/CaptainYukinoshitaHachiman/Lenses",
-         "video": null,
-         "frameworks": ["UIKit"],
-         "status": "rejected"
-      }, {
-         "name": "Jacob Patel",
-         "source": "https://github.com/jacobseanpatel/Foosball",
-         "video": null,
-         "frameworks": ["SpriteKit", "UIKit", "AVFoundation"],
-         "status": "submitted"
-      }, {
-         "name": "Jai Bhavnani",
-         "source": "https://github.com/jbhav24/wwdc18",
-         "video": null,
-         "frameworks": ["UIKit", "SceneKit", "AVFoundation", "Core Animation", "UIGestures", "Dispatch", "Core Graphics"],
-         "status": "submitted"
-      }, {
-         "name": "James Dale",
-         "source": "https://github.com/JamesDale",
-         "video": null,
-         "frameworks": ["ARKit", "SceneKit", "CoreML"],
-         "status": "accepted"
-      }, {
-         "name": "Jari Koopman",
-         "source": "https://github.com/MrLotU/WWDC18",
-         "video": null,
-         "frameworks": ["UIKit", "GameplayKit"],
-         "status": "submitted"
-      }, {
-         "name": "Jason Idris",
-         "source": "https://github.com/coffeeboo/WWDC18",
-         "video": "https://giphy.com/gifs/oOQWCqhvfrsmVTW6qc",
-         "frameworks": ["UIKit", "SpriteKit", "Core ML", "Vision"],
-         "status": "rejected"
-      }, {
-         "name": "Javier de Martín",
-         "source": "https://github.com/javierdemartin/WWDC18",
-         "video": null,
-         "frameworks": ["UIKit", "SceneKit", "ARKit"],
-         "status": "submitted"
-      }, {
-         "name": "Jay Lees",
-         "source": "https://github.com/jaylees14/WWDC18",
-         "video": null,
-         "frameworks": ["UIKit", "SceneKit", "ARKit"],
-         "status": "accepted"
-      }, {
-         "name": "Joel Rorseth",
-         "source": "https://github.com/joelrorseth/World-Tour",
-         "video": null,
-         "frameworks": ["UIKit", "SpriteKit"],
-         "status": "accepted"
-      }, {
-         "name": "John Wahlig",
-         "source": null,
-         "video": null,
-         "frameworks": ["UIKit"],
-         "status": "accepted"
-      }, {
-         "name": "Jonathon Derr",
-         "source": null,
-         "video": "https://youtu.be/yYlwYRZ-HC0",
-         "frameworks": ["SpriteKit", "Appkit"],
-         "status": "accepted"
-      }, {
-         "name": "Jordan Osterberg",
-         "source": "https://github.com/JordanOsterberg/WWDC",
-         "video": "https://www.youtube.com/watch?v=pt4cq_p6Img",
-         "frameworks": ["SpriteKit", "SceneKit", "ARKit", "PlaygroundBooks", "Accessibility"],
-         "status": "accepted"
-      }, {
-         "name": "Julian Schiavo",
-         "source": "https://github.com/justjs/wwdc",
-         "video": "https://www.youtube.com/watch?v=Sxq3bxzBPwY",
-         "frameworks": ["AppKit", "SpriteKit", "AVFoundation"],
-         "status": "accepted"
-      }, {
-         "name": "Julio Brazil",
-         "source": "https://github.com/JulioBBL/Playground",
-         "video": null,
-         "frameworks": ["SpriteKit"],
-         "status": "rejected"
-      }, {
-         "name": "Kanishka Williamson",
-         "source": null,
-         "video": "https://www.youtube.com/watch?v=Fpyr3zwESJM&t=135s",
-         "frameworks": ["SceneKit", "UIKit", "AVFoundation"],
-         "status": "rejected"
-      }, {
-         "name": "Kamil Kosowski",
-         "source": null,
-         "video": "https://www.youtube.com/watch?v=y74i_7dIZeI",
-         "frameworks": ["UIKit", "CoreGraphics", "CoreAnimation"],
-         "status": "submitted"
-      }, {
-         "name": "KK Chen",
-         "source": "https://github.com/bichenkk/blockchain-swift-playground",
-         "video": null,
-         "frameworks": ["UIKit"],
-         "status": "submitted"
-      }, {
-         "name": "Klemens Strasser",
-         "source": "https://github.com/KlemensStrasser/BlindspotPlayground/",
-         "video": null,
-         "frameworks": ["Accessibility", "SpriteKit", "AVFoundation"],
-         "status": "accepted"
-      }, {
-         "name": "Krish Suchdev",
-         "source": null,
-         "video": null,
-         "frameworks": ["UIKit", "Playground Book", "CoreGraphics"],
-         "status": "accepted"
-      }, {
-         "name": "Kuixi Song",
-         "source": "https://github.com/songkuixi/ARTargetShooting",
-         "video": "https://www.youtube.com/watch?v=mMFkfY6NURs",
-         "frameworks": ["SceneKit", "ARKit", "AudioToolBox", "PlaygroundSupport"],
-         "status": "accepted"
-      }, {
-         "name": "Kyle Spadaro",
-         "source": "https://github.com/kylespadaro2/WWDC/tree/master/2018",
-         "video": null,
-         "frameworks": ["AVFoundation", "GameplayKit", "SpriteKit", "UIKit"],
-         "status": "accepted"
-      }, {
-         "name": "Lalo Martnez",
-         "source": "https://github.com/LaloMrtnz/Miles",
-         "video": "https://www.youtube.com/watch?v=gX_dBSTE-cE",
-         "frameworks": ["AudioToolbox", "AVFoundation", "MIDI", "SpriteKit"],
-         "status": "submitted"
-      }, {
-         "name": "Lars Schwegmann",
-         "source": "https://github.com/larsschwegmann/WWDC18-Scholarship-Submission",
-         "video": null,
-         "frameworks": ["SpriteKit", "GampleyKit", "AppKit", "CoreGraphics"],
-         "status": "submitted"
-      }, {
-         "name": "Lennart Fischer",
-         "source": null,
-         "video": null,
-         "frameworks": ["ARKit", "SceneKit", "CoreAudioKit", "AudioUnit", "AudioToolkit", "AVFoundation", "UIKit"],
-         "status": "accepted"
-      }, {
-         "name": "Leo Li",
-         "source": "https://github.com/leo4life2/wwdc18",
-         "video": null,
-         "frameworks": ["SpriteKit", "UIKit"],
-         "status": "accepted"
-      }, {
-         "name": "Leo Vallet",
-         "source": "https://github.com/leovallet",
-         "video": "https://bit.ly/wwdc-accessibility",
-         "frameworks": ["ARKit", "UIKit", "SceneKit", "AVFoundation"],
-         "status": "accepted"
-      }, {
-         "name": "Leon Hahne",
-         "source": "https://github.com/Limoo/WWDC",
-         "video": "https://youtu.be/JHujapuFdEk",
-         "frameworks": ["SpriteKit"],
-         "status": "submitted"
-      }, {
-         "name": "Leonel Lima",
-         "source": "https://github.com/leo1mml/WWDC2018",
-         "video": "https://www.youtube.com/watch?v=N-DQeb1bKKk",
-         "frameworks": ["SpriteKit", "GameplayKit", "UIKit", "AVFoundation"],
-         "status": "submitted"
-      }, {
-         "name": "Llogari Casas",
-         "source": "https://github.com/llogaricasas/WWDC2018",
-         "video": "https://youtu.be/MTmifyGFKRM",
-         "frameworks": ["UIKit", "CoreML"],
-         "status": "rejected"
-      }, {
-         "name": "Lucas Assis Rodrigues",
-         "source": "https://github.com/LucasAssisRo/ColorPiano_WWDC2018_Submission/tree/master",
-         "video": "https://youtu.be/gdMyAIu8nBI",
-         "frameworks": ["AVFoundation", "UIKit"],
-         "status": "accepted"
-      }, {
-         "name": "Luis Mautone",
-         "source": "https://github.com/luismautone/SketchAFacePlaygroundbook",
-         "video": "https://www.youtube.com/watch?v=X_SGP63TJTQ",
-         "frameworks": ["UIKit", "CoreAnimation", "CoreGraphics", "PlaygroundBook"],
-         "status": "accepted"
-      }, {
-         "name": "Lukas A. Mueller",
-         "source": "https://github.com/luki/wwdc-2018",
-         "video": "https://www.youtube.com/watch?v=H6R0QEuuVow",
-         "frameworks": ["Darwin", "SpriteKit", "UIKit"],
-         "status": "submitted"
-      }, {
-         "name": "Maisa Milena",
-         "source": "https://github.com/MaisaMilena/WWDC18_Photosynthesis",
-         "video": "https://www.youtube.com/watch?v=HvdIz6x3TTc",
-         "frameworks": ["SpriteKit", "AVFoundation"],
-         "status": "accepted"
-      }, {
-         "name": "Marcos Castaneda",
-         "source": "https://github.com/marcoss/FruityML",
-         "video": null,
-         "frameworks": ["UIKit", "CoreML", "Vision", "AVFoundation"],
-         "status": "accepted"
-      }, {
-         "name": "Marko Crnković",
-         "source": "https://github.com/chih98/wwdc2018",
-         "video": "https://youtu.be/TLk9B5GRLtM",
-         "frameworks": ["Accelerate", "AVFoundation", "SpriteKit"],
-         "status": "accepted"
-      }, {
-         "name": "Marcel Hagmann",
-         "source": "https://github.com/Marceeelll/WWDC18",
-         "video": "https://youtu.be/UIMMhYHxPxQ",
-         "frameworks": ["UIKit", "AVFoundation", "CAEmitterLayer", "UIViewPropertyAnimator", "CAKeyframeAnimation"],
-         "status": "accepted"
-      }, {
-         "name": "Mars Geldard",
-         "source": "https://github.com/TheMartianLife/WWDC-2018",
-         "video": null,
-         "frameworks": ["UIKit", "SpriteKit", "PlaygroundBooks", "AVFoundation"],
-         "status": "accepted"
-      }, {
-         "name": "Matheus Rabelo",
-         "source": "https://github.com/omatheusr/Lost-Knight",
-         "video": null,
-         "frameworks": ["SpriteKit"],
-         "status": "accepted"
-      }, {
-         "name": "Matheus Tusi",
-         "source": "https://github.com/mattusi/WWDC18_Submission",
-         "video": null,
-         "frameworks": ["CoreML", "UIKit-Dynamics", "CoreMotion", "Vision", "ARKit", "SceneKit"],
-         "status": "accepted"
-      }, {
-         "name": "Mathieu Francois",
-         "source": null,
-         "video": null,
-         "frameworks": ["UIKit"],
-         "status": "rejected"
-      }, {
-         "name": "Mattia Fonisto",
-         "source": "https://github.com/Uzarel/Heart-of-Mathematics",
-         "video": "https://youtu.be/_BiAqXCkpPA",
-         "frameworks": ["UIKit", "SpriteKit", "CoreGraphics"],
-         "status": "accepted"
-      }, {
-         "name": "Mauricio Lorenzetti",
-         "source": "https://github.com/mauricio-lorenzetti/Connecting-Dots-WWDC18",
-         "video": null,
-         "frameworks": ["CoreAnimation", "UIKit"],
-         "status": "accepted"
-      }, {
-         "name": "Maxim Eremenko",
-         "source": "https://github.com/devMEremenko/wwdc-2018",
-         "video": "https://www.youtube.com/watch?v=i1Xdys91hqc",
-         "frameworks": ["VIPER", "UIKit", "UIView.Animation", "Operations"],
-         "status": "submitted"
-      }, {
-         "name": "Mehul Mohan",
-         "source": "https://github.com/mehulmpt/wwdc2018",
-         "video": "https://www.youtube.com/watch?v=Hg0k5xvj68s",
-         "frameworks": ["SpriteKit", "AVFoundation"],
-         "status": "submitted"
-      }, {
-         "name": "Michaeł Froehlich",
-         "source": "https://github.com/FroeMic/at.frhlch.ios.playground.wwdc2018",
-         "video": null,
-         "frameworks": ["SpriteKit", "Detailed Writeup"],
-         "status": "accepted"
-      }, {
-         "name": "Michał Cichecki",
-         "source": "https://github.com/mcichecki/mini-piano",
-         "video": null,
-         "frameworks": ["SpriteKit", "AVFoundation"],
-         "status": "accepted"
-      }, {
-         "name": "Miguel Salinas",
-         "source": "https://github.com/Vercantez/Synesthesia",
-         "video": "https://youtu.be/hIYFR4CwJ9I",
-         "frameworks": ["Accelerate", "AVFoundation", "Cocoa"],
-         "status": "accepted"
-      }, {
-         "name": "Mikey T. Krieger",
-         "source": "https://github.com/mtkrieger/AstroYoga",
-         "video": "https://youtu.be/qE-lkiyXM1E",
-         "frameworks": ["Playground Books", "UIKit", "SceneKit", "SpriteKit"],
-         "status": "rejected"
-      }, {
-         "name": "Ming Mai",
-         "source": "https://github.com/kingcos/ML-Scratch-WWDC18",
-         "video": null,
-         "frameworks": ["ARKit", "CoreML", "PlaugroundBooks", "SceneKit", "Vision"],
-         "status": "submitted"
-      }, {
-         "name": "Mingyuan Hu",
-         "source": null,
-         "video": "https://www.youtube.com/watch?v=uEBkfUbR7Ys",
-         "frameworks": ["CoreGraphics", "UIKit"],
-         "status": "accepted"
-      }, {
-         "name": "Mohamed Salah",
-         "source": "https://github.com/MoHamEdSaLaHH/WWDC18-Scholarship-Submission",
-         "video": "https://www.youtube.com/watch?v=O5AdeSrqHw4",
-         "frameworks": ["UIKit", "AVFoundation", "SceneKit", "CoreGraphics"],
-         "status": "rejected"
-      }, {
-         "name": "Monika Zielonka",
-         "source": null,
-         "video": "https://youtu.be/Dmbo9deFmvI",
-         "frameworks": ["UIKit", "Core Animation", "Core Graphics"],
-         "status": "submitted"
-      }, {
-         "name": "Moritz Bruder",
-         "source": "https://github.com/moritzbruder/DesignPattern-Playground",
-         "video": null,
-         "frameworks": ["UIKit"],
-         "status": "accepted"
-      }, {
-         "name": "Moritz Philip Recke",
-         "source": "https://github.com/mprecke/The-Illusion-Of-Movement",
-         "video": "https://github.com/mprecke/The-Illusion-Of-Movement/blob/master/The-Illusion-Of-Movement.gif",
-         "frameworks": ["UIKit", "AVFoundation", "PlaygroundSupport", "PlaygroundBook"],
-         "status": "accepted"
-      }, {
-         "name": "Nadin Tamer",
-         "source": "https://github.com/nadintamer/The-Code-of-Life",
-         "video": null,
-         "frameworks": ["UIKit", "SpriteKit", "AVFoundation"],
-         "status": "accepted"
-      }, {
-         "name": "Naman Bishnoi",
-         "source": "https://github.com/diabloxenon/Realtime-Shortest-Route-App",
-         "video": null,
-         "frameworks": ["MapKit", "UIKit"],
-         "status": "rejected"
-      }, {
-         "name": "Nathan Gitter",
-         "source": "https://github.com/nathangitter/PentatonicGameOfLife",
-         "video": null,
-         "frameworks": ["SpriteKit"],
-         "status": "accepted"
-      }, {
-         "name": "Nicholas Grana",
-         "source": "https://github.com/Nicholas714/WWDC-2018",
-         "video": "https://youtu.be/xpKNT1dRKks",
-         "frameworks": ["ARKit", "SceneKit", "SpriteKit"],
-         "status": "accepted"
-      }, {
-         "name": "Niklas Buelow",
-         "source": "https://github.com/insightmind/WWDC18Scholarship",
-         "video": null,
-         "frameworks": ["SpriteKit", "SpriteKit-Spring"],
-         "status": "accepted"
-      }, {
-         "name": "Nikolas Ioannou",
-         "source": null,
-         "video": null,
-         "frameworks": ["UIKit", "CoreGraphics"],
-         "status": "accepted"
-      }, {
-         "name": "Nils Leif Fischer",
-         "source": "https://github.com/nilsleiffischer/gravitational-waves-playground",
-         "video": null,
-         "frameworks": ["SceneKit", "Metal", "PlaygroundBook"],
-         "status": "accepted"
-      }, {
-         "name": "Nirmit Patel",
-         "source": null,
-         "video": null,
-         "frameworks": ["UIKit", "ARKit", "SceneKit", "SpriteKit"],
-         "status": "submitted"
-      }, {
-         "name": "Oleg Dreyman",
-         "source": "https://github.com/dreymonde/Paperville",
-         "video": null,
-         "frameworks": ["UIKit", "Core Animation"],
-         "status": "accepted"
-      }, {
-         "name": "Olivier Lemer",
-         "source": "https://github.com/OlivierLmr/wwdc18",
-         "video": null,
-         "frameworks": ["SpriteKit", "AVFoundation"],
-         "status": "accepted"
-      }, {
-         "name": "Omar Albeik",
-         "source": "https://github.com/omaralbeik/mnist-coreml",
-         "video": "https://www.youtube.com/watch?v=d-6gJKAojDY",
-         "frameworks": ["UIKit", "CoreML", "Keras"],
-         "status": "accepted"
-      }, {
-         "name": "Osama Naeem",
-         "source": "https://github.com/Onaeem26/passcodewwdc",
-         "video": "https://www.youtube.com/watch?v=6OSWDy9NW90",
-         "frameworks": ["UIKit", "CoreAnimation", "CADisplayLink", "UIBezierPath"],
-         "status": "accepted"
-      }, {
-         "name": "Ozan Mirza",
-         "source": "https://github.com/ozanmirza1/PaintPad-2.0",
-         "video": null,
-         "frameworks": ["UIKit"],
-         "status": "submitted"
-      }, {
-         "name": "Paige Sun",
-         "source": "https://github.com/p-sun/ARPowerPanels",
-         "video": null,
-         "frameworks": ["ARKit", "SceneKit", "Metal", "PlaygroundBook", "iOS framework", "iOS app"],
-         "status": "rejected"
-      }, {
-         "name": "Peter Simon",
-         "source": "https://github.com/donleysimon/WWDC-2018-Colorless",
-         "video": null,
-         "frameworks": ["UIKit", "CoreImage"],
-         "status": "submitted"
-      }, {
-         "name": "Qingyang Hu",
-         "source": "https://github.com/mmlmml1/Waves",
-         "video": null,
-         "frameworks": ["SceneKit", "SpriteKit", "ARKit", "UIKit", "PlaygroundBooks"],
-         "status": "submitted"
-      }, {
-         "name": "Raffael Kaehn",
-         "source": "https://github.com/vortycon/WWDC18",
-         "video": "https://youtu.be/KFWYJvmqPio",
-         "frameworks": ["UIKit", "SceneKit"],
-         "status": "accepted"
-      }, {
-         "name": "Răzvan Geangu",
-         "source": "https://github.com/razvangeangu/WWDC18-SpaceWord",
-         "video": null,
-         "frameworks": ["SpriteKit", "UIKit", "AVFoundation"],
-         "status": "rejected"
-      }, {
-         "name": "Renan Magagnin",
-         "source": "https://github.com/renanmagagnin/orbs-wwdc18",
-         "video": "https://youtu.be/W-tzS0x1SiA",
-         "frameworks": ["SpriteKit", "AVFoundation"],
-         "status": "accepted"
-      }, {
-         "name": "Renan Silveira",
-         "source": "https://github.com/rnnsilveira/SolarSystSimulatorWWDC2018",
-         "video": null,
-         "frameworks": ["SpriteKit", "UIKit"],
-         "status": "submitted"
-      }, {
-         "name": "Renata Faria",
-         "source": "https://github.com/xReee/wwdc2018",
-         "video": "https://www.youtube.com/watch?v=YHBSvNmBFBY&t",
-         "frameworks": ["UIKit", "AVFoundation", "Accessibility", "NotificationCenter", "UIGestures"],
-         "status": "rejected"
-      }, {
-         "name": "Ricardo Ferreira",
-         "source": null,
-         "video": "https://youtu.be/u_ohynGdFIo",
-         "frameworks": ["UIKit", "ARKit", "SpriteKit", "SceneKit", "AVFoundation"],
-         "status": "accepted"
-      }, {
-         "name": "Ricardo V. Del Frari",
-         "source": "https://github.com/ricardovdf/wwdc2018",
-         "video": "https://www.youtube.com/watch?v=-KsAopkgNXM&feature=youtu.be",
-         "frameworks": ["SpriteKit"],
-         "status": "rejected"
-      }, {
-         "name": "Roland Horváth",
-         "source": "https://github.com/hroland/wwdc18",
-         "video": "https://www.youtube.com/watch?v=19DRxB3yxy4",
-         "frameworks": ["ARKit", "SceneKit", "UIKit", "Speech"],
-         "status": "accepted"
-      }, {
-         "name": "Ryan Klohr",
-         "source": null,
-         "video": null,
-         "frameworks": ["GameKit", "AVFoundation", "SpriteKit"],
-         "status": "rejected"
-      }, {
-         "name": "Sai Kambampati",
-         "source": "https://github.com/aidev1065/Rock-Paper-Scissors-AI---WWDC-2018/blob/master/README.md",
-         "video": "https://youtube.com/watch?v=jzcuVkW8M0U",
-         "frameworks": ["CoreML", "ARKit", "SceneKit", "UIKit", "AVFoundation", "Microsoft's [Custom Vision](customvision.ai)"],
-         "status": "accepted"
-      }, {
-         "name": "Salman Husain",
-         "source": "https://github.com/shusain93/WWDC18",
-         "video": "https://www.youtube.com/watch?v=GHlE__BtQBk",
-         "frameworks": ["SpriteKit", "UIKit", "Playground Books"],
-         "status": "accepted"
-      }, {
-         "name": "Sam Eckert",
-         "source": null,
-         "video": "https://youtu.be/vEyxsDpCYdY",
-         "frameworks": ["ARKit", "SceneKit", "UIKit (+Dynamics)", "AVKit", "AVFoundation"],
-         "status": "rejected"
-      }, {
-         "name": "Samay Shamdasani",
-         "source": "https://github.com/shamdasani/SwiftFrameworks",
-         "video": "https://www.youtube.com/watch?v=b3Huqtw2log",
-         "frameworks": ["SceneKit", "Core Animation", "Core Graphics", "UIKit", "AVFoundation", "Vision"],
-         "status": "accepted"
-      }, {
-         "name": "Sandra Grujovic",
-         "source": "https://github.com/melloskitten/Avocadance",
-         "video": "https://youtu.be/4VQUpnFYjmE",
-         "frameworks": ["UIKit", "SpriteKit"],
-         "status": "accepted"
-      }, {
-         "name": "Sanjay Soni",
-         "source": null,
-         "video": null,
-         "frameworks": ["GameKit", "GameplayKit", "SpriteKit", "UIKit"],
-         "status": "submitted"
-      }, {
-         "name": "Sergen Gönenç",
-         "source": "https://github.com/sergendev/Swiftgaea",
-         "video": null,
-         "frameworks": ["UIKit", "CoreGraphics"],
-         "status": "accepted"
-      }, {
-         "name": "Shunzhe Ma",
-         "source": null,
-         "video": null,
-         "frameworks": ["UIKit", "SceneKit", "Core Animation"],
-         "status": "accepted"
-      }, {
-         "name": "Sinchan Maitri",
-         "source": "https://github.com/sinchanmaitri/WWDC18-Playground",
-         "video": "https://www.youtube.com/watch?v=VNyO4Q-nbvM",
-         "frameworks": ["UIKit", "SpriteKit", "Core Animation", "AVFoundation"],
-         "status": "accepted"
-      }, {
-         "name": "Sophia Kalanovska",
-         "source": "https://github.com/SophiaKalanovska/WWDC18",
-         "video": null,
-         "frameworks": ["XCPlayground", "UIKit", "GameplayKit", "AVFoundation"],
-         "status": "submitted"
-      }, {
-         "name": "Soroush Shahi",
-         "source": null,
-         "video": null,
-         "frameworks": ["SpriteKit", "GamePlayKit", "AVFoundation"],
-         "status": "submitted"
-      }, {
-         "name": "Sunghyun Cho",
-         "source": "https://github.com/anaclumos/WWDC2018-Scholarship-Submission",
-         "video": null,
-         "frameworks": ["UIKit", "PlaygroundSupport"],
-         "status": "accepted"
-      }, {
-         "name": "Tassos Chouliaras",
-         "source": "https://gitlab.com/t4sso/thegameofdiversity",
-         "video": null,
-         "frameworks": ["UIKit", "SpriteKit", "Core Graphics"],
-         "status": "accepted"
-      }, {
-         "name": "Thijs van der Heijden",
-         "source": "https://github.com/thijsheijden/WWDC18-Scholarship-Submission",
-         "video": "https://www.youtube.com/watch?v=ZvwVWEtRFsw&t=16s&ab_channel=ThijsvanderHeijden",
-         "frameworks": ["UIKit", "CoreML", "Vision", "AVFoundation"],
-         "status": "accepted"
-      }, {
-         "name": "TJ Ledwith",
-         "source": "https://github.com/makertech81/WWDC_2018",
-         "video": null,
-         "frameworks": ["UIKit", "SpriteKit", "AVFoundation", "Gesture Recognition"],
-         "status": "submitted"
-      }, {
-         "name": "Valmir Massoni Jr.",
-         "source": "https://github.com/vrjunior/Metamorphosis",
-         "video": "https://youtu.be/r2Xgh0uxGe0",
-         "frameworks": ["SceneKit", "AVFoundation"],
-         "status": "rejected"
-      }, {
-         "name": "Veit Progl",
-         "source": "https://github.com/Veeit/WWDC_2018",
-         "video": null,
-         "frameworks": ["UIKit", "CoreML", "SceneKit", "ARKit"],
-         "status": "submitted"
-      }, {
-         "name": "Victor Kreniski",
-         "source": "https://github.com/krevi27/WWDC18",
-         "video": "https://www.youtube.com/watch?v=P17qt8iYJ_4",
-         "frameworks": ["SpriteKit", "AVFoundation"],
-         "status": "submitted"
-      }, {
-         "name": "Vincent Cai",
-         "source": "https://github.com/Vince14Genius/My-WWDC-Scholarship-Submissions/tree/master/WWDC18",
-         "video": null,
-         "frameworks": ["ARKit", "SceneKit", "UIKit"],
-         "status": "rejected"
-      }, {
-         "name": "Vincenzo Aceto",
-         "source": "https://github.com/vinzaceto/WWDCPlayground",
-         "video": "https://youtu.be/cvkEDOhAg4w",
-         "frameworks": ["UIKit", "AVFoundation", "Vision", "CoreML"],
-         "status": "accepted"
-      }, {
-         "name": "Walter Zhu",
-         "source": "https://github.com/Walter0807/Logic-Gates",
-         "video": null,
-         "frameworks": ["UIKit", "CoreGraphics", "PlaygroundBooks"],
-         "status": "accepted"
-      }, {
-         "name": "Wei Dai",
-         "source": "https://github.com/zjdavid/Trajector",
-         "video": null,
-         "frameworks": ["UIKit Dynamics", "GameplayKit", "AVFoundation"],
-         "status": "submitted"
-      }, {
-         "name": "Weiran Du",
-         "source": "https://github.com/stringconstant/WWDC_2018_Submission",
-         "video": "https://www.youtube.com/watch?v=gHZuYHE78yw",
-         "frameworks": ["UIKit", "CoreGraphics"],
-         "status": "accepted"
-      }, {
-         "name": "William Taylor",
-         "source": null,
-         "video": "https://youtu.be/qXgyTGIG_Xw",
-         "frameworks": ["SpriteKit", "ARKit", "AVFoundation", "UIKit"],
-         "status": "accepted"
-      }, {
-         "name": "Witek Bobrowski",
-         "source": "https://github.com/witekbobrowski/wwdc18-submission",
-         "video": null,
-         "frameworks": ["UIKit", "AVFoundation", "MVVM-C", "Dependency-Injection"],
-         "status": "accepted"
-      }, {
-         "name": "Yash Banka",
-         "source": "https://github.com/yash-banka/WWDC18",
-         "video": null,
-         "frameworks": ["UIKit", "Foundation", "AVFoundation", "PlaygroundBook"],
-         "status": "accepted"
-      }, {
-         "name": "Yichen Cao",
-         "source": "https://github.com/Schemetrical",
-         "video": null,
-         "frameworks": ["UIKit", "CoreML"],
-         "status": "accepted"
-      }, {
-         "name": "Yogesh Kohli",
-         "source": "https://github.com/yogesh2209/YPad-SwiftPlaygroundBook",
-         "video": "https://www.youtube.com/watch?v=SD5_bKDZiOk&t=3s",
-         "frameworks": ["UIKit", "Core Animation", "AVFoundation"],
-         "status": "submitted"
-      }, {
-         "name": "Yongkang Chen",
-         "source": "https://github.com/iWeslie/WWDC18",
-         "video": "https://youtu.be/nokdtApjAsg",
-         "frameworks": ["UIKit", "QuartzCore", "CoreGraphics", "Dispatch", "Foundation"],
-         "status": "submitted"
-      }, {
-         "name": "Yuma Soerianto",
-         "source": null,
-         "video": "https://youtu.be/2uAzEMprtfw",
-         "frameworks": ["ARKit", "UIKit", "SceneKit", "AVFoundation"],
-         "status": "accepted"
-      }, {
-         "name": "Yuta Saito",
-         "source": "https://github.com/kateinoigakukun/wwdc-2018",
-         "video": null,
-         "frameworks": ["UIKit", "Foundation"],
-         "status": "submitted"
-      }, {
-         "name": "Zach Knox",
-         "source": "https://github.com/zmknox/WWDC18-Scholarship-Application",
-         "video": "https://youtu.be/Kl4ZJdD8dkY",
-         "frameworks": ["SpriteKit"],
-         "status": "accepted"
-      }, {
-         "name": "Zach Simone",
-         "source": "https://github.com/zachsimone/WWDC18-Insulin-Pump-Simulator",
-         "video": null,
-         "frameworks": ["UIKit"],
-         "status": "accepted"
-      }, {
-         "name": "Zhang Bozheng",
-         "source": "https://github.com/zbz-lvlv/Chemistry_WWDC18",
-         "video": "https://youtu.be/IKefnNeZKf4",
-         "frameworks": ["SpriteKit", "AVFoundation"],
-         "status": "accepted"
-      }, {
-         "name": "Zhixing Zhang",
-         "source": "https://github.com/Neotoxin4365/WWDC18",
-         "video": "https://youtu.be/vfzuN8sozR0",
-         "frameworks": ["UIKit", "CoreAnimation", "CoreGraphics", "Carthage"],
-         "status": "rejected"
-      }, {
-         "name": "Zhiyu Zhu",
-         "source": "https://github.com/ApolloZhu/Pong-Hau-K-i",
-         "video": null,
-         "frameworks": ["AppKit", "CoreGraphics", "GameplayKit", "SpriteKit"],
-         "status": "accepted"
-      }, {
-         "name": "Zixuan Tang",
-         "source": "https://github.com/TonyTang2001/Internet-Traffic-WWDC18-Scholarship",
-         "video": "https://youtu.be/hXHF-s-IwUw",
-         "frameworks": ["UIKit", "AudioToolBox"],
-         "status": "accepted"
-      }, {
-         "name": "Ziyao Zhang",
-         "source": "https://github.com/ziyaointl/Fourier",
-         "video": null,
-         "frameworks": ["UIKit", "AVFoundation", "Accelerate", "SceneKit", "Interface Builder", "Core Animation", "PlaygroundBook"],
-         "status": "accepted"
-      }
-   ]
+    "developers": [
+        {
+            "name": "Aaron Cheung",
+            "source": "https://github.com/AaronCheung430/WWDC2018",
+            "video": "https://youtu.be/t9Bp4rkPh7E",
+            "frameworks": [
+                "UIKit",
+                "AVFoundation",
+                "Gesture Recognizer"
+            ],
+            "status": "rejected",
+            "github_username": "AaronCheung430",
+            "twitter_username": null
+        },
+        {
+            "name": "Aaron Nguyen",
+            "source": "https://github.com/attwelveDev/WWDC18-Submission",
+            "video": null,
+            "frameworks": [
+                "UIKit",
+                "AVFoundation"
+            ],
+            "status": "rejected",
+            "github_username": "attwelveDev",
+            "twitter_username": null
+        },
+        {
+            "name": "Aashna Narula",
+            "source": "https://github.com/aashna94/shapify",
+            "video": "https://youtu.be/INsfbSmFpyA",
+            "frameworks": [
+                "SpriteKit",
+                "UIKit"
+            ],
+            "status": "accepted",
+            "github_username": "aashna94",
+            "twitter_username": null
+        },
+        {
+            "name": "Adann Sim\u00f5es",
+            "source": "https://github.com/adannsergio/WWDC18",
+            "video": null,
+            "frameworks": [
+                "PlaygroundBooks",
+                "UIKit",
+                "CoreGraphics"
+            ],
+            "status": "submitted",
+            "github_username": "adannsergio",
+            "twitter_username": null
+        },
+        {
+            "name": "Adrian Labb\u00e9",
+            "source": "https://github.com/ColdGrub1384/WWDC18",
+            "video": null,
+            "frameworks": [
+                "SpriteKit",
+                "UIKit"
+            ],
+            "status": "rejected",
+            "github_username": "ColdGrub1384",
+            "twitter_username": null
+        },
+        {
+            "name": "Adri\u00e1n Rubio",
+            "source": "https://github.com/Adrxx/Elastic-Cat-Toaster",
+            "video": "https://youtu.be/Gc8bZLghYFY",
+            "frameworks": [
+                "SpriteKit",
+                "GameplayKit"
+            ],
+            "status": "accepted",
+            "github_username": "Adrxx",
+            "twitter_username": null
+        },
+        {
+            "name": "Akshaya Dinesh",
+            "source": "https://github.com/akshayadinesh/SpaceMathPlayground",
+            "video": null,
+            "frameworks": [
+                "SpriteKit",
+                "UIKit"
+            ],
+            "status": "accepted",
+            "github_username": "akshayadinesh",
+            "twitter_username": null
+        },
+        {
+            "name": "Albert Sanchez",
+            "source": "https://github.com/AlbertSanIza/TheHawkingCosmos",
+            "video": "https://youtu.be/7TKopNBXiHk",
+            "frameworks": [
+                "SpriteKit",
+                "SceneKit",
+                "AVFoundation",
+                "Foundation",
+                "AppKit"
+            ],
+            "status": "accepted",
+            "github_username": "AlbertSanIza",
+            "twitter_username": null
+        },
+        {
+            "name": "Alessandro Izzo",
+            "source": "https://github.com/Hantex9/PuzzlePipe",
+            "video": "https://youtu.be/SG972hlY8Ds",
+            "frameworks": [
+                "UIKit",
+                "GameplayKit",
+                "AVFoundation"
+            ],
+            "status": "submitted",
+            "github_username": "Hantex9",
+            "twitter_username": null
+        },
+        {
+            "name": "Alessandro Minopoli",
+            "source": "https://github.com/alex010x/HackNscape",
+            "video": null,
+            "frameworks": [
+                "SpriteKit",
+                "PlaygroundBook"
+            ],
+            "status": "accepted",
+            "github_username": "alex010x",
+            "twitter_username": null
+        },
+        {
+            "name": "Alexandre Vassinievski",
+            "source": "https://github.com/alexvassini/ArDrawing",
+            "video": null,
+            "frameworks": [
+                "UIKit",
+                "ARKit",
+                "SceneKit"
+            ],
+            "status": "submitted",
+            "github_username": "alexvassini",
+            "twitter_username": null
+        },
+        {
+            "name": "Alex Santarelli",
+            "source": "https://github.com/Alexs2424/WWDC18Submission",
+            "video": "https://youtu.be/1nwITyqhbsk",
+            "frameworks": [
+                "ARKit",
+                "JSON Parsing"
+            ],
+            "status": "accepted",
+            "github_username": "Alexs2424",
+            "twitter_username": null
+        },
+        {
+            "name": "Alexis Aubry",
+            "source": "https://github.com/alexaubry/MLMOJI",
+            "video": "https://www.youtube.com/watch?v=Z7jdLrorctQ",
+            "frameworks": [
+                "Core ML",
+                "Core Image",
+                "TensorFlow",
+                "Playground Book"
+            ],
+            "status": "rejected",
+            "github_username": "alexaubry",
+            "twitter_username": null
+        },
+        {
+            "name": "Ali Kheirkhah",
+            "source": "https://github.com/alikheirkhah/WWDC2018-student-Ali/",
+            "video": null,
+            "frameworks": [
+                "UIKit",
+                "SpriteKit",
+                "ARKit"
+            ],
+            "status": "accepted",
+            "github_username": "alikheirkhah",
+            "twitter_username": null
+        },
+        {
+            "name": "Amanda Southworth",
+            "source": null,
+            "video": null,
+            "frameworks": [
+                "UIKit",
+                "CoreML",
+                "AVFoundation",
+                "Vision",
+                "Foundation"
+            ],
+            "status": "submitted",
+            "github_username": null,
+            "twitter_username": null
+        },
+        {
+            "name": "Amit Kalra",
+            "source": "https://github.com/AMITNKALRA/WWDC--18-Playground--Student-Scholarship-",
+            "video": "https://www.youtube.com/watch?v=_5lBBduQzLo",
+            "frameworks": [
+                "UIKit",
+                "AVFoundation",
+                "Gesture Recognizer"
+            ],
+            "status": "accepted",
+            "github_username": "AMITNKALRA",
+            "twitter_username": null
+        },
+        {
+            "name": "Andreas Neusuess",
+            "source": "https://github.com/Tantalum73/WWDC18ScholarshipSubmission",
+            "video": null,
+            "frameworks": [
+                "AVFoundation",
+                "UIKit",
+                "CoreAnimation",
+                "CoreImage"
+            ],
+            "status": "accepted",
+            "github_username": "Tantalum73",
+            "twitter_username": null
+        },
+        {
+            "name": "Andy Vainauskas",
+            "source": "https://github.com/AndyJVain/crack-the-code",
+            "video": null,
+            "frameworks": [
+                "AVFoundation",
+                "UIKit"
+            ],
+            "status": "accepted",
+            "github_username": "AndyJVain",
+            "twitter_username": null
+        },
+        {
+            "name": "An\u0131l G\u00fcrses",
+            "source": "https://github.com/anlgrses/wwdc2018submission",
+            "video": null,
+            "frameworks": [
+                "UIKit",
+                "AVFoundation"
+            ],
+            "status": "submitted",
+            "github_username": "anlgrses",
+            "twitter_username": null
+        },
+        {
+            "name": "Anirudh Natarajan",
+            "source": "https://github.com/aniNatarajan12/RushToWWDC",
+            "video": "https://www.youtube.com/watch?v=IN3XOPIYWsY",
+            "frameworks": [
+                "ARKit",
+                "SceneKit",
+                "SpriteKit",
+                "AVFoundation"
+            ],
+            "status": "accepted",
+            "github_username": "aniNatarajan12",
+            "twitter_username": null
+        },
+        {
+            "name": "Antonio Zaitoun",
+            "source": "https://github.com/Minitour/Micro-Interface-Builder",
+            "video": "https://www.youtube.com/watch?v=G0yjMRrsG7c",
+            "frameworks": [
+                "UIKit",
+                "SceneKit",
+                "CoreGraphics",
+                "CoreAnimation"
+            ],
+            "status": "submitted",
+            "github_username": "Minitour",
+            "twitter_username": null
+        },
+        {
+            "name": "Arno Appenzeller",
+            "source": "https://github.com/arnoappenzeller/WWC18-Scholarship-Submission",
+            "video": null,
+            "frameworks": [
+                "UIKit",
+                "PlaygroundBook"
+            ],
+            "status": "submitted",
+            "github_username": "arnoappenzeller",
+            "twitter_username": null
+        },
+        {
+            "name": "Arthur Schiller",
+            "source": null,
+            "video": "https://www.youtube.com/watch?v=5CnECMTf42k&t",
+            "frameworks": [
+                "UIKit",
+                "ARKit",
+                "SceneKit",
+                "SpriteKit",
+                "Metal",
+                "GameplayKit"
+            ],
+            "status": "accepted",
+            "github_username": null,
+            "twitter_username": null
+        },
+        {
+            "name": "Arved Viehweger",
+            "source": "https://github.com/arvedviehweger/WWDC2018/tree/master",
+            "video": "https://www.youtube.com/watch?v=A6qPTykNCCQ&lc=",
+            "frameworks": [
+                "UIKit",
+                "SceneKit",
+                "AVFoundation"
+            ],
+            "status": "accepted",
+            "github_username": "arvedviehweger",
+            "twitter_username": null
+        },
+        {
+            "name": "Aryan Kashyap",
+            "source": null,
+            "video": null,
+            "frameworks": [
+                "UIKit",
+                "SpriteKit",
+                "AVFoundation",
+                "PlaygroundSupport",
+                "PlaygroundBook"
+            ],
+            "status": "accepted",
+            "github_username": null,
+            "twitter_username": null
+        },
+        {
+            "name": "Aryeh Greenberg",
+            "source": "https://github.com/arr00/WWDC-2018-Playground",
+            "video": "https://www.youtube.com/watch?v=UoPWOobgWnk",
+            "frameworks": [
+                "SpriteKit",
+                "AVFoundation",
+                "UIKit"
+            ],
+            "status": "accepted",
+            "github_username": "arr00",
+            "twitter_username": null
+        },
+        {
+            "name": "August Heegaard",
+            "source": "https://github.com/agisboye/PokeGAN",
+            "video": null,
+            "frameworks": [
+                "AppKit",
+                "CoreML",
+                "Foundation"
+            ],
+            "status": "accepted",
+            "github_username": "agisboye",
+            "twitter_username": null
+        },
+        {
+            "name": "Aulene De",
+            "source": "https://github.com/Aulene/CaptureTheAlien",
+            "video": null,
+            "frameworks": [
+                "SpriteKit"
+            ],
+            "status": "accepted",
+            "github_username": "Aulene",
+            "twitter_username": null
+        },
+        {
+            "name": "Austin Fuller",
+            "source": "https://github.com/AustinFuller/WWDC2018Playground",
+            "video": null,
+            "frameworks": [
+                "UIKit",
+                "AVFoundation",
+                "CoreGraphics"
+            ],
+            "status": "rejected",
+            "github_username": "AustinFuller",
+            "twitter_username": null
+        },
+        {
+            "name": "Axel Boberg",
+            "source": "https://github.com/axelboberg/WWDC18",
+            "video": null,
+            "frameworks": [
+                "CoreML",
+                "AVFoundation",
+                "UIKit"
+            ],
+            "status": "accepted",
+            "github_username": "axelboberg",
+            "twitter_username": null
+        },
+        {
+            "name": "Bart Wesselink",
+            "source": "https://github.com/bartwesselink/wwdc18-smart-cars",
+            "video": "https://youtu.be/DXJYjCuj7YI",
+            "frameworks": [
+                "AVFoundation",
+                "SpriteKit",
+                "PlaygroundBooks"
+            ],
+            "status": "accepted",
+            "github_username": "bartwesselink",
+            "twitter_username": null
+        },
+        {
+            "name": "Batuhan Saka",
+            "source": null,
+            "video": null,
+            "frameworks": [
+                "SpriteKit",
+                "UIKit",
+                "AVFoundation"
+            ],
+            "status": "accepted",
+            "github_username": null,
+            "twitter_username": null
+        },
+        {
+            "name": "Bahadir Oncel",
+            "source": "https://github.com/b-onc/GuessTheView",
+            "video": null,
+            "frameworks": [
+                "UIKit"
+            ],
+            "status": "rejected",
+            "github_username": "b-onc",
+            "twitter_username": null
+        },
+        {
+            "name": "Ben Emdon",
+            "source": "https://github.com/BenEmdon/8-Bit-MusicMaker",
+            "video": null,
+            "frameworks": [
+                "UIKit",
+                "AVFoundation"
+            ],
+            "status": "accepted",
+            "github_username": "BenEmdon",
+            "twitter_username": null
+        },
+        {
+            "name": "Bernardo Sarto de Lucena",
+            "source": "https://github.com/bslucena/wwdc18",
+            "video": "https://youtu.be/oVV-3rXvtx4",
+            "frameworks": [
+                "UIKit",
+                "SpriteKit"
+            ],
+            "status": "submitted",
+            "github_username": "bslucena",
+            "twitter_username": null
+        },
+        {
+            "name": "Bradley Mackey",
+            "source": "https://github.com/bradleymackey/rsa-playground",
+            "video": "https://youtu.be/d36YmVfUD9s",
+            "frameworks": [
+                "SpriteKit",
+                "SceneKit",
+                "GameplayKit",
+                "UIKit"
+            ],
+            "status": "accepted",
+            "github_username": "bradleymackey",
+            "twitter_username": null
+        },
+        {
+            "name": "Brandon Chester",
+            "source": "https://github.com/nexusCFX/Mixer",
+            "video": null,
+            "frameworks": [
+                "UIKit",
+                "AVFoundation",
+                "Core Animation"
+            ],
+            "status": "accepted",
+            "github_username": "nexusCFX",
+            "twitter_username": null
+        },
+        {
+            "name": "Brenda Lau",
+            "source": null,
+            "video": "https://youtu.be/GBjFjhVzFdc",
+            "frameworks": [
+                "CoreML",
+                "Vision",
+                "AVKit"
+            ],
+            "status": "accepted",
+            "github_username": null,
+            "twitter_username": null
+        },
+        {
+            "name": "Bruno Chagas",
+            "source": "https://github.com/bruno3chagas/ShapeRave",
+            "video": "https://youtu.be/fM53qPnnk5M",
+            "frameworks": [
+                "SpriteKit",
+                "UIKit"
+            ],
+            "status": "submitted",
+            "github_username": "bruno3chagas",
+            "twitter_username": null
+        },
+        {
+            "name": "Bruno Scheltzke",
+            "source": "https://github.com/BrunoScheltzke/Rhythm-Learning-Playground",
+            "video": "https://www.youtube.com/watch?v=-_mpH9haHxE&feature=youtu.be",
+            "frameworks": [
+                "UIKit",
+                "AVFoundation"
+            ],
+            "status": "accepted",
+            "github_username": "BrunoScheltzke",
+            "twitter_username": null
+        },
+        {
+            "name": "Carlo Carpio",
+            "source": "https://github.com/CarloCarpio93/ProjectTesla",
+            "video": "https://www.youtube.com/watch?v=bxd26oV6p48&t=16s",
+            "frameworks": [
+                "SpriteKit",
+                "UIKit",
+                "Playground books"
+            ],
+            "status": "accepted",
+            "github_username": "CarloCarpio93",
+            "twitter_username": null
+        },
+        {
+            "name": "Carlo Palumbo",
+            "source": "https://github.com/patana93/Go-To-Space-With-Electronic-WWDC18",
+            "video": "https://youtu.be/QkqDQUVv5VQ",
+            "frameworks": [
+                "SpriteKit",
+                "Playground books"
+            ],
+            "status": "accepted",
+            "github_username": "patana93",
+            "twitter_username": null
+        },
+        {
+            "name": "Chan Jing Hong",
+            "source": "https://github.com/cjinghong/RiddlePhoneX",
+            "video": "https://www.youtube.com/watch?v=IDysiA4j1RU",
+            "frameworks": [
+                "UIKit"
+            ],
+            "status": "accepted",
+            "github_username": "cjinghong",
+            "twitter_username": null
+        },
+        {
+            "name": "Chip Beck",
+            "source": "https://github.com/ch1pa/WWDC-2018-Scholarship-Application/",
+            "video": null,
+            "frameworks": [
+                "UIKit",
+                "MapKit",
+                "AVKit",
+                "CoreGraphics"
+            ],
+            "status": "accepted",
+            "github_username": "ch1pa",
+            "twitter_username": null
+        },
+        {
+            "name": "Charles Schacher",
+            "source": "https://github.com/quoimec/Colour",
+            "video": null,
+            "frameworks": [
+                "UIKit"
+            ],
+            "status": "accepted",
+            "github_username": "quoimec",
+            "twitter_username": null
+        },
+        {
+            "name": "Charles-Olivier Demers",
+            "source": "https://github.com/charlot567/WWDC-2018",
+            "video": null,
+            "frameworks": [
+                "UIKit",
+                "SpriteKit",
+                "Playground book"
+            ],
+            "status": "rejected",
+            "github_username": "charlot567",
+            "twitter_username": null
+        },
+        {
+            "name": "Christian Schnorr",
+            "source": "https://github.com/jenox/WWDC-2018-Bezier-Curves-in-Typography/",
+            "video": null,
+            "frameworks": [
+                "CoreGraphics",
+                "CoreText"
+            ],
+            "status": "submitted",
+            "github_username": "jenox",
+            "twitter_username": null
+        },
+        {
+            "name": "Cibele Paulino",
+            "source": null,
+            "video": "https://www.youtube.com/watch?v=ciyNZGnbcRw",
+            "frameworks": [
+                "SpriteKit",
+                "UIKit",
+                "Playground books"
+            ],
+            "status": "accepted",
+            "github_username": null,
+            "twitter_username": null
+        },
+        {
+            "name": "Collin DeWaters",
+            "source": "https://github.com/ctdewaters/WWDC18-Scholarship-Submission",
+            "video": "https://www.youtube.com/watch?v=pjHS3-3j1xQ",
+            "frameworks": [
+                "AppKit",
+                "SceneKit",
+                "AVFoundation"
+            ],
+            "status": "accepted",
+            "github_username": "ctdewaters",
+            "twitter_username": null
+        },
+        {
+            "name": "Dalton Prescott",
+            "source": "https://github.com/dustarion/wwdc18",
+            "video": null,
+            "frameworks": [
+                "UIKit",
+                "SceneKit",
+                "CoreML",
+                "AVFoundation"
+            ],
+            "status": "accepted",
+            "github_username": "dustarion",
+            "twitter_username": null
+        },
+        {
+            "name": "Daniel Gruber",
+            "source": "https://repo.goma-cms.org/users/daniel.gruber/repos/wwdc-2018/browse",
+            "video": null,
+            "frameworks": [
+                "UIKit",
+                "PlaygroundBooks",
+                "CoreGraphics"
+            ],
+            "status": "accepted",
+            "github_username": null,
+            "twitter_username": null
+        },
+        {
+            "name": "Daniel Inderwies",
+            "source": "https://github.com/daniel4Duniel/WWDC2018",
+            "video": "https://www.youtube.com/watch?v=aJufQDs8PLA",
+            "frameworks": [
+                "UIKit",
+                "SpriteKit",
+                "AVFoundation"
+            ],
+            "status": "accepted",
+            "github_username": "daniel4Duniel",
+            "twitter_username": null
+        },
+        {
+            "name": "David Nadoba",
+            "source": "https://github.com/dnadoba/games-and-math-playgroundbook",
+            "video": "https://youtu.be/95x6WlrhlG4",
+            "frameworks": [
+                "SpriteKit",
+                "UIKit"
+            ],
+            "status": "submitted",
+            "github_username": "dnadoba",
+            "twitter_username": null
+        },
+        {
+            "name": "D\u00e9bora Moura",
+            "source": "https://github.com/deboramour4/KeepCalm",
+            "video": "https://www.youtube.com/watch?v=Z-cjsfjlDfQ",
+            "frameworks": [
+                "UIKit",
+                "CoreGraphics"
+            ],
+            "status": "accepted",
+            "github_username": "deboramour4",
+            "twitter_username": null
+        },
+        {
+            "name": "Dowland Aiello",
+            "source": "https://github.com/dowlandaiello/Pop",
+            "video": "https://youtu.be/MWhHSGbS3gM",
+            "frameworks": [
+                "AppKit",
+                "SpriteKit",
+                "Foundation"
+            ],
+            "status": "submitted",
+            "github_username": "dowlandaiello",
+            "twitter_username": null
+        },
+        {
+            "name": "Eduardo Yutaka Nakanishi",
+            "source": "https://github.com/eduardoyutaka/magical-sketch",
+            "video": "https://www.youtube.com/watch?v=H1Jo0hcLpIE",
+            "frameworks": [
+                "UIKit",
+                "CoreMotion"
+            ],
+            "status": "submitted",
+            "github_username": "eduardoyutaka",
+            "twitter_username": null
+        },
+        {
+            "name": "Egor Zhdan",
+            "source": "https://github.com/egorzhdan/wwdc18",
+            "video": null,
+            "frameworks": [
+                "Cocoa",
+                "SpriteKit"
+            ],
+            "status": "accepted",
+            "github_username": "egorzhdan",
+            "twitter_username": null
+        },
+        {
+            "name": "Eliott Hauteclair",
+            "source": null,
+            "video": null,
+            "frameworks": [
+                "AVFoundation",
+                "UIKit"
+            ],
+            "status": "rejected",
+            "github_username": null,
+            "twitter_username": null
+        },
+        {
+            "name": "Emannuel Carvalho",
+            "source": "https://github.com/emannuelOC/WWDC2018",
+            "video": "https://www.youtube.com/watch?v=o0N6a5QapB0&feature=youtu.be",
+            "frameworks": [
+                "Vision",
+                "CALayer",
+                "Core Animation",
+                "AVCapture",
+                "UIKit"
+            ],
+            "status": "submitted",
+            "github_username": "emannuelOC",
+            "twitter_username": null
+        },
+        {
+            "name": "Erick Borges",
+            "source": "https://github.com/ericklborges/Animandalas",
+            "video": "https://www.youtube.com/watch?v=ljRl9g29zg0&feature=youtu.be",
+            "frameworks": [
+                "Core Graphics"
+            ],
+            "status": "accepted",
+            "github_username": "ericklborges",
+            "twitter_username": null
+        },
+        {
+            "name": "Erik Martin",
+            "source": "https://github.com/techgeek1129/WWDC-2018-Scholarship-Submission",
+            "video": null,
+            "frameworks": [
+                "SpriteKit",
+                "Cocoa"
+            ],
+            "status": "accepted",
+            "github_username": "techgeek1129",
+            "twitter_username": null
+        },
+        {
+            "name": "Erik Maximilian Martens",
+            "source": "https://github.com/erikmartens/WWDC-2018-Scholarship-Submission",
+            "video": null,
+            "frameworks": [
+                "UIKit",
+                "SpriteKit"
+            ],
+            "status": "rejected",
+            "github_username": "erikmartens",
+            "twitter_username": null
+        },
+        {
+            "name": "Ethan Humphrey",
+            "source": "https://github.com/EthanTheInnovator/SearchForMacOS",
+            "video": "https://youtu.be/cUQqg0XxhhM",
+            "frameworks": [
+                "SpriteKit"
+            ],
+            "status": "accepted",
+            "github_username": "EthanTheInnovator",
+            "twitter_username": null
+        },
+        {
+            "name": "Ferdinand Loesch",
+            "source": "https://github.com/ferdinandl007/WWDC-project-2018",
+            "video": null,
+            "frameworks": [
+                "AVFoundation",
+                "CIDetector",
+                "SpriteKit",
+                "Cocoa"
+            ],
+            "status": "accepted",
+            "github_username": "ferdinandl007",
+            "twitter_username": null
+        },
+        {
+            "name": "Florian Pfisterer",
+            "source": "https://github.com/FlorianPfisterer/wwdc18-playground",
+            "video": null,
+            "frameworks": [
+                "CoreGraphics",
+                "CoreAnimation",
+                "UIKit",
+                "CoreText"
+            ],
+            "status": "submitted",
+            "github_username": "FlorianPfisterer",
+            "twitter_username": null
+        },
+        {
+            "name": "Francesc Bruguera",
+            "source": "https://github.com/ifrins/wwdc-2018-atc-playground/",
+            "video": "https://youtu.be/pWUEkQliDcc",
+            "frameworks": [
+                "UIKit",
+                "CoreGraphics",
+                "PlaygroundBooks"
+            ],
+            "status": "submitted",
+            "github_username": "ifrins",
+            "twitter_username": null
+        },
+        {
+            "name": "Francesco Chiusolo",
+            "source": "https://github.com/Donald90/ExploringSpace",
+            "video": null,
+            "frameworks": [
+                "SpriteKit"
+            ],
+            "status": "rejected",
+            "github_username": "Donald90",
+            "twitter_username": null
+        },
+        {
+            "name": "Francesco Trusiano",
+            "source": "https://github.com/FrancescoTr/WWDC-2018-Scholarship-Submission/",
+            "video": "https://youtu.be/XqmbZuS13Lo",
+            "frameworks": [
+                "SpriteKit",
+                "UIKit",
+                "PlaygroundBooks"
+            ],
+            "status": "submitted",
+            "github_username": "FrancescoTr",
+            "twitter_username": null
+        },
+        {
+            "name": "Francisco Fabregat",
+            "source": null,
+            "video": null,
+            "frameworks": [
+                "SpriteKit",
+                "GameplayKit",
+                "AVFoundation",
+                "UIKit"
+            ],
+            "status": "accepted",
+            "github_username": null,
+            "twitter_username": null
+        },
+        {
+            "name": "Gabriel D'Luca",
+            "source": "https://github.com/gabrieldluca/celestial",
+            "video": "https://www.youtube.com/watch?v=iRJNFNwN-RE",
+            "frameworks": [
+                "UIKit",
+                "SceneKit",
+                "AVFoundation"
+            ],
+            "status": "accepted",
+            "github_username": "gabrieldluca",
+            "twitter_username": null
+        },
+        {
+            "name": "Gautham Elango",
+            "source": "https://github.com/gg2001/SwiftChain",
+            "video": "https://youtu.be/4i_TtI5YmCs",
+            "frameworks": [
+                "UIKit"
+            ],
+            "status": "rejected",
+            "github_username": "gg2001",
+            "twitter_username": null
+        },
+        {
+            "name": "Gennaro Amura",
+            "source": null,
+            "video": "https://www.youtube.com/watch?v=hahbjaHiTOo",
+            "frameworks": [
+                "UIKit",
+                "Playground Book"
+            ],
+            "status": "submitted",
+            "github_username": null,
+            "twitter_username": null
+        },
+        {
+            "name": "Geomar Bastiani",
+            "source": "https://github.com/geomarb/wwdc2018",
+            "video": "https://youtu.be/WpgWFSBuUa0",
+            "frameworks": [
+                "SpriteKit"
+            ],
+            "status": "submitted",
+            "github_username": "geomarb",
+            "twitter_username": null
+        },
+        {
+            "name": "Giovani Pereira",
+            "source": "https://github.com/giovaninppc/SwiftPlaygrounds/tree/master/Hueco%20Mundo",
+            "video": null,
+            "frameworks": [
+                "UIKit",
+                "SpriteKit"
+            ],
+            "status": "rejected",
+            "github_username": "giovaninppc",
+            "twitter_username": null
+        },
+        {
+            "name": "Giovanni Bassolino",
+            "source": null,
+            "video": "https://youtu.be/qjQM4c7tfRs",
+            "frameworks": [
+                "SpriteKit",
+                "GameplayKit",
+                "UIKit",
+                "AVFoundation"
+            ],
+            "status": "accepted",
+            "github_username": null,
+            "twitter_username": null
+        },
+        {
+            "name": "Giovanni Luigi Bruno",
+            "source": "https://github.com/GiovanniLuigi/DotsAndBoxesPlayground/tree/master",
+            "video": "https://www.youtube.com/watch?v=FIID-XjP4DQ&feature=youtu.be",
+            "frameworks": [
+                "SpriteKit",
+                "Gameplay Kit",
+                "AVFoundation"
+            ],
+            "status": "accepted",
+            "github_username": "GiovanniLuigi",
+            "twitter_username": null
+        },
+        {
+            "name": "Grant Emerson",
+            "source": "https://github.com/GrantJEmerson/Fireworks",
+            "video": null,
+            "frameworks": [
+                "AVKit",
+                "SpriteKit",
+                "UIKit",
+                "GameplayKit"
+            ],
+            "status": "accepted",
+            "github_username": "GrantJEmerson",
+            "twitter_username": null
+        },
+        {
+            "name": "Guillermo Cique",
+            "source": "https://github.com/GuiyeC/WWDC-2018",
+            "video": "https://youtu.be/MtLMERAibp8",
+            "frameworks": [
+                "UIKit",
+                "Playground Books",
+                "SpriteKit"
+            ],
+            "status": "accepted",
+            "github_username": "GuiyeC",
+            "twitter_username": null
+        },
+        {
+            "name": "Guozheng Zhang",
+            "source": "https://github.com/Daniel612/MusicBall",
+            "video": "https://youtu.be/pjckwZjeH7U",
+            "frameworks": [
+                "ARKit",
+                "SceneKit",
+                "PlaygroundBooks"
+            ],
+            "status": "accepted",
+            "github_username": "Daniel612",
+            "twitter_username": null
+        },
+        {
+            "name": "Gustavo Crivelli",
+            "source": "https://github.com/gmCrivelli/Day-in-the-Park-WWDC18",
+            "video": null,
+            "frameworks": [
+                "UIKit",
+                "SpriteKit"
+            ],
+            "status": "accepted",
+            "github_username": "gmCrivelli",
+            "twitter_username": null
+        },
+        {
+            "name": "Haodong Hong",
+            "source": "https://github.com/scauos/WWDC18-Scholarship",
+            "video": "https://www.youtube.com/watch?v=_axv3XeIfuw&t=193s",
+            "frameworks": [
+                "UIKit",
+                "CoreMotion",
+                "SceneKit",
+                "SpriteKit",
+                "PlaygroundBook"
+            ],
+            "status": "accepted",
+            "github_username": "scauos",
+            "twitter_username": null
+        },
+        {
+            "name": "Haotian Zheng",
+            "source": "https://github.com/JustinFincher/WWDC-18-Scholarship-Project",
+            "video": null,
+            "frameworks": [
+                "UIKit",
+                "SceneKit",
+                "ModelIO",
+                "GameplayKit"
+            ],
+            "status": "accepted",
+            "github_username": "JustinFincher",
+            "twitter_username": null
+        },
+        {
+            "name": "Harish Yerra",
+            "source": "https://github.com/hyerra/PixelFun",
+            "video": null,
+            "frameworks": [
+                "CoreML",
+                "ARKit",
+                "Core Image"
+            ],
+            "status": "accepted",
+            "github_username": "hyerra",
+            "twitter_username": null
+        },
+        {
+            "name": "Harshita Arora",
+            "source": "https://github.com/harshitaarora/Alice-in-codeLand",
+            "video": "https://youtu.be/X0fZRXtIpkM",
+            "frameworks": [
+                "UIKit"
+            ],
+            "status": "submitted",
+            "github_username": "harshitaarora",
+            "twitter_username": null
+        },
+        {
+            "name": "Hengyu Liu",
+            "source": null,
+            "video": null,
+            "frameworks": [
+                "UIKit",
+                "PlaygroundBooks"
+            ],
+            "status": "rejected",
+            "github_username": null,
+            "twitter_username": null
+        },
+        {
+            "name": "Hengyu Zhou",
+            "source": null,
+            "video": "https://www.youtube.com/watch?v=cZHQ5dmkglA",
+            "frameworks": [
+                "ARKit",
+                "CoreGraphics",
+                "SceneKit",
+                "UIKit"
+            ],
+            "status": "rejected",
+            "github_username": null,
+            "twitter_username": null
+        },
+        {
+            "name": "Henrik Storch",
+            "source": "https://github.com/thisisthefoxe/wwdc18",
+            "video": "https://www.youtube.com/watch?v=EDvdbKoTuR4",
+            "frameworks": [
+                "UIKit",
+                "SceneKit",
+                "ARKit",
+                "PlaygroundBook"
+            ],
+            "status": "accepted",
+            "github_username": "thisisthefoxe",
+            "twitter_username": null
+        },
+        {
+            "name": "Henrique Velloso",
+            "source": null,
+            "video": null,
+            "frameworks": [
+                "UIKit",
+                "ARKit",
+                "Playground"
+            ],
+            "status": "accepted",
+            "github_username": null,
+            "twitter_username": null
+        },
+        {
+            "name": "Henry Gu",
+            "source": "https://github.com/hg1722/mnist_invaders",
+            "video": null,
+            "frameworks": [
+                "UIKit",
+                "SpriteKit",
+                "CoreML",
+                "AVFoundation"
+            ],
+            "status": "submitted",
+            "github_username": "hg1722",
+            "twitter_username": null
+        },
+        {
+            "name": "Hugo Lispector",
+            "source": "https://github.com/HugoLis/WWDC18-Scholarship",
+            "video": "https://itunes.apple.com/br/app/aster/id1385736929?l=en&mt=8",
+            "frameworks": [
+                "SpriteKit",
+                "AVFoundation"
+            ],
+            "status": "accepted",
+            "github_username": "HugoLis",
+            "twitter_username": null
+        },
+        {
+            "name": "Hugo Lundin",
+            "source": "https://github.com/hugolundin/TuringMachines",
+            "video": null,
+            "frameworks": [
+                "UIKit",
+                "PlaygroundBooks"
+            ],
+            "status": "submitted",
+            "github_username": "hugolundin",
+            "twitter_username": null
+        },
+        {
+            "name": "Iaconelli Luca",
+            "source": "https://github.com/Luca9307/WWDC_2018",
+            "video": null,
+            "frameworks": [
+                "UIKit",
+                "PlaygroundBooks"
+            ],
+            "status": "submitted",
+            "github_username": "Luca9307",
+            "twitter_username": null
+        },
+        {
+            "name": "Igor Rinkovec",
+            "source": "https://github.com/TheWildHorse/GuillochePlayground",
+            "video": "https://www.youtube.com/watch?v=UzRLZKDSB0I",
+            "frameworks": [
+                "SceneKit",
+                "UIKit",
+                "PlaygroundBooks"
+            ],
+            "status": "accepted",
+            "github_username": "TheWildHorse",
+            "twitter_username": null
+        },
+        {
+            "name": "Ilias Ennmouri",
+            "source": "https://github.com/iIias/Blastar-wwdc18/",
+            "video": null,
+            "frameworks": [
+                "GameplayKit",
+                "SpriteKit"
+            ],
+            "status": "accepted",
+            "github_username": "iIias",
+            "twitter_username": null
+        },
+        {
+            "name": "Jack Bruienne",
+            "source": "https://github.com/MCJack123/Copy-and-Place",
+            "video": "https://jackmacwindows.tumblr.com",
+            "frameworks": [
+                "Core ML",
+                "ARKit",
+                "SpriteKit",
+                "AVFoundation"
+            ],
+            "status": "rejected",
+            "github_username": "MCJack123",
+            "twitter_username": null
+        },
+        {
+            "name": "Jack Elms",
+            "source": "https://github.com/elmo364/WWDC-CraigBot",
+            "video": null,
+            "frameworks": [
+                "SpriteKit",
+                "UIKit",
+                "AVFoundation",
+                "CoreGraphics"
+            ],
+            "status": "accepted",
+            "github_username": "elmo364",
+            "twitter_username": null
+        },
+        {
+            "name": "Jacky Yu",
+            "source": "https://github.com/CaptainYukinoshitaHachiman/Lenses",
+            "video": null,
+            "frameworks": [
+                "UIKit"
+            ],
+            "status": "rejected",
+            "github_username": "CaptainYukinoshitaHachiman",
+            "twitter_username": null
+        },
+        {
+            "name": "Jacob Patel",
+            "source": "https://github.com/jacobseanpatel/Foosball",
+            "video": null,
+            "frameworks": [
+                "SpriteKit",
+                "UIKit",
+                "AVFoundation"
+            ],
+            "status": "submitted",
+            "github_username": "jacobseanpatel",
+            "twitter_username": null
+        },
+        {
+            "name": "Jai Bhavnani",
+            "source": "https://github.com/jbhav24/wwdc18",
+            "video": null,
+            "frameworks": [
+                "UIKit",
+                "SceneKit",
+                "AVFoundation",
+                "Core Animation",
+                "UIGestures",
+                "Dispatch",
+                "Core Graphics"
+            ],
+            "status": "submitted",
+            "github_username": "jbhav24",
+            "twitter_username": null
+        },
+        {
+            "name": "James Dale",
+            "source": "https://github.com/JamesDale",
+            "video": null,
+            "frameworks": [
+                "ARKit",
+                "SceneKit",
+                "CoreML"
+            ],
+            "status": "accepted",
+            "github_username": "JamesDale",
+            "twitter_username": null
+        },
+        {
+            "name": "Jari Koopman",
+            "source": "https://github.com/MrLotU/WWDC18",
+            "video": null,
+            "frameworks": [
+                "UIKit",
+                "GameplayKit"
+            ],
+            "status": "submitted",
+            "github_username": "MrLotU",
+            "twitter_username": null
+        },
+        {
+            "name": "Jason Idris",
+            "source": "https://github.com/coffeeboo/WWDC18",
+            "video": "https://giphy.com/gifs/oOQWCqhvfrsmVTW6qc",
+            "frameworks": [
+                "UIKit",
+                "SpriteKit",
+                "Core ML",
+                "Vision"
+            ],
+            "status": "rejected",
+            "github_username": "coffeeboo",
+            "twitter_username": null
+        },
+        {
+            "name": "Javier de Mart\u00edn",
+            "source": "https://github.com/javierdemartin/WWDC18",
+            "video": null,
+            "frameworks": [
+                "UIKit",
+                "SceneKit",
+                "ARKit"
+            ],
+            "status": "submitted",
+            "github_username": "javierdemartin",
+            "twitter_username": null
+        },
+        {
+            "name": "Jay Lees",
+            "source": "https://github.com/jaylees14/WWDC18",
+            "video": null,
+            "frameworks": [
+                "UIKit",
+                "SceneKit",
+                "ARKit"
+            ],
+            "status": "accepted",
+            "github_username": "jaylees14",
+            "twitter_username": null
+        },
+        {
+            "name": "Joel Rorseth",
+            "source": "https://github.com/joelrorseth/World-Tour",
+            "video": null,
+            "frameworks": [
+                "UIKit",
+                "SpriteKit"
+            ],
+            "status": "accepted",
+            "github_username": "joelrorseth",
+            "twitter_username": null
+        },
+        {
+            "name": "John Wahlig",
+            "source": null,
+            "video": null,
+            "frameworks": [
+                "UIKit"
+            ],
+            "status": "accepted",
+            "github_username": null,
+            "twitter_username": null
+        },
+        {
+            "name": "Jonathon Derr",
+            "source": null,
+            "video": "https://youtu.be/yYlwYRZ-HC0",
+            "frameworks": [
+                "SpriteKit",
+                "Appkit"
+            ],
+            "status": "accepted",
+            "github_username": null,
+            "twitter_username": null
+        },
+        {
+            "name": "Jordan Osterberg",
+            "source": "https://github.com/JordanOsterberg/WWDC",
+            "video": "https://www.youtube.com/watch?v=pt4cq_p6Img",
+            "frameworks": [
+                "SpriteKit",
+                "SceneKit",
+                "ARKit",
+                "PlaygroundBooks",
+                "Accessibility"
+            ],
+            "status": "accepted",
+            "github_username": "JordanOsterberg",
+            "twitter_username": null
+        },
+        {
+            "name": "Julian Schiavo",
+            "source": "https://github.com/justjs/wwdc",
+            "video": "https://www.youtube.com/watch?v=Sxq3bxzBPwY",
+            "frameworks": [
+                "AppKit",
+                "SpriteKit",
+                "AVFoundation"
+            ],
+            "status": "accepted",
+            "github_username": "justjs",
+            "twitter_username": null
+        },
+        {
+            "name": "Julio Brazil",
+            "source": "https://github.com/JulioBBL/Playground",
+            "video": null,
+            "frameworks": [
+                "SpriteKit"
+            ],
+            "status": "rejected",
+            "github_username": "JulioBBL",
+            "twitter_username": null
+        },
+        {
+            "name": "Kanishka Williamson",
+            "source": null,
+            "video": "https://www.youtube.com/watch?v=Fpyr3zwESJM&t=135s",
+            "frameworks": [
+                "SceneKit",
+                "UIKit",
+                "AVFoundation"
+            ],
+            "status": "rejected",
+            "github_username": null,
+            "twitter_username": null
+        },
+        {
+            "name": "Kamil Kosowski",
+            "source": null,
+            "video": "https://www.youtube.com/watch?v=y74i_7dIZeI",
+            "frameworks": [
+                "UIKit",
+                "CoreGraphics",
+                "CoreAnimation"
+            ],
+            "status": "submitted",
+            "github_username": null,
+            "twitter_username": null
+        },
+        {
+            "name": "KK Chen",
+            "source": "https://github.com/bichenkk/blockchain-swift-playground",
+            "video": null,
+            "frameworks": [
+                "UIKit"
+            ],
+            "status": "submitted",
+            "github_username": "bichenkk",
+            "twitter_username": null
+        },
+        {
+            "name": "Klemens Strasser",
+            "source": "https://github.com/KlemensStrasser/BlindspotPlayground/",
+            "video": null,
+            "frameworks": [
+                "Accessibility",
+                "SpriteKit",
+                "AVFoundation"
+            ],
+            "status": "accepted",
+            "github_username": "KlemensStrasser",
+            "twitter_username": null
+        },
+        {
+            "name": "Krish Suchdev",
+            "source": null,
+            "video": null,
+            "frameworks": [
+                "UIKit",
+                "Playground Book",
+                "CoreGraphics"
+            ],
+            "status": "accepted",
+            "github_username": null,
+            "twitter_username": null
+        },
+        {
+            "name": "Kuixi Song",
+            "source": "https://github.com/songkuixi/ARTargetShooting",
+            "video": "https://www.youtube.com/watch?v=mMFkfY6NURs",
+            "frameworks": [
+                "SceneKit",
+                "ARKit",
+                "AudioToolBox",
+                "PlaygroundSupport"
+            ],
+            "status": "accepted",
+            "github_username": "songkuixi",
+            "twitter_username": null
+        },
+        {
+            "name": "Kyle Spadaro",
+            "source": "https://github.com/kylespadaro2/WWDC/tree/master/2018",
+            "video": null,
+            "frameworks": [
+                "AVFoundation",
+                "GameplayKit",
+                "SpriteKit",
+                "UIKit"
+            ],
+            "status": "accepted",
+            "github_username": "kylespadaro2",
+            "twitter_username": null
+        },
+        {
+            "name": "Lalo Martnez",
+            "source": "https://github.com/LaloMrtnz/Miles",
+            "video": "https://www.youtube.com/watch?v=gX_dBSTE-cE",
+            "frameworks": [
+                "AudioToolbox",
+                "AVFoundation",
+                "MIDI",
+                "SpriteKit"
+            ],
+            "status": "submitted",
+            "github_username": "LaloMrtnz",
+            "twitter_username": null
+        },
+        {
+            "name": "Lars Schwegmann",
+            "source": "https://github.com/larsschwegmann/WWDC18-Scholarship-Submission",
+            "video": null,
+            "frameworks": [
+                "SpriteKit",
+                "GampleyKit",
+                "AppKit",
+                "CoreGraphics"
+            ],
+            "status": "submitted",
+            "github_username": "larsschwegmann",
+            "twitter_username": null
+        },
+        {
+            "name": "Lennart Fischer",
+            "source": null,
+            "video": null,
+            "frameworks": [
+                "ARKit",
+                "SceneKit",
+                "CoreAudioKit",
+                "AudioUnit",
+                "AudioToolkit",
+                "AVFoundation",
+                "UIKit"
+            ],
+            "status": "accepted",
+            "github_username": null,
+            "twitter_username": null
+        },
+        {
+            "name": "Leo Li",
+            "source": "https://github.com/leo4life2/wwdc18",
+            "video": null,
+            "frameworks": [
+                "SpriteKit",
+                "UIKit"
+            ],
+            "status": "accepted",
+            "github_username": "leo4life2",
+            "twitter_username": null
+        },
+        {
+            "name": "Leo Vallet",
+            "source": "https://github.com/leovallet",
+            "video": "https://bit.ly/wwdc-accessibility",
+            "frameworks": [
+                "ARKit",
+                "UIKit",
+                "SceneKit",
+                "AVFoundation"
+            ],
+            "status": "accepted",
+            "github_username": "leovallet",
+            "twitter_username": null
+        },
+        {
+            "name": "Leon Hahne",
+            "source": "https://github.com/Limoo/WWDC",
+            "video": "https://youtu.be/JHujapuFdEk",
+            "frameworks": [
+                "SpriteKit"
+            ],
+            "status": "submitted",
+            "github_username": "Limoo",
+            "twitter_username": null
+        },
+        {
+            "name": "Leonel Lima",
+            "source": "https://github.com/leo1mml/WWDC2018",
+            "video": "https://www.youtube.com/watch?v=N-DQeb1bKKk",
+            "frameworks": [
+                "SpriteKit",
+                "GameplayKit",
+                "UIKit",
+                "AVFoundation"
+            ],
+            "status": "submitted",
+            "github_username": "leo1mml",
+            "twitter_username": null
+        },
+        {
+            "name": "Llogari Casas",
+            "source": "https://github.com/llogaricasas/WWDC2018",
+            "video": "https://youtu.be/MTmifyGFKRM",
+            "frameworks": [
+                "UIKit",
+                "CoreML"
+            ],
+            "status": "rejected",
+            "github_username": "llogaricasas",
+            "twitter_username": null
+        },
+        {
+            "name": "Lucas Assis Rodrigues",
+            "source": "https://github.com/LucasAssisRo/ColorPiano_WWDC2018_Submission/tree/master",
+            "video": "https://youtu.be/gdMyAIu8nBI",
+            "frameworks": [
+                "AVFoundation",
+                "UIKit"
+            ],
+            "status": "accepted",
+            "github_username": "LucasAssisRo",
+            "twitter_username": null
+        },
+        {
+            "name": "Luis Mautone",
+            "source": "https://github.com/luismautone/SketchAFacePlaygroundbook",
+            "video": "https://www.youtube.com/watch?v=X_SGP63TJTQ",
+            "frameworks": [
+                "UIKit",
+                "CoreAnimation",
+                "CoreGraphics",
+                "PlaygroundBook"
+            ],
+            "status": "accepted",
+            "github_username": "luismautone",
+            "twitter_username": null
+        },
+        {
+            "name": "Lukas A. Mueller",
+            "source": "https://github.com/luki/wwdc-2018",
+            "video": "https://www.youtube.com/watch?v=H6R0QEuuVow",
+            "frameworks": [
+                "Darwin",
+                "SpriteKit",
+                "UIKit"
+            ],
+            "status": "submitted",
+            "github_username": "luki",
+            "twitter_username": null
+        },
+        {
+            "name": "Maisa Milena",
+            "source": "https://github.com/MaisaMilena/WWDC18_Photosynthesis",
+            "video": "https://www.youtube.com/watch?v=HvdIz6x3TTc",
+            "frameworks": [
+                "SpriteKit",
+                "AVFoundation"
+            ],
+            "status": "accepted",
+            "github_username": "MaisaMilena",
+            "twitter_username": null
+        },
+        {
+            "name": "Marcos Castaneda",
+            "source": "https://github.com/marcoss/FruityML",
+            "video": null,
+            "frameworks": [
+                "UIKit",
+                "CoreML",
+                "Vision",
+                "AVFoundation"
+            ],
+            "status": "accepted",
+            "github_username": "marcoss",
+            "twitter_username": null
+        },
+        {
+            "name": "Marko Crnkovi\u0107",
+            "source": "https://github.com/chih98/wwdc2018",
+            "video": "https://youtu.be/TLk9B5GRLtM",
+            "frameworks": [
+                "Accelerate",
+                "AVFoundation",
+                "SpriteKit"
+            ],
+            "status": "accepted",
+            "github_username": "chih98",
+            "twitter_username": null
+        },
+        {
+            "name": "Marcel Hagmann",
+            "source": "https://github.com/Marceeelll/WWDC18",
+            "video": "https://youtu.be/UIMMhYHxPxQ",
+            "frameworks": [
+                "UIKit",
+                "AVFoundation",
+                "CAEmitterLayer",
+                "UIViewPropertyAnimator",
+                "CAKeyframeAnimation"
+            ],
+            "status": "accepted",
+            "github_username": "Marceeelll",
+            "twitter_username": null
+        },
+        {
+            "name": "Mars Geldard",
+            "source": "https://github.com/TheMartianLife/WWDC-2018",
+            "video": null,
+            "frameworks": [
+                "UIKit",
+                "SpriteKit",
+                "PlaygroundBooks",
+                "AVFoundation"
+            ],
+            "status": "accepted",
+            "github_username": "TheMartianLife",
+            "twitter_username": null
+        },
+        {
+            "name": "Matheus Rabelo",
+            "source": "https://github.com/omatheusr/Lost-Knight",
+            "video": null,
+            "frameworks": [
+                "SpriteKit"
+            ],
+            "status": "accepted",
+            "github_username": "omatheusr",
+            "twitter_username": null
+        },
+        {
+            "name": "Matheus Tusi",
+            "source": "https://github.com/mattusi/WWDC18_Submission",
+            "video": null,
+            "frameworks": [
+                "CoreML",
+                "UIKit-Dynamics",
+                "CoreMotion",
+                "Vision",
+                "ARKit",
+                "SceneKit"
+            ],
+            "status": "accepted",
+            "github_username": "mattusi",
+            "twitter_username": null
+        },
+        {
+            "name": "Mathieu Francois",
+            "source": null,
+            "video": null,
+            "frameworks": [
+                "UIKit"
+            ],
+            "status": "rejected",
+            "github_username": null,
+            "twitter_username": null
+        },
+        {
+            "name": "Mattia Fonisto",
+            "source": "https://github.com/Uzarel/Heart-of-Mathematics",
+            "video": "https://youtu.be/_BiAqXCkpPA",
+            "frameworks": [
+                "UIKit",
+                "SpriteKit",
+                "CoreGraphics"
+            ],
+            "status": "accepted",
+            "github_username": "Uzarel",
+            "twitter_username": null
+        },
+        {
+            "name": "Mauricio Lorenzetti",
+            "source": "https://github.com/mauricio-lorenzetti/Connecting-Dots-WWDC18",
+            "video": null,
+            "frameworks": [
+                "CoreAnimation",
+                "UIKit"
+            ],
+            "status": "accepted",
+            "github_username": "mauricio-lorenzetti",
+            "twitter_username": null
+        },
+        {
+            "name": "Maxim Eremenko",
+            "source": "https://github.com/devMEremenko/wwdc-2018",
+            "video": "https://www.youtube.com/watch?v=i1Xdys91hqc",
+            "frameworks": [
+                "VIPER",
+                "UIKit",
+                "UIView.Animation",
+                "Operations"
+            ],
+            "status": "submitted",
+            "github_username": "devMEremenko",
+            "twitter_username": null
+        },
+        {
+            "name": "Mehul Mohan",
+            "source": "https://github.com/mehulmpt/wwdc2018",
+            "video": "https://www.youtube.com/watch?v=Hg0k5xvj68s",
+            "frameworks": [
+                "SpriteKit",
+                "AVFoundation"
+            ],
+            "status": "submitted",
+            "github_username": "mehulmpt",
+            "twitter_username": null
+        },
+        {
+            "name": "Michae\u0142 Froehlich",
+            "source": "https://github.com/FroeMic/at.frhlch.ios.playground.wwdc2018",
+            "video": null,
+            "frameworks": [
+                "SpriteKit",
+                "Detailed Writeup"
+            ],
+            "status": "accepted",
+            "github_username": "FroeMic",
+            "twitter_username": null
+        },
+        {
+            "name": "Micha\u0142 Cichecki",
+            "source": "https://github.com/mcichecki/mini-piano",
+            "video": null,
+            "frameworks": [
+                "SpriteKit",
+                "AVFoundation"
+            ],
+            "status": "accepted",
+            "github_username": "mcichecki",
+            "twitter_username": null
+        },
+        {
+            "name": "Miguel Salinas",
+            "source": "https://github.com/Vercantez/Synesthesia",
+            "video": "https://youtu.be/hIYFR4CwJ9I",
+            "frameworks": [
+                "Accelerate",
+                "AVFoundation",
+                "Cocoa"
+            ],
+            "status": "accepted",
+            "github_username": "Vercantez",
+            "twitter_username": null
+        },
+        {
+            "name": "Mikey T. Krieger",
+            "source": "https://github.com/mtkrieger/AstroYoga",
+            "video": "https://youtu.be/qE-lkiyXM1E",
+            "frameworks": [
+                "Playground Books",
+                "UIKit",
+                "SceneKit",
+                "SpriteKit"
+            ],
+            "status": "rejected",
+            "github_username": "mtkrieger",
+            "twitter_username": null
+        },
+        {
+            "name": "Ming Mai",
+            "source": "https://github.com/kingcos/ML-Scratch-WWDC18",
+            "video": null,
+            "frameworks": [
+                "ARKit",
+                "CoreML",
+                "PlaugroundBooks",
+                "SceneKit",
+                "Vision"
+            ],
+            "status": "submitted",
+            "github_username": "kingcos",
+            "twitter_username": null
+        },
+        {
+            "name": "Mingyuan Hu",
+            "source": null,
+            "video": "https://www.youtube.com/watch?v=uEBkfUbR7Ys",
+            "frameworks": [
+                "CoreGraphics",
+                "UIKit"
+            ],
+            "status": "accepted",
+            "github_username": null,
+            "twitter_username": null
+        },
+        {
+            "name": "Mohamed Salah",
+            "source": "https://github.com/MoHamEdSaLaHH/WWDC18-Scholarship-Submission",
+            "video": "https://www.youtube.com/watch?v=O5AdeSrqHw4",
+            "frameworks": [
+                "UIKit",
+                "AVFoundation",
+                "SceneKit",
+                "CoreGraphics"
+            ],
+            "status": "rejected",
+            "github_username": "MoHamEdSaLaHH",
+            "twitter_username": null
+        },
+        {
+            "name": "Monika Zielonka",
+            "source": null,
+            "video": "https://youtu.be/Dmbo9deFmvI",
+            "frameworks": [
+                "UIKit",
+                "Core Animation",
+                "Core Graphics"
+            ],
+            "status": "submitted",
+            "github_username": null,
+            "twitter_username": null
+        },
+        {
+            "name": "Moritz Bruder",
+            "source": "https://github.com/moritzbruder/DesignPattern-Playground",
+            "video": null,
+            "frameworks": [
+                "UIKit"
+            ],
+            "status": "accepted",
+            "github_username": "moritzbruder",
+            "twitter_username": null
+        },
+        {
+            "name": "Moritz Philip Recke",
+            "source": "https://github.com/mprecke/The-Illusion-Of-Movement",
+            "video": "https://github.com/mprecke/The-Illusion-Of-Movement/blob/master/The-Illusion-Of-Movement.gif",
+            "frameworks": [
+                "UIKit",
+                "AVFoundation",
+                "PlaygroundSupport",
+                "PlaygroundBook"
+            ],
+            "status": "accepted",
+            "github_username": "mprecke",
+            "twitter_username": null
+        },
+        {
+            "name": "Nadin Tamer",
+            "source": "https://github.com/nadintamer/The-Code-of-Life",
+            "video": null,
+            "frameworks": [
+                "UIKit",
+                "SpriteKit",
+                "AVFoundation"
+            ],
+            "status": "accepted",
+            "github_username": "nadintamer",
+            "twitter_username": null
+        },
+        {
+            "name": "Naman Bishnoi",
+            "source": "https://github.com/diabloxenon/Realtime-Shortest-Route-App",
+            "video": null,
+            "frameworks": [
+                "MapKit",
+                "UIKit"
+            ],
+            "status": "rejected",
+            "github_username": "diabloxenon",
+            "twitter_username": null
+        },
+        {
+            "name": "Nathan Gitter",
+            "source": "https://github.com/nathangitter/PentatonicGameOfLife",
+            "video": null,
+            "frameworks": [
+                "SpriteKit"
+            ],
+            "status": "accepted",
+            "github_username": "nathangitter",
+            "twitter_username": null
+        },
+        {
+            "name": "Nicholas Grana",
+            "source": "https://github.com/Nicholas714/WWDC-2018",
+            "video": "https://youtu.be/xpKNT1dRKks",
+            "frameworks": [
+                "ARKit",
+                "SceneKit",
+                "SpriteKit"
+            ],
+            "status": "accepted",
+            "github_username": "Nicholas714",
+            "twitter_username": null
+        },
+        {
+            "name": "Niklas Buelow",
+            "source": "https://github.com/insightmind/WWDC18Scholarship",
+            "video": null,
+            "frameworks": [
+                "SpriteKit",
+                "SpriteKit-Spring"
+            ],
+            "status": "accepted",
+            "github_username": "insightmind",
+            "twitter_username": null
+        },
+        {
+            "name": "Nikolas Ioannou",
+            "source": null,
+            "video": null,
+            "frameworks": [
+                "UIKit",
+                "CoreGraphics"
+            ],
+            "status": "accepted",
+            "github_username": null,
+            "twitter_username": null
+        },
+        {
+            "name": "Nils Leif Fischer",
+            "source": "https://github.com/nilsleiffischer/gravitational-waves-playground",
+            "video": null,
+            "frameworks": [
+                "SceneKit",
+                "Metal",
+                "PlaygroundBook"
+            ],
+            "status": "accepted",
+            "github_username": "nilsleiffischer",
+            "twitter_username": null
+        },
+        {
+            "name": "Nirmit Patel",
+            "source": null,
+            "video": null,
+            "frameworks": [
+                "UIKit",
+                "ARKit",
+                "SceneKit",
+                "SpriteKit"
+            ],
+            "status": "submitted",
+            "github_username": null,
+            "twitter_username": null
+        },
+        {
+            "name": "Oleg Dreyman",
+            "source": "https://github.com/dreymonde/Paperville",
+            "video": null,
+            "frameworks": [
+                "UIKit",
+                "Core Animation"
+            ],
+            "status": "accepted",
+            "github_username": "dreymonde",
+            "twitter_username": null
+        },
+        {
+            "name": "Olivier Lemer",
+            "source": "https://github.com/OlivierLmr/wwdc18",
+            "video": null,
+            "frameworks": [
+                "SpriteKit",
+                "AVFoundation"
+            ],
+            "status": "accepted",
+            "github_username": "OlivierLmr",
+            "twitter_username": null
+        },
+        {
+            "name": "Omar Albeik",
+            "source": "https://github.com/omaralbeik/mnist-coreml",
+            "video": "https://www.youtube.com/watch?v=d-6gJKAojDY",
+            "frameworks": [
+                "UIKit",
+                "CoreML",
+                "Keras"
+            ],
+            "status": "accepted",
+            "github_username": "omaralbeik",
+            "twitter_username": null
+        },
+        {
+            "name": "Osama Naeem",
+            "source": "https://github.com/Onaeem26/passcodewwdc",
+            "video": "https://www.youtube.com/watch?v=6OSWDy9NW90",
+            "frameworks": [
+                "UIKit",
+                "CoreAnimation",
+                "CADisplayLink",
+                "UIBezierPath"
+            ],
+            "status": "accepted",
+            "github_username": "Onaeem26",
+            "twitter_username": null
+        },
+        {
+            "name": "Ozan Mirza",
+            "source": "https://github.com/ozanmirza1/PaintPad-2.0",
+            "video": null,
+            "frameworks": [
+                "UIKit"
+            ],
+            "status": "submitted",
+            "github_username": "ozanmirza1",
+            "twitter_username": null
+        },
+        {
+            "name": "Paige Sun",
+            "source": "https://github.com/p-sun/ARPowerPanels",
+            "video": null,
+            "frameworks": [
+                "ARKit",
+                "SceneKit",
+                "Metal",
+                "PlaygroundBook",
+                "iOS framework",
+                "iOS app"
+            ],
+            "status": "rejected",
+            "github_username": "p-sun",
+            "twitter_username": null
+        },
+        {
+            "name": "Peter Simon",
+            "source": "https://github.com/donleysimon/WWDC-2018-Colorless",
+            "video": null,
+            "frameworks": [
+                "UIKit",
+                "CoreImage"
+            ],
+            "status": "submitted",
+            "github_username": "donleysimon",
+            "twitter_username": null
+        },
+        {
+            "name": "Qingyang Hu",
+            "source": "https://github.com/mmlmml1/Waves",
+            "video": null,
+            "frameworks": [
+                "SceneKit",
+                "SpriteKit",
+                "ARKit",
+                "UIKit",
+                "PlaygroundBooks"
+            ],
+            "status": "submitted",
+            "github_username": "mmlmml1",
+            "twitter_username": null
+        },
+        {
+            "name": "Raffael Kaehn",
+            "source": "https://github.com/vortycon/WWDC18",
+            "video": "https://youtu.be/KFWYJvmqPio",
+            "frameworks": [
+                "UIKit",
+                "SceneKit"
+            ],
+            "status": "accepted",
+            "github_username": "vortycon",
+            "twitter_username": null
+        },
+        {
+            "name": "R\u0103zvan Geangu",
+            "source": "https://github.com/razvangeangu/WWDC18-SpaceWord",
+            "video": null,
+            "frameworks": [
+                "SpriteKit",
+                "UIKit",
+                "AVFoundation"
+            ],
+            "status": "rejected",
+            "github_username": "razvangeangu",
+            "twitter_username": null
+        },
+        {
+            "name": "Renan Magagnin",
+            "source": "https://github.com/renanmagagnin/orbs-wwdc18",
+            "video": "https://youtu.be/W-tzS0x1SiA",
+            "frameworks": [
+                "SpriteKit",
+                "AVFoundation"
+            ],
+            "status": "accepted",
+            "github_username": "renanmagagnin",
+            "twitter_username": null
+        },
+        {
+            "name": "Renan Silveira",
+            "source": "https://github.com/rnnsilveira/SolarSystSimulatorWWDC2018",
+            "video": null,
+            "frameworks": [
+                "SpriteKit",
+                "UIKit"
+            ],
+            "status": "submitted",
+            "github_username": "rnnsilveira",
+            "twitter_username": null
+        },
+        {
+            "name": "Renata Faria",
+            "source": "https://github.com/xReee/wwdc2018",
+            "video": "https://www.youtube.com/watch?v=YHBSvNmBFBY&t",
+            "frameworks": [
+                "UIKit",
+                "AVFoundation",
+                "Accessibility",
+                "NotificationCenter",
+                "UIGestures"
+            ],
+            "status": "rejected",
+            "github_username": "xReee",
+            "twitter_username": null
+        },
+        {
+            "name": "Ricardo Ferreira",
+            "source": null,
+            "video": "https://youtu.be/u_ohynGdFIo",
+            "frameworks": [
+                "UIKit",
+                "ARKit",
+                "SpriteKit",
+                "SceneKit",
+                "AVFoundation"
+            ],
+            "status": "accepted",
+            "github_username": null,
+            "twitter_username": null
+        },
+        {
+            "name": "Ricardo V. Del Frari",
+            "source": "https://github.com/ricardovdf/wwdc2018",
+            "video": "https://www.youtube.com/watch?v=-KsAopkgNXM&feature=youtu.be",
+            "frameworks": [
+                "SpriteKit"
+            ],
+            "status": "rejected",
+            "github_username": "ricardovdf",
+            "twitter_username": null
+        },
+        {
+            "name": "Roland Horv\u00e1th",
+            "source": "https://github.com/hroland/wwdc18",
+            "video": "https://www.youtube.com/watch?v=19DRxB3yxy4",
+            "frameworks": [
+                "ARKit",
+                "SceneKit",
+                "UIKit",
+                "Speech"
+            ],
+            "status": "accepted",
+            "github_username": "hroland",
+            "twitter_username": null
+        },
+        {
+            "name": "Ryan Klohr",
+            "source": null,
+            "video": null,
+            "frameworks": [
+                "GameKit",
+                "AVFoundation",
+                "SpriteKit"
+            ],
+            "status": "rejected",
+            "github_username": null,
+            "twitter_username": null
+        },
+        {
+            "name": "Sai Kambampati",
+            "source": "https://github.com/aidev1065/Rock-Paper-Scissors-AI---WWDC-2018/blob/master/README.md",
+            "video": "https://youtube.com/watch?v=jzcuVkW8M0U",
+            "frameworks": [
+                "CoreML",
+                "ARKit",
+                "SceneKit",
+                "UIKit",
+                "AVFoundation",
+                "Microsoft's [Custom Vision](customvision.ai)"
+            ],
+            "status": "accepted",
+            "github_username": "aidev1065",
+            "twitter_username": null
+        },
+        {
+            "name": "Salman Husain",
+            "source": "https://github.com/shusain93/WWDC18",
+            "video": "https://www.youtube.com/watch?v=GHlE__BtQBk",
+            "frameworks": [
+                "SpriteKit",
+                "UIKit",
+                "Playground Books"
+            ],
+            "status": "accepted",
+            "github_username": "shusain93",
+            "twitter_username": null
+        },
+        {
+            "name": "Sam Eckert",
+            "source": null,
+            "video": "https://youtu.be/vEyxsDpCYdY",
+            "frameworks": [
+                "ARKit",
+                "SceneKit",
+                "UIKit (+Dynamics)",
+                "AVKit",
+                "AVFoundation"
+            ],
+            "status": "rejected",
+            "github_username": null,
+            "twitter_username": null
+        },
+        {
+            "name": "Samay Shamdasani",
+            "source": "https://github.com/shamdasani/SwiftFrameworks",
+            "video": "https://www.youtube.com/watch?v=b3Huqtw2log",
+            "frameworks": [
+                "SceneKit",
+                "Core Animation",
+                "Core Graphics",
+                "UIKit",
+                "AVFoundation",
+                "Vision"
+            ],
+            "status": "accepted",
+            "github_username": "shamdasani",
+            "twitter_username": null
+        },
+        {
+            "name": "Sandra Grujovic",
+            "source": "https://github.com/melloskitten/Avocadance",
+            "video": "https://youtu.be/4VQUpnFYjmE",
+            "frameworks": [
+                "UIKit",
+                "SpriteKit"
+            ],
+            "status": "accepted",
+            "github_username": "melloskitten",
+            "twitter_username": null
+        },
+        {
+            "name": "Sanjay Soni",
+            "source": null,
+            "video": null,
+            "frameworks": [
+                "GameKit",
+                "GameplayKit",
+                "SpriteKit",
+                "UIKit"
+            ],
+            "status": "submitted",
+            "github_username": null,
+            "twitter_username": null
+        },
+        {
+            "name": "Sergen G\u00f6nen\u00e7",
+            "source": "https://github.com/sergendev/Swiftgaea",
+            "video": null,
+            "frameworks": [
+                "UIKit",
+                "CoreGraphics"
+            ],
+            "status": "accepted",
+            "github_username": "sergendev",
+            "twitter_username": null
+        },
+        {
+            "name": "Shunzhe Ma",
+            "source": null,
+            "video": null,
+            "frameworks": [
+                "UIKit",
+                "SceneKit",
+                "Core Animation"
+            ],
+            "status": "accepted",
+            "github_username": null,
+            "twitter_username": null
+        },
+        {
+            "name": "Sinchan Maitri",
+            "source": "https://github.com/sinchanmaitri/WWDC18-Playground",
+            "video": "https://www.youtube.com/watch?v=VNyO4Q-nbvM",
+            "frameworks": [
+                "UIKit",
+                "SpriteKit",
+                "Core Animation",
+                "AVFoundation"
+            ],
+            "status": "accepted",
+            "github_username": "sinchanmaitri",
+            "twitter_username": null
+        },
+        {
+            "name": "Sophia Kalanovska",
+            "source": "https://github.com/SophiaKalanovska/WWDC18",
+            "video": null,
+            "frameworks": [
+                "XCPlayground",
+                "UIKit",
+                "GameplayKit",
+                "AVFoundation"
+            ],
+            "status": "submitted",
+            "github_username": "SophiaKalanovska",
+            "twitter_username": null
+        },
+        {
+            "name": "Soroush Shahi",
+            "source": null,
+            "video": null,
+            "frameworks": [
+                "SpriteKit",
+                "GamePlayKit",
+                "AVFoundation"
+            ],
+            "status": "submitted",
+            "github_username": null,
+            "twitter_username": null
+        },
+        {
+            "name": "Sunghyun Cho",
+            "source": "https://github.com/anaclumos/WWDC2018-Scholarship-Submission",
+            "video": null,
+            "frameworks": [
+                "UIKit",
+                "PlaygroundSupport"
+            ],
+            "status": "accepted",
+            "github_username": "anaclumos",
+            "twitter_username": null
+        },
+        {
+            "name": "Tassos Chouliaras",
+            "source": "https://gitlab.com/t4sso/thegameofdiversity",
+            "video": null,
+            "frameworks": [
+                "UIKit",
+                "SpriteKit",
+                "Core Graphics"
+            ],
+            "status": "accepted",
+            "github_username": null,
+            "twitter_username": null
+        },
+        {
+            "name": "Thijs van der Heijden",
+            "source": "https://github.com/thijsheijden/WWDC18-Scholarship-Submission",
+            "video": "https://www.youtube.com/watch?v=ZvwVWEtRFsw&t=16s&ab_channel=ThijsvanderHeijden",
+            "frameworks": [
+                "UIKit",
+                "CoreML",
+                "Vision",
+                "AVFoundation"
+            ],
+            "status": "accepted",
+            "github_username": "thijsheijden",
+            "twitter_username": null
+        },
+        {
+            "name": "TJ Ledwith",
+            "source": "https://github.com/makertech81/WWDC_2018",
+            "video": null,
+            "frameworks": [
+                "UIKit",
+                "SpriteKit",
+                "AVFoundation",
+                "Gesture Recognition"
+            ],
+            "status": "submitted",
+            "github_username": "makertech81",
+            "twitter_username": null
+        },
+        {
+            "name": "Valmir Massoni Jr.",
+            "source": "https://github.com/vrjunior/Metamorphosis",
+            "video": "https://youtu.be/r2Xgh0uxGe0",
+            "frameworks": [
+                "SceneKit",
+                "AVFoundation"
+            ],
+            "status": "rejected",
+            "github_username": "vrjunior",
+            "twitter_username": null
+        },
+        {
+            "name": "Veit Progl",
+            "source": "https://github.com/Veeit/WWDC_2018",
+            "video": null,
+            "frameworks": [
+                "UIKit",
+                "CoreML",
+                "SceneKit",
+                "ARKit"
+            ],
+            "status": "submitted",
+            "github_username": "Veeit",
+            "twitter_username": null
+        },
+        {
+            "name": "Victor Kreniski",
+            "source": "https://github.com/krevi27/WWDC18",
+            "video": "https://www.youtube.com/watch?v=P17qt8iYJ_4",
+            "frameworks": [
+                "SpriteKit",
+                "AVFoundation"
+            ],
+            "status": "submitted",
+            "github_username": "krevi27",
+            "twitter_username": null
+        },
+        {
+            "name": "Vincent Cai",
+            "source": "https://github.com/Vince14Genius/My-WWDC-Scholarship-Submissions/tree/master/WWDC18",
+            "video": null,
+            "frameworks": [
+                "ARKit",
+                "SceneKit",
+                "UIKit"
+            ],
+            "status": "rejected",
+            "github_username": "Vince14Genius",
+            "twitter_username": null
+        },
+        {
+            "name": "Vincenzo Aceto",
+            "source": "https://github.com/vinzaceto/WWDCPlayground",
+            "video": "https://youtu.be/cvkEDOhAg4w",
+            "frameworks": [
+                "UIKit",
+                "AVFoundation",
+                "Vision",
+                "CoreML"
+            ],
+            "status": "accepted",
+            "github_username": "vinzaceto",
+            "twitter_username": null
+        },
+        {
+            "name": "Walter Zhu",
+            "source": "https://github.com/Walter0807/Logic-Gates",
+            "video": null,
+            "frameworks": [
+                "UIKit",
+                "CoreGraphics",
+                "PlaygroundBooks"
+            ],
+            "status": "accepted",
+            "github_username": "Walter0807",
+            "twitter_username": null
+        },
+        {
+            "name": "Wei Dai",
+            "source": "https://github.com/zjdavid/Trajector",
+            "video": null,
+            "frameworks": [
+                "UIKit Dynamics",
+                "GameplayKit",
+                "AVFoundation"
+            ],
+            "status": "submitted",
+            "github_username": "zjdavid",
+            "twitter_username": null
+        },
+        {
+            "name": "Weiran Du",
+            "source": "https://github.com/stringconstant/WWDC_2018_Submission",
+            "video": "https://www.youtube.com/watch?v=gHZuYHE78yw",
+            "frameworks": [
+                "UIKit",
+                "CoreGraphics"
+            ],
+            "status": "accepted",
+            "github_username": "stringconstant",
+            "twitter_username": null
+        },
+        {
+            "name": "William Taylor",
+            "source": null,
+            "video": "https://youtu.be/qXgyTGIG_Xw",
+            "frameworks": [
+                "SpriteKit",
+                "ARKit",
+                "AVFoundation",
+                "UIKit"
+            ],
+            "status": "accepted",
+            "github_username": null,
+            "twitter_username": null
+        },
+        {
+            "name": "Witek Bobrowski",
+            "source": "https://github.com/witekbobrowski/wwdc18-submission",
+            "video": null,
+            "frameworks": [
+                "UIKit",
+                "AVFoundation",
+                "MVVM-C",
+                "Dependency-Injection"
+            ],
+            "status": "accepted",
+            "github_username": "witekbobrowski",
+            "twitter_username": null
+        },
+        {
+            "name": "Yash Banka",
+            "source": "https://github.com/yash-banka/WWDC18",
+            "video": null,
+            "frameworks": [
+                "UIKit",
+                "Foundation",
+                "AVFoundation",
+                "PlaygroundBook"
+            ],
+            "status": "accepted",
+            "github_username": "yash-banka",
+            "twitter_username": null
+        },
+        {
+            "name": "Yichen Cao",
+            "source": "https://github.com/Schemetrical",
+            "video": null,
+            "frameworks": [
+                "UIKit",
+                "CoreML"
+            ],
+            "status": "accepted",
+            "github_username": "Schemetrical",
+            "twitter_username": null
+        },
+        {
+            "name": "Yogesh Kohli",
+            "source": "https://github.com/yogesh2209/YPad-SwiftPlaygroundBook",
+            "video": "https://www.youtube.com/watch?v=SD5_bKDZiOk&t=3s",
+            "frameworks": [
+                "UIKit",
+                "Core Animation",
+                "AVFoundation"
+            ],
+            "status": "submitted",
+            "github_username": "yogesh2209",
+            "twitter_username": null
+        },
+        {
+            "name": "Yongkang Chen",
+            "source": "https://github.com/iWeslie/WWDC18",
+            "video": "https://youtu.be/nokdtApjAsg",
+            "frameworks": [
+                "UIKit",
+                "QuartzCore",
+                "CoreGraphics",
+                "Dispatch",
+                "Foundation"
+            ],
+            "status": "submitted",
+            "github_username": "iWeslie",
+            "twitter_username": null
+        },
+        {
+            "name": "Yuma Soerianto",
+            "source": null,
+            "video": "https://youtu.be/2uAzEMprtfw",
+            "frameworks": [
+                "ARKit",
+                "UIKit",
+                "SceneKit",
+                "AVFoundation"
+            ],
+            "status": "accepted",
+            "github_username": null,
+            "twitter_username": null
+        },
+        {
+            "name": "Yuta Saito",
+            "source": "https://github.com/kateinoigakukun/wwdc-2018",
+            "video": null,
+            "frameworks": [
+                "UIKit",
+                "Foundation"
+            ],
+            "status": "submitted",
+            "github_username": "kateinoigakukun",
+            "twitter_username": null
+        },
+        {
+            "name": "Zach Knox",
+            "source": "https://github.com/zmknox/WWDC18-Scholarship-Application",
+            "video": "https://youtu.be/Kl4ZJdD8dkY",
+            "frameworks": [
+                "SpriteKit"
+            ],
+            "status": "accepted",
+            "github_username": "zmknox",
+            "twitter_username": null
+        },
+        {
+            "name": "Zach Simone",
+            "source": "https://github.com/zachsimone/WWDC18-Insulin-Pump-Simulator",
+            "video": null,
+            "frameworks": [
+                "UIKit"
+            ],
+            "status": "accepted",
+            "github_username": "zachsimone",
+            "twitter_username": null
+        },
+        {
+            "name": "Zhang Bozheng",
+            "source": "https://github.com/zbz-lvlv/Chemistry_WWDC18",
+            "video": "https://youtu.be/IKefnNeZKf4",
+            "frameworks": [
+                "SpriteKit",
+                "AVFoundation"
+            ],
+            "status": "accepted",
+            "github_username": "zbz-lvlv",
+            "twitter_username": null
+        },
+        {
+            "name": "Zhixing Zhang",
+            "source": "https://github.com/Neotoxin4365/WWDC18",
+            "video": "https://youtu.be/vfzuN8sozR0",
+            "frameworks": [
+                "UIKit",
+                "CoreAnimation",
+                "CoreGraphics",
+                "Carthage"
+            ],
+            "status": "rejected",
+            "github_username": "Neotoxin4365",
+            "twitter_username": null
+        },
+        {
+            "name": "Zhiyu Zhu",
+            "source": "https://github.com/ApolloZhu/Pong-Hau-K-i",
+            "video": null,
+            "frameworks": [
+                "AppKit",
+                "CoreGraphics",
+                "GameplayKit",
+                "SpriteKit"
+            ],
+            "status": "accepted",
+            "github_username": "ApolloZhu",
+            "twitter_username": null
+        },
+        {
+            "name": "Zixuan Tang",
+            "source": "https://github.com/TonyTang2001/Internet-Traffic-WWDC18-Scholarship",
+            "video": "https://youtu.be/hXHF-s-IwUw",
+            "frameworks": [
+                "UIKit",
+                "AudioToolBox"
+            ],
+            "status": "accepted",
+            "github_username": "TonyTang2001",
+            "twitter_username": null
+        },
+        {
+            "name": "Ziyao Zhang",
+            "source": "https://github.com/ziyaointl/Fourier",
+            "video": null,
+            "frameworks": [
+                "UIKit",
+                "AVFoundation",
+                "Accelerate",
+                "SceneKit",
+                "Interface Builder",
+                "Core Animation",
+                "PlaygroundBook"
+            ],
+            "status": "accepted",
+            "github_username": "ziyaointl",
+            "twitter_username": null
+        }
+    ]
 }

@@ -1,1019 +1,2082 @@
 {
-   "developers": [
-      {
-         "name": "Ailton Vieira Pinto Filho",
-         "source": "https://github.com/ailtonvivaz/WWDC20Playground",
-         "video": "https://youtu.be/Epffk-v0Oww",
-         "frameworks": ["UIKit"],
-         "status": "accepted"
-      }, {
-         "name": "Albert Rayneer Queiroz",
-         "source": "https://github.com/AlbertQueiroz/MagicFlute-WWDC20",
-         "video": "https://www.youtube.com/watch?v=eYtamPAZ4p0",
-         "frameworks": ["UIKit", "AVFoundation"],
-         "status": "accepted"
-      }, {
-         "name": "Alexander Zank",
-         "source": "https://github.com/AlexLike/WWDC20Playground",
-         "video": "https://youtu.be/k_1tqM6LmV0",
-         "frameworks": ["SwiftUI", "SceneKit", "Accelerate", "ARKit"],
-         "status": "submitted"
-      }, {
-         "name": "Alexandru Turcanu",
-         "source": "https://github.com/Pondorasti/SimonDraws",
-         "video": "https://youtu.be/KyiXl2NFWHg",
-         "frameworks": ["SwiftUI", "PencilKit", "CoreML", "AVFoundation"],
-         "status": "accepted"
-      }, {
-         "name": "Aline Gomes de Brito",
-         "source": "https://github.com/gomesalineagb/wwdc2020",
-         "video": "https://www.youtube.com/watch?v=Z-21mbX28VE",
-         "frameworks": ["SpriteKit", "AVFoundation"],
-         "status": "accepted"
-      }, {
-         "name": "Alkan Caner",
-         "source": "https://github.com/AlkanCaner/InteractivePicture",
-         "video": "https://www.youtube.com/watch?v=Ght67Ks1Wtg",
-         "frameworks": ["SwiftUI"],
-         "status": "accepted"
-      }, {
-         "name": "Alvin Hsueh",
-         "source": "https://github.com/HaXAlvin/WWDC20",
-         "video": "",
-         "frameworks": ["SpriteKit", "Foundation", "UIKit"],
-         "status": "accepted"
-      }, {
-         "name": "Antônio Carlos",
-         "source": "https://github.com/AntonioCarlosCNJ/WWDC_2020",
-         "video": "https://www.youtube.com/watch?v=cl3Ou7SgQn4",
-         "frameworks": ["SpriteKit"],
-         "status": "accepted"
-      }, {
-         "name": "Amit Samant",
-         "source": "https://github.com/DominatorVbN/WWDC20-Submission",
-         "video": "https://youtu.be/dsosgiPSXdo",
-         "frameworks": ["SwiftUI", "CoreAnimation", "SceneKit", "ARKit"],
-         "status": "accepted"
-      }, {
-         "name": "Anya Sliwinski",
-         "source": "https://github.com/a-n-y-a/virus-spread-sim",
-         "video": "",
-         "frameworks": ["SpriteKit"],
-         "status": "accepted"
-      }, {
-         "name": "Arjun Dureja",
-         "source": "https://github.com/Arjun-dureja/WWDC-Swift-Student-Challenge",
-         "video": "https://www.youtube.com/watch?v=5zoE_7nQ1N4",
-         "frameworks": ["UIKit"],
-         "status": "accepted"
-      }, {
-         "name": "Artemas J. Radik",
-         "source": "https://github.com/magnesiumm/WWDC20-Swift-Student-Challenge",
-         "video": "",
-         "frameworks": ["UIKit"],
-         "status": "accepted"
-      }, {
-         "name": "Arved Viehweger",
-         "source": "",
-         "video": "https://www.youtube.com/watch?v=y7FjFwVwM08&feature=youtu.be",
-         "frameworks": ["ARKit", "SceneKit", "UIKit", "AVFoundation"],
-         "status": "submitted"
-      }, {
-         "name": "Aryan Nambiar",
-         "source": "https://github.com/ifisq/Build-A-Piano",
-         "video": "",
-         "frameworks": ["UIKit", "AVFoundation"],
-         "status": "accepted"
-      }, {
-         "name": "Askar Almukhametov",
-         "source": "https://github.com/MetahCoder/Dombra_playground",
-         "video": "",
-         "frameworks": ["AVFoundation", "UIKit"],
-         "status": "accepted"
-      }, {
-         "name": "Ataberk Turan",
-         "source": "https://github.com/ataberkturan/LalopathyAI",
-         "video": "",
-         "frameworks": ["SwiftUI", "CoreML", "Combine"],
-         "status": "accepted"
-      }, {
-         "name": "Aurther Nadeem",
-         "source": "https://github.com/Aurther-Nadeem/WWDC2020",
-         "video": "",
-         "frameworks": ["ARKit", "RealityKit", "SwiftUI", "AVFoundation"],
-         "status": "submitted"
-      }, {
-         "name": "Baskoro Indrayana",
-         "source": "https://github.com/baskoroi/wwdc20-submission",
-         "video": "https://youtu.be/pU6q3clW3w8",
-         "frameworks": ["SwiftUI", "Combine"],
-         "status": "rejected"
-      }, {
-         "name": "Bartłomiej Pluta",
-         "source": "https://github.com/bpluta/Artyficial-Camera",
-         "video": "",
-         "frameworks": ["SwiftUI", "CoreML", "AVFoundation"],
-         "status": "rejected"
-      }, {
-         "name": "Benjamin Hutter",
-         "source": "https://github.com/benjaminhtr/WWDC20",
-         "video": "",
-         "frameworks": ["UIKit", "CoreML", "Vision", "AVFoundation"],
-         "status": "rejected"
-      }, {
-         "name": "Benji Burgess",
-         "source": "https://github.com/benjiburgess/WWDC20-Scholarship",
-         "video": "",
-         "frameworks": ["SwiftUI"],
-         "status": "accepted"
-      }, {
-         "name": "Berkin Ceylan",
-         "source": "https://github.com/berkinceylan/WWDC20",
-         "video": "https://www.youtube.com/watch?v=uN7Ea_Ihduw",
-         "frameworks": ["SwiftUI"],
-         "status": "submitted"
-      }, {
-         "name": "Bradley Klemick",
-         "source": "https://github.com/BradzTech/GravityPlayground",
-         "video": "",
-         "frameworks": ["SpriteKit"],
-         "status": "accepted"
-      }, {
-         "name": "Bryanza Novirahman",
-         "source": "https://github.com/bryanzanr/go-cli",
-         "video": "https://www.youtube.com/watch?v=yIZjEuULFos",
-         "frameworks": ["SwiftUI"],
-         "status": "rejected"
-      }, {
-         "name": "Bruno Pastre",
-         "source": "https://github.com/pastre/wwdc2020",
-         "video": "https://www.youtube.com/watch?v=5ewAP9lBV40",
-         "frameworks": ["SpriteKit"],
-         "status": "submitted"
-      }, {
-         "name": "BumMo Koo",
-         "source": "https://github.com/gbmksquare/WWDC-2020",
-         "video": "",
-         "frameworks": ["SceneKit", "AVFoundation", "PencilKit"],
-         "status": "accepted"
-      }, {
-         "name": "Caio Noronha",
-         "source": "https://github.com/CaioNoronha/DanceChallenge",
-         "video": "https://www.youtube.com/watch?v=Gfo8tdN4iP8",
-         "frameworks": ["SpriteKit", "AVFoundation"],
-         "status": "accepted"
-      }, {
-         "name": "Cameron Bernhardt",
-         "source": "https://github.com/AstroCB/Swift-COVID",
-         "video": "",
-         "frameworks": ["AppKit", "MapKit"],
-         "status": "submitted"
-      }, {
-         "name": "Can Balkaya",
-         "source": "https://github.com/canbalkya/Evape-WWDC20",
-         "video": "https://www.youtube.com/watch?v=QMQnLFypW3Y",
-         "frameworks": ["SwiftUI"],
-         "status": "accepted"
-      }, {
-         "name": "Carlo Palumbo",
-         "source": "https://github.com/patana93/Let-s-Play-With-Digital-Electronics-WWDC20",
-         "video": "https://youtu.be/YgoyxPCzjss",
-         "frameworks": ["UIKit"],
-         "status": "accepted"
-      }, {
-         "name": "Carlos Modinez",
-         "source": "https://github.com/CarlosModinez/SmartTraffic-WWDC2020",
-         "video": "https://www.youtube.com/watch?v=FQvwIVXCQus",
-         "frameworks": ["SpriteKit"],
-         "status": "accepted"
-      }, {
-         "name": "Cay Zhang",
-         "source": "https://github.com/Cay-Zhang/SwiftStudentChallenge2020",
-         "video": "https://youtu.be/A7TtfZyYo3A",
-         "frameworks": ["SpriteKit", "Combine"],
-         "status": "accepted"
-      }, {
-         "name": "Christian P",
-         "source": "https://github.com/Priva28/PlanetARium",
-         "video": "https://youtu.be/EwPspV8ZUp4",
-         "frameworks": ["SwiftUI", "ARKit", "SceneKit", "Vision"],
-         "status": "accepted"
-      }, {
-         "name": "Cristian Garske",
-         "source": "https://github.com/CristianGarske/WWDC20",
-         "video": "https://youtu.be/kPVHToiKMJM",
-         "frameworks": ["SwiftUI"],
-         "status": "accepted"
-      }, {
-         "name": "Dave Jha",
-         "source": "https://github.com/DaveJha/Social-Distancing-Simulator",
-         "video": "https://www.youtube.com/watch?v=WlbHsg09BxY",
-         "frameworks": ["SwiftUI", "SpriteKit"],
-         "status": "accepted"
-      }, {
-         "name": "Daniel Liu",
-         "source": "https://github.com/Daniel-Liu-c0deb0t/WWDC-2020-Coronavirus-Comparison",
-         "video": "https://www.youtube.com/watch?v=X12SKO0wGwg",
-         "frameworks": ["UIKit"],
-         "status": "accepted"
-      }, {
-         "name": "Daniel Leal",
-         "source": "https://github.com/danielleal2901/WWDC_Dyslexia_2020",
-         "video": "",
-         "frameworks": ["SpriteKit"],
-         "status": "accepted"
-      }, {
-         "name": "Daniel (Shao Cheng) Pan",
-         "source": "https://github.com/Majestic-Hero/WWDC-2020-Submission",
-         "video": "https://www.youtube.com/watch?v=eyAY9Dkrsak",
-         "frameworks": ["SpriteKit", "UIKit"],
-         "status": "rejected"
-      }, {
-         "name": "Daniil Dolog",
-         "source": "https://github.com/DanDolog/wwdc2020-Accepted-",
-         "video": "https://youtu.be/5EBop-H8d6A",
-         "frameworks": ["SpriteKit", "UIKit", "AVFoundation"],
-         "status": "accepted"
-      }, {
-         "name": "David Knothe",
-         "source": "https://github.com/knothed/Fractals",
-         "video": "",
-         "frameworks": ["Core Animation"],
-         "status": "accepted"
-      }, {
-         "name": "Deniz Karakay",
-         "source": "https://github.com/dkarakay/Stop-Pandemic",
-         "video": "https://youtu.be/oOy-9lieXxk",
-         "frameworks": ["SpriteKit", "AVFoundation", "SwiftUI"],
-         "status": "accepted"
-      }, {
-         "name": "Devi Mandasari",
-         "source": "https://github.com/devimandas/WWDC20-Gonggong",
-         "video": "https://www.youtube.com/watch?v=DNXkG2Ow4ZY",
-         "frameworks": ["SpriteKit", "AVFoundation"],
-         "status": "submitted"
-      }, {
-         "name": "Duraid Abdul",
-         "source": "https://github.com/duraidabdul/Sleep",
-         "video": "",
-         "frameworks": ["UIKit", "SwiftUI", "Core Motion"],
-         "status": "accepted"
-      }, {
-         "name": "Edgar Vilchis",
-         "source": "https://github.com/Evil96/WWDC",
-         "video": "https://www.youtube.com/watch?v=uvENDZJteiI",
-         "frameworks": ["UIKit", "CoreML"],
-         "status": "rejected"
-      }, {
-         "name": "Euan Traynor",
-         "source": "https://github.com/efalloon/WWDC2020-Accepted",
-         "video": "",
-         "frameworks": ["UIKit", "AVFoundation"],
-         "status": "accepted"
-      }, {
-         "name": "Evgenii Truuts",
-         "source": "https://github.com/g7skim/SaveTheCells",
-         "video": "https://www.youtube.com/watch?v=nyORlZUlxgs",
-         "frameworks": ["SpriteKit", "SceneKit"],
-         "status": "accepted"
-      }, {
-         "name": "Federico Ciardi",
-         "source": "https://github.com/fedeci/WWDC2020",
-         "video": "",
-         "frameworks": ["SpriteKit", "AVFoundation"],
-         "status": "accepted"
-      }, {
-         "name": "Fernando Fontecha",
-         "source": "",
-         "video": "https://www.youtube.com/watch?v=zi2J60IKbKw",
-         "frameworks": ["UIKit", "Core Animation", "PlaygroundSupport"],
-         "status": "accepted"
-      }, {
-         "name": "Frank Foster",
-         "source": "https://github.com/analogpotato/WWDCSubmission",
-         "video": "",
-         "frameworks": ["AVFoundation", "Vision", "VisionKit"],
-         "status": "submitted"
-      }, {
-         "name": "Fred P",
-         "source": "https://github.com/fredpi/WWDC2020",
-         "video": "",
-         "frameworks": ["UIKit", "Core Animation", "Core Graphics"],
-         "status": "accepted"
-      }, {
-         "name": "Frederico Lacis",
-         "source": "https://github.com/fredlacis/TheSeaCycle_WWDC2020",
-         "video": "https://www.youtube.com/watch?v=f_y6uGfQxcI",
-         "frameworks": ["SpriteKit"],
-         "status": "accepted"
-      }, {
-         "name": "Giovanni Gorgone",
-         "source": "https://github.com/ggorgone/WWDC2020_submission",
-         "video": "",
-         "frameworks": ["SwiftUI", "AVFoundation"],
-         "status": "accepted"
-      }, {
-         "name": "Gleb Losev",
-         "source": "https://gitlab.com/hellokurt/dyslexiareader",
-         "video": "",
-         "frameworks": ["UIKit", "AVFoundation"],
-         "status": "accepted"
-      }, {
-         "name": "Glenn Brannelly",
-         "source": "",
-         "video": "https://youtu.be/lQAr6TQetm4",
-         "frameworks": ["SpriteKit", "SceneKit"],
-         "status": "accepted"
-      }, {
-         "name": "Grant Emerson",
-         "source": "https://github.com/GrantJEmerson/Clipstrument",
-         "video": "https://www.youtube.com/watch?v=VWTPXvdipn0",
-         "frameworks": ["UIKit", "AVFoundation"],
-         "status": "accepted"
-      }, {
-         "name": "Grey Patterson",
-         "source": "https://github.com/grey280/SwiftLife",
-         "video": "",
-         "frameworks": ["SwiftUI", "Combine"],
-         "status": "accepted"
-      }, {
-         "name": "Haotian Zheng",
-         "source": "https://github.com/JustinFincher/WWDC20Playground",
-         "video": "",
-         "frameworks": ["UIKit Dynamics", "SwiftUI", "SpriteKit"],
-         "status": "accepted"
-      }, {
-         "name": "Hariharan Murugesan",
-         "source": "",
-         "video": "",
-         "frameworks": ["ARKit", "SceneKit"],
-         "status": "accepted"
-      }, {
-         "name": "Hengyu Liu",
-         "source": "https://github.com/a211212abc/WWDC20",
-         "video": "",
-         "frameworks": ["SwiftUI", "ARKit", "SpriteKit"],
-         "status": "submitted"
-      }, {
-         "name": "Henrik Storch",
-         "source": "https://github.com/thisIsTheFoxe/WWDC20",
-         "video": "",
-         "frameworks": ["SpriteKit"],
-         "status": "rejected"
-      }, {
-         "name": "Henrique Conte",
-         "source": "https://github.com/henriqueconte/ESCapeEleanorWWDC20-Accepted",
-         "video": "https://www.youtube.com/watch?v=inrIAAM6OCI&feature=youtu.be",
-         "frameworks": ["TouchBar", "SpriteKit", "AVFoundation", "AppKit"],
-         "status": "accepted"
-      }, {
-         "name": "Hock Shem Chong",
-         "source": "https://github.com/hockshem/multiply-by-lines",
-         "video": "",
-         "frameworks": ["UIKit", "PencilKit", "Vision"],
-         "status": "accepted"
-      }, {
-         "name": "Ihwan D",
-         "source": "https://github.com/IhwanID/wwdc20-rice-cooker-hack",
-         "video": "https://youtu.be/0fgdYEAn6MQ",
-         "frameworks": ["SwiftUI", "AVFoundation"],
-         "status": "submitted"
-      }, {
-         "name": "Izabella Melo",
-         "source": "https://github.com/izmcm/Cracking-The-Enigma",
-         "video": "",
-         "frameworks": ["UIKit"],
-         "status": "accepted"
-      }, {
-         "name": "Jackson Utsch",
-         "source": "https://github.com/JacksonUtsch/WWDC-2020-Project",
-         "video": "",
-         "frameworks": ["SwiftUI", "SpriteKit"],
-         "status": "submitted"
-      }, {
-         "name": "Jaesung Lee",
-         "source": "https://github.com/jaesung-wwdc/WWDC20-SwiftStudentChallenge",
-         "video": "",
-         "frameworks": ["ARKit", "SceneKit", "UIKit", "AVFoundation"],
-         "status": "accepted"
-      }, {
-         "name": "Jake Spann",
-         "source": "https://github.com/Jake3231/Cybersecurity-101",
-         "video": "",
-         "frameworks": ["SpriteKit"],
-         "status": "accepted"
-      }, {
-         "name": "Jalp Desai",
-         "source": "https://github.com/jalp14/WWDC20",
-         "video": "",
-         "frameworks": ["SwiftUI", "SpriteKit", "UIKit"],
-         "status": "submitted"
-      }, {
-         "name": "Jannik Schwade",
-         "source": "https://github.com/jannikschwade/wwdc20",
-         "video": "https://www.youtube.com/watch?v=bY32gZBbTS8",
-         "frameworks": ["SpriteKit", "UIKit"],
-         "status": "rejected"
-      }, {
-         "name": "Javier Gallo Roca",
-         "source": "https://github.com/Happygallo/ColorEmotionsPalette",
-         "video": "https://youtu.be/f0-avTA32Yg",
-         "frameworks": ["SwiftUI"],
-         "status": "accepted"
-      }, {
-         "name": "João Gabriel",
-         "source": "https://github.com/joogps/WWDC-2020",
-         "video": "https://youtu.be/cf-_kp-4W48",
-         "frameworks": ["SpriteKit", "AVFoundation"],
-         "status": "accepted"
-      }, {
-         "name": "João Paulo Santos",
-         "source": "https://github.com/jppsantos/WWDC_EmpathyChallenge",
-         "video": "https://www.youtube.com/watch?v=8C5BjjiLf5Y",
-         "frameworks": ["SpriteKit", "GameplayKit"],
-         "status": "accepted"
-      }, {
-         "name": "John Atkinson",
-         "source": "",
-         "video": "",
-         "frameworks": ["SpriteKit"],
-         "status": "accepted"
-      }, {
-         "name": "Jose Adolfo Talactac",
-         "source": "https://github.com/jadolfot/LearnWithAR",
-         "video": "https://www.youtube.com/watch?v=vNZKRVPVzX4",
-         "frameworks": ["ARKit", "SceneKit", "SpriteKit", "simd"],
-         "status": "accepted"
-      }, {
-         "name": "Joseph Kokenge",
-         "source": "https://github.com/JOyo246/SwiftStudentChallengeSubmission2020",
-         "video": "https://www.youtube.com/watch?v=L2JxtWiTg5I",
-         "frameworks": ["CryptoKit", "UIKit"],
-         "status": "accepted"
-      }, {
-         "name": "Julian Benedikt Heuschen",
-         "source": "https://github.com/JavaJHMalerBus/wwdc20",
-         "video": "",
-         "frameworks": ["CoreML", "Vision", "AVFoundation"],
-         "status": "accepted"
-      }, {
-         "name": "Julian Schiavo",
-         "source": "https://github.com/julianschiavo/wwdc/tree/master/2020",
-         "video": "https://www.youtube.com/watch?v=-m74x10IZS4",
-         "frameworks": ["ARKit", "Combine", "RealityKit", "SwiftUI"],
-         "status": "rejected"
-      }, {
-         "name": "Kanishka Chaudhry",
-         "source": "https://github.com/Kanishka3/SwiftStudentChallenge2020",
-         "video": "https://youtu.be/G87_5RRhB9g",
-         "frameworks": ["SwiftUI", "UIKit", "AVFoundation", "Combine"],
-         "status": "accepted"
-      }, {
-         "name": "Keith Madison",
-         "source": "",
-         "video": "https://www.youtube.com/watch?v=D68MrqDGYAI",
-         "frameworks": ["UIKit", "AVFoundation", "NaturalLanguage", "CoreML"],
-         "status": "submitted"
-      }, {
-         "name": "Kellyane Nogueira",
-         "source": "https://github.com/kellyanenogueira1/WWDC-Submission",
-         "video": "https://www.youtube.com/watch?v=lTV0syBmcCI",
-         "frameworks": ["UIKit"],
-         "status": "accepted"
-      }, {
-         "name": "Liam Rosenfeld",
-         "source": "https://github.com/liamrosenfeld/STFourierExplainer",
-         "video": "",
-         "frameworks": ["Accelerate", "AVFoundation", "CoreGraphics", "SwiftUI"],
-         "status": "accepted"
-      }, {
-         "name": "LiulietLee",
-         "source": "https://github.com/LiulietLee/nn-playground",
-         "video": "",
-         "frameworks": ["SwiftUI", "Combine", "MetalPerformanceShaders"],
-         "status": "accepted"
-      }, {
-         "name": "Louise P.",
-         "source": "https://github.com/lpieri/Meep",
-         "video": "",
-         "frameworks": ["SpriteKit", "AVFoundation"],
-         "status": "submitted"
-      }, {
-         "name": "Maria Fernanda Azolin",
-         "source": "https://github.com/azolinmf/aPathToTheLight-playgroundBook",
-         "video": "https://www.youtube.com/watch?v=p7y_d-d1B-0",
-         "frameworks": ["SpriteKit", "UIKit"],
-         "status": "accepted"
-      }, {
-         "name": "Mariana Beilune Abad",
-         "source": "https://github.com/maaryhabad/armenia",
-         "video": "https://www.youtube.com/watch?v=G4w_gSMjiyQ",
-         "frameworks": ["SceneKit"],
-         "status": "submitted"
-      }, {
-         "name": "Marlon Lückert",
-         "source": "https://github.com/marlon360/wwdc20-submission",
-         "video": "https://www.youtube.com/watch?v=Yvs1eFle1sc",
-         "frameworks": ["SwiftUI", "CoreML", "PencilKit", "ARKit"],
-         "status": "accepted"
-      }, {
-         "name": "Manas Malla",
-         "source": "https://github.com/ManasMalla/BeCoronaReady",
-         "video": "https://www.youtube.com/watch?v=gwEmnXVhckw",
-         "frameworks": ["PlaygroundSupport", "PlaygroundBook", "SceneKit", "UIKit"],
-         "status": "accepted"
-      }, {
-         "name": "Manthan Keim",
-         "source": "https://github.com/ManthanKeim/COVID19-Learner-Game",
-         "video": "https://youtu.be/ICt1kXr78uQ",
-         "frameworks": ["UIKit", "GameplayKit", "AVFoundation", "AudioToolbox"],
-         "status": "rejected"
-      }, {
-         "name": "Matheus Andrade",
-         "source": "https://github.com/matheusvtna/TheBlindMaze",
-         "video": "",
-         "frameworks": ["SpriteKit"],
-         "status": "accepted"
-      }, {
-         "name": "Matheus Fogiatto",
-         "source": "https://github.com/matheusfogiatto/TheHealthJourney",
-         "video": "https://youtu.be/OtrIBNOJ2AE",
-         "frameworks": ["SpriteKit"],
-         "status": "accepted"
-      }, {
-         "name": "Matt Free",
-         "source": "https://github.com/MJFree34/MusicChordTeacher/",
-         "video": "",
-         "frameworks": ["AVFoundation", "UIKit"],
-         "status": "rejected"
-      }, {
-         "name": "Maxime Madrau",
-         "source": "https://github.com/Maxmad68/SwiftStudentChallenge2020",
-         "video": "",
-         "frameworks": ["SpriteKit", "PencilKit"],
-         "status": "accepted"
-      }, {
-         "name": "Michał Cichecki",
-         "source": "https://github.com/mcichecki/emoji-rebus",
-         "video": "",
-         "frameworks": ["AppKit", "AVFoundation", "SpriteKit"],
-         "status": "accepted"
-      }, {
-         "name": "Mike Ovyan",
-         "source": "https://github.com/ovyan/graph_path",
-         "video": "",
-         "frameworks": ["UIKit"],
-         "status": "accepted"
-      }, {
-         "name": "Minhyuk Kim",
-         "source": "https://github.com/mininny/RockPaperScissors-WWDC20",
-         "video": "",
-         "frameworks": ["ARKit", "CoreML", "Vision", "UIKit"],
-         "status": "accepted"
-      }, {
-         "name": "Minji Lee",
-         "source": "https://github.com/manju-minji/wwdc20",
-         "video": "",
-         "frameworks": ["UIKit", "AVFoundation"],
-         "status": "accepted"
-      }, {
-         "name": "Min Seong Kang",
-         "source": "https://github.com/mkang30/GravityBalling",
-         "video": "",
-         "frameworks": ["SceneKit", "SpriteKit"],
-         "status": "accepted"
-      }, {
-         "name": "Mishaal Kandapath",
-         "source": "https://github.com/ecomparer/TheBeeDance/",
-         "video": "https://youtu.be/jHNd48k0YPE",
-         "frameworks": ["ARKit", "SpriteKit", "SceneKit", "SwiftUI"],
-         "status": "accepted"
-      }, {
-         "name": "Mohamed Salah",
-         "source": "https://github.com/mohasalahh/WWDC20-Scholarship-Submission",
-         "video": "https://www.youtube.com/-EOhFATLLt8",
-         "frameworks": ["SceneKit", "ARKit", "UIKit"],
-         "status": "accepted"
-      }, {
-         "name": "Muhammad Dary Azhari",
-         "source": "",
-         "video": "https://youtu.be/2s-Loc5hTMY",
-         "frameworks": ["AVFoundation", "UIKit"],
-         "status": "submitted"
-      }, {
-         "name": "Muhammad Arif Setyo Aji",
-         "source": "",
-         "video": "",
-         "frameworks": ["UIKit"],
-         "status": "rejected"
-      }, {
-         "name": "Murilo Teixeira",
-         "source": "",
-         "video": "https://youtu.be/uJfihjMoCxg",
-         "frameworks": ["SpriteKit", "GKStateMachine", "NSTouchBar"],
-         "status": "accepted"
-      }, {
-         "name": "Nalin Bhardwaj",
-         "source": "",
-         "video": "",
-         "frameworks": ["SwiftUI", "SpriteKit", "CoreML"],
-         "status": "accepted"
-      }, {
-         "name": "Naman Bishnoi",
-         "source": "https://github.com/diabloxenon/Swiftspam",
-         "video": "https://youtu.be/w2bR5VMJ9CE",
-         "frameworks": ["SwiftUI", "CoreGraphics", "Foundation"],
-         "status": "accepted"
-      }, {
-         "name": "Nathaniel Fargo",
-         "source": "https://github.com/theParadox42/Black-Holes/tree/swift-project",
-         "video": "",
-         "frameworks": ["CoreGraphics", "SwiftUI", "GKNoise"],
-         "status": "accepted"
-      }, {
-         "name": "Niall Kehoe",
-         "source": "",
-         "video": "https://www.youtube.com/watch?v=nbuuas18zgA",
-         "frameworks": ["ARKit", "CoreML", "CreateML", "SpriteKit"],
-         "status": "accepted"
-      }, {
-         "name": "Niklas Bülow",
-         "source": "https://github.com/insightmind/WWDC20SwiftStudentChallenge",
-         "video": "",
-         "frameworks": ["SpriteKit", "CoreImage", "SIMD"],
-         "status": "accepted"
-      }, {
-         "name": "Oksana Bolibok",
-         "source": "https://github.com/Rok-sana/WWDC2020-Logic-Board",
-         "video": "https://youtu.be/O0DEpSXNaI8",
-         "frameworks": ["SpriteKit", "UIKit", "AVSpeechSynthesizer", "AVFoundation"],
-         "status": "accepted"
-      }, {
-         "name": "Oskar Chybowski",
-         "source": "https://github.com/Oschly/SSC20_Submission",
-         "video": "",
-         "frameworks": ["UIKit"],
-         "status": "accepted"
-      }, {
-         "name": "Ozawn Mirza",
-         "source": "https://github.com/ozanmirza1/WWDC-2020-Game-Theory",
-         "video": "https://youtu.be/tvPu4AGlc_I",
-         "frameworks": ["Foundation", "AVFoundation", "UIKit", "QuartzCore"],
-         "status": "rejected"
-      }, {
-         "name": "Palle Klewitz",
-         "source": "https://github.com/palle-k/WWDC20",
-         "video": "",
-         "frameworks": ["SwiftUI", "Accelerate"],
-         "status": "accepted"
-      }, {
-         "name": "Patricia Sampaio",
-         "source": "https://github.com/patysiq/hinadan",
-         "video": "",
-         "frameworks": ["SpriteKit", "Foundation"],
-         "status": "accepted"
-      }, {
-         "name": "Peter Yaacoub",
-         "source": "https://github.com/Yaacoub/Swift-Student-Challenge",
-         "video": "",
-         "frameworks": ["AVFoundation", "UIKit"],
-         "status": "accepted"
-      }, {
-         "name": "Poppy Hwangsa Iswara",
-         "source": "https://github.com/ppyrinn/WWDC20Playground",
-         "video": "",
-         "frameworks": ["AVFoundation", "UIKit", "SoundAnalysis", "SpriteKit"],
-         "status": "accepted"
-      }, {
-         "name": "Prajwal Kulkarni",
-         "source": "https://github.com/prajwalkulkarni/wwdc2020",
-         "video": "https://www.youtube.com/watch?v=VaLJvLJuMFM",
-         "frameworks": ["SwiftUI", "SpriteKit"],
-         "status": "rejected"
-      }, {
-         "name": "Pranath Reddy",
-         "source": "https://github.com/PyJedi/WWDC20-SwiftStudentChallenge",
-         "video": "",
-         "frameworks": ["UIKit", "CoreML", "CoreGraphics", "Vision"],
-         "status": "accepted"
-      }, {
-         "name": "Pranav Karthik",
-         "source": "https://github.com/pranavkarthik10/exercisAR",
-         "video": "https://youtu.be/SYeBaYsg_ZY",
-         "frameworks": ["UIKit", "ARKit", "Foundation"],
-         "status": "accepted"
-      }, {
-         "name": "Praveen Balakrishnan",
-         "source": "https://github.com/xp3d1/Swift-Student-Challenge-Entry",
-         "video": "https://youtu.be/gsDKYLWAMpU",
-         "frameworks": ["SwiftUI", "SceneKit", "AVFoundation"],
-         "status": "accepted"
-      }, {
-         "name": "Pushpinder Pal Singh",
-         "source": "https://github.com/pushpinderpalsingh/CyberSense-WWDC20",
-         "video": "",
-         "frameworks": ["UIKit"],
-         "status": "submitted"
-      }, {
-         "name": "Rafael Ferreira",
-         "source": "https://github.com/Rafaelfferreira/DiseaseSimulator",
-         "video": "",
-         "frameworks": ["UIKit"],
-         "status": "accepted"
-      }, {
-         "name": "Rafael Galdino",
-         "source": "https://github.com/Galdineris/2020",
-         "video": "",
-         "frameworks": ["Foundation", "SpriteKit"],
-         "status": "accepted"
-      }, {
-         "name": "Rangel Dias",
-         "source": "https://github.com/rangelterraquio/WWDC2020",
-         "video": "",
-         "frameworks": ["SpriteKit"],
-         "status": "accepted"
-      }, {
-         "name": "Ritesh Kanchi",
-         "source": "https://github.com/ritesh-kanchi/WWDC20-Submission",
-         "video": "",
-         "frameworks": ["SwiftUI"],
-         "status": "accepted"
-      }, {
-         "name": "Renan Magagnin",
-         "source": "https://github.com/renanmagagnin/beat-wwdc20",
-         "video": "https://youtu.be/ayVB08sXtZY",
-         "frameworks": ["SpriteKit", "AVFoundation"],
-         "status": "accepted"
-      }, {
-         "name": "Renata Faria",
-         "source": "https://github.com/xReee/WWDC2020",
-         "video": "https://www.youtube.com/watch?v=fZ3ilbJx5_8",
-         "frameworks": ["UIKit", "GameplayKit", "AVKit"],
-         "status": "submitted"
-      }, {
-         "name": "Rifqi R",
-         "source": "https://github.com/rif2d/dubsub20",
-         "video": "https://youtu.be/rS2Ln-JC-yQ",
-         "frameworks": ["SpriteKit", "GameplayKit"],
-         "status": "submitted"
-      }, {
-         "name": "Rodrigo Giglio",
-         "source": "https://github.com/rodrigowoulddo/WWDC-2020-The-Bacteria-Adventure",
-         "video": "https://youtu.be/odCptJ5_-_E",
-         "frameworks": ["SpriteKit"],
-         "status": "accepted"
-      }, {
-         "name": "Roland Schmitz",
-         "source": "https://github.com/roland-schmitz-academy/WWDC20-SpiralField",
-         "video": "",
-         "frameworks": ["SwiftUI"],
-         "status": "accepted"
-      }, {
-         "name": "Roman Esin",
-         "source": "",
-         "video": "https://youtu.be/CZyZTzmclFs",
-         "frameworks": ["UIKit"],
-         "status": "submitted"
-      }, {
-         "name": "Roman Rakhlin",
-         "source": "https://github.com/romarakhlin/WWDC20-Submission",
-         "video": "https://www.youtube.com/watch?v=i3y5k_khW_I",
-         "frameworks": ["UIKit", "SceneKit", "SpriteKit"],
-         "status": "rejected"
-      }, {
-         "name": "Robert Pliev",
-         "source": "https://github.com/camotsuc/wwdc20ChallengeAttempt",
-         "video": "",
-         "frameworks": ["UIKit", "Foundation"],
-         "status": "rejected"
-      }, {
-         "name": "Roy Rao",
-         "source": "https://github.com/RoyRao2333/WWDC20-Scholarship",
-         "video": "",
-         "frameworks": ["Cocoa", "Security", "Playground Support"],
-         "status": "accepted"
-      }, {
-         "name": "SungJin Yang",
-         "source": "https://github.com/CoderLoveMath",
-         "video": "",
-         "frameworks": ["SpriteKit", "UIKit"],
-         "status": "accepted"
-      }, {
-         "name": "Sabesh Bharathi",
-         "source": "https://github.com/programVeins/Pandemic",
-         "video": "https://www.youtube.com/watch?v=_wSukFJu3I4",
-         "frameworks": ["UIKit", "AVFoundation"],
-         "status": "rejected"
-      }, {
-         "name": "Sai Vivek Amirishetty",
-         "source": "https://github.com/vivekboss99/WWDC-2020",
-         "video": "",
-         "frameworks": ["UIKit"],
-         "status": "rejected"
-      }, {
-         "name": "Sai Ranga Reddy",
-         "source": "https://github.com/irangareddy/SwiftUI-Trends",
-         "video": "https://youtu.be/4ZkhOWVz00I",
-         "frameworks": ["SwiftUI"],
-         "status": "accepted"
-      }, {
-         "name": "Soumyaditya Choudhuri",
-         "source": "https://github.com/soum-c",
-         "video": "",
-         "frameworks": ["UIKit"],
-         "status": "accepted"
-      }, {
-         "name": "Sylvain Guillier",
-         "source": "",
-         "video": "https://youtu.be/p1fMYYKdKQo",
-         "frameworks": ["SwiftUI", "UIKit", "SpriteKit", "AVFoundation"],
-         "status": "accepted"
-      }, {
-         "name": "Swapnanil Dhol",
-         "source": "https://github.com/SwapnanilDhol/Strokes",
-         "video": "https://www.youtube.com/watch?v=2k72tGpKbpo",
-         "frameworks": ["ARKit", "RealityKit", "Core ML", "Create ML"],
-         "status": "accepted"
-      }, {
-         "name": "Thiago Martins",
-         "source": "https://github.com/ThiagoMartins05/The-Golden-Ratio-WWDC2020",
-         "video": "",
-         "frameworks": ["Spritekit"],
-         "status": "accepted"
-      }, {
-         "name": "Thiago Nitschke",
-         "source": "https://github.com/thnitschke/WWDC2020",
-         "video": "",
-         "frameworks": ["SwiftUI"],
-         "status": "accepted"
-      }, {
-         "name": "Thijs van der Heijden",
-         "source": "https://github.com/thijsheijden/WWDC20",
-         "video": "",
-         "frameworks": ["UIKit"],
-         "status": "submitted"
-      }, {
-         "name": "Til Blechschmidt",
-         "source": "https://github.com/TilBlechschmidt/BoidsPlayground",
-         "video": "https://youtu.be/dcuUWqUO91w",
-         "frameworks": ["Metal", "SwiftUI", "AVFoundation"],
-         "status": "accepted"
-      }, {
-         "name": "Uladzislau Tarasevich",
-         "source": "https://github.com/Sencudra/WWDC-2020",
-         "video": "https://youtu.be/-gmsWnv3UZ8",
-         "frameworks": ["SpriteKit", "AVFoundation"],
-         "status": "rejected"
-      }, {
-         "name": "Umar Haroon",
-         "source": "https://github.com/Umar-M-Haroon/WWDC2020",
-         "video": "",
-         "frameworks": ["ARKit", "SceneKit", "SwiftUI", "UIKit"],
-         "status": "accepted"
-      }, {
-         "name": "Valentino Cerutti",
-         "source": "https://github.com/Micrograx/Emotions-WWDC20",
-         "video": "",
-         "frameworks": ["SwiftUI", "AVFoundation"],
-         "status": "rejected"
-      }, {
-         "name": "Vincent Cai",
-         "source": "https://github.com/Vince14Genius/WWDC20-Wotagei-x-Music-Game",
-         "video": "",
-         "frameworks": ["SpriteKit", "SwiftUI", "SKShader (OpenGL/GLSL)"],
-         "status": "accepted"
-      }, {
-         "name": "Vinicius Chagas",
-         "source": "https://github.com/vcsoares/FourierAndMusic",
-         "video": "https://youtu.be/fZsP1-hPrt0",
-         "frameworks": ["SwiftUI", "AVFoundation"],
-         "status": "accepted"
-      }, {
-         "name": "Vinícius Binder",
-         "source": "https://github.com/viniciusbinder/wwdc20-submission",
-         "video": "https://youtu.be/f_LbK6Dhfps",
-         "frameworks": ["SpriteKit"],
-         "status": "accepted"
-      }, {
-         "name": "Vinícius Bernardes Bonemer",
-         "source": "https://github.com/viniciusbonemer/Swift-Student-Challenge-2020",
-         "video": "https://www.youtube.com/watch?v=PBUt_Ra_MH8&feature=youtu.be",
-         "frameworks": ["UIKit", "SpriteKit", "Combine", "AVFoundation"],
-         "status": "accepted"
-      }, {
-         "name": "Vitória Corrêa",
-         "source": "https://github.com/vofcorrea/wwdc20wemen",
-         "video": "",
-         "frameworks": ["SpriteKit", "UIKit"],
-         "status": "accepted"
-      }, {
-         "name": "Wendy Liga",
-         "source": "https://github.com/wendyliga/tunery",
-         "video": "https://youtu.be/L17PW6inUzw",
-         "frameworks": ["AVFoundation", "UIKit"],
-         "status": "accepted"
-      }, {
-         "name": "William Taylor",
-         "source": "",
-         "video": "https://youtu.be/TKM9Sut60fs",
-         "frameworks": ["UIKit", "SceneKit", "ARKit", "AVFoundation"],
-         "status": "accepted"
-      }, {
-         "name": "Witek Bobrowski",
-         "source": "https://github.com/witekbobrowski/wwdc20-submission",
-         "video": "",
-         "frameworks": ["SwiftUI"],
-         "status": "rejected"
-      }, {
-         "name": "Veit Progl",
-         "source": "https://github.com/Veeit/WWDC-2020-Learning-Disability",
-         "video": "https://youtu.be/8qhFrv4MEPg",
-         "frameworks": ["SwiftUI", "SceneKit", "ARKit", "CoreML"],
-         "status": "accepted"
-      }, {
-         "name": "Victor S. Melo",
-         "source": "https://github.com/vctrsmelo/WWDC20",
-         "video": "https://youtu.be/ov_U4okydMo",
-         "frameworks": ["SwiftUI", "AI"],
-         "status": "accepted"
-      }, {
-         "name": "Xi Zhao",
-         "source": "https://github.com/ZXXZ00/WWDC20",
-         "video": "https://youtu.be/RMyHlFH0348",
-         "frameworks": ["CoreMotion", "SpriteKit"],
-         "status": "submitted"
-      }, {
-         "name": "Xu Haobo",
-         "source": "https://github.com/haoboxuxu",
-         "video": "https://youtu.be/jxMOE_OQPAY",
-         "frameworks": ["SpriteKit", "SceneKit", "ARKit"],
-         "status": "accepted"
-      }, {
-         "name": "Yangyang Feng",
-         "source": "https://github.com/CynricFeng/Papercutting",
-         "video": "https://www.bilibili.com/video/BV15K4y1t75s/",
-         "frameworks": ["AppKit", "Vision", "SpriteKit", "AVFoundation"],
-         "status": "accepted"
-      }, {
-         "name": "Yauheni Stsefankou",
-         "source": "https://github.com/stefjen07/WWDC20-AirportLife",
-         "video": "",
-         "frameworks": ["SpriteKit"],
-         "status": "accepted"
-      }, {
-         "name": "Yihan Huang",
-         "source": "https://github.com/GetToSet/ArtOfAscii",
-         "video": "",
-         "frameworks": ["AVFoundation", "Accelerate", "UIKit"],
-         "status": "accepted"
-      }, {
-         "name": "YiZhong Qi",
-         "source": "https://github.com/qyz777/AcousticShip",
-         "video": "",
-         "frameworks": ["AVFoundation", "UIKit"],
-         "status": "submitted"
-      }, {
-         "name": "Yow Shin Liou",
-         "source": "https://github.com/yozn/wwdc20",
-         "video": "https://youtu.be/qHv2Xpb3tdQ",
-         "frameworks": ["SpriteKit", "AVFoundation", "UIKit"],
-         "status": "accepted"
-      }, {
-         "name": "Yugantar Jain",
-         "source": "https://github.com/yugantarjain/WWDC20",
-         "video": "",
-         "frameworks": ["UIKit", "SpriteKit Particles"],
-         "status": "accepted"
-      }, {
-         "name": "Zafar Ivaev",
-         "source": "https://github.com/zafarivaev/WWDC20-FigureBreaker",
-         "video": "",
-         "frameworks": ["Combine", "UIKit", "SceneKit", "SpriteKit"],
-         "status": "accepted"
-      }, {
-         "name": "Zijian Zhao",
-         "source": "https://github.com/JackZhao98/Linux-Playground",
-         "video": "",
-         "frameworks": ["SwiftUI"],
-         "status": "accepted"
-      }, {
-         "name": "Zhengke Xu",
-         "source": "https://github.com/ixzk/Spirograph",
-         "video": "",
-         "frameworks": ["UIKit"],
-         "status": "accepted"
-      }, {
-         "name": "Zhiyu Zhu",
-         "source": "https://github.com/ApolloZhu/Swifty-Podcast-Editor",
-         "video": "",
-         "frameworks": ["SwiftUI", "Combine", "Speech", "AVFoundation"],
-         "status": "rejected"
-      }, {
-         "name": "Zixuan Tang",
-         "source": "https://github.com/TonyTang2001/SixFeetBetween_WWDC20SwiftChallenge",
-         "video": "https://youtu.be/sj_laBHKu6I",
-         "frameworks": ["SwiftUI", "AVFoundation"],
-         "status": "accepted"
-      }
-   ]
+    "developers": [
+        {
+            "name": "Ailton Vieira Pinto Filho",
+            "source": "https://github.com/ailtonvivaz/WWDC20Playground",
+            "video": "https://youtu.be/Epffk-v0Oww",
+            "frameworks": [
+                "UIKit"
+            ],
+            "status": "accepted",
+            "github_username": "ailtonvivaz",
+            "twitter_username": null
+        },
+        {
+            "name": "Albert Rayneer Queiroz",
+            "source": "https://github.com/AlbertQueiroz/MagicFlute-WWDC20",
+            "video": "https://www.youtube.com/watch?v=eYtamPAZ4p0",
+            "frameworks": [
+                "UIKit",
+                "AVFoundation"
+            ],
+            "status": "accepted",
+            "github_username": "AlbertQueiroz",
+            "twitter_username": null
+        },
+        {
+            "name": "Alexander Zank",
+            "source": "https://github.com/AlexLike/WWDC20Playground",
+            "video": "https://youtu.be/k_1tqM6LmV0",
+            "frameworks": [
+                "SwiftUI",
+                "SceneKit",
+                "Accelerate",
+                "ARKit"
+            ],
+            "status": "submitted",
+            "github_username": "AlexLike",
+            "twitter_username": null
+        },
+        {
+            "name": "Alexandru Turcanu",
+            "source": "https://github.com/Pondorasti/SimonDraws",
+            "video": "https://youtu.be/KyiXl2NFWHg",
+            "frameworks": [
+                "SwiftUI",
+                "PencilKit",
+                "CoreML",
+                "AVFoundation"
+            ],
+            "status": "accepted",
+            "github_username": "Pondorasti",
+            "twitter_username": null
+        },
+        {
+            "name": "Aline Gomes de Brito",
+            "source": "https://github.com/gomesalineagb/wwdc2020",
+            "video": "https://www.youtube.com/watch?v=Z-21mbX28VE",
+            "frameworks": [
+                "SpriteKit",
+                "AVFoundation"
+            ],
+            "status": "accepted",
+            "github_username": "gomesalineagb",
+            "twitter_username": null
+        },
+        {
+            "name": "Alkan Caner",
+            "source": "https://github.com/AlkanCaner/InteractivePicture",
+            "video": "https://www.youtube.com/watch?v=Ght67Ks1Wtg",
+            "frameworks": [
+                "SwiftUI"
+            ],
+            "status": "accepted",
+            "github_username": "AlkanCaner",
+            "twitter_username": null
+        },
+        {
+            "name": "Alvin Hsueh",
+            "source": "https://github.com/HaXAlvin/WWDC20",
+            "video": "",
+            "frameworks": [
+                "SpriteKit",
+                "Foundation",
+                "UIKit"
+            ],
+            "status": "accepted",
+            "github_username": "HaXAlvin",
+            "twitter_username": null
+        },
+        {
+            "name": "Ant\u00f4nio Carlos",
+            "source": "https://github.com/AntonioCarlosCNJ/WWDC_2020",
+            "video": "https://www.youtube.com/watch?v=cl3Ou7SgQn4",
+            "frameworks": [
+                "SpriteKit"
+            ],
+            "status": "accepted",
+            "github_username": "AntonioCarlosCNJ",
+            "twitter_username": null
+        },
+        {
+            "name": "Amit Samant",
+            "source": "https://github.com/DominatorVbN/WWDC20-Submission",
+            "video": "https://youtu.be/dsosgiPSXdo",
+            "frameworks": [
+                "SwiftUI",
+                "CoreAnimation",
+                "SceneKit",
+                "ARKit"
+            ],
+            "status": "accepted",
+            "github_username": "DominatorVbN",
+            "twitter_username": null
+        },
+        {
+            "name": "Anya Sliwinski",
+            "source": "https://github.com/a-n-y-a/virus-spread-sim",
+            "video": "",
+            "frameworks": [
+                "SpriteKit"
+            ],
+            "status": "accepted",
+            "github_username": "a-n-y-a",
+            "twitter_username": null
+        },
+        {
+            "name": "Arjun Dureja",
+            "source": "https://github.com/Arjun-dureja/WWDC-Swift-Student-Challenge",
+            "video": "https://www.youtube.com/watch?v=5zoE_7nQ1N4",
+            "frameworks": [
+                "UIKit"
+            ],
+            "status": "accepted",
+            "github_username": "Arjun-dureja",
+            "twitter_username": null
+        },
+        {
+            "name": "Artemas J. Radik",
+            "source": "https://github.com/magnesiumm/WWDC20-Swift-Student-Challenge",
+            "video": "",
+            "frameworks": [
+                "UIKit"
+            ],
+            "status": "accepted",
+            "github_username": "magnesiumm",
+            "twitter_username": null
+        },
+        {
+            "name": "Arved Viehweger",
+            "source": "",
+            "video": "https://www.youtube.com/watch?v=y7FjFwVwM08&feature=youtu.be",
+            "frameworks": [
+                "ARKit",
+                "SceneKit",
+                "UIKit",
+                "AVFoundation"
+            ],
+            "status": "submitted",
+            "github_username": null,
+            "twitter_username": null
+        },
+        {
+            "name": "Aryan Nambiar",
+            "source": "https://github.com/ifisq/Build-A-Piano",
+            "video": "",
+            "frameworks": [
+                "UIKit",
+                "AVFoundation"
+            ],
+            "status": "accepted",
+            "github_username": "ifisq",
+            "twitter_username": null
+        },
+        {
+            "name": "Askar Almukhametov",
+            "source": "https://github.com/MetahCoder/Dombra_playground",
+            "video": "",
+            "frameworks": [
+                "AVFoundation",
+                "UIKit"
+            ],
+            "status": "accepted",
+            "github_username": "MetahCoder",
+            "twitter_username": null
+        },
+        {
+            "name": "Ataberk Turan",
+            "source": "https://github.com/ataberkturan/LalopathyAI",
+            "video": "",
+            "frameworks": [
+                "SwiftUI",
+                "CoreML",
+                "Combine"
+            ],
+            "status": "accepted",
+            "github_username": "ataberkturan",
+            "twitter_username": null
+        },
+        {
+            "name": "Aurther Nadeem",
+            "source": "https://github.com/Aurther-Nadeem/WWDC2020",
+            "video": "",
+            "frameworks": [
+                "ARKit",
+                "RealityKit",
+                "SwiftUI",
+                "AVFoundation"
+            ],
+            "status": "submitted",
+            "github_username": "Aurther-Nadeem",
+            "twitter_username": null
+        },
+        {
+            "name": "Baskoro Indrayana",
+            "source": "https://github.com/baskoroi/wwdc20-submission",
+            "video": "https://youtu.be/pU6q3clW3w8",
+            "frameworks": [
+                "SwiftUI",
+                "Combine"
+            ],
+            "status": "rejected",
+            "github_username": "baskoroi",
+            "twitter_username": null
+        },
+        {
+            "name": "Bart\u0142omiej Pluta",
+            "source": "https://github.com/bpluta/Artyficial-Camera",
+            "video": "",
+            "frameworks": [
+                "SwiftUI",
+                "CoreML",
+                "AVFoundation"
+            ],
+            "status": "rejected",
+            "github_username": "bpluta",
+            "twitter_username": null
+        },
+        {
+            "name": "Benjamin Hutter",
+            "source": "https://github.com/benjaminhtr/WWDC20",
+            "video": "",
+            "frameworks": [
+                "UIKit",
+                "CoreML",
+                "Vision",
+                "AVFoundation"
+            ],
+            "status": "rejected",
+            "github_username": "benjaminhtr",
+            "twitter_username": null
+        },
+        {
+            "name": "Benji Burgess",
+            "source": "https://github.com/benjiburgess/WWDC20-Scholarship",
+            "video": "",
+            "frameworks": [
+                "SwiftUI"
+            ],
+            "status": "accepted",
+            "github_username": "benjiburgess",
+            "twitter_username": null
+        },
+        {
+            "name": "Berkin Ceylan",
+            "source": "https://github.com/berkinceylan/WWDC20",
+            "video": "https://www.youtube.com/watch?v=uN7Ea_Ihduw",
+            "frameworks": [
+                "SwiftUI"
+            ],
+            "status": "submitted",
+            "github_username": "berkinceylan",
+            "twitter_username": null
+        },
+        {
+            "name": "Bradley Klemick",
+            "source": "https://github.com/BradzTech/GravityPlayground",
+            "video": "",
+            "frameworks": [
+                "SpriteKit"
+            ],
+            "status": "accepted",
+            "github_username": "BradzTech",
+            "twitter_username": null
+        },
+        {
+            "name": "Bryanza Novirahman",
+            "source": "https://github.com/bryanzanr/go-cli",
+            "video": "https://www.youtube.com/watch?v=yIZjEuULFos",
+            "frameworks": [
+                "SwiftUI"
+            ],
+            "status": "rejected",
+            "github_username": "bryanzanr",
+            "twitter_username": null
+        },
+        {
+            "name": "Bruno Pastre",
+            "source": "https://github.com/pastre/wwdc2020",
+            "video": "https://www.youtube.com/watch?v=5ewAP9lBV40",
+            "frameworks": [
+                "SpriteKit"
+            ],
+            "status": "submitted",
+            "github_username": "pastre",
+            "twitter_username": null
+        },
+        {
+            "name": "BumMo Koo",
+            "source": "https://github.com/gbmksquare/WWDC-2020",
+            "video": "",
+            "frameworks": [
+                "SceneKit",
+                "AVFoundation",
+                "PencilKit"
+            ],
+            "status": "accepted",
+            "github_username": "gbmksquare",
+            "twitter_username": null
+        },
+        {
+            "name": "Caio Noronha",
+            "source": "https://github.com/CaioNoronha/DanceChallenge",
+            "video": "https://www.youtube.com/watch?v=Gfo8tdN4iP8",
+            "frameworks": [
+                "SpriteKit",
+                "AVFoundation"
+            ],
+            "status": "accepted",
+            "github_username": "CaioNoronha",
+            "twitter_username": null
+        },
+        {
+            "name": "Cameron Bernhardt",
+            "source": "https://github.com/AstroCB/Swift-COVID",
+            "video": "",
+            "frameworks": [
+                "AppKit",
+                "MapKit"
+            ],
+            "status": "submitted",
+            "github_username": "AstroCB",
+            "twitter_username": null
+        },
+        {
+            "name": "Can Balkaya",
+            "source": "https://github.com/canbalkya/Evape-WWDC20",
+            "video": "https://www.youtube.com/watch?v=QMQnLFypW3Y",
+            "frameworks": [
+                "SwiftUI"
+            ],
+            "status": "accepted",
+            "github_username": "canbalkya",
+            "twitter_username": null
+        },
+        {
+            "name": "Carlo Palumbo",
+            "source": "https://github.com/patana93/Let-s-Play-With-Digital-Electronics-WWDC20",
+            "video": "https://youtu.be/YgoyxPCzjss",
+            "frameworks": [
+                "UIKit"
+            ],
+            "status": "accepted",
+            "github_username": "patana93",
+            "twitter_username": null
+        },
+        {
+            "name": "Carlos Modinez",
+            "source": "https://github.com/CarlosModinez/SmartTraffic-WWDC2020",
+            "video": "https://www.youtube.com/watch?v=FQvwIVXCQus",
+            "frameworks": [
+                "SpriteKit"
+            ],
+            "status": "accepted",
+            "github_username": "CarlosModinez",
+            "twitter_username": null
+        },
+        {
+            "name": "Cay Zhang",
+            "source": "https://github.com/Cay-Zhang/SwiftStudentChallenge2020",
+            "video": "https://youtu.be/A7TtfZyYo3A",
+            "frameworks": [
+                "SpriteKit",
+                "Combine"
+            ],
+            "status": "accepted",
+            "github_username": "Cay-Zhang",
+            "twitter_username": null
+        },
+        {
+            "name": "Christian P",
+            "source": "https://github.com/Priva28/PlanetARium",
+            "video": "https://youtu.be/EwPspV8ZUp4",
+            "frameworks": [
+                "SwiftUI",
+                "ARKit",
+                "SceneKit",
+                "Vision"
+            ],
+            "status": "accepted",
+            "github_username": "Priva28",
+            "twitter_username": null
+        },
+        {
+            "name": "Cristian Garske",
+            "source": "https://github.com/CristianGarske/WWDC20",
+            "video": "https://youtu.be/kPVHToiKMJM",
+            "frameworks": [
+                "SwiftUI"
+            ],
+            "status": "accepted",
+            "github_username": "CristianGarske",
+            "twitter_username": null
+        },
+        {
+            "name": "Dave Jha",
+            "source": "https://github.com/DaveJha/Social-Distancing-Simulator",
+            "video": "https://www.youtube.com/watch?v=WlbHsg09BxY",
+            "frameworks": [
+                "SwiftUI",
+                "SpriteKit"
+            ],
+            "status": "accepted",
+            "github_username": "DaveJha",
+            "twitter_username": null
+        },
+        {
+            "name": "Daniel Liu",
+            "source": "https://github.com/Daniel-Liu-c0deb0t/WWDC-2020-Coronavirus-Comparison",
+            "video": "https://www.youtube.com/watch?v=X12SKO0wGwg",
+            "frameworks": [
+                "UIKit"
+            ],
+            "status": "accepted",
+            "github_username": "Daniel-Liu-c0deb0t",
+            "twitter_username": null
+        },
+        {
+            "name": "Daniel Leal",
+            "source": "https://github.com/danielleal2901/WWDC_Dyslexia_2020",
+            "video": "",
+            "frameworks": [
+                "SpriteKit"
+            ],
+            "status": "accepted",
+            "github_username": "danielleal2901",
+            "twitter_username": null
+        },
+        {
+            "name": "Daniel (Shao Cheng) Pan",
+            "source": "https://github.com/Majestic-Hero/WWDC-2020-Submission",
+            "video": "https://www.youtube.com/watch?v=eyAY9Dkrsak",
+            "frameworks": [
+                "SpriteKit",
+                "UIKit"
+            ],
+            "status": "rejected",
+            "github_username": "Majestic-Hero",
+            "twitter_username": null
+        },
+        {
+            "name": "Daniil Dolog",
+            "source": "https://github.com/DanDolog/wwdc2020-Accepted-",
+            "video": "https://youtu.be/5EBop-H8d6A",
+            "frameworks": [
+                "SpriteKit",
+                "UIKit",
+                "AVFoundation"
+            ],
+            "status": "accepted",
+            "github_username": "DanDolog",
+            "twitter_username": null
+        },
+        {
+            "name": "David Knothe",
+            "source": "https://github.com/knothed/Fractals",
+            "video": "",
+            "frameworks": [
+                "Core Animation"
+            ],
+            "status": "accepted",
+            "github_username": "knothed",
+            "twitter_username": null
+        },
+        {
+            "name": "Deniz Karakay",
+            "source": "https://github.com/dkarakay/Stop-Pandemic",
+            "video": "https://youtu.be/oOy-9lieXxk",
+            "frameworks": [
+                "SpriteKit",
+                "AVFoundation",
+                "SwiftUI"
+            ],
+            "status": "accepted",
+            "github_username": "dkarakay",
+            "twitter_username": null
+        },
+        {
+            "name": "Devi Mandasari",
+            "source": "https://github.com/devimandas/WWDC20-Gonggong",
+            "video": "https://www.youtube.com/watch?v=DNXkG2Ow4ZY",
+            "frameworks": [
+                "SpriteKit",
+                "AVFoundation"
+            ],
+            "status": "submitted",
+            "github_username": "devimandas",
+            "twitter_username": null
+        },
+        {
+            "name": "Duraid Abdul",
+            "source": "https://github.com/duraidabdul/Sleep",
+            "video": "",
+            "frameworks": [
+                "UIKit",
+                "SwiftUI",
+                "Core Motion"
+            ],
+            "status": "accepted",
+            "github_username": "duraidabdul",
+            "twitter_username": null
+        },
+        {
+            "name": "Edgar Vilchis",
+            "source": "https://github.com/Evil96/WWDC",
+            "video": "https://www.youtube.com/watch?v=uvENDZJteiI",
+            "frameworks": [
+                "UIKit",
+                "CoreML"
+            ],
+            "status": "rejected",
+            "github_username": "Evil96",
+            "twitter_username": null
+        },
+        {
+            "name": "Euan Traynor",
+            "source": "https://github.com/efalloon/WWDC2020-Accepted",
+            "video": "",
+            "frameworks": [
+                "UIKit",
+                "AVFoundation"
+            ],
+            "status": "accepted",
+            "github_username": "efalloon",
+            "twitter_username": null
+        },
+        {
+            "name": "Evgenii Truuts",
+            "source": "https://github.com/g7skim/SaveTheCells",
+            "video": "https://www.youtube.com/watch?v=nyORlZUlxgs",
+            "frameworks": [
+                "SpriteKit",
+                "SceneKit"
+            ],
+            "status": "accepted",
+            "github_username": "g7skim",
+            "twitter_username": null
+        },
+        {
+            "name": "Federico Ciardi",
+            "source": "https://github.com/fedeci/WWDC2020",
+            "video": "",
+            "frameworks": [
+                "SpriteKit",
+                "AVFoundation"
+            ],
+            "status": "accepted",
+            "github_username": "fedeci",
+            "twitter_username": null
+        },
+        {
+            "name": "Fernando Fontecha",
+            "source": "",
+            "video": "https://www.youtube.com/watch?v=zi2J60IKbKw",
+            "frameworks": [
+                "UIKit",
+                "Core Animation",
+                "PlaygroundSupport"
+            ],
+            "status": "accepted",
+            "github_username": null,
+            "twitter_username": null
+        },
+        {
+            "name": "Frank Foster",
+            "source": "https://github.com/analogpotato/WWDCSubmission",
+            "video": "",
+            "frameworks": [
+                "AVFoundation",
+                "Vision",
+                "VisionKit"
+            ],
+            "status": "submitted",
+            "github_username": "analogpotato",
+            "twitter_username": null
+        },
+        {
+            "name": "Fred P",
+            "source": "https://github.com/fredpi/WWDC2020",
+            "video": "",
+            "frameworks": [
+                "UIKit",
+                "Core Animation",
+                "Core Graphics"
+            ],
+            "status": "accepted",
+            "github_username": "fredpi",
+            "twitter_username": null
+        },
+        {
+            "name": "Frederico Lacis",
+            "source": "https://github.com/fredlacis/TheSeaCycle_WWDC2020",
+            "video": "https://www.youtube.com/watch?v=f_y6uGfQxcI",
+            "frameworks": [
+                "SpriteKit"
+            ],
+            "status": "accepted",
+            "github_username": "fredlacis",
+            "twitter_username": null
+        },
+        {
+            "name": "Giovanni Gorgone",
+            "source": "https://github.com/ggorgone/WWDC2020_submission",
+            "video": "",
+            "frameworks": [
+                "SwiftUI",
+                "AVFoundation"
+            ],
+            "status": "accepted",
+            "github_username": "ggorgone",
+            "twitter_username": null
+        },
+        {
+            "name": "Gleb Losev",
+            "source": "https://gitlab.com/hellokurt/dyslexiareader",
+            "video": "",
+            "frameworks": [
+                "UIKit",
+                "AVFoundation"
+            ],
+            "status": "accepted",
+            "github_username": null,
+            "twitter_username": null
+        },
+        {
+            "name": "Glenn Brannelly",
+            "source": "",
+            "video": "https://youtu.be/lQAr6TQetm4",
+            "frameworks": [
+                "SpriteKit",
+                "SceneKit"
+            ],
+            "status": "accepted",
+            "github_username": null,
+            "twitter_username": null
+        },
+        {
+            "name": "Grant Emerson",
+            "source": "https://github.com/GrantJEmerson/Clipstrument",
+            "video": "https://www.youtube.com/watch?v=VWTPXvdipn0",
+            "frameworks": [
+                "UIKit",
+                "AVFoundation"
+            ],
+            "status": "accepted",
+            "github_username": "GrantJEmerson",
+            "twitter_username": null
+        },
+        {
+            "name": "Grey Patterson",
+            "source": "https://github.com/grey280/SwiftLife",
+            "video": "",
+            "frameworks": [
+                "SwiftUI",
+                "Combine"
+            ],
+            "status": "accepted",
+            "github_username": "grey280",
+            "twitter_username": null
+        },
+        {
+            "name": "Haotian Zheng",
+            "source": "https://github.com/JustinFincher/WWDC20Playground",
+            "video": "",
+            "frameworks": [
+                "UIKit Dynamics",
+                "SwiftUI",
+                "SpriteKit"
+            ],
+            "status": "accepted",
+            "github_username": "JustinFincher",
+            "twitter_username": null
+        },
+        {
+            "name": "Hariharan Murugesan",
+            "source": "",
+            "video": "",
+            "frameworks": [
+                "ARKit",
+                "SceneKit"
+            ],
+            "status": "accepted",
+            "github_username": null,
+            "twitter_username": null
+        },
+        {
+            "name": "Hengyu Liu",
+            "source": "https://github.com/a211212abc/WWDC20",
+            "video": "",
+            "frameworks": [
+                "SwiftUI",
+                "ARKit",
+                "SpriteKit"
+            ],
+            "status": "submitted",
+            "github_username": "a211212abc",
+            "twitter_username": null
+        },
+        {
+            "name": "Henrik Storch",
+            "source": "https://github.com/thisIsTheFoxe/WWDC20",
+            "video": "",
+            "frameworks": [
+                "SpriteKit"
+            ],
+            "status": "rejected",
+            "github_username": "thisIsTheFoxe",
+            "twitter_username": null
+        },
+        {
+            "name": "Henrique Conte",
+            "source": "https://github.com/henriqueconte/ESCapeEleanorWWDC20-Accepted",
+            "video": "https://www.youtube.com/watch?v=inrIAAM6OCI&feature=youtu.be",
+            "frameworks": [
+                "TouchBar",
+                "SpriteKit",
+                "AVFoundation",
+                "AppKit"
+            ],
+            "status": "accepted",
+            "github_username": "henriqueconte",
+            "twitter_username": null
+        },
+        {
+            "name": "Hock Shem Chong",
+            "source": "https://github.com/hockshem/multiply-by-lines",
+            "video": "",
+            "frameworks": [
+                "UIKit",
+                "PencilKit",
+                "Vision"
+            ],
+            "status": "accepted",
+            "github_username": "hockshem",
+            "twitter_username": null
+        },
+        {
+            "name": "Ihwan D",
+            "source": "https://github.com/IhwanID/wwdc20-rice-cooker-hack",
+            "video": "https://youtu.be/0fgdYEAn6MQ",
+            "frameworks": [
+                "SwiftUI",
+                "AVFoundation"
+            ],
+            "status": "submitted",
+            "github_username": "IhwanID",
+            "twitter_username": null
+        },
+        {
+            "name": "Izabella Melo",
+            "source": "https://github.com/izmcm/Cracking-The-Enigma",
+            "video": "",
+            "frameworks": [
+                "UIKit"
+            ],
+            "status": "accepted",
+            "github_username": "izmcm",
+            "twitter_username": null
+        },
+        {
+            "name": "Jackson Utsch",
+            "source": "https://github.com/JacksonUtsch/WWDC-2020-Project",
+            "video": "",
+            "frameworks": [
+                "SwiftUI",
+                "SpriteKit"
+            ],
+            "status": "submitted",
+            "github_username": "JacksonUtsch",
+            "twitter_username": null
+        },
+        {
+            "name": "Jaesung Lee",
+            "source": "https://github.com/jaesung-wwdc/WWDC20-SwiftStudentChallenge",
+            "video": "",
+            "frameworks": [
+                "ARKit",
+                "SceneKit",
+                "UIKit",
+                "AVFoundation"
+            ],
+            "status": "accepted",
+            "github_username": "jaesung-wwdc",
+            "twitter_username": null
+        },
+        {
+            "name": "Jake Spann",
+            "source": "https://github.com/Jake3231/Cybersecurity-101",
+            "video": "",
+            "frameworks": [
+                "SpriteKit"
+            ],
+            "status": "accepted",
+            "github_username": "Jake3231",
+            "twitter_username": null
+        },
+        {
+            "name": "Jalp Desai",
+            "source": "https://github.com/jalp14/WWDC20",
+            "video": "",
+            "frameworks": [
+                "SwiftUI",
+                "SpriteKit",
+                "UIKit"
+            ],
+            "status": "submitted",
+            "github_username": "jalp14",
+            "twitter_username": null
+        },
+        {
+            "name": "Jannik Schwade",
+            "source": "https://github.com/jannikschwade/wwdc20",
+            "video": "https://www.youtube.com/watch?v=bY32gZBbTS8",
+            "frameworks": [
+                "SpriteKit",
+                "UIKit"
+            ],
+            "status": "rejected",
+            "github_username": "jannikschwade",
+            "twitter_username": null
+        },
+        {
+            "name": "Javier Gallo Roca",
+            "source": "https://github.com/Happygallo/ColorEmotionsPalette",
+            "video": "https://youtu.be/f0-avTA32Yg",
+            "frameworks": [
+                "SwiftUI"
+            ],
+            "status": "accepted",
+            "github_username": "Happygallo",
+            "twitter_username": null
+        },
+        {
+            "name": "Jo\u00e3o Gabriel",
+            "source": "https://github.com/joogps/WWDC-2020",
+            "video": "https://youtu.be/cf-_kp-4W48",
+            "frameworks": [
+                "SpriteKit",
+                "AVFoundation"
+            ],
+            "status": "accepted",
+            "github_username": "joogps",
+            "twitter_username": null
+        },
+        {
+            "name": "Jo\u00e3o Paulo Santos",
+            "source": "https://github.com/jppsantos/WWDC_EmpathyChallenge",
+            "video": "https://www.youtube.com/watch?v=8C5BjjiLf5Y",
+            "frameworks": [
+                "SpriteKit",
+                "GameplayKit"
+            ],
+            "status": "accepted",
+            "github_username": "jppsantos",
+            "twitter_username": null
+        },
+        {
+            "name": "John Atkinson",
+            "source": "",
+            "video": "",
+            "frameworks": [
+                "SpriteKit"
+            ],
+            "status": "accepted",
+            "github_username": null,
+            "twitter_username": null
+        },
+        {
+            "name": "Jose Adolfo Talactac",
+            "source": "https://github.com/jadolfot/LearnWithAR",
+            "video": "https://www.youtube.com/watch?v=vNZKRVPVzX4",
+            "frameworks": [
+                "ARKit",
+                "SceneKit",
+                "SpriteKit",
+                "simd"
+            ],
+            "status": "accepted",
+            "github_username": "jadolfot",
+            "twitter_username": null
+        },
+        {
+            "name": "Joseph Kokenge",
+            "source": "https://github.com/JOyo246/SwiftStudentChallengeSubmission2020",
+            "video": "https://www.youtube.com/watch?v=L2JxtWiTg5I",
+            "frameworks": [
+                "CryptoKit",
+                "UIKit"
+            ],
+            "status": "accepted",
+            "github_username": "JOyo246",
+            "twitter_username": null
+        },
+        {
+            "name": "Julian Benedikt Heuschen",
+            "source": "https://github.com/JavaJHMalerBus/wwdc20",
+            "video": "",
+            "frameworks": [
+                "CoreML",
+                "Vision",
+                "AVFoundation"
+            ],
+            "status": "accepted",
+            "github_username": "JavaJHMalerBus",
+            "twitter_username": null
+        },
+        {
+            "name": "Julian Schiavo",
+            "source": "https://github.com/julianschiavo/wwdc/tree/master/2020",
+            "video": "https://www.youtube.com/watch?v=-m74x10IZS4",
+            "frameworks": [
+                "ARKit",
+                "Combine",
+                "RealityKit",
+                "SwiftUI"
+            ],
+            "status": "rejected",
+            "github_username": "julianschiavo",
+            "twitter_username": null
+        },
+        {
+            "name": "Kanishka Chaudhry",
+            "source": "https://github.com/Kanishka3/SwiftStudentChallenge2020",
+            "video": "https://youtu.be/G87_5RRhB9g",
+            "frameworks": [
+                "SwiftUI",
+                "UIKit",
+                "AVFoundation",
+                "Combine"
+            ],
+            "status": "accepted",
+            "github_username": "Kanishka3",
+            "twitter_username": null
+        },
+        {
+            "name": "Keith Madison",
+            "source": "",
+            "video": "https://www.youtube.com/watch?v=D68MrqDGYAI",
+            "frameworks": [
+                "UIKit",
+                "AVFoundation",
+                "NaturalLanguage",
+                "CoreML"
+            ],
+            "status": "submitted",
+            "github_username": null,
+            "twitter_username": null
+        },
+        {
+            "name": "Kellyane Nogueira",
+            "source": "https://github.com/kellyanenogueira1/WWDC-Submission",
+            "video": "https://www.youtube.com/watch?v=lTV0syBmcCI",
+            "frameworks": [
+                "UIKit"
+            ],
+            "status": "accepted",
+            "github_username": "kellyanenogueira1",
+            "twitter_username": null
+        },
+        {
+            "name": "Liam Rosenfeld",
+            "source": "https://github.com/liamrosenfeld/STFourierExplainer",
+            "video": "",
+            "frameworks": [
+                "Accelerate",
+                "AVFoundation",
+                "CoreGraphics",
+                "SwiftUI"
+            ],
+            "status": "accepted",
+            "github_username": "liamrosenfeld",
+            "twitter_username": null
+        },
+        {
+            "name": "LiulietLee",
+            "source": "https://github.com/LiulietLee/nn-playground",
+            "video": "",
+            "frameworks": [
+                "SwiftUI",
+                "Combine",
+                "MetalPerformanceShaders"
+            ],
+            "status": "accepted",
+            "github_username": "LiulietLee",
+            "twitter_username": null
+        },
+        {
+            "name": "Louise P.",
+            "source": "https://github.com/lpieri/Meep",
+            "video": "",
+            "frameworks": [
+                "SpriteKit",
+                "AVFoundation"
+            ],
+            "status": "submitted",
+            "github_username": "lpieri",
+            "twitter_username": null
+        },
+        {
+            "name": "Maria Fernanda Azolin",
+            "source": "https://github.com/azolinmf/aPathToTheLight-playgroundBook",
+            "video": "https://www.youtube.com/watch?v=p7y_d-d1B-0",
+            "frameworks": [
+                "SpriteKit",
+                "UIKit"
+            ],
+            "status": "accepted",
+            "github_username": "azolinmf",
+            "twitter_username": null
+        },
+        {
+            "name": "Mariana Beilune Abad",
+            "source": "https://github.com/maaryhabad/armenia",
+            "video": "https://www.youtube.com/watch?v=G4w_gSMjiyQ",
+            "frameworks": [
+                "SceneKit"
+            ],
+            "status": "submitted",
+            "github_username": "maaryhabad",
+            "twitter_username": null
+        },
+        {
+            "name": "Marlon L\u00fcckert",
+            "source": "https://github.com/marlon360/wwdc20-submission",
+            "video": "https://www.youtube.com/watch?v=Yvs1eFle1sc",
+            "frameworks": [
+                "SwiftUI",
+                "CoreML",
+                "PencilKit",
+                "ARKit"
+            ],
+            "status": "accepted",
+            "github_username": "marlon360",
+            "twitter_username": null
+        },
+        {
+            "name": "Manas Malla",
+            "source": "https://github.com/ManasMalla/BeCoronaReady",
+            "video": "https://www.youtube.com/watch?v=gwEmnXVhckw",
+            "frameworks": [
+                "PlaygroundSupport",
+                "PlaygroundBook",
+                "SceneKit",
+                "UIKit"
+            ],
+            "status": "accepted",
+            "github_username": "ManasMalla",
+            "twitter_username": null
+        },
+        {
+            "name": "Manthan Keim",
+            "source": "https://github.com/ManthanKeim/COVID19-Learner-Game",
+            "video": "https://youtu.be/ICt1kXr78uQ",
+            "frameworks": [
+                "UIKit",
+                "GameplayKit",
+                "AVFoundation",
+                "AudioToolbox"
+            ],
+            "status": "rejected",
+            "github_username": "ManthanKeim",
+            "twitter_username": null
+        },
+        {
+            "name": "Matheus Andrade",
+            "source": "https://github.com/matheusvtna/TheBlindMaze",
+            "video": "",
+            "frameworks": [
+                "SpriteKit"
+            ],
+            "status": "accepted",
+            "github_username": "matheusvtna",
+            "twitter_username": null
+        },
+        {
+            "name": "Matheus Fogiatto",
+            "source": "https://github.com/matheusfogiatto/TheHealthJourney",
+            "video": "https://youtu.be/OtrIBNOJ2AE",
+            "frameworks": [
+                "SpriteKit"
+            ],
+            "status": "accepted",
+            "github_username": "matheusfogiatto",
+            "twitter_username": null
+        },
+        {
+            "name": "Matt Free",
+            "source": "https://github.com/MJFree34/MusicChordTeacher/",
+            "video": "",
+            "frameworks": [
+                "AVFoundation",
+                "UIKit"
+            ],
+            "status": "rejected",
+            "github_username": "MJFree34",
+            "twitter_username": null
+        },
+        {
+            "name": "Maxime Madrau",
+            "source": "https://github.com/Maxmad68/SwiftStudentChallenge2020",
+            "video": "",
+            "frameworks": [
+                "SpriteKit",
+                "PencilKit"
+            ],
+            "status": "accepted",
+            "github_username": "Maxmad68",
+            "twitter_username": null
+        },
+        {
+            "name": "Micha\u0142 Cichecki",
+            "source": "https://github.com/mcichecki/emoji-rebus",
+            "video": "",
+            "frameworks": [
+                "AppKit",
+                "AVFoundation",
+                "SpriteKit"
+            ],
+            "status": "accepted",
+            "github_username": "mcichecki",
+            "twitter_username": null
+        },
+        {
+            "name": "Mike Ovyan",
+            "source": "https://github.com/ovyan/graph_path",
+            "video": "",
+            "frameworks": [
+                "UIKit"
+            ],
+            "status": "accepted",
+            "github_username": "ovyan",
+            "twitter_username": null
+        },
+        {
+            "name": "Minhyuk Kim",
+            "source": "https://github.com/mininny/RockPaperScissors-WWDC20",
+            "video": "",
+            "frameworks": [
+                "ARKit",
+                "CoreML",
+                "Vision",
+                "UIKit"
+            ],
+            "status": "accepted",
+            "github_username": "mininny",
+            "twitter_username": null
+        },
+        {
+            "name": "Minji Lee",
+            "source": "https://github.com/manju-minji/wwdc20",
+            "video": "",
+            "frameworks": [
+                "UIKit",
+                "AVFoundation"
+            ],
+            "status": "accepted",
+            "github_username": "manju-minji",
+            "twitter_username": null
+        },
+        {
+            "name": "Min Seong Kang",
+            "source": "https://github.com/mkang30/GravityBalling",
+            "video": "",
+            "frameworks": [
+                "SceneKit",
+                "SpriteKit"
+            ],
+            "status": "accepted",
+            "github_username": "mkang30",
+            "twitter_username": null
+        },
+        {
+            "name": "Mishaal Kandapath",
+            "source": "https://github.com/ecomparer/TheBeeDance/",
+            "video": "https://youtu.be/jHNd48k0YPE",
+            "frameworks": [
+                "ARKit",
+                "SpriteKit",
+                "SceneKit",
+                "SwiftUI"
+            ],
+            "status": "accepted",
+            "github_username": "ecomparer",
+            "twitter_username": null
+        },
+        {
+            "name": "Mohamed Salah",
+            "source": "https://github.com/mohasalahh/WWDC20-Scholarship-Submission",
+            "video": "https://www.youtube.com/-EOhFATLLt8",
+            "frameworks": [
+                "SceneKit",
+                "ARKit",
+                "UIKit"
+            ],
+            "status": "accepted",
+            "github_username": "mohasalahh",
+            "twitter_username": null
+        },
+        {
+            "name": "Muhammad Dary Azhari",
+            "source": "",
+            "video": "https://youtu.be/2s-Loc5hTMY",
+            "frameworks": [
+                "AVFoundation",
+                "UIKit"
+            ],
+            "status": "submitted",
+            "github_username": null,
+            "twitter_username": null
+        },
+        {
+            "name": "Muhammad Arif Setyo Aji",
+            "source": "",
+            "video": "",
+            "frameworks": [
+                "UIKit"
+            ],
+            "status": "rejected",
+            "github_username": null,
+            "twitter_username": null
+        },
+        {
+            "name": "Murilo Teixeira",
+            "source": "",
+            "video": "https://youtu.be/uJfihjMoCxg",
+            "frameworks": [
+                "SpriteKit",
+                "GKStateMachine",
+                "NSTouchBar"
+            ],
+            "status": "accepted",
+            "github_username": null,
+            "twitter_username": null
+        },
+        {
+            "name": "Nalin Bhardwaj",
+            "source": "",
+            "video": "",
+            "frameworks": [
+                "SwiftUI",
+                "SpriteKit",
+                "CoreML"
+            ],
+            "status": "accepted",
+            "github_username": null,
+            "twitter_username": null
+        },
+        {
+            "name": "Naman Bishnoi",
+            "source": "https://github.com/diabloxenon/Swiftspam",
+            "video": "https://youtu.be/w2bR5VMJ9CE",
+            "frameworks": [
+                "SwiftUI",
+                "CoreGraphics",
+                "Foundation"
+            ],
+            "status": "accepted",
+            "github_username": "diabloxenon",
+            "twitter_username": null
+        },
+        {
+            "name": "Nathaniel Fargo",
+            "source": "https://github.com/theParadox42/Black-Holes/tree/swift-project",
+            "video": "",
+            "frameworks": [
+                "CoreGraphics",
+                "SwiftUI",
+                "GKNoise"
+            ],
+            "status": "accepted",
+            "github_username": "theParadox42",
+            "twitter_username": null
+        },
+        {
+            "name": "Niall Kehoe",
+            "source": "",
+            "video": "https://www.youtube.com/watch?v=nbuuas18zgA",
+            "frameworks": [
+                "ARKit",
+                "CoreML",
+                "CreateML",
+                "SpriteKit"
+            ],
+            "status": "accepted",
+            "github_username": null,
+            "twitter_username": null
+        },
+        {
+            "name": "Niklas B\u00fclow",
+            "source": "https://github.com/insightmind/WWDC20SwiftStudentChallenge",
+            "video": "",
+            "frameworks": [
+                "SpriteKit",
+                "CoreImage",
+                "SIMD"
+            ],
+            "status": "accepted",
+            "github_username": "insightmind",
+            "twitter_username": null
+        },
+        {
+            "name": "Oksana Bolibok",
+            "source": "https://github.com/Rok-sana/WWDC2020-Logic-Board",
+            "video": "https://youtu.be/O0DEpSXNaI8",
+            "frameworks": [
+                "SpriteKit",
+                "UIKit",
+                "AVSpeechSynthesizer",
+                "AVFoundation"
+            ],
+            "status": "accepted",
+            "github_username": "Rok-sana",
+            "twitter_username": null
+        },
+        {
+            "name": "Oskar Chybowski",
+            "source": "https://github.com/Oschly/SSC20_Submission",
+            "video": "",
+            "frameworks": [
+                "UIKit"
+            ],
+            "status": "accepted",
+            "github_username": "Oschly",
+            "twitter_username": null
+        },
+        {
+            "name": "Ozawn Mirza",
+            "source": "https://github.com/ozanmirza1/WWDC-2020-Game-Theory",
+            "video": "https://youtu.be/tvPu4AGlc_I",
+            "frameworks": [
+                "Foundation",
+                "AVFoundation",
+                "UIKit",
+                "QuartzCore"
+            ],
+            "status": "rejected",
+            "github_username": "ozanmirza1",
+            "twitter_username": null
+        },
+        {
+            "name": "Palle Klewitz",
+            "source": "https://github.com/palle-k/WWDC20",
+            "video": "",
+            "frameworks": [
+                "SwiftUI",
+                "Accelerate"
+            ],
+            "status": "accepted",
+            "github_username": "palle-k",
+            "twitter_username": null
+        },
+        {
+            "name": "Patricia Sampaio",
+            "source": "https://github.com/patysiq/hinadan",
+            "video": "",
+            "frameworks": [
+                "SpriteKit",
+                "Foundation"
+            ],
+            "status": "accepted",
+            "github_username": "patysiq",
+            "twitter_username": null
+        },
+        {
+            "name": "Peter Yaacoub",
+            "source": "https://github.com/Yaacoub/Swift-Student-Challenge",
+            "video": "",
+            "frameworks": [
+                "AVFoundation",
+                "UIKit"
+            ],
+            "status": "accepted",
+            "github_username": "Yaacoub",
+            "twitter_username": null
+        },
+        {
+            "name": "Poppy Hwangsa Iswara",
+            "source": "https://github.com/ppyrinn/WWDC20Playground",
+            "video": "",
+            "frameworks": [
+                "AVFoundation",
+                "UIKit",
+                "SoundAnalysis",
+                "SpriteKit"
+            ],
+            "status": "accepted",
+            "github_username": "ppyrinn",
+            "twitter_username": null
+        },
+        {
+            "name": "Prajwal Kulkarni",
+            "source": "https://github.com/prajwalkulkarni/wwdc2020",
+            "video": "https://www.youtube.com/watch?v=VaLJvLJuMFM",
+            "frameworks": [
+                "SwiftUI",
+                "SpriteKit"
+            ],
+            "status": "rejected",
+            "github_username": "prajwalkulkarni",
+            "twitter_username": null
+        },
+        {
+            "name": "Pranath Reddy",
+            "source": "https://github.com/PyJedi/WWDC20-SwiftStudentChallenge",
+            "video": "",
+            "frameworks": [
+                "UIKit",
+                "CoreML",
+                "CoreGraphics",
+                "Vision"
+            ],
+            "status": "accepted",
+            "github_username": "PyJedi",
+            "twitter_username": null
+        },
+        {
+            "name": "Pranav Karthik",
+            "source": "https://github.com/pranavkarthik10/exercisAR",
+            "video": "https://youtu.be/SYeBaYsg_ZY",
+            "frameworks": [
+                "UIKit",
+                "ARKit",
+                "Foundation"
+            ],
+            "status": "accepted",
+            "github_username": "pranavkarthik10",
+            "twitter_username": null
+        },
+        {
+            "name": "Praveen Balakrishnan",
+            "source": "https://github.com/xp3d1/Swift-Student-Challenge-Entry",
+            "video": "https://youtu.be/gsDKYLWAMpU",
+            "frameworks": [
+                "SwiftUI",
+                "SceneKit",
+                "AVFoundation"
+            ],
+            "status": "accepted",
+            "github_username": "xp3d1",
+            "twitter_username": null
+        },
+        {
+            "name": "Pushpinder Pal Singh",
+            "source": "https://github.com/pushpinderpalsingh/CyberSense-WWDC20",
+            "video": "",
+            "frameworks": [
+                "UIKit"
+            ],
+            "status": "submitted",
+            "github_username": "pushpinderpalsingh",
+            "twitter_username": null
+        },
+        {
+            "name": "Rafael Ferreira",
+            "source": "https://github.com/Rafaelfferreira/DiseaseSimulator",
+            "video": "",
+            "frameworks": [
+                "UIKit"
+            ],
+            "status": "accepted",
+            "github_username": "Rafaelfferreira",
+            "twitter_username": null
+        },
+        {
+            "name": "Rafael Galdino",
+            "source": "https://github.com/Galdineris/2020",
+            "video": "",
+            "frameworks": [
+                "Foundation",
+                "SpriteKit"
+            ],
+            "status": "accepted",
+            "github_username": "Galdineris",
+            "twitter_username": null
+        },
+        {
+            "name": "Rangel Dias",
+            "source": "https://github.com/rangelterraquio/WWDC2020",
+            "video": "",
+            "frameworks": [
+                "SpriteKit"
+            ],
+            "status": "accepted",
+            "github_username": "rangelterraquio",
+            "twitter_username": null
+        },
+        {
+            "name": "Ritesh Kanchi",
+            "source": "https://github.com/ritesh-kanchi/WWDC20-Submission",
+            "video": "",
+            "frameworks": [
+                "SwiftUI"
+            ],
+            "status": "accepted",
+            "github_username": "ritesh-kanchi",
+            "twitter_username": null
+        },
+        {
+            "name": "Renan Magagnin",
+            "source": "https://github.com/renanmagagnin/beat-wwdc20",
+            "video": "https://youtu.be/ayVB08sXtZY",
+            "frameworks": [
+                "SpriteKit",
+                "AVFoundation"
+            ],
+            "status": "accepted",
+            "github_username": "renanmagagnin",
+            "twitter_username": null
+        },
+        {
+            "name": "Renata Faria",
+            "source": "https://github.com/xReee/WWDC2020",
+            "video": "https://www.youtube.com/watch?v=fZ3ilbJx5_8",
+            "frameworks": [
+                "UIKit",
+                "GameplayKit",
+                "AVKit"
+            ],
+            "status": "submitted",
+            "github_username": "xReee",
+            "twitter_username": null
+        },
+        {
+            "name": "Rifqi R",
+            "source": "https://github.com/rif2d/dubsub20",
+            "video": "https://youtu.be/rS2Ln-JC-yQ",
+            "frameworks": [
+                "SpriteKit",
+                "GameplayKit"
+            ],
+            "status": "submitted",
+            "github_username": "rif2d",
+            "twitter_username": null
+        },
+        {
+            "name": "Rodrigo Giglio",
+            "source": "https://github.com/rodrigowoulddo/WWDC-2020-The-Bacteria-Adventure",
+            "video": "https://youtu.be/odCptJ5_-_E",
+            "frameworks": [
+                "SpriteKit"
+            ],
+            "status": "accepted",
+            "github_username": "rodrigowoulddo",
+            "twitter_username": null
+        },
+        {
+            "name": "Roland Schmitz",
+            "source": "https://github.com/roland-schmitz-academy/WWDC20-SpiralField",
+            "video": "",
+            "frameworks": [
+                "SwiftUI"
+            ],
+            "status": "accepted",
+            "github_username": "roland-schmitz-academy",
+            "twitter_username": null
+        },
+        {
+            "name": "Roman Esin",
+            "source": "",
+            "video": "https://youtu.be/CZyZTzmclFs",
+            "frameworks": [
+                "UIKit"
+            ],
+            "status": "submitted",
+            "github_username": null,
+            "twitter_username": null
+        },
+        {
+            "name": "Roman Rakhlin",
+            "source": "https://github.com/romarakhlin/WWDC20-Submission",
+            "video": "https://www.youtube.com/watch?v=i3y5k_khW_I",
+            "frameworks": [
+                "UIKit",
+                "SceneKit",
+                "SpriteKit"
+            ],
+            "status": "rejected",
+            "github_username": "romarakhlin",
+            "twitter_username": null
+        },
+        {
+            "name": "Robert Pliev",
+            "source": "https://github.com/camotsuc/wwdc20ChallengeAttempt",
+            "video": "",
+            "frameworks": [
+                "UIKit",
+                "Foundation"
+            ],
+            "status": "rejected",
+            "github_username": "camotsuc",
+            "twitter_username": null
+        },
+        {
+            "name": "Roy Rao",
+            "source": "https://github.com/RoyRao2333/WWDC20-Scholarship",
+            "video": "",
+            "frameworks": [
+                "Cocoa",
+                "Security",
+                "Playground Support"
+            ],
+            "status": "accepted",
+            "github_username": "RoyRao2333",
+            "twitter_username": null
+        },
+        {
+            "name": "SungJin Yang",
+            "source": "https://github.com/CoderLoveMath",
+            "video": "",
+            "frameworks": [
+                "SpriteKit",
+                "UIKit"
+            ],
+            "status": "accepted",
+            "github_username": "CoderLoveMath",
+            "twitter_username": null
+        },
+        {
+            "name": "Sabesh Bharathi",
+            "source": "https://github.com/programVeins/Pandemic",
+            "video": "https://www.youtube.com/watch?v=_wSukFJu3I4",
+            "frameworks": [
+                "UIKit",
+                "AVFoundation"
+            ],
+            "status": "rejected",
+            "github_username": "programVeins",
+            "twitter_username": null
+        },
+        {
+            "name": "Sai Vivek Amirishetty",
+            "source": "https://github.com/vivekboss99/WWDC-2020",
+            "video": "",
+            "frameworks": [
+                "UIKit"
+            ],
+            "status": "rejected",
+            "github_username": "vivekboss99",
+            "twitter_username": null
+        },
+        {
+            "name": "Sai Ranga Reddy",
+            "source": "https://github.com/irangareddy/SwiftUI-Trends",
+            "video": "https://youtu.be/4ZkhOWVz00I",
+            "frameworks": [
+                "SwiftUI"
+            ],
+            "status": "accepted",
+            "github_username": "irangareddy",
+            "twitter_username": null
+        },
+        {
+            "name": "Soumyaditya Choudhuri",
+            "source": "https://github.com/soum-c",
+            "video": "",
+            "frameworks": [
+                "UIKit"
+            ],
+            "status": "accepted",
+            "github_username": "soum-c",
+            "twitter_username": null
+        },
+        {
+            "name": "Sylvain Guillier",
+            "source": "",
+            "video": "https://youtu.be/p1fMYYKdKQo",
+            "frameworks": [
+                "SwiftUI",
+                "UIKit",
+                "SpriteKit",
+                "AVFoundation"
+            ],
+            "status": "accepted",
+            "github_username": null,
+            "twitter_username": null
+        },
+        {
+            "name": "Swapnanil Dhol",
+            "source": "https://github.com/SwapnanilDhol/Strokes",
+            "video": "https://www.youtube.com/watch?v=2k72tGpKbpo",
+            "frameworks": [
+                "ARKit",
+                "RealityKit",
+                "Core ML",
+                "Create ML"
+            ],
+            "status": "accepted",
+            "github_username": "SwapnanilDhol",
+            "twitter_username": null
+        },
+        {
+            "name": "Thiago Martins",
+            "source": "https://github.com/ThiagoMartins05/The-Golden-Ratio-WWDC2020",
+            "video": "",
+            "frameworks": [
+                "Spritekit"
+            ],
+            "status": "accepted",
+            "github_username": "ThiagoMartins05",
+            "twitter_username": null
+        },
+        {
+            "name": "Thiago Nitschke",
+            "source": "https://github.com/thnitschke/WWDC2020",
+            "video": "",
+            "frameworks": [
+                "SwiftUI"
+            ],
+            "status": "accepted",
+            "github_username": "thnitschke",
+            "twitter_username": null
+        },
+        {
+            "name": "Thijs van der Heijden",
+            "source": "https://github.com/thijsheijden/WWDC20",
+            "video": "",
+            "frameworks": [
+                "UIKit"
+            ],
+            "status": "submitted",
+            "github_username": "thijsheijden",
+            "twitter_username": null
+        },
+        {
+            "name": "Til Blechschmidt",
+            "source": "https://github.com/TilBlechschmidt/BoidsPlayground",
+            "video": "https://youtu.be/dcuUWqUO91w",
+            "frameworks": [
+                "Metal",
+                "SwiftUI",
+                "AVFoundation"
+            ],
+            "status": "accepted",
+            "github_username": "TilBlechschmidt",
+            "twitter_username": null
+        },
+        {
+            "name": "Uladzislau Tarasevich",
+            "source": "https://github.com/Sencudra/WWDC-2020",
+            "video": "https://youtu.be/-gmsWnv3UZ8",
+            "frameworks": [
+                "SpriteKit",
+                "AVFoundation"
+            ],
+            "status": "rejected",
+            "github_username": "Sencudra",
+            "twitter_username": null
+        },
+        {
+            "name": "Umar Haroon",
+            "source": "https://github.com/Umar-M-Haroon/WWDC2020",
+            "video": "",
+            "frameworks": [
+                "ARKit",
+                "SceneKit",
+                "SwiftUI",
+                "UIKit"
+            ],
+            "status": "accepted",
+            "github_username": "Umar-M-Haroon",
+            "twitter_username": null
+        },
+        {
+            "name": "Valentino Cerutti",
+            "source": "https://github.com/Micrograx/Emotions-WWDC20",
+            "video": "",
+            "frameworks": [
+                "SwiftUI",
+                "AVFoundation"
+            ],
+            "status": "rejected",
+            "github_username": "Micrograx",
+            "twitter_username": null
+        },
+        {
+            "name": "Vincent Cai",
+            "source": "https://github.com/Vince14Genius/WWDC20-Wotagei-x-Music-Game",
+            "video": "",
+            "frameworks": [
+                "SpriteKit",
+                "SwiftUI",
+                "SKShader (OpenGL/GLSL)"
+            ],
+            "status": "accepted",
+            "github_username": "Vince14Genius",
+            "twitter_username": null
+        },
+        {
+            "name": "Vinicius Chagas",
+            "source": "https://github.com/vcsoares/FourierAndMusic",
+            "video": "https://youtu.be/fZsP1-hPrt0",
+            "frameworks": [
+                "SwiftUI",
+                "AVFoundation"
+            ],
+            "status": "accepted",
+            "github_username": "vcsoares",
+            "twitter_username": null
+        },
+        {
+            "name": "Vin\u00edcius Binder",
+            "source": "https://github.com/viniciusbinder/wwdc20-submission",
+            "video": "https://youtu.be/f_LbK6Dhfps",
+            "frameworks": [
+                "SpriteKit"
+            ],
+            "status": "accepted",
+            "github_username": "viniciusbinder",
+            "twitter_username": null
+        },
+        {
+            "name": "Vin\u00edcius Bernardes Bonemer",
+            "source": "https://github.com/viniciusbonemer/Swift-Student-Challenge-2020",
+            "video": "https://www.youtube.com/watch?v=PBUt_Ra_MH8&feature=youtu.be",
+            "frameworks": [
+                "UIKit",
+                "SpriteKit",
+                "Combine",
+                "AVFoundation"
+            ],
+            "status": "accepted",
+            "github_username": "viniciusbonemer",
+            "twitter_username": null
+        },
+        {
+            "name": "Vit\u00f3ria Corr\u00eaa",
+            "source": "https://github.com/vofcorrea/wwdc20wemen",
+            "video": "",
+            "frameworks": [
+                "SpriteKit",
+                "UIKit"
+            ],
+            "status": "accepted",
+            "github_username": "vofcorrea",
+            "twitter_username": null
+        },
+        {
+            "name": "Wendy Liga",
+            "source": "https://github.com/wendyliga/tunery",
+            "video": "https://youtu.be/L17PW6inUzw",
+            "frameworks": [
+                "AVFoundation",
+                "UIKit"
+            ],
+            "status": "accepted",
+            "github_username": "wendyliga",
+            "twitter_username": null
+        },
+        {
+            "name": "William Taylor",
+            "source": "",
+            "video": "https://youtu.be/TKM9Sut60fs",
+            "frameworks": [
+                "UIKit",
+                "SceneKit",
+                "ARKit",
+                "AVFoundation"
+            ],
+            "status": "accepted",
+            "github_username": null,
+            "twitter_username": null
+        },
+        {
+            "name": "Witek Bobrowski",
+            "source": "https://github.com/witekbobrowski/wwdc20-submission",
+            "video": "",
+            "frameworks": [
+                "SwiftUI"
+            ],
+            "status": "rejected",
+            "github_username": "witekbobrowski",
+            "twitter_username": null
+        },
+        {
+            "name": "Veit Progl",
+            "source": "https://github.com/Veeit/WWDC-2020-Learning-Disability",
+            "video": "https://youtu.be/8qhFrv4MEPg",
+            "frameworks": [
+                "SwiftUI",
+                "SceneKit",
+                "ARKit",
+                "CoreML"
+            ],
+            "status": "accepted",
+            "github_username": "Veeit",
+            "twitter_username": null
+        },
+        {
+            "name": "Victor S. Melo",
+            "source": "https://github.com/vctrsmelo/WWDC20",
+            "video": "https://youtu.be/ov_U4okydMo",
+            "frameworks": [
+                "SwiftUI",
+                "AI"
+            ],
+            "status": "accepted",
+            "github_username": "vctrsmelo",
+            "twitter_username": null
+        },
+        {
+            "name": "Xi Zhao",
+            "source": "https://github.com/ZXXZ00/WWDC20",
+            "video": "https://youtu.be/RMyHlFH0348",
+            "frameworks": [
+                "CoreMotion",
+                "SpriteKit"
+            ],
+            "status": "submitted",
+            "github_username": "ZXXZ00",
+            "twitter_username": null
+        },
+        {
+            "name": "Xu Haobo",
+            "source": "https://github.com/haoboxuxu",
+            "video": "https://youtu.be/jxMOE_OQPAY",
+            "frameworks": [
+                "SpriteKit",
+                "SceneKit",
+                "ARKit"
+            ],
+            "status": "accepted",
+            "github_username": "haoboxuxu",
+            "twitter_username": null
+        },
+        {
+            "name": "Yangyang Feng",
+            "source": "https://github.com/CynricFeng/Papercutting",
+            "video": "https://www.bilibili.com/video/BV15K4y1t75s/",
+            "frameworks": [
+                "AppKit",
+                "Vision",
+                "SpriteKit",
+                "AVFoundation"
+            ],
+            "status": "accepted",
+            "github_username": "CynricFeng",
+            "twitter_username": null
+        },
+        {
+            "name": "Yauheni Stsefankou",
+            "source": "https://github.com/stefjen07/WWDC20-AirportLife",
+            "video": "",
+            "frameworks": [
+                "SpriteKit"
+            ],
+            "status": "accepted",
+            "github_username": "stefjen07",
+            "twitter_username": null
+        },
+        {
+            "name": "Yihan Huang",
+            "source": "https://github.com/GetToSet/ArtOfAscii",
+            "video": "",
+            "frameworks": [
+                "AVFoundation",
+                "Accelerate",
+                "UIKit"
+            ],
+            "status": "accepted",
+            "github_username": "GetToSet",
+            "twitter_username": null
+        },
+        {
+            "name": "YiZhong Qi",
+            "source": "https://github.com/qyz777/AcousticShip",
+            "video": "",
+            "frameworks": [
+                "AVFoundation",
+                "UIKit"
+            ],
+            "status": "submitted",
+            "github_username": "qyz777",
+            "twitter_username": null
+        },
+        {
+            "name": "Yow Shin Liou",
+            "source": "https://github.com/yozn/wwdc20",
+            "video": "https://youtu.be/qHv2Xpb3tdQ",
+            "frameworks": [
+                "SpriteKit",
+                "AVFoundation",
+                "UIKit"
+            ],
+            "status": "accepted",
+            "github_username": "yozn",
+            "twitter_username": null
+        },
+        {
+            "name": "Yugantar Jain",
+            "source": "https://github.com/yugantarjain/WWDC20",
+            "video": "",
+            "frameworks": [
+                "UIKit",
+                "SpriteKit Particles"
+            ],
+            "status": "accepted",
+            "github_username": "yugantarjain",
+            "twitter_username": null
+        },
+        {
+            "name": "Zafar Ivaev",
+            "source": "https://github.com/zafarivaev/WWDC20-FigureBreaker",
+            "video": "",
+            "frameworks": [
+                "Combine",
+                "UIKit",
+                "SceneKit",
+                "SpriteKit"
+            ],
+            "status": "accepted",
+            "github_username": "zafarivaev",
+            "twitter_username": null
+        },
+        {
+            "name": "Zijian Zhao",
+            "source": "https://github.com/JackZhao98/Linux-Playground",
+            "video": "",
+            "frameworks": [
+                "SwiftUI"
+            ],
+            "status": "accepted",
+            "github_username": "JackZhao98",
+            "twitter_username": null
+        },
+        {
+            "name": "Zhengke Xu",
+            "source": "https://github.com/ixzk/Spirograph",
+            "video": "",
+            "frameworks": [
+                "UIKit"
+            ],
+            "status": "accepted",
+            "github_username": "ixzk",
+            "twitter_username": null
+        },
+        {
+            "name": "Zhiyu Zhu",
+            "source": "https://github.com/ApolloZhu/Swifty-Podcast-Editor",
+            "video": "",
+            "frameworks": [
+                "SwiftUI",
+                "Combine",
+                "Speech",
+                "AVFoundation"
+            ],
+            "status": "rejected",
+            "github_username": "ApolloZhu",
+            "twitter_username": null
+        },
+        {
+            "name": "Zixuan Tang",
+            "source": "https://github.com/TonyTang2001/SixFeetBetween_WWDC20SwiftChallenge",
+            "video": "https://youtu.be/sj_laBHKu6I",
+            "frameworks": [
+                "SwiftUI",
+                "AVFoundation"
+            ],
+            "status": "accepted",
+            "github_username": "TonyTang2001",
+            "twitter_username": null
+        }
+    ]
 }
