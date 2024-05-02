@@ -168,6 +168,28 @@ TipView(inlineTip, arrowEdge: .bottom)
 TipUIView(FavoritesTip(), arrowEdge: .bottom)
 ```
 
+## Ячейка в коллекциях и таблицах
+
+В UIKit  имеется TipUICollectionViewCell для отображения подсказок в коллекции, его можно использовать и для таблиц.
+
+Добавляем подсказку в методе cellForItemAt, вызывая у ячейки `.configureTip`.
+
+```swift
+func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+   TipUICollectionViewCell
+   cell.configureTip(NewFavoriteCollectionTip())
+   return cell
+}
+```
+
+![`Inline`-подсказки. Они могут быть со стрелкой и без.](https://cdn.sparrowcode.io/tutorials/tipkit/tipuicollectionviewcell.png)
+
+С помощью `.shouldDisplay`, определяете показывать подсказку или нет.
+
+```swift
+NewFavoriteCollectionTip().shouldDisplay ? 1 : 0
+```
+
 ## Добавляем кнопку
 
 В подсказку можно добавить кнопку, а по кнопке вызывать вашу логику. Можно использовать чтобы открыть подробный туториал или направить на нужный экран.
@@ -225,6 +247,144 @@ Task { @MainActor in
 }
 ```
 
+## Когда подсказка зависит от другой подсказки
+
+В этом примере `FavoriteRuleTip` будет показана после нажатия на прямоугольник и когда скроется `GettingStartedTip`.
+
+```swift
+struct GettingStartedTip: Tip {
+
+   var title: Text {
+      Text("Начало работы")
+   }
+   var message: Text? {
+      Text("Коснитесь фигуры, чтобы просмотреть ее детали.")
+   }
+   var image: Image? {
+      Image(systemName: "hand.draw")
+   }
+
+}
+
+struct FavoriteRuleTip: Tip {
+
+   var title: Text {
+      Text("Добавить в избранное")
+   }
+    var message: Text? {
+      Text("Этот пользователь будет добавлен в папку избранное.")
+   }
+    
+   @Parameter
+   static var hasViewedGetStartedTip: Bool = false
+
+   var rules: [Rule] {
+      #Rule(Self.$hasViewedGetStartedTip) { $0 == true }
+   }
+
+}
+
+struct ParameterRule: View {
+   @State private var showDetail = false
+
+   var body: some View {
+      VStack {
+         Rectangle()
+            .frame(height: 100)
+            .popoverTip(FavoriteRuleTip(), arrowEdge: .top)
+         .onTapGesture {
+                
+            //пользователь выполнил действие описанное в подсказке, отключаем подсказку GettingStartedTip
+            GettingStartedTip().invalidate(reason: .actionPerformed)
+                
+            //значение hasViewedGetStartedTip true, показываем подсказку FavoriteRuleTip
+            FavoriteRuleTip.hasViewedGetStartedTip = true
+         }
+         TipView(GettingStartedTip())
+      }
+      .padding()
+   }
+}
+```
+
+![Зависмость подсказок друг от друга](https://cdn.sparrowcode.io/tutorials/tipkit/tips-dependency.png)
+
+## Кастомизация подсказки
+
+Протокол `TipViewStyle`, позволяет создать свой стиль. Этот стиль можно применить к любой подсказки.
+
+Параметр `configuration` в обязательном методе makeBody, дает доступ к полям нашей подсказки, которые мы можем кастомизировать.
+
+```swift
+struct MyTipViewStyle: TipViewStyle {
+   func makeBody(configuration: Configuration) -> some View {
+      VStack(alignment: .leading, spacing: 16) {
+         HStack {
+            HStack {
+               configuration.image
+               configuration.title
+            }
+            .font(.title2)
+            .fontWeight(.bold)
+                
+            Spacer()
+            Button(action: {
+               configuration.tip.invalidate(reason: .tipClosed)
+            }, label: {
+               Image(systemName: "xmark.octagon.fill")
+            })
+         }
+            
+         configuration.message?
+            .font(.body)
+            .fontWeight(.regular)
+            .foregroundStyle(.secondary)
+            
+         Button(action: configuration.actions.first!.handler, label: {
+            configuration.actions.first!.label()
+         })
+         .buttonStyle(.bordered)
+         .foregroundColor(.pink)
+      }
+      .padding()
+   }
+}
+```
+
+Здесь создается кнопка для закрытия подсказки, `.tipClosed` - явное закрыти подсказки по крестику.
+
+```swift
+Button(action: {
+   configuration.tip.invalidate(reason: .tipClosed)
+}, label: {
+   Image(systemName: "xmark.octagon.fill")
+})
+```
+
+![Дефолтный и кастомный стиль подсказки](https://cdn.sparrowcode.io/tutorials/tipkit/custom-tip.png)
+
+**Добовляем  в SwiftUI:**
+
+```swift
+TipView(MyFavoriteTip())
+   .tipViewStyle(MyTipViewStyle())
+```
+
+**Добовляем  в UIKit:**
+
+```swift
+let tipView = TipUIView(MyFavoriteTip())
+tipView.viewStyle = MyTipViewStyle()
+```
+
+## Несколько подсказок на одном экране для UIKit.
+
+> Каждую подсказку нужно запускать в отдельном Task
+
+`Inline` - их может быть не ограниченное количество на экране.
+
+`Popover` -  разом на экране можно показать только одну подсказку, но можно использовать флаги или правила для показа их по очереди.
+
 # Закрываем подсказку
 
 Подсказку может закрыть пользователь, когда нажмет на крестик. Но можно закрыть и кодом. Код одинаковый для SwiftUI и UIKit:
@@ -237,7 +397,7 @@ inlineTip.invalidate(reason: .actionPerformed)
 
 - `.actionPerformed` - пользователь выполнил действие в подсказке
 - `.displayCountExceeded` - подсказку показали максимальное количество раз
-- `.actionPerformed` - пользователь явно закрыл подсказку
+- `.tipClosed` - пользователь явно закрыл подсказку
 
 В UIKit для крестика нужно дописать код. Для `popover`-подсказки закрываем контроллер:
 
