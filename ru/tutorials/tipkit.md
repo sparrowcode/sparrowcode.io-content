@@ -1,12 +1,12 @@
-С помощью TipKit разработчики показывают нативные подсказки. Так можно сделать туториал или обратить внимание пользователя на новые фичи. Выглядят вот так:
+С помощью TipKit разработчики показывают нативные подсказки. С помощью них можно сделать туториал или обратить внимание пользователя на новые фичи. Подсказки выглядят так:
 
 ![Подсказки `TipKit`](https://cdn.sparrowcode.io/tutorials/tipkit/tipkit-example.jpg)
 
-Apple сделала и UI, и управление когда показывать подсказки. Фреймворк появился в iOS 17. Подсказки доступны для всех платформ — для iOS, iPadOS, macOS, watchOS и visionOS.
+Apple сделала и UI подсказок и управление когда их показывать. Фреймворк доступен с iOS 17 для всех платформ — iOS, iPadOS, macOS, watchOS и visionOS.
 
 [Framework `TipKit`](https://developer.apple.com/documentation/tipkit): Официальная документация Apple по TipKit
 
-В каждом разделе туториала примеры и на SwiftUI, и на UIKit.
+В каждом разделе нашего туториала будут примеры и на SwiftUI, и на UIKit.
 
 # Инициализация
 
@@ -50,11 +50,11 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 
 `displayFrequency` определяет как часто показывать подсказку. В примере стоит `.immediate`, подсказки будут показываться сразу. Можно поставить ежечасно, ежедневно, еженедельно и ежемесячно.
 
-`datastoreLocation` - хранилище данных подсказок. Это может быть: 
+`datastoreLocation` — хранилище данных подсказок. Это может быть: 
 
 - `.applicationDefault` — дефолтная локация, доступно только приложению
-- `.groupContainer` - через группу, доступно между таргетами
-- `.url` - указываете свой путь
+- `.groupContainer` — через группу, доступно между таргетами
+- `.url` — указываете свой путь
 
 По умолчанию стоит `.applicationDefault`.
 
@@ -168,11 +168,9 @@ TipView(inlineTip, arrowEdge: .bottom)
 TipUIView(FavoritesTip(), arrowEdge: .bottom)
 ```
 
-## TipUICollectionViewCell в коллекциях и таблицах
+## Ячейка в `UICollectionView`
 
-В UIKit  имеется TipUICollectionViewCell для отображения подсказок в коллекции, его можно использовать и для таблиц.
-
-Добавляем подсказку в методе cellForItemAt, вызывая у ячейки `.configureTip`.
+В UIKit есть специальный класс ячейки `TipUICollectionViewCell` для подсказок в коллекции. Работает как обычная ячейка, а для конфигурации нужно вызывать `.configureTip`:
 
 ```swift
 func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -182,17 +180,19 @@ func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath:
 }
 ```
 
-![`Inline`-подсказки. Они могут быть со стрелкой и без.](https://cdn.sparrowcode.io/tutorials/tipkit/tipuicollectionviewcell.png)
+![`Inline`-подсказки в коллекции. Можно добавить стрелку](https://cdn.sparrowcode.io/tutorials/tipkit/tipuicollectionviewcell.png)
 
-С помощью `.shouldDisplay`, определяете показывать подсказку или нет.
+С помощью `.shouldDisplay` определяете показывать подсказку или нет:
 
 ```swift
 NewFavoriteCollectionTip().shouldDisplay ? 1 : 0
 ```
 
+Управление как для обычной ячейки — через методы делегата для коллекции.
+
 ## Добавляем кнопку
 
-В подсказку можно добавить кнопку, а по кнопке вызывать вашу логику. Можно использовать чтобы открыть подробный туториал или направить на нужный экран.
+В подсказку можно добавить кнопку, а по кнопке вызывать вашу логику. Кнопка нужна, чтобы открыть подробный туториал или направить на конкретный экран.
 
 ![Как выглядят кнопки в подсказках `TipKit`](https://cdn.sparrowcode.io/tutorials/tipkit/actions.png)
 
@@ -248,14 +248,6 @@ Task { @MainActor in
 ```
 
 ![Зависмость подсказок друг от друга](https://cdn.sparrowcode.io/tutorials/tipkit/tips-dependency.png)
-
-## Несколько подсказок на одном экране для UIKit.
-
-> Каждую подсказку нужно запускать в отдельном Task
-
-`Inline` - их может быть не ограниченное количество на экране.
-
-`Popover` -  разом на экране можно показать только одну подсказку, но можно использовать флаги или правила для показа их по очереди.
 
 # Закрываем подсказку
 
@@ -348,22 +340,10 @@ Task { @MainActor in
 
 # Когда подсказка зависит от другой подсказки
 
-В этом примере `FavoriteRuleTip` будет показана после нажатия на прямоугольник и когда скроется `GettingStartedTip`.
+В этом примере сначлаа появится `GettingStartedTip`, а после `FavoriteRuleTip`:
 
 ```swift
-struct GettingStartedTip: Tip {
-
-   var title: Text {
-      Text("Начало работы")
-   }
-   var message: Text? {
-      Text("Коснитесь фигуры, чтобы просмотреть ее детали.")
-   }
-   var image: Image? {
-      Image(systemName: "hand.draw")
-   }
-
-}
+struct GettingStartedTip: Tip {...}
 
 struct FavoriteRuleTip: Tip {
 
@@ -380,40 +360,44 @@ struct FavoriteRuleTip: Tip {
    var rules: [Rule] {
       #Rule(Self.$hasViewedGetStartedTip) { $0 == true }
    }
-
-}
-
-struct ParameterRule: View {
-   @State private var showDetail = false
-
-   var body: some View {
-      VStack {
-         Rectangle()
-            .frame(height: 100)
-            .popoverTip(FavoriteRuleTip(), arrowEdge: .top)
-         .onTapGesture {
-                
-            //пользователь выполнил действие описанное в подсказке, отключаем подсказку GettingStartedTip
-            GettingStartedTip().invalidate(reason: .actionPerformed)
-                
-            //значение hasViewedGetStartedTip true, показываем подсказку FavoriteRuleTip
-            FavoriteRuleTip.hasViewedGetStartedTip = true
-         }
-         TipView(GettingStartedTip())
-      }
-      .padding()
-   }
 }
 ```
 
+Теперь пример как менять флаги между подсказками:
+
+```swift
+VStack {
+   Rectangle()
+      .frame(height: 100)
+      .popoverTip(FavoriteRuleTip(), arrowEdge: .top)
+      .onTapGesture {
+         // Юзер выполнил действие, отключаем подсказку GettingStartedTip
+         GettingStartedTip().invalidate(reason: .actionPerformed)
+         
+         // Значение hasViewedGetStartedTip true, значит показываем подсказку FavoriteRuleTip
+         FavoriteRuleTip.hasViewedGetStartedTip = true
+      }
+      
+   // Подсказка видна сразу
+   TipView(GettingStartedTip())
+}
+```
+
+# Одновременно несколько подсказок
+
+> Каждую подсказку нужно запускать в отдельном Task
+
+`Inline`-подсказок на экране может быть сколько угодно. `Popover`-подсказка может быть одна, но их можно показывать по очереди через флаги. Как это работает описал в предыдщуем пункте.
+
 # Кастомизация подсказки
 
-Протокол `TipViewStyle`, позволяет создать свой стиль. Этот стиль можно применить к любой подсказки.
+Протокол `TipViewStyle` определяет стиль подсказки. Стиль потом можно применять к любой подсказке.
 
-Параметр `configuration` в обязательном методе makeBody, дает доступ к полям нашей подсказки, которые мы можем кастомизировать.
+Параметр `configuration` в методе makeBody это доступ к текстам, картинкам и кнопкам, которые можно кастомизировать:
 
 ```swift
 struct MyTipViewStyle: TipViewStyle {
+
    func makeBody(configuration: Configuration) -> some View {
       VStack(alignment: .leading, spacing: 16) {
          HStack {
@@ -425,6 +409,7 @@ struct MyTipViewStyle: TipViewStyle {
             .fontWeight(.bold)
                 
             Spacer()
+            
             Button(action: {
                configuration.tip.invalidate(reason: .tipClosed)
             }, label: {
@@ -436,7 +421,7 @@ struct MyTipViewStyle: TipViewStyle {
             .font(.body)
             .fontWeight(.regular)
             .foregroundStyle(.secondary)
-            
+         
          Button(action: configuration.actions.first!.handler, label: {
             configuration.actions.first!.label()
          })
@@ -448,7 +433,7 @@ struct MyTipViewStyle: TipViewStyle {
 }
 ```
 
-Здесь создается кнопка для закрытия подсказки, `.tipClosed` - явное закрыти подсказки по крестику.
+Здесь можно создать кнопку, чтобы закрывать подсказку. `.tipClosed` — явное закрыти подсказки по крестику.
 
 ```swift
 Button(action: {
@@ -460,14 +445,14 @@ Button(action: {
 
 ![Дефолтный и кастомный стиль подсказки](https://cdn.sparrowcode.io/tutorials/tipkit/custom-tip.png)
 
-**Добовляем  в SwiftUI:**
+**Добавляем в SwiftUI:**
 
 ```swift
 TipView(MyFavoriteTip())
    .tipViewStyle(MyTipViewStyle())
 ```
 
-**Добовляем  в UIKit:**
+**Добавляем в UIKit:**
 
 ```swift
 let tipView = TipUIView(MyFavoriteTip())
