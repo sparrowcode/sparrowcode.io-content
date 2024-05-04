@@ -116,7 +116,7 @@ override func viewDidAppear(_ animated: Bool) {
 
 У `Popever`-подсказок стрелочка есть всегда, но направление стрелки может отличаться от того что укажите. В UIKit направление стрелочки выбрать нельзя.
 
-![Всплывающие `Popever` посказки со стрелками](https://cdn.sparrowcode.io/tutorials/tipkit/popover.png)
+![Всплывающие `Popever` посказки со стрелками](https://cdn.sparrowcode.io/tutorials/tipkit/popover.png?v=2)
 
 ## Встраиваемые `Inline`
 
@@ -153,7 +153,7 @@ Task { @MainActor in
 }
 ```
 
-![`Inline`-подсказки. Они могут быть со стрелкой и без.](https://cdn.sparrowcode.io/tutorials/tipkit/inline-arrow.png)
+![`Inline`-подсказки. Они могут быть со стрелкой и без.](https://cdn.sparrowcode.io/tutorials/tipkit/inline-arrow.png?v=2)
 
 У `Inline`-подсказок стрелочка опциональная. Направление стрелки будет именно такое, как вы укажите:
 
@@ -180,7 +180,7 @@ func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath:
 }
 ```
 
-![`Inline`-подсказки в коллекции. Можно добавить стрелку](https://cdn.sparrowcode.io/tutorials/tipkit/tipuicollectionviewcell.png)
+![`Inline`-подсказки в коллекции. Можно добавить стрелку](https://cdn.sparrowcode.io/tutorials/tipkit/tipuicollectionviewcell.png?v=2)
 
 С помощью `.shouldDisplay` определяете показывать подсказку или нет:
 
@@ -194,7 +194,7 @@ NewFavoriteCollectionTip().shouldDisplay ? 1 : 0
 
 В подсказку можно добавить кнопку, а по кнопке вызывать вашу логику. Кнопка нужна, чтобы открыть подробный туториал или направить на конкретный экран.
 
-![Как выглядят кнопки в подсказках `TipKit`](https://cdn.sparrowcode.io/tutorials/tipkit/actions.png)
+![Как выглядят кнопки в подсказках `TipKit`](https://cdn.sparrowcode.io/tutorials/tipkit/actions.png?v=2)
 
 Кнопки прописываются в протоколе в поле `actions`:
 
@@ -246,8 +246,6 @@ Task { @MainActor in
    }
 }
 ```
-
-![Зависмость подсказок друг от друга](https://cdn.sparrowcode.io/tutorials/tipkit/tips-dependency.png)
 
 # Закрываем подсказку
 
@@ -340,7 +338,7 @@ Task { @MainActor in
 
 # Когда подсказка зависит от другой подсказки
 
-В этом примере сначлаа появится `GettingStartedTip`, а после `FavoriteRuleTip`:
+В этом примере сначала появится `GettingStartedTip`, а после `FavoriteRuleTip`:
 
 ```swift
 struct GettingStartedTip: Tip {...}
@@ -382,6 +380,8 @@ VStack {
    TipView(GettingStartedTip())
 }
 ```
+
+![Зависмость подсказок друг от друга](https://cdn.sparrowcode.io/tutorials/tipkit/tips-dependency.png?v=2)
 
 # Одновременно несколько подсказок
 
@@ -443,7 +443,7 @@ Button(action: {
 })
 ```
 
-![Дефолтный и кастомный стиль подсказки](https://cdn.sparrowcode.io/tutorials/tipkit/custom-tip.png)
+![Дефолтный и кастомный стиль подсказки](https://cdn.sparrowcode.io/tutorials/tipkit/custom-tip.png?v=2)
 
 **Добавляем в SwiftUI:**
 
