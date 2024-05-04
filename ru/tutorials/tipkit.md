@@ -22,15 +22,15 @@ import TipKit
 struct TipKitExampleApp: App {
 
    var body: some Scene {
-       WindowGroup {
-          TipKitDemo()
-             .task {
-                 try? Tips.configure([
-                     .displayFrequency(.immediate),
-                     .datastoreLocation(.applicationDefault)
-                 ])
-             }
-       }
+      WindowGroup {
+         TipKitDemo()
+            .task {
+                try? Tips.configure([
+                    .displayFrequency(.immediate),
+                    .datastoreLocation(.applicationDefault)
+                ])
+            }
+      }
    }
 }
 ```
