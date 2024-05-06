@@ -66,11 +66,11 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 struct FavoritesTip: Tip {
 
    var title: Text {
-      Text("Добавить в избранное")
+      Text("Add to Favorite")
    }
 
    var message: Text? {
-      Text("Этот пользователь будет добавлен в папку избранное.")
+      Text("This user will be added to your favorites folder.")
    }
 
    var image: Image? {
@@ -206,8 +206,8 @@ struct ActionsTip: Tip {
    var image: Image? {...}
     
    var actions: [Action] {
-      Action(id: "reset-password", title: "Сбросить Пароль")
-      Action(id: "not-reset-password", title: "Отменить сброс")
+      Action(id: "reset-password", title: "Reset Password")
+      Action(id: "not-reset-password", title: "Cancel reset")
    }
 }
 ```
@@ -346,10 +346,10 @@ struct GettingStartedTip: Tip {...}
 struct FavoriteRuleTip: Tip {
 
    var title: Text {
-      Text("Добавить в избранное")
+      Text("Add to Favorite")
    }
     var message: Text? {
-      Text("Этот пользователь будет добавлен в папку избранное.")
+      Text("This user will be added to your favorites folder.")
    }
     
    @Parameter

@@ -165,5 +165,17 @@
       "google_structured_images": [],
       "updated_date": "16.04.2024",
       "added_date": "16.04.2024"
+   },
+   "tipkit": {
+      "title": "TipKit to highlight functions in the application",
+      "description": "How to add tooltips to the interface. Code examples on SwiftUI and UIKit.",
+      "categories": ["development", "swiftui", "uikit"],
+      "author": "sparrowcode",
+      "editors": [],
+      "keywords": ["tipkit", "hints", "tipkit on uikit", "tipkit framework"],
+      "graph_image": "https://cdn.sparrowcode.io/tutorials/tipkit/tipkit-example.jpg",
+      "google_structured_images": [],
+      "updated_date": "05.05.2024",
+      "added_date": "05.05.2024"
    }
 }
