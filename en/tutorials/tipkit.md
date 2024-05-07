@@ -1,8 +1,8 @@
-With the help of TipKit developers show native tips. They can be used to make a tutorial or draw the user's attention to new features. The tooltips look like this:
+With TipKit developers show native tips. They can be used to make a tutorial or draw the user's attention to new features. The tips look like this:
 
 ![Tips `TipKit`](https://cdn.sparrowcode.io/tutorials/tipkit/tipkit-example.jpg)
 
-Apple has made both the UI prompts and the control of when to show them. The framework is available from iOS 17 for all platforms - iOS, iPadOS, macOS, watchOS and visionOS.
+Apple has made the UI and the control of when to show them. The framework is available from iOS 17 for all platforms — iOS, iPadOS, macOS, watchOS and visionOS.
 
 [Framework `TipKit`](https://developer.apple.com/documentation/tipkit): Apple official TipKit documentation
 
@@ -52,15 +52,15 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 
 `datastoreLocation` is the data store of the tips. It can be: 
 
-- `.applicationDefault` — default location, available only to the application
-- `.groupContainer` — through a group, available between targets
-- `.url` — show your path
+- `.applicationDefault` — default location, available only to the app
+- `.groupContainer` — through appgroup, available between targets
+- `.url` — set your path
 
 The default is `.applicationDefault`.
 
 # Creating a Tip
 
-The `Tip` protocol determines the content and when to show the tip. Picture and subheading are optional:
+The `Tip` protocol determines the content and when to show the tip. Image and subtitle are optional:
 
 ```swift
 struct FavoritesTip: Tip {
@@ -79,13 +79,13 @@ struct FavoritesTip: Tip {
 }
 ```
 
-There are two kinds of tooltips - **Popover** is shown on top of the interface, and **Inline** is embedded as a normal view.
+There are two kinds of tips - **Popover** is shown on top of the interface, and **Inline** is embedded as a classical view.
 
 ## Popover
 
 **For SwiftUI** 
 
-Call the `popoverTip` modifier on the view to which to add a tooltip:
+Call the `popoverTip` modifier on the view to which to add a tip:
 
 ```swift
 Image(systemName: "heart")
@@ -114,13 +114,13 @@ override func viewDidAppear(_ animated: Bool) {
    }
 ```
 
-The `Popever` prompts always have an arrow, but the direction of the arrow may be different from what you specify. In UIKit the direction of the arrow cannot be selected.
+The `Popover` prompts always have an arrow, but the direction of the arrow may be different from what you specify. In UIKit the direction of the arrow cannot be selected.
 
-![Pop-up `Popever` tips with arrows](https://cdn.sparrowcode.io/tutorials/tipkit/popover.png?v=4)
+![Pop-up `Popover` tips with arrows](https://cdn.sparrowcode.io/tutorials/tipkit/popover.png?v=4)
 
 ## Inline
 
-`Inline` tooltips are embedded between your views and change the leyout. They do not override the application interface like `Popever` tooltips. Add them like normal views:
+`Inline` tooltips are embedded between your views and change the layout. They do not override the app interface like `Popover` tips. Add them like ordinary views:
 
 **For SwiftUI**
 
@@ -136,7 +136,7 @@ VStack {
 
 **For UIKit**
 
-Added the same way via asynchronous method, only when shouldDisplay in true:
+Added the same way via asynchronous method, only when `shouldDisplay` in true:
 
 ```swift
 Task { @MainActor in
@@ -153,9 +153,9 @@ Task { @MainActor in
 }
 ```
 
-![`Inline' prompts. They can be with or without an arrow.](https://cdn.sparrowcode.io/tutorials/tipkit/inline-arrow.png?v=4)
+![`Inline' tips. They can be with or without an arrow](https://cdn.sparrowcode.io/tutorials/tipkit/inline-arrow.png?v=4)
 
-The `Inline` prompts have an optional arrow. The direction of the arrow will be exactly as you specify:
+The `Inline`-tips have an optional arrow. The direction of the arrow will be exactly as you specify:
 
 ```swift
 // SwiftUI
@@ -170,7 +170,7 @@ TipUIView(FavoritesTip(), arrowEdge: .bottom)
 
 ## Cell in `UICollectionView`
 
-UIKit has a special cell class `TipUICollectionViewCell` for tips in a collection. It works like a normal cell, but for configuration you need to call `.configureTip`:
+UIKit has a special cell class `TipUICollectionViewCell` for tips in a collection. It works like a classic cell, but for configuration you need to call `.configureTip`:
 
 ```swift
 func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -180,23 +180,23 @@ func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath:
 }
 ```
 
-![`Inline' prompts in the collection. An arrow can be added](https://cdn.sparrowcode.io/tutorials/tipkit/tipuicollectionviewcell.png?v=4)
+![`Inline'-tips in the collection. An arrow can be added](https://cdn.sparrowcode.io/tutorials/tipkit/tipuicollectionviewcell.png?v=4)
 
-Use `.shouldDisplay` to determine whether to show the tooltip or not:
+Use `.shouldDisplay` to determine whether to show the tip or not:
 
 ```swift
 NewFavoriteCollectionTip().shouldDisplay ? 1 : 0
 ```
 
-Manage as for a normal cell - via delegate methods for the collection.
+Manage as for a classic cell - via delegate methods for the collection.
 
 ## Add a button
 
-A button can be added to the tooltip, and the button can be used to invoke your logic. The button is needed to open a detailed tutorial or to direct to a specific screen.
+A button can be added to the tip, and the button can be used to call your code. The button is needed to open a detailed tutorial or to direct to a specific screen.
 
 ![What buttons look like in `TipKit` tips](https://cdn.sparrowcode.io/tutorials/tipkit/actions.png?v=4)
 
-The buttons are spelled out in the protocol in the `actions` field:
+The buttons are set in the protocol in the `actions` field:
 
 ```swift
 struct ActionsTip: Tip {
@@ -212,7 +212,7 @@ struct ActionsTip: Tip {
 }
 ```
 
-The `id` is needed to determine which button was pressed:
+The `id` is needed to catch which button was pressed:
 
 **For SwiftUI**
 
@@ -220,7 +220,7 @@ The `id` is needed to determine which button was pressed:
 TipView(tip) { action in
 
    if action.id == "reset-password" {
-      // Do what we need to do by pressing
+      // Do what you need to do by pressing
    }
 }
 ```
@@ -235,7 +235,7 @@ Task { @MainActor in
          let tipView = TipUIView(ActionsTip()) { action in
 
             if action.id == "reset-password" {
-               // Do what we need to do by pressing
+               // Do what you need to do by pressing
             }
 
             let controller = TipKitViewController()
@@ -249,7 +249,7 @@ Task { @MainActor in
 
 # Close the tip
 
-The tooltip can be closed by the user by clicking on the cross. But you can also close it with code. The code is the same for SwiftUI and UIKit:
+The tip can be closed by the user by clicking on the cross. But you can also close it with code. The code is the same for SwiftUI and UIKit:
 
 ```swift
 inlineTip.invalidate(reason: .actionPerformed)
@@ -258,10 +258,10 @@ inlineTip.invalidate(reason: .actionPerformed)
 In the method, provide a reason why you closed the tip:
 
 - `.actionPerformed` - the user performed the action in the tip
-- `.displayCountExceeded` - the clue has been shown the maximum number of times
+- `.displayCountExceeded` - the tip has been shown the maximum number of times
 - `.tipClosed` - the user has clearly closed the tip
 
-In UIKit, you need to add code for the cross. For `popover` prompt, close the controller:
+In UIKit, you need to add code for the cross. For `popover`-tip, close the controller:
 
 ```swift
 if presentedViewController is TipUIPopoverViewController {
@@ -269,7 +269,7 @@ if presentedViewController is TipUIPopoverViewController {
 }
 ```
 
-For the `inline` prompt, we remove the view:
+For the `inline`-tip, we remove the view:
 
 ```swift
 if let tipView = view.subviews.first(where: { $0 is TipUIView }) {
@@ -279,7 +279,7 @@ if let tipView = view.subviews.first(where: { $0 is TipUIView }) {
 
 # Rules for tip: when to show
 
-When to show the tooltip is configurable via parameters:
+When to show the tip is configurable via parameters:
 
 ```swift
 struct FavoriteRuleTip: Tip {
@@ -387,13 +387,13 @@ VStack {
 
 > Each tip needs to be run in a separate Task
 
-`Inline`- there can be as many tips on the screen as you like. `Popover`- tip can be one, but they can be shown one by one via flags. I described how it works in the previous paragraph.
+`Inline`-there can be as many tips on the screen as you like. `Popover`-tip can be one, but they can be shown one by one via flags. I described how it works in the previous section.
 
-# Tip customization
+# Tip Customization
 
-The `TipViewStyle` protocol defines the style of the tooltip. The style can then be applied to any tooltip.
+The `TipViewStyle` protocol defines the style of the tip. The style can then be applied to any tip.
 
-The `configuration` parameter in the makeBody method is access to texts, pictures and buttons that can be customized:
+The `configuration` parameter in the makeBody method is access to texts, images and buttons that can be customized:
 
 ```swift
 struct MyTipViewStyle: TipViewStyle {
@@ -433,7 +433,7 @@ struct MyTipViewStyle: TipViewStyle {
 }
 ```
 
-Here you can create a button to close the tip. `.tipClosed` - explicitly close the tip by cross.
+Here you can create a button to close the tip. `.tipClosed` — explicitly close the tip by cross.
 
 ```swift
 Button(action: {
@@ -461,7 +461,7 @@ tipView.viewStyle = MyTipViewStyle()
 
 # `TipKit` in Preview
 
-If you close a tooltip in Preview, it will not appear again - this is not convenient. To make the tooltips appear every time, you need to reset the data storage:
+If you close a tip in Preview, it will not appear again — this is not convenient. To make the tips appear every time, you need to reset the data storage:
 
 **SwiftUI**
 

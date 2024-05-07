@@ -53,7 +53,7 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 `datastoreLocation` — хранилище данных подсказок. Это может быть: 
 
 - `.applicationDefault` — дефолтная локация, доступно только приложению
-- `.groupContainer` — через группу, доступно между таргетами
+- `.groupContainer` — через appgroup, доступно между таргетами
 - `.url` — указываете свой путь
 
 По умолчанию стоит `.applicationDefault`.
@@ -136,7 +136,7 @@ VStack {
 
 **Для UIKit**
 
-Добавляем так же через асинхронный метод, только когда shouldDisplay в тру:
+Добавляем так же через асинхронный метод, только когда `shouldDisplay` в тру:
 
 ```swift
 Task { @MainActor in
