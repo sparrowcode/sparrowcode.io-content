@@ -6,7 +6,7 @@
 
 Файл APNS - Apple Push Notification Service, это обычный JSON.
 
-![Так выглядит фаил apns](https://cdn.sparrowcode.io/tutorials/push-notifications-simulator/apns-file.png)
+![Так выглядит фаил apns](https://cdn.sparrowcode.io/tutorials/testing-push-notifications-ios-simulator/apns-file.png)
 
 В нем указыватся что будет в пуше - например текстовое сообщение, звуковой сигнал и число на бейдже иконки. Список всех доступных ключей пожно посмотреть [тут](https://developer.apple.com/documentation/usernotifications/unnotificationcontent).
 
@@ -39,11 +39,11 @@
 
 Иначе получите ошибку:
 
-![Ошибка, потому что не указан Target Bundle](https://cdn.sparrowcode.io/tutorials/push-notifications-simulator/invalid-notification.png)
+![Ошибка, потому что не указан Target Bundle](https://cdn.sparrowcode.io/tutorials/testing-push-notifications-ios-simulator/invalid-notification.png)
 
 Если все заполненно правильно, придет push:
 
-![Пуш уведомление](https://cdn.sparrowcode.io/tutorials/push-notifications-simulator/push.png)
+![Пуш уведомление](https://cdn.sparrowcode.io/tutorials/testing-push-notifications-ios-simulator/push.png)
 
 # Работа с терминалом:
 
@@ -53,7 +53,7 @@
 
 Проверьте в настройках Xcode что `Command Line Tools выбрана`:
 
-![Включаем Command Line Tools](https://cdn.sparrowcode.io/tutorials/push-notifications-simulator/command-line-tools.png)
+![Включаем Command Line Tools](https://cdn.sparrowcode.io/tutorials/testing-push-notifications-ios-simulator/command-line-tools.png)
 
 ## Работаем с xcrun
 
@@ -71,7 +71,7 @@ xcrun simctl list
 
 Она покажет список всех симуляторов и их id. Обратите внимание, у запущенного симулятора будет указанно **Booted**
 
-![Список всех доступных симуляторов](https://cdn.sparrowcode.io/tutorials/push-notifications-simulator/id-simulator-list.png)
+![Список всех доступных симуляторов](https://cdn.sparrowcode.io/tutorials/testing-push-notifications-ios-simulator/id-simulator-list.png)
 
 ## Запускаем push-уведомления
 
@@ -91,7 +91,7 @@ xcrun simctl push booted com.TestPushNotifications payload.apns
 
 Если все сделано сделанно правино получите такое сообщение:
 
-![Сообщение об успешной отравки push-уведомления](https://cdn.sparrowcode.io/tutorials/push-notifications-simulator/notification-sent.png)
+![Сообщение об успешной отравки push-уведомления](https://cdn.sparrowcode.io/tutorials/testing-push-notifications-ios-simulator/notification-sent.png)
 
 # Настройка и конфигурация
 

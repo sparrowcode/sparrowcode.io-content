@@ -242,14 +242,14 @@
       "updated_date": "16.04.2024",
       "added_date": "05.04.2024"
    },
-   "push-notifications-simulator": {
-      "title": "Отправка push-уведомлений на симуляторе",
+   "testing-push-notifications-ios-simulator": {
+      "title": "Как тестировать push-уведомлений на симуляторе",
       "description": "Посмотрим как тестировать push-уведобления на симуляторе, разберем что такое apns фаил",
       "categories": ["development"],
       "author": "sparrowcode",
       "editors": [],
       "keywords": ["push", "notification", "manifest", "simulator", "apns"],
-      "graph_image": "https://cdn.sparrowcode.io/tutorials/push-notifications-simulator/push.png",
+      "graph_image": "https://cdn.sparrowcode.io/tutorials/testing-push-notifications-ios-simulator/push.png",
       "google_structured_images": [],
       "updated_date": "12.05.2024",
       "added_date": "12.05.2024"
