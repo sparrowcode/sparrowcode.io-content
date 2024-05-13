@@ -2,9 +2,10 @@
 
 # Перетаскиваем APNS файла
 
- файл payload.apns - Apple Push Notification Service, это обычный JSON.
+APNS присылает на телефон файл payload.apns - Apple Push Notification Service. Файл apns Можно сэмулировать с вашего компьютера, ниже показан пример.
 
-В нем указываются данные которые будут в пуше - например текстовое сообщение, звуковой сигнал или число на бейдже иконки. Список всех доступных ключей можно посмотреть [тут](https://developer.apple.com/documentation/usernotifications/unnotificationcontent).
+
+В payload.apns указываются данные которые будут в пуше - например текстовое сообщение, звуковой сигнал или число на бейдже иконки. Список всех доступных ключей можно посмотреть [тут](https://developer.apple.com/documentation/usernotifications/unnotificationcontent).
 
 ```JSON
 {
@@ -35,23 +36,19 @@
 
 Иначе получите ошибку:
 
-![Ошибка, потому что не указан Target Bundle](https://cdn.sparrowcode.io/tutorials/testing-push-notifications-ios-simulator/invalid-notification.png)
+![Ошибка, потому что не указан Target Bundle](https://cdn.sparrowcode.io/tutorials/testing-push-notifications-ios-simulator/invalid-notification.png?v=1)
 
 Если все заполненно правильно, придет push:
 
-![Пуш уведомление](https://cdn.sparrowcode.io/tutorials/testing-push-notifications-ios-simulator/push.png)
+![Пуш уведомление](https://cdn.sparrowcode.io/tutorials/testing-push-notifications-ios-simulator/push.png?v=1)
 
-# Работа с терминалом:
+# Через с терминал
 
-Все это можно сделать и через командную стороку.
+Вы можете быть apns сервером не только с помощью json файла, но и из командной строки.
 
-## Настройка simctl
+Проверьте в настройках Xcode что `Command Line Tools` установлен, иначе **simctl** будет выдавать ошибку. Когда `Command Line Tools` установлен, под ним будет указан путь к Xcode на вашем маке. Если путь не появился, выберите еще раз нужную версию Xcode.
 
-Проверьте в настройках Xcode что `Command Line Tools` выбрана:
-
-![Включаем Command Line Tools](https://cdn.sparrowcode.io/tutorials/testing-push-notifications-ios-simulator/command-line-tools.png)
-
-## Работаем с xcrun
+![Включаем Command Line Tools](https://cdn.sparrowcode.io/tutorials/testing-push-notifications-ios-simulator/command-line-tools.png?v=1)
 
 Для запуска пуша спользуется команда:
 
@@ -67,11 +64,10 @@ xcrun simctl list
 
 Она покажет список всех симуляторов и их id. Обратите внимание, у запущенного симулятора будет указанно **Booted**
 
-![Список всех доступных симуляторов](https://cdn.sparrowcode.io/tutorials/testing-push-notifications-ios-simulator/id-simulator-list.png)
+![Список всех доступных симуляторов](https://cdn.sparrowcode.io/tutorials/testing-push-notifications-ios-simulator/id-simulator-list.png?v=1)
 
-## Запускаем push-уведомления
 
-Когда есть запущенный симулятор, можно спользовать **booted** в место ключа.
+Чтобы запустить push-уведомление Когда есть запущенный симулятор, можно спользовать **booted** в место ключа.
 
 Запускаем с `id симулятора`:
 
@@ -87,9 +83,13 @@ xcrun simctl push booted com.TestPushNotifications payload.apns
 
 Если все сделано сделанно правильно получите такое сообщение:
 
-![Сообщение об успешной отравки push-уведомления](https://cdn.sparrowcode.io/tutorials/testing-push-notifications-ios-simulator/notification-sent.png)
+![Сообщение об успешной отравки push-уведомления](https://cdn.sparrowcode.io/tutorials/testing-push-notifications-ios-simulator/notification-sent.png?v=1)
 
-# Настройка и конфигурация
+# Разрешение
+
+Что бы использовать push-уведомления нужно запросить разрешение. Можно сделать это самим или через **PermissionsKit**.
+
+## Запрос
 
 В точку входа приложения импортируем `UserNotifications` и добавляем **AppDelegate**. В методе **didFinishLaunchingWithOptions** включаем разрешение для push-уведомдений.
 
@@ -106,8 +106,6 @@ class AppDelegate: NSObject, UIApplicationDelegate {
    }
 }
 ```
-
-## PermissionsKit
 
 Пример использования популярной библиотеки **[PermissionsKit](https://github.com/sparrowcode/PermissionsKit)**
 
@@ -130,6 +128,6 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 }
 ```
 
-# Сброс разрешений
+## Сброс
 
 Если во время тестирования нужно сбросить разрешения на push-уведомления, просто удалите и переустановите приложение.
