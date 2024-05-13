@@ -219,7 +219,7 @@
       "added_date": "15.02.2024"
    },
    "tipkit": {
-      "title": "TipKit чтобы подсветить функции в приложении",
+      "title": "TipKit в UIKit и SwiftUI",
       "description": "Как добавить подсказки в интерфейс. Примеры кода на SwiftUI и UIKit.",
       "categories": ["development", "swiftui", "uikit"],
       "author": "sparrowcode",

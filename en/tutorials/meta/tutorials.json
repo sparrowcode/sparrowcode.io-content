@@ -167,7 +167,7 @@
       "added_date": "16.04.2024"
    },
    "tipkit": {
-      "title": "TipKit to highlight functions in the application",
+      "title": "Using TipKit on UIKit & SwiftUI",
       "description": "How to add tooltips to the interface. Code examples on SwiftUI and UIKit.",
       "categories": ["development", "swiftui", "uikit"],
       "author": "sparrowcode",
