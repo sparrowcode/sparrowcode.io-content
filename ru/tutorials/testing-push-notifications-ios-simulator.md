@@ -1,14 +1,10 @@
-# Отправка push-уведомлений на симуляторе
-
 Учитывайте что вам нужен запрос разрешений даже для симулятора.
 
 # Перетаскиваем APNS файла
 
-Файл APNS - Apple Push Notification Service, это обычный JSON.
+ файл payload.apns - Apple Push Notification Service, это обычный JSON.
 
-![Так выглядит фаил apns](https://cdn.sparrowcode.io/tutorials/testing-push-notifications-ios-simulator/apns-file.png)
-
-В нем указыватся что будет в пуше - например текстовое сообщение, звуковой сигнал и число на бейдже иконки. Список всех доступных ключей пожно посмотреть [тут](https://developer.apple.com/documentation/usernotifications/unnotificationcontent).
+В нем указываются данные которые будут в пуше - например текстовое сообщение, звуковой сигнал или число на бейдже иконки. Список всех доступных ключей можно посмотреть [тут](https://developer.apple.com/documentation/usernotifications/unnotificationcontent).
 
 ```JSON
 {
@@ -51,7 +47,7 @@
 
 ## Настройка simctl
 
-Проверьте в настройках Xcode что `Command Line Tools выбрана`:
+Проверьте в настройках Xcode что `Command Line Tools` выбрана:
 
 ![Включаем Command Line Tools](https://cdn.sparrowcode.io/tutorials/testing-push-notifications-ios-simulator/command-line-tools.png)
 
@@ -77,19 +73,19 @@ xcrun simctl list
 
 Когда есть запущенный симулятор, можно спользовать **booted** в место ключа.
 
-Запускаем с id симулятора:
+Запускаем с `id симулятора`:
 
 ```console
 xcrun simctl push 4D1C144E-7C68-484D-894D-CF17928D3D3A com.TestPushNotifications payload.apns
 ```
 
-Запускаем через booted:
+Запускаем через `booted`:
 
 ```console
 xcrun simctl push booted com.TestPushNotifications payload.apns
 ```
 
-Если все сделано сделанно правино получите такое сообщение:
+Если все сделано сделанно правильно получите такое сообщение:
 
 ![Сообщение об успешной отравки push-уведомления](https://cdn.sparrowcode.io/tutorials/testing-push-notifications-ios-simulator/notification-sent.png)
 
@@ -101,9 +97,32 @@ xcrun simctl push booted com.TestPushNotifications payload.apns
 class AppDelegate: NSObject, UIApplicationDelegate {
 
    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
-    
+
       UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) {(granted, error) in
          print("Permission granted: \(granted)")
+      }
+
+    return true
+   }
+}
+```
+
+## PermissionsKit
+
+Пример использования популярной библиотеки **[PermissionsKit](https://github.com/sparrowcode/PermissionsKit)**
+
+Импортируем `PermissionsKit`, `NotificationPermission` и включаем разрешение для push-уведомдений:
+
+```swift
+import PermissionsKit
+import NotificationPermission
+
+class AppDelegate: NSObject, UIApplicationDelegate {
+
+   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+
+      Permission.notification.request {
+         print("Permission granted")
       }
 
     return true
