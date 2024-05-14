@@ -1,11 +1,12 @@
-Учитывайте что вам нужен запрос разрешений даже для симулятора.
+Перед тем как тестировать push-уведомления на симуляторе, нужно получить разрешение от пользователя. Как запросить разрешение написано в конце туториала. На симуляторе можно тестировать как обычные, так и Rich-уведомления, это которые с картинками, звуками и кнопками-действиями.
 
-# Перетаскиваем APNS файла
+> Apple Push Notification Service-сервер присылает устройствам файл c контентом уведомления. Чтобы тестировать пуш-уведомления, можно сэмулировать этот запрос
+ 
+Можно это сделать через json-файл с данными, или через терминал.
 
-APNS присылает на телефон файл payload.apns - Apple Push Notification Service. Файл apns Можно сэмулировать с вашего компьютера, ниже показан пример.
+# Перетащить json-файла
 
-
-В payload.apns указываются данные которые будут в пуше - например текстовое сообщение, звуковой сигнал или число на бейдже иконки. Список всех доступных ключей можно посмотреть [тут](https://developer.apple.com/documentation/usernotifications/unnotificationcontent).
+Создаем файл с данными для пуша. Здесь я добавлю текст, звук и чисто в бейдже иконки приложения:
 
 ```JSON
 {
@@ -20,7 +21,9 @@ APNS присылает на телефон файл payload.apns - Apple Push N
 }
 ```
 
-Самый простой способ запустить push на симуляторе, просто перетащить файл apns в симулятор. Нужно обязательно указать поле `Target Bundle`в apns файле.
+Вы можете указать больше контента, например, картинку или действия. Все доступные ключи для push-уведомлений [по ссылке](https://developer.apple.com/documentation/usernotifications/unnotificationcontent).
+
+Тепет в файл нужно добавить `Simulator Target Bundle`, чтобы симулятор понимал какому таргету прилетает пуш:
 
 ```JSON
 {
@@ -30,104 +33,77 @@ APNS присылает на телефон файл payload.apns - Apple Push N
          "body" : "Bob wants to play poker"
       }
    },
-   "Simulator Target Bundle": "com.TestPushNotifications"
+   "Simulator Target Bundle": "com.bundle.example"
 }
 ```
 
-Иначе получите ошибку:
+Если бандл не указали, то получите такую ошибку:
 
-![Ошибка, потому что не указан Target Bundle](https://cdn.sparrowcode.io/tutorials/testing-push-notifications-ios-simulator/invalid-notification.png?v=1)
+![Ошибка, потому что не указали Target Bundle](https://cdn.sparrowcode.io/tutorials/testing-push-notifications-ios-simulator/invalid-notification.png?v=1)
 
-Если все заполненно правильно, придет push:
+Если все в порядке, то на симуляторе появится пуш:
 
 ![Пуш уведомление](https://cdn.sparrowcode.io/tutorials/testing-push-notifications-ios-simulator/push.png?v=1)
 
-# Через с терминал
+# Через Terminal
 
-Вы можете быть apns сервером не только с помощью json файла, но и из командной строки.
-
-Проверьте в настройках Xcode что `Command Line Tools` установлен, иначе **simctl** будет выдавать ошибку. Когда `Command Line Tools` установлен, под ним будет указан путь к Xcode на вашем маке. Если путь не появился, выберите еще раз нужную версию Xcode.
+В этом способе вы так же используете APNS-файл, но передаете его через терминал. Проверьте в настройках Xcode что `Command Line Tools` установлен, иначе **simctl** будет выдавать ошибку. Если внизу не видно путь, то выберите еще раз версию Xcode:
 
 ![Включаем Command Line Tools](https://cdn.sparrowcode.io/tutorials/testing-push-notifications-ios-simulator/command-line-tools.png?v=1)
 
-Для запуска пуша спользуется команда:
+Для отправки пуша используется команда:
 
 ```console
 xcrun simctl push <id simulator> <bundle id> <path to apns file>
 ```
 
-`Bundle id` - это бандл вашего прилоджения.Чтобы Узнать `id simulator` используется команда:
+`Bundle id` - это бандл вашего прилоджения. А чтобы узнать `id simulator` используется команда:
 
 ```console
 xcrun simctl list
 ```
 
-Она покажет список всех симуляторов и их id. Обратите внимание, у запущенного симулятора будет указанно **Booted**
+Она покажет список всех симуляторов и их id. Обратите внимание, у запущенного симулятора будет указанно *Booted*:
 
 ![Список всех доступных симуляторов](https://cdn.sparrowcode.io/tutorials/testing-push-notifications-ios-simulator/id-simulator-list.png?v=1)
 
 
-Чтобы запустить push-уведомление Когда есть запущенный симулятор, можно спользовать **booted** в место ключа.
-
-Запускаем с `id симулятора`:
+Собираем команду с `id симулятора` и вызываем:
 
 ```console
-xcrun simctl push 4D1C144E-7C68-484D-894D-CF17928D3D3A com.TestPushNotifications payload.apns
+xcrun simctl push 4D1C144E-7C68-484D-894D-CF17928D3D3A com.bundle.example payload.apns
 ```
 
-Запускаем через `booted`:
-
-```console
-xcrun simctl push booted com.TestPushNotifications payload.apns
-```
+Если у вас запущен симулятор, то вместо ключа можно указать *Booted*, так пуш автоматически улетит на запущенный симулятор.
 
 Если все сделано сделанно правильно получите такое сообщение:
 
-![Сообщение об успешной отравки push-уведомления](https://cdn.sparrowcode.io/tutorials/testing-push-notifications-ios-simulator/notification-sent.png?v=1)
+![Сообщение об отравке push-уведомления](https://cdn.sparrowcode.io/tutorials/testing-push-notifications-ios-simulator/notification-sent.png?v=1)
 
-# Разрешение
+# Разрешения
 
-Что бы использовать push-уведомления нужно запросить разрешение. Можно сделать это самим или через **PermissionsKit**.
+Чтобы push-уведомления показывались на симуляторе и устройстве, нужно запросить разрешение. Можно это сделать внучную или через нашу библиотеку.
 
-## Запрос
+## Запрос разрешения
 
-В точку входа приложения импортируем `UserNotifications` и добавляем **AppDelegate**. В методе **didFinishLaunchingWithOptions** включаем разрешение для push-уведомдений.
+Импортируем `UserNotifications` и вызываем системный запрос:
 
 ```swift
-class AppDelegate: NSObject, UIApplicationDelegate {
-
-   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
-
-      UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) {(granted, error) in
-         print("Permission granted: \(granted)")
-      }
-
-    return true
-   }
+UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) {(granted, error) in
+   print("Permission Granted: \(granted)")
 }
 ```
 
-Пример использования популярной библиотеки **[PermissionsKit](https://github.com/sparrowcode/PermissionsKit)**
-
-Импортируем `PermissionsKit`, `NotificationPermission` и включаем разрешение для push-уведомдений:
+Запрашивать нужно в любом месте до отправки уведомлений. Примерно то же самое делает наша библиотека [PermissionsKit](https://github.com/sparrowcode/PermissionsKit):
 
 ```swift
 import PermissionsKit
-import NotificationPermission
 
-class AppDelegate: NSObject, UIApplicationDelegate {
-
-   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
-
-      Permission.notification.request {
-         print("Permission granted")
-      }
-
-    return true
-   }
-}
+Permission.notification.request {}
 ```
 
-## Сброс
+## Сброс разрешения
 
-Если во время тестирования нужно сбросить разрешения на push-уведомления, просто удалите и переустановите приложение.
+Если нужно сбросить разрешение на push-уведомления, достаточно удалить приложение
+
+> Иногда разрешение может остаться даже после переустановки, тогда после удаления подождите минуту и установите снова.

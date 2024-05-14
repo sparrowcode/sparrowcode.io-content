@@ -251,7 +251,7 @@
       "keywords": ["push", "notification", "manifest", "simulator", "apns"],
       "graph_image": "https://cdn.sparrowcode.io/tutorials/testing-push-notifications-ios-simulator/push.png",
       "google_structured_images": [],
-      "updated_date": "12.05.2024",
+      "updated_date": "14.05.2024",
       "added_date": "12.05.2024"
    }
 }
