@@ -1,4 +1,4 @@
-With TipKit developers show native tips. They can be used to make a tutorial or draw the user's attention to new features. The tips look like this:
+With TipKit, developers show native tips. They can be used to make a tutorial or draw the user's attention to new features. The tips look like this:
 
 ![Tips `TipKit`](https://cdn.sparrowcode.io/tutorials/tipkit/tipkit-example.jpg)
 
@@ -114,7 +114,7 @@ override func viewDidAppear(_ animated: Bool) {
    }
 ```
 
-The `Popover` prompts always have an arrow, but the direction of the arrow may be different from what you specify. In UIKit the direction of the arrow cannot be selected.
+The `Popover` prompts always have an arrow, but the direction of the arrow may be different from what you specify. In UIKit, the direction of the arrow cannot be selected.
 
 ![Pop-up `Popover` tips with arrows](https://cdn.sparrowcode.io/tutorials/tipkit/popover.png?v=4)
 
@@ -249,7 +249,7 @@ Task { @MainActor in
 
 # Close the tip
 
-The tip can be closed by the user by clicking on the cross. But you can also close it with code. The code is the same for SwiftUI and UIKit:
+The user can close the tip by clicking on the cross. But you can also close it with code. The code is the same for SwiftUI and UIKit:
 
 ```swift
 inlineTip.invalidate(reason: .actionPerformed)
@@ -279,7 +279,7 @@ if let tipView = view.subviews.first(where: { $0 is TipUIView }) {
 
 # Rules for tip: when to show
 
-When to show the tip is configurable via parameters:
+When to show, the tip is configurable via parameters:
 
 ```swift
 struct FavoriteRuleTip: Tip {
@@ -490,4 +490,4 @@ Add to AppDelegate:
 try? Tips.resetDatastore()
 ```
 
-> Don't forget to remove `.resetDatastore`, otherwise the tips will be shown all the time in the release.
+> Remember to remove `.resetDatastore`, otherwise the tips will be shown all the time in the release.

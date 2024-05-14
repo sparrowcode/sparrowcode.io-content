@@ -1,6 +1,6 @@
 # Create Modifier
 
-There is a built-in tool for custom modifiers - you need to create a structure and implement the `ViewModifier` protocol. The protocol should be used to implement the `body` method and return a new `View`.
+There is a built-in tool for custom modifiers — you need to create a structure and implement the `ViewModifier` protocol. The protocol should be used to implement the `body` method and return a new `View`.
 
 To give an example, let's make a modifier that combines styles for text:
 

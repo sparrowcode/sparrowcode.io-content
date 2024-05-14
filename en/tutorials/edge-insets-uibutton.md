@@ -1,4 +1,4 @@
-You control three indents - `imageEdgeInsets`, `titleEdgeInsets` and `contentEdgeInsets`. Before diving into the process, take a look at [sample project](https://cdn.sparrowcode.io/tutorials/edge-insets-uibutton/example-project.zip). The project clearly shows how the indentation combinations work. In the video I put a fill for the elements:
+You control three indents - `imageEdgeInsets`, `titleEdgeInsets` and `contentEdgeInsets`. Before diving into the process, take a look at [sample project](https://cdn.sparrowcode.io/tutorials/edge-insets-uibutton/example-project.zip). The project clearly shows how the indentation combinations work. In the video, I put a fill for the elements:
 - Red -> background
 - Yellow -> icon
 - Blue -> title
@@ -26,7 +26,7 @@ They are in the same section, because your task is to add indents on one side an
 
 [Indent `imageEdgeInsets` between the icon and the text.](https://cdn.sparrowcode.io/tutorials/edge-insets-uibutton/image-edge-insets-space-icon-title.mov)
 
-The indentation is added, but does not affect the size of the button - the icon flies behind the button. TitleEdgeInsets` behaves the same way - it doesn't change button size. If you indent the text positively to the left and the icon negatively indented to the left - then there will be a distance of 10pt between the text and the icon.
+The indentation is added, but does not affect the size of the button — the icon flies behind the button. TitleEdgeInsets` behaves the same way — it doesn't change button size. If you indent the text positively to the left and the icon negatively indented to the left - then there will be a distance of 10pt between the text and the icon.
 
 ```swift
 previewButton.imageEdgeInsets.left = -10
