@@ -177,5 +177,17 @@
       "google_structured_images": [],
       "updated_date": "05.05.2024",
       "added_date": "05.05.2024"
+   },
+   "testing-push-notifications-ios-simulator": {
+      "title": "How to test push notifications on a simulator",
+      "description": "Let's see how to test push notifications on the simulator, let's understand what apns file",
+      "categories": ["development"],
+      "author": "sparrowcode",
+      "editors": [],
+      "keywords": ["push", "notification", "manifest", "simulator", "apns"],
+      "graph_image": "https://cdn.sparrowcode.io/tutorials/testing-push-notifications-ios-simulator/push.png",
+      "google_structured_images": [],
+      "updated_date": "15.05.2024",
+      "added_date": "15.05.2024"
    }
 }

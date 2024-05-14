@@ -6,7 +6,7 @@
 
 # Перетащить json-файла
 
-Создаем файл с данными для пуша. Здесь я добавлю текст, звук и чисто в бейдже иконки приложения:
+Создаем файл с данными для пуша. Здесь я добавлю текст, звук и число в бейдже иконки приложения:
 
 ```JSON
 {
@@ -23,7 +23,7 @@
 
 Вы можете указать больше контента, например, картинку или действия. Все доступные ключи для push-уведомлений [по ссылке](https://developer.apple.com/documentation/usernotifications/unnotificationcontent).
 
-Тепет в файл нужно добавить `Simulator Target Bundle`, чтобы симулятор понимал какому таргету прилетает пуш:
+Теперь в файл нужно добавить `Simulator Target Bundle`, чтобы симулятор понимал какому таргету прилетает пуш:
 
 ```JSON
 {
@@ -39,17 +39,17 @@
 
 Если бандл не указали, то получите такую ошибку:
 
-![Ошибка, потому что не указали Target Bundle](https://cdn.sparrowcode.io/tutorials/testing-push-notifications-ios-simulator/invalid-notification.png?v=1)
+![Ошибка, потому что не указали Target Bundle](https://cdn.sparrowcode.io/tutorials/testing-push-notifications-ios-simulator/invalid-notification.png?v=2)
 
 Если все в порядке, то на симуляторе появится пуш:
 
-![Пуш уведомление](https://cdn.sparrowcode.io/tutorials/testing-push-notifications-ios-simulator/push.png?v=1)
+![Пуш уведомление](https://cdn.sparrowcode.io/tutorials/testing-push-notifications-ios-simulator/push.png?v=2)
 
 # Через Terminal
 
 В этом способе вы так же используете APNS-файл, но передаете его через терминал. Проверьте в настройках Xcode что `Command Line Tools` установлен, иначе **simctl** будет выдавать ошибку. Если внизу не видно путь, то выберите еще раз версию Xcode:
 
-![Включаем Command Line Tools](https://cdn.sparrowcode.io/tutorials/testing-push-notifications-ios-simulator/command-line-tools.png?v=1)
+![Включаем Command Line Tools](https://cdn.sparrowcode.io/tutorials/testing-push-notifications-ios-simulator/command-line-tools.png?v=2)
 
 Для отправки пуша используется команда:
 
@@ -57,7 +57,7 @@
 xcrun simctl push <id simulator> <bundle id> <path to apns file>
 ```
 
-`Bundle id` - это бандл вашего прилоджения. А чтобы узнать `id simulator` используется команда:
+`Bundle id` - это бандл вашего приложения. А чтобы узнать `id simulator` используется команда:
 
 ```console
 xcrun simctl list
@@ -65,7 +65,7 @@ xcrun simctl list
 
 Она покажет список всех симуляторов и их id. Обратите внимание, у запущенного симулятора будет указанно *Booted*:
 
-![Список всех доступных симуляторов](https://cdn.sparrowcode.io/tutorials/testing-push-notifications-ios-simulator/id-simulator-list.png?v=1)
+![Список всех доступных симуляторов](https://cdn.sparrowcode.io/tutorials/testing-push-notifications-ios-simulator/id-simulator-list.png?v=2)
 
 
 Собираем команду с `id симулятора` и вызываем:
@@ -76,13 +76,13 @@ xcrun simctl push 4D1C144E-7C68-484D-894D-CF17928D3D3A com.bundle.example payloa
 
 Если у вас запущен симулятор, то вместо ключа можно указать *Booted*, так пуш автоматически улетит на запущенный симулятор.
 
-Если все сделано сделанно правильно получите такое сообщение:
+Если все сделано правильно получите такое сообщение:
 
-![Сообщение об отравке push-уведомления](https://cdn.sparrowcode.io/tutorials/testing-push-notifications-ios-simulator/notification-sent.png?v=1)
+![Сообщение об отправке push-уведомления](https://cdn.sparrowcode.io/tutorials/testing-push-notifications-ios-simulator/notification-sent.png?v=2)
 
 # Разрешения
 
-Чтобы push-уведомления показывались на симуляторе и устройстве, нужно запросить разрешение. Можно это сделать внучную или через нашу библиотеку.
+Чтобы push-уведомления показывались на симуляторе и устройстве, нужно запросить разрешение. Можно это сделать вручную или через нашу библиотеку.
 
 ## Запрос разрешения
 
