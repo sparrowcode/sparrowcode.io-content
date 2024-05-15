@@ -179,7 +179,7 @@
       "added_date": "05.05.2024"
    },
    "testing-push-notifications-ios-simulator": {
-      "title": "How to test push notifications on a simulator",
+      "title": "How to test Push Notifications on a simulator",
       "description": "Let's see how to test push notifications on the simulator, let's understand what apns file",
       "categories": ["development"],
       "author": "sparrowcode",

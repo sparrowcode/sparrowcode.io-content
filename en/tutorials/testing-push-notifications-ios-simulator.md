@@ -57,7 +57,7 @@ The command is used to send a push:
 xcrun simctl push <id simulator> <bundle id> <path to apns file>
 ```
 
-The `Bundle id` -  is the bundle of your application. And to find out the `id simulator` the command is used:
+The `Bundle id` is the bundle of your application. And to find out the `id simulator` the command is used:
 
 ```console
 xcrun simctl list
@@ -76,7 +76,7 @@ xcrun simctl push 4D1C144E-7C68-484D-894D-CF17928D3D3A com.bundle.example payloa
 
 If you have a simulator running, you can specify *Booted* instead of the key, so the push will automatically fly to the running simulator.
 
-If everything is done correctly you will get this message:
+If everything is done correctly, you will get this message:
 
 ![Message about sending a push-notification](https://cdn.sparrowcode.io/tutorials/testing-push-notifications-ios-simulator/notification-sent.png?v=2)
 
@@ -94,7 +94,7 @@ UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound
 }
 ```
 
-Requests need to be made anywhere before notices are sent. This is roughly what our library does [PermissionsKit](https://github.com/sparrowcode/PermissionsKit):
+Requests need to be made anywhere before notices are sent. This is roughly what our library does [PermissionsKit](https://github.com/sparrowcode/PermissionsKit) :
 
 ```swift
 import PermissionsKit
