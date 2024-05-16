@@ -132,6 +132,7 @@
       "google_structured_images": [
          "https://cdn.sparrowcode.io/tutorials/localisation/add-new-language.jpg", "https://cdn.sparrowcode.io/tutorials/localisation/export-menu.jpg", "https://cdn.sparrowcode.io/tutorials/localisation/export-import.jpg", "https://cdn.sparrowcode.io/tutorials/localisation/autogeneration-bartycrouch-file.jpg", "https://cdn.sparrowcode.io/tutorials/localisation/pluralisation-new-stringsdict.jpg", "https://cdn.sparrowcode.io/tutorials/localisation/pluralisation-stringsdict-empty.jpg", "https://cdn.sparrowcode.io/tutorials/localisation/image-ready.jpg", "https://cdn.sparrowcode.io/tutorials/localisation/image-preview.jpg", "https://cdn.sparrowcode.io/tutorials/localisation/formatters-preview.jpg", "https://cdn.sparrowcode.io/tutorials/localisation/ltr-rtl-preview.jpg", "https://cdn.sparrowcode.io/tutorials/localisation/ltr-rtl-layout-preview.jpg"
       ],
+      "telegram_post_id" : "244",
       "updated_date": "15.11.2022",
       "added_date": "10.07.2022"
    },
@@ -201,6 +202,7 @@
       "google_structured_images": [
          "https://cdn.sparrowcode.io/tutorials/set-launch-screen-via-plist/delete-launchscreen-storyboard-file.jpg", "https://cdn.sparrowcode.io/tutorials/set-launch-screen-via-plist/delete-launch-screen-interface-file-base-name-key.jpg", "https://cdn.sparrowcode.io/tutorials/set-launch-screen-via-plist/add-uilaunchscreen-key.jpg", "https://cdn.sparrowcode.io/tutorials/set-launch-screen-via-plist/add-color-to-assets.jpg", "https://cdn.sparrowcode.io/tutorials/set-launch-screen-via-plist/add-background-color-launch-screen-key.jpg", "https://cdn.sparrowcode.io/tutorials/set-launch-screen-via-plist/with-uicolorname-result.jpg", "https://cdn.sparrowcode.io/tutorials/set-launch-screen-via-plist/with-uiimagename-result.jpg", "https://cdn.sparrowcode.io/tutorials/set-launch-screen-via-plist/add-uitabbar-key.jpg", "https://cdn.sparrowcode.io/tutorials/set-launch-screen-via-plist/with-uitabbar-result.jpg", "https://cdn.sparrowcode.io/tutorials/set-launch-screen-via-plist/with-uitoolbar-result.jpg"
       ],
+      "telegram_post_id" : "465",
       "updated_date": "21.11.2023",
       "added_date": "21.11.2023"
    },
@@ -215,6 +217,7 @@
       "google_structured_images": [
          "https://cdn.sparrowcode.io/tutorials/set-launch-screen-via-plist/delete-launchscreen-storyboard-file.jpg", "https://cdn.sparrowcode.io/tutorials/set-launch-screen-via-plist/delete-launch-screen-interface-file-base-name-key.jpg", "https://cdn.sparrowcode.io/tutorials/set-launch-screen-via-plist/add-uilaunchscreen-key.jpg", "https://cdn.sparrowcode.io/tutorials/set-launch-screen-via-plist/add-color-to-assets.jpg", "https://cdn.sparrowcode.io/tutorials/set-launch-screen-via-plist/add-background-color-launch-screen-key.jpg", "https://cdn.sparrowcode.io/tutorials/set-launch-screen-via-plist/with-uicolorname-result.jpg", "https://cdn.sparrowcode.io/tutorials/set-launch-screen-via-plist/with-uiimagename-result.jpg", "https://cdn.sparrowcode.io/tutorials/set-launch-screen-via-plist/add-uitabbar-key.jpg", "https://cdn.sparrowcode.io/tutorials/set-launch-screen-via-plist/with-uitabbar-result.jpg", "https://cdn.sparrowcode.io/tutorials/set-launch-screen-via-plist/with-uitoolbar-result.jpg"
       ],
+      "telegram_post_id" : "506",
       "updated_date": "15.02.2024",
       "added_date": "15.02.2024"
    },
@@ -227,6 +230,7 @@
       "keywords": ["tipkit", "подсказки", "tipkit на uikit", "tipkit framework"],
       "graph_image": "https://cdn.sparrowcode.io/tutorials/tipkit/tipkit-example.jpg",
       "google_structured_images": [],
+      "telegram_post_id" : "527",
       "updated_date": "04.05.2024",
       "added_date": "27.03.2024"
    },
@@ -239,6 +243,7 @@
       "keywords": ["privacy manifest", "privacy", "manifest", "plist", "NSPrivacyAccessedAPICategoryUserDefaults"],
       "graph_image": "https://cdn.sparrowcode.io/tutorials/privacy-manifest/privacy-manifest-email.png",
       "google_structured_images": [],
+      "telegram_post_id" : "536",
       "updated_date": "16.04.2024",
       "added_date": "05.04.2024"
    },
