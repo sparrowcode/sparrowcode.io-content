@@ -94,7 +94,7 @@ UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound
 }
 ```
 
-Запрашивать нужно в любом месте до отправки уведомлений. Примерно то же самое делает наша библиотека [PermissionsKit](https://github.com/sparrowcode/PermissionsKit) :
+Запрашивать нужно в любом месте до отправки уведомлений. Примерно то же самое делает наша библиотека [PermissionsKit](https://github.com/sparrowcode/PermissionsKit):
 
 ```swift
 import PermissionsKit
