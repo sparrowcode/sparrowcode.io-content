@@ -259,14 +259,14 @@
       "updated_date": "14.05.2024",
       "added_date": "12.05.2024"
    },
-   "paying-apple-developer-account": {
-      "title": "Оплата аккаунта Apple Developer",
+   "pay-for-apple-developer-account-from-ru": {
+      "title": "Как оплатить Apple Developer Program и получить РФ-аккаунт разработчика",
       "description": "Рассмотрим разные варианты оплаты аккаунта Apple Developer в 2024 году",
       "categories": ["app-store-connect"],
       "author": "sparrowcode",
       "editors": [],
       "keywords": ["apple", "developer", "account", "pay"],
-      "graph_image": "https://cdn.sparrowcode.io/tutorials/paying-apple-developer-account/logo-developer.jpg",
+      "graph_image": "https://cdn.sparrowcode.io/tutorials/pay-for-apple-developer-account-from-ru/logo-developer.jpg",
       "google_structured_images": [],
       "updated_date": "19.05.2024",
       "added_date": "19.05.2024"
