@@ -4,7 +4,7 @@
 
 Оплата через сайт не работает, но можно оплатить через мобильного оператора для этого вам обязательно использовать приложение [Developer](https://apps.apple.com/us/app/apple-developer/id640199958) от Apple, в дальнейшем продление аккаунта так же через приложение.
 
-![приложение Developer](https://cdn.sparrowcode.io/tutorials/pay-for-apple-developer-account-from-ru/payment.png?v=1)
+![приложение Developer](https://cdn.sparrowcode.io/tutorials/pay-for-apple-developer-account-from-ru/payment.png?v=2)
 
 ## Билайн, МТС
 
@@ -30,7 +30,7 @@
 
 Если кнопка Enroll не доступна, нужно связаться с поддержкой. Обычно они активируют ее в течени 2 дней. Почта для связи с поддержкой *eurodev@apple.com*.
 
-![приложение Developer](https://cdn.sparrowcode.io/tutorials/pay-for-apple-developer-account-from-ru/enroll-disabled.png?v=1)
+![приложение Developer](https://cdn.sparrowcode.io/tutorials/pay-for-apple-developer-account-from-ru/enroll-disabled.png?v=2)
 
 Вам активируют кнопку и отравят ссылку со списком способов оплаты, в том числе и для России.
 
