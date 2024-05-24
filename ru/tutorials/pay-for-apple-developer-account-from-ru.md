@@ -64,4 +64,6 @@ Apple Developer Program можно оплатить картой Visa и Masterc
 
 С паспортом РФ есть проблемы с получением счета для компании, решается в каждом случае индивидуально.
 
-> Если регистрируете учетку для Великобритании, то оплату по внешней [по ссылке](https://sparrowcode.io/ru/tutorials/storekit-external-purchase-link-entitlement-ru) добавить нельзя
+> Если регистрируете учетку для Великобритании, то оплату [по внешней ссылке](https://sparrowcode.io/ru/tutorials/storekit-external-purchase-link-entitlement-ru) добавить нельзя
+
+> Мы консультируем регистрации аккаунтов, по реджектам и покупкам в приложении. Записаться на консультацию [по ссылке](https://sparrowcode.io/ru/business/consultation)
