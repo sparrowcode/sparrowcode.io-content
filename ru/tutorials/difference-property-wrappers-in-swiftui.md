@@ -125,7 +125,7 @@ struct MyApp: App {
 
 Все доступные значения по умолчанию можно посмотреть [тут](https://developer.apple.com/documentation/swiftui/environmentvalues).
 
-![Покупка Apple Developer Program в приложении Developer](https://cdn.sparrowcode.io/tutorials/property-wrappers-in-swiftui/environment-default.png)
+![Покупка Apple Developer Program в приложении Developer](https://cdn.sparrowcode.io/tutorials/difference-property-wrappers-in-swiftui/environment-default.png)
 
 Например, можно прочитать значение цветовой схемы и автоматически обновить свое вью при изменении цветовой схемы. Чтобы получить доступ к значениям среды, создаем @Environment переменную, определяющую ключевой путь к значению, которое вы хотите прочитать и записать.
 

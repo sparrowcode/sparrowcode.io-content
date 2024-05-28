@@ -272,17 +272,16 @@
       "updated_date": "19.05.2024",
       "added_date": "19.05.2024"
    },
-   "property-wrappers-in-swiftui": {
+   "difference-property-wrappers-in-swiftui": {
       "title": "Property Wrappers в SwiftUI",
       "description": "Разберем основые обертки в SwiftUI и посмотрим как их использовать.",
       "categories": ["development", "swiftui"],
       "author": "sparrowcode",
       "editors": [],
       "keywords": ["swiftui", "wrappers", "property wrappers"],
-      "graph_image": "https://cdn.sparrowcode.io/tutorials/property-wrappers-in-swiftui/main-img.png",
+      "graph_image": "https://cdn.sparrowcode.io/tutorials/difference-property-wrappers-in-swiftui/main-img.png",
       "google_structured_images": [],
-      "telegram_post_id" : "548",
       "updated_date": "28.05.2024",
-      "added_date": "28.03.2024"
+      "added_date": "28.05.2024"
    }
 }
