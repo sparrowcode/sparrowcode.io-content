@@ -284,14 +284,14 @@
       "updated_date": "28.05.2024",
       "added_date": "28.05.2024"
    },
-   "create_swift_documentation": {
-      "title": "Создание swift документации",
+   "swift-documentation": {
+      "title": "Документация Swift",
       "description": "Разберем основные моменты создания документации для проекта",
       "categories": ["development"],
       "author": "sparrowcode",
       "editors": [],
       "keywords": ["swift", "documentation"],
-      "graph_image": "https://cdn.sparrowcode.io/tutorials/create_swift_documentation/main-img.png",
+      "graph_image": "https://cdn.sparrowcode.io/tutorials/swift_documentation/main-img.png",
       "google_structured_images": [],
       "updated_date": "14.06.2024",
       "added_date": "14.06.2024"

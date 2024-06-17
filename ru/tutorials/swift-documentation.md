@@ -33,7 +33,7 @@ struct Person {
 }
 ```
 
-![Summary документация](https://cdn.sparrowcode.io/tutorials/create_swift_documentation/summary.png)
+![Summary документация](https://cdn.sparrowcode.io/tutorials/swift-documentation/summary.png)
 
 Чтобы добавить раздел `overview`, добавляем еще один абзац. Второй абзац, будет относиться к разделу `overview`.
 
@@ -49,7 +49,7 @@ struct Person {
 }
 ```
 
-![Overview документация](https://cdn.sparrowcode.io/tutorials/create_swift_documentation/overview.png)
+![Overview документация](https://cdn.sparrowcode.io/tutorials/swift-documentation/overview.png)
 
 Пример простой документации. Первый абзац это `summary`. Второй абзац поподает в `overview`. Остальное сгруппированною в общий раздел. Обратите внимание на заголовки, списки и добавление ссылки.
 
@@ -83,7 +83,7 @@ struct User {
 }
 ```
 
-![Пример документации](https://cdn.sparrowcode.io/tutorials/create_swift_documentation/example.png)
+![Пример документации](https://cdn.sparrowcode.io/tutorials/swift-documentation/example.png)
 
 Для функции с параметрами добавляем раздел `параметров`. Есть два вида написания параметров. Раздел параметров и отдельные поля параметров.
 
@@ -105,7 +105,7 @@ struct User {
 }
 ```
 
-![Parameters документация](https://cdn.sparrowcode.io/tutorials/create_swift_documentation/parameters.png)
+![Parameters документация](https://cdn.sparrowcode.io/tutorials/swift-documentation/parameters.png)
 
 Для функции с возвращаемым значением добавляем раздел `Returns`, как с параметрами.
 
@@ -116,7 +116,7 @@ func greeting(person: User) -> String {
 }
 ```
 
-![Returns документация](https://cdn.sparrowcode.io/tutorials/create_swift_documentation/returns.png)
+![Returns документация](https://cdn.sparrowcode.io/tutorials/swift-documentation/returns.png)
 
 В поле `Throws` указываем какие ошибки будут выброшена и в каких ситуациях.
 
@@ -127,7 +127,7 @@ func greeting(person: User) throws -> String {
 }
 ```
 
-![Throws документация](https://cdn.sparrowcode.io/tutorials/create_swift_documentation/throws.png)
+![Throws документация](https://cdn.sparrowcode.io/tutorials/swift-documentation/throws.png)
 
 Так же можно ссылаться на другие сущности в проекте, используя двойные обратные кавычки
 
@@ -138,7 +138,7 @@ func greeting(person: User) String {
 }
 ```
 
-![Throws документация](https://cdn.sparrowcode.io/tutorials/create_swift_documentation/ref-entity.png)
+![Throws документация](https://cdn.sparrowcode.io/tutorials/swift-documentation/ref-entity.png)
 
 Чтобы добавить изображение используем `![image](link)`
 
@@ -150,11 +150,11 @@ func greeting(person: User) String {
  */
 ```
 
-![Добавление изображения](https://cdn.sparrowcode.io/tutorials/create_swift_documentation/image.png)
+![Добавление изображения](https://cdn.sparrowcode.io/tutorials/swift-documentation/image.png)
 
 Есть еще много полей, которые можно добавить в документацию. Вот [список](https://developer.apple.com/library/archive/documentation/Xcode/Reference/xcode_markup_formatting_ref/Attention.html#//apple_ref/doc/uid/TP40016497-CH29-SW1):
 
-![Дополнительные поля](https://cdn.sparrowcode.io/tutorials/create_swift_documentation/other-fields.png)
+![Дополнительные поля](https://cdn.sparrowcode.io/tutorials/swift-documentation/other-fields.png)
 
 # Создание документации
 
@@ -168,6 +168,6 @@ DocC мощный инструмент для создания качестве�
 
 Нажмите **⌃** + **⇧** + **⌘** + **D** или **Editor** > **Structure** > **Add documentation**. Xcode сбилдит документацию.
 
-![Генерация документации](https://cdn.sparrowcode.io/tutorials/create_swift_documentation/docc.png)
+![Генерация документации](https://cdn.sparrowcode.io/tutorials/swift-documentation/docc.png)
 
 Когда добавляете что-то новое, нужно заново сбилдить документацию. После этого информация обновиться в браузере документации.
