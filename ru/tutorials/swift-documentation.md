@@ -23,10 +23,8 @@ struct User {
    let lastName: String
 }
 
-/**
-    This is your User documentation.
-    A very long one.
-*/
+/// This is your User documentation.
+/// A very long one.
 struct Person {
    let firstName: String
    let lastName: String
@@ -38,11 +36,9 @@ struct Person {
 Чтобы добавить раздел `overview`, добавляем еще один абзац. Второй абзац, будет относиться к разделу `overview`.
 
 ```swift
-/**
-    This is your User documentation (This is summary).
-
-    A very long one (This will be shown in the discussion section).
-*/
+/// This is your User documentation (This is summary).
+///
+/// A very long one (This will be shown in the discussion section).
 struct Person {
    let firstName: String
    let lastName: String
@@ -51,32 +47,30 @@ struct Person {
 
 ![Overview документация](https://cdn.sparrowcode.io/tutorials/swift-documentation/overview.png)
 
-Пример простой документации. Первый абзац это `summary`. Второй абзац поподает в `overview`. Остальное сгруппированною в общий раздел. Обратите внимание на заголовки, списки и добавление ссылки.
+Пример простой документации. Первый абзац это `summary`. Второй абзац попадает в `overview`. Остальное сгруппированною в общий раздел. Обратите внимание на заголовки, списки и добавление ссылки.
 
 ```swift
-/**
- This is your User documentation.
- A very long one.
- 
- # Text
- It's very easy to make some words **bold** and other words *italic* with Markdown. You can even [link to Apple](https://developer.apple.com/)
- 
- # Lists
- Sometimes you want numbered lists:
-
- 1. One
- 2. Two
-
- - Dashes work just as well
- - And if you have sub points, put two spaces before the dash or star:
-   - Like this
- 
- # Code
+/// This is your User documentation.
+/// A very long one.
+/// 
+/// # Text
+/// It's very easy to make some words **bold** and other words *italic* with Markdown. You can even [link to Apple](https://developer.apple.com/)
+/// 
+/// # Lists
+/// Sometimes you want numbered lists:
+///
+/// 1. One
+/// 2. Two
+///
+/// - Dashes work just as well
+/// - And if you have sub points, put two spaces before the dash or star:
+///   - Like this
+/// 
+/// # Code
  ```swift
  if (isAwesome){
    return true
  }
-*/
 struct User {
    let firstName: String
    let lastName: String
@@ -138,19 +132,17 @@ func greeting(person: User) String {
 }
 ```
 
-![Throws документация](https://cdn.sparrowcode.io/tutorials/swift-documentation/ref-entity.png)
+![Ссылка на другие сущности](https://cdn.sparrowcode.io/tutorials/swift-documentation/ref-entity.png)
 
 Чтобы добавить изображение используем `![image](link)`
 
 ```swift
-/**
-   An example of using *images* to display a web image
- 
-   ![image](https://cdn.sparrowcode.io/authors/sparrowcode.jpg)
- */
+/// An example of using *images* to display a web image
+/// 
+/// ![image](https://cdn.sparrowcode.io/authors/sparrowcode.jpg)
 ```
 
-![Добавление изображения](https://cdn.sparrowcode.io/tutorials/swift-documentation/image.png)
+![Добавляем изображения](https://cdn.sparrowcode.io/tutorials/swift-documentation/image.png)
 
 Есть еще много полей, которые можно добавить в документацию. Вот [список](https://developer.apple.com/library/archive/documentation/Xcode/Reference/xcode_markup_formatting_ref/Attention.html#//apple_ref/doc/uid/TP40016497-CH29-SW1):
 
