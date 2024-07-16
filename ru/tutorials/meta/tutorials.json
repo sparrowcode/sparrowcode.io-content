@@ -283,5 +283,17 @@
       "google_structured_images": [],
       "updated_date": "28.05.2024",
       "added_date": "28.05.2024"
+   },
+   "creating-certificate-and-profile": {
+      "title": "Создание сертификата и профайла",
+      "description": "Сделаем сертификаты в ручную и добавим разработчика на индивидуальном аккаунте",
+      "categories": ["development", "app-store-connect"],
+      "author": "sparrowcode",
+      "editors": [],
+      "keywords": ["certificate", "profile", "p12", "provision profile", "apple distribution"],
+      "graph_image": "https://cdn.sparrowcode.io/tutorials/creating-certificate-and-profile/main_page_certificates.png",
+      "google_structured_images": [],
+      "updated_date": "16.06.2024",
+      "added_date": "16.06.2024"
    }
 }
