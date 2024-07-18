@@ -18,15 +18,15 @@
 
 **Keychain Access** > **Certificate Assistant** > **Request a Certificate From a Certificate Authority...**
 
-![Запрос сертификата в центре сертификации](https://cdn.sparrowcode.io/tutorials/creating-certificate-and-profile/keychain-request.png)
+![Запрос сертификата в центре сертификации](https://cdn.sparrowcode.io/tutorials/cert-and-profile-for-personal-developer-account/keychain-request.png)
 
 Вводим свою почту и имя, выбираем Saved to disk и жмем Continue. В следующем окне просто сохраняем фаил.
 
-![Сохранение сертификата](https://cdn.sparrowcode.io/tutorials/creating-certificate-and-profile/keychain-sert-info.png)
+![Сохранение сертификата](https://cdn.sparrowcode.io/tutorials/cert-and-profile-for-personal-developer-account/keychain-sert-info.png)
 
 Получаем файл CertificateSigningRequest.certSigningRequest:
 
-![Создание CertificateSigningRequest.certSigningRequest](https://cdn.sparrowcode.io/tutorials/creating-certificate-and-profile/keychain-sert-created.png)
+![Создание CertificateSigningRequest.certSigningRequest](https://cdn.sparrowcode.io/tutorials/cert-and-profile-for-personal-developer-account/keychain-sert-created.png)
 
 # Сертификат для подписи приложений
 
@@ -34,23 +34,23 @@
 
 Идем в свой **Developer account**, в сертификаты:
 
-![Developer account Certificates](https://cdn.sparrowcode.io/tutorials/creating-certificate-and-profile/main-sert.png)
+![Developer account Certificates](https://cdn.sparrowcode.io/tutorials/cert-and-profile-for-personal-developer-account/main-sert.png)
 
 Чтобы добавить новый сертификат, жмем плюс:
 
-![Добавляем сертификат](https://cdn.sparrowcode.io/tutorials/creating-certificate-and-profile/add-sert.png)
+![Добавляем сертификат](https://cdn.sparrowcode.io/tutorials/cert-and-profile-for-personal-developer-account/add-sert.png)
 
 Выбираем **Apple Distribution** и жмем Continue:
 
-![Apple Distribution](https://cdn.sparrowcode.io/tutorials/creating-certificate-and-profile/new-sert.png)
+![Apple Distribution](https://cdn.sparrowcode.io/tutorials/cert-and-profile-for-personal-developer-account/new-sert.png)
 
 На странице создания нового сертифика в поле **Choose File**, вставляем ранее сгенерированный файл и жмем Continue:
 
-![Добавляем CertificateSigningRequest](https://cdn.sparrowcode.io/tutorials/creating-certificate-and-profile/select-new-sert.png)
+![Добавляем CertificateSigningRequest](https://cdn.sparrowcode.io/tutorials/cert-and-profile-for-personal-developer-account/select-new-sert.png)
 
 Сертификат создан, скачиваем его:
 
-![Скачиваем сертификат](https://cdn.sparrowcode.io/tutorials/creating-certificate-and-profile/download-sert.png)
+![Скачиваем сертификат](https://cdn.sparrowcode.io/tutorials/cert-and-profile-for-personal-developer-account/download-sert.png)
 
 # Сертификат с ключами
 
@@ -60,27 +60,27 @@
 
 После двойного клика по файлу, он откроется в **Keychain Access**. Если этого не произошло, просто найдите последний загруженный сертификат **Apple Distribution** по дате. Дата истечения будет через год.
 
-![Apple Distribution сертификат](https://cdn.sparrowcode.io/tutorials/creating-certificate-and-profile/distribution-sert.png)
+![Apple Distribution сертификат](https://cdn.sparrowcode.io/tutorials/cert-and-profile-for-personal-developer-account/distribution-sert.png)
 
 Раскрываем сертификат и выделяем сертификат вместе с приватным ключем. Жмем правую кнопку и выбираем `Export 2 items...`
 
-![Экспорт сертификата с ключем](https://cdn.sparrowcode.io/tutorials/creating-certificate-and-profile/export-distribution-sert.png)
+![Экспорт сертификата с ключем](https://cdn.sparrowcode.io/tutorials/cert-and-profile-for-personal-developer-account/export-distribution-sert.png)
 
 Назвать файл можно как угодно, я сохраню как есть:
 
-![Имя для сертификата](https://cdn.sparrowcode.io/tutorials/creating-certificate-and-profile/create-sert-p12.png)
+![Имя для сертификата](https://cdn.sparrowcode.io/tutorials/cert-and-profile-for-personal-developer-account/create-sert-p12.png)
 
 Далее оставляем все поля пустыми и жмем ok:
 
-![Пароль для сертификата](https://cdn.sparrowcode.io/tutorials/creating-certificate-and-profile/sert-p12-non-pass.png)
+![Пароль для сертификата](https://cdn.sparrowcode.io/tutorials/cert-and-profile-for-personal-developer-account/sert-p12-non-pass.png)
 
 В связке ключей вводим пароль от своего мака и жмем **Always Allow**:
 
-![Вводим пароль от вашего мака](https://cdn.sparrowcode.io/tutorials/creating-certificate-and-profile/sert-p12-system-pass.png)
+![Вводим пароль от вашего мака](https://cdn.sparrowcode.io/tutorials/cert-and-profile-for-personal-developer-account/sert-p12-system-pass.png)
 
 Получим файл `Certificates.p12`:
 
-![Сертификат .p12](https://cdn.sparrowcode.io/tutorials/creating-certificate-and-profile/save-sert-p12.png)
+![Сертификат .p12](https://cdn.sparrowcode.io/tutorials/cert-and-profile-for-personal-developer-account/save-sert-p12.png)
 
 # App ID приложения
 
@@ -90,11 +90,11 @@
 
 Идем снова в **Developer account**, выбираем **Identifiers** и жмем плюс:
 
-![Вкладка Identifiers](https://cdn.sparrowcode.io/tutorials/creating-certificate-and-profile/identifiers.png)
+![Вкладка Identifiers](https://cdn.sparrowcode.io/tutorials/cert-and-profile-for-personal-developer-account/identifiers.png)
 
 Выбираем **App IDs**, далее **App**:
 
-![App IDs и App](https://cdn.sparrowcode.io/tutorials/creating-certificate-and-profile/register-identifier-app-id.png)
+![App IDs и App](https://cdn.sparrowcode.io/tutorials/cert-and-profile-for-personal-developer-account/register-identifier-app-id.png)
 
 Здесь в Description вводим название приложения. В Bundle ID указываем бандл приложения. 
 Explicit - используется для подписи только одного приложения.
@@ -102,21 +102,21 @@ Wildcard - используется для подписи нескольких �
 
 Подробнее про Explicit и Wildcard, [здесь](https://developer.apple.com/library/archive/qa/qa1713/_index.html):
 
-![Регистрация App ID](https://cdn.sparrowcode.io/tutorials/creating-certificate-and-profile/register-app-id.png)
+![Регистрация App ID](https://cdn.sparrowcode.io/tutorials/cert-and-profile-for-personal-developer-account/register-app-id.png)
 
 Если нужно Включите **Sign in with Apple**. Поставьте галочку, нажмите Edit и введите свой Notification Endpoint.
 
-![Sign in with Apple](https://cdn.sparrowcode.io/tutorials/creating-certificate-and-profile/sign-in-with-apple.png)
+![Sign in with Apple](https://cdn.sparrowcode.io/tutorials/cert-and-profile-for-personal-developer-account/sign-in-with-apple.png)
 
 Проверяем правильно ли все заполнили и жмем Register:
 
 > Если получили ошибку проверьте поле Bundle ID, чаще всего проблема именно в нем.
 
-![Регистрируем App ID](https://cdn.sparrowcode.io/tutorials/creating-certificate-and-profile/end-register-app-id.png)
+![Регистрируем App ID](https://cdn.sparrowcode.io/tutorials/cert-and-profile-for-personal-developer-account/end-register-app-id.png)
 
 После успешной регистрации, на странице **Identifiers** появится идентификатор вашего приложения:
 
-![Идентификатор приложения](https://cdn.sparrowcode.io/tutorials/creating-certificate-and-profile/identifiers-list.png)
+![Идентификатор приложения](https://cdn.sparrowcode.io/tutorials/cert-and-profile-for-personal-developer-account/identifiers-list.png)
 
 # Profile для выгрузки приложений
 
@@ -124,39 +124,39 @@ Wildcard - используется для подписи нескольких �
 
 После создания ID, идем в меню **Profiles** жмем кнопку Generate a profile или плюс:
 
-![Вкладка Profiles](https://cdn.sparrowcode.io/tutorials/creating-certificate-and-profile/profiles.png)
+![Вкладка Profiles](https://cdn.sparrowcode.io/tutorials/cert-and-profile-for-personal-developer-account/profiles.png)
 
 Выбираем App Store Connect:
 
-![App Store Connect](https://cdn.sparrowcode.io/tutorials/creating-certificate-and-profile/new-profile.png)
+![App Store Connect](https://cdn.sparrowcode.io/tutorials/cert-and-profile-for-personal-developer-account/new-profile.png)
 
 В `App ID` выбираем нужный bundle id из списка:
 
-![Выбираем App ID](https://cdn.sparrowcode.io/tutorials/creating-certificate-and-profile/generate-profile-app-id.png)
+![Выбираем App ID](https://cdn.sparrowcode.io/tutorials/cert-and-profile-for-personal-developer-account/generate-profile-app-id.png)
 
 Выбираем недавно созданный сертификат, смотрим на дату истечения:
 
-![Добавляем сертификат](https://cdn.sparrowcode.io/tutorials/creating-certificate-and-profile/generate-profile-select-sert.png)
+![Добавляем сертификат](https://cdn.sparrowcode.io/tutorials/cert-and-profile-for-personal-developer-account/generate-profile-select-sert.png)
 
 В поле `Provisioning Profile` Name вводим название приложения + **Distribution** и жмем Generate:
 
-![Название для Provisioning Profile](https://cdn.sparrowcode.io/tutorials/creating-certificate-and-profile/generate-profile-name.png)
+![Название для Provisioning Profile](https://cdn.sparrowcode.io/tutorials/cert-and-profile-for-personal-developer-account/generate-profile-name.png)
 
 Осталось только скачать файл:
 
-![Скачиваем Provisioning Profile](https://cdn.sparrowcode.io/tutorials/creating-certificate-and-profile/download-profile.png)
+![Скачиваем Provisioning Profile](https://cdn.sparrowcode.io/tutorials/cert-and-profile-for-personal-developer-account/download-profile.png)
 
 Получаем файл Appname_Distribution.mobileprovision:
 
-![Provision Profile](https://cdn.sparrowcode.io/tutorials/creating-certificate-and-profile/created-profile.png)
+![Provision Profile](https://cdn.sparrowcode.io/tutorials/cert-and-profile-for-personal-developer-account/created-profile.png)
 
 # Передаем сертификат и профаил другому разработчику
 
 Передаем разработчику файл `.p12` и `Provision Profile`. 
 Далее нужно дважды щелкнуть на полученный файл `.p12` или использовать импорт в **Keychain Access**.
 
-![Импортируем Certificates.p12](https://cdn.sparrowcode.io/tutorials/creating-certificate-and-profile/add-p12.png)
+![Импортируем Certificates.p12](https://cdn.sparrowcode.io/tutorials/cert-and-profile-for-personal-developer-account/add-p12.png)
 
 Чтобы добавить `Provision Profile` открываем Xcode с проектом. Переходим в Project Settings и выбираем target. На вкладке Signing & Capabilities отключаем **Automatically manage signing**, выбираем нужный `Team ID` и импортируем полученный `Provisioning Profile`.
 
-![Импортируем Provision Profile](https://cdn.sparrowcode.io/tutorials/creating-certificate-and-profile/add-profile-xcode.png)
+![Импортируем Provision Profile](https://cdn.sparrowcode.io/tutorials/cert-and-profile-for-personal-developer-account/add-profile-xcode.png)
