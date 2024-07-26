@@ -1,33 +1,33 @@
-Добавленный разработчик может разрабатывать, но не может просто так в вашем аккаунте выгружать приложения. 
+Разработчик может разрабатывать, но не может просто так в вашем индивидуальном аккаунте выгружать приложения. Для этого нужно сделать сертификат вручную и передать разработчику.
 
-> Если у вас аккаунт компании, то так делать не нужно. Все будет работать автоматически. Если у вас индивидуальный аккаунт и вы хотите добавить разработчика, нужно сделать сертификат вручную.
+> Если у вас аккаунт компании, то так делать не нужно. Все будет работать автоматически.
 
 Как это будет выглядеть по шагам:
-1. Создадим запрос на подписание
-2. Подпишем сертификат.
-3. Сгенерируем этот сертификат с подписью. 
+1. Делаем запрос на подпись
+2. Создадим сертификат
+3. Объединим этот сертификат с ключом
 4. Опциональный шаг, если у вас нет App ID приложения зарегистрируем его
 5. Сделаем на основе сертификата профаил, он отвечает за то чтобы мы могли выгружать приложения
 
-# Подготовка к подписи сертификата
+# Подготовка
 
-Нам нужно создать запрос для подписи сертификата `CertificateSigningRequest`. Это файл с расширением `.certSigningRequest`. Он нужен для создания сертификатов, подписывания приложений и их публикации в App Store.
+Нужно создать специальный запрос, это файл с расширением `.certSigningRequest`. Он нужен для создания сертификатов, подписания приложений и их публикации в App Store.
 
-Чтобы вручную сгенерировать сертификат, нужно создать файл `CertificateSigningRequest` на вашем маке. Это делается с помощью приложения **Keychain Access**.
+Создаем файл `CertificateSigningRequest.certSigningRequest` на вашем маке. Это делается с помощью приложения **Keychain Access**.
 
 ![Запрос сертификата в центре сертификации](https://cdn.sparrowcode.io/tutorials/cert-and-profile-for-personal-developer-account/keychain-request.png)
 
-Вводим свою почту и имя, выбираем *Saved to disk* и жмем *Continue*. В следующем окне просто сохраняем файл.
+Вводим свою почту и имя, выбираем *Saved to disk*. В следующем окне просто сохраните файл.
 
-![Сохранение сертификата](https://cdn.sparrowcode.io/tutorials/cert-and-profile-for-personal-developer-account/keychain-sert-info.png)
+![Сохранение сертификата](https://cdn.sparrowcode.io/tutorials/cert-and-profile-for-personal-developer-account/keychain-sert-info.png?v=2)
 
-Получаем файл `CertificateSigningRequest.certSigningRequest`:
+У вас появится файл `CertificateSigningRequest.certSigningRequest`:
 
-![Создание CertificateSigningRequest.certSigningRequest](https://cdn.sparrowcode.io/tutorials/cert-and-profile-for-personal-developer-account/keychain-sert-created.png)
+![Создание CertificateSigningRequest.certSigningRequest](https://cdn.sparrowcode.io/tutorials/cert-and-profile-for-personal-developer-account/keychain-sert-created.png?v=2)
 
 # Создаем сертификат
 
-Он подтверждает подлинность и целостность приложения. Расширение у него `distribution.cer`
+Он подтверждает что ваше приложение это именно оно. Файл будет с расширением `.cer`
 
 Идем в свой **Developer account**, в сертификаты:
 
@@ -49,7 +49,7 @@
 
 ![Скачиваем сертификат](https://cdn.sparrowcode.io/tutorials/cert-and-profile-for-personal-developer-account/download-sert.png)
 
-# Сохраняем сертификат с ключами
+# Объединяем сертификат и ключ
 
 Файлы `Certificates.p12` используются для передачи и хранения сертификатов и связанных с ними закрытых ключей.
 
@@ -77,7 +77,7 @@
 
 ![Сертификат .p12](https://cdn.sparrowcode.io/tutorials/cert-and-profile-for-personal-developer-account/save-sert-p12.png)
 
-# Идентификатор для приложения
+# Регистрируем приложение
 
 > Если у вас есть приложение, можно простить этот пункт.
 
@@ -111,7 +111,7 @@
 
 ![Идентификатор приложения](https://cdn.sparrowcode.io/tutorials/cert-and-profile-for-personal-developer-account/identifiers-list.png)
 
-# Профиль для подписи приложений
+# Специальный профиль для приложения
 
 `Provisioning Profile` связывает Apple Developer Account, App ID, сертификаты и зарегистрированные устройства. Это файл с расширением `.mobileprovision`.
 
@@ -143,7 +143,7 @@
 
 ![Provision Profile](https://cdn.sparrowcode.io/tutorials/cert-and-profile-for-personal-developer-account/created-profile.png)
 
-# Передаем сертификат и профаил разработчику
+# Передаем сертификат и профиль разработчику
 
 Передаем разработчику файл `.p12` и `Provision Profile`. 
 Далее нужно дважды щелкнуть на полученный файл `.p12` или использовать импорт в **Keychain Access**.
@@ -153,3 +153,7 @@
 Чтобы добавить `Provision Profile` открываем Xcode с проектом. Переходим в Project Settings и выбираем target. На вкладке *Signing & Capabilities* отключаем **Automatically manage signing**, выбираем нужный `Team ID` и импортируем полученный `Provisioning Profile`.
 
 ![Импортируем Provision Profile](https://cdn.sparrowcode.io/tutorials/cert-and-profile-for-personal-developer-account/add-profile-xcode.png)
+
+Теперь разработчик с вашего индивидуального аккаунта сможет выгружать приложение.
+
+> Если у вас юридический акканут, так делать не нужно.
