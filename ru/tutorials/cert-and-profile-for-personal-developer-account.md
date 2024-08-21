@@ -65,7 +65,7 @@
 
 ![Apple Distribution сертификат](https://cdn.sparrowcode.io/tutorials/cert-and-profile-for-personal-developer-account/distribution-sert.png)
 
-Разверните выпадайку (слева от сертификата), выделите сертификат и приватный ключ. Дальше нажмите правую кнопку и выберите `Export 2 items...`
+Разверните выпадайку (слева от сертификата), выделите сертификат и приватный ключ. Дальше нажмите правую кнопку и выберите `Export 2 items...`.
 
 ![Экспортируем сертификат с ключом](https://cdn.sparrowcode.io/tutorials/cert-and-profile-for-personal-developer-account/export-distribution-sert.png)
 
@@ -99,7 +99,7 @@
 
 ![App IDs и App](https://cdn.sparrowcode.io/tutorials/cert-and-profile-for-personal-developer-account/register-identifier-app-id.png)
 
-Здесь в *Description* введите название приложения, а в *Bundle ID* бандл. `Explicit` - используется для подписи только одного приложения. `Wildcard` - используется для подписи нескольких приложений.
+Здесь в *Description* введите название приложения, а в *Bundle ID* бандл. `Explicit` — используется для подписи только одного приложения. `Wildcard` — используется для подписи нескольких приложений.
 
 > Подробнее про Explicit и Wildcard [по ссылке](https://developer.apple.com/library/archive/qa/qa1713/_index.html):
 
@@ -155,7 +155,7 @@
 
 ![Импортируем `.p12`](https://cdn.sparrowcode.io/tutorials/cert-and-profile-for-personal-developer-account/add-p12.png)
 
-Теперь разработчик идет в Xcode-проект - Project Settings и выбирает таргет. На вкладке *Signing & Capabilities* отключаем `Automatically manage signing`, выбираем нужный Team ID и импортируем Provisioning Profile:
+Теперь разработчик идет в Xcode-проект — Project Settings и выбирает таргет. На вкладке *Signing & Capabilities* отключаем `Automatically manage signing`, выбираем нужный Team ID и импортируем Provisioning Profile:
 
 ![Импортируем Provision Profile](https://cdn.sparrowcode.io/tutorials/cert-and-profile-for-personal-developer-account/add-profile-xcode.png)
 
