@@ -207,7 +207,7 @@
       "added_date": "21.11.2023"
    },
    "storekit-external-purchase-link-entitlement-ru": {
-      "title": "Механизм внешних покупок по ссылке в StoreKit",
+      "title": "Покупки по ссылке для разработчиков из РФ через StoreKit",
       "description": "Инструкция как добавить StoreKit External Purchase Link Entitlement в приложение в России.",
       "categories": ["development", "app-store-connect"],
       "author": "rentel",
