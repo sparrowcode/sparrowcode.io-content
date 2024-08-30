@@ -295,5 +295,17 @@
       "google_structured_images": [],
       "updated_date": "29.07.2024",
       "added_date": "29.07.2024"
+   },
+   "emoji-flags": {
+      "title": "Эмодзи флаги",
+      "description": "Расскажем как именно работают эмодзи флаги и какие учесть нюансы.",
+      "categories": ["development", "swiftui", "uikit"],
+      "author": "sparrowcode",
+      "editors": [],
+      "keywords": ["emoji", "flags", "unicode"],
+      "graph_image": "https://cdn.sparrowcode.io/tutorials/emoji-flags/main-img.png",
+      "google_structured_images": [],
+      "updated_date": "30.08.2024",
+      "added_date": "30.08.2024"
    }
 }
