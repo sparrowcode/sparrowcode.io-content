@@ -152,6 +152,14 @@
          "video": null,
          "frameworks": ["SwiftUI", "CoreML", "AVFoundation", "Vision"],
          "status": "accepted"
+      }, {
+         "name": "Nadya Tyandra",
+         "github_username" : "nadyatyandra",
+         "twitter_username": null,
+         "source": "https://github.com/nadyatyandra/CircuitCraze",
+         "video": "https://youtu.be/6zm5z_AhVS4?si=NEyDWfCvwy_arx2O",
+         "frameworks": ["SwiftUI", "AVFoundation"],
+         "status": "accepted"
       }
    ]
 }
