@@ -189,5 +189,17 @@
       "google_structured_images": [],
       "updated_date": "15.05.2024",
       "added_date": "15.05.2024"
+   },
+   "cert-and-profile-for-personal-developer-account": {
+      "title": "How to upload an app to an individual developer account",
+      "description": "In this article we will make the certificate and profile manually step by step - so the developer, who was added to the idnidivisual account, will be able to upload a build",
+      "categories": ["development", "app-store-connect"],
+      "author": "sparrowcode",
+      "editors": [],
+      "keywords": ["certificate", "profile", "p12", "provision profile", "apple distribution"],
+      "graph_image": "https://cdn.sparrowcode.io/tutorials/cert-and-profile-for-personal-developer-account/main_page_certificates.png",
+      "google_structured_images": [],
+      "updated_date": "08.10.2024",
+      "added_date": "08.10.2024"
    }
 }
