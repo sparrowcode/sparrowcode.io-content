@@ -390,20 +390,6 @@
             "twitter_username": null
         },
         {
-            "name": "Joep Hinderink",
-            "source": "https://github.com/joephinderink/Binamicle-WWDC22.git",
-            "video": null,
-            "frameworks": [
-                "SwiftUI",
-                "SFSpeechRecognizer",
-                "VisionKit",
-                "Speech"
-            ],
-            "status": "accepted",
-            "github_username": "joephinderink",
-            "twitter_username": null
-        },
-        {
             "name": "Jonathan",
             "source": "https://github.com/fuzzynat26/build-with-math",
             "video": null,
