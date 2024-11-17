@@ -11,7 +11,8 @@
       ],
       "keywords": ["UICollectionViewDragDelegate", "UICollectionViewDropDelegate", "UITableViewDragDelegate", "UITableViewDropDelegate", "UIGestureRecognizer", "UIDrag"],
       "updated_date": "06.11.2023",
-      "added_date": "11.07.2021"
+      "added_date": "11.07.2021",
+      "is_private" : true
    },
    "uisheetpresentationcontroller": {
       "title": "`UISheetPresentationController` как в приложении Карты",
@@ -25,7 +26,8 @@
       ],
       "keywords": ["UISheetPresentationController", "Map", "Карты", "Modal Controllers", "iOS 15"],
       "updated_date": "06.11.2023",
-      "added_date": "11.10.2021"
+      "added_date": "11.10.2021",
+      "is_private" : true
    },
    "sf-symbols-and-render-mode": {
       "title": "SF Symbols 4 и Render Mode",
@@ -39,7 +41,8 @@
       ],
       "keywords": ["SF Symbols", "SFSymbols", "SwiftUI", "iOS 15"],
       "updated_date": "06.11.2023",
-      "added_date": "28.10.2021"
+      "added_date": "28.10.2021",
+      "is_private" : true
    },
    "uiviewcontroller-lifecycle": {
       "title": "Жизненный цикл `UIViewController`",
@@ -77,10 +80,11 @@
       ],
       "keywords": ["imageEdgeInsets", "imageEdgeInsets", "contentEdgeInsets", "отсутп между заголовком и картинкой"],
       "updated_date": "06.11.2023",
-      "added_date": "13.12.2021"
+      "added_date": "13.12.2021",
+      "is_private" : true
    },
    "product-page-optimization-alternative-icons": {
-      "title": "Альтернативные иконки для тестов Product Page Optimization",
+      "title": "Как добавить альтернативные иконки для тестов Product Page Optimization",
       "description": "Как добавить альтернативные иконки для A/B тестов на странице приложения в App Store.",
       "categories": ["app-store-connect"],
       "author": "alxrguz",
@@ -94,7 +98,7 @@
       "added_date": "27.12.2021"
    },
    "async-await": {
-      "title": "Асинхронность с async/await и actor",
+      "title": "async/await в Swift с примерами",
       "description": "Разберём async, await, actor. Напишем тузлу для поиска приложений в App Store.",
       "categories": ["swift"],
       "author": "somenkovnikita",
@@ -119,7 +123,8 @@
          "https://cdn.sparrowcode.io/tutorials/access-control/internal.png", "https://cdn.sparrowcode.io/tutorials/access-control/public.png", "https://cdn.sparrowcode.io/tutorials/access-control/open.png", "https://cdn.sparrowcode.io/tutorials/access-control/private.png", "https://cdn.sparrowcode.io/tutorials/access-control/fileprivate.png"
       ],
       "updated_date": "13.09.2022",
-      "added_date": "22.03.2022"
+      "added_date": "22.03.2022",
+      "is_private" : true
    },
    "localisation": {
       "title": "Как локализовать приложение с `NSLocalisedString`",
@@ -134,7 +139,8 @@
       ],
       "telegram_post_id" : "244",
       "updated_date": "15.11.2022",
-      "added_date": "10.07.2022"
+      "added_date": "10.07.2022",
+      "is_private" : true
    },
    "live-activities": {
       "title": "Live Activity и Dynamic Island",
@@ -148,7 +154,8 @@
          "https://cdn.sparrowcode.io/tutorials/live-activities/header.png", "https://cdn.sparrowcode.io/tutorials/live-activities/add-widget-target.png", "https://cdn.sparrowcode.io/tutorials/live-activities/shared-file-between-targets.png", "https://cdn.sparrowcode.io/tutorials/live-activities/live-activity-type-compact.png", "https://cdn.sparrowcode.io/tutorials/live-activities/live-activity-type-minimal.png", "https://cdn.sparrowcode.io/tutorials/live-activities/live-activity-type-expanded.png"
       ],
       "updated_date": "06.11.2023",
-      "added_date": "21.10.2022"
+      "added_date": "21.10.2022",
+      "is_private" : true
    },
    "formatters": {
       "title": "Форматировать цифры, время, валюты и другое с Formatters",
@@ -164,7 +171,8 @@
          "https://cdn.sparrowcode.io/tutorials/formatters/formatters-preview.jpg"
       ],
       "updated_date": "10.11.2022",
-      "added_date": "10.11.2022"
+      "added_date": "10.11.2022",
+      "is_private" : true
    },
    "how-to-get-root-view-controller": {
       "title": "Как получить RootViewController",
@@ -178,7 +186,8 @@
          "https://cdn.sparrowcode.io/tutorials/how-to-get-root-view-controller/uiwindowscene.jpg", "https://cdn.sparrowcode.io/tutorials/how-to-get-root-view-controller/uiwindow.jpg"
       ],
       "updated_date": "06.11.2023",
-      "added_date": "06.11.2023"
+      "added_date": "06.11.2023",
+      "is_private" : true
    },
    "custom-swiftui-modifier": {
       "title": "Как сделать кастомный SwiftUI-модификатор",
@@ -189,10 +198,11 @@
       "keywords": ["modifiers", "модификаторы", "swiftui"],
       "google_structured_images": [],
       "updated_date": "14.11.2023",
-      "added_date": "14.11.2023"
+      "added_date": "14.11.2023",
+      "is_private" : true
    },
    "set-launch-screen-via-plist": {
-      "title": "Добавим Launch Screen через plist-файл",
+      "title": "Launch Screen без storyboard (через plist-файл)",
       "description": "Удалим сторбиорд-файл и создадим Launch Screen через plist.",
       "categories": ["development"],
       "author": "sparrowcode",
@@ -207,7 +217,7 @@
       "added_date": "21.11.2023"
    },
    "storekit-external-purchase-link-entitlement-ru": {
-      "title": "Покупки по ссылке для разработчиков из РФ через StoreKit",
+      "title": "Как принимать оплату по ссылке для разработчиков из РФ",
       "description": "Инструкция как добавить StoreKit External Purchase Link Entitlement в приложение в России.",
       "categories": ["development", "app-store-connect"],
       "author": "rentel",
@@ -232,10 +242,11 @@
       "google_structured_images": [],
       "telegram_post_id" : "527",
       "updated_date": "04.05.2024",
-      "added_date": "27.03.2024"
+      "added_date": "27.03.2024",
+      "is_private" : true
    },
    "privacy-manifest": {
-      "title": "Как добавить Privacy Manifest",
+      "title": "Что добавлять в Privacy Manifest",
       "description": "Разберем что добавлять в Privacy Manifest, нужно ли указывать что используют сторонние библиотеки и как исправить ошибки.",
       "categories": ["development"],
       "author": "sparrowcode",
@@ -257,11 +268,12 @@
       "graph_image": "https://cdn.sparrowcode.io/tutorials/testing-push-notifications-ios-simulator/push.png",
       "google_structured_images": [],
       "updated_date": "14.05.2024",
-      "added_date": "12.05.2024"
+      "added_date": "12.05.2024",
+      "is_private" : true
    },
    "pay-for-apple-developer-account-from-ru": {
-      "title": "Как оплатить Apple Developer Program из РФ и получить аккаунт разработчика",
-      "description": "И принимать платежи без платных соглашений",
+      "title": "Как оплатить Apple Developer Programm из РФ",
+      "description": "Как оплатить аккаунт разработчика из РФ и принимать платежи без платных соглашений",
       "categories": ["app-store-connect"],
       "author": "sparrowcode",
       "editors": [],
@@ -269,11 +281,11 @@
       "graph_image": "https://cdn.sparrowcode.io/tutorials/pay-for-apple-developer-account-from-ru/logo-developer.jpg",
       "google_structured_images": [],
       "telegram_post_id" : "548",
-      "updated_date": "19.05.2024",
+      "updated_date": "17.10.2024",
       "added_date": "19.05.2024"
    },
    "difference-property-wrappers-in-swiftui": {
-      "title": "Property Wrappers в SwiftUI",
+      "title": "Объясняю все Property Wrappers в SwiftUI",
       "description": "Разберем основые обертки в SwiftUI и посмотрим как их использовать.",
       "categories": ["development", "swiftui"],
       "author": "sparrowcode",
@@ -285,8 +297,8 @@
       "added_date": "28.05.2024"
    },
    "cert-and-profile-for-personal-developer-account": {
-      "title": "Как выгрузить приложение на индивидуальный аккаунт разработчика",
-      "description": "В статье пошагово сделаем сертификат и профайл вручную — так разработчик, которого добавили в иднивидуальный аккаунт, сможет выгружать билд",
+      "title": "Как выгружать приложения на индивидуальный аккаунт разработчика",
+      "description": "Если разработчика добавить в индивидуальный аккаунт, он не сможет выгружать приложения. С этой инструкцией вы сможете выгружать",
       "categories": ["development", "app-store-connect"],
       "author": "sparrowcode",
       "editors": [],

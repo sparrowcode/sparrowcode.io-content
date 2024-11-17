@@ -12,7 +12,8 @@
       ],
       "keywords": ["UICollectionViewDragDelegate", "UICollectionViewDropDelegate", "UITableViewDragDelegate", "UITableViewDropDelegate", "UIGestureRecognizer", "UIDrag"],
       "updated_date": "06.11.2023",
-      "added_date": "26.08.2022"
+      "added_date": "26.08.2022",
+      "is_private" : true
    },
    "uisheetpresentationcontroller": {
       "title": "`UISheetPresentationController` as in the Maps application",
@@ -27,7 +28,8 @@
       ],
       "keywords": ["UISheetPresentationController", "Map", "Maps", "Modal Controllers", "iOS 15"],
       "updated_date": "06.11.2023",
-      "added_date": "09.08.2022"
+      "added_date": "09.08.2022",
+      "is_private" : true
    },
    "sf-symbols-and-render-mode": {
       "title": "SF Symbols 4 and Render Mode",
@@ -42,7 +44,8 @@
       ],
       "keywords": ["SF Symbols", "SFSymbols", "SwiftUI", "iOS 15"],
       "updated_date": "06.11.2023",
-      "added_date": "03.08.2022"
+      "added_date": "03.08.2022",
+      "is_private" : true
    },
    "uiviewcontroller-lifecycle": {
       "title": "`UIViewController` Lifecycle",
@@ -83,10 +86,11 @@
       ],
       "keywords": ["imageEdgeInsets", "imageEdgeInsets", "contentEdgeInsets"],
       "updated_date": "06.11.2023",
-      "added_date": "28.07.2022"
+      "added_date": "28.07.2022",
+      "is_private" : true
    },
    "product-page-optimization-alternative-icons": {
-      "title": "Alternative icons for Product Page Optimization tests",
+      "title": "How to Add Alternative Icons for Product Page Optimization tests",
       "description": "How to add alternative icons for A/B tests on the app page in the App Store.",
       "categories": ["app-store-connect"],
       "author": "alxrguz",
@@ -113,7 +117,8 @@
          "https://cdn.sparrowcode.io/tutorials/live-activities/header.png", "https://cdn.sparrowcode.io/tutorials/live-activities/add-widget-target.png", "https://cdn.sparrowcode.io/tutorials/live-activities/shared-file-between-targets.png", "https://cdn.sparrowcode.io/tutorials/live-activities/live-activity-type-compact.png", "https://cdn.sparrowcode.io/tutorials/live-activities/live-activity-type-minimal.png", "https://cdn.sparrowcode.io/tutorials/live-activities/live-activity-type-expanded.png"
       ],
       "updated_date": "06.11.2023",
-      "added_date": "21.10.2022"
+      "added_date": "21.10.2022",
+      "is_private" : true
    },
    "how-to-get-root-view-controller": {
       "title": "How to get a RootViewController",
@@ -127,7 +132,8 @@
          "https://cdn.sparrowcode.io/tutorials/how-to-get-root-view-controller/uiwindowscene.jpg", "https://cdn.sparrowcode.io/tutorials/how-to-get-root-view-controller/uiwindow.jpg"
       ],
       "updated_date": "06.11.2023",
-      "added_date": "06.11.2023"
+      "added_date": "06.11.2023",
+      "is_private" : true
    },
    "custom-swiftui-modifier": {
       "title": "How to make a custom SwiftUI modifier",
@@ -138,10 +144,11 @@
       "keywords": ["modifiers", "swiftui", "custom modifier"],
       "google_structured_images": [],
       "updated_date": "14.11.2023",
-      "added_date": "14.11.2023"
+      "added_date": "14.11.2023",
+      "is_private" : true
    },
    "set-launch-screen-via-plist": {
-      "title": "Add Launch screen via plist",
+      "title": "Launch Screen without storyboard (via plist file)",
       "description": "Drop storyboard file and create Launch Screen via plist.",
       "categories": ["development"],
       "author": "sparrowcode",
@@ -152,10 +159,11 @@
          "https://cdn.sparrowcode.io/tutorials/set-launch-screen-via-plist/delete-launchscreen-storyboard-file.jpg", "https://cdn.sparrowcode.io/tutorials/set-launch-screen-via-plist/delete-launch-screen-interface-file-base-name-key.jpg", "https://cdn.sparrowcode.io/tutorials/set-launch-screen-via-plist/add-uilaunchscreen-key.jpg", "https://cdn.sparrowcode.io/tutorials/set-launch-screen-via-plist/add-color-to-assets.jpg", "https://cdn.sparrowcode.io/tutorials/set-launch-screen-via-plist/add-background-color-launch-screen-key.jpg", "https://cdn.sparrowcode.io/tutorials/set-launch-screen-via-plist/with-uicolorname-result.jpg", "https://cdn.sparrowcode.io/tutorials/set-launch-screen-via-plist/with-uiimagename-result.jpg", "https://cdn.sparrowcode.io/tutorials/set-launch-screen-via-plist/add-uitabbar-key.jpg", "https://cdn.sparrowcode.io/tutorials/set-launch-screen-via-plist/with-uitabbar-result.jpg", "https://cdn.sparrowcode.io/tutorials/set-launch-screen-via-plist/with-uitoolbar-result.jpg"
       ],
       "updated_date": "21.11.2023",
-      "added_date": "21.11.2023"
+      "added_date": "21.11.2023",
+      "is_private" : true
    },
    "privacy-manifest": {
-      "title": "How to add a Privacy Manifest",
+      "title": "What to add to Privacy Manifest",
       "description": "What to add to the Privacy Manifest, whether it is necessary to specify that third-party frameworks are used and how to fix errors.",
       "categories": ["development"],
       "author": "sparrowcode",
@@ -176,7 +184,8 @@
       "graph_image": "https://cdn.sparrowcode.io/tutorials/tipkit/tipkit-example.jpg",
       "google_structured_images": [],
       "updated_date": "05.05.2024",
-      "added_date": "05.05.2024"
+      "added_date": "05.05.2024",
+      "is_private" : true
    },
    "testing-push-notifications-ios-simulator": {
       "title": "How to test Push Notifications on a simulator",
@@ -188,10 +197,11 @@
       "graph_image": "https://cdn.sparrowcode.io/tutorials/testing-push-notifications-ios-simulator/push.png",
       "google_structured_images": [],
       "updated_date": "15.05.2024",
-      "added_date": "15.05.2024"
+      "added_date": "15.05.2024",
+      "is_private" : true
    },
    "cert-and-profile-for-personal-developer-account": {
-      "title": "How to upload an app to an individual developer account",
+      "title": "How to upload an app to an Individual Developer Account",
       "description": "In this article we will make the certificate and profile manually step by step - so the developer, who was added to the idnidivisual account, will be able to upload a build",
       "categories": ["development", "app-store-connect"],
       "author": "sparrowcode",
