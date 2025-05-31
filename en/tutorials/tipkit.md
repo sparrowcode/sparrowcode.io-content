@@ -261,19 +261,28 @@ In the method, provide a reason why you closed the tip:
 - `.displayCountExceeded` - the tip has been shown the maximum number of times
 - `.tipClosed` - the user has clearly closed the tip
 
-In UIKit, you need to add code for the cross. For `popover`-tip, close the controller:
+In UIKit, you need to add code for the cross.
+For `popover`-tip, close the controller:
 
 ```swift
-if presentedViewController is TipUIPopoverViewController {
-   dismiss(animated: true)
+if shouldDisplay {
+   ...
+} else {
+   if presentedViewController is TipUIPopoverViewController {
+      dismiss(animated: true)
+   }
 }
 ```
 
 For the `inline`-tip, we remove the view:
 
 ```swift
-if let tipView = view.subviews.first(where: { $0 is TipUIView }) {
-   tipView.removeFromSuperview()
+if shouldDisplay {
+   ...
+} else {
+   if let tipView = view.subviews.first(where: { $0 is TipUIView }) {
+      tipView.removeFromSuperview()
+   }
 }
 ```
 
