@@ -37,7 +37,7 @@ override func loadView() {}
 Второй метод легендарен, как Стив Джобс. Он вызывается, когда view закончила загрузку.
 
 ```swift
-override viewDidLoad() {
+override func viewDidLoad() {
     super.viewDidLoad()
 }
 ```
