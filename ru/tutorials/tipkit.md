@@ -261,19 +261,28 @@ inlineTip.invalidate(reason: .actionPerformed)
 - `.displayCountExceeded` - подсказку показали максимальное количество раз
 - `.tipClosed` - пользователь явно закрыл подсказку
 
-В UIKit для крестика нужно дописать код. Для `popover`-подсказки закрываем контроллер:
+В UIKit для крестика нужно дописать код.
+Для `popover`-подсказки закрываем контроллер:
 
 ```swift
-if presentedViewController is TipUIPopoverViewController {
-   dismiss(animated: true)
+if shouldDisplay {
+   ...
+} else {
+   if presentedViewController is TipUIPopoverViewController {
+      dismiss(animated: true)
+   }
 }
 ```
 
 Для `inline`-подсказки удаляем вью:
 
 ```swift
-if let tipView = view.subviews.first(where: { $0 is TipUIView }) {
-   tipView.removeFromSuperview()
+if shouldDisplay {
+   ...
+} else {
+   if let tipView = view.subviews.first(where: { $0 is TipUIView }) {
+      tipView.removeFromSuperview()
+   }
 }
 ```
 
